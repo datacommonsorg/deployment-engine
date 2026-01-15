@@ -12,9 +12,8 @@ A complete guide to deploying and managing Data Commons Accelerator through Goog
 4. [Deployment via GCP Marketplace](#deployment-via-gcp-marketplace)
 5. [Accessing Your Deployment](#accessing-your-deployment)
 6. [Using Data Commons Accelerator](#using-data-commons-accelerator)
-7. [Managing Your Deployment](#managing-your-deployment)
-8. [Troubleshooting](#troubleshooting)
-9. [Deleting Your Deployment](#deleting-your-deployment)
+7. [Troubleshooting](#troubleshooting)
+8. [Deleting Your Deployment](#deleting-your-deployment)
 
 ---
 
