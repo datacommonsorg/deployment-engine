@@ -513,10 +513,9 @@ This section controls how the application runs on your cluster.
 
 | Tier | CPU | Memory | Best For |
 |------|-----|--------|--------|
-| `small` | 1.0 | 2 GB| Light workloads, <10 concurrent users |
+| `small` | 1.0 | 2 GB | Light workloads, <10 concurrent users |
 | `medium` | 2.0 | 4 GB | Standard workloads, 10–100 concurrent users |
 | `large` | 4.0 | 8 GB | Heavy workloads, >100 concurrent users, complex queries |
-
 
 **Recommendation:**
 - **Default (`medium`)** works for most deployments
