@@ -254,11 +254,17 @@ If you have `gcloud` and `kubectl` installed locally:
 For external access, follow:
 **[GCP Guide: Exposing Applications in GKE](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/exposing-apps)**
 
+#### Next Steps
+
+Once your application is running, see the [User Guide](USER_GUIDE.md) for instructions on logging in, uploading custom data, and using the dashboards.
+
 ---
 
 ## Using Data Commons Accelerator
 
-For comprehensive guides on using Data Commons, refer to the official documentation:
+For detailed instructions on configuring and using your deployed instance, see the **[User Guide](USER_GUIDE.md)**.
+
+For additional resources, refer to the official Data Commons documentation:
 
 - [Custom Data Commons Documentation](https://docs.datacommons.org/custom_dc/)
 - [Data Commons API Documentation](https://docs.datacommons.org/api)
