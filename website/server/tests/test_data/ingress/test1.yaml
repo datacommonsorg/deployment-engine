@@ -1,0 +1,6 @@
+query-host:8080:
+  - /v2/sparql
+stat-var-host:8080:
+  - /stat-var/*
+default-host:8080:
+  - /*

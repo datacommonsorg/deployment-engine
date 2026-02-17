@@ -1,0 +1,59 @@
+project: datcom-mixer-autopush
+cluster_prefix: mixer
+
+# Helm config
+mixer:
+  image:
+    tag: ""
+  hostProject: datcom-mixer-autopush
+  serviceName: autopush.api.datacommons.org
+  project: datcom-mixer-autopush
+  cluster_prefix: mixer
+  cacheSVFormula: true
+  redis:
+    enabled: true
+    configFile: |
+      instances:
+        - region: "us-central1"
+          host: "10.244.163.180"
+          port: "6379"
+  enableOtlp: true
+
+ingress:
+  enabled: true
+  name: mixer-ingress-autopush
+  annotations:
+    {
+      ingress.gcp.kubernetes.io/pre-shared-cert: "mixer-certificate,multi-domain-2025",
+    }
+
+# TODO(/v2/resolve cleanup): Remove this once /v2/resolve always requires an api key.
+esp:
+  v2_resolve_allow_unregistered: false
+
+# GCP level config.
+ip: 34.117.145.125
+region: us-central1
+api_title: DataCommons API (Autopush)
+nodes: 4
+
+serviceGroups:
+  svg:
+    replicas: 5
+  recon:
+    replicas: 20
+  observation:
+    replicas: 20
+    resources:
+      memoryRequest: "6G"
+      memoryLimit: "6G"
+  node:
+    replicas: 20
+  default:
+    replicas: 10
+
+embeddingsSidecar:
+  env:
+    vertex_ai_models:
+      uae-large-v1-model:
+        prediction_endpoint_id: "8110162693219942400"

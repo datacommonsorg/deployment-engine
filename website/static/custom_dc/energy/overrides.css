@@ -1,0 +1,22 @@
+#main-pane {
+    position: fixed !important;
+    top: 4.375rem !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    margin: 0 !important;
+    width: auto !important;
+}
+
+#main-pane > #explore {
+    margin: 0 !important;
+}
+
+#screen {
+    width: 10rem;
+    background: transparent;
+}
+
+.search-section-container {
+    top: 4rem;
+}

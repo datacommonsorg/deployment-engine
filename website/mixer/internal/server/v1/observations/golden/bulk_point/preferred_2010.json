@@ -1,0 +1,157 @@
+{
+  "observations_by_variable": [
+    {
+      "variable": "Count_Person",
+      "observations_by_entity": [
+        {
+          "entity": "dummy"
+        },
+        {
+          "entity": "country/FRA",
+          "points_by_facet": [
+            {
+              "date": "2010",
+              "value": 65026211,
+              "facet": "3981252704"
+            }
+          ]
+        },
+        {
+          "entity": "country/USA",
+          "points_by_facet": [
+            {
+              "date": "2010",
+              "value": 309327143,
+              "facet": "2176550201"
+            }
+          ]
+        },
+        {
+          "entity": "geoId/06",
+          "points_by_facet": [
+            {
+              "date": "2010",
+              "value": 37319550,
+              "facet": "2176550201"
+            }
+          ]
+        },
+        {
+          "entity": "geoId/0649670",
+          "points_by_facet": [
+            {
+              "date": "2010",
+              "value": 73759,
+              "facet": "2176550201"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "variable": "Count_CriminalActivities_CombinedCrime",
+      "observations_by_entity": [
+        {
+          "entity": "dummy"
+        },
+        {
+          "entity": "country/FRA"
+        },
+        {
+          "entity": "country/USA",
+          "points_by_facet": [
+            {
+              "date": "2010",
+              "value": 10292375,
+              "facet": "1688273529"
+            }
+          ]
+        },
+        {
+          "entity": "geoId/06",
+          "points_by_facet": [
+            {
+              "date": "2010",
+              "value": 1146072,
+              "facet": "4277990144"
+            }
+          ]
+        },
+        {
+          "entity": "geoId/0649670",
+          "points_by_facet": [
+            {
+              "date": "2010",
+              "value": 1633,
+              "facet": "4277990144"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "variable": "Amount_EconomicActivity_GrossNationalIncome_PurchasingPowerParity_PerCapita",
+      "observations_by_entity": [
+        {
+          "entity": "dummy"
+        },
+        {
+          "entity": "country/FRA",
+          "points_by_facet": [
+            {
+              "date": "2010",
+              "value": 36790,
+              "facet": "2171028778"
+            }
+          ]
+        },
+        {
+          "entity": "country/USA",
+          "points_by_facet": [
+            {
+              "date": "2010",
+              "value": 49310,
+              "facet": "2171028778"
+            }
+          ]
+        },
+        {
+          "entity": "geoId/06"
+        },
+        {
+          "entity": "geoId/0649670"
+        }
+      ]
+    }
+  ],
+  "facets": {
+    "1688273529": {
+      "import_name": "FBIGovCrime_AggCountry",
+      "provenance_url": "http://www.fbi.gov/services/cjis/ucr",
+      "observation_period": "P1Y",
+      "is_dc_aggregate": true
+    },
+    "2171028778": {
+      "import_name": "WorldDevelopmentIndicators",
+      "provenance_url": "https://datacatalog.worldbank.org/dataset/world-development-indicators/",
+      "observation_period": "P1Y",
+      "unit": "InternationalDollar"
+    },
+    "2176550201": {
+      "import_name": "USCensusPEP_Annual_Population",
+      "provenance_url": "https://www.census.gov/programs-surveys/popest.html",
+      "measurement_method": "CensusPEPSurvey",
+      "observation_period": "P1Y"
+    },
+    "3981252704": {
+      "import_name": "WorldDevelopmentIndicators",
+      "provenance_url": "https://datacatalog.worldbank.org/dataset/world-development-indicators/",
+      "observation_period": "P1Y"
+    },
+    "4277990144": {
+      "import_name": "FBIGovCrime",
+      "provenance_url": "http://www.fbi.gov/services/cjis/ucr",
+      "observation_period": "P1Y"
+    }
+  }
+}

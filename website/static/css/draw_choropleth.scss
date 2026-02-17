@@ -1,0 +1,51 @@
+/**
+ * Copyright 2020 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+path.region-highlighted,
+path.region-highlighted-no-click {
+  stroke: var(--dark);
+  stroke-width: 3px;
+  opacity: 1 !important;
+}
+
+path.region-highlighted {
+  cursor: pointer;
+}
+
+path.region-highlighted-no-click {
+  cursor: default;
+}
+
+div.region-highlighted path {
+  opacity: 0.5;
+}
+
+#tooltip {
+  background-color: var(--gm-3-white);
+  color: #3b3b3b;
+  font-size: 0.8rem;
+  border-radius: 3px;
+  border: 0.5px solid #dee2e6;
+  padding: 0.3rem;
+  white-space: normal;
+  overflow-wrap: break-word;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.choropleth-legend {
+  margin-top: 0.5rem;
+  text-align: center;
+}

@@ -1,0 +1,12 @@
+{
+  "data": {
+    "country/USA": {
+      "out": [
+        {
+          "provenanceId": "dc/base/WikidataOtherIdGeos",
+          "value": "United States of America"
+        }
+      ]
+    }
+  }
+}

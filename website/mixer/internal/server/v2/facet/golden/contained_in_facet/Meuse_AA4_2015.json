@@ -1,0 +1,30 @@
+{
+  "by_variable": {
+    "Count_Person": {
+      "by_entity": {
+        "": {
+          "ordered_facets": [
+            {
+              "facet_id": "2458695583",
+              "obs_count": 497,
+              "earliest_date": "2015",
+              "latest_date": "2015"
+            }
+          ]
+        }
+      }
+    },
+    "Median_Age_Person": {
+      "by_entity": {
+        "": {}
+      }
+    }
+  },
+  "facets": {
+    "2458695583": {
+      "import_name": "WikidataPopulation",
+      "provenance_url": "https://www.wikidata.org/wiki/Wikidata:Main_Page",
+      "measurement_method": "WikidataPopulation"
+    }
+  }
+}

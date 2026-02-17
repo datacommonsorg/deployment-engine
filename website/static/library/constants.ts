@@ -1,0 +1,42 @@
+/**
+ * Copyright 2023 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/** Default website API endpoint for datacommons library */
+export const DEFAULT_API_ENDPOINT = "https://datacommons.org";
+
+/**
+ *  the API endpoint of the REST v2 API for display purposes when not a custom DC instance
+ */
+export const DEFAULT_API_V2_ENDPOINT = "https://api.datacommons.org";
+
+/**
+ *  the path from the root to the API in a custom DC instance
+ */
+export const CUSTOM_DC_API_PATH = "/core/api";
+
+/** URL for Material Icons Outlined stylesheet to inject into web components */
+export const MATERIAL_ICONS_OUTLINED_STYLESHEET_URL =
+  "https://fonts.googleapis.com/icon?family=Material+Icons+Outlined";
+
+/** URL for Material Icons stylesheet to inject into web components */
+export const MATERIAL_ICONS_STYLESHEET_URL =
+  "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+/** Sets denom to this value for perCapita web components */
+export const DEFAULT_PER_CAPITA_DENOM = "Count_Person";
+
+/** Value to be passed into fetchData and eventually to mixer to log usage from the web components surface */
+export const WEB_COMPONENT_SURFACE = "web-component";

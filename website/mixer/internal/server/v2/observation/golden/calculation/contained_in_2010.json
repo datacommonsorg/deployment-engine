@@ -1,0 +1,31 @@
+{
+  "by_variable": {
+    "test_var_3": {
+      "by_entity": {
+        "geoId/06": {
+          "ordered_facets": [
+            {
+              "facet_id": "1610623020",
+              "observations": [
+                {
+                  "date": "2010",
+                  "value": 2000
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2010",
+              "latest_date": "2010"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "facets": {
+    "1610623020": {
+      "import_name": "Custom Prov",
+      "provenance_url": "custom.datacommons.org",
+      "is_dc_aggregate": true
+    }
+  }
+}

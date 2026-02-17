@@ -1,0 +1,26 @@
+# Helm config
+mixer:
+  hostProject: datcom-stanford
+  serviceName: stanford.api.datacommons.org
+
+ingress:
+  enabled: true
+  name: mixer-ingress-standford
+  annotations:
+    {
+      kubernetes.io/ingress.global-static-ip-name: mixer-ip,
+      ingress.gcp.kubernetes.io/pre-shared-cert: mixer-certificate,
+    }
+
+kgStoreConfig:
+  customBigtableInfo: |
+    project: datcom-stanford
+    instance: dc-graph
+    tables:
+      - private_2022_11_09_07_33_16
+
+# GCP level config
+ip: 35.244.157.41
+region: us-central1
+api_title: DataCommons API (Stanford)
+nodes: 2

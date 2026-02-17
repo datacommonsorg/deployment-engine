@@ -1,0 +1,24 @@
+{
+  "node": "dc/g/Weather",
+  "info": {
+    "absoluteName": "Weather",
+    "childStatVarGroups": [
+      {
+        "id": "dc/g/ObservationalWeather",
+        "specializedEntity": "Observational",
+        "displayName": "Observational",
+        "descendentStatVarCount": 56
+      },
+      {
+        "id": "dc/g/ProjectedWeather",
+        "specializedEntity": "Projected",
+        "displayName": "Projected",
+        "descendentStatVarCount": 1552
+      }
+    ],
+    "descendentStatVarCount": 1608,
+    "parentStatVarGroups": [
+      "dc/g/Environment"
+    ]
+  }
+}

@@ -1,0 +1,297 @@
+/**
+ * Copyright 2020 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+@import "base_tools";
+@import "stat_var_widget";
+@import "../draw_choropleth";
+@import "../draw_scatter.scss";
+@import "../place_selector.scss";
+@import "../source_selector";
+@import "../tool_chart_footer";
+
+#main-pane #plot-container {
+  direction: initial;
+  padding: 2rem;
+  overflow-y: scroll;
+}
+
+#chart-row {
+  display: block;
+}
+
+#chart {
+  font-size: 0.9rem;
+  overflow: hidden; // svg might be temporarily too large during sv widget toggle.
+}
+
+#scatter-plot-container {
+  height: 60vh;
+}
+
+.card {
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin-bottom: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 15px;
+}
+
+#placeholder-container {
+  margin-top: 1rem;
+}
+
+.error-message {
+  color: #721c24;
+  font-size: 0.9rem;
+  padding: 15px;
+  border-radius: 3px;
+  background: #f8d7da;
+}
+
+.plot-options-row {
+  padding: 0.3rem 0;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.plot-options-swap-button {
+  margin-left: -1.6rem;
+}
+
+#plot-options .btn-light {
+  background-color: var(--dc-red-fade);
+}
+
+.info-message {
+  padding: 1.2rem 0;
+}
+
+.plot-options-label {
+  min-width: 11rem;
+}
+
+.scatter-dot:hover {
+  cursor: pointer;
+  fill: var(--dc-primary);
+}
+
+.scatter-dot {
+  stroke: var(--dc-primary);
+}
+
+.density-dot:hover {
+  stroke: var(--dc-gray);
+  stroke-width: 1.5;
+  cursor: pointer;
+}
+
+.search-icon {
+  padding: 0.5rem;
+}
+
+#location-field #ac {
+  background: none;
+}
+
+.radio-selection-label {
+  padding: 0.5rem 0;
+}
+
+.radio-selection-section {
+  margin-left: 2rem;
+  padding-top: 0.5rem;
+}
+
+#scatterplot .quadrant-line {
+  stroke: red;
+  stroke-dasharray: 1;
+}
+
+#scatterplot .quadrant-label,
+#scatterplot .regression-label {
+  fill: red;
+  font-size: 0.8em;
+}
+
+#scatterplot .regression-line {
+  stroke: red;
+}
+
+#scatterplot .dot-label {
+  font-size: 0.8em;
+}
+
+#btn-sv-widget-modal {
+  padding: 0.5rem;
+}
+
+.chart-type-toggle {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  display: flex;
+  margin-left: 0.5rem;
+  height: fit-content;
+}
+
+.chart-type-option,
+.selected-chart-option {
+  display: flex;
+  align-items: center;
+  min-width: 3.5rem;
+  height: 2.4rem;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.selected-chart-option {
+  background-color: var(--dc-primary);
+  border: 0.5px solid var(--dc-gray-lite);
+  border-radius: 8px;
+  i {
+    color: white;
+  }
+}
+
+.chart-type-option i {
+  color: var(--dc-primary);
+}
+
+.chart-type-option:hover {
+  background-color: var(--dc-gray-lite);
+}
+
+.chart-title {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.chart-title h3 {
+  text-align: center;
+  padding: 0px 5px;
+}
+
+.chart-title span {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.scatter-chart-container {
+  position: relative;
+}
+
+#plot-options .plot-options-row .source-selector-open-modal-button {
+  background-color: #f8f8f8;
+  font-size: 0.9rem;
+  margin-left: -0.5rem;
+}
+
+.chart-section-container {
+  padding: 0;
+}
+
+.chart-card.card {
+  border-bottom: none;
+  margin-bottom: 0;
+  border-radius: 0;
+  padding-top: 30px;
+}
+
+#plot-options {
+  font-size: 0.8rem;
+  border: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+#plot-options .container-fluid {
+  padding: 0;
+}
+
+.plot-options-input {
+  padding: 0.1rem 1rem;
+}
+
+.plot-options-input-radio {
+  display: flex;
+  padding: 0.1rem 1rem;
+}
+
+.plot-options-input-radio .form-group {
+  display: flex;
+  margin-bottom: 0;
+}
+
+.plot-options-input-radio .form-group label {
+  display: flex;
+  margin-bottom: 0;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.plot-options-input-radio .form-group label:last-child {
+  padding-right: 10px;
+}
+
+.pop-filter-input {
+  font-size: 0.8rem;
+  padding: 0.3rem;
+}
+
+.plot-options-input-section {
+  padding: 0.3rem 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+}
+
+.form-check-label {
+  display: flex;
+  align-items: center;
+}
+
+.form-check-input {
+  position: relative;
+  margin-right: 0.3rem;
+  margin-top: 0;
+}
+
+.plot-options-input-section.pop-filter {
+  padding-left: 0;
+}
+
+.pop-filter .plot-options-input {
+  padding: 0.1rem 0;
+}
+
+.pop-filter span {
+  padding: 0 1rem;
+}
+
+#swap-axes {
+  font-size: 0.8rem;
+}
+
+.plot-options-input .form-check {
+  padding-left: 0;
+}

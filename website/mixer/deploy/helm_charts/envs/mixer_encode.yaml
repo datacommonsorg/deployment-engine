@@ -1,0 +1,35 @@
+# Helm config
+mixer:
+  hostProject: datcom-mixer-encode
+  serviceName: encode.api.datacommons.org
+
+  bigqueryOnly: true
+  bigqueryTableRef: google.com:datcom-store-dev.dc_v3_encode_clustered
+
+ingress:
+  enabled: true
+  name: mixer-ingress-encode
+
+# Encode instance only services SPARQL
+serviceGroups:
+  svg: null
+  node: null
+  recon: null
+  observation: null
+  default: null
+  sparql:
+    urlPaths:
+      - "/v1/query"
+    replicas:
+      default: 12
+      min: 12
+      max: 24
+    resources:
+      memoryRequest: "2G"
+      memoryLimit: "2G"
+
+# GCP level config
+ip: 34.107.228.109
+region: us-central1
+api_title: DataCommons API (Encode)
+nodes: 1

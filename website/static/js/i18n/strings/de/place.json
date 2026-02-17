@@ -1,0 +1,320 @@
+{
+  "alert-no_data_for_place": {
+    "defaultMessage": "Wir haben leider keine Daten zu {placeName}"
+  },
+  "category_in_place": {
+    "defaultMessage": "{category} in {placeName}"
+  },
+  "chart-title-with-per-capita-and-date": {
+    "defaultMessage": "{variableName} (pro Kopf in {date})"
+  },
+  "chart-title-with-per-capita-no-date": {
+    "defaultMessage": "{variableName} (pro Kopf)"
+  },
+  "chart-title-with-two-variables": {
+    "defaultMessage": "{variable1} im Vergleich zu {variable2}"
+  },
+  "chart-title-with-two-variables-and-location": {
+    "defaultMessage": "{variable1} im Vergleich zu {variable2} in {placeType}, {place}"
+  },
+  "chart_clause-other_placeType": {
+    "defaultMessage": "{chartTitle}: andere {placeType}"
+  },
+  "chart_clause-places_that_contain_place": {
+    "defaultMessage": "{chartTitle}: Orte, die {placeName} enthalten"
+  },
+  "chart_clause-places_within_place": {
+    "defaultMessage": "{chartTitle}: Orte in {placeName}"
+  },
+  "chart_clause-placetype_near_place": {
+    "defaultMessage": "{chartTitle}: {placeType} in der Nähe von {placeName}"
+  },
+  "chart_clause-rankings_in_place": {
+    "defaultMessage": "{variable}: Rankings in {placeName}"
+  },
+  "chart_clause-variable_in_place": {
+    "defaultMessage": "{variable} in {placeName}"
+  },
+  "chart_metadata-dotted_line_explanation": {
+    "defaultMessage": "(gestrichelte Linie zeigt fehlende Daten an)"
+  },
+  "chart_metadata-explore_more": {
+    "defaultMessage": "Mehr entdecken ›"
+  },
+  "chart_metadata-export": {
+    "defaultMessage": "Exportieren"
+  },
+  "chart_metadata-feedback": {
+    "defaultMessage": "Feedback"
+  },
+  "chart_metadata-provenance": {
+    "defaultMessage": "Daten von {sources}"
+  },
+  "child_places_menu-places_in_place": {
+    "defaultMessage": "Orte in {placeName}"
+  },
+  "chooseVariable": {
+    "defaultMessage": "Wähle eine Variable aus, um die Metadaten anzusehen"
+  },
+  "close": {
+    "defaultMessage": "Schließen"
+  },
+  "dateRange": {
+    "defaultMessage": "{minDate} bis {maxDate}"
+  },
+  "disasterTool": {
+    "defaultMessage": "Katastrophen-Tool"
+  },
+  "download": {
+    "defaultMessage": "Herunterladen"
+  },
+  "embed_citation": {
+    "defaultMessage": "Daten von {sources} über Data Commons"
+  },
+  "embed_download_chart_link": {
+    "defaultMessage": "Bild des Diagramms herunterladen"
+  },
+  "embed_download_csv_link": {
+    "defaultMessage": "Daten als CSV-Datei herunterladen"
+  },
+  "embed_export_chart_link": {
+    "defaultMessage": "Dieses Diagramm exportieren"
+  },
+  "enterQuery": {
+    "defaultMessage": "Frage eingeben, um zu suchen"
+  },
+  "exploreLink": {
+    "defaultMessage": "In {toolName} erkunden"
+  },
+  "explore_data_on": {
+    "defaultMessage": "Suche Daten zu… „{sampleQuestion}“"
+  },
+  "header-overview": {
+    "defaultMessage": "Übersicht"
+  },
+  "key_demographics": {
+    "defaultMessage": "Wichtige demografische Merkmale"
+  },
+  "knowledge_graph": {
+    "defaultMessage": "Knowledge Graph"
+  },
+  "link-return_to_overview": {
+    "defaultMessage": "Zurück zur Übersicht"
+  },
+  "loading": {
+    "defaultMessage": "Wird geladen…"
+  },
+  "mapTool": {
+    "defaultMessage": "Karten-Tool"
+  },
+  "more_charts": {
+    "defaultMessage": "Weitere Diagramme"
+  },
+  "more_charts_link": {
+    "defaultMessage": "Weitere Diagramme"
+  },
+  "no_charts": {
+    "defaultMessage": "Keine {category}-Daten für {place} gefunden."
+  },
+  "place_breadcrumb": {
+    "defaultMessage": "{placeType} in {placeName}"
+  },
+  "place_not_found": {
+    "defaultMessage": "Ort „{placeDcid}“ nicht gefunden."
+  },
+  "place_page_ranking_table-ranking_in": {
+    "defaultMessage": "Ranking (in)"
+  },
+  "place_page_ranking_table-ranking_value": {
+    "defaultMessage": "{rank} von {total}"
+  },
+  "place_type_in_places": {
+    "defaultMessage": "{placeType} in {parentPlaces}"
+  },
+  "plural_administrative_area": {
+    "defaultMessage": "Verwaltungsbereiche"
+  },
+  "plural_administrative_area_level": {
+    "defaultMessage": "Orte der Verwaltungseinheit {level}"
+  },
+  "plural_borough": {
+    "defaultMessage": "Bezirke"
+  },
+  "plural_city": {
+    "defaultMessage": "Städte"
+  },
+  "plural_continent": {
+    "defaultMessage": "Kontinente"
+  },
+  "plural_country": {
+    "defaultMessage": "Länder"
+  },
+  "plural_county": {
+    "defaultMessage": "Counties"
+  },
+  "plural_eurostat_nuts": {
+    "defaultMessage": "Eurostat NUTS {level} Orte"
+  },
+  "plural_neighborhood": {
+    "defaultMessage": "Stadtteile"
+  },
+  "plural_places": {
+    "defaultMessage": "Orte"
+  },
+  "plural_state": {
+    "defaultMessage": "Bundesstaaten"
+  },
+  "plural_town": {
+    "defaultMessage": "Ortschaften"
+  },
+  "plural_village": {
+    "defaultMessage": "Dörfer"
+  },
+  "plural_zip_codes": {
+    "defaultMessage": "Postleitzahlen"
+  },
+  "ranking-document_title": {
+    "defaultMessage": "Ranking nach {statVar} – {pluralPlaceType} in {placeName}"
+  },
+  "ranking-loading": {
+    "defaultMessage": "Wird geladen…"
+  },
+  "ranking-no_data": {
+    "defaultMessage": "Es sind keine Rankingdaten verfügbar."
+  },
+  "ranking-page_title": {
+    "defaultMessage": "Ranking nach {statVar}"
+  },
+  "ranking-sort_bottom": {
+    "defaultMessage": "Niedrigste {rankSize} anzeigen"
+  },
+  "ranking-sort_top": {
+    "defaultMessage": "Die {rankSize} Höchstplatzierten anzeigen"
+  },
+  "ranking-subtitle_all": {
+    "defaultMessage": "Alle {pluralPlaceType} in {placeName}"
+  },
+  "ranking-subtitle_all_percapita": {
+    "defaultMessage": "Alle {pluralPlaceType} in {placeName}, pro Kopf"
+  },
+  "ranking-subtitle_bottom": {
+    "defaultMessage": "Untere {rankSize} {pluralPlaceType} in {placeName}"
+  },
+  "ranking-subtitle_bottom_percapita": {
+    "defaultMessage": "Untere {rankSize} {pluralPlaceType} in {placeName}, pro Kopf"
+  },
+  "ranking-subtitle_none": {
+    "defaultMessage": "{pluralPlaceType} in {placeName}"
+  },
+  "ranking-subtitle_none_percapita": {
+    "defaultMessage": "{pluralPlaceType} in {placeName}, pro Kopf"
+  },
+  "ranking-subtitle_top": {
+    "defaultMessage": "Top {rankSize} {pluralPlaceType} in {placeName}"
+  },
+  "ranking-subtitle_top_percapita": {
+    "defaultMessage": "Top {rankSize} {pluralPlaceType} in {placeName}, pro Kopf"
+  },
+  "ranking-tile-latest-data-available-footer": {
+    "defaultMessage": "Ranking basierend auf den neuesten verfügbaren Daten. Einige Orte fehlen möglicherweise aufgrund unvollständiger Daten für dieses Jahr."
+  },
+  "ranking-tile-latest-data-footer": {
+    "defaultMessage": "Dieses Ranking enthält Daten aus mehreren Jahren für eine umfassende Übersicht zu den Orten"
+  },
+  "ranking_table-header_rank": {
+    "defaultMessage": "Rang"
+  },
+  "ranking_table-header_value": {
+    "defaultMessage": "Wert"
+  },
+  "relevant_topics": {
+    "defaultMessage": "Relevante Themen"
+  },
+  "scatterTool": {
+    "defaultMessage": "Streudiagramm"
+  },
+  "search_bar_placeholder-search_again": {
+    "defaultMessage": "Nach einem anderen Ort suchen"
+  },
+  "seePerCapita": {
+    "defaultMessage": "Pro Kopf ansehen"
+  },
+  "selectVariable": {
+    "defaultMessage": "Wähle eine Variable aus der Liste aus, um die Details anzusehen. Über die unten stehenden Links wird der Explorer für statistische Variablen in einem neuen Tab geöffnet."
+  },
+  "showMetadata": {
+    "defaultMessage": "Metadaten anzeigen"
+  },
+  "singular_administrative_area": {
+    "defaultMessage": "Verwaltungseinheit"
+  },
+  "singular_administrative_area_level": {
+    "defaultMessage": "Ort in der Verwaltungseinheit {level}"
+  },
+  "singular_borough": {
+    "defaultMessage": "Bezirk"
+  },
+  "singular_city": {
+    "defaultMessage": "Stadt"
+  },
+  "singular_continent": {
+    "defaultMessage": "Kontinent"
+  },
+  "singular_country": {
+    "defaultMessage": "Land"
+  },
+  "singular_county": {
+    "defaultMessage": "County"
+  },
+  "singular_eurostat_nuts": {
+    "defaultMessage": "Eurostat NUTS {level} Ort"
+  },
+  "singular_neighborhood": {
+    "defaultMessage": "Stadtteil"
+  },
+  "singular_place": {
+    "defaultMessage": "Ort"
+  },
+  "singular_state": {
+    "defaultMessage": "Bundesstaat"
+  },
+  "singular_town": {
+    "defaultMessage": "Ortschaft"
+  },
+  "singular_village": {
+    "defaultMessage": "Dorf"
+  },
+  "singular_zip_code": {
+    "defaultMessage": "Postleitzahl"
+  },
+  "snap-to-latest-data-checkbox-label": {
+    "defaultMessage": "Datum mit der höchsten Abdeckung anzeigen"
+  },
+  "snap-to-latest-data-help-tooltip": {
+    "defaultMessage": "Mit „Datum mit der höchsten Abdeckung anzeigen“ werden die aktuellsten Daten mit der maximalen Abdeckung angezeigt. Einige Orte fehlen möglicherweise aufgrund unvollständiger Daten für dieses Jahr."
+  },
+  "snap-to-latest-data-overlap-help-tooltip": {
+    "defaultMessage": "Die Daten zur höchsten Abdeckung sind auch die neuesten Daten, die für dieses Diagramm verfügbar sind."
+  },
+  "source": {
+    "defaultMessage": "Quelle"
+  },
+  "sources": {
+    "defaultMessage": "Quellen"
+  },
+  "summary_overview": {
+    "defaultMessage": "Übersicht der Zusammenfassung"
+  },
+  "summary_overview_tooltip": {
+    "defaultMessage": "Wir verwenden KI, um Erkenntnisse aus unseren Datenquellen zusammenzufassen (in jedem Diagramm verlinkt). Bitte überprüfen Sie die Zusammenfassung und die Quelldaten."
+  },
+  "the_world": {
+    "defaultMessage": "weltweit"
+  },
+  "timelineTool": {
+    "defaultMessage": "Zeitachsen-Tool"
+  },
+  "viaGoogle": {
+    "defaultMessage": "über Google"
+  }
+}

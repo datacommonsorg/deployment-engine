@@ -1,0 +1,1352 @@
+{
+  "statVarSeries": {
+    "geoId/06065": {
+      "data": {
+        "Count_Person": {
+          "val": {
+            "1970": 456916,
+            "1971": 477600,
+            "1972": 493200,
+            "1973": 497900,
+            "1974": 515900,
+            "1975": 528600,
+            "1976": 548000,
+            "1977": 578000,
+            "1978": 611900,
+            "1979": 640000,
+            "1980": 663199,
+            "1981": 693249,
+            "1982": 719842,
+            "1983": 746898,
+            "1984": 783202,
+            "1985": 825685,
+            "1986": 871209,
+            "1987": 930059,
+            "1988": 995977,
+            "1989": 1084568,
+            "1990": 1170413,
+            "1991": 1193639,
+            "1992": 1248277,
+            "1993": 1290328,
+            "1994": 1321304,
+            "1995": 1354966,
+            "1996": 1383646,
+            "1997": 1406769,
+            "1998": 1439674,
+            "1999": 1480708,
+            "2000": 1558985,
+            "2001": 1616634,
+            "2002": 1687147,
+            "2003": 1771656,
+            "2004": 1856542,
+            "2005": 1931785,
+            "2006": 2012370,
+            "2007": 2075183,
+            "2008": 2109712,
+            "2009": 2146725,
+            "2010": 2201562,
+            "2011": 2233840,
+            "2012": 2260763,
+            "2013": 2286087,
+            "2014": 2315238,
+            "2015": 2344648,
+            "2016": 2378282,
+            "2017": 2413058,
+            "2018": 2443221,
+            "2019": 2465569,
+            "2020": 2489188,
+            "2021": 2458395,
+            "2022": 2479628,
+            "2023": 2503549,
+            "2024": 2529933
+          },
+          "metadata": {
+            "importName": "USCensusPEP_Annual_Population",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+            "measurementMethod": "CensusPEPSurvey",
+            "observationPeriod": "P1Y"
+          }
+        },
+        "Count_Person_25OrMoreYears": {
+          "val": {
+            "2011": 1316392,
+            "2012": 1345607,
+            "2013": 1376023,
+            "2014": 1410823,
+            "2015": 1441999,
+            "2016": 1468896,
+            "2017": 1500538,
+            "2018": 1530229,
+            "2019": 1559869,
+            "2020": 1587803,
+            "2021": 1572798,
+            "2022": 1594000,
+            "2023": 1622575
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_3OrMoreYears": {
+          "val": {
+            "2011": 2059030,
+            "2012": 2097889,
+            "2013": 2135297,
+            "2014": 2174391,
+            "2015": 2206686,
+            "2016": 2232674,
+            "2017": 2263500,
+            "2018": 2291750,
+            "2019": 2320180,
+            "2020": 2348409,
+            "2021": 2323512,
+            "2022": 2346260,
+            "2023": 2366880
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_EducationalAttainmentBachelorsDegree": {
+          "val": {
+            "2012": 178679,
+            "2013": 181572,
+            "2014": 188561,
+            "2015": 192721,
+            "2016": 198192,
+            "2017": 205329,
+            "2018": 212065,
+            "2019": 221322,
+            "2020": 236902,
+            "2021": 238066,
+            "2022": 244893,
+            "2023": 259990
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_EducationalAttainmentDoctorateDegree": {
+          "val": {
+            "2012": 11101,
+            "2013": 11224,
+            "2014": 11808,
+            "2015": 12654,
+            "2016": 12893,
+            "2017": 13123,
+            "2018": 14010,
+            "2019": 15073,
+            "2020": 14974,
+            "2021": 14363,
+            "2022": 15613,
+            "2023": 16175
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_EducationalAttainmentMastersDegree": {
+          "val": {
+            "2012": 67662,
+            "2013": 70877,
+            "2014": 73494,
+            "2015": 76987,
+            "2016": 79849,
+            "2017": 83333,
+            "2018": 86849,
+            "2019": 90052,
+            "2020": 93993,
+            "2021": 95317,
+            "2022": 100450,
+            "2023": 105656
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_EducationalAttainmentNoSchoolingCompleted": {
+          "val": {
+            "2012": 27943,
+            "2013": 29305,
+            "2014": 31036,
+            "2015": 33537,
+            "2016": 35756,
+            "2017": 37119,
+            "2018": 38428,
+            "2019": 40147,
+            "2020": 43910,
+            "2021": 45968,
+            "2022": 49102,
+            "2023": 51205
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_EducationalAttainmentRegularHighSchoolDiploma": {
+          "val": {
+            "2012": 300963,
+            "2013": 308683,
+            "2014": 318752,
+            "2015": 329859,
+            "2016": 337537,
+            "2017": 352253,
+            "2018": 367805,
+            "2019": 374779,
+            "2020": 378041,
+            "2021": 377694,
+            "2022": 379770,
+            "2023": 379036
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_EnrolledInSchool": {
+          "val": {
+            "2011": 636900,
+            "2012": 646813,
+            "2013": 653024,
+            "2014": 659758,
+            "2015": 660858,
+            "2016": 665533,
+            "2017": 668113,
+            "2018": 671906,
+            "2019": 673258,
+            "2020": 671057,
+            "2021": 658531,
+            "2022": 652316,
+            "2023": 650341
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_NotEnrolledInSchool": {
+          "val": {
+            "2011": 1422130,
+            "2012": 1451076,
+            "2013": 1482273,
+            "2014": 1514633,
+            "2015": 1545828,
+            "2016": 1567141,
+            "2017": 1595387,
+            "2018": 1619844,
+            "2019": 1646922,
+            "2020": 1677352,
+            "2021": 1664981,
+            "2022": 1693944,
+            "2023": 1716539
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        }
+      }
+    },
+    "geoId/29": {
+      "data": {
+        "Count_Person": {
+          "val": {
+            "1900": 3108000,
+            "1901": 3128000,
+            "1902": 3147000,
+            "1903": 3166000,
+            "1904": 3185000,
+            "1905": 3204000,
+            "1906": 3223000,
+            "1907": 3242000,
+            "1908": 3260000,
+            "1909": 3279000,
+            "1910": 3301000,
+            "1911": 3317000,
+            "1912": 3344000,
+            "1913": 3409000,
+            "1914": 3467000,
+            "1915": 3492000,
+            "1916": 3527000,
+            "1917": 3470000,
+            "1918": 3325000,
+            "1919": 3371000,
+            "1920": 3404000,
+            "1921": 3429000,
+            "1922": 3437000,
+            "1923": 3454000,
+            "1924": 3508000,
+            "1925": 3526000,
+            "1926": 3556000,
+            "1927": 3576000,
+            "1928": 3601000,
+            "1929": 3622000,
+            "1930": 3646000,
+            "1931": 3711000,
+            "1932": 3746000,
+            "1933": 3773000,
+            "1934": 3784000,
+            "1935": 3798000,
+            "1936": 3801000,
+            "1937": 3794000,
+            "1938": 3781000,
+            "1939": 3783000,
+            "1940": 3786000,
+            "1941": 3811000,
+            "1942": 3829000,
+            "1943": 3705000,
+            "1944": 3560000,
+            "1945": 3516000,
+            "1946": 3746000,
+            "1947": 3845000,
+            "1948": 3844000,
+            "1949": 3882000,
+            "1950": 3964000,
+            "1951": 4015000,
+            "1952": 3972000,
+            "1953": 4020000,
+            "1954": 4066000,
+            "1955": 4134000,
+            "1956": 4163000,
+            "1957": 4189000,
+            "1958": 4186000,
+            "1959": 4258000,
+            "1960": 4326000,
+            "1961": 4349000,
+            "1962": 4357000,
+            "1963": 4392000,
+            "1964": 4442000,
+            "1965": 4467000,
+            "1966": 4523000,
+            "1967": 4539000,
+            "1968": 4568000,
+            "1969": 4640000,
+            "1970": 4677623,
+            "1971": 4725764,
+            "1972": 4758780,
+            "1973": 4782645,
+            "1974": 4795930,
+            "1975": 4808308,
+            "1976": 4839029,
+            "1977": 4863173,
+            "1978": 4889399,
+            "1979": 4912430,
+            "1980": 4916686,
+            "1981": 4932064,
+            "1982": 4929451,
+            "1983": 4943733,
+            "1984": 4975278,
+            "1985": 5000268,
+            "1986": 5023068,
+            "1987": 5056696,
+            "1988": 5081736,
+            "1989": 5095830,
+            "1990": 5126370,
+            "1991": 5157770,
+            "1992": 5193686,
+            "1993": 5237757,
+            "1994": 5281206,
+            "1995": 5324610,
+            "1996": 5367888,
+            "1997": 5407113,
+            "1998": 5437562,
+            "1999": 5468338,
+            "2000": 5607285,
+            "2001": 5641142,
+            "2002": 5674825,
+            "2003": 5709403,
+            "2004": 5747741,
+            "2005": 5790300,
+            "2006": 5842704,
+            "2007": 5887612,
+            "2008": 5923916,
+            "2009": 5961088,
+            "2010": 5996089,
+            "2011": 6011182,
+            "2012": 6026027,
+            "2013": 6042989,
+            "2014": 6059130,
+            "2015": 6075411,
+            "2016": 6091384,
+            "2017": 6111382,
+            "2018": 6125986,
+            "2019": 6140475,
+            "2020": 6151548,
+            "2021": 6168187,
+            "2022": 6179414,
+            "2023": 6208038,
+            "2024": 6245466
+          },
+          "metadata": {
+            "importName": "USCensusPEP_Annual_Population",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+            "measurementMethod": "CensusPEPSurvey",
+            "observationPeriod": "P1Y"
+          }
+        },
+        "Count_Person_25OrMoreYears": {
+          "val": {
+            "2011": 3943728,
+            "2012": 3973614,
+            "2013": 4002608,
+            "2014": 4028930,
+            "2015": 4052300,
+            "2016": 4073377,
+            "2017": 4100209,
+            "2018": 4124838,
+            "2019": 4150049,
+            "2020": 4176792,
+            "2021": 4187819,
+            "2022": 4199109,
+            "2023": 4217432
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_3OrMoreYears": {
+          "val": {
+            "2011": 5727631,
+            "2012": 5756404,
+            "2013": 5784137,
+            "2014": 5806561,
+            "2015": 5824342,
+            "2016": 5839355,
+            "2017": 5854856,
+            "2018": 5868959,
+            "2019": 5884271,
+            "2020": 5905408,
+            "2021": 5925907,
+            "2022": 5944273,
+            "2023": 5956778
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_EducationalAttainmentBachelorsDegree": {
+          "val": {
+            "2012": 642058,
+            "2013": 655633,
+            "2014": 672563,
+            "2015": 685454,
+            "2016": 701863,
+            "2017": 718198,
+            "2018": 729543,
+            "2019": 745843,
+            "2020": 770259,
+            "2021": 789957,
+            "2022": 804597,
+            "2023": 824697
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_EducationalAttainmentDoctorateDegree": {
+          "val": {
+            "2012": 40610,
+            "2013": 42737,
+            "2014": 44714,
+            "2015": 45873,
+            "2016": 46927,
+            "2017": 49226,
+            "2018": 49939,
+            "2019": 52067,
+            "2020": 53118,
+            "2021": 54081,
+            "2022": 54700,
+            "2023": 57176
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_EducationalAttainmentMastersDegree": {
+          "val": {
+            "2012": 274737,
+            "2013": 282661,
+            "2014": 289158,
+            "2015": 300193,
+            "2016": 308835,
+            "2017": 318072,
+            "2018": 329182,
+            "2019": 340251,
+            "2020": 350975,
+            "2021": 363092,
+            "2022": 370034,
+            "2023": 380529
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_EducationalAttainmentNoSchoolingCompleted": {
+          "val": {
+            "2012": 29704,
+            "2013": 30537,
+            "2014": 31490,
+            "2015": 32874,
+            "2016": 33236,
+            "2017": 33469,
+            "2018": 33534,
+            "2019": 34182,
+            "2020": 36156,
+            "2021": 38307,
+            "2022": 40330,
+            "2023": 43534
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_EducationalAttainmentRegularHighSchoolDiploma": {
+          "val": {
+            "2012": 1077444,
+            "2013": 1078278,
+            "2014": 1079905,
+            "2015": 1079150,
+            "2016": 1079050,
+            "2017": 1079154,
+            "2018": 1076664,
+            "2019": 1080715,
+            "2020": 1084262,
+            "2021": 1083713,
+            "2022": 1087681,
+            "2023": 1088422
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_EnrolledInSchool": {
+          "val": {
+            "2011": 1551053,
+            "2012": 1554971,
+            "2013": 1557979,
+            "2014": 1555899,
+            "2015": 1543176,
+            "2016": 1529503,
+            "2017": 1514505,
+            "2018": 1498474,
+            "2019": 1480841,
+            "2020": 1459812,
+            "2021": 1463135,
+            "2022": 1450458,
+            "2023": 1445500
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_NotEnrolledInSchool": {
+          "val": {
+            "2011": 4176578,
+            "2012": 4201433,
+            "2013": 4226158,
+            "2014": 4250662,
+            "2015": 4281166,
+            "2016": 4309852,
+            "2017": 4340351,
+            "2018": 4370485,
+            "2019": 4403430,
+            "2020": 4445596,
+            "2021": 4462772,
+            "2022": 4493815,
+            "2023": 4511278
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        }
+      }
+    },
+    "northamerica": {
+      "data": {
+        "Count_Person": {
+          "val": {
+            "2013": 565265000,
+            "2016": 579000000,
+            "2024": 613150000
+          },
+          "metadata": {
+            "importName": "WikidataPopulation",
+            "provenanceUrl": "https://www.wikidata.org/wiki/Wikidata:Main_Page",
+            "measurementMethod": "WikidataPopulation"
+          }
+        }
+      }
+    }
+  },
+  "allChildPlaces": {
+    "County": {
+      "places": [
+        {
+          "dcid": "geoId/06037",
+          "name": "Los Angeles County",
+          "pop": 9757179
+        },
+        {
+          "dcid": "geoId/06073",
+          "name": "San Diego County",
+          "pop": 3298799
+        },
+        {
+          "dcid": "geoId/06059",
+          "name": "Orange County",
+          "pop": 3170435
+        },
+        {
+          "dcid": "geoId/06065",
+          "name": "Riverside County",
+          "pop": 2529933
+        },
+        {
+          "dcid": "geoId/06071",
+          "name": "San Bernardino County",
+          "pop": 2214281
+        },
+        {
+          "dcid": "geoId/06085",
+          "name": "Santa Clara County",
+          "pop": 1926325
+        },
+        {
+          "dcid": "geoId/06001",
+          "name": "Alameda County",
+          "pop": 1649060
+        },
+        {
+          "dcid": "geoId/06067",
+          "name": "Sacramento County",
+          "pop": 1611231
+        },
+        {
+          "dcid": "geoId/06013",
+          "name": "Contra Costa County",
+          "pop": 1172607
+        },
+        {
+          "dcid": "geoId/06019",
+          "name": "Fresno County",
+          "pop": 1024125
+        },
+        {
+          "dcid": "geoId/06029",
+          "name": "Kern County",
+          "pop": 922529
+        },
+        {
+          "dcid": "geoId/06111",
+          "name": "Ventura County",
+          "pop": 835427
+        },
+        {
+          "dcid": "geoId/06075",
+          "name": "San Francisco County",
+          "pop": 827526
+        },
+        {
+          "dcid": "geoId/06077",
+          "name": "San Joaquin County",
+          "pop": 816108
+        },
+        {
+          "dcid": "geoId/06081",
+          "name": "San Mateo County",
+          "pop": 742893
+        },
+        {
+          "dcid": "geoId/06099",
+          "name": "Stanislaus County",
+          "pop": 556972
+        },
+        {
+          "dcid": "geoId/06097",
+          "name": "Sonoma County",
+          "pop": 485375
+        },
+        {
+          "dcid": "geoId/06107",
+          "name": "Tulare County",
+          "pop": 483546
+        },
+        {
+          "dcid": "geoId/06095",
+          "name": "Solano County",
+          "pop": 455101
+        },
+        {
+          "dcid": "geoId/06083",
+          "name": "Santa Barbara County",
+          "pop": 444500
+        },
+        {
+          "dcid": "geoId/06053",
+          "name": "Monterey County",
+          "pop": 436251
+        },
+        {
+          "dcid": "geoId/06061",
+          "name": "Placer County",
+          "pop": 433822
+        },
+        {
+          "dcid": "geoId/06047",
+          "name": "Merced County",
+          "pop": 296774
+        },
+        {
+          "dcid": "geoId/06079",
+          "name": "San Luis Obispo County",
+          "pop": 281843
+        },
+        {
+          "dcid": "geoId/06087",
+          "name": "Santa Cruz County",
+          "pop": 262406
+        },
+        {
+          "dcid": "geoId/06041",
+          "name": "Marin County",
+          "pop": 256400
+        },
+        {
+          "dcid": "geoId/06113",
+          "name": "Yolo County",
+          "pop": 225251
+        },
+        {
+          "dcid": "geoId/06007",
+          "name": "Butte County",
+          "pop": 208334
+        },
+        {
+          "dcid": "geoId/06017",
+          "name": "El Dorado County",
+          "pop": 192823
+        },
+        {
+          "dcid": "geoId/06025",
+          "name": "Imperial County",
+          "pop": 181724
+        },
+        {
+          "dcid": "geoId/06089",
+          "name": "Shasta County",
+          "pop": 181121
+        },
+        {
+          "dcid": "geoId/06039",
+          "name": "Madera County",
+          "pop": 165432
+        },
+        {
+          "dcid": "geoId/06031",
+          "name": "Kings County",
+          "pop": 154913
+        },
+        {
+          "dcid": "geoId/06055",
+          "name": "Napa County",
+          "pop": 132727
+        },
+        {
+          "dcid": "geoId/06023",
+          "name": "Humboldt County",
+          "pop": 132380
+        },
+        {
+          "dcid": "geoId/06057",
+          "name": "Nevada County",
+          "pop": 102195
+        },
+        {
+          "dcid": "geoId/06101",
+          "name": "Sutter County",
+          "pop": 98545
+        },
+        {
+          "dcid": "geoId/06045",
+          "name": "Mendocino County",
+          "pop": 89175
+        },
+        {
+          "dcid": "geoId/06115",
+          "name": "Yuba County",
+          "pop": 87469
+        },
+        {
+          "dcid": "geoId/06069",
+          "name": "San Benito County",
+          "pop": 69159
+        },
+        {
+          "dcid": "geoId/06033",
+          "name": "Lake County",
+          "pop": 67764
+        },
+        {
+          "dcid": "geoId/06103",
+          "name": "Tehama County",
+          "pop": 64451
+        },
+        {
+          "dcid": "geoId/06109",
+          "name": "Tuolumne County",
+          "pop": 53893
+        },
+        {
+          "dcid": "geoId/06009",
+          "name": "Calaveras County",
+          "pop": 46505
+        },
+        {
+          "dcid": "geoId/06093",
+          "name": "Siskiyou County",
+          "pop": 42498
+        },
+        {
+          "dcid": "geoId/06005",
+          "name": "Amador County",
+          "pop": 42026
+        },
+        {
+          "dcid": "geoId/06035",
+          "name": "Lassen County",
+          "pop": 28340
+        },
+        {
+          "dcid": "geoId/06021",
+          "name": "Glenn County",
+          "pop": 28304
+        },
+        {
+          "dcid": "geoId/06015",
+          "name": "Del Norte County",
+          "pop": 27009
+        },
+        {
+          "dcid": "geoId/06011",
+          "name": "Colusa County",
+          "pop": 22074
+        },
+        {
+          "dcid": "geoId/06063",
+          "name": "Plumas County",
+          "pop": 18834
+        },
+        {
+          "dcid": "geoId/06027",
+          "name": "Inyo County",
+          "pop": 18485
+        },
+        {
+          "dcid": "geoId/06043",
+          "name": "Mariposa County",
+          "pop": 17048
+        },
+        {
+          "dcid": "geoId/06105",
+          "name": "Trinity County",
+          "pop": 15642
+        },
+        {
+          "dcid": "geoId/06051",
+          "name": "Mono County",
+          "pop": 12991
+        },
+        {
+          "dcid": "geoId/06049",
+          "name": "Modoc County",
+          "pop": 8491
+        },
+        {
+          "dcid": "geoId/06091",
+          "name": "Sierra County",
+          "pop": 3113
+        },
+        {
+          "dcid": "geoId/06003",
+          "name": "Alpine County",
+          "pop": 1099
+        }
+      ]
+    }
+  },
+  "latestPopulation": {
+    "country/USA": {
+      "date": "2024",
+      "value": 340110988,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/04": {
+      "date": "2024",
+      "value": 7582384,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/06": {
+      "date": "2024",
+      "value": 39431263,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/06037": {
+      "date": "2024",
+      "value": 9757179,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/06059": {
+      "date": "2024",
+      "value": 3170435,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/06065": {
+      "date": "2024",
+      "value": 2529933,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/06071": {
+      "date": "2024",
+      "value": 2214281,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/06073": {
+      "date": "2024",
+      "value": 3298799,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/08": {
+      "date": "2024",
+      "value": 5957493,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/18": {
+      "date": "2024",
+      "value": 6924275,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/22": {
+      "date": "2024",
+      "value": 4597740,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/29": {
+      "date": "2024",
+      "value": 6245466,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/38": {
+      "date": "2024",
+      "value": 796568,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/47": {
+      "date": "2024",
+      "value": 7227750,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/48": {
+      "date": "2024",
+      "value": 31290831,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/53": {
+      "date": "2024",
+      "value": 7958180,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/72": {
+      "date": "2024",
+      "value": 3203295,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "northamerica": {
+      "date": "2024",
+      "value": 613150000,
+      "metadata": {
+        "importName": "WikidataPopulation",
+        "provenanceUrl": "https://www.wikidata.org/wiki/Wikidata:Main_Page",
+        "measurementMethod": "WikidataPopulation"
+      }
+    }
+  },
+  "validCategories": {
+    "country/USA": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/04": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/06": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/06037": {
+      "category": [
+        "Demographics",
+        "Economics",
+        "Education",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/06059": {
+      "category": [
+        "Demographics",
+        "Economics",
+        "Education",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/06065": {
+      "category": [
+        "Demographics",
+        "Economics",
+        "Education",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/06071": {
+      "category": [
+        "Demographics",
+        "Economics",
+        "Education",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/06073": {
+      "category": [
+        "Demographics",
+        "Economics",
+        "Education",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/08": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/18": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/22": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/29": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/38": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/47": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/48": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/53": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/72": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "northamerica": {
+      "category": [
+        "Demographics",
+        "Overview"
+      ]
+    }
+  },
+  "childPlacesType": "County",
+  "childPlaces": [
+    "geoId/06037",
+    "geoId/06073",
+    "geoId/06059",
+    "geoId/06065",
+    "geoId/06071"
+  ],
+  "parentPlaces": [
+    "country/USA",
+    "northamerica"
+  ],
+  "similarPlaces": [
+    "geoId/38",
+    "geoId/18",
+    "geoId/72",
+    "geoId/47",
+    "geoId/22"
+  ],
+  "nearbyPlaces": [
+    "geoId/48",
+    "geoId/53",
+    "geoId/04",
+    "geoId/29",
+    "geoId/08"
+  ]
+}

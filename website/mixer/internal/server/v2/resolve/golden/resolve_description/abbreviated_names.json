@@ -1,0 +1,89 @@
+{
+  "entities": [
+    {
+      "node": "CA US",
+      "candidates": [
+        {
+          "dcid": "geoId/06"
+        }
+      ]
+    },
+    {
+      "node": "California, USA",
+      "candidates": [
+        {
+          "dcid": "geoId/06"
+        },
+        {
+          "dcid": "geoId/2412150"
+        },
+        {
+          "dcid": "geoId/4210768"
+        },
+        {
+          "dcid": "geoId/2910468"
+        },
+        {
+          "dcid": "geoId/2111872"
+        }
+      ]
+    },
+    {
+      "node": "ME",
+      "candidates": [
+        {
+          "dcid": "geoId/23"
+        },
+        {
+          "dcid": "country/MNE"
+        }
+      ]
+    },
+    {
+      "node": "Mountain View, US",
+      "candidates": [
+        {
+          "dcid": "geoId/0649670"
+        },
+        {
+          "dcid": "geoId/3744770"
+        },
+        {
+          "dcid": "geoId/1553300"
+        },
+        {
+          "dcid": "geoId/0547540"
+        },
+        {
+          "dcid": "geoId/2950438"
+        },
+        {
+          "dcid": "geoId/0649651"
+        },
+        {
+          "dcid": "geoId/5655345"
+        },
+        {
+          "dcid": "geoId/4049650"
+        },
+        {
+          "dcid": "geoId/0852350"
+        },
+        {
+          "dcid": "geoId/3550515"
+        },
+        {
+          "dcid": "geoId/5655200"
+        }
+      ]
+    },
+    {
+      "node": "Sunnyvale CA",
+      "candidates": [
+        {
+          "dcid": "geoId/0677000"
+        }
+      ]
+    }
+  ]
+}

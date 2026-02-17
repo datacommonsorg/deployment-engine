@@ -1,0 +1,68 @@
+{
+  "data": {
+    "dc/g/Farm_FarmInventoryStatus-InventorySold_FarmInventoryType": {
+      "arcs": {
+        "specializationOf+": {
+          "nodes": [
+            {
+              "types": [
+                "StatVarGroup"
+              ],
+              "dcid": "dc/g/Agriculture"
+            },
+            {
+              "types": [
+                "StatVarGroup"
+              ],
+              "dcid": "dc/g/Farm"
+            },
+            {
+              "types": [
+                "StatVarGroup"
+              ],
+              "dcid": "dc/g/Farm_FarmInventoryStatus"
+            },
+            {
+              "types": [
+                "StatVarGroup"
+              ],
+              "dcid": "dc/g/Farm_FarmInventoryStatus-InventorySold"
+            },
+            {
+              "types": [
+                "StatVarGroup"
+              ],
+              "dcid": "dc/g/Root"
+            }
+          ]
+        }
+      }
+    },
+    "dc/g/Person_BachelorsDegreeMajor-BusinessMajor": {
+      "arcs": {
+        "specializationOf+": {
+          "nodes": [
+            {
+              "types": [
+                "StatVarGroup"
+              ],
+              "dcid": "dc/g/Education"
+            },
+            {
+              "types": [
+                "StatVarGroup"
+              ],
+              "dcid": "dc/g/Person_BachelorsDegreeMajor"
+            },
+            {
+              "types": [
+                "StatVarGroup"
+              ],
+              "dcid": "dc/g/Root"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

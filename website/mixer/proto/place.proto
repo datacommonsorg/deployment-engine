@@ -1,0 +1,193 @@
+// Copyright 2021 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+//  **** IMPORTANT NOTE ****
+//
+//  The proto of BT data has to match exactly the g3 proto, including tag
+//  number.
+
+// REST API URL from the proto in this file:
+// ========================================
+//    /node/places-in
+//    /node/related-locations
+//    /node/ranking-locations
+//    /place/stats-var
+//    /place/stat-vars
+//    /place/metadata
+//    /v1/place/stat-vars/union
+//    /place/stat/date/within-place
+// ========================================
+
+syntax = "proto3";
+package datacommons;
+
+option go_package = "github.com/datacommonsorg/mixer/internal/proto";
+
+message PlaceStatVars { repeated string stat_var_ids = 1; }
+
+message DateList { repeated string dates = 1; }
+
+message ContainedPlaces { repeated string dcids = 1; }
+
+// Related places info for a given place and condition.
+message RelatedPlacesInfo {
+  message Ranking {
+    message RankInfo {
+      int32 rank = 1;
+      optional double value = 2;
+      string place_dcid = 3;
+    }
+    repeated RankInfo info = 1;
+  }
+  // The following 2 fields are set only when place is not empty.
+  int32 rank_from_top = 2;    // Starting from 1.
+  int32 rank_from_bottom = 3; // Starting from 1.
+
+  // The following 3 fields are set only when place is empty.
+  Ranking rank_all = 7;
+  Ranking rank_top_1000 = 8;
+  Ranking rank_bottom_1000 = 9;
+
+  reserved 1, 4, 5, 6;
+}
+
+// Request to get places that are contained in parent places.
+message GetPlacesInRequest {
+  // The parent place dcids.
+  repeated string dcids = 1;
+
+  // The child place type.
+  string place_type = 2;
+}
+
+// Response of GetPlacesIn.
+message GetPlacesInResponse {
+  // The JSON payload.
+  string payload = 1;
+}
+
+// Request to get related locations of a place for given stat var DCIDs.
+message GetRelatedLocationsRequest {
+  // Place DCID.
+  string dcid = 1;
+
+  repeated string stat_var_dcids = 2;
+
+  // (Optional) Whether to require all related places under the same ancestor.
+  string within_place = 4;
+
+  // (Optional) Whether the computation needs to be based on per capita.
+  bool is_per_capita = 5;
+}
+// Response of GetRelatedLocations request.
+message GetRelatedLocationsResponse { map<string, RelatedPlacesInfo> data = 1; }
+
+// Request to get rankings of locations for given stat var DCIDs.
+message GetLocationsRankingsRequest {
+  repeated string stat_var_dcids = 1;
+
+  // Place type to get rankings for.
+  string place_type = 2;
+
+  // (Optional) Whether to require all related places under the same ancestor.
+  string within_place = 3;
+
+  // (Optional) Whether the computation needs to be based on per capita.
+  bool is_per_capita = 4;
+}
+
+message GetLocationsRankingsResponse {
+  map<string, RelatedPlacesInfo> data = 1;
+}
+
+// StatsVars represent a list of statistical variable dcids.
+message StatsVars { repeated string statsVars = 1; }
+
+// Request message for GetPlaceStats API.
+message GetPlaceStatsVarRequest {
+  // DCIDs of the places.
+  repeated string dcids = 1;
+}
+
+// Response message for GetPlaceStats API.
+message GetPlaceStatsVarResponse {
+  // A map from place dcid to a list of statistical variable dcids.
+  map<string, StatsVars> places = 1;
+}
+
+// StatVars represent a list of statistical variable dcids.
+message StatVars { repeated string stat_vars = 1; }
+
+// Request message for GetPlaceStatVars API.
+message GetPlaceStatVarsRequest {
+  // DCIDs of the places.
+  repeated string dcids = 1;
+}
+
+// Response message for GetPlaceStatVars API.
+message GetPlaceStatVarsResponse {
+  // A map from place dcid to a list of statistical variable dcids.
+  map<string, StatVars> places = 1;
+}
+
+// Request message for GetEntityStatVarsUnionV1 API.
+message GetEntityStatVarsUnionRequest {
+  // DCIDs of the entities.
+  repeated string dcids = 1;
+  // (optional) DCID of stat vars to filter for
+  repeated string stat_vars = 2;
+}
+// Response message for GetEntityStatVarsUnionV1 API.
+message GetEntityStatVarsUnionResponse { repeated string stat_vars = 1; }
+
+message GetPlaceStatDateWithinPlaceRequest {
+  string ancestor_place = 1;
+  string place_type = 2;
+  repeated string stat_vars = 3;
+}
+
+message GetPlaceStatDateWithinPlaceResponse {
+  // Keyed by statVar.
+  map<string, DateList> data = 1;
+}
+
+// Metadata of a place. This is the raw cache data.
+message PlaceMetadataCache {
+  message PlaceInfo {
+    string dcid = 1;
+    string name = 2;
+    // This is the dominant type if multiple.
+    string type = 3;
+    // List of DCIDs of immediate parents. Each will have an entry in "places"
+    // list.
+    repeated string parents = 4;
+  }
+
+  // This includes the place itself, as well as all its ancestors.
+  // The DCID of the "main" place is part of the Cache key.
+  repeated PlaceInfo places = 1;
+}
+
+// Metadata of a place. This is used in API response
+message PlaceMetadata {
+  message PlaceInfo {
+    string dcid = 1;
+    string name = 2;
+    // This is the dominant type if multiple.
+    string type = 3;
+  }
+
+  PlaceInfo self = 1;
+  repeated PlaceInfo parents = 2;
+}

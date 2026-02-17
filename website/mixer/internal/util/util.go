@@ -1,0 +1,773 @@
+// Copyright 2023 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+package util
+
+import (
+	"bytes"
+	"compress/gzip"
+	"context"
+	"encoding/base64"
+	"encoding/json"
+	"fmt"
+	"hash/fnv"
+	"io"
+	"log/slog"
+	"math"
+	"math/rand"
+	"net/http"
+	"net/url"
+	"os"
+	"regexp"
+	"sort"
+	"strings"
+	"time"
+
+	secretmanager "cloud.google.com/go/secretmanager/apiv1"
+	"cloud.google.com/go/secretmanager/apiv1/secretmanagerpb"
+	pb "github.com/datacommonsorg/mixer/internal/proto"
+	pbv2 "github.com/datacommonsorg/mixer/internal/proto/v2"
+	"github.com/datacommonsorg/mixer/internal/server/resource"
+	"golang.org/x/text/cases"
+	"golang.org/x/text/language"
+	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/metadata"
+	"google.golang.org/grpc/status"
+	"google.golang.org/protobuf/encoding/protojson"
+	"google.golang.org/protobuf/proto"
+	"google.golang.org/protobuf/reflect/protoreflect"
+)
+
+const (
+	// LimitFactor is the amount to multiply the limit by to make sure certain
+	// triples are returned by the BQ query.
+	LimitFactor = 1
+	// TextType represents text type.
+	TextType = "Text"
+	// String to represent in arc direction
+	DirectionIn = "in"
+	// String to represent out arc direction
+	DirectionOut = "out"
+	// Maps API key ID
+	MapsAPIKeyID = "maps-api-key"
+	// Mixer API key
+	MixerAPIKeyID = "mixer-api-key"
+)
+
+var childTypeDenyList = map[string]struct{}{
+	"Place":               {},
+	"CensusBlockGroup":    {},
+	"CensusTract":         {},
+	"AdministrativeArea":  {},
+	"AdministrativeArea4": {},
+	"AdministrativeArea5": {},
+	"S2CellLevel7":        {},
+	"S2CellLevel8":        {},
+	"S2CellLevel9":        {},
+	"S2CellLevel10":       {},
+	"S2CellLevel11":       {},
+	"S2CellLevel13":       {},
+}
+
+var childTypeAllowListForEarth = map[string]struct{}{
+	"Continent":           {},
+	"Country":             {},
+	"AdministrativeArea1": {},
+	"State":               {},
+	"AdministrativeArea2": {},
+	"County":              {},
+}
+
+// PlaceStatVar holds a place and a stat var dcid.
+type PlaceStatVar struct {
+	Place   string
+	StatVar string
+}
+
+type typeInfo struct {
+	Predicate string `json:"predicate"`
+	SubType   string `json:"subType"`
+	ObjType   string `json:"objType"`
+}
+
+// TypePair represents two types that are related.
+type TypePair struct {
+	Child  string
+	Parent string
+}
+
+type EntityVariable struct {
+	E string
+	V string
+}
+
+// SamplingStrategy represents the strategy to sample a JSON object.
+//
+// Sampling is performed uniform acroos the items for list, or the keys for
+// map.For example, when MaxSample=4, sampling of [1,2,3,4,5,6,7,8,9]
+// would give [3,5,7,9]
+type SamplingStrategy struct {
+	// Maximum number of samples.
+	//
+	// -1 means sample all the data. A positive integer indicates the maximum
+	// number of samples.
+	MaxSample int
+	// Sampling strategy for the child fields.
+	Children map[string]*SamplingStrategy
+	// Proto fields or map keys that are not sampled at all.
+	Exclude []string
+}
+
+// SQLDriver represents the type of SQL driver to use.
+type SQLDriver int
+
+// Enum values for SQLDriver.
+const (
+	SQLDriverUnknown SQLDriver = iota // SQLDriverUnknown = 0
+	SQLDriverSQLite                   // SQLDriverSQLite = 1
+	SQLDriverMySQL                    // SQLDriverMySQL = 2
+)
+
+// Custom RPC headers
+const (
+	// Whether to skip reading from Redis cache.
+	// To use, set header "X-Skip-Cache: true"
+	XSkipCache = "X-Skip-Cache"
+)
+
+// ZipAndEncode compresses the given content using gzip and encodes it in base64
+func ZipAndEncode(content []byte) (string, error) {
+	// Zip the content
+	compressed, err := Zip(content)
+	if err != nil {
+		return "", err
+	}
+
+	// Encode using base64
+	encode := base64.StdEncoding.EncodeToString(compressed)
+	return encode, nil
+}
+
+// UnzipAndDecode decompresses the given content using gzip and decodes it from base64.
+func UnzipAndDecode(content string) ([]byte, error) {
+	// Decode from base64
+	decoded, err := base64.StdEncoding.DecodeString(content)
+	if err != nil {
+		return nil, err
+	}
+
+	// Unzip the string
+	return Unzip(decoded)
+}
+
+// Zip compresses the given content using gzip.
+func Zip(content []byte) ([]byte, error) {
+	// Zip the string
+	var buf bytes.Buffer
+	gzWriter := gzip.NewWriter(&buf)
+
+	_, err := gzWriter.Write(content)
+	if err != nil {
+		return nil, err
+	}
+	if err := gzWriter.Flush(); err != nil {
+		return nil, err
+	}
+	if err := gzWriter.Close(); err != nil {
+		return nil, err
+	}
+
+	return buf.Bytes(), nil
+}
+
+// Unzip compresses the given content using gzip.
+func Unzip(content []byte) ([]byte, error) {
+
+	// Unzip the content
+	gzReader, err := gzip.NewReader(bytes.NewReader(content))
+	if err != nil {
+		return nil, err
+	}
+	//nolint:errcheck // TODO: Fix pre-existing issue and remove comment.
+	defer gzReader.Close()
+	gzResult, err := io.ReadAll(gzReader)
+	if err != nil {
+		return nil, err
+	}
+	return gzResult, nil
+}
+
+// StringList formats a list of strings into a comma-separated list with each surrounded
+// with quotes.
+func StringList(strs []string) string {
+	strWithQuote := []string{}
+	for _, s := range strs {
+		strWithQuote = append(strWithQuote, fmt.Sprintf(`"%s"`, s))
+	}
+	return strings.Join(strWithQuote, ", ")
+}
+
+// StringContainedIn returns true if TARGET is contained in STRS
+func StringContainedIn(target string, strs []string) bool {
+	for _, s := range strs {
+		if s == target {
+			return true
+		}
+	}
+	return false
+}
+
+// GetContainedIn returns the contained in relation change given two types.
+func GetContainedIn(typeRelationJSONFilePath string) (map[TypePair][]string, error) {
+	typeRelationJSON, err := os.ReadFile(typeRelationJSONFilePath)
+	if err != nil {
+		return nil, err
+	}
+
+	ti := []typeInfo{}
+	err = json.Unmarshal(typeRelationJSON, &ti)
+	if err != nil {
+		return nil, err
+	}
+	result := make(map[TypePair][]string)
+	link := map[string][]string{}
+	for _, info := range ti {
+		if info.Predicate == "containedInPlace" {
+			link[info.SubType] = append(link[info.SubType], info.ObjType)
+			pair := TypePair{Child: info.SubType, Parent: info.ObjType}
+			result[pair] = []string{}
+		}
+	}
+	for c, ps := range link {
+		morep := ps
+		for len(morep) > 0 {
+			curr := morep[0]
+			morep = morep[1:]
+			for _, p := range link[curr] {
+				result[TypePair{c, p}] = append(result[TypePair{c, curr}], curr)
+				morep = append(morep, p)
+			}
+		}
+	}
+	return result, nil
+}
+
+// SnakeToCamel converts a snake case string to camel case string.
+func SnakeToCamel(s string) string {
+	if !strings.Contains(s, "_") {
+		return s
+	}
+
+	var result string
+	parts := strings.Split(s, "_")
+	capitalize := false
+	for _, p := range parts {
+		if p == "" {
+			continue
+		}
+
+		if !capitalize {
+			result += p
+			capitalize = true
+		} else {
+			result += cases.Title(language.Und, cases.NoLower).String(p)
+		}
+	}
+	return result
+}
+
+var match = regexp.MustCompile("([a-z0-9])([A-Z])")
+
+// CamelToSnake converts a camel case string to snake case string.
+func CamelToSnake(str string) string {
+	return strings.ToLower(match.ReplaceAllString(str, "${1}_${2}"))
+}
+
+// CheckValidDCIDs checks if DCIDs are valid. More criteria will be added as being discovered.
+func CheckValidDCIDs(dcids []string) error {
+	for _, dcid := range dcids {
+		if dcid == "" || strings.Contains(dcid, " ") || strings.Contains(dcid, ",") {
+			return status.Errorf(
+				codes.InvalidArgument,
+				"CheckValidDCIDs failed with invalid node: %s", dcid)
+		}
+	}
+	return nil
+}
+
+// RandomString creates a random string with 16 runes.
+func RandomString() string {
+	r := rand.New(rand.NewSource(time.Now().UnixNano()))
+	chars := []rune("ABCDEFGHIJKLMNOPQRSTUVWXYZ" +
+		"abcdefghijklmnopqrstuvwxyz" +
+		"0123456789")
+	length := 16
+	var b strings.Builder
+	for i := 0; i < length; i++ {
+		b.WriteRune(chars[r.Intn(len(chars))])
+	}
+	return b.String()
+}
+
+var re = regexp.MustCompile(`(.+?)\/(.+?)\/(.+)`)
+
+// KeyToDcid ...
+// The Bigtable key is in the form of "x/y/dcid^prop1^prop2^..."
+func KeyToDcid(key string) (string, error) {
+	parts := strings.Split(key, "^")
+	match := re.FindStringSubmatch(parts[0])
+	if len(match) != 4 {
+		return "", status.Errorf(codes.Internal, "Invalid bigtable row key %s", key)
+	}
+	return match[3], nil
+}
+
+// RemoveKeyPrefix removes the prefix of a big query key
+func RemoveKeyPrefix(key string) (string, error) {
+	match := re.FindStringSubmatch(key)
+	if len(match) != 4 {
+		return "", status.Errorf(codes.Internal, "Invalid bigtable row key %s", key)
+	}
+	return match[3], nil
+}
+
+// MergeDedupe merges a list of string lists and remove duplicate elements.
+func MergeDedupe(strLists ...[]string) []string {
+	m := map[string]struct{}{}
+	result := []string{}
+	for _, strList := range strLists {
+		for _, str := range strList {
+			if _, ok := m[str]; !ok {
+				result = append(result, str)
+				m[str] = struct{}{}
+			}
+		}
+	}
+	sort.Strings(result)
+	return result
+}
+
+// Sample constructs a sampled protobuf message based on the sampling strategy.
+// The output is deterministic given the same strategy.
+func Sample(m proto.Message, strategy *SamplingStrategy) proto.Message {
+	pr := m.ProtoReflect()
+	pr.Range(func(fd protoreflect.FieldDescriptor, value protoreflect.Value) bool {
+		fieldName := fd.JSONName()
+
+		// Clear the excluded fields
+		for _, ex := range strategy.Exclude {
+			if ex == fieldName {
+				pr.Clear(fd)
+				return true
+			}
+		}
+
+		// If a field is not in the sampling strategy, keep it.
+		strat, ok := strategy.Children[fieldName]
+		if !ok {
+			return true
+		}
+		// Note, map[string]proto.Message is treated as protoreflect.MessageKind,
+		// So here need to check field and list first.
+		if fd.IsList() {
+			// Sample list.
+			oldList := value.List()
+			length := oldList.Len()
+			var newList protoreflect.List
+
+			maxSample := strat.MaxSample
+			if strat.MaxSample == -1 || strat.MaxSample > length {
+				maxSample = length
+			}
+			inc := 1
+			if length > maxSample {
+				inc = int(math.Ceil(float64(length) / float64(maxSample)))
+			}
+			// Get the latest data first
+			for i := 0; i < maxSample; i++ {
+				ind := length - 1 - i*inc
+				if ind < 0 {
+					break
+				}
+				newList.Append(oldList.Get(ind))
+			}
+			pr.Set(fd, protoreflect.ValueOfList(newList))
+		} else if fd.IsMap() {
+			currMap := value.Map()
+			// Get all the keys
+			allKeys := []string{}
+			currMap.Range(func(k protoreflect.MapKey, v protoreflect.Value) bool {
+				// Excluded keys
+				for _, ex := range strat.Exclude {
+					if ex == k.String() {
+						return true
+					}
+				}
+				allKeys = append(allKeys, k.String())
+				return true
+			})
+			// Sort the keys
+			sort.Strings(allKeys)
+			// Sample keys
+			sampleKeys := map[string]struct{}{}
+
+			maxSample := strat.MaxSample
+			if strat.MaxSample == -1 || strat.MaxSample > len(allKeys) {
+				maxSample = len(allKeys)
+			}
+			inc := 1
+			if len(allKeys) > maxSample {
+				inc = int(math.Ceil(float64(len(allKeys)) / float64(maxSample)))
+			}
+			for i := 0; i < maxSample; i++ {
+				ind := len(allKeys) - 1 - i*inc
+				if ind < 0 {
+					break
+				}
+				sampleKeys[allKeys[ind]] = struct{}{}
+			}
+			// Clear un-sampled entries
+			currMap.Range(func(k protoreflect.MapKey, v protoreflect.Value) bool {
+				if _, ok := sampleKeys[k.String()]; !ok {
+					currMap.Clear(k)
+				}
+				return true
+			})
+			// If there are children strategy in a map, then apply this strategy to
+			// each value of the map.
+			if len(strat.Children) > 0 {
+				currMap.Range(func(k protoreflect.MapKey, v protoreflect.Value) bool {
+					Sample(v.Message().Interface(), strat)
+					return true
+				})
+			}
+
+			// Set the map
+			pr.Set(fd, protoreflect.ValueOfMap(currMap))
+		} else if fd.Kind() == protoreflect.MessageKind {
+			Sample(value.Message().Interface(), strat)
+		}
+		return true
+	})
+	return m
+}
+
+// TimeTrack is used to track function execution time.
+func TimeTrack(start time.Time, name string) {
+	elapsed := time.Since(start)
+	slog.Info("Tracked function execution time", "name", name, "duration", elapsed)
+}
+
+// KeysToSlice stores the keys of a map in a slice.
+func KeysToSlice(m map[string]bool) []string {
+	s := make([]string, len(m))
+	i := 0
+	for k := range m {
+		s[i] = k
+		i++
+	}
+	sort.Strings(s)
+	return s
+}
+
+// GetFacet derives the facet from a source series.
+func GetFacet(s *pb.SourceSeries) *pb.Facet {
+	return &pb.Facet{
+		ImportName:        s.ImportName,
+		MeasurementMethod: s.MeasurementMethod,
+		ObservationPeriod: s.ObservationPeriod,
+		ScalingFactor:     s.ScalingFactor,
+		Unit:              s.Unit,
+		ProvenanceUrl:     s.ProvenanceUrl,
+		IsDcAggregate:     s.IsDcAggregate,
+	}
+}
+
+// GetFacetID retrieves a hash string for a given protobuf message.
+// Note this should be restrict to a request scope.
+func GetFacetID(m *pb.Facet) string {
+	// Only include fields that are set in hash.
+	// This is so the hashes stay consistent if more fields are added.
+	s := strings.Join([]string{
+		m.ImportName,
+		m.MeasurementMethod,
+		m.ObservationPeriod,
+		m.ScalingFactor,
+		m.Unit,
+	}, "-")
+	if m.IsDcAggregate {
+		s += "-IsDcAggregate"
+	}
+	h := fnv.New32a()
+	_, _ = h.Write([]byte(s))
+	return fmt.Sprint(h.Sum32())
+}
+
+func ShouldIncludeFacet(filter *pbv2.FacetFilter, facet *pb.Facet, facetId string) bool {
+	if filter == nil {
+		return true
+	}
+
+	// Use facetID if provided, else generate.
+	facetID := facetId
+	if facetID == "" {
+		facetID = GetFacetID(facet)
+	}
+
+	if filter.FacetIds != nil {
+		matchedFacetId := false
+		for _, facetId := range filter.FacetIds {
+			if facetID == facetId {
+				matchedFacetId = true
+			}
+		}
+		if !matchedFacetId {
+			return false
+		}
+	}
+	if filter.Domains != nil {
+		url, err := url.Parse(facet.ProvenanceUrl)
+		if err != nil {
+			return false
+		}
+		matchedDomain := false
+		for _, domain := range filter.Domains {
+			if strings.HasSuffix(url.Hostname(), domain) {
+				matchedDomain = true
+				break
+			}
+		}
+		if !matchedDomain {
+			return false
+		}
+	}
+	return true
+}
+
+// EncodeProto encodes a protobuf message into a compressed string
+func EncodeProto(m proto.Message) (string, error) {
+	data, err := proto.Marshal(m)
+	if err != nil {
+		return "", err
+	}
+	if len(data) == 0 {
+		return "", nil
+	}
+	return ZipAndEncode(data)
+}
+
+// StringListIntersection finds common strings among a list of string lists.
+// For example, for input [[a,b,c],[a,c,d],[a,c,e]], it returns [a,c].
+func StringListIntersection(list [][]string) []string {
+	uniqueStringSet := map[string]struct{}{}
+	listOfStringSets := []map[string]struct{}{}
+	for _, strs := range list {
+		strSet := map[string]struct{}{}
+		for _, str := range strs {
+			uniqueStringSet[str] = struct{}{}
+			strSet[str] = struct{}{}
+		}
+		listOfStringSets = append(listOfStringSets, strSet)
+	}
+
+	res := []string{}
+	for str := range uniqueStringSet {
+		isCommonStr := true
+		for _, set := range listOfStringSets {
+			if _, ok := set[str]; !ok {
+				isCommonStr = false
+				break
+			}
+		}
+		if isCommonStr {
+			res = append(res, str)
+		}
+	}
+	sort.Strings(res)
+
+	return res
+}
+
+func ReadLatestSecret(ctx context.Context, projectID, secretID string) (string, error) {
+	// Environment variables can not have "-". Since these key ids are used in
+	// GCP secret manager already, change "-" to "-" here.
+	secret := os.Getenv(strings.ToUpper(strings.ReplaceAll(secretID, "-", "_")))
+	if secret != "" {
+		return secret, nil
+	}
+
+	// Create the context and the client.
+	client, err := secretmanager.NewClient(ctx)
+	if err != nil {
+		return "", fmt.Errorf("failed to create secret manager client: %v", err)
+	}
+	//nolint:errcheck // TODO: Fix pre-existing issue and remove comment.
+	defer client.Close()
+
+	// Build the request to access the latest secret version.
+	req := &secretmanagerpb.AccessSecretVersionRequest{
+		Name: fmt.Sprintf("projects/%s/secrets/%s/versions/latest", projectID, secretID),
+	}
+
+	// Access the secret version.
+	result, err := client.AccessSecretVersion(ctx, req)
+	if err != nil {
+		return "", fmt.Errorf("failed to access latest secret version: %v", err)
+	}
+
+	// Return the secret payload as a string.
+	return string(result.Payload.Data), nil
+}
+
+// StringSetToSlice is a helper to convert a string set to a string slice.
+func StringSetToSlice(s map[string]struct{}) []string {
+	res := []string{}
+	for k := range s {
+		res = append(res, k)
+	}
+	return res
+}
+
+func FetchRemote(
+	metadata *resource.Metadata,
+	httpClient *http.Client,
+	apiPath string,
+	in proto.Message,
+	out proto.Message,
+	surfaceHeaderValue ...string,
+) error {
+
+	url := metadata.RemoteMixerDomain + apiPath
+	jsonValue, err := protojson.Marshal(in)
+	if err != nil {
+		return err
+	}
+	request, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonValue))
+	if err != nil {
+		return err
+	}
+	request.Header.Set("Content-Type", "application/json")
+	request.Header.Set("X-API-Key", metadata.RemoteMixerAPIKey)
+	// X-Remote indicates that the mixer call is made to a remote mixer
+	// which is typically from a Custom DC instance.
+	request.Header.Set("X-Remote", "true")
+	// Pass in the surfaceHeaderValue from the call to remote mixer.
+	if len(surfaceHeaderValue) > 0 && surfaceHeaderValue[0] != "" {
+		request.Header.Set("X-Surface", surfaceHeaderValue[0])
+	}
+	slog.Info(fmt.Sprintf("[DC][RemoteMixerCall] url=%s", url), "url", url)
+	response, err := httpClient.Do(request)
+	if err != nil {
+		return err
+	}
+	//nolint:errcheck // TODO: Fix pre-existing issue and remove comment.
+	defer response.Body.Close()
+	// Read response body
+	var responseBodyBytes []byte
+	if response.StatusCode != http.StatusOK {
+		return fmt.Errorf("remote mixer response not ok: %s", response.Status)
+	}
+	responseBodyBytes, err = io.ReadAll(response.Body)
+	if err != nil {
+		return err
+	}
+	// Convert response body to string
+	unmarshaler := protojson.UnmarshalOptions{DiscardUnknown: true}
+	return unmarshaler.Unmarshal(responseBodyBytes, out)
+}
+
+// HasCollectionCache decides whether the Bigtable collection cache exists
+// for given ancestor and child type.
+func HasCollectionCache(ancestor string, childType string) bool {
+	if ancestor == "Earth" {
+		_, ok := childTypeAllowListForEarth[childType]
+		return ok
+	}
+	if strings.HasPrefix(ancestor, "geoId/") &&
+		(len(ancestor) == 8 /* US State DCID size */ ||
+			len(ancestor) == 13 /* US City DCID size */) &&
+		childType == "CensusTract" {
+		return true
+	}
+	_, ok := childTypeDenyList[childType]
+	return !ok
+}
+
+// GetAllDescendentSV get all the descendent stat var for an svg.
+func GetAllDescendentSV(svgMap map[string]*pb.StatVarGroupNode, svgDcid string) []string {
+	res := []string{}
+	if _, ok := svgMap[svgDcid]; !ok {
+		return res
+	}
+	node := svgMap[svgDcid]
+	for _, childSVG := range node.ChildStatVarGroups {
+		res = append(res, GetAllDescendentSV(svgMap, childSVG.Id)...)
+	}
+	for _, sv := range node.ChildStatVars {
+		res = append(res, sv.Id)
+	}
+	return MergeDedupe(res)
+}
+
+// GetMissingStrings returns strings from the wantStrings that are missing gotStrings.
+func GetMissingStrings(gotStrings []string, wantStrings []string) []string {
+	gotStringsSet := make(map[string]struct{})
+	for _, col := range gotStrings {
+		gotStringsSet[col] = struct{}{}
+	}
+
+	var missingStrings []string
+	for _, col := range wantStrings {
+		if _, ok := gotStringsSet[col]; !ok {
+			missingStrings = append(missingStrings, col)
+		}
+	}
+
+	return missingStrings
+}
+
+// MergeMaps returns a new map by merging the specified maps.
+func MergeMaps[K comparable, V any](m1 map[K]V, ms ...map[K]V) map[K]V {
+	merged := make(map[K]V)
+	for k, v := range m1 {
+		merged[k] = v
+	}
+	for _, m2 := range ms {
+		for k, v := range m2 {
+			merged[k] = v // Overwrites if key exists in m1
+		}
+	}
+	return merged
+}
+
+// Extracts metadata from the context of a request. These headers
+// are used in the usagelogger to determine which DC feature a call originates
+// from, and if it is making a call to to a remote mixer.
+func GetMetadata(ctx context.Context) (surface string, toRemote bool) {
+	md, ok := metadata.FromIncomingContext(ctx)
+	if !ok {
+		slog.Warn("Error: There was a problem accessing the request's metadata", "err", ok)
+	} else {
+		// Setting the surface for the usage logger.
+		// This is the origin of the query -- website, MCP server, public API (= blank surface), etc.
+		if values := md.Get("x-surface"); len(values) > 0 {
+			surface = values[0]
+		}
+		// Indicates if the call came from a Custom DC making a call to remote mixer.
+		if values := md.Get("x-remote"); len(values) > 0 {
+			toRemote = (values[0] != "")
+		}
+	}
+	return surface, toRemote
+}

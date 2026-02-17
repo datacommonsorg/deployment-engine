@@ -1,0 +1,1030 @@
+{
+  "alert-no_data_for_place": [
+    {
+      "type": 0,
+      "value": "Spiacenti, nessun dato disponibile in merito a: "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    }
+  ],
+  "category_in_place": [
+    {
+      "type": 1,
+      "value": "category"
+    },
+    {
+      "type": 0,
+      "value": " in "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    }
+  ],
+  "chart-title-with-per-capita-and-date": [
+    {
+      "type": 1,
+      "value": "variableName"
+    },
+    {
+      "type": 0,
+      "value": " (pro capite in data "
+    },
+    {
+      "type": 1,
+      "value": "date"
+    },
+    {
+      "type": 0,
+      "value": ")"
+    }
+  ],
+  "chart-title-with-per-capita-no-date": [
+    {
+      "type": 1,
+      "value": "variableName"
+    },
+    {
+      "type": 0,
+      "value": " (pro capite)"
+    }
+  ],
+  "chart-title-with-two-variables": [
+    {
+      "type": 0,
+      "value": "Confronto tra "
+    },
+    {
+      "type": 1,
+      "value": "variable1"
+    },
+    {
+      "type": 0,
+      "value": " e "
+    },
+    {
+      "type": 1,
+      "value": "variable2"
+    }
+  ],
+  "chart-title-with-two-variables-and-location": [
+    {
+      "type": 0,
+      "value": "Confronto tra "
+    },
+    {
+      "type": 1,
+      "value": "variable1"
+    },
+    {
+      "type": 0,
+      "value": " e "
+    },
+    {
+      "type": 1,
+      "value": "variable2"
+    },
+    {
+      "type": 0,
+      "value": " in "
+    },
+    {
+      "type": 1,
+      "value": "placeType"
+    },
+    {
+      "type": 0,
+      "value": " in "
+    },
+    {
+      "type": 1,
+      "value": "place"
+    }
+  ],
+  "chart_clause-other_placeType": [
+    {
+      "type": 1,
+      "value": "chartTitle"
+    },
+    {
+      "type": 0,
+      "value": ": "
+    },
+    {
+      "type": 1,
+      "value": "placeType"
+    },
+    {
+      "type": 0,
+      "value": " differenti"
+    }
+  ],
+  "chart_clause-places_that_contain_place": [
+    {
+      "type": 1,
+      "value": "chartTitle"
+    },
+    {
+      "type": 0,
+      "value": ": luoghi con "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    }
+  ],
+  "chart_clause-places_within_place": [
+    {
+      "type": 1,
+      "value": "chartTitle"
+    },
+    {
+      "type": 0,
+      "value": ": luoghi in "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    }
+  ],
+  "chart_clause-placetype_near_place": [
+    {
+      "type": 1,
+      "value": "chartTitle"
+    },
+    {
+      "type": 0,
+      "value": ": "
+    },
+    {
+      "type": 1,
+      "value": "placeType"
+    },
+    {
+      "type": 0,
+      "value": " nei pressi di "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    }
+  ],
+  "chart_clause-rankings_in_place": [
+    {
+      "type": 1,
+      "value": "variable"
+    },
+    {
+      "type": 0,
+      "value": ": ranking in "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    }
+  ],
+  "chart_clause-variable_in_place": [
+    {
+      "type": 1,
+      "value": "variable"
+    },
+    {
+      "type": 0,
+      "value": " in: "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    }
+  ],
+  "chart_metadata-dotted_line_explanation": [
+    {
+      "type": 0,
+      "value": "(la linea tratteggiata indica dati mancanti)"
+    }
+  ],
+  "chart_metadata-explore_more": [
+    {
+      "type": 0,
+      "value": "Esplora altro ›"
+    }
+  ],
+  "chart_metadata-export": [
+    {
+      "type": 0,
+      "value": "Esporta"
+    }
+  ],
+  "chart_metadata-feedback": [
+    {
+      "type": 0,
+      "value": "Feedback"
+    }
+  ],
+  "chart_metadata-provenance": [
+    {
+      "type": 0,
+      "value": "Dati di "
+    },
+    {
+      "type": 1,
+      "value": "sources"
+    }
+  ],
+  "child_places_menu-places_in_place": [
+    {
+      "type": 0,
+      "value": "Luoghi in: "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    }
+  ],
+  "chooseVariable": [
+    {
+      "type": 0,
+      "value": "Scegli una variabile per visualizzarne i metadati"
+    }
+  ],
+  "close": [
+    {
+      "type": 0,
+      "value": "Chiudi"
+    }
+  ],
+  "dateRange": [
+    {
+      "type": 0,
+      "value": "Da "
+    },
+    {
+      "type": 1,
+      "value": "minDate"
+    },
+    {
+      "type": 0,
+      "value": " a "
+    },
+    {
+      "type": 1,
+      "value": "maxDate"
+    }
+  ],
+  "disasterTool": [
+    {
+      "type": 0,
+      "value": "Strumento calamità"
+    }
+  ],
+  "download": [
+    {
+      "type": 0,
+      "value": "Scarica"
+    }
+  ],
+  "embed_citation": [
+    {
+      "type": 0,
+      "value": "Dati di "
+    },
+    {
+      "type": 1,
+      "value": "sources"
+    },
+    {
+      "type": 0,
+      "value": " tramite Data Commons"
+    }
+  ],
+  "embed_download_chart_link": [
+    {
+      "type": 0,
+      "value": "Scarica l'immagine del grafico"
+    }
+  ],
+  "embed_download_csv_link": [
+    {
+      "type": 0,
+      "value": "Scarica i dati in formato CSV"
+    }
+  ],
+  "embed_export_chart_link": [
+    {
+      "type": 0,
+      "value": "Esporta questo grafico"
+    }
+  ],
+  "enterQuery": [
+    {
+      "type": 0,
+      "value": "Inserisci una domanda da approfondire"
+    }
+  ],
+  "exploreLink": [
+    {
+      "type": 0,
+      "value": "Esplora in "
+    },
+    {
+      "type": 1,
+      "value": "toolName"
+    }
+  ],
+  "explore_data_on": [
+    {
+      "type": 0,
+      "value": "Esplora i dati su… \""
+    },
+    {
+      "type": 1,
+      "value": "sampleQuestion"
+    },
+    {
+      "type": 0,
+      "value": "\""
+    }
+  ],
+  "header-overview": [
+    {
+      "type": 0,
+      "value": "Panoramica"
+    }
+  ],
+  "key_demographics": [
+    {
+      "type": 0,
+      "value": "Principali dati demografici"
+    }
+  ],
+  "knowledge_graph": [
+    {
+      "type": 0,
+      "value": "Knowledge Graph"
+    }
+  ],
+  "link-return_to_overview": [
+    {
+      "type": 0,
+      "value": "Torna alla panoramica"
+    }
+  ],
+  "loading": [
+    {
+      "type": 0,
+      "value": "Caricamento in corso…"
+    }
+  ],
+  "mapTool": [
+    {
+      "type": 0,
+      "value": "Strumento mappa"
+    }
+  ],
+  "more_charts": [
+    {
+      "type": 0,
+      "value": "Altri grafici"
+    }
+  ],
+  "more_charts_link": [
+    {
+      "type": 0,
+      "value": "Altri grafici"
+    }
+  ],
+  "no_charts": [
+    {
+      "type": 0,
+      "value": "Nessun dato di "
+    },
+    {
+      "type": 1,
+      "value": "category"
+    },
+    {
+      "type": 0,
+      "value": " trovato per "
+    },
+    {
+      "type": 1,
+      "value": "place"
+    },
+    {
+      "type": 0,
+      "value": "."
+    }
+  ],
+  "place_breadcrumb": [
+    {
+      "type": 1,
+      "value": "placeType"
+    },
+    {
+      "type": 0,
+      "value": " in "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    }
+  ],
+  "place_not_found": [
+    {
+      "type": 0,
+      "value": "Luogo \""
+    },
+    {
+      "type": 1,
+      "value": "placeDcid"
+    },
+    {
+      "type": 0,
+      "value": "\" non trovato."
+    }
+  ],
+  "place_page_ranking_table-ranking_in": [
+    {
+      "type": 0,
+      "value": "Posizioni (in)"
+    }
+  ],
+  "place_page_ranking_table-ranking_value": [
+    {
+      "type": 1,
+      "value": "rank"
+    },
+    {
+      "type": 0,
+      "value": " di "
+    },
+    {
+      "type": 1,
+      "value": "total"
+    }
+  ],
+  "place_type_in_places": [
+    {
+      "type": 1,
+      "value": "placeType"
+    },
+    {
+      "type": 0,
+      "value": " in "
+    },
+    {
+      "type": 1,
+      "value": "parentPlaces"
+    }
+  ],
+  "plural_administrative_area": [
+    {
+      "type": 0,
+      "value": "Aree amministrative"
+    }
+  ],
+  "plural_administrative_area_level": [
+    {
+      "type": 0,
+      "value": "Posizioni "
+    },
+    {
+      "type": 1,
+      "value": "level"
+    },
+    {
+      "type": 0,
+      "value": " area amministrativa"
+    }
+  ],
+  "plural_borough": [
+    {
+      "type": 0,
+      "value": "Distretti"
+    }
+  ],
+  "plural_city": [
+    {
+      "type": 0,
+      "value": "Città"
+    }
+  ],
+  "plural_continent": [
+    {
+      "type": 0,
+      "value": "Continenti"
+    }
+  ],
+  "plural_country": [
+    {
+      "type": 0,
+      "value": "Paesi"
+    }
+  ],
+  "plural_county": [
+    {
+      "type": 0,
+      "value": "Contee"
+    }
+  ],
+  "plural_eurostat_nuts": [
+    {
+      "type": 0,
+      "value": "Luoghi Eurostat NUTS "
+    },
+    {
+      "type": 1,
+      "value": "level"
+    }
+  ],
+  "plural_neighborhood": [
+    {
+      "type": 0,
+      "value": "Quartieri"
+    }
+  ],
+  "plural_places": [
+    {
+      "type": 0,
+      "value": "Luoghi"
+    }
+  ],
+  "plural_state": [
+    {
+      "type": 0,
+      "value": "Stati"
+    }
+  ],
+  "plural_town": [
+    {
+      "type": 0,
+      "value": "Città"
+    }
+  ],
+  "plural_village": [
+    {
+      "type": 0,
+      "value": "Villaggi"
+    }
+  ],
+  "plural_zip_codes": [
+    {
+      "type": 0,
+      "value": "Codici postali"
+    }
+  ],
+  "ranking-document_title": [
+    {
+      "type": 0,
+      "value": "Classifica per "
+    },
+    {
+      "type": 1,
+      "value": "statVar"
+    },
+    {
+      "type": 0,
+      "value": " - "
+    },
+    {
+      "type": 1,
+      "value": "pluralPlaceType"
+    },
+    {
+      "type": 0,
+      "value": " in "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    }
+  ],
+  "ranking-loading": [
+    {
+      "type": 0,
+      "value": "Caricamento in corso…"
+    }
+  ],
+  "ranking-no_data": [
+    {
+      "type": 0,
+      "value": "Non sono disponibili dati relativi al posizionamento."
+    }
+  ],
+  "ranking-page_title": [
+    {
+      "type": 0,
+      "value": "Classifica per "
+    },
+    {
+      "type": 1,
+      "value": "statVar"
+    }
+  ],
+  "ranking-sort_bottom": [
+    {
+      "type": 0,
+      "value": "Mostra ultime "
+    },
+    {
+      "type": 1,
+      "value": "rankSize"
+    },
+    {
+      "type": 0,
+      "value": " posizioni"
+    }
+  ],
+  "ranking-sort_top": [
+    {
+      "type": 0,
+      "value": "Mostra prime "
+    },
+    {
+      "type": 1,
+      "value": "rankSize"
+    },
+    {
+      "type": 0,
+      "value": " posizioni"
+    }
+  ],
+  "ranking-subtitle_all": [
+    {
+      "type": 1,
+      "value": "pluralPlaceType"
+    },
+    {
+      "type": 0,
+      "value": " in "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": " (tutti i valori)"
+    }
+  ],
+  "ranking-subtitle_all_percapita": [
+    {
+      "type": 1,
+      "value": "pluralPlaceType"
+    },
+    {
+      "type": 0,
+      "value": " in "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": ", pro capite (tutti i valori)"
+    }
+  ],
+  "ranking-subtitle_bottom": [
+    {
+      "type": 1,
+      "value": "rankSize"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "pluralPlaceType"
+    },
+    {
+      "type": 0,
+      "value": " con il posizionamento più basso in "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    }
+  ],
+  "ranking-subtitle_bottom_percapita": [
+    {
+      "type": 1,
+      "value": "rankSize"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "pluralPlaceType"
+    },
+    {
+      "type": 0,
+      "value": " con il posizionamento più basso in "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": ", pro capite"
+    }
+  ],
+  "ranking-subtitle_none": [
+    {
+      "type": 1,
+      "value": "pluralPlaceType"
+    },
+    {
+      "type": 0,
+      "value": " in "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    }
+  ],
+  "ranking-subtitle_none_percapita": [
+    {
+      "type": 1,
+      "value": "pluralPlaceType"
+    },
+    {
+      "type": 0,
+      "value": " in "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": ", pro capite"
+    }
+  ],
+  "ranking-subtitle_top": [
+    {
+      "type": 1,
+      "value": "rankSize"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "pluralPlaceType"
+    },
+    {
+      "type": 0,
+      "value": " con il posizionamento più alto in "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    }
+  ],
+  "ranking-subtitle_top_percapita": [
+    {
+      "type": 1,
+      "value": "rankSize"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "pluralPlaceType"
+    },
+    {
+      "type": 0,
+      "value": " con il posizionamento più alto in "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": ", pro capite"
+    }
+  ],
+  "ranking-tile-latest-data-available-footer": [
+    {
+      "type": 0,
+      "value": "Classificazione basata sugli ultimi dati disponibili. Alcuni luoghi potrebbero mancare a causa di dati incompleti in quell'anno."
+    }
+  ],
+  "ranking-tile-latest-data-footer": [
+    {
+      "type": 0,
+      "value": "Questa classificazione include dati di diversi anni per una visualizzazione completa dei luoghi."
+    }
+  ],
+  "ranking_table-header_rank": [
+    {
+      "type": 0,
+      "value": "Posizione"
+    }
+  ],
+  "ranking_table-header_value": [
+    {
+      "type": 0,
+      "value": "Valore"
+    }
+  ],
+  "relevant_topics": [
+    {
+      "type": 0,
+      "value": "Argomenti pertinenti"
+    }
+  ],
+  "scatterTool": [
+    {
+      "type": 0,
+      "value": "Strumento dispersione"
+    }
+  ],
+  "search_bar_placeholder-search_again": [
+    {
+      "type": 0,
+      "value": "Cerca un altro luogo"
+    }
+  ],
+  "seePerCapita": [
+    {
+      "type": 0,
+      "value": "Visualizza pro capite"
+    }
+  ],
+  "selectVariable": [
+    {
+      "type": 0,
+      "value": "Seleziona una variabile dall'elenco per visualizzarne i dettagli. I link di seguito aprono Esploratore delle variabili statistiche in una nuova scheda."
+    }
+  ],
+  "showMetadata": [
+    {
+      "type": 0,
+      "value": "Mostra metadati"
+    }
+  ],
+  "singular_administrative_area": [
+    {
+      "type": 0,
+      "value": "Area amministrativa"
+    }
+  ],
+  "singular_administrative_area_level": [
+    {
+      "type": 0,
+      "value": "Luogo dell'area amministrativa "
+    },
+    {
+      "type": 1,
+      "value": "level"
+    }
+  ],
+  "singular_borough": [
+    {
+      "type": 0,
+      "value": "Distretto"
+    }
+  ],
+  "singular_city": [
+    {
+      "type": 0,
+      "value": "Città"
+    }
+  ],
+  "singular_continent": [
+    {
+      "type": 0,
+      "value": "Continente"
+    }
+  ],
+  "singular_country": [
+    {
+      "type": 0,
+      "value": "Paese"
+    }
+  ],
+  "singular_county": [
+    {
+      "type": 0,
+      "value": "Contea"
+    }
+  ],
+  "singular_eurostat_nuts": [
+    {
+      "type": 0,
+      "value": "Luogo Eurostat NUTS "
+    },
+    {
+      "type": 1,
+      "value": "level"
+    }
+  ],
+  "singular_neighborhood": [
+    {
+      "type": 0,
+      "value": "Quartiere"
+    }
+  ],
+  "singular_place": [
+    {
+      "type": 0,
+      "value": "Luogo"
+    }
+  ],
+  "singular_state": [
+    {
+      "type": 0,
+      "value": "Stato"
+    }
+  ],
+  "singular_town": [
+    {
+      "type": 0,
+      "value": "Città"
+    }
+  ],
+  "singular_village": [
+    {
+      "type": 0,
+      "value": "Villaggio"
+    }
+  ],
+  "singular_zip_code": [
+    {
+      "type": 0,
+      "value": "Codice postale"
+    }
+  ],
+  "snap-to-latest-data-checkbox-label": [
+    {
+      "type": 0,
+      "value": "Allinea alla data con la copertura massima"
+    }
+  ],
+  "snap-to-latest-data-help-tooltip": [
+    {
+      "type": 0,
+      "value": "\"Allinea alla data con la copertura massima\" mostra i dati più recenti con la copertura massima. Alcuni luoghi potrebbero mancare a causa di dati incompleti in quell'anno."
+    }
+  ],
+  "snap-to-latest-data-overlap-help-tooltip": [
+    {
+      "type": 0,
+      "value": "I dati con la copertura massima sono anche i più recenti disponibili per questo grafico."
+    }
+  ],
+  "source": [
+    {
+      "type": 0,
+      "value": "Fonte"
+    }
+  ],
+  "sources": [
+    {
+      "type": 0,
+      "value": "Fonti"
+    }
+  ],
+  "summary_overview": [
+    {
+      "type": 0,
+      "value": "Panoramica di riepilogo"
+    }
+  ],
+  "summary_overview_tooltip": [
+    {
+      "type": 0,
+      "value": "Utilizziamo l'AI per riassumere le informazioni provenienti dai dati che reperiamo (collegati a ciascun grafico). Sebbene ci impegniamo a garantire l'accuratezza, ti invitiamo a rivedere il riepilogo e a consultare i dati di origine."
+    }
+  ],
+  "the_world": [
+    {
+      "type": 0,
+      "value": "nel mondo"
+    }
+  ],
+  "timelineTool": [
+    {
+      "type": 0,
+      "value": "Strumento cronologia"
+    }
+  ],
+  "viaGoogle": [
+    {
+      "type": 0,
+      "value": "tramite Google"
+    }
+  ]
+}

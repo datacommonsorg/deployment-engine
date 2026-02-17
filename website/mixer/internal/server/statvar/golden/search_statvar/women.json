@@ -1,0 +1,3958 @@
+{
+  "statVars": [
+    {
+      "name": "Adolescent fertility rate (per 1000 women aged 15-19 years)",
+      "dcid": "who/asfr1"
+    },
+    {
+      "name": "Countries with systems to track and make public allocations for gender equality and women's empowerment",
+      "dcid": "sdg/SG_GEN_EQPWNN"
+    },
+    {
+      "name": "Degree to which the legal framework guarantees women's equal rights to land ownership and/or control",
+      "dcid": "sdg/SG_LGL_LNDFEMOD"
+    },
+    {
+      "name": "Estimated number of pregnant women living with HIV",
+      "dcid": "who/HIV_0000000020"
+    },
+    {
+      "name": "Estimated number of pregnant women living with HIV needing antiretrovirals for preventing mother-to-child transmission",
+      "dcid": "who/HIV_0000000021"
+    },
+    {
+      "name": "Extent to which countries have laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education",
+      "dcid": "sdg/SH_LGR_ACSRHE"
+    },
+    {
+      "name": "Extent to which countries have laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education: Component 10: HIV Counselling and Test Services",
+      "dcid": "sdg/SH_LGR_ACSRHEC10"
+    },
+    {
+      "name": "Extent to which countries have laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education: Component 11: HIV Treatment and Care Services",
+      "dcid": "sdg/SH_LGR_ACSRHEC11"
+    },
+    {
+      "name": "Extent to which countries have laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education: Component 12: HIV Confidentiality",
+      "dcid": "sdg/SH_LGR_ACSRHEC12"
+    },
+    {
+      "name": "Extent to which countries have laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education: Component 13: HPV Vaccine",
+      "dcid": "sdg/SH_LGR_ACSRHEC13"
+    },
+    {
+      "name": "Extent to which countries have laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education: Component 1: Maternity Care",
+      "dcid": "sdg/SH_LGR_ACSRHEC1"
+    },
+    {
+      "name": "Extent to which countries have laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education: Component 2: Life Saving Commodities",
+      "dcid": "sdg/SH_LGR_ACSRHEC2"
+    },
+    {
+      "name": "Extent to which countries have laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education: Component 3: Abortion",
+      "dcid": "sdg/SH_LGR_ACSRHEC3"
+    },
+    {
+      "name": "Extent to which countries have laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education: Component 4: Post-Abortion Care",
+      "dcid": "sdg/SH_LGR_ACSRHEC4"
+    },
+    {
+      "name": "Extent to which countries have laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education: Component 5: Contraceptive Services",
+      "dcid": "sdg/SH_LGR_ACSRHEC5"
+    },
+    {
+      "name": "Extent to which countries have laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education: Component 6: Contraceptive Consent",
+      "dcid": "sdg/SH_LGR_ACSRHEC6"
+    },
+    {
+      "name": "Extent to which countries have laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education: Component 7: Emergency Contraception",
+      "dcid": "sdg/SH_LGR_ACSRHEC7"
+    },
+    {
+      "name": "Extent to which countries have laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education: Component 8: Sexuality Education Curriculum Laws",
+      "dcid": "sdg/SH_LGR_ACSRHEC8"
+    },
+    {
+      "name": "Extent to which countries have laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education: Component 9: Sexuality Education Curriculum Topics",
+      "dcid": "sdg/SH_LGR_ACSRHEC9"
+    },
+    {
+      "name": "Extent to which countries have laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education: Section 1: Maternity Care",
+      "dcid": "sdg/SH_LGR_ACSRHES1"
+    },
+    {
+      "name": "Extent to which countries have laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education: Section 2: Contraceptive and Family Planning",
+      "dcid": "sdg/SH_LGR_ACSRHES2"
+    },
+    {
+      "name": "Extent to which countries have laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education: Section 3: Sexuality Education",
+      "dcid": "sdg/SH_LGR_ACSRHES3"
+    },
+    {
+      "name": "Extent to which countries have laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education: Section 4: HIV and HPV",
+      "dcid": "sdg/SH_LGR_ACSRHES4"
+    },
+    {
+      "name": "Income Inequality Between Men and Women of Working Age",
+      "dcid": "GenderIncomeInequality_Person_15OrMoreYears_WithIncome"
+    },
+    {
+      "name": "Legal frameworks that promote, enforce and monitor gender equality -- Area 2: violence against women",
+      "dcid": "sdg/SG_LGL_GENEQVAW"
+    },
+    {
+      "name": "Mean hemoglobin level of non-pregnant women (aged 15-49 years)",
+      "dcid": "who/HEMOGLOBINLEVEL_NONPREGNANT_MEAN"
+    },
+    {
+      "name": "Mean hemoglobin level of pregnant women (aged 15-49 years)",
+      "dcid": "who/HEMOGLOBINLEVEL_PREGNANT_MEAN"
+    },
+    {
+      "name": "Mean hemoglobin level of women of reproductive age (aged 15-49 years)",
+      "dcid": "who/HEMOGLOBINLEVEL_REPRODUCTIVEAGE_MEAN"
+    },
+    {
+      "name": "Number of pregnant women living with HIV who received antiretrovirals for preventing mother-to-child transmission",
+      "dcid": "who/HIV_0000000015"
+    },
+    {
+      "name": "Obesity prevalence in non-pregnant women aged 15-49 years, BMI \u003e= 30 (%)",
+      "dcid": "who/bmi30wm"
+    },
+    {
+      "name": "Percentage of women aged 15-49 with a live birth in a given time period, attended at least once during pregnancy by skilled health personnel for reasons related to the pregnancy.",
+      "dcid": "who/WHS4_111"
+    },
+    {
+      "name": "Percentage of women with a live birth in the two years prior to the survey who put the newborn infant to the breast within one hour of birth (%)",
+      "dcid": "who/bfearly"
+    },
+    {
+      "name": "Pregnant women attending antenatal care at least once and receiving at least 3 doses of Intermittent Preventive Treatment of Malaria for Pregnant Women (IPTp3) (%)",
+      "dcid": "who/MALARIA_IPTP3_COVERAGE"
+    },
+    {
+      "name": "Proportion of countries with systems to track and make public allocations for gender equality and women's empowerment",
+      "dcid": "sdg/SG_GEN_EQPWN"
+    },
+    {
+      "name": "Proportion of pregnant women sleeping under insecticide-treated mosquito nets",
+      "dcid": "who/itnwm"
+    },
+    {
+      "name": "Share of women among owners or rights-bearers of agricultural land",
+      "dcid": "sdg/SP_GNP_WNOWNS"
+    },
+    {
+      "name": "The percentage of women aged 15-49 with a live birth in a given time period that received antenatal care four or more times.",
+      "dcid": "who/WHS4_154"
+    },
+    {
+      "name": "Women of reproductive age (15-49 years) who are married or in-union who have their need for family planning satisfied with modern methods (%), UNPD",
+      "dcid": "who/FAMILYPLANNINGUNPDUHC"
+    },
+    {
+      "name": "Adolescent fertility rate (per 1000 women aged 15-19 years) [Decile 1 (poorest)]",
+      "dcid": "who/asfr1.WEALTHDECILE--WEALTHDECILE01"
+    },
+    {
+      "name": "Adolescent fertility rate (per 1000 women aged 15-19 years) [Decile 10 (richest)]",
+      "dcid": "who/asfr1.WEALTHDECILE--WEALTHDECILE10"
+    },
+    {
+      "name": "Adolescent fertility rate (per 1000 women aged 15-19 years) [Decile 2]",
+      "dcid": "who/asfr1.WEALTHDECILE--WEALTHDECILE02"
+    },
+    {
+      "name": "Adolescent fertility rate (per 1000 women aged 15-19 years) [Decile 3]",
+      "dcid": "who/asfr1.WEALTHDECILE--WEALTHDECILE03"
+    },
+    {
+      "name": "Adolescent fertility rate (per 1000 women aged 15-19 years) [Decile 4]",
+      "dcid": "who/asfr1.WEALTHDECILE--WEALTHDECILE04"
+    },
+    {
+      "name": "Adolescent fertility rate (per 1000 women aged 15-19 years) [Decile 5]",
+      "dcid": "who/asfr1.WEALTHDECILE--WEALTHDECILE05"
+    },
+    {
+      "name": "Adolescent fertility rate (per 1000 women aged 15-19 years) [Decile 6]",
+      "dcid": "who/asfr1.WEALTHDECILE--WEALTHDECILE06"
+    },
+    {
+      "name": "Adolescent fertility rate (per 1000 women aged 15-19 years) [Decile 7]",
+      "dcid": "who/asfr1.WEALTHDECILE--WEALTHDECILE07"
+    },
+    {
+      "name": "Adolescent fertility rate (per 1000 women aged 15-19 years) [Decile 8]",
+      "dcid": "who/asfr1.WEALTHDECILE--WEALTHDECILE08"
+    },
+    {
+      "name": "Adolescent fertility rate (per 1000 women aged 15-19 years) [Decile 9]",
+      "dcid": "who/asfr1.WEALTHDECILE--WEALTHDECILE09"
+    },
+    {
+      "name": "Adolescent fertility rate (per 1000 women aged 15-19 years) [Primary]",
+      "dcid": "who/asfr1.EDUCATIONLEVEL--PRLM"
+    },
+    {
+      "name": "Adolescent fertility rate (per 1000 women aged 15-19 years) [Q1 (Poorest)]",
+      "dcid": "who/asfr1.WEALTHQUINTILE--WQ1"
+    },
+    {
+      "name": "Adolescent fertility rate (per 1000 women aged 15-19 years) [Q2]",
+      "dcid": "who/asfr1.WEALTHQUINTILE--WQ2"
+    },
+    {
+      "name": "Adolescent fertility rate (per 1000 women aged 15-19 years) [Q3]",
+      "dcid": "who/asfr1.WEALTHQUINTILE--WQ3"
+    },
+    {
+      "name": "Adolescent fertility rate (per 1000 women aged 15-19 years) [Q4]",
+      "dcid": "who/asfr1.WEALTHQUINTILE--WQ4"
+    },
+    {
+      "name": "Adolescent fertility rate (per 1000 women aged 15-19 years) [Q5 (Richest)]",
+      "dcid": "who/asfr1.WEALTHQUINTILE--WQ5"
+    },
+    {
+      "name": "Adolescent fertility rate (per 1000 women aged 15-19 years) [Rural]",
+      "dcid": "who/asfr1.RESIDENCEAREATYPE--RUR"
+    },
+    {
+      "name": "Adolescent fertility rate (per 1000 women aged 15-19 years) [Secondary or higher]",
+      "dcid": "who/asfr1.EDUCATIONLEVEL--SHLM"
+    },
+    {
+      "name": "Adolescent fertility rate (per 1000 women aged 15-19 years) [Urban]",
+      "dcid": "who/asfr1.RESIDENCEAREATYPE--URB"
+    },
+    {
+      "name": "Adolescent fertility rate (per 1000 women aged 15-19 years) [nan]",
+      "dcid": "who/asfr1.EDUCATIONLEVEL--NHLM"
+    },
+    {
+      "name": "Count of Establishment: Other Women's And Girls' Outerwear Mfg (NAICS/315239)",
+      "dcid": "dc/65cetnnp7zdy6"
+    },
+    {
+      "name": "Count of Establishment: Other Women's And Girls' Outerwear Mfg (NAICS/315239)",
+      "dcid": "dc/nmncplhr93mxd"
+    },
+    {
+      "name": "Count of Establishment: Other Women's And Girls' Outerwear Mfg (NAICS/315239)",
+      "dcid": "dc/ths2sxts0989g"
+    },
+    {
+      "name": "Count of Establishment: Women's And Children's Clothing Merch. Whls. (NAICS/42433)",
+      "dcid": "dc/01r1n7ysnjsed"
+    },
+    {
+      "name": "Count of Establishment: Women's And Children's Clothing Merch. Whls. (NAICS/42433)",
+      "dcid": "dc/1s83bz59v9rq7"
+    },
+    {
+      "name": "Count of Establishment: Women's And Children's Clothing Merch. Whls. (NAICS/42433)",
+      "dcid": "dc/xre2cx37zmkef"
+    },
+    {
+      "name": "Count of Establishment: Women's And Girls' Blouse And Shirt Mfg (NAICS/315232)",
+      "dcid": "dc/dwz0wj5cn1vm2"
+    },
+    {
+      "name": "Count of Establishment: Women's And Girls' Blouse And Shirt Mfg (NAICS/315232)",
+      "dcid": "dc/hd7zynr0g11sf"
+    },
+    {
+      "name": "Count of Establishment: Women's And Girls' Blouse And Shirt Mfg (NAICS/315232)",
+      "dcid": "dc/wdydnygy2vhh2"
+    },
+    {
+      "name": "Count of Establishment: Women's And Girls' Cut And Sew Apparel Mfg (NAICS/31523)",
+      "dcid": "dc/bcblr250e80p8"
+    },
+    {
+      "name": "Count of Establishment: Women's And Girls' Cut And Sew Apparel Mfg (NAICS/31523)",
+      "dcid": "dc/n1z9evkm4lje3"
+    },
+    {
+      "name": "Count of Establishment: Women's And Girls' Cut And Sew Apparel Mfg (NAICS/31523)",
+      "dcid": "dc/zqqr1106h7gwg"
+    },
+    {
+      "name": "Count of Establishment: Women's And Girls' Dress Manufacturing (NAICS/315233)",
+      "dcid": "dc/0t78emz66c4p6"
+    },
+    {
+      "name": "Count of Establishment: Women's And Girls' Dress Manufacturing (NAICS/315233)",
+      "dcid": "dc/1n885xhjz3e39"
+    },
+    {
+      "name": "Count of Establishment: Women's And Girls' Dress Manufacturing (NAICS/315233)",
+      "dcid": "dc/hjrs2ww3j659"
+    },
+    {
+      "name": "Count of Establishment: Women's And Girls' Lingerie And Nightwear Mfg (NAICS/315231)",
+      "dcid": "dc/72h0vycgkyxf5"
+    },
+    {
+      "name": "Count of Establishment: Women's And Girls' Lingerie And Nightwear Mfg (NAICS/315231)",
+      "dcid": "dc/vr3l7r4qetw7d"
+    },
+    {
+      "name": "Count of Establishment: Women's And Girls' Lingerie And Nightwear Mfg (NAICS/315231)",
+      "dcid": "dc/zsclgn1trelq"
+    },
+    {
+      "name": "Count of Establishment: Women's And Girls' Suit, Coat, And Skirt Mfg (NAICS/315234)",
+      "dcid": "dc/dwjnvlzlk9021"
+    },
+    {
+      "name": "Count of Establishment: Women's And Girls' Suit, Coat, And Skirt Mfg (NAICS/315234)",
+      "dcid": "dc/ere1cb9j0g4rg"
+    },
+    {
+      "name": "Count of Establishment: Women's And Girls' Suit, Coat, And Skirt Mfg (NAICS/315234)",
+      "dcid": "dc/sf1c454nyqxdf"
+    },
+    {
+      "name": "Count of Establishment: Women's Clothing Stores (NAICS/44812)",
+      "dcid": "dc/485v7jl4qlhxb"
+    },
+    {
+      "name": "Count of Establishment: Women's Clothing Stores (NAICS/44812)",
+      "dcid": "dc/5vgmmsgdmsvt3"
+    },
+    {
+      "name": "Count of Establishment: Women's Clothing Stores (NAICS/44812)",
+      "dcid": "dc/dbr7jyndp0151"
+    },
+    {
+      "name": "Count of Establishment: Women's Handbag And Purse Manufacturing (NAICS/316992)",
+      "dcid": "dc/6vd8mtqfmnlbb"
+    },
+    {
+      "name": "Count of Establishment: Women's Handbag And Purse Manufacturing (NAICS/316992)",
+      "dcid": "dc/9mmxbem7c7xrh"
+    },
+    {
+      "name": "Count of Establishment: Women's Handbag And Purse Manufacturing (NAICS/316992)",
+      "dcid": "dc/f3qd32v7d0w9"
+    },
+    {
+      "name": "Count of Establishment: Women's Nonathletic Footwear Manufacturing (NAICS/316214)",
+      "dcid": "dc/g3q1g5ypdk2k"
+    },
+    {
+      "name": "Count of Establishment: Women's Nonathletic Footwear Manufacturing (NAICS/316214)",
+      "dcid": "dc/gvbwk7c7hb5mg"
+    },
+    {
+      "name": "Count of Establishment: Women's Nonathletic Footwear Manufacturing (NAICS/316214)",
+      "dcid": "dc/r47bzjgblx7z4"
+    },
+    {
+      "name": "Count of Establishment: Women's, Girls', Infants' Apparel Contractors (NAICS/315212)",
+      "dcid": "dc/0bkbm4x0nvceb"
+    },
+    {
+      "name": "Count of Establishment: Women's, Girls', Infants' Apparel Contractors (NAICS/315212)",
+      "dcid": "dc/fg95lgey78gq1"
+    },
+    {
+      "name": "Count of Establishment: Women's, Girls', Infants' Apparel Contractors (NAICS/315212)",
+      "dcid": "dc/p5sgbrbdkefl2"
+    },
+    {
+      "name": "Count of Establishment: Women's, Girls', Infants' Cut-sew Apparel Mfg (NAICS/31524)",
+      "dcid": "dc/1164zg41pdp4f"
+    },
+    {
+      "name": "Count of Establishment: Women's, Girls', Infants' Cut-sew Apparel Mfg (NAICS/31524)",
+      "dcid": "dc/ks0pf8d9hj8wg"
+    },
+    {
+      "name": "Count of Establishment: Women's, Girls', Infants' Cut-sew Apparel Mfg (NAICS/31524)",
+      "dcid": "dc/yhdq1xdy3x0s9"
+    },
+    {
+      "name": "Count of WHO/Pregnant Women: 15 - 49 Years",
+      "dcid": "Count_WHO/PregnantWomen_15To49Year"
+    },
+    {
+      "name": "Number of seats held by women in national parliaments [Female]",
+      "dcid": "sdg/SG_GEN_PARLN.SEX--F"
+    },
+    {
+      "name": "Obesity prevalence in non-pregnant women aged 15-49 years, BMI \u003e= 30 (%) [15-19 years]",
+      "dcid": "who/bmi30wm.AGE--Y15T19"
+    },
+    {
+      "name": "Obesity prevalence in non-pregnant women aged 15-49 years, BMI \u003e= 30 (%) [20-49 years]",
+      "dcid": "who/bmi30wm.AGE--Y20T49"
+    },
+    {
+      "name": "Obesity prevalence in non-pregnant women aged 15-49 years, BMI \u003e= 30 (%) [Decile 1 (poorest)]",
+      "dcid": "who/bmi30wm.WEALTHDECILE--WEALTHDECILE01"
+    },
+    {
+      "name": "Obesity prevalence in non-pregnant women aged 15-49 years, BMI \u003e= 30 (%) [Decile 10 (richest)]",
+      "dcid": "who/bmi30wm.WEALTHDECILE--WEALTHDECILE10"
+    },
+    {
+      "name": "Obesity prevalence in non-pregnant women aged 15-49 years, BMI \u003e= 30 (%) [Decile 2]",
+      "dcid": "who/bmi30wm.WEALTHDECILE--WEALTHDECILE02"
+    },
+    {
+      "name": "Obesity prevalence in non-pregnant women aged 15-49 years, BMI \u003e= 30 (%) [Decile 3]",
+      "dcid": "who/bmi30wm.WEALTHDECILE--WEALTHDECILE03"
+    },
+    {
+      "name": "Obesity prevalence in non-pregnant women aged 15-49 years, BMI \u003e= 30 (%) [Decile 4]",
+      "dcid": "who/bmi30wm.WEALTHDECILE--WEALTHDECILE04"
+    },
+    {
+      "name": "Obesity prevalence in non-pregnant women aged 15-49 years, BMI \u003e= 30 (%) [Decile 5]",
+      "dcid": "who/bmi30wm.WEALTHDECILE--WEALTHDECILE05"
+    },
+    {
+      "name": "Obesity prevalence in non-pregnant women aged 15-49 years, BMI \u003e= 30 (%) [Decile 6]",
+      "dcid": "who/bmi30wm.WEALTHDECILE--WEALTHDECILE06"
+    },
+    {
+      "name": "Obesity prevalence in non-pregnant women aged 15-49 years, BMI \u003e= 30 (%) [Decile 7]",
+      "dcid": "who/bmi30wm.WEALTHDECILE--WEALTHDECILE07"
+    },
+    {
+      "name": "Obesity prevalence in non-pregnant women aged 15-49 years, BMI \u003e= 30 (%) [Decile 8]",
+      "dcid": "who/bmi30wm.WEALTHDECILE--WEALTHDECILE08"
+    },
+    {
+      "name": "Obesity prevalence in non-pregnant women aged 15-49 years, BMI \u003e= 30 (%) [Decile 9]",
+      "dcid": "who/bmi30wm.WEALTHDECILE--WEALTHDECILE09"
+    },
+    {
+      "name": "Obesity prevalence in non-pregnant women aged 15-49 years, BMI \u003e= 30 (%) [Primary]",
+      "dcid": "who/bmi30wm.EDUCATIONLEVEL--PRLM"
+    },
+    {
+      "name": "Obesity prevalence in non-pregnant women aged 15-49 years, BMI \u003e= 30 (%) [Q1 (Poorest)]",
+      "dcid": "who/bmi30wm.WEALTHQUINTILE--WQ1"
+    },
+    {
+      "name": "Obesity prevalence in non-pregnant women aged 15-49 years, BMI \u003e= 30 (%) [Q2]",
+      "dcid": "who/bmi30wm.WEALTHQUINTILE--WQ2"
+    },
+    {
+      "name": "Obesity prevalence in non-pregnant women aged 15-49 years, BMI \u003e= 30 (%) [Q3]",
+      "dcid": "who/bmi30wm.WEALTHQUINTILE--WQ3"
+    },
+    {
+      "name": "Obesity prevalence in non-pregnant women aged 15-49 years, BMI \u003e= 30 (%) [Q4]",
+      "dcid": "who/bmi30wm.WEALTHQUINTILE--WQ4"
+    },
+    {
+      "name": "Obesity prevalence in non-pregnant women aged 15-49 years, BMI \u003e= 30 (%) [Q5 (Richest)]",
+      "dcid": "who/bmi30wm.WEALTHQUINTILE--WQ5"
+    },
+    {
+      "name": "Obesity prevalence in non-pregnant women aged 15-49 years, BMI \u003e= 30 (%) [Rural]",
+      "dcid": "who/bmi30wm.RESIDENCEAREATYPE--RUR"
+    },
+    {
+      "name": "Obesity prevalence in non-pregnant women aged 15-49 years, BMI \u003e= 30 (%) [Secondary or higher]",
+      "dcid": "who/bmi30wm.EDUCATIONLEVEL--SHLM"
+    },
+    {
+      "name": "Obesity prevalence in non-pregnant women aged 15-49 years, BMI \u003e= 30 (%) [Urban]",
+      "dcid": "who/bmi30wm.RESIDENCEAREATYPE--URB"
+    },
+    {
+      "name": "Obesity prevalence in non-pregnant women aged 15-49 years, BMI \u003e= 30 (%) [nan]",
+      "dcid": "who/bmi30wm.EDUCATIONLEVEL--NHLM"
+    },
+    {
+      "name": "Percentage of women with a live birth in the two years prior to the survey who put the newborn infant to the breast within one hour of birth (%) [15-19 years]",
+      "dcid": "who/bfearly.AGE--Y15T19"
+    },
+    {
+      "name": "Percentage of women with a live birth in the two years prior to the survey who put the newborn infant to the breast within one hour of birth (%) [20-49 years]",
+      "dcid": "who/bfearly.AGE--Y20T49"
+    },
+    {
+      "name": "Percentage of women with a live birth in the two years prior to the survey who put the newborn infant to the breast within one hour of birth (%) [Decile 1 (poorest)]",
+      "dcid": "who/bfearly.WEALTHDECILE--WEALTHDECILE01"
+    },
+    {
+      "name": "Percentage of women with a live birth in the two years prior to the survey who put the newborn infant to the breast within one hour of birth (%) [Decile 10 (richest)]",
+      "dcid": "who/bfearly.WEALTHDECILE--WEALTHDECILE10"
+    },
+    {
+      "name": "Percentage of women with a live birth in the two years prior to the survey who put the newborn infant to the breast within one hour of birth (%) [Decile 2]",
+      "dcid": "who/bfearly.WEALTHDECILE--WEALTHDECILE02"
+    },
+    {
+      "name": "Percentage of women with a live birth in the two years prior to the survey who put the newborn infant to the breast within one hour of birth (%) [Decile 3]",
+      "dcid": "who/bfearly.WEALTHDECILE--WEALTHDECILE03"
+    },
+    {
+      "name": "Percentage of women with a live birth in the two years prior to the survey who put the newborn infant to the breast within one hour of birth (%) [Decile 4]",
+      "dcid": "who/bfearly.WEALTHDECILE--WEALTHDECILE04"
+    },
+    {
+      "name": "Percentage of women with a live birth in the two years prior to the survey who put the newborn infant to the breast within one hour of birth (%) [Decile 5]",
+      "dcid": "who/bfearly.WEALTHDECILE--WEALTHDECILE05"
+    },
+    {
+      "name": "Percentage of women with a live birth in the two years prior to the survey who put the newborn infant to the breast within one hour of birth (%) [Decile 6]",
+      "dcid": "who/bfearly.WEALTHDECILE--WEALTHDECILE06"
+    },
+    {
+      "name": "Percentage of women with a live birth in the two years prior to the survey who put the newborn infant to the breast within one hour of birth (%) [Decile 7]",
+      "dcid": "who/bfearly.WEALTHDECILE--WEALTHDECILE07"
+    },
+    {
+      "name": "Percentage of women with a live birth in the two years prior to the survey who put the newborn infant to the breast within one hour of birth (%) [Decile 8]",
+      "dcid": "who/bfearly.WEALTHDECILE--WEALTHDECILE08"
+    },
+    {
+      "name": "Percentage of women with a live birth in the two years prior to the survey who put the newborn infant to the breast within one hour of birth (%) [Decile 9]",
+      "dcid": "who/bfearly.WEALTHDECILE--WEALTHDECILE09"
+    },
+    {
+      "name": "Percentage of women with a live birth in the two years prior to the survey who put the newborn infant to the breast within one hour of birth (%) [Female]",
+      "dcid": "who/bfearly.SEX--F"
+    },
+    {
+      "name": "Percentage of women with a live birth in the two years prior to the survey who put the newborn infant to the breast within one hour of birth (%) [Male]",
+      "dcid": "who/bfearly.SEX--M"
+    },
+    {
+      "name": "Percentage of women with a live birth in the two years prior to the survey who put the newborn infant to the breast within one hour of birth (%) [Primary]",
+      "dcid": "who/bfearly.EDUCATIONLEVEL--PRLM"
+    },
+    {
+      "name": "Percentage of women with a live birth in the two years prior to the survey who put the newborn infant to the breast within one hour of birth (%) [Q1 (Poorest)]",
+      "dcid": "who/bfearly.WEALTHQUINTILE--WQ1"
+    },
+    {
+      "name": "Percentage of women with a live birth in the two years prior to the survey who put the newborn infant to the breast within one hour of birth (%) [Q2]",
+      "dcid": "who/bfearly.WEALTHQUINTILE--WQ2"
+    },
+    {
+      "name": "Percentage of women with a live birth in the two years prior to the survey who put the newborn infant to the breast within one hour of birth (%) [Q3]",
+      "dcid": "who/bfearly.WEALTHQUINTILE--WQ3"
+    },
+    {
+      "name": "Percentage of women with a live birth in the two years prior to the survey who put the newborn infant to the breast within one hour of birth (%) [Q4]",
+      "dcid": "who/bfearly.WEALTHQUINTILE--WQ4"
+    },
+    {
+      "name": "Percentage of women with a live birth in the two years prior to the survey who put the newborn infant to the breast within one hour of birth (%) [Q5 (Richest)]",
+      "dcid": "who/bfearly.WEALTHQUINTILE--WQ5"
+    },
+    {
+      "name": "Percentage of women with a live birth in the two years prior to the survey who put the newborn infant to the breast within one hour of birth (%) [Rural]",
+      "dcid": "who/bfearly.RESIDENCEAREATYPE--RUR"
+    },
+    {
+      "name": "Percentage of women with a live birth in the two years prior to the survey who put the newborn infant to the breast within one hour of birth (%) [Secondary or higher]",
+      "dcid": "who/bfearly.EDUCATIONLEVEL--SHLM"
+    },
+    {
+      "name": "Percentage of women with a live birth in the two years prior to the survey who put the newborn infant to the breast within one hour of birth (%) [Urban]",
+      "dcid": "who/bfearly.RESIDENCEAREATYPE--URB"
+    },
+    {
+      "name": "Percentage of women with a live birth in the two years prior to the survey who put the newborn infant to the breast within one hour of birth (%) [nan]",
+      "dcid": "who/bfearly.EDUCATIONLEVEL--NHLM"
+    },
+    {
+      "name": "Population of Person: Other Women's And Girls' Outerwear Mfg (NAICS/315239)",
+      "dcid": "dc/pl6ymqll4n3cc"
+    },
+    {
+      "name": "Population of Person: Women's And Children's Clothing Merch. Whls. (NAICS/42433)",
+      "dcid": "dc/jr1e4mkzlfrqg"
+    },
+    {
+      "name": "Population of Person: Women's And Girls' Blouse And Shirt Mfg (NAICS/315232)",
+      "dcid": "dc/9hm76jjfb0pk5"
+    },
+    {
+      "name": "Population of Person: Women's And Girls' Cut And Sew Apparel Mfg (NAICS/31523)",
+      "dcid": "dc/22db9v95fd0x7"
+    },
+    {
+      "name": "Population of Person: Women's And Girls' Dress Manufacturing (NAICS/315233)",
+      "dcid": "dc/ejgyz9vtgkk3b"
+    },
+    {
+      "name": "Population of Person: Women's And Girls' Lingerie And Nightwear Mfg (NAICS/315231)",
+      "dcid": "dc/1xqsrzt0ql39g"
+    },
+    {
+      "name": "Population of Person: Women's And Girls' Suit, Coat, And Skirt Mfg (NAICS/315234)",
+      "dcid": "dc/1wg8qt198s488"
+    },
+    {
+      "name": "Population of Person: Women's Clothing Stores (NAICS/44812)",
+      "dcid": "dc/c8pldh07jqceh"
+    },
+    {
+      "name": "Population of Person: Women's Handbag And Purse Manufacturing (NAICS/316992)",
+      "dcid": "dc/cxfghfz9v32x"
+    },
+    {
+      "name": "Population of Person: Women's Nonathletic Footwear Manufacturing (NAICS/316214)",
+      "dcid": "dc/wgdf3d4qlx0th"
+    },
+    {
+      "name": "Population of Person: Women's, Girls', Infants' Apparel Contractors (NAICS/315212)",
+      "dcid": "dc/2f3nx20fbkjs2"
+    },
+    {
+      "name": "Population of Person: Women's, Girls', Infants' Cut-sew Apparel Mfg (NAICS/31524)",
+      "dcid": "dc/jegsqlvc25hk3"
+    },
+    {
+      "name": "Proportion of elected seats held by women in deliberative bodies of local government [Female]",
+      "dcid": "sdg/SG_GEN_LOCGELS.SEX--F"
+    },
+    {
+      "name": "Proportion of pregnant women sleeping under insecticide-treated mosquito nets [15-19 years]",
+      "dcid": "who/itnwm.AGE--Y15T19"
+    },
+    {
+      "name": "Proportion of pregnant women sleeping under insecticide-treated mosquito nets [20-49 years]",
+      "dcid": "who/itnwm.AGE--Y20T49"
+    },
+    {
+      "name": "Proportion of pregnant women sleeping under insecticide-treated mosquito nets [Decile 1 (poorest)]",
+      "dcid": "who/itnwm.WEALTHDECILE--WEALTHDECILE01"
+    },
+    {
+      "name": "Proportion of pregnant women sleeping under insecticide-treated mosquito nets [Decile 10 (richest)]",
+      "dcid": "who/itnwm.WEALTHDECILE--WEALTHDECILE10"
+    },
+    {
+      "name": "Proportion of pregnant women sleeping under insecticide-treated mosquito nets [Decile 2]",
+      "dcid": "who/itnwm.WEALTHDECILE--WEALTHDECILE02"
+    },
+    {
+      "name": "Proportion of pregnant women sleeping under insecticide-treated mosquito nets [Decile 3]",
+      "dcid": "who/itnwm.WEALTHDECILE--WEALTHDECILE03"
+    },
+    {
+      "name": "Proportion of pregnant women sleeping under insecticide-treated mosquito nets [Decile 4]",
+      "dcid": "who/itnwm.WEALTHDECILE--WEALTHDECILE04"
+    },
+    {
+      "name": "Proportion of pregnant women sleeping under insecticide-treated mosquito nets [Decile 5]",
+      "dcid": "who/itnwm.WEALTHDECILE--WEALTHDECILE05"
+    },
+    {
+      "name": "Proportion of pregnant women sleeping under insecticide-treated mosquito nets [Decile 6]",
+      "dcid": "who/itnwm.WEALTHDECILE--WEALTHDECILE06"
+    },
+    {
+      "name": "Proportion of pregnant women sleeping under insecticide-treated mosquito nets [Decile 7]",
+      "dcid": "who/itnwm.WEALTHDECILE--WEALTHDECILE07"
+    },
+    {
+      "name": "Proportion of pregnant women sleeping under insecticide-treated mosquito nets [Decile 8]",
+      "dcid": "who/itnwm.WEALTHDECILE--WEALTHDECILE08"
+    },
+    {
+      "name": "Proportion of pregnant women sleeping under insecticide-treated mosquito nets [Decile 9]",
+      "dcid": "who/itnwm.WEALTHDECILE--WEALTHDECILE09"
+    },
+    {
+      "name": "Proportion of pregnant women sleeping under insecticide-treated mosquito nets [Primary]",
+      "dcid": "who/itnwm.EDUCATIONLEVEL--PRLM"
+    },
+    {
+      "name": "Proportion of pregnant women sleeping under insecticide-treated mosquito nets [Q1 (Poorest)]",
+      "dcid": "who/itnwm.WEALTHQUINTILE--WQ1"
+    },
+    {
+      "name": "Proportion of pregnant women sleeping under insecticide-treated mosquito nets [Q2]",
+      "dcid": "who/itnwm.WEALTHQUINTILE--WQ2"
+    },
+    {
+      "name": "Proportion of pregnant women sleeping under insecticide-treated mosquito nets [Q3]",
+      "dcid": "who/itnwm.WEALTHQUINTILE--WQ3"
+    },
+    {
+      "name": "Proportion of pregnant women sleeping under insecticide-treated mosquito nets [Q4]",
+      "dcid": "who/itnwm.WEALTHQUINTILE--WQ4"
+    },
+    {
+      "name": "Proportion of pregnant women sleeping under insecticide-treated mosquito nets [Q5 (Richest)]",
+      "dcid": "who/itnwm.WEALTHQUINTILE--WQ5"
+    },
+    {
+      "name": "Proportion of pregnant women sleeping under insecticide-treated mosquito nets [Rural]",
+      "dcid": "who/itnwm.RESIDENCEAREATYPE--RUR"
+    },
+    {
+      "name": "Proportion of pregnant women sleeping under insecticide-treated mosquito nets [Secondary or higher]",
+      "dcid": "who/itnwm.EDUCATIONLEVEL--SHLM"
+    },
+    {
+      "name": "Proportion of pregnant women sleeping under insecticide-treated mosquito nets [Urban]",
+      "dcid": "who/itnwm.RESIDENCEAREATYPE--URB"
+    },
+    {
+      "name": "Proportion of pregnant women sleeping under insecticide-treated mosquito nets [nan]",
+      "dcid": "who/itnwm.EDUCATIONLEVEL--NHLM"
+    },
+    {
+      "name": "Proportion of seats held by women in national parliaments [Female]",
+      "dcid": "sdg/SG_GEN_PARL.SEX--F"
+    },
+    {
+      "name": "Wages Annual of Establishment: Other Women's And Girls' Outerwear Mfg (NAICS/315239)",
+      "dcid": "dc/5n2xf0xr930e7"
+    },
+    {
+      "name": "Wages Annual of Establishment: Women's And Children's Clothing Merch. Whls. (NAICS/42433)",
+      "dcid": "dc/c5kh0lky2lwff"
+    },
+    {
+      "name": "Wages Annual of Establishment: Women's And Girls' Blouse And Shirt Mfg (NAICS/315232)",
+      "dcid": "dc/byw105g97113f"
+    },
+    {
+      "name": "Wages Annual of Establishment: Women's And Girls' Cut And Sew Apparel Mfg (NAICS/31523)",
+      "dcid": "dc/1gb40x8252jj7"
+    },
+    {
+      "name": "Wages Annual of Establishment: Women's And Girls' Dress Manufacturing (NAICS/315233)",
+      "dcid": "dc/dpk05r5c2z3wc"
+    },
+    {
+      "name": "Wages Annual of Establishment: Women's And Girls' Lingerie And Nightwear Mfg (NAICS/315231)",
+      "dcid": "dc/y52nntfc8gc3f"
+    },
+    {
+      "name": "Wages Annual of Establishment: Women's And Girls' Suit, Coat, And Skirt Mfg (NAICS/315234)",
+      "dcid": "dc/cdjv5jt6gk8k6"
+    },
+    {
+      "name": "Wages Annual of Establishment: Women's Clothing Stores (NAICS/44812)",
+      "dcid": "dc/g5nryvhz7vl44"
+    },
+    {
+      "name": "Wages Annual of Establishment: Women's Handbag And Purse Manufacturing (NAICS/316992)",
+      "dcid": "dc/3nsjpbp090gr9"
+    },
+    {
+      "name": "Wages Annual of Establishment: Women's Nonathletic Footwear Manufacturing (NAICS/316214)",
+      "dcid": "dc/ye2wj5ggx5n34"
+    },
+    {
+      "name": "Wages Annual of Establishment: Women's, Girls', Infants' Apparel Contractors (NAICS/315212)",
+      "dcid": "dc/fgn46kw0vn108"
+    },
+    {
+      "name": "Wages Annual of Establishment: Women's, Girls', Infants' Cut-sew Apparel Mfg (NAICS/31524)",
+      "dcid": "dc/4pm87j02ql96c"
+    },
+    {
+      "name": "Wages Total of Person: Other Women's And Girls' Outerwear Mfg (NAICS/315239)",
+      "dcid": "dc/vbrzm0zm6mtk6"
+    },
+    {
+      "name": "Wages Total of Person: Women's And Children's Clothing Merch. Whls. (NAICS/42433)",
+      "dcid": "dc/egt3q3g4v0dfh"
+    },
+    {
+      "name": "Wages Total of Person: Women's And Girls' Blouse And Shirt Mfg (NAICS/315232)",
+      "dcid": "dc/51gk7jlqjc8k8"
+    },
+    {
+      "name": "Wages Total of Person: Women's And Girls' Cut And Sew Apparel Mfg (NAICS/31523)",
+      "dcid": "dc/v0jqcxks4r7t6"
+    },
+    {
+      "name": "Wages Total of Person: Women's And Girls' Dress Manufacturing (NAICS/315233)",
+      "dcid": "dc/jq9xshh3pd0k5"
+    },
+    {
+      "name": "Wages Total of Person: Women's And Girls' Lingerie And Nightwear Mfg (NAICS/315231)",
+      "dcid": "dc/53whf085z8gqd"
+    },
+    {
+      "name": "Wages Total of Person: Women's And Girls' Suit, Coat, And Skirt Mfg (NAICS/315234)",
+      "dcid": "dc/khevqfe4zv419"
+    },
+    {
+      "name": "Wages Total of Person: Women's Clothing Stores (NAICS/44812)",
+      "dcid": "dc/7v4btw2yxx2cb"
+    },
+    {
+      "name": "Wages Total of Person: Women's Handbag And Purse Manufacturing (NAICS/316992)",
+      "dcid": "dc/lyfdyxj52q1l9"
+    },
+    {
+      "name": "Wages Total of Person: Women's Nonathletic Footwear Manufacturing (NAICS/316214)",
+      "dcid": "dc/h0f7fkhdd2542"
+    },
+    {
+      "name": "Wages Total of Person: Women's, Girls', Infants' Apparel Contractors (NAICS/315212)",
+      "dcid": "dc/qr9nezshb0gm5"
+    },
+    {
+      "name": "Wages Total of Person: Women's, Girls', Infants' Cut-sew Apparel Mfg (NAICS/31524)",
+      "dcid": "dc/flfk1szeerbd7"
+    },
+    {
+      "name": "Median Income of Women (15 Years or Older) With Income",
+      "dcid": "Median_Income_Person_15OrMoreYears_Female_WithIncome"
+    },
+    {
+      "name": "Adolescent Fertility Rate (Per 1000 Women Aged 15-19 Years), Decile1",
+      "dcid": "WHO/asfr1_Decile1"
+    },
+    {
+      "name": "Adolescent Fertility Rate (Per 1000 Women Aged 15-19 Years), Decile10",
+      "dcid": "WHO/asfr1_Decile10"
+    },
+    {
+      "name": "Adolescent Fertility Rate (Per 1000 Women Aged 15-19 Years), Decile2",
+      "dcid": "WHO/asfr1_Decile2"
+    },
+    {
+      "name": "Adolescent Fertility Rate (Per 1000 Women Aged 15-19 Years), Decile3",
+      "dcid": "WHO/asfr1_Decile3"
+    },
+    {
+      "name": "Adolescent Fertility Rate (Per 1000 Women Aged 15-19 Years), Decile4",
+      "dcid": "WHO/asfr1_Decile4"
+    },
+    {
+      "name": "Adolescent Fertility Rate (Per 1000 Women Aged 15-19 Years), Decile5",
+      "dcid": "WHO/asfr1_Decile5"
+    },
+    {
+      "name": "Adolescent Fertility Rate (Per 1000 Women Aged 15-19 Years), Decile6",
+      "dcid": "WHO/asfr1_Decile6"
+    },
+    {
+      "name": "Adolescent Fertility Rate (Per 1000 Women Aged 15-19 Years), Decile7",
+      "dcid": "WHO/asfr1_Decile7"
+    },
+    {
+      "name": "Adolescent Fertility Rate (Per 1000 Women Aged 15-19 Years), Decile8",
+      "dcid": "WHO/asfr1_Decile8"
+    },
+    {
+      "name": "Adolescent Fertility Rate (Per 1000 Women Aged 15-19 Years), Decile9",
+      "dcid": "WHO/asfr1_Decile9"
+    },
+    {
+      "name": "Adolescent Fertility Rate (Per 1000 Women Aged 15-19 Years), No Schooling Completed",
+      "dcid": "WHO/asfr1_NoSchoolingCompleted"
+    },
+    {
+      "name": "Adolescent Fertility Rate (Per 1000 Women Aged 15-19 Years), Primary",
+      "dcid": "WHO/asfr1_Primary"
+    },
+    {
+      "name": "Adolescent Fertility Rate (Per 1000 Women Aged 15-19 Years), Quintile1",
+      "dcid": "WHO/asfr1_Quintile1"
+    },
+    {
+      "name": "Adolescent Fertility Rate (Per 1000 Women Aged 15-19 Years), Quintile2",
+      "dcid": "WHO/asfr1_Quintile2"
+    },
+    {
+      "name": "Adolescent Fertility Rate (Per 1000 Women Aged 15-19 Years), Quintile3",
+      "dcid": "WHO/asfr1_Quintile3"
+    },
+    {
+      "name": "Adolescent Fertility Rate (Per 1000 Women Aged 15-19 Years), Quintile4",
+      "dcid": "WHO/asfr1_Quintile4"
+    },
+    {
+      "name": "Adolescent Fertility Rate (Per 1000 Women Aged 15-19 Years), Quintile5",
+      "dcid": "WHO/asfr1_Quintile5"
+    },
+    {
+      "name": "Adolescent Fertility Rate (Per 1000 Women Aged 15-19 Years), Rural",
+      "dcid": "WHO/asfr1_Rural"
+    },
+    {
+      "name": "Adolescent Fertility Rate (Per 1000 Women Aged 15-19 Years), Secondary Or Higher",
+      "dcid": "WHO/asfr1_SecondaryOrHigher"
+    },
+    {
+      "name": "Adolescent Fertility Rate (Per 1000 Women Aged 15-19 Years), Urban",
+      "dcid": "WHO/asfr1_Urban"
+    },
+    {
+      "name": "Counselling To Pregnant Women With Alcohol Problems",
+      "dcid": "WHO/SA_0000001716"
+    },
+    {
+      "name": "Count of Establishment: Manufacturer Sales Branches And Offices, Women's And Children's Clothing Merch. Whls. (NAICS/42433)",
+      "dcid": "dc/k3w2p68klhfcc"
+    },
+    {
+      "name": "Count of Establishment: Merchant Wholesalers Excluding Manufacturer Sales Branches And Offices, Women's And Children's Clothing Merch. Whls. (NAICS/42433)",
+      "dcid": "dc/ww85jq324j3gc"
+    },
+    {
+      "name": "Count of Establishment: Merchant Wholesalers, Women's And Children's Clothing Merch. Whls. (NAICS/42433)",
+      "dcid": "dc/jfts1vjy25k9g"
+    },
+    {
+      "name": "Count of Establishment: Privately Owned, Other Women's And Girls' Outerwear Mfg (NAICS/315239)",
+      "dcid": "dc/1mzj1f5670hc"
+    },
+    {
+      "name": "Count of Establishment: Privately Owned, Women's And Children's Clothing Merch. Whls. (NAICS/42433)",
+      "dcid": "dc/kxtbk13pgnvn2"
+    },
+    {
+      "name": "Count of Establishment: Privately Owned, Women's And Girls' Blouse And Shirt Mfg (NAICS/315232)",
+      "dcid": "dc/v47j59zsfcw34"
+    },
+    {
+      "name": "Count of Establishment: Privately Owned, Women's And Girls' Cut And Sew Apparel Mfg (NAICS/31523)",
+      "dcid": "dc/fxm5kk6f06meh"
+    },
+    {
+      "name": "Count of Establishment: Privately Owned, Women's And Girls' Dress Manufacturing (NAICS/315233)",
+      "dcid": "dc/k0l048qhs341g"
+    },
+    {
+      "name": "Count of Establishment: Privately Owned, Women's And Girls' Lingerie And Nightwear Mfg (NAICS/315231)",
+      "dcid": "dc/nqjrr9wt8cx9d"
+    },
+    {
+      "name": "Count of Establishment: Privately Owned, Women's And Girls' Suit, Coat, And Skirt Mfg (NAICS/315234)",
+      "dcid": "dc/zl2fwf5mmb0j9"
+    },
+    {
+      "name": "Count of Establishment: Privately Owned, Women's Clothing Stores (NAICS/44812)",
+      "dcid": "dc/tnyv8edhmflg"
+    },
+    {
+      "name": "Count of Establishment: Privately Owned, Women's Handbag And Purse Manufacturing (NAICS/316992)",
+      "dcid": "dc/9dlkhye638d1d"
+    },
+    {
+      "name": "Count of Establishment: Privately Owned, Women's Nonathletic Footwear Manufacturing (NAICS/316214)",
+      "dcid": "dc/kd5z73cqycm6c"
+    },
+    {
+      "name": "Count of Establishment: Privately Owned, Women's, Girls', Infants' Apparel Contractors (NAICS/315212)",
+      "dcid": "dc/4d2pt897sqb09"
+    },
+    {
+      "name": "Count of Establishment: Privately Owned, Women's, Girls', Infants' Cut-sew Apparel Mfg (NAICS/31524)",
+      "dcid": "dc/e351bke5y8c75"
+    },
+    {
+      "name": "Estimated Number Of Pregnant Women Living With Hiv",
+      "dcid": "WHO/HIV_0000000020"
+    },
+    {
+      "name": "Estimated Number Of Pregnant Women Living With Hiv Needing Antiretrovirals For Preventing Mother-To-Child Transmission",
+      "dcid": "WHO/HIV_0000000021"
+    },
+    {
+      "name": "Number Of Pregnant Women Living With Hiv Who Received Antiretrovirals For Preventing Mother-To-Child Transmission",
+      "dcid": "WHO/HIV_0000000015"
+    },
+    {
+      "name": "Number of women aged 30 to 39 years",
+      "dcid": "Count_Person_30To39Years_Female"
+    },
+    {
+      "name": "Number of women aged 40 to 49 years",
+      "dcid": "Count_Person_40To49Years_Female"
+    },
+    {
+      "name": "Number of women aged 50 to 59 years",
+      "dcid": "Count_Person_50To59Years_Female"
+    },
+    {
+      "name": "Number of women beneficiaries of the Rural Development Program",
+      "dcid": "Count_Person_BrazilRuralDevelopmentProgram_Female"
+    },
+    {
+      "name": "Number of women who can read and write",
+      "dcid": "Count_Person_EducationalAttainmentReadAndWrite_Female"
+    },
+    {
+      "name": "Number of women with education above intermediate level",
+      "dcid": "Count_Person_EducationalAttainmentAboveIntermediateEducation_Female"
+    },
+    {
+      "name": "Number of women with general or azhari secondary education",
+      "dcid": "Count_Person_EducationalAttainmentGeneralOrAzhariSecondaryEducation_Female"
+    },
+    {
+      "name": "Number of women with less than intermediate education",
+      "dcid": "Count_Person_EducationalAttainmentLessThanIntermediate_Female"
+    },
+    {
+      "name": "Number of women with technical secondary education",
+      "dcid": "Count_Person_EducationalAttainmentTechnicalSecondaryEducation_Female"
+    },
+    {
+      "name": "Number of women with university or higher education",
+      "dcid": "Count_Person_EducationalAttainmentUniversityOrHigher_Female"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%) (obesewm), No Schooling Completed",
+      "dcid": "WHO/obesewm_NoSchoolingCompleted"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%) (obesewm), Primary",
+      "dcid": "WHO/obesewm_Primary"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%) (obesewm), Quintile1",
+      "dcid": "WHO/obesewm_Quintile1"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%) (obesewm), Quintile2",
+      "dcid": "WHO/obesewm_Quintile2"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%) (obesewm), Quintile3",
+      "dcid": "WHO/obesewm_Quintile3"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%) (obesewm), Quintile4",
+      "dcid": "WHO/obesewm_Quintile4"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%) (obesewm), Quintile5",
+      "dcid": "WHO/obesewm_Quintile5"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%) (obesewm), Rural",
+      "dcid": "WHO/obesewm_Rural"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%) (obesewm), Secondary Or Higher",
+      "dcid": "WHO/obesewm_SecondaryOrHigher"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%) (obesewm), Urban",
+      "dcid": "WHO/obesewm_Urban"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%), Decile1",
+      "dcid": "WHO/bmi30wm_Decile1"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%), Decile10",
+      "dcid": "WHO/bmi30wm_Decile10"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%), Decile2",
+      "dcid": "WHO/bmi30wm_Decile2"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%), Decile3",
+      "dcid": "WHO/bmi30wm_Decile3"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%), Decile4",
+      "dcid": "WHO/bmi30wm_Decile4"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%), Decile5",
+      "dcid": "WHO/bmi30wm_Decile5"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%), Decile6",
+      "dcid": "WHO/bmi30wm_Decile6"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%), Decile7",
+      "dcid": "WHO/bmi30wm_Decile7"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%), Decile8",
+      "dcid": "WHO/bmi30wm_Decile8"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%), Decile9",
+      "dcid": "WHO/bmi30wm_Decile9"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%), No Schooling Completed",
+      "dcid": "WHO/bmi30wm_NoSchoolingCompleted"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%), Primary",
+      "dcid": "WHO/bmi30wm_Primary"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%), Quintile1",
+      "dcid": "WHO/bmi30wm_Quintile1"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%), Quintile2",
+      "dcid": "WHO/bmi30wm_Quintile2"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%), Quintile3",
+      "dcid": "WHO/bmi30wm_Quintile3"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%), Quintile4",
+      "dcid": "WHO/bmi30wm_Quintile4"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%), Quintile5",
+      "dcid": "WHO/bmi30wm_Quintile5"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%), Rural",
+      "dcid": "WHO/bmi30wm_Rural"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%), Secondary Or Higher",
+      "dcid": "WHO/bmi30wm_SecondaryOrHigher"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%), Urban",
+      "dcid": "WHO/bmi30wm_Urban"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%),15 To19 Years",
+      "dcid": "WHO/bmi30wm_15To19Years"
+    },
+    {
+      "name": "Obesity Prevalence In Non-Pregnant Women Aged 15-49 Years, Bmi \u003e= 30 (%),20 To49 Years",
+      "dcid": "WHO/bmi30wm_20To49Years"
+    },
+    {
+      "name": "Population of Person: Privately Owned, Other Women's And Girls' Outerwear Mfg (NAICS/315239)",
+      "dcid": "dc/9elh82n25nmb7"
+    },
+    {
+      "name": "Population of Person: Privately Owned, Women's And Children's Clothing Merch. Whls. (NAICS/42433)",
+      "dcid": "dc/h75t4rrk3t4mg"
+    },
+    {
+      "name": "Population of Person: Privately Owned, Women's And Girls' Blouse And Shirt Mfg (NAICS/315232)",
+      "dcid": "dc/n4p71y8rebwp"
+    },
+    {
+      "name": "Population of Person: Privately Owned, Women's And Girls' Cut And Sew Apparel Mfg (NAICS/31523)",
+      "dcid": "dc/pckp87v7dw4pf"
+    },
+    {
+      "name": "Population of Person: Privately Owned, Women's And Girls' Dress Manufacturing (NAICS/315233)",
+      "dcid": "dc/zpee94yz52r64"
+    },
+    {
+      "name": "Population of Person: Privately Owned, Women's And Girls' Lingerie And Nightwear Mfg (NAICS/315231)",
+      "dcid": "dc/qmb63307gbw37"
+    },
+    {
+      "name": "Population of Person: Privately Owned, Women's And Girls' Suit, Coat, And Skirt Mfg (NAICS/315234)",
+      "dcid": "dc/tf476gvzsqyd6"
+    },
+    {
+      "name": "Population of Person: Privately Owned, Women's Clothing Stores (NAICS/44812)",
+      "dcid": "dc/c5lylz73bpr4c"
+    },
+    {
+      "name": "Population of Person: Privately Owned, Women's Handbag And Purse Manufacturing (NAICS/316992)",
+      "dcid": "dc/wqckdcxkcxcm3"
+    },
+    {
+      "name": "Population of Person: Privately Owned, Women's Nonathletic Footwear Manufacturing (NAICS/316214)",
+      "dcid": "dc/vhzmdy7k7gpl5"
+    },
+    {
+      "name": "Population of Person: Privately Owned, Women's, Girls', Infants' Apparel Contractors (NAICS/315212)",
+      "dcid": "dc/egsf369778ysc"
+    },
+    {
+      "name": "Population of Person: Privately Owned, Women's, Girls', Infants' Cut-sew Apparel Mfg (NAICS/31524)",
+      "dcid": "dc/s6lcm4ek746x8"
+    },
+    {
+      "name": "Pregnant Women Sleeping Under Insecticide-Treated Nets (%), Decile1",
+      "dcid": "WHO/itnwm_Decile1"
+    },
+    {
+      "name": "Pregnant Women Sleeping Under Insecticide-Treated Nets (%), Decile10",
+      "dcid": "WHO/itnwm_Decile10"
+    },
+    {
+      "name": "Pregnant Women Sleeping Under Insecticide-Treated Nets (%), Decile2",
+      "dcid": "WHO/itnwm_Decile2"
+    },
+    {
+      "name": "Pregnant Women Sleeping Under Insecticide-Treated Nets (%), Decile3",
+      "dcid": "WHO/itnwm_Decile3"
+    },
+    {
+      "name": "Pregnant Women Sleeping Under Insecticide-Treated Nets (%), Decile4",
+      "dcid": "WHO/itnwm_Decile4"
+    },
+    {
+      "name": "Pregnant Women Sleeping Under Insecticide-Treated Nets (%), Decile5",
+      "dcid": "WHO/itnwm_Decile5"
+    },
+    {
+      "name": "Pregnant Women Sleeping Under Insecticide-Treated Nets (%), Decile6",
+      "dcid": "WHO/itnwm_Decile6"
+    },
+    {
+      "name": "Pregnant Women Sleeping Under Insecticide-Treated Nets (%), Decile7",
+      "dcid": "WHO/itnwm_Decile7"
+    },
+    {
+      "name": "Pregnant Women Sleeping Under Insecticide-Treated Nets (%), Decile8",
+      "dcid": "WHO/itnwm_Decile8"
+    },
+    {
+      "name": "Pregnant Women Sleeping Under Insecticide-Treated Nets (%), Decile9",
+      "dcid": "WHO/itnwm_Decile9"
+    },
+    {
+      "name": "Pregnant Women Sleeping Under Insecticide-Treated Nets (%), No Schooling Completed",
+      "dcid": "WHO/itnwm_NoSchoolingCompleted"
+    },
+    {
+      "name": "Pregnant Women Sleeping Under Insecticide-Treated Nets (%), Primary",
+      "dcid": "WHO/itnwm_Primary"
+    },
+    {
+      "name": "Pregnant Women Sleeping Under Insecticide-Treated Nets (%), Quintile1",
+      "dcid": "WHO/itnwm_Quintile1"
+    },
+    {
+      "name": "Pregnant Women Sleeping Under Insecticide-Treated Nets (%), Quintile2",
+      "dcid": "WHO/itnwm_Quintile2"
+    },
+    {
+      "name": "Pregnant Women Sleeping Under Insecticide-Treated Nets (%), Quintile3",
+      "dcid": "WHO/itnwm_Quintile3"
+    },
+    {
+      "name": "Pregnant Women Sleeping Under Insecticide-Treated Nets (%), Quintile4",
+      "dcid": "WHO/itnwm_Quintile4"
+    },
+    {
+      "name": "Pregnant Women Sleeping Under Insecticide-Treated Nets (%), Quintile5",
+      "dcid": "WHO/itnwm_Quintile5"
+    },
+    {
+      "name": "Pregnant Women Sleeping Under Insecticide-Treated Nets (%), Rural",
+      "dcid": "WHO/itnwm_Rural"
+    },
+    {
+      "name": "Pregnant Women Sleeping Under Insecticide-Treated Nets (%), Secondary Or Higher",
+      "dcid": "WHO/itnwm_SecondaryOrHigher"
+    },
+    {
+      "name": "Pregnant Women Sleeping Under Insecticide-Treated Nets (%), Urban",
+      "dcid": "WHO/itnwm_Urban"
+    },
+    {
+      "name": "Pregnant Women Sleeping Under Insecticide-Treated Nets (%),15 To19 Years",
+      "dcid": "WHO/itnwm_15To19Years"
+    },
+    {
+      "name": "Pregnant Women Sleeping Under Insecticide-Treated Nets (%),20 To49 Years",
+      "dcid": "WHO/itnwm_20To49Years"
+    },
+    {
+      "name": "Proportion of ever-partnered women and girls subjected to physical and/or sexual violence by a current or former intimate partner in the previous 12 months [15 to 49 years old, Female]",
+      "dcid": "sdg/VC_VAW_MARR.AGE--Y15T49__SEX--F"
+    },
+    {
+      "name": "Proportion of ever-partnered women and girls subjected to physical and/or sexual violence by a current or former intimate partner in the previous 12 months [15 years old and over, Female]",
+      "dcid": "sdg/VC_VAW_MARR.AGE--Y_GE15__SEX--F"
+    },
+    {
+      "name": "Proportion of girls and women aged 15-49 years who have undergone female genital mutilation [15 to 19 years old, Female]",
+      "dcid": "sdg/SH_STA_FGMS.AGE--Y15T19__SEX--F"
+    },
+    {
+      "name": "Proportion of girls and women aged 15-49 years who have undergone female genital mutilation [15 to 49 years old, Female]",
+      "dcid": "sdg/SH_STA_FGMS.AGE--Y15T49__SEX--F"
+    },
+    {
+      "name": "Proportion of women aged 15-49 years with anaemia [15 to 49 years old, Female]",
+      "dcid": "sdg/SH_STA_ANEM.AGE--Y15T49__SEX--F"
+    },
+    {
+      "name": "Proportion of women aged 15-49 years with anaemia, non-pregnant [15 to 49 years old, Female]",
+      "dcid": "sdg/SH_STA_ANEM_NPRG.AGE--Y15T49__SEX--F"
+    },
+    {
+      "name": "Proportion of women aged 15-49 years with anaemia, pregnant [15 to 49 years old, Female]",
+      "dcid": "sdg/SH_STA_ANEM_PREG.AGE--Y15T49__SEX--F"
+    },
+    {
+      "name": "Proportion of women aged 20-24 years who were married or in a union before age 15 [20 to 24 years old, Female]",
+      "dcid": "sdg/SP_DYN_MRBF15.AGE--Y20T24__SEX--F"
+    },
+    {
+      "name": "Proportion of women aged 20-24 years who were married or in a union before age 18 [20 to 24 years old, Female]",
+      "dcid": "sdg/SP_DYN_MRBF18.AGE--Y20T24__SEX--F"
+    },
+    {
+      "name": "Proportion of women in managerial positions - 13th ICLS - 13th ICLS [15 years old and over, Female]",
+      "dcid": "sdg/IC_GEN_MGTL.AGE--Y_GE15__SEX--F"
+    },
+    {
+      "name": "Proportion of women in managerial positions - 19th ICLS - 19th ICLS [15 years old and over, Female]",
+      "dcid": "sdg/IC_GEN_MGTL_19ICLS.AGE--Y_GE15__SEX--F"
+    },
+    {
+      "name": "Proportion of women in senior and middle management positions - 13th ICLS - 13th ICLS [15 years old and over, Female]",
+      "dcid": "sdg/IC_GEN_MGTN.AGE--Y_GE15__SEX--F"
+    },
+    {
+      "name": "Proportion of women in senior and middle management positions - 19th ICLS - 19th ICLS [15 years old and over, Female]",
+      "dcid": "sdg/IC_GEN_MGTN_19ICLS.AGE--Y_GE15__SEX--F"
+    },
+    {
+      "name": "Proportion of women of reproductive age who have their need for family planning satisfied with modern methods [15 to 49 years old, Female]",
+      "dcid": "sdg/SH_FPL_MTMM.AGE--Y15T49__SEX--F"
+    },
+    {
+      "name": "Proportion of women who make their own informed decisions regarding contraceptive use [15 to 49 years old, Female]",
+      "dcid": "sdg/SH_FPL_INFMCU.AGE--Y15T49__SEX--F"
+    },
+    {
+      "name": "Proportion of women who make their own informed decisions regarding reproductive health care [15 to 49 years old, Female]",
+      "dcid": "sdg/SH_FPL_INFMRH.AGE--Y15T49__SEX--F"
+    },
+    {
+      "name": "Proportion of women who make their own informed decisions regarding sexual relations [15 to 49 years old, Female]",
+      "dcid": "sdg/SH_FPL_INFMSR.AGE--Y15T49__SEX--F"
+    },
+    {
+      "name": "Proportion of women who make their own informed decisions regarding sexual relations, contraceptive use and reproductive health care [15 to 49 years old, Female]",
+      "dcid": "sdg/SH_FPL_INFM.AGE--Y15T49__SEX--F"
+    },
+    {
+      "name": "Sales of Establishment: Manufacturer Sales Branches And Offices, Women's And Children's Clothing Merch. Whls. (NAICS/42433)",
+      "dcid": "dc/79vrq3849kfeg"
+    },
+    {
+      "name": "Sales of Establishment: Merchant Wholesalers Excluding Manufacturer Sales Branches And Offices, Women's And Children's Clothing Merch. Whls. (NAICS/42433)",
+      "dcid": "dc/ggp40c14cfw7b"
+    },
+    {
+      "name": "Sales of Establishment: Merchant Wholesalers, Women's And Children's Clothing Merch. Whls. (NAICS/42433)",
+      "dcid": "dc/867ehyppl4rf1"
+    },
+    {
+      "name": "Sales of Establishment: Women's And Children's Clothing Merch. Whls. (NAICS/42433), With Payroll",
+      "dcid": "dc/6bgpdj3k5mrm3"
+    },
+    {
+      "name": "Sales of Establishment: Women's Clothing Stores (NAICS/44812), With Payroll",
+      "dcid": "dc/tb8gcxernde19"
+    },
+    {
+      "name": "Shipments or Receipts of Establishment: Other Women's And Girls' Outerwear Mfg (NAICS/315239), With Payroll",
+      "dcid": "dc/6qkv04wn94c53"
+    },
+    {
+      "name": "Shipments or Receipts of Establishment: Women's And Girls' Blouse And Shirt Mfg (NAICS/315232), With Payroll",
+      "dcid": "dc/fks84eehqmew7"
+    },
+    {
+      "name": "Shipments or Receipts of Establishment: Women's And Girls' Cut And Sew Apparel Mfg (NAICS/31523), With Payroll",
+      "dcid": "dc/np3hcrk1njx1b"
+    },
+    {
+      "name": "Shipments or Receipts of Establishment: Women's And Girls' Dress Manufacturing (NAICS/315233), With Payroll",
+      "dcid": "dc/6jy082t6fmvvh"
+    },
+    {
+      "name": "Shipments or Receipts of Establishment: Women's And Girls' Lingerie And Nightwear Mfg (NAICS/315231), With Payroll",
+      "dcid": "dc/pp7mk3zze5x33"
+    },
+    {
+      "name": "Shipments or Receipts of Establishment: Women's And Girls' Suit, Coat, And Skirt Mfg (NAICS/315234), With Payroll",
+      "dcid": "dc/6llg4c0hm0518"
+    },
+    {
+      "name": "Shipments or Receipts of Establishment: Women's Handbag And Purse Manufacturing (NAICS/316992), With Payroll",
+      "dcid": "dc/v8p0zbh29kv98"
+    },
+    {
+      "name": "Shipments or Receipts of Establishment: Women's Nonathletic Footwear Manufacturing (NAICS/316214), With Payroll",
+      "dcid": "dc/4xrh95yzw99w3"
+    },
+    {
+      "name": "Shipments or Receipts of Establishment: Women's, Girls', Infants' Apparel Contractors (NAICS/315212), With Payroll",
+      "dcid": "dc/mcjnbmc4tk28d"
+    },
+    {
+      "name": "Shipments or Receipts of Establishment: Women's, Girls', Infants' Cut-sew Apparel Mfg (NAICS/31524), With Payroll",
+      "dcid": "dc/ne63ywxmvk1lg"
+    },
+    {
+      "name": "Use Of Mosquito Nets - Percentage Of All Women Age 15-49 Who Slept Under An Ever Treated Net Last Night",
+      "dcid": "WHO/MALARIA_30557"
+    },
+    {
+      "name": "Use Of Mosquito Nets - Percentage Of All Women Age 15-49 Who Slept Under An Itn Last Night",
+      "dcid": "WHO/MALARIA_30558"
+    },
+    {
+      "name": "Use Of Mosquito Nets - Percentage Of All Women Age 15-49 Who Slept Under Any Net Last Night",
+      "dcid": "WHO/MALARIA_30556"
+    },
+    {
+      "name": "Wages Annual of Person: Privately Owned, Other Women's And Girls' Outerwear Mfg (NAICS/315239)",
+      "dcid": "dc/tvqkwnk4254zf"
+    },
+    {
+      "name": "Wages Annual of Person: Privately Owned, Women's And Children's Clothing Merch. Whls. (NAICS/42433)",
+      "dcid": "dc/k6j18rtg73sxd"
+    },
+    {
+      "name": "Wages Annual of Person: Privately Owned, Women's And Girls' Blouse And Shirt Mfg (NAICS/315232)",
+      "dcid": "dc/wjp35e94ypxz9"
+    },
+    {
+      "name": "Wages Annual of Person: Privately Owned, Women's And Girls' Cut And Sew Apparel Mfg (NAICS/31523)",
+      "dcid": "dc/1ee37dmy0vy5"
+    },
+    {
+      "name": "Wages Annual of Person: Privately Owned, Women's And Girls' Dress Manufacturing (NAICS/315233)",
+      "dcid": "dc/xr2y5qk8wpd38"
+    },
+    {
+      "name": "Wages Annual of Person: Privately Owned, Women's And Girls' Lingerie And Nightwear Mfg (NAICS/315231)",
+      "dcid": "dc/peqnzkzhwz5y2"
+    },
+    {
+      "name": "Wages Annual of Person: Privately Owned, Women's And Girls' Suit, Coat, And Skirt Mfg (NAICS/315234)",
+      "dcid": "dc/g7s09106r7ps8"
+    },
+    {
+      "name": "Wages Annual of Person: Privately Owned, Women's Clothing Stores (NAICS/44812)",
+      "dcid": "dc/psnjt849m4dn9"
+    },
+    {
+      "name": "Wages Annual of Person: Privately Owned, Women's Handbag And Purse Manufacturing (NAICS/316992)",
+      "dcid": "dc/rcckd4sk2e4jc"
+    },
+    {
+      "name": "Wages Annual of Person: Privately Owned, Women's Nonathletic Footwear Manufacturing (NAICS/316214)",
+      "dcid": "dc/58x2fef87hfgd"
+    },
+    {
+      "name": "Wages Annual of Person: Privately Owned, Women's, Girls', Infants' Apparel Contractors (NAICS/315212)",
+      "dcid": "dc/lvjcrczqrvhb9"
+    },
+    {
+      "name": "Wages Annual of Person: Privately Owned, Women's, Girls', Infants' Cut-sew Apparel Mfg (NAICS/31524)",
+      "dcid": "dc/c5mv6lhvbwhf4"
+    },
+    {
+      "name": "Wages Total of Person: Privately Owned, Other Women's And Girls' Outerwear Mfg (NAICS/315239)",
+      "dcid": "dc/f2qpfh3gwcgnf"
+    },
+    {
+      "name": "Wages Total of Person: Privately Owned, Women's And Children's Clothing Merch. Whls. (NAICS/42433)",
+      "dcid": "dc/z1p7zw55m68t"
+    },
+    {
+      "name": "Wages Total of Person: Privately Owned, Women's And Girls' Blouse And Shirt Mfg (NAICS/315232)",
+      "dcid": "dc/jb5bnggeqdrlf"
+    },
+    {
+      "name": "Wages Total of Person: Privately Owned, Women's And Girls' Cut And Sew Apparel Mfg (NAICS/31523)",
+      "dcid": "dc/mn5gh6ttbp519"
+    },
+    {
+      "name": "Wages Total of Person: Privately Owned, Women's And Girls' Dress Manufacturing (NAICS/315233)",
+      "dcid": "dc/2bj50cnxjb0kb"
+    },
+    {
+      "name": "Wages Total of Person: Privately Owned, Women's And Girls' Lingerie And Nightwear Mfg (NAICS/315231)",
+      "dcid": "dc/5ekvbnw1t682d"
+    },
+    {
+      "name": "Wages Total of Person: Privately Owned, Women's And Girls' Suit, Coat, And Skirt Mfg (NAICS/315234)",
+      "dcid": "dc/xr57j4xy7cdv4"
+    },
+    {
+      "name": "Wages Total of Person: Privately Owned, Women's Clothing Stores (NAICS/44812)",
+      "dcid": "dc/dl1fp4tf3v7j8"
+    },
+    {
+      "name": "Wages Total of Person: Privately Owned, Women's Handbag And Purse Manufacturing (NAICS/316992)",
+      "dcid": "dc/1lmnylmq06r33"
+    },
+    {
+      "name": "Wages Total of Person: Privately Owned, Women's Nonathletic Footwear Manufacturing (NAICS/316214)",
+      "dcid": "dc/hbcd5z1chp8xh"
+    },
+    {
+      "name": "Wages Total of Person: Privately Owned, Women's, Girls', Infants' Apparel Contractors (NAICS/315212)",
+      "dcid": "dc/eer0rzg5kwppg"
+    },
+    {
+      "name": "Wages Total of Person: Privately Owned, Women's, Girls', Infants' Cut-sew Apparel Mfg (NAICS/31524)",
+      "dcid": "dc/z9t75hqng6gw2"
+    },
+    {
+      "name": "Wages Weekly of Person: Privately Owned, Other Women's And Girls' Outerwear Mfg (NAICS/315239)",
+      "dcid": "dc/nr09plxp554qh"
+    },
+    {
+      "name": "Wages Weekly of Person: Privately Owned, Women's And Children's Clothing Merch. Whls. (NAICS/42433)",
+      "dcid": "dc/c2zyx48xp6cbd"
+    },
+    {
+      "name": "Wages Weekly of Person: Privately Owned, Women's And Girls' Blouse And Shirt Mfg (NAICS/315232)",
+      "dcid": "dc/4nk7qvpemz8zb"
+    },
+    {
+      "name": "Wages Weekly of Person: Privately Owned, Women's And Girls' Cut And Sew Apparel Mfg (NAICS/31523)",
+      "dcid": "dc/9f8rjnn2rer12"
+    },
+    {
+      "name": "Wages Weekly of Person: Privately Owned, Women's And Girls' Dress Manufacturing (NAICS/315233)",
+      "dcid": "dc/m4wh4d5mcsrh8"
+    },
+    {
+      "name": "Wages Weekly of Person: Privately Owned, Women's And Girls' Lingerie And Nightwear Mfg (NAICS/315231)",
+      "dcid": "dc/s2gk50gstpw4d"
+    },
+    {
+      "name": "Wages Weekly of Person: Privately Owned, Women's And Girls' Suit, Coat, And Skirt Mfg (NAICS/315234)",
+      "dcid": "dc/8l3n93g19qzl7"
+    },
+    {
+      "name": "Wages Weekly of Person: Privately Owned, Women's Clothing Stores (NAICS/44812)",
+      "dcid": "dc/9d4d350es8ke1"
+    },
+    {
+      "name": "Wages Weekly of Person: Privately Owned, Women's Handbag And Purse Manufacturing (NAICS/316992)",
+      "dcid": "dc/955z6r2hq2tx1"
+    },
+    {
+      "name": "Wages Weekly of Person: Privately Owned, Women's Nonathletic Footwear Manufacturing (NAICS/316214)",
+      "dcid": "dc/z2r20tkkmm42f"
+    },
+    {
+      "name": "Wages Weekly of Person: Privately Owned, Women's, Girls', Infants' Apparel Contractors (NAICS/315212)",
+      "dcid": "dc/k4jz9sb1c99lc"
+    },
+    {
+      "name": "Wages Weekly of Person: Privately Owned, Women's, Girls', Infants' Cut-sew Apparel Mfg (NAICS/31524)",
+      "dcid": "dc/mr45qvflq91hh"
+    },
+    {
+      "name": "Women Age 15-49 Years Who Received A Health Check Within 2 Days After Delivery Of Their Most Recent Live Birth In The Last 2 Years (%)",
+      "dcid": "WHO/UNICEF_PNCMOTHER"
+    },
+    {
+      "name": "Annual sales from women clothing stores",
+      "dcid": "Annual_Amount_EconomicActivity_Sales_WomenClothingStores"
+    },
+    {
+      "name": "Consumer Price Index of Consumer Goods And Services (Seasonally Unadjusted): Urban Consumer, Womens And Girls Apparel",
+      "dcid": "SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_WomensAndGirlsApparel"
+    },
+    {
+      "name": "Consumer Price Index of Consumer Goods And Services (Seasonally Unadjusted): Urban Consumer, Womens Apparel",
+      "dcid": "SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_WomensApparel"
+    },
+    {
+      "name": "Consumer Price Index of Consumer Goods And Services (Seasonally Unadjusted): Urban Consumer, Womens Dresses",
+      "dcid": "SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_WomensDresses"
+    },
+    {
+      "name": "Consumer Price Index of Consumer Goods And Services (Seasonally Unadjusted): Urban Consumer, Womens Footwear",
+      "dcid": "SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_WomensFootwear"
+    },
+    {
+      "name": "Consumer Price Index of Consumer Goods And Services (Seasonally Unadjusted): Urban Consumer, Womens Outerwear",
+      "dcid": "SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_WomensOuterwear"
+    },
+    {
+      "name": "Consumer Price Index of Consumer Goods And Services (Seasonally Unadjusted): Urban Consumer, Womens Suits And Separates",
+      "dcid": "SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_WomensSuitsAndSeparates"
+    },
+    {
+      "name": "Consumer Price Index of Consumer Goods And Services (Seasonally Unadjusted): Urban Consumer, Womens Underwear Nightwear Sportswear And Accessories",
+      "dcid": "SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_WomensUnderwearNightwearSportswearAndAccessories"
+    },
+    {
+      "name": "Consumer Price Index of Consumer Goods And Services (Seasonally Unadjusted): Urban Consumer, Womens Underwear Nightwear Swimwear And Accessories",
+      "dcid": "SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_WomensUnderwearNightwearSwimwearAndAccessories"
+    },
+    {
+      "name": "Consumer price index for women underwear or nightwear or sportswear or accessories for urban consumers (Seasonally Adjusted)",
+      "dcid": "SeasonallyAdjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_WomenUnderwearOrNightwearOrSportswearOrAccessories"
+    },
+    {
+      "name": "Consumer price index for women underwear or nightwear or sportswear or accessories for urban consumers (Seasonally Unadjusted)",
+      "dcid": "SeasonallyUnadjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_WomenUnderwearOrNightwearOrSportswearOrAccessories"
+    },
+    {
+      "name": "Consumer price index for women's and girls' apparel for urban consumers (Seasonally Adjusted)",
+      "dcid": "SeasonallyAdjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_WomensAndGirlsApparel"
+    },
+    {
+      "name": "Consumer price index for women's apparel for urban consumers (Seasonally Adjusted)",
+      "dcid": "SeasonallyAdjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_WomensApparel"
+    },
+    {
+      "name": "Consumer price index for women's dresses for urban consumers (Seasonally Adjusted)",
+      "dcid": "SeasonallyAdjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_WomensDresses"
+    },
+    {
+      "name": "Consumer price index for women's footwear for urban consumers (Seasonally Adjusted)",
+      "dcid": "SeasonallyAdjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_WomensFootwear"
+    },
+    {
+      "name": "Consumer price index for women's outerwear for urban consumers (Seasonally Adjusted)",
+      "dcid": "SeasonallyAdjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_WomensOuterwear"
+    },
+    {
+      "name": "Consumer price index for women's suits and separates for urban consumers (Seasonally Adjusted)",
+      "dcid": "SeasonallyAdjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_WomensSuitsAndSeparates"
+    },
+    {
+      "name": "Consumer price index for women's underwear, nightwear, swimwear and accessories for urban consumers (Seasonally Adjusted)",
+      "dcid": "SeasonallyAdjusted_ConsumerPriceIndex_ConsumerGoodsAndServices_UrbanConsumer_WomensUnderwearNightwearSwimwearAndAccessories"
+    },
+    {
+      "name": "Monthly sales of women's clothing stores",
+      "dcid": "Monthly_Amount_EconomicActivity_Sales_WomenClothingStores"
+    },
+    {
+      "name": "Non-pregnant women age group 15 to 49 years who are anaemic (%)",
+      "dcid": "Count_NonPregnantWoman_15To49Years_ConditionAnaemia_AsAFractionOf_Count_NonPregnantWoman_15To49Years"
+    },
+    {
+      "name": "Percentage of unemployed women",
+      "dcid": "Count_Person_Unemployed_Female_AsAFractionOf_Count_Person_Female"
+    },
+    {
+      "name": "Pregnant women aged 15-49 yrs who are anaemic (11.0g/dl) (%)",
+      "dcid": "Count_WHO/PregnantWomen_15To49Year_ConditionAnaemia_AsAFractionOf_Count_WHO/PregnantWomen_15To49Year"
+    },
+    {
+      "name": "Seats won by women in the general elections to state legislative assembly (%)",
+      "dcid": "Count_Person_Female_LegislatorOccupation_AsAFractionOf_Count_Person_LegislatorOccupation"
+    },
+    {
+      "name": "Women Unmet need for family planning (%)",
+      "dcid": "Count_Person_WithUnmetNeed_Female_AsAFractionOf_Count_Person_Female"
+    },
+    {
+      "name": "Women age 15 years and above who consume alcohol (%)",
+      "dcid": "Count_Person_15OrMoreYears_AlcoholConsumption_AsAFractionOf_Count_Person_15OrMoreYears"
+    },
+    {
+      "name": "Women age 15 years and above who use any kind of tobacco (%)",
+      "dcid": "Count_Person_15OrMoreYears_TobaccoUse_AsAFractionOf_Count_Person_15OrMoreYears"
+    },
+    {
+      "name": "Women age group 15 to 24 years who use hygienic methods of protection during their menstrual period (%)",
+      "dcid": "Count_MenstrualWoman_15To19Years_HygienicMethodsOfProtection_AsAFractionOf_Count_MenstrualWoman_15To19Years"
+    },
+    {
+      "name": "Women having a bank or savings account that they themselves use (%)",
+      "dcid": "Count_Person_SavingsAccount_Female_AsAFractionOf_Count_Person_Female"
+    },
+    {
+      "name": "Women having a mobile phone that they themselves use (%)",
+      "dcid": "Count_Person_MobilePhone_Female_AsAFractionOf_Count_Person_Female"
+    },
+    {
+      "name": "Women owning a house and or land (alone or jointly with others) (%)",
+      "dcid": "Count_Person_HouseOrLand_Female_AsAFractionOf_Count_Person_HouseOrLand_Female"
+    },
+    {
+      "name": "Women suffering from elevated blood pressure (%)",
+      "dcid": "Count_Person_Female_WithElevatedBloodPressure_AsAFractionOf_Count_Person_Female"
+    },
+    {
+      "name": "Women suffering from high blood sugar level (%)",
+      "dcid": "Count_Person_Female_WithHighBloodSugarLevel_AsAFractionOf_Count_Person_Female"
+    },
+    {
+      "name": "Women suffering from high or very high blood sugar level (%)",
+      "dcid": "Count_Person_Female_WithHighBloodSugarLevelOrVeryHighBloodSugarLevel_AsAFractionOf_Count_Person_Female"
+    },
+    {
+      "name": "Women suffering from very high blood sugar level (%)",
+      "dcid": "Count_Person_Female_WithVeryHighBloodSugarLevel_AsAFractionOf_Count_Person_Female"
+    },
+    {
+      "name": "Women who are overweight or obese (%)",
+      "dcid": "Count_Person_Female_OverweightOrObesity_AsAFractionOf_Count_Person_Female"
+    },
+    {
+      "name": "Women who have comprehensive knowledge of Human immunodeficiency virus ( HIV ) or Acquired Immune Deficiency Syndrome ( AIDS ) (%)",
+      "dcid": "Count_Person_Female_HivOrAids_AsAFractionOf_Count_Person_Female"
+    },
+    {
+      "name": "Women who have ever undergone a breast examination for breast cancer (%)",
+      "dcid": "Count_Person_Female_ReceivedBreastCancerExamination_AsAFractionOf_Count_Person_Female"
+    },
+    {
+      "name": "Women who have ever undergone a cervix examination(%)",
+      "dcid": "Count_Person_Female_ReceivedCervicalCancerScreening_AsAFractionOf_Count_Person_Female"
+    },
+    {
+      "name": "Women who have ever undergone a oral cavity examination (%)",
+      "dcid": "Count_Person_Female_ReceivedOralCavityExamination_AsAFractionOf_Count_Person_Female"
+    },
+    {
+      "name": "Women who have high risk waist-to-hip ratio (%)",
+      "dcid": "Count_Person_Female_HighRiskOfWaistToHipRatio_AsAFractionOf_Count_Person_Female"
+    },
+    {
+      "name": "Women who worked in the last 12 months and were paid in cash (%)",
+      "dcid": "Count_Person_Female_CashPayment_AsAFractionOf_Count_Person_Female"
+    },
+    {
+      "name": "Women with 10 or more years of schooling in the age group of 15 to 49 years (%)",
+      "dcid": "Count_Person_Female_10OrMoreYears_AsAFractionOf_Count_Person_Female"
+    },
+    {
+      "name": "Women with body mass index ( BMI ) below normal (%)",
+      "dcid": "Count_Person_Female_BodyMassIndexBelowNormal_AsAFractionOf_Count_Person_Female"
+    },
+    {
+      "name": "Women with moderately high hypertension (%)",
+      "dcid": "Count_Person_Female_WithModerateHypertension_AsAFractionOf_Count_Person_Female"
+    },
+    {
+      "name": "Women with very high hypertension (%)",
+      "dcid": "Count_Person_Female_WithVeryHighHypertension_AsAFractionOf_Count_Person_Female"
+    },
+    {
+      "name": "Women-mildly elevated blood pressure (%)",
+      "dcid": "Count_Person_Female_WithMidlyElevatedBloodPressure_AsAFractionOf_Count_Person_Female"
+    },
+    {
+      "name": "Women-moderately or severely elevated blood pressure (%)",
+      "dcid": "Count_Person_Female_WithModeratelyElevatedBloodPressureOrSeverelyElevatedBloodPressure_AsAFractionOf_Count_Person_Female"
+    },
+    {
+      "name": "Number of divorced women aged 15 years",
+      "dcid": "Count_Person_15Years_Female_Divorced"
+    },
+    {
+      "name": "Number of divorced women aged 18 years and above",
+      "dcid": "Count_Person_18Years_Female_Divorced"
+    },
+    {
+      "name": "Number of divorced women aged 19 years",
+      "dcid": "Count_Person_19Years_Female_Divorced"
+    },
+    {
+      "name": "Number of divorced women aged 75 or more years",
+      "dcid": "Count_Person_75OrMoreYears_Female_Divorced"
+    },
+    {
+      "name": "Number of divorced women aged 75 years or less",
+      "dcid": "Count_Person_75OrLessYears_Female_Divorced"
+    },
+    {
+      "name": "Number of employed women in the information sector",
+      "dcid": "Count_Person_Employed_Female_Information"
+    },
+    {
+      "name": "Number of married women aged 15 years",
+      "dcid": "Count_Person_15Years_Female_Married"
+    },
+    {
+      "name": "Number of married women aged 18 years and above",
+      "dcid": "Count_Person_18Years_Female_Married"
+    },
+    {
+      "name": "Number of married women aged 19 years",
+      "dcid": "Count_Person_19Years_Female_Married"
+    },
+    {
+      "name": "Number of married women aged 75 or more years",
+      "dcid": "Count_Person_75OrMoreYears_Female_Married"
+    },
+    {
+      "name": "Number of married women aged 75 years or less",
+      "dcid": "Count_Person_75OrLessYears_Female_Married"
+    },
+    {
+      "name": "Number of never married women aged 15 years",
+      "dcid": "Count_Person_15Years_Female_NeverMarried"
+    },
+    {
+      "name": "Number of never married women aged 19 years",
+      "dcid": "Count_Person_19Years_Female_NeverMarried"
+    },
+    {
+      "name": "Number of never-married women aged 75 years or less",
+      "dcid": "Count_Person_75OrLessYears_Female_NeverMarried"
+    },
+    {
+      "name": "Number of pregnant women aged 0 to 9 years affected by Hepatitis B.",
+      "dcid": "Count_PregnantWoman_0To9Years_Female_ConditionHepatitisB"
+    },
+    {
+      "name": "Number of pregnant women aged 10 to 19 years affected by Hepatitis B.",
+      "dcid": "Count_PregnantWoman_10To19Years_Female_ConditionHepatitisB"
+    },
+    {
+      "name": "Number of pregnant women aged 20 to 29 years affected by Hepatitis B.",
+      "dcid": "Count_PregnantWoman_20To29Years_Female_ConditionHepatitisB"
+    },
+    {
+      "name": "Number of pregnant women aged 30 to 39 years affected by Hepatitis B.",
+      "dcid": "Count_PregnantWoman_30To39Years_Female_ConditionHepatitisB"
+    },
+    {
+      "name": "Number of pregnant women aged 40 to 49 years affected by Hepatitis B.",
+      "dcid": "Count_PregnantWoman_40To49Years_Female_ConditionHepatitisB"
+    },
+    {
+      "name": "Number of pregnant women aged 50 to 59 years affected by Hepatitis B.",
+      "dcid": "Count_PregnantWoman_50To59Years_Female_ConditionHepatitisB"
+    },
+    {
+      "name": "Number of pregnant women aged 60 to 69 years affected by Hepatitis B.",
+      "dcid": "Count_PregnantWoman_60To69Years_Female_ConditionHepatitisB"
+    },
+    {
+      "name": "Number of pregnant women aged 70 or more years affected by Hepatitis B.",
+      "dcid": "Count_PregnantWoman_70OrMoreYears_Female_ConditionHepatitisB"
+    },
+    {
+      "name": "Number of widowed women aged 15 years and older",
+      "dcid": "Count_Person_15Years_Female_Widowed"
+    },
+    {
+      "name": "Number of widowed women aged 18 years and above",
+      "dcid": "Count_Person_18Years_Female_Widowed"
+    },
+    {
+      "name": "Number of widowed women aged 19 years",
+      "dcid": "Count_Person_19Years_Female_Widowed"
+    },
+    {
+      "name": "Number of widowed women aged 75 or more years",
+      "dcid": "Count_Person_75OrMoreYears_Female_Widowed"
+    },
+    {
+      "name": "Number of widowed women aged 75 years or less",
+      "dcid": "Count_Person_75OrLessYears_Female_Widowed"
+    },
+    {
+      "name": "Number of women aged 15 years in a contract marriage",
+      "dcid": "Count_Person_15Years_Female_ContractMarriage"
+    },
+    {
+      "name": "Number of women aged 17 years in a contract marriage",
+      "dcid": "Count_Person_17Years_Female_ContractMarriage"
+    },
+    {
+      "name": "Number of women aged 18 years or older in a contract marriage",
+      "dcid": "Count_Person_18Years_Female_ContractMarriage"
+    },
+    {
+      "name": "Number of women aged 20 to 24 years with contract marriage",
+      "dcid": "Count_Person_20To24Years_Female_ContractMarriage"
+    },
+    {
+      "name": "Number of women aged 25 to 29 years in a contractual marriage",
+      "dcid": "Count_Person_25To29Years_Female_ContractMarriage"
+    },
+    {
+      "name": "Number of women aged 30 to 34 years in a contract marriage",
+      "dcid": "Count_Person_30To34Years_Female_ContractMarriage"
+    },
+    {
+      "name": "Number of women aged 35 to 39 years in a contract marriage",
+      "dcid": "Count_Person_35To39Years_Female_ContractMarriage"
+    },
+    {
+      "name": "Number of women aged 40 to 44 years in contract marriage",
+      "dcid": "Count_Person_40To44Years_Female_ContractMarriage"
+    },
+    {
+      "name": "Number of women aged 45 to 49 years in contract marriage",
+      "dcid": "Count_Person_45To49Years_Female_ContractMarriage"
+    },
+    {
+      "name": "Number of women aged 50 to 54 years in a contract marriage",
+      "dcid": "Count_Person_50To54Years_Female_ContractMarriage"
+    },
+    {
+      "name": "Number of women aged 55 to 59 years in registered marriages",
+      "dcid": "Count_Person_55To59Years_Female_ContractMarriage"
+    },
+    {
+      "name": "Number of women aged 60 to 64 years in a contract marriage",
+      "dcid": "Count_Person_60To64Years_Female_ContractMarriage"
+    },
+    {
+      "name": "Number of women aged 65 to 69 years with a marriage contract",
+      "dcid": "Count_Person_65To69Years_Female_ContractMarriage"
+    },
+    {
+      "name": "Number of women aged 70 to 74 years in a registered marriage",
+      "dcid": "Count_Person_70To74Years_Female_ContractMarriage"
+    },
+    {
+      "name": "Number of women aged 75 or more years in contract marriages",
+      "dcid": "Count_Person_75OrMoreYears_Female_ContractMarriage"
+    },
+    {
+      "name": "Number of women aged 75 or more years who have never been married",
+      "dcid": "Count_Person_75OrMoreYears_Female_NeverMarried"
+    },
+    {
+      "name": "Number of women aged 75 years or less in contract marriage",
+      "dcid": "Count_Person_75OrLessYears_Female_ContractMarriage"
+    },
+    {
+      "name": "Number of women aged 85 to 89 years living in rural areas",
+      "dcid": "Count_Person_85To89Years_Female_Rural"
+    },
+    {
+      "name": "Number of women aged 85 to 89 years living in urban areas",
+      "dcid": "Count_Person_85To89Years_Female_Urban"
+    },
+    {
+      "name": "Number of women aged 90 years or older living in rural areas",
+      "dcid": "Count_Person_90OrMoreYears_Female_Rural"
+    },
+    {
+      "name": "Number of women aged 90 years or older living in urban areas",
+      "dcid": "Count_Person_90OrMoreYears_Female_Urban"
+    },
+    {
+      "name": "Number of women born outside the country and excluding USA, Guatemala, Japan, France and Spain.",
+      "dcid": "Count_Person_Female_ForeignBorn_PlaceOfBirthINEGIOtherCountries"
+    },
+    {
+      "name": "Number of women born outside the country in France",
+      "dcid": "Count_Person_Female_ForeignBorn_PlaceOfBirthFrance"
+    },
+    {
+      "name": "Number of women born outside the country in Guatemala",
+      "dcid": "Count_Person_Female_ForeignBorn_PlaceOfBirthGautemala"
+    },
+    {
+      "name": "Number of women born outside the country in Japan",
+      "dcid": "Count_Person_Female_ForeignBorn_PlaceOfBirthJapan"
+    },
+    {
+      "name": "Number of women born outside the country in Spain",
+      "dcid": "Count_Person_Female_ForeignBorn_PlaceOfBirthSpain"
+    },
+    {
+      "name": "Number of women born outside the country in the United States of America",
+      "dcid": "Count_Person_Female_ForeignBorn_PlaceOfBirthUSA"
+    },
+    {
+      "name": "Number of women employed in financial activities",
+      "dcid": "Count_Person_Employed_Female_FinancialActivities"
+    },
+    {
+      "name": "Number of women employed in the mining and logging industry",
+      "dcid": "Count_Person_Employed_Female_MiningAndLogging"
+    },
+    {
+      "name": "Number of women in contract marriage aged 19 years",
+      "dcid": "Count_Person_19Years_Female_ContractMarriage"
+    },
+    {
+      "name": "Number of women who are 18 years old and never married",
+      "dcid": "Count_Person_18Years_Female_NeverMarried"
+    },
+    {
+      "name": "Percentage of Women (18 to 64 Years Old) Without Health Insurance",
+      "dcid": "Percent_Person_18To64Years_Female_NoHealthInsurance"
+    },
+    {
+      "name": "Prevalence of cervical cancer screening among women aged 30-49 years (%) [30-49 years, Female, in lifetime]",
+      "dcid": "who/NCD_CXCA_SCREENED_WITHIN_TIMEPERIOD.AGE--Y30T49__SEX--F__TIMEPERIOD--EVER_LIFETIME"
+    },
+    {
+      "name": "Prevalence of cervical cancer screening among women aged 30-49 years (%) [30-49 years, Female, in the last five years]",
+      "dcid": "who/NCD_CXCA_SCREENED_WITHIN_TIMEPERIOD.AGE--Y30T49__SEX--F__TIMEPERIOD--LAST05YEARS"
+    },
+    {
+      "name": "Prevalence of cervical cancer screening among women aged 30-49 years (%) [30-49 years, Female, in the last three years]",
+      "dcid": "who/NCD_CXCA_SCREENED_WITHIN_TIMEPERIOD.AGE--Y30T49__SEX--F__TIMEPERIOD--LAST03YEARS"
+    },
+    {
+      "name": "Prevalence of cervical cancer screening among women aged 30-49 years (%) [30-49 years, Female, in the last year]",
+      "dcid": "who/NCD_CXCA_SCREENED_WITHIN_TIMEPERIOD.AGE--Y30T49__SEX--F__TIMEPERIOD--LAST01YEAR"
+    },
+    {
+      "name": "Young women age group 18 to 29 years who experienced sexual violence by age18 (%)",
+      "dcid": "Count_Person_18To29Years_Female_18OrLessYears"
+    },
+    {
+      "name": "Adolescent Birth Rate (Per 1000 Women Aged 15-19 Years),10 To14 Years",
+      "dcid": "WHO/MDG_0000000003_10To14Years"
+    },
+    {
+      "name": "Adolescent Birth Rate (Per 1000 Women Aged 15-19 Years),15 To19 Years",
+      "dcid": "WHO/MDG_0000000003_15To19Years"
+    },
+    {
+      "name": "Adolescent fertility rate (births per 1,000 women ages 15-19)",
+      "dcid": "worldBank/SP_ADO_TFRT"
+    },
+    {
+      "name": "Adolescent fertility rate for women age 15 to 19 years (%)",
+      "dcid": "FertilityRate_Person_15To19Years_Adolescents_Female_AsAFractionOf_Count_Person_15To19Years_Adolescents_Female"
+    },
+    {
+      "name": "Fraction of 25 to 34 years, Women who have attained Bachelor's or equivalent level.",
+      "dcid": "Count_Person_25To34Years_BachelorsDegreeOrHigher_Female_AsAFractionOf_Count_Person_25To34Years_Female"
+    },
+    {
+      "name": "Fraction of 25 to 34 years, Women who have attained Below Short-cycle tertiary education.",
+      "dcid": "Count_Person_25To34Years_ShortCycleTertiaryEducation_Female_AsAFractionOf_Count_Person_25To34Years_Female"
+    },
+    {
+      "name": "Fraction of 25 to 34 years, Women who have attained Below upper secondary education.",
+      "dcid": "Count_Person_25To34Years_LowerSecondaryEducation_Female_AsAFractionOf_Count_Person_25To34Years_Female"
+    },
+    {
+      "name": "Fraction of 25 to 34 years, Women who have attained Doctoral or equivalent level",
+      "dcid": "Count_Person_25To34Years_DoctorateDegree_Female_AsAFractionOf_Count_Person_25To34Years_Female"
+    },
+    {
+      "name": "Fraction of 25 to 34 years, Women who have attained Master's or equivalent level.",
+      "dcid": "Count_Person_25To34Years_MastersDegreeOrHigher_Female_AsAFractionOf_Count_Person_25To34Years_Female"
+    },
+    {
+      "name": "Fraction of 25 to 34 years, Women who have attained Total tertiary education.",
+      "dcid": "Count_Person_25To34Years_TertiaryEducation_Female_AsAFractionOf_Count_Person_25To34Years_Female"
+    },
+    {
+      "name": "Fraction of 25 to 34 years, Women who have attained Upper secondary and post-secondary non-tertiary education.",
+      "dcid": "Count_Person_25To34Years_UpperSecondaryEducationOrPostSecondaryNonTertiaryEducation_Female_AsAFractionOf_Count_Person_25To34Years_Female"
+    },
+    {
+      "name": "Fraction of 25 to 64 years, Women who have attained Bachelor's or equivalent level.",
+      "dcid": "Count_Person_25To64Years_BachelorsDegreeOrHigher_Female_AsAFractionOf_Count_Person_25To64Years_Female"
+    },
+    {
+      "name": "Fraction of 25 to 64 years, Women who have attained Below Short-cycle tertiary education.",
+      "dcid": "Count_Person_25To64Years_ShortCycleTertiaryEducation_Female_AsAFractionOf_Count_Person_25To64Years_Female"
+    },
+    {
+      "name": "Fraction of 25 to 64 years, Women who have attained Below upper secondary education.",
+      "dcid": "Count_Person_25To64Years_LowerSecondaryEducation_Female_AsAFractionOf_Count_Person_25To64Years_Female"
+    },
+    {
+      "name": "Fraction of 25 to 64 years, Women who have attained Doctoral or equivalent level",
+      "dcid": "Count_Person_25To64Years_DoctorateDegree_Female_AsAFractionOf_Count_Person_25To64Years_Female"
+    },
+    {
+      "name": "Fraction of 25 to 64 years, Women who have attained Master's or equivalent level.",
+      "dcid": "Count_Person_25To64Years_MastersDegreeOrHigher_Female_AsAFractionOf_Count_Person_25To64Years_Female"
+    },
+    {
+      "name": "Mean Hemoglobin Level Of Non-Pregnant Women (Aged 15-49 Years)",
+      "dcid": "WHO/HEMOGLOBINLEVEL_NONPREGNANT_MEAN"
+    },
+    {
+      "name": "Mean Hemoglobin Level Of Pregnant Women (Aged 15-49 Years)",
+      "dcid": "WHO/HEMOGLOBINLEVEL_PREGNANT_MEAN"
+    },
+    {
+      "name": "Mean Hemoglobin Level Of Women Of Reproductive Age (Aged 15-49 Years)",
+      "dcid": "WHO/HEMOGLOBINLEVEL_REPRODUCTIVEAGE_MEAN"
+    },
+    {
+      "name": "Non-pregnant women age group 15 to 49 years who are anaemic (%), rural",
+      "dcid": "Count_NonPregnantWoman_15To49Years_ConditionAnaemia_Rural_AsAFractionOf_Count_NonPregnantWoman_15To49Years_Rural"
+    },
+    {
+      "name": "Non-pregnant women age group 15 to 49 years who are anaemic (%), urban",
+      "dcid": "Count_NonPregnantWoman_15To49Years_ConditionAnaemia_Urban_AsAFractionOf_Count_NonPregnantWoman_15To49Years_Urban"
+    },
+    {
+      "name": "Number of pregnant women registered for Antenatal Care within first trimester",
+      "dcid": "Count_PregnantWomen_RegisteredForAntenatalCareWithinFirstTrimester"
+    },
+    {
+      "name": "Percentage of employed women aged 20 to 24 years",
+      "dcid": "Count_Person_20To24Years_Employed_Female_AsAFractionOf_Count_Person_20To24Years_Female"
+    },
+    {
+      "name": "Percentage of employed women aged between 45 to 49 years",
+      "dcid": "Count_Person_45To49Years_Employed_Female_AsAFractionOf_Count_Person_45To49Years_Female"
+    },
+    {
+      "name": "Percentage of unemployed women aged 25-29",
+      "dcid": "Count_Person_25To29Years_Unemployed_Female_AsAFractionOf_Count_Person_25To29Years_Female"
+    },
+    {
+      "name": "Percentage of unemployed women aged 40 to 49",
+      "dcid": "Count_Person_40To49Years_Unemployed_Female_AsAFractionOf_Count_Person_40To49Years_Female"
+    },
+    {
+      "name": "Percentage of unemployed women aged 50 to 59",
+      "dcid": "Count_Person_50To59Years_Unemployed_Female_AsAFractionOf_Count_Person_50To59Years_Female"
+    },
+    {
+      "name": "Percentage of unemployed women aged between 40 and 44 years old",
+      "dcid": "Count_Person_40To44Years_Unemployed_Female_AsAFractionOf_Count_Person_40To44Years_Female"
+    },
+    {
+      "name": "Percentage of unemployed women with above intermediate education",
+      "dcid": "Count_Person_AboveIntermediateEducation_Unemployed_Female_AsAFractionOf_Count_Person_AboveIntermediateEducation_Female"
+    },
+    {
+      "name": "Percentage of unemployed women with less than intermediate education",
+      "dcid": "Count_Person_LessThanIntermediate_Unemployed_Female_AsAFractionOf_Count_Person_LessThanIntermediate_Female"
+    },
+    {
+      "name": "Percentage of unemployed women with technical secondary education",
+      "dcid": "Count_Person_TechnicalSecondaryEducation_Unemployed_Female_AsAFractionOf_Count_Person_TechnicalSecondaryEducation_Female"
+    },
+    {
+      "name": "Percentage of unemployed women with university or higher education",
+      "dcid": "Count_Person_UniversityOrHigher_Unemployed_Female_AsAFractionOf_Count_Person_UniversityOrHigher_Female"
+    },
+    {
+      "name": "Percentage of women aged 15 to 19 years who are farmers",
+      "dcid": "Count_Person_15To19Years_Female_FarmerOccupation_AsAFractionOf_Count_Person_15To19Years_Female"
+    },
+    {
+      "name": "Percentage of women aged 20 to 24 in skilled manual labor occupations",
+      "dcid": "Count_Person_20To24Years_Female_SkilledManualLaborOccupation_AsAFractionOf_Count_Person_20To24Years_Female"
+    },
+    {
+      "name": "Percentage of women aged 20 to 24 years that are clerks",
+      "dcid": "Count_Person_20To24Years_Female_ClerkOccupation_AsAFractionOf_Count_Person_20To24Years_Female"
+    },
+    {
+      "name": "Percentage of women aged 20 to 24 years who are farmers",
+      "dcid": "Count_Person_20To24Years_Female_FarmerOccupation_AsAFractionOf_Count_Person_20To24Years_Female"
+    },
+    {
+      "name": "Percentage of women aged 20-24 years in sales and service occupations",
+      "dcid": "Count_Person_20To24Years_Female_SalesAndServiceOccupation_AsAFractionOf_Count_Person_20To24Years_Female"
+    },
+    {
+      "name": "Percentage of women aged 25 to 29 in sales and service occupations",
+      "dcid": "Count_Person_25To29Years_Female_SalesAndServiceOccupation_AsAFractionOf_Count_Person_25To29Years_Female"
+    },
+    {
+      "name": "Percentage of women aged 25-29 in skilled manual labor occupations",
+      "dcid": "Count_Person_25To29Years_Female_SkilledManualLaborOccupation_AsAFractionOf_Count_Person_25To29Years_Female"
+    },
+    {
+      "name": "Percentage of women aged 25-29 working as clerks",
+      "dcid": "Count_Person_25To29Years_Female_ClerkOccupation_AsAFractionOf_Count_Person_25To29Years_Female"
+    },
+    {
+      "name": "Percentage of women aged 30 to 34 years in sales and service occupations",
+      "dcid": "Count_Person_30To34Years_Female_SalesAndServiceOccupation_AsAFractionOf_Count_Person_30To34Years_Female"
+    },
+    {
+      "name": "Percentage of women aged 30 to 34 years in skilled manual labor occupations",
+      "dcid": "Count_Person_30To34Years_Female_SkilledManualLaborOccupation_AsAFractionOf_Count_Person_30To34Years_Female"
+    },
+    {
+      "name": "Percentage of women aged 30 to 34 years who are farmers",
+      "dcid": "Count_Person_30To34Years_Female_FarmerOccupation_AsAFractionOf_Count_Person_30To34Years_Female"
+    },
+    {
+      "name": "Percentage of women aged 30-34 years with higher secondary education",
+      "dcid": "Count_Person_30To34Years_EducationalAttainmentHigherSecondaryEducation_Female_AsAFractionOf_Count_Person_30To34Years_Female"
+    },
+    {
+      "name": "Percentage of women aged 35 to 39 who are clerks",
+      "dcid": "Count_Person_35To39Years_Female_ClerkOccupation_AsAFractionOf_Count_Person_35To39Years_Female"
+    },
+    {
+      "name": "Percentage of women aged 35 to 39 years old who are employed.",
+      "dcid": "Count_Person_35To39Years_Employed_Female_AsAFractionOf_Count_Person_35To39Years_Female"
+    },
+    {
+      "name": "Percentage of women aged 35 to 39 years that attained higher secondary education level.",
+      "dcid": "Count_Person_35To39Years_EducationalAttainmentHigherSecondaryEducation_Female_AsAFractionOf_Count_Person_35To39Years_Female"
+    },
+    {
+      "name": "Percentage of women aged 35 to 39 years who are farmers",
+      "dcid": "Count_Person_35To39Years_Female_FarmerOccupation_AsAFractionOf_Count_Person_35To39Years_Female"
+    },
+    {
+      "name": "Percentage of women aged 35 to 39 years with less than primary education",
+      "dcid": "Count_Person_35To39Years_EducationalAttainmentLessThanPrimaryEducation_Female_AsAFractionOf_Count_Person_35To39Years_Female"
+    },
+    {
+      "name": "Percentage of women aged 35-39 years in sales and service occupations",
+      "dcid": "Count_Person_35To39Years_Female_SalesAndServiceOccupation_AsAFractionOf_Count_Person_35To39Years_Female"
+    },
+    {
+      "name": "Percentage of women aged 40 to 44 years in sales and service occupations",
+      "dcid": "Count_Person_40To44Years_Female_SalesAndServiceOccupation_AsAFractionOf_Count_Person_40To44Years_Female"
+    },
+    {
+      "name": "Percentage of women aged 40 to 44 years who are clerks",
+      "dcid": "Count_Person_40To44Years_Female_ClerkOccupation_AsAFractionOf_Count_Person_40To44Years_Female"
+    },
+    {
+      "name": "Percentage of women aged 40-44 in skilled manual labor occupations",
+      "dcid": "Count_Person_40To44Years_Female_SkilledManualLaborOccupation_AsAFractionOf_Count_Person_40To44Years_Female"
+    },
+    {
+      "name": "Percentage of women aged 40-44 years who are farmers",
+      "dcid": "Count_Person_40To44Years_Female_FarmerOccupation_AsAFractionOf_Count_Person_40To44Years_Female"
+    },
+    {
+      "name": "Percentage of women aged 40-44 years with lower secondary education",
+      "dcid": "Count_Person_40To44Years_EducationalAttainmentLowerSecondaryEducation_Female_AsAFractionOf_Count_Person_40To44Years_Female"
+    },
+    {
+      "name": "Percentage of women aged 45 to 49 years who have attained higher secondary education.",
+      "dcid": "Count_Person_45To49Years_EducationalAttainmentHigherSecondaryEducation_Female_AsAFractionOf_Count_Person_45To49Years_Female"
+    },
+    {
+      "name": "Percentage of women aged 45-49 working in sales and service occupations",
+      "dcid": "Count_Person_45To49Years_Female_SalesAndServiceOccupation_AsAFractionOf_Count_Person_45To49Years_Female"
+    },
+    {
+      "name": "Percentage of women aged 45-49 years who are farmers",
+      "dcid": "Count_Person_45To49Years_Female_FarmerOccupation_AsAFractionOf_Count_Person_45To49Years_Female"
+    },
+    {
+      "name": "Percentage of women aged between 25 and 29 years old who are farmers",
+      "dcid": "Count_Person_25To29Years_Female_FarmerOccupation_AsAFractionOf_Count_Person_25To29Years_Female"
+    },
+    {
+      "name": "Percentage of women employed in the age group 40-44 years old",
+      "dcid": "Count_Person_40To44Years_Employed_Female_AsAFractionOf_Count_Person_40To44Years_Female"
+    },
+    {
+      "name": "Pregnant Women Attending Antenatal Care At Least Once And Receiving At Least 3 Doses Of Intermittent Preventive Treatment Of Malaria For Pregnant Women (Iptp3) (%)",
+      "dcid": "WHO/MALARIA_IPTP3_COVERAGE"
+    },
+    {
+      "name": "Pregnant women age group 15 to 49 years who are anaemic (%)",
+      "dcid": "Count_PregnantWoman_15To49Years_Female_ConditionAnaemia_AsAFractionOf_Count_PregnantWoman_15To49Years_Female"
+    },
+    {
+      "name": "Prevalence of anemia among pregnant women (%)",
+      "dcid": "worldBank/SH_PRG_ANEM"
+    },
+    {
+      "name": "Prevention Programmes For Specific Populations For Alcohol, Pregnant Women",
+      "dcid": "WHO/RSUD_590_PregnantWomen"
+    },
+    {
+      "name": "Prevention Programmes For Specific Populations For Drugs, Pregnant Women",
+      "dcid": "WHO/RSUD_610_PregnantWomen"
+    },
+    {
+      "name": "Programmes For The Prevention Of Substance Use Disorders For Special Populations, Pregnant Women",
+      "dcid": "WHO/RSUD_77_PregnantWomen"
+    },
+    {
+      "name": "Proportion Of Ever-Partnered Women And Girls Aged 15-49 Years Subjected To Physical And/Or Sexual Violence By A Current Or Former Intimate Partner In The Previous 12 Months (SDGIPV), Female,15 To19 Years",
+      "dcid": "WHO/SDGIPV_Female_15To19Years"
+    },
+    {
+      "name": "Proportion Of Ever-Partnered Women And Girls Aged 15-49 Years Subjected To Physical And/Or Sexual Violence By A Current Or Former Intimate Partner In The Previous 12 Months (SDGIPV), Female,15 To24 Years",
+      "dcid": "WHO/SDGIPV_Female_15To24Years"
+    },
+    {
+      "name": "Proportion Of Ever-Partnered Women And Girls Aged 15-49 Years Subjected To Physical And/Or Sexual Violence By A Current Or Former Intimate Partner In The Previous 12 Months (SDGIPV), Female,15 To44 Years",
+      "dcid": "WHO/SDGIPV_Female_15To44Years"
+    },
+    {
+      "name": "Proportion Of Ever-Partnered Women And Girls Aged 15-49 Years Subjected To Physical And/Or Sexual Violence By A Current Or Former Intimate Partner In The Previous 12 Months (SDGIPV), Female,15 To49 Years",
+      "dcid": "WHO/SDGIPV_Female_15To49Years"
+    },
+    {
+      "name": "Proportion Of Ever-Partnered Women And Girls Aged 15-49 Years Subjected To Physical And/Or Sexual Violence By A Current Or Former Intimate Partner In The Previous 12 Months (SDGIPV), Female,18 To19 Years",
+      "dcid": "WHO/SDGIPV_Female_18To19Years"
+    },
+    {
+      "name": "Proportion Of Ever-Partnered Women And Girls Aged 15-49 Years Subjected To Physical And/Or Sexual Violence By A Current Or Former Intimate Partner In The Previous 12 Months (SDGIPV), Female,18 To24 Years",
+      "dcid": "WHO/SDGIPV_Female_18To24Years"
+    },
+    {
+      "name": "Proportion Of Ever-Partnered Women And Girls Aged 15-49 Years Subjected To Physical And/Or Sexual Violence By A Current Or Former Intimate Partner In The Previous 12 Months (SDGIPV), Female,18 To49 Years",
+      "dcid": "WHO/SDGIPV_Female_18To49Years"
+    },
+    {
+      "name": "Proportion Of Ever-Partnered Women And Girls Aged 15-49 Years Subjected To Physical And/Or Sexual Violence By A Current Or Former Intimate Partner In The Previous 12 Months (SDGIPV), Female,18 To50 Years",
+      "dcid": "WHO/SDGIPV_Female_18To50Years"
+    },
+    {
+      "name": "Proportion Of Ever-Partnered Women And Girls Aged 15-49 Years Subjected To Physical And/Or Sexual Violence By A Current Or Former Intimate Partner In The Previous 12 Months (SDGIPV), Female,20 To24 Years",
+      "dcid": "WHO/SDGIPV_Female_20To24Years"
+    },
+    {
+      "name": "Proportion Of Ever-Partnered Women And Girls Aged 15-49 Years Subjected To Physical And/Or Sexual Violence By A Current Or Former Intimate Partner In The Previous 12 Months (SDGIPV), Female,20 To29 Years",
+      "dcid": "WHO/SDGIPV_Female_20To29Years"
+    },
+    {
+      "name": "Proportion Of Ever-Partnered Women And Girls Aged 15-49 Years Subjected To Physical And/Or Sexual Violence By A Current Or Former Intimate Partner In The Previous 12 Months (SDGIPV), Female,25 To29 Years",
+      "dcid": "WHO/SDGIPV_Female_25To29Years"
+    },
+    {
+      "name": "Proportion Of Ever-Partnered Women And Girls Aged 15-49 Years Subjected To Physical And/Or Sexual Violence By A Current Or Former Intimate Partner In The Previous 12 Months (SDGIPV), Female,25 To34 Years",
+      "dcid": "WHO/SDGIPV_Female_25To34Years"
+    },
+    {
+      "name": "Proportion Of Ever-Partnered Women And Girls Aged 15-49 Years Subjected To Physical And/Or Sexual Violence By A Current Or Former Intimate Partner In The Previous 12 Months (SDGIPV), Female,30 To34 Years",
+      "dcid": "WHO/SDGIPV_Female_30To34Years"
+    },
+    {
+      "name": "Proportion Of Ever-Partnered Women And Girls Aged 15-49 Years Subjected To Physical And/Or Sexual Violence By A Current Or Former Intimate Partner In The Previous 12 Months (SDGIPV), Female,30 To35 Years",
+      "dcid": "WHO/SDGIPV_Female_30To35Years"
+    },
+    {
+      "name": "Proportion Of Ever-Partnered Women And Girls Aged 15-49 Years Subjected To Physical And/Or Sexual Violence By A Current Or Former Intimate Partner In The Previous 12 Months (SDGIPV), Female,30 To39 Years",
+      "dcid": "WHO/SDGIPV_Female_30To39Years"
+    },
+    {
+      "name": "Proportion Of Ever-Partnered Women And Girls Aged 15-49 Years Subjected To Physical And/Or Sexual Violence By A Current Or Former Intimate Partner In The Previous 12 Months (SDGIPV), Female,35 To39 Years",
+      "dcid": "WHO/SDGIPV_Female_35To39Years"
+    },
+    {
+      "name": "Proportion Of Ever-Partnered Women And Girls Aged 15-49 Years Subjected To Physical And/Or Sexual Violence By A Current Or Former Intimate Partner In The Previous 12 Months (SDGIPV), Female,35 To44 Years",
+      "dcid": "WHO/SDGIPV_Female_35To44Years"
+    },
+    {
+      "name": "Proportion Of Ever-Partnered Women And Girls Aged 15-49 Years Subjected To Physical And/Or Sexual Violence By A Current Or Former Intimate Partner In The Previous 12 Months (SDGIPV), Female,40 To44 Years",
+      "dcid": "WHO/SDGIPV_Female_40To44Years"
+    },
+    {
+      "name": "Proportion Of Ever-Partnered Women And Girls Aged 15-49 Years Subjected To Physical And/Or Sexual Violence By A Current Or Former Intimate Partner In The Previous 12 Months (SDGIPV), Female,40 To49 Years",
+      "dcid": "WHO/SDGIPV_Female_40To49Years"
+    },
+    {
+      "name": "Proportion Of Ever-Partnered Women And Girls Aged 15-49 Years Subjected To Physical And/Or Sexual Violence By A Current Or Former Intimate Partner In The Previous 12 Months (SDGIPV), Female,45 To49 Years",
+      "dcid": "WHO/SDGIPV_Female_45To49Years"
+    },
+    {
+      "name": "Proportion Of Ever-Partnered Women And Girls Aged 15-49 Years Subjected To Physical And/Or Sexual Violence By A Current Or Former Intimate Partner In The Previous 12 Months (SDGIPV), Female,45 To59 Years",
+      "dcid": "WHO/SDGIPV_Female_45To59Years"
+    },
+    {
+      "name": "Proportion Of Girls And Women Aged 15-49 Years Who Have Undergone Female Genital Mutilation/Cutting (Fmg/C) (%)",
+      "dcid": "WHO/SH_STA_FGMS"
+    },
+    {
+      "name": "Proportion Of Women Aged 20-24 Years Who Were Married Or In A Union By Age 15 (%)",
+      "dcid": "WHO/SP_DYN_MRBF15"
+    },
+    {
+      "name": "Proportion Of Women Aged 20-24 Years Who Were Married Or In A Union By Age 18 (%)",
+      "dcid": "WHO/SP_DYN_MRBF18"
+    },
+    {
+      "name": "Total number of pregnant women registered for Antenatal Care",
+      "dcid": "Count_PregnantWomen_RegisteredForAntenatalCare"
+    },
+    {
+      "name": "Treatment Programmes For Women With Alcohol Use Disorders, Capital City",
+      "dcid": "WHO/RSUD_660_CapitalCity"
+    },
+    {
+      "name": "Treatment Programmes For Women With Alcohol Use Disorders, Other Areas",
+      "dcid": "WHO/RSUD_660_OtherAreas"
+    },
+    {
+      "name": "Treatment Programmes For Women With Alcohol Use Disorders, Other Major Cities",
+      "dcid": "WHO/RSUD_660_OtherMajorCities"
+    },
+    {
+      "name": "Treatment Programmes For Women With Drug Use Disorders, Capital City",
+      "dcid": "WHO/RSUD_670_CapitalCity"
+    },
+    {
+      "name": "Treatment Programmes For Women With Drug Use Disorders, Other Areas",
+      "dcid": "WHO/RSUD_670_OtherAreas"
+    },
+    {
+      "name": "Treatment Programmes For Women With Drug Use Disorders, Other Major Cities",
+      "dcid": "WHO/RSUD_670_OtherMajorCities"
+    },
+    {
+      "name": "Unemployment rate among women who can read and write",
+      "dcid": "Count_Person_ReadAndWrite_Unemployed_Female_AsAFractionOf_Count_Person_ReadAndWrite_Female"
+    },
+    {
+      "name": "Unemployment rate among women with general or azhari secondary education",
+      "dcid": "Count_Person_GeneralOrAzhariSecondaryEducation_Unemployed_Female_AsAFractionOf_Count_Person_GeneralOrAzhariSecondaryEducation_Female"
+    },
+    {
+      "name": "Unmet need for contraception (% of married women ages 15-49)",
+      "dcid": "worldBank/SP_UWT_TFRT"
+    },
+    {
+      "name": "Use Of Mosquito Nets - Percentage Of All Women Age 15-49 Who Slept Under An Ever Treated Net Last Night, Rural",
+      "dcid": "WHO/MALARIA_30557_Rural"
+    },
+    {
+      "name": "Use Of Mosquito Nets - Percentage Of All Women Age 15-49 Who Slept Under An Itn Last Night, Rural",
+      "dcid": "WHO/MALARIA_30558_Rural"
+    },
+    {
+      "name": "Use Of Mosquito Nets - Percentage Of All Women Age 15-49 Who Slept Under Any Net Last Night, Rural",
+      "dcid": "WHO/MALARIA_30556_Rural"
+    },
+    {
+      "name": "Women Of Reproductive Age (Aged 15-49 Years) Who Have Their Need For Family Planning Satisfied With Modern Methods (%), Female,15 To49 Years",
+      "dcid": "WHO/SDGFPALL_Female_15To49Years"
+    },
+    {
+      "name": "Women Unmet need for family planning (%), rural",
+      "dcid": "Count_Person_WithUnmetNeed_Female_Rural_AsAFractionOf_Count_Person_Rural_Female"
+    },
+    {
+      "name": "Women Unmet need for family planning (%), urban",
+      "dcid": "Count_Person_WithUnmetNeed_Female_Urban_AsAFractionOf_Count_Person_Urban_Female"
+    },
+    {
+      "name": "Women age group 15 to 19 years who are anaemic (%)",
+      "dcid": "Count_Person_15To19Years_Female_ConditionAnaemia_AsAFractionOf_Count_Person_15To19Years_Female"
+    },
+    {
+      "name": "Women age group 15 to 19 years who were already mothers or pregnant at the time of the survey (%)",
+      "dcid": "Count_Person_15To19Years_Female_ConditionPregnant_AsAFractionOf_Count_Person_15To19Years_Female"
+    },
+    {
+      "name": "Women age group 15 to 19 years who were already mothers or pregnant at the time of the survey (%)",
+      "dcid": "Count_Person_15To19Years_Female_ConditionPregnant_AsAFractionOf_Count_Person_15To19Years_Female_ConditionPregnant"
+    },
+    {
+      "name": "Women age group 15 to 24 years who use hygienic methods of protection during their menstrual period (%), rural",
+      "dcid": "Count_MenstrualWoman_15To19Years_HygienicMethodsOfProtection_Rural_AsAFractionOf_Count_MenstrualWoman_15To19Years_Rural"
+    },
+    {
+      "name": "Women age group 15 to 24 years who use hygienic methods of protection during their menstrual period (%), urban",
+      "dcid": "Count_MenstrualWoman_15To19Years_HygienicMethodsOfProtection_Urban_AsAFractionOf_Count_MenstrualWoman_15To19Years_Urban"
+    },
+    {
+      "name": "Women age group 15 to 49 years who are anaemic (%)",
+      "dcid": "Count_Person_15To49Years_Female_ConditionAnaemia_AsAFractionOf_Count_Person_15To49Years_Female"
+    },
+    {
+      "name": "Women age group 15 to 49 years who are literate (%)",
+      "dcid": "Count_Person_15To49Years_Female_Literate_AsAFractionOf_Count_Person_15To49Years_Female"
+    },
+    {
+      "name": "Women age group 15 years and above who consume alcohol (%), rural",
+      "dcid": "Count_Person_15OrMoreYears_AlcoholConsumption_Rural_AsAFractionOf_Count_Person_15OrMoreYears_Rural"
+    },
+    {
+      "name": "Women age group 15 years and above who consume alcohol (%), urban",
+      "dcid": "Count_Person_15OrMoreYears_AlcoholConsumption_Urban_AsAFractionOf_Count_Person_15OrMoreYears_Urban"
+    },
+    {
+      "name": "Women age group 15 years and above who use any kind of tobacco (%), rural",
+      "dcid": "Count_Person_15OrMoreYears_TobaccoUse_Rural_AsAFractionOf_Count_Person_15OrMoreYears_Rural"
+    },
+    {
+      "name": "Women age group 15 years and above who use any kind of tobacco (%), urban",
+      "dcid": "Count_Person_15OrMoreYears_TobaccoUse_Urban_AsAFractionOf_Count_Person_15OrMoreYears_Urban"
+    },
+    {
+      "name": "Women having a bank or savings account that they themselves use (%), rural",
+      "dcid": "Count_Person_SavingsAccount_Female_Rural_AsAFractionOf_Count_Person_Rural_Female"
+    },
+    {
+      "name": "Women having a bank or savings account that they themselves use (%), urban",
+      "dcid": "Count_Person_SavingsAccount_Female_Urban_AsAFractionOf_Count_Person_Urban_Female"
+    },
+    {
+      "name": "Women having a mobile phone that they themselves use (%), rural",
+      "dcid": "Count_Person_MobilePhone_Female_Rural_AsAFractionOf_Count_Person_Rural_Female"
+    },
+    {
+      "name": "Women having a mobile phone that they themselves use (%), urban",
+      "dcid": "Count_Person_MobilePhone_Female_Urban_AsAFractionOf_Count_Person_Urban_Female"
+    },
+    {
+      "name": "Women in the age group of 20 to 24 years married before age 18 years (%)",
+      "dcid": "Count_Person_20To24Years_Female_MarriedBefore18Years_AsAFractionOf_Count_Person_20To24Years_Female"
+    },
+    {
+      "name": "Women owning a house and or land (alone or jointly with others) (%), rural",
+      "dcid": "Count_Person_HouseOrLand_Female_Rural_AsAFractionOf_Count_Person_HouseOrLand_Female_Rural"
+    },
+    {
+      "name": "Women owning a house and or land (alone or jointly with others) (%), urban",
+      "dcid": "Count_Person_HouseOrLand_Female_Urban_AsAFractionOf_Count_Person_HouseOrLand_Female_Urban"
+    },
+    {
+      "name": "Women suffering from elevated blood pressure (%), rural",
+      "dcid": "Count_Person_Female_WithElevatedBloodPressure_Rural_AsAFractionOf_Count_Person_Rural_Female"
+    },
+    {
+      "name": "Women suffering from elevated blood pressure (%), urban",
+      "dcid": "Count_Person_Female_WithElevatedBloodPressure_Urban_AsAFractionOf_Count_Person_Urban_Female"
+    },
+    {
+      "name": "Women suffering from high blood sugar level (%), rural",
+      "dcid": "Count_Person_Female_WithHighBloodSugarLevel_Rural_AsAFractionOf_Count_Person_Rural_Female"
+    },
+    {
+      "name": "Women suffering from high blood sugar level (%), urban",
+      "dcid": "Count_Person_Female_WithHighBloodSugarLevel_Urban_AsAFractionOf_Count_Person_Urban_Female"
+    },
+    {
+      "name": "Women suffering from high or very high blood sugar level (%), rural",
+      "dcid": "Count_Person_Female_WithHighBloodSugarLevelOrVeryHighBloodSugarLevel_Rural_AsAFractionOf_Count_Person_Rural_Female"
+    },
+    {
+      "name": "Women suffering from high or very high blood sugar level (%), urban",
+      "dcid": "Count_Person_Female_WithHighBloodSugarLevelOrVeryHighBloodSugarLevel_Urban_AsAFractionOf_Count_Person_Urban_Female"
+    },
+    {
+      "name": "Women suffering from very high blood sugar level (%), rural",
+      "dcid": "Count_Person_Female_WithVeryHighBloodSugarLevel_Rural_AsAFractionOf_Count_Person_Rural_Female"
+    },
+    {
+      "name": "Women suffering from very high blood sugar level (%), urban",
+      "dcid": "Count_Person_Female_WithVeryHighBloodSugarLevel_Urban_AsAFractionOf_Count_Person_Urban_Female"
+    },
+    {
+      "name": "Women who are overweight or obese (%), rural",
+      "dcid": "Count_Person_Female_OverweightOrObesity_Rural_AsAFractionOf_Count_Person_Rural_Female"
+    },
+    {
+      "name": "Women who are overweight or obese (%), urban",
+      "dcid": "Count_Person_Female_OverweightOrObesity_Urban_AsAFractionOf_Count_Person_Urban_Female"
+    },
+    {
+      "name": "Women who have comprehensive knowledge of Human immunodeficiency virus ( HIV ) or Acquired Immune Deficiency Syndrome ( AIDS ) (%), rural",
+      "dcid": "Count_Person_Female_HivOrAids_Rural_AsAFractionOf_Count_Person_Rural_Female"
+    },
+    {
+      "name": "Women who have comprehensive knowledge of Human immunodeficiency virus ( HIV ) or Acquired Immune Deficiency Syndrome ( AIDS ) (%), urban",
+      "dcid": "Count_Person_Female_HivOrAids_Urban_AsAFractionOf_Count_Person_Urban_Female"
+    },
+    {
+      "name": "Women who have ever undergone a breast examination for breast cancer (%), rural",
+      "dcid": "Count_Person_Female_ReceivedBreastCancerExamination_Rural_AsAFractionOf_Count_Person_Rural_Female"
+    },
+    {
+      "name": "Women who have ever undergone a breast examination for breast cancer (%), urban",
+      "dcid": "Count_Person_Female_ReceivedBreastCancerExamination_Urban_AsAFractionOf_Count_Person_Urban_Female"
+    },
+    {
+      "name": "Women who have ever undergone a cervix examination(%), rural",
+      "dcid": "Count_Person_Female_ReceivedCervicalCancerScreening_Rural_AsAFractionOf_Count_Person_Rural_Female"
+    },
+    {
+      "name": "Women who have ever undergone a cervix examination(%), urban",
+      "dcid": "Count_Person_Female_ReceivedCervicalCancerScreening_Urban_AsAFractionOf_Count_Person_Urban_Female"
+    },
+    {
+      "name": "Women who have ever undergone a oral cavity examination (%), rural",
+      "dcid": "Count_Person_Female_ReceivedOralCavityExamination_Rural_AsAFractionOf_Count_Person_Rural_Female"
+    },
+    {
+      "name": "Women who have ever undergone a oral cavity examination (%), urban",
+      "dcid": "Count_Person_Female_ReceivedOralCavityExamination_Urban_AsAFractionOf_Count_Person_Urban_Female"
+    },
+    {
+      "name": "Women who have ever used the internet (%), rural",
+      "dcid": "Count_Person_Female_EverUsedInternet_Rural_AsAFractionOf_Count_Person_Rural_Female"
+    },
+    {
+      "name": "Women who have ever used the internet (%), urban",
+      "dcid": "Count_Person_Female_EverUsedInternet_Urban_AsAFractionOf_Count_Person_Urban_Female"
+    },
+    {
+      "name": "Women who have high risk waist-to-hip ratio (%), rural",
+      "dcid": "Count_Person_Female_HighRiskOfWaistToHipRatio_Rural_AsAFractionOf_Count_Person_Rural_Female"
+    },
+    {
+      "name": "Women who have high risk waist-to-hip ratio (%), urban",
+      "dcid": "Count_Person_Female_HighRiskOfWaistToHipRatio_Urban_AsAFractionOf_Count_Person_Urban_Female"
+    },
+    {
+      "name": "Women who know that consistent condom use can reduce the chance of getting Human immunodeficiency virus ( HIV ) or Acquired Immune Deficiency Syndrome ( AIDS ) (%)",
+      "dcid": "Count_Person_Female_BenefitsOfUsingCondom_ConditionHivOrAids_AsAFractionOf_Count_Person_Female_ConditionHivOrAids"
+    },
+    {
+      "name": "Women who worked in the last 12 months and were paid in cash (%), rural",
+      "dcid": "Count_Person_Female_CashPayment_Rural_AsAFractionOf_Count_Person_Rural_Female"
+    },
+    {
+      "name": "Women who worked in the last 12 months and were paid in cash (%), urban",
+      "dcid": "Count_Person_Female_CashPayment_Urban_AsAFractionOf_Count_Person_Urban_Female"
+    },
+    {
+      "name": "Women with 10 or more years of schooling in the age group of 15 to 49 years (%), rural",
+      "dcid": "Count_Person_Female_Rural_10OrMoreYears_AsAFractionOf_Count_Person_Rural_Female"
+    },
+    {
+      "name": "Women with 10 or more years of schooling in the age group of 15 to 49 years (%), urban",
+      "dcid": "Count_Person_Female_Urban_10OrMoreYears_AsAFractionOf_Count_Person_Urban_Female"
+    },
+    {
+      "name": "Women with body mass index ( BMI ) below normal (%), rural",
+      "dcid": "Count_Person_Female_BodyMassIndexBelowNormal_Rural_AsAFractionOf_Count_Person_Rural_Female"
+    },
+    {
+      "name": "Women with body mass index ( BMI ) below normal (%), urban",
+      "dcid": "Count_Person_Female_BodyMassIndexBelowNormal_Urban_AsAFractionOf_Count_Person_Urban_Female"
+    },
+    {
+      "name": "Women with moderately high hypertension (%), rural",
+      "dcid": "Count_Person_Female_WithModerateHypertension_Rural_AsAFractionOf_Count_Person_Rural_Female"
+    },
+    {
+      "name": "Women with moderately high hypertension (%), urban",
+      "dcid": "Count_Person_Female_WithModerateHypertension_Urban_AsAFractionOf_Count_Person_Urban_Female"
+    },
+    {
+      "name": "Women with very high hypertension (%), rural",
+      "dcid": "Count_Person_Female_WithVeryHighHypertension_Rural_AsAFractionOf_Count_Person_Rural_Female"
+    },
+    {
+      "name": "Women with very high hypertension (%), urban",
+      "dcid": "Count_Person_Female_WithVeryHighHypertension_Urban_AsAFractionOf_Count_Person_Urban_Female"
+    },
+    {
+      "name": "Women-ever undergone an oral cavity examination for oral cancer (%)",
+      "dcid": "Count_Person_Female_ReceivedOralCavityExamination_ConditionOralCancer_AsAFractionOf_Count_Person_Female"
+    },
+    {
+      "name": "Women-mildly elevated blood pressure (%), rural",
+      "dcid": "Count_Person_Female_WithMidlyElevatedBloodPressure_Rural_AsAFractionOf_Count_Person_Rural_Female"
+    },
+    {
+      "name": "Women-mildly elevated blood pressure (%), urban",
+      "dcid": "Count_Person_Female_WithMidlyElevatedBloodPressure_Urban_AsAFractionOf_Count_Person_Urban_Female"
+    },
+    {
+      "name": "Women-moderately or severely elevated blood pressure (%), rural",
+      "dcid": "Count_Person_Female_WithModeratelyElevatedBloodPressureOrSeverelyElevatedBloodPressure_Rural_AsAFractionOf_Count_Person_Rural_Female"
+    },
+    {
+      "name": "Women-moderately or severely elevated blood pressure (%), urban",
+      "dcid": "Count_Person_Female_WithModeratelyElevatedBloodPressureOrSeverelyElevatedBloodPressure_Urban_AsAFractionOf_Count_Person_Urban_Female"
+    },
+    {
+      "name": "Growth rate of consumer price index for women underwear or nightwear or sportswear or accessories for urban consumers (Seasonally Adjusted)",
+      "dcid": "SeasonallyAdjusted_GrowthRate_ConsumerPriceIndex_ConsumerGoodsAndServices_MonthOnChange_UrbanConsumer_WomenUnderwearOrNightwearOrSportswearOrAccessories"
+    },
+    {
+      "name": "Growth rate of consumer price index for women underwear or nightwear or sportswear or accessories for urban consumers (seasonally unadjusted, month on change)",
+      "dcid": "SeasonallyUnadjusted_GrowthRate_ConsumerPriceIndex_ConsumerGoodsAndServices_MonthOnChange_UrbanConsumer_WomenUnderwearOrNightwearOrSportswearOrAccessories"
+    },
+    {
+      "name": "Growth rate of consumer price index for women underwear or nightwear or sportswear or accessories for urban consumers (seasonally unadjusted, year on change)",
+      "dcid": "SeasonallyUnadjusted_GrowthRate_ConsumerPriceIndex_ConsumerGoodsAndServices_YearOnChange_UrbanConsumer_WomenUnderwearOrNightwearOrSportswearOrAccessories"
+    },
+    {
+      "name": "Growth rate of consumer price index for womens and girls apparel for urban consumers (Seasonally Adjusted)",
+      "dcid": "SeasonallyAdjusted_GrowthRate_ConsumerPriceIndex_ConsumerGoodsAndServices_MonthOnChange_UrbanConsumer_WomensAndGirlsApparel"
+    },
+    {
+      "name": "Growth rate of consumer price index for womens and girls apparel for urban consumers (seasonally unadjusted, month on change)",
+      "dcid": "SeasonallyUnadjusted_GrowthRate_ConsumerPriceIndex_ConsumerGoodsAndServices_MonthOnChange_UrbanConsumer_WomensAndGirlsApparel"
+    },
+    {
+      "name": "Growth rate of consumer price index for womens and girls apparel for urban consumers (seasonally unadjusted, year on change)",
+      "dcid": "SeasonallyUnadjusted_GrowthRate_ConsumerPriceIndex_ConsumerGoodsAndServices_YearOnChange_UrbanConsumer_WomensAndGirlsApparel"
+    },
+    {
+      "name": "Growth rate of consumer price index for womens apparel for urban consumers (Seasonally Adjusted)",
+      "dcid": "SeasonallyAdjusted_GrowthRate_ConsumerPriceIndex_ConsumerGoodsAndServices_MonthOnChange_UrbanConsumer_WomensApparel"
+    },
+    {
+      "name": "Growth rate of consumer price index for womens apparel for urban consumers (seasonally unadjusted, month on change)",
+      "dcid": "SeasonallyUnadjusted_GrowthRate_ConsumerPriceIndex_ConsumerGoodsAndServices_MonthOnChange_UrbanConsumer_WomensApparel"
+    },
+    {
+      "name": "Growth rate of consumer price index for womens apparel for urban consumers (seasonally unadjusted, year on change)",
+      "dcid": "SeasonallyUnadjusted_GrowthRate_ConsumerPriceIndex_ConsumerGoodsAndServices_YearOnChange_UrbanConsumer_WomensApparel"
+    },
+    {
+      "name": "Growth rate of consumer price index for womens dresses for urban consumers (Seasonally Adjusted)",
+      "dcid": "SeasonallyAdjusted_GrowthRate_ConsumerPriceIndex_ConsumerGoodsAndServices_MonthOnChange_UrbanConsumer_WomensDresses"
+    },
+    {
+      "name": "Growth rate of consumer price index for womens dresses for urban consumers (seasonally unadjusted, month on change)",
+      "dcid": "SeasonallyUnadjusted_GrowthRate_ConsumerPriceIndex_ConsumerGoodsAndServices_MonthOnChange_UrbanConsumer_WomensDresses"
+    },
+    {
+      "name": "Growth rate of consumer price index for womens dresses for urban consumers (seasonally unadjusted, year on change)",
+      "dcid": "SeasonallyUnadjusted_GrowthRate_ConsumerPriceIndex_ConsumerGoodsAndServices_YearOnChange_UrbanConsumer_WomensDresses"
+    },
+    {
+      "name": "Growth rate of consumer price index for womens footwear for urban consumers (Seasonally Adjusted)",
+      "dcid": "SeasonallyAdjusted_GrowthRate_ConsumerPriceIndex_ConsumerGoodsAndServices_MonthOnChange_UrbanConsumer_WomensFootwear"
+    },
+    {
+      "name": "Growth rate of consumer price index for womens footwear for urban consumers (seasonally unadjusted, month on change)",
+      "dcid": "SeasonallyUnadjusted_GrowthRate_ConsumerPriceIndex_ConsumerGoodsAndServices_MonthOnChange_UrbanConsumer_WomensFootwear"
+    },
+    {
+      "name": "Growth rate of consumer price index for womens footwear for urban consumers (seasonally unadjusted, year on change)",
+      "dcid": "SeasonallyUnadjusted_GrowthRate_ConsumerPriceIndex_ConsumerGoodsAndServices_YearOnChange_UrbanConsumer_WomensFootwear"
+    },
+    {
+      "name": "Growth rate of consumer price index for womens outerwear for urban consumers (Seasonally Adjusted)",
+      "dcid": "SeasonallyAdjusted_GrowthRate_ConsumerPriceIndex_ConsumerGoodsAndServices_MonthOnChange_UrbanConsumer_WomensOuterwear"
+    },
+    {
+      "name": "Growth rate of consumer price index for womens outerwear for urban consumers (seasonally unadjusted, month on change)",
+      "dcid": "SeasonallyUnadjusted_GrowthRate_ConsumerPriceIndex_ConsumerGoodsAndServices_MonthOnChange_UrbanConsumer_WomensOuterwear"
+    },
+    {
+      "name": "Growth rate of consumer price index for womens outerwear for urban consumers (seasonally unadjusted, year on change)",
+      "dcid": "SeasonallyUnadjusted_GrowthRate_ConsumerPriceIndex_ConsumerGoodsAndServices_YearOnChange_UrbanConsumer_WomensOuterwear"
+    },
+    {
+      "name": "Growth rate of consumer price index for womens suits and separates for urban consumers (Seasonally Adjusted)",
+      "dcid": "SeasonallyAdjusted_GrowthRate_ConsumerPriceIndex_ConsumerGoodsAndServices_MonthOnChange_UrbanConsumer_WomensSuitsAndSeparates"
+    },
+    {
+      "name": "Growth rate of consumer price index for womens suits and separates for urban consumers (seasonally unadjusted, month on change)",
+      "dcid": "SeasonallyUnadjusted_GrowthRate_ConsumerPriceIndex_ConsumerGoodsAndServices_MonthOnChange_UrbanConsumer_WomensSuitsAndSeparates"
+    },
+    {
+      "name": "Growth rate of consumer price index for womens suits and separates for urban consumers (seasonally unadjusted, year on change)",
+      "dcid": "SeasonallyUnadjusted_GrowthRate_ConsumerPriceIndex_ConsumerGoodsAndServices_YearOnChange_UrbanConsumer_WomensSuitsAndSeparates"
+    },
+    {
+      "name": "Growth rate of consumer price index for womens underwear nightwear swimwear and accessories for urban consumers (Seasonally Adjusted)",
+      "dcid": "SeasonallyAdjusted_GrowthRate_ConsumerPriceIndex_ConsumerGoodsAndServices_MonthOnChange_UrbanConsumer_WomensUnderwearNightwearSwimwearAndAccessories"
+    },
+    {
+      "name": "Growth rate of consumer price index for womens underwear nightwear swimwear and accessories for urban consumers (seasonally unadjusted, month on change)",
+      "dcid": "SeasonallyUnadjusted_GrowthRate_ConsumerPriceIndex_ConsumerGoodsAndServices_MonthOnChange_UrbanConsumer_WomensUnderwearNightwearSwimwearAndAccessories"
+    },
+    {
+      "name": "Growth rate of consumer price index for womens underwear nightwear swimwear and accessories for urban consumers (seasonally unadjusted, year on change)",
+      "dcid": "SeasonallyUnadjusted_GrowthRate_ConsumerPriceIndex_ConsumerGoodsAndServices_YearOnChange_UrbanConsumer_WomensUnderwearNightwearSwimwearAndAccessories"
+    },
+    {
+      "name": "Married women of age 15 to 49 years using injectables as one of the family planning methods (%)",
+      "dcid": "Count_Person_15To49Years_Injectables_Female_Married"
+    },
+    {
+      "name": "Number of divorced women aged 15 years in rural areas",
+      "dcid": "Count_Person_15Years_Female_Divorced_Rural"
+    },
+    {
+      "name": "Number of divorced women aged 15 years in urban areas",
+      "dcid": "Count_Person_15Years_Female_Divorced_Urban"
+    },
+    {
+      "name": "Number of divorced women aged 19 living in rural areas",
+      "dcid": "Count_Person_19Years_Female_Divorced_Rural"
+    },
+    {
+      "name": "Number of divorced women aged 19 living in urban areas",
+      "dcid": "Count_Person_19Years_Female_Divorced_Urban"
+    },
+    {
+      "name": "Number of divorced women aged 20 to 24 years living in rural areas",
+      "dcid": "Count_Person_20To24Years_Female_Divorced_Rural"
+    },
+    {
+      "name": "Number of divorced women aged 20 to 24 years living in urban areas",
+      "dcid": "Count_Person_20To24Years_Female_Divorced_Urban"
+    },
+    {
+      "name": "Number of divorced women aged 25 to 29 years living in rural areas",
+      "dcid": "Count_Person_25To29Years_Female_Divorced_Rural"
+    },
+    {
+      "name": "Number of divorced women aged 25 to 29 years living in urban areas",
+      "dcid": "Count_Person_25To29Years_Female_Divorced_Urban"
+    },
+    {
+      "name": "Number of divorced women aged 30 to 34 years living in rural areas",
+      "dcid": "Count_Person_30To34Years_Female_Divorced_Rural"
+    },
+    {
+      "name": "Number of divorced women aged 30 to 34 years living in urban areas",
+      "dcid": "Count_Person_30To34Years_Female_Divorced_Urban"
+    },
+    {
+      "name": "Number of divorced women aged 35 to 39 years living in rural areas",
+      "dcid": "Count_Person_35To39Years_Female_Divorced_Rural"
+    },
+    {
+      "name": "Number of divorced women aged 35 to 39 years living in urban areas",
+      "dcid": "Count_Person_35To39Years_Female_Divorced_Urban"
+    },
+    {
+      "name": "Number of divorced women aged 40 to 44 years living in rural areas",
+      "dcid": "Count_Person_40To44Years_Female_Divorced_Rural"
+    },
+    {
+      "name": "Number of divorced women aged 40 to 44 years living in urban areas",
+      "dcid": "Count_Person_40To44Years_Female_Divorced_Urban"
+    },
+    {
+      "name": "Number of divorced women aged 45 to 49 living in rural areas",
+      "dcid": "Count_Person_45To49Years_Female_Divorced_Rural"
+    },
+    {
+      "name": "Number of divorced women aged 45 to 49 living in urban areas",
+      "dcid": "Count_Person_45To49Years_Female_Divorced_Urban"
+    },
+    {
+      "name": "Number of divorced women aged 50 to 54 years living in rural areas",
+      "dcid": "Count_Person_50To54Years_Female_Divorced_Rural"
+    },
+    {
+      "name": "Number of divorced women aged 50 to 54 years living in urban areas",
+      "dcid": "Count_Person_50To54Years_Female_Divorced_Urban"
+    },
+    {
+      "name": "Number of divorced women aged 55 to 59 years living in rural areas",
+      "dcid": "Count_Person_55To59Years_Female_Divorced_Rural"
+    },
+    {
+      "name": "Number of divorced women aged 55 to 59 years living in urban areas",
+      "dcid": "Count_Person_55To59Years_Female_Divorced_Urban"
+    },
+    {
+      "name": "Number of divorced women aged 60 to 64 years in rural areas",
+      "dcid": "Count_Person_60To64Years_Female_Divorced_Rural"
+    },
+    {
+      "name": "Number of divorced women aged 60 to 64 years in urban areas",
+      "dcid": "Count_Person_60To64Years_Female_Divorced_Urban"
+    },
+    {
+      "name": "Number of divorced women aged 65 to 69 years in rural areas",
+      "dcid": "Count_Person_65To69Years_Female_Divorced_Rural"
+    },
+    {
+      "name": "Number of divorced women aged 65 to 69 years in urban areas",
+      "dcid": "Count_Person_65To69Years_Female_Divorced_Urban"
+    },
+    {
+      "name": "Number of divorced women aged 70 to 74 years in rural areas",
+      "dcid": "Count_Person_70To74Years_Female_Divorced_Rural"
+    },
+    {
+      "name": "Number of divorced women aged 70 to 74 years in urban areas",
+      "dcid": "Count_Person_70To74Years_Female_Divorced_Urban"
+    },
+    {
+      "name": "Number of divorced women aged 75 or more years living in rural areas",
+      "dcid": "Count_Person_75OrMoreYears_Female_Divorced_Rural"
+    },
+    {
+      "name": "Number of divorced women aged 75 or more years living in urban areas",
+      "dcid": "Count_Person_75OrMoreYears_Female_Divorced_Urban"
+    },
+    {
+      "name": "Number of divorced women aged 75 years or less in rural areas",
+      "dcid": "Count_Person_75OrLessYears_Female_Divorced_Rural"
+    },
+    {
+      "name": "Number of divorced women aged 75 years or less in urban areas",
+      "dcid": "Count_Person_75OrLessYears_Female_Divorced_Urban"
+    },
+    {
+      "name": "Number of divorced women in rural areas aged 18 years and above",
+      "dcid": "Count_Person_18Years_Female_Divorced_Rural"
+    },
+    {
+      "name": "Number of divorced women in urban areas aged 18 years and above",
+      "dcid": "Count_Person_18Years_Female_Divorced_Urban"
+    },
+    {
+      "name": "Number of employed women aged 15 or older in administrative and support service activities",
+      "dcid": "Count_Person_15OrMoreYears_AdministrativeAndSupportServiceActivities_Employed_Female"
+    },
+    {
+      "name": "Number of employed women aged 15 or older in agriculture hunting,forestry and cutting trees",
+      "dcid": "Count_Person_15OrMoreYears_AgricultureHuntingForestryCuttingTrees_Employed_Female"
+    },
+    {
+      "name": "Number of employed women aged 15 or older in human health and social work",
+      "dcid": "Count_Person_15OrMoreYears_HumanHealthAndSocialWorkActivities_Employed_Female"
+    },
+    {
+      "name": "Number of employed women aged 15 or older in incompletely described activities",
+      "dcid": "Count_Person_15OrMoreYears_IncompletelyDescribedActivities_Employed_Female"
+    },
+    {
+      "name": "Number of employed women aged 15 or older in information and telecommunication",
+      "dcid": "Count_Person_15OrMoreYears_InformationAndTelecommunication_Employed_Female"
+    },
+    {
+      "name": "Number of employed women aged 15 or older in insurance and financial intermediation",
+      "dcid": "Count_Person_15OrMoreYears_InsuranceFinancialIntermediation_Employed_Female"
+    },
+    {
+      "name": "Number of employed women aged 15 years or over with access to water drainage and recycling",
+      "dcid": "Count_Person_15OrMoreYears_WaterSupportDrainRecycling_Employed_Female"
+    },
+    {
+      "name": "Number of employed women aged 15+ in international and regional organizations",
+      "dcid": "Count_Person_15OrMoreYears_InternationalAndRegionalOrganizations_Employed_Female"
+    },
+    {
+      "name": "Number of employed women aged 15+ in manufacturing",
+      "dcid": "Count_Person_15OrMoreYears_Manufacturing_Employed_Female"
+    },
+    {
+      "name": "Number of employed women aged 15+ in mining and quarrying",
+      "dcid": "Count_Person_15OrMoreYears_MiningAndQuarryingIndustry_Employed_Female"
+    },
+    {
+      "name": "Number of employed women aged 15+ in other service activities",
+      "dcid": "Count_Person_15OrMoreYears_OtherServiceActivities_Employed_Female"
+    },
+    {
+      "name": "Number of employed women aged 15+ in public administration and defense",
+      "dcid": "Count_Person_15OrMoreYears_PublicAdministrationAndDefence_Employed_Female"
+    },
+    {
+      "name": "Number of employed women aged 15+ in real estate renting",
+      "dcid": "Count_Person_15OrMoreYears_RealEstateRenting_Employed_Female"
+    },
+    {
+      "name": "Number of employed women aged 15+ in specialized scientific and technical activities",
+      "dcid": "Count_Person_15OrMoreYears_SpecializedScientificAndTechnicalActivities_Employed_Female"
+    },
+    {
+      "name": "Number of employed women aged 16 years and over who worked from home",
+      "dcid": "Count_Person_Years16Onwards_Employed_Female_WorkedFromHome"
+    },
+    {
+      "name": "Number of married urban women aged 15 years",
+      "dcid": "Count_Person_15Years_Female_Married_Urban"
+    },
+    {
+      "name": "Number of married urban women aged 25 to 29 years",
+      "dcid": "Count_Person_25To29Years_Female_Married_Urban"
+    },
+    {
+      "name": "Number of married women aged 15 years in rural areas",
+      "dcid": "Count_Person_15Years_Female_Married_Rural"
+    },
+    {
+      "name": "Number of married women aged 19 living in rural areas",
+      "dcid": "Count_Person_19Years_Female_Married_Rural"
+    },
+    {
+      "name": "Number of married women aged 19 living in urban areas",
+      "dcid": "Count_Person_19Years_Female_Married_Urban"
+    },
+    {
+      "name": "Number of married women aged 20 to 24 years living in rural areas",
+      "dcid": "Count_Person_20To24Years_Female_Married_Rural"
+    },
+    {
+      "name": "Number of married women aged 20 to 24 years living in urban areas",
+      "dcid": "Count_Person_20To24Years_Female_Married_Urban"
+    },
+    {
+      "name": "Number of married women aged 25 to 29 years living in rural areas",
+      "dcid": "Count_Person_25To29Years_Female_Married_Rural"
+    },
+    {
+      "name": "Number of married women aged 30 to 34 years living in rural areas",
+      "dcid": "Count_Person_30To34Years_Female_Married_Rural"
+    },
+    {
+      "name": "Number of married women aged 30 to 34 years living in urban areas",
+      "dcid": "Count_Person_30To34Years_Female_Married_Urban"
+    },
+    {
+      "name": "Number of married women aged 35 to 39 years living in rural areas",
+      "dcid": "Count_Person_35To39Years_Female_Married_Rural"
+    },
+    {
+      "name": "Number of married women aged 35 to 39 years living in urban areas",
+      "dcid": "Count_Person_35To39Years_Female_Married_Urban"
+    },
+    {
+      "name": "Number of married women aged 40 to 44 years living in rural areas",
+      "dcid": "Count_Person_40To44Years_Female_Married_Rural"
+    },
+    {
+      "name": "Number of married women aged 40 to 44 years living in urban areas",
+      "dcid": "Count_Person_40To44Years_Female_Married_Urban"
+    },
+    {
+      "name": "Number of married women aged 45 to 49 living in rural areas",
+      "dcid": "Count_Person_45To49Years_Female_Married_Rural"
+    },
+    {
+      "name": "Number of married women aged 45 to 49 living in urban areas",
+      "dcid": "Count_Person_45To49Years_Female_Married_Urban"
+    },
+    {
+      "name": "Number of married women aged 50 to 54 years living in rural areas",
+      "dcid": "Count_Person_50To54Years_Female_Married_Rural"
+    },
+    {
+      "name": "Number of married women aged 50 to 54 years living in urban areas",
+      "dcid": "Count_Person_50To54Years_Female_Married_Urban"
+    },
+    {
+      "name": "Number of married women aged 55 to 59 years living in rural areas",
+      "dcid": "Count_Person_55To59Years_Female_Married_Rural"
+    },
+    {
+      "name": "Number of married women aged 55 to 59 years living in urban areas",
+      "dcid": "Count_Person_55To59Years_Female_Married_Urban"
+    },
+    {
+      "name": "Number of married women aged 60 to 64 years in rural areas",
+      "dcid": "Count_Person_60To64Years_Female_Married_Rural"
+    },
+    {
+      "name": "Number of married women aged 60 to 64 years in urban areas",
+      "dcid": "Count_Person_60To64Years_Female_Married_Urban"
+    },
+    {
+      "name": "Number of married women aged 65 to 69 years in rural areas",
+      "dcid": "Count_Person_65To69Years_Female_Married_Rural"
+    },
+    {
+      "name": "Number of married women aged 65 to 69 years in urban areas",
+      "dcid": "Count_Person_65To69Years_Female_Married_Urban"
+    },
+    {
+      "name": "Number of married women aged 70 to 74 years in rural areas",
+      "dcid": "Count_Person_70To74Years_Female_Married_Rural"
+    },
+    {
+      "name": "Number of married women aged 70 to 74 years in urban areas",
+      "dcid": "Count_Person_70To74Years_Female_Married_Urban"
+    },
+    {
+      "name": "Number of married women aged 75 or more years living in rural areas",
+      "dcid": "Count_Person_75OrMoreYears_Female_Married_Rural"
+    },
+    {
+      "name": "Number of married women aged 75 or more years living in urban areas",
+      "dcid": "Count_Person_75OrMoreYears_Female_Married_Urban"
+    },
+    {
+      "name": "Number of married women aged 75 years or less in rural areas",
+      "dcid": "Count_Person_75OrLessYears_Female_Married_Rural"
+    },
+    {
+      "name": "Number of married women in rural areas aged 18 years and above",
+      "dcid": "Count_Person_18Years_Female_Married_Rural"
+    },
+    {
+      "name": "Number of married women in urban areas aged 18 years and above",
+      "dcid": "Count_Person_18Years_Female_Married_Urban"
+    },
+    {
+      "name": "Number of never married rural women aged 19 years",
+      "dcid": "Count_Person_19Years_Female_NeverMarried_Rural"
+    },
+    {
+      "name": "Number of never married women aged 15 years and older living in urban areas",
+      "dcid": "Count_Person_15Years_Female_NeverMarried_Urban"
+    },
+    {
+      "name": "Number of never married women aged 15 years in rural areas",
+      "dcid": "Count_Person_15Years_Female_NeverMarried_Rural"
+    },
+    {
+      "name": "Number of never married women aged 19 years living in urban areas",
+      "dcid": "Count_Person_19Years_Female_NeverMarried_Urban"
+    },
+    {
+      "name": "Number of never married women aged 20 to 24 years living in rural areas",
+      "dcid": "Count_Person_20To24Years_Female_NeverMarried_Rural"
+    },
+    {
+      "name": "Number of never married women aged 20 to 24 years living in urban areas",
+      "dcid": "Count_Person_20To24Years_Female_NeverMarried_Urban"
+    },
+    {
+      "name": "Number of never married women aged 30 to 34 years living in rural areas",
+      "dcid": "Count_Person_30To34Years_Female_NeverMarried_Rural"
+    },
+    {
+      "name": "Number of never married women aged 30 to 34 years living in urban areas",
+      "dcid": "Count_Person_30To34Years_Female_NeverMarried_Urban"
+    },
+    {
+      "name": "Number of never married women aged 35 to 39 years living in rural areas",
+      "dcid": "Count_Person_35To39Years_Female_NeverMarried_Rural"
+    },
+    {
+      "name": "Number of never married women aged 35 to 39 years living in urban areas",
+      "dcid": "Count_Person_35To39Years_Female_NeverMarried_Urban"
+    },
+    {
+      "name": "Number of never married women aged 40 to 44 years living in rural areas",
+      "dcid": "Count_Person_40To44Years_Female_NeverMarried_Rural"
+    },
+    {
+      "name": "Number of never married women aged 40 to 44 years living in urban areas",
+      "dcid": "Count_Person_40To44Years_Female_NeverMarried_Urban"
+    },
+    {
+      "name": "Number of never married women aged 55 to 59 years living in rural areas",
+      "dcid": "Count_Person_55To59Years_Female_NeverMarried_Rural"
+    },
+    {
+      "name": "Number of never married women aged 55 to 59 years living in urban areas",
+      "dcid": "Count_Person_55To59Years_Female_NeverMarried_Urban"
+    },
+    {
+      "name": "Number of never married women aged 60 to 64 years in rural areas",
+      "dcid": "Count_Person_60To64Years_Female_NeverMarried_Rural"
+    },
+    {
+      "name": "Number of never married women aged 60 to 64 years living in urban areas",
+      "dcid": "Count_Person_60To64Years_Female_NeverMarried_Urban"
+    },
+    {
+      "name": "Number of never married women aged 65 to 69 years in rural areas",
+      "dcid": "Count_Person_65To69Years_Female_NeverMarried_Rural"
+    },
+    {
+      "name": "Number of never married women aged 65 to 69 years in urban areas",
+      "dcid": "Count_Person_65To69Years_Female_NeverMarried_Urban"
+    },
+    {
+      "name": "Number of never married women aged 70 to 74 years in rural areas",
+      "dcid": "Count_Person_70To74Years_Female_NeverMarried_Rural"
+    },
+    {
+      "name": "Number of never married women aged 70 to 74 years in urban areas",
+      "dcid": "Count_Person_70To74Years_Female_NeverMarried_Urban"
+    },
+    {
+      "name": "Number of never-married women aged 45 to 49 in rural areas",
+      "dcid": "Count_Person_45To49Years_Female_NeverMarried_Rural"
+    },
+    {
+      "name": "Number of never-married women aged 45 to 49 in urban areas",
+      "dcid": "Count_Person_45To49Years_Female_NeverMarried_Urban"
+    },
+    {
+      "name": "Number of never-married women aged 50 to 54 years living in rural areas",
+      "dcid": "Count_Person_50To54Years_Female_NeverMarried_Rural"
+    },
+    {
+      "name": "Number of never-married women aged 50 to 54 years living in urban areas",
+      "dcid": "Count_Person_50To54Years_Female_NeverMarried_Urban"
+    },
+    {
+      "name": "Number of never-married women aged 75 years or less living in rural areas",
+      "dcid": "Count_Person_75OrLessYears_Female_NeverMarried_Rural"
+    },
+    {
+      "name": "Number of never-married women aged 75 years or less living in urban areas",
+      "dcid": "Count_Person_75OrLessYears_Female_NeverMarried_Urban"
+    },
+    {
+      "name": "Number of rural women aged 25 to 29 years in a contractual marriage",
+      "dcid": "Count_Person_25To29Years_Female_ContractMarriage_Rural"
+    },
+    {
+      "name": "Number of widowed women aged 15 years and older in rural areas",
+      "dcid": "Count_Person_15Years_Female_Widowed_Rural"
+    },
+    {
+      "name": "Number of widowed women aged 15 years and older living in urban areas",
+      "dcid": "Count_Person_15Years_Female_Widowed_Urban"
+    },
+    {
+      "name": "Number of widowed women aged 15 years or less living in urban areas",
+      "dcid": "Count_Person_15OrLessYears_Female_Widowed_Urban"
+    },
+    {
+      "name": "Number of widowed women aged 15 years or less residing in rural areas",
+      "dcid": "Count_Person_15OrLessYears_Female_Widowed_Rural"
+    },
+    {
+      "name": "Number of widowed women aged 19 years living in rural areas",
+      "dcid": "Count_Person_19Years_Female_Widowed_Rural"
+    },
+    {
+      "name": "Number of widowed women aged 19 years living in urban areas",
+      "dcid": "Count_Person_19Years_Female_Widowed_Urban"
+    },
+    {
+      "name": "Number of widowed women aged 20 to 24 years living in rural areas",
+      "dcid": "Count_Person_20To24Years_Female_Widowed_Rural"
+    },
+    {
+      "name": "Number of widowed women aged 20 to 24 years living in urban areas",
+      "dcid": "Count_Person_20To24Years_Female_Widowed_Urban"
+    },
+    {
+      "name": "Number of widowed women aged 25 to 29 years living in rural areas",
+      "dcid": "Count_Person_25To29Years_Female_Widowed_Rural"
+    },
+    {
+      "name": "Number of widowed women aged 25 to 29 years living in urban areas",
+      "dcid": "Count_Person_25To29Years_Female_Widowed_Urban"
+    },
+    {
+      "name": "Number of widowed women aged 30 to 34 years living in rural areas",
+      "dcid": "Count_Person_30To34Years_Female_Widowed_Rural"
+    },
+    {
+      "name": "Number of widowed women aged 30 to 34 years living in urban areas",
+      "dcid": "Count_Person_30To34Years_Female_Widowed_Urban"
+    },
+    {
+      "name": "Number of widowed women aged 35 to 39 years living in rural areas",
+      "dcid": "Count_Person_35To39Years_Female_Widowed_Rural"
+    },
+    {
+      "name": "Number of widowed women aged 35 to 39 years living in urban areas",
+      "dcid": "Count_Person_35To39Years_Female_Widowed_Urban"
+    },
+    {
+      "name": "Number of widowed women aged 40 to 44 years living in rural areas",
+      "dcid": "Count_Person_40To44Years_Female_Widowed_Rural"
+    },
+    {
+      "name": "Number of widowed women aged 40 to 44 years living in urban areas",
+      "dcid": "Count_Person_40To44Years_Female_Widowed_Urban"
+    },
+    {
+      "name": "Number of widowed women aged 45 to 49 in rural areas",
+      "dcid": "Count_Person_45To49Years_Female_Widowed_Rural"
+    },
+    {
+      "name": "Number of widowed women aged 45 to 49 in urban areas",
+      "dcid": "Count_Person_45To49Years_Female_Widowed_Urban"
+    },
+    {
+      "name": "Number of widowed women aged 50 to 54 years living in rural areas",
+      "dcid": "Count_Person_50To54Years_Female_Widowed_Rural"
+    },
+    {
+      "name": "Number of widowed women aged 50 to 54 years living in urban areas",
+      "dcid": "Count_Person_50To54Years_Female_Widowed_Urban"
+    },
+    {
+      "name": "Number of widowed women aged 55 to 59 years living in rural areas",
+      "dcid": "Count_Person_55To59Years_Female_Widowed_Rural"
+    },
+    {
+      "name": "Number of widowed women aged 55 to 59 years living in urban areas",
+      "dcid": "Count_Person_55To59Years_Female_Widowed_Urban"
+    },
+    {
+      "name": "Number of widowed women aged 60 to 64 years living in rural areas",
+      "dcid": "Count_Person_60To64Years_Female_Widowed_Rural"
+    },
+    {
+      "name": "Number of widowed women aged 60 to 64 years living in urban areas",
+      "dcid": "Count_Person_60To64Years_Female_Widowed_Urban"
+    },
+    {
+      "name": "Number of widowed women aged 65 to 69 years in rural areas",
+      "dcid": "Count_Person_65To69Years_Female_Widowed_Rural"
+    },
+    {
+      "name": "Number of widowed women aged 65 to 69 years in urban areas",
+      "dcid": "Count_Person_65To69Years_Female_Widowed_Urban"
+    },
+    {
+      "name": "Number of widowed women aged 70 to 74 years in rural areas",
+      "dcid": "Count_Person_70To74Years_Female_Widowed_Rural"
+    },
+    {
+      "name": "Number of widowed women aged 70 to 74 years in urban areas",
+      "dcid": "Count_Person_70To74Years_Female_Widowed_Urban"
+    },
+    {
+      "name": "Number of widowed women aged 75 or more years living in rural areas",
+      "dcid": "Count_Person_75OrMoreYears_Female_Widowed_Rural"
+    },
+    {
+      "name": "Number of widowed women aged 75 or more years living in urban areas",
+      "dcid": "Count_Person_75OrMoreYears_Female_Widowed_Urban"
+    },
+    {
+      "name": "Number of widowed women aged 75 years or less living in rural areas",
+      "dcid": "Count_Person_75OrLessYears_Female_Widowed_Rural"
+    },
+    {
+      "name": "Number of widowed women aged 75 years or less living in urban areas",
+      "dcid": "Count_Person_75OrLessYears_Female_Widowed_Urban"
+    },
+    {
+      "name": "Number of widowed women in rural areas aged 18 years and above",
+      "dcid": "Count_Person_18Years_Female_Widowed_Rural"
+    },
+    {
+      "name": "Number of widowed women in urban areas aged 18 years and above",
+      "dcid": "Count_Person_18Years_Female_Widowed_Urban"
+    },
+    {
+      "name": "Number of women aged 15 years in a contract marriage in rural areas",
+      "dcid": "Count_Person_15Years_Female_ContractMarriage_Rural"
+    },
+    {
+      "name": "Number of women aged 15 years in a contract marriage in urban areas",
+      "dcid": "Count_Person_15Years_Female_ContractMarriage_Urban"
+    },
+    {
+      "name": "Number of women aged 20 to 24 years with contract marriage in rural areas",
+      "dcid": "Count_Person_20To24Years_Female_ContractMarriage_Rural"
+    },
+    {
+      "name": "Number of women aged 20 to 24 years with contract marriage in urban areas",
+      "dcid": "Count_Person_20To24Years_Female_ContractMarriage_Urban"
+    },
+    {
+      "name": "Number of women aged 25 to 29 years never married living in rural areas",
+      "dcid": "Count_Person_25To29Years_Female_NeverMarried_Rural"
+    },
+    {
+      "name": "Number of women aged 25 to 29 years never married living in urban areas",
+      "dcid": "Count_Person_25To29Years_Female_NeverMarried_Urban"
+    },
+    {
+      "name": "Number of women aged 25 to 29 years who are married or in a union living in urban areas",
+      "dcid": "Count_Person_25To29Years_Female_ContractMarriage_Urban"
+    },
+    {
+      "name": "Number of women aged 30 to 34 years in contract marriages living in rural areas",
+      "dcid": "Count_Person_30To34Years_Female_ContractMarriage_Rural"
+    },
+    {
+      "name": "Number of women aged 30 to 34 years in contract marriages living in urban areas",
+      "dcid": "Count_Person_30To34Years_Female_ContractMarriage_Urban"
+    },
+    {
+      "name": "Number of women aged 35 to 39 years in a rural contract marriage",
+      "dcid": "Count_Person_35To39Years_Female_ContractMarriage_Rural"
+    },
+    {
+      "name": "Number of women aged 35 to 39 years in an urban contract marriage",
+      "dcid": "Count_Person_35To39Years_Female_ContractMarriage_Urban"
+    },
+    {
+      "name": "Number of women aged 40 to 44 years in contract marriage living in rural areas",
+      "dcid": "Count_Person_40To44Years_Female_ContractMarriage_Rural"
+    },
+    {
+      "name": "Number of women aged 40 to 44 years in contract marriage living in urban areas",
+      "dcid": "Count_Person_40To44Years_Female_ContractMarriage_Urban"
+    },
+    {
+      "name": "Number of women aged 45 to 49 in contract marriages living in urban areas",
+      "dcid": "Count_Person_45To49Years_Female_ContractMarriage_Urban"
+    },
+    {
+      "name": "Number of women aged 45 to 49 years in contract marriage living in rural areas",
+      "dcid": "Count_Person_45To49Years_Female_ContractMarriage_Rural"
+    },
+    {
+      "name": "Number of women aged 50 to 54 years in a contract marriage in rural areas",
+      "dcid": "Count_Person_50To54Years_Female_ContractMarriage_Rural"
+    },
+    {
+      "name": "Number of women aged 50 to 54 years in a contract marriage in urban areas",
+      "dcid": "Count_Person_50To54Years_Female_ContractMarriage_Urban"
+    },
+    {
+      "name": "Number of women aged 55 to 59 years in contract marriages living in rural areas",
+      "dcid": "Count_Person_55To59Years_Female_ContractMarriage_Rural"
+    },
+    {
+      "name": "Number of women aged 55 to 59 years in contract marriages living in urban areas",
+      "dcid": "Count_Person_55To59Years_Female_ContractMarriage_Urban"
+    },
+    {
+      "name": "Number of women aged 60 to 64 years in a contract marriage in rural areas",
+      "dcid": "Count_Person_60To64Years_Female_ContractMarriage_Rural"
+    },
+    {
+      "name": "Number of women aged 60 to 64 years in a contract marriage in urban areas",
+      "dcid": "Count_Person_60To64Years_Female_ContractMarriage_Urban"
+    },
+    {
+      "name": "Number of women aged 65 to 69 years with a marriage contract in rural areas",
+      "dcid": "Count_Person_65To69Years_Female_ContractMarriage_Rural"
+    },
+    {
+      "name": "Number of women aged 65 to 69 years with a marriage contract in urban areas",
+      "dcid": "Count_Person_65To69Years_Female_ContractMarriage_Urban"
+    },
+    {
+      "name": "Number of women aged 70 to 74 years in a civil union in urban areas",
+      "dcid": "Count_Person_70To74Years_Female_ContractMarriage_Urban"
+    },
+    {
+      "name": "Number of women aged 70 to 74 years in a registered marriage living in rural areas",
+      "dcid": "Count_Person_70To74Years_Female_ContractMarriage_Rural"
+    },
+    {
+      "name": "Number of women aged 75 or more years in contract marriages living in rural areas",
+      "dcid": "Count_Person_75OrMoreYears_Female_ContractMarriage_Rural"
+    },
+    {
+      "name": "Number of women aged 75 or more years in contract marriages living in urban areas",
+      "dcid": "Count_Person_75OrMoreYears_Female_ContractMarriage_Urban"
+    },
+    {
+      "name": "Number of women aged 75 or more years who have never been married and live in rural areas",
+      "dcid": "Count_Person_75OrMoreYears_Female_NeverMarried_Rural"
+    },
+    {
+      "name": "Number of women aged 75 or more years who have never been married and live in urban areas",
+      "dcid": "Count_Person_75OrMoreYears_Female_NeverMarried_Urban"
+    },
+    {
+      "name": "Number of women aged 75 years or less in contract marriage in rural areas",
+      "dcid": "Count_Person_75OrLessYears_Female_ContractMarriage_Rural"
+    },
+    {
+      "name": "Number of women aged 75 years or less in contract marriage in urban areas",
+      "dcid": "Count_Person_75OrLessYears_Female_ContractMarriage_Urban"
+    },
+    {
+      "name": "Number of women in contract marriage aged 19 years living in rural areas",
+      "dcid": "Count_Person_19Years_Female_ContractMarriage_Rural"
+    },
+    {
+      "name": "Number of women in contract marriage aged 19 years living in urban areas",
+      "dcid": "Count_Person_19Years_Female_ContractMarriage_Urban"
+    },
+    {
+      "name": "Number of women in rural areas aged 18 years and above never married",
+      "dcid": "Count_Person_18Years_Female_NeverMarried_Rural"
+    },
+    {
+      "name": "Number of women in rural areas in contract marriages aged 18 years",
+      "dcid": "Count_Person_18Years_Female_ContractMarriage_Rural"
+    },
+    {
+      "name": "Number of women in urban areas aged 18 years never married",
+      "dcid": "Count_Person_18Years_Female_NeverMarried_Urban"
+    },
+    {
+      "name": "Number of women in urban areas in contract marriages aged 18 years",
+      "dcid": "Count_Person_18Years_Female_ContractMarriage_Urban"
+    },
+    {
+      "name": "Young women age group 18 to 29 years who experienced sexual violence by age18 (%), rural",
+      "dcid": "Count_Person_18To29Years_Female_Rural_18OrLessYears"
+    },
+    {
+      "name": "Young women age group 18 to 29 years who experienced sexual violence by age18 (%), urban",
+      "dcid": "Count_Person_18To29Years_Female_Urban_18OrLessYears"
+    },
+    {
+      "name": "Adolescent fertility rate for women age 15 to 19 years (%), rural",
+      "dcid": "FertilityRate_Person_15To19Years_Adolescents_Female_Rural_AsAFractionOf_Count_Person_15To19Years_Adolescents_Female_Rural"
+    },
+    {
+      "name": "Adolescent fertility rate for women age 15 to 19 years (%), urban",
+      "dcid": "FertilityRate_Person_15To19Years_Adolescents_Female_Urban_AsAFractionOf_Count_Person_15To19Years_Adolescents_Female_Urban"
+    },
+    {
+      "name": "Currently married women age group 15 to 49 years consuming pill (%)",
+      "dcid": "Count_Person_15To49Years_BirthControlPill_Female_Married_AsAFractionOf_Count_Person_15To49Year_Female_Married"
+    },
+    {
+      "name": "Ever-married women age group 18 to 49 years who have ever experienced spousal violence (%)",
+      "dcid": "Count_Person_18To49Years_SpousalViolence_Female_EverMarried_AsAFractionOf_Count_Person_18To49Years_Female_EverMarried"
+    },
+    {
+      "name": "Female sterilization married women-15 to 49 years (%)",
+      "dcid": "Count_Person_15To49Years_Sterilization_Female_Married_AsAFractionOf_Count_Person_15To49Year_Female_Married"
+    },
+    {
+      "name": "Married women age group 15 to 49 years Unmet need for family planning (%)",
+      "dcid": "Count_Person_15To49Years_WithUnmetNeed_Female_Married_AsAFractionOf_Count_Person_15To49Year_Female_Married"
+    },
+    {
+      "name": "Married women age group 15 to 49 years any modern family planning method (%)",
+      "dcid": "Count_Person_15To49Years_ModernFamilyPlanning_Female_Married_AsAFractionOf_Count_Person_15To49Year_Female_Married"
+    },
+    {
+      "name": "Married women age group 15 to 49 years use any family planning methods (%)",
+      "dcid": "Count_Person_15To49Years_AnyFamilyPlanning_Female_Married_AsAFractionOf_Count_Person_15To49Year_Female_Married"
+    },
+    {
+      "name": "Married women age group 15 to 49 years using Intrauterine Device ( IUD ) or Postpartum Intrauterine Contraceptive Device ( PPIUD ) as family planning methods (%)",
+      "dcid": "Count_Person_15To49Years_IntrauterineDeviceOrPostpartumIntrauterineContraceptiveDevice_Female_Married_AsAFractionOf_Count_Person_15To49Year_Female_Married"
+    },
+    {
+      "name": "Married women age group 15 to 49 years using injectables as one of the family planning methods (%)",
+      "dcid": "Count_Person_15To49Years_Injectables_Female_Married_AsAFractionOf_Count_Person_15To49Year_Female_Married"
+    },
+    {
+      "name": "Married women age group 15 to 49 years who usually participate in three household decisions (%)",
+      "dcid": "Count_Person_15To49Years_Female_ParticipatedInThreeDecisions_Married_AsAFractionOf_Count_Person_15To49Year_Female_Married"
+    },
+    {
+      "name": "Married women aged 15-49 who have ever experienced spousal violence (%)",
+      "dcid": "Count_Person_15To49Year_SpousalViolence_Female_Married_AsAFractionOf_Count_Person_15To49Year_Female_Married"
+    },
+    {
+      "name": "Married women of age 15 to 49 years using male sterlization as one of the family planning methods (%)",
+      "dcid": "Count_Person_15To49Years_MaleSterlization_Female_Married_AsAFractionOf_Count_Person_15To49Year_Female_Married"
+    },
+    {
+      "name": "Married women using condom in the age group of 15 to 49 years (%)",
+      "dcid": "Count_Person_15To49Years_Condom_Female_Married_AsAFractionOf_Count_Person_15To49Year_Female_Married"
+    },
+    {
+      "name": "Pregnant women age group 15 to 49 years who are anaemic (%), rural",
+      "dcid": "Count_PregnantWoman_15To49Years_Female_ConditionAnaemia_Rural_AsAFractionOf_Count_PregnantWoman_15To49Years_Female_Rural"
+    },
+    {
+      "name": "Pregnant women age group 15 to 49 years who are anaemic (%), urban",
+      "dcid": "Count_PregnantWoman_15To49Years_Female_ConditionAnaemia_Urban_AsAFractionOf_Count_PregnantWoman_15To49Years_Female_Urban"
+    },
+    {
+      "name": "Women age group 15 to 19 years who are anaemic (%), rural",
+      "dcid": "Count_Person_15To19Years_Female_ConditionAnaemia_Rural_AsAFractionOf_Count_Person_15To19Years_Rural_Female"
+    },
+    {
+      "name": "Women age group 15 to 19 years who are anaemic (%), urban",
+      "dcid": "Count_Person_15To19Years_Female_ConditionAnaemia_Urban_AsAFractionOf_Count_Person_15To19Years_Urban_Female"
+    },
+    {
+      "name": "Women age group 15 to 19 years who were already mothers or pregnant at the time of the survey (%), rural",
+      "dcid": "Count_Person_15To19Years_Female_ConditionPregnant_Rural_AsAFractionOf_Count_Person_15To19Years_Female_ConditionPregnant_Rural"
+    },
+    {
+      "name": "Women age group 15 to 19 years who were already mothers or pregnant at the time of the survey (%), urban",
+      "dcid": "Count_Person_15To19Years_Female_ConditionPregnant_Urban_AsAFractionOf_Count_Person_15To19Years_Female_ConditionPregnant_Urban"
+    },
+    {
+      "name": "Women age group 15 to 49 years who are anaemic (%), rural",
+      "dcid": "Count_Person_15To49Years_Female_ConditionAnaemia_Rural_AsAFractionOf_Count_Person_15To49Years_Female_Rural"
+    },
+    {
+      "name": "Women age group 15 to 49 years who are anaemic (%), urban",
+      "dcid": "Count_Person_15To49Years_Female_ConditionAnaemia_Urban_AsAFractionOf_Count_Person_15To49Years_Female_Urban"
+    },
+    {
+      "name": "Women age group 15 to 49 years who are literate (%), rural",
+      "dcid": "Count_Person_15To49Years_Female_Literate_Rural_AsAFractionOf_Count_Person_15To49Years_Female_Rural"
+    },
+    {
+      "name": "Women age group 15 to 49 years who are literate (%), urban",
+      "dcid": "Count_Person_15To49Years_Female_Literate_Urban_AsAFractionOf_Count_Person_15To49Years_Female_Urban"
+    },
+    {
+      "name": "Women in the age group of 20 to 24 years married before age 18 years (%)",
+      "dcid": "Count_Person_20To24Years_Female_MarriedBefore18Years_Rural_AsAFractionOf_Count_Person_20To24Years_Rural_Female"
+    },
+    {
+      "name": "Women in the age group of 20 to 24 years married before age 18 years (%), urban",
+      "dcid": "Count_Person_20To24Years_Female_MarriedBefore18Years_Urban_AsAFractionOf_Count_Person_20To24Years_Urban_Female"
+    },
+    {
+      "name": "Women who know that consistent condom use can reduce the chance of getting Human immunodeficiency virus ( HIV ) or Acquired Immune Deficiency Syndrome ( AIDS ) (%), rural",
+      "dcid": "Count_Person_Female_BenefitsOfUsingCondom_ConditionHivOrAids_Rural_AsAFractionOf_Count_Person_Female_ConditionHivOrAids_Rural"
+    },
+    {
+      "name": "Women who know that consistent condom use can reduce the chance of getting Human immunodeficiency virus ( HIV ) or Acquired Immune Deficiency Syndrome ( AIDS ) (%), urban",
+      "dcid": "Count_Person_Female_BenefitsOfUsingCondom_ConditionHivOrAids_Urban_AsAFractionOf_Count_Person_Female_ConditionHivOrAids_Urban"
+    },
+    {
+      "name": "Women-ever undergone an oral cavity examination for oral cancer (%), rural",
+      "dcid": "Count_Person_Female_ReceivedOralCavityExamination_ConditionOralCancer_Rural_AsAFractionOf_Count_Person_Rural_Female"
+    },
+    {
+      "name": "Women-ever undergone an oral cavity examination for oral cancer (%), urban",
+      "dcid": "Count_Person_Female_ReceivedOralCavityExamination_ConditionOralCancer_Urban_AsAFractionOf_Count_Person_Urban_Female"
+    },
+    {
+      "name": "Young women age group 18 to 29 years who experienced sexual violence by age18 (%)",
+      "dcid": "Count_Person_18To29Years_SexualViolence_Female_18OrLessYears_AsAFractionOf_Count_Person_18To29Years_Female_18OrLessYears"
+    },
+    {
+      "name": "Antiretroviral therapy coverage for PMTCT (% of pregnant women living with HIV)",
+      "dcid": "worldBank/SH_HIV_PMTC_ZS"
+    },
+    {
+      "name": "Contraceptive prevalence, any methods (% of women ages 15-49)",
+      "dcid": "worldBank/SP_DYN_CONU_ZS"
+    },
+    {
+      "name": "Contraceptive prevalence, modern methods (% of women ages 15-49)",
+      "dcid": "worldBank/SP_DYN_CONM_ZS"
+    },
+    {
+      "name": "Demand for family planning satisfied by any methods (% of married women with demand for family planning)",
+      "dcid": "worldBank/SH_FPL_SATI_ZS"
+    },
+    {
+      "name": "Demand for family planning satisfied by modern methods (% of married women with demand for family planning)",
+      "dcid": "worldBank/SH_FPL_SATM_ZS"
+    },
+    {
+      "name": "Pregnant women receiving prenatal care (%)",
+      "dcid": "worldBank/SH_STA_ANVC_ZS"
+    },
+    {
+      "name": "Pregnant women receiving prenatal care of at least four visits (% of pregnant women)",
+      "dcid": "worldBank/SH_STA_ANV4_ZS"
+    },
+    {
+      "name": "Prevalence of anemia among non-pregnant women (% of women ages 15-49)",
+      "dcid": "worldBank/SH_ANM_NPRG_ZS"
+    },
+    {
+      "name": "Prevalence of anemia among women of reproductive age (% of women ages 15-49)",
+      "dcid": "worldBank/SH_ANM_ALLW_ZS"
+    },
+    {
+      "name": "Prevalence of syphilis (% of women attending antenatal care)",
+      "dcid": "worldBank/SH_PRG_SYPH_ZS"
+    },
+    {
+      "name": "Proportion Of Girls And Women Aged 15-49 Years Who Have Undergone Female Genital Mutilation/Cutting (Fmg/C) (%), Quintile1",
+      "dcid": "WHO/SH_STA_FGMS_Quintile1"
+    },
+    {
+      "name": "Proportion Of Girls And Women Aged 15-49 Years Who Have Undergone Female Genital Mutilation/Cutting (Fmg/C) (%), Quintile2",
+      "dcid": "WHO/SH_STA_FGMS_Quintile2"
+    },
+    {
+      "name": "Proportion Of Girls And Women Aged 15-49 Years Who Have Undergone Female Genital Mutilation/Cutting (Fmg/C) (%), Quintile3",
+      "dcid": "WHO/SH_STA_FGMS_Quintile3"
+    },
+    {
+      "name": "Proportion Of Girls And Women Aged 15-49 Years Who Have Undergone Female Genital Mutilation/Cutting (Fmg/C) (%), Quintile4",
+      "dcid": "WHO/SH_STA_FGMS_Quintile4"
+    },
+    {
+      "name": "Proportion Of Girls And Women Aged 15-49 Years Who Have Undergone Female Genital Mutilation/Cutting (Fmg/C) (%), Quintile5",
+      "dcid": "WHO/SH_STA_FGMS_Quintile5"
+    },
+    {
+      "name": "Proportion Of Girls And Women Aged 15-49 Years Who Have Undergone Female Genital Mutilation/Cutting (Fmg/C) (%), Rural",
+      "dcid": "WHO/SH_STA_FGMS_Rural"
+    },
+    {
+      "name": "Proportion Of Girls And Women Aged 15-49 Years Who Have Undergone Female Genital Mutilation/Cutting (Fmg/C) (%), Urban",
+      "dcid": "WHO/SH_STA_FGMS_Urban"
+    },
+    {
+      "name": "Proportion of women in ministerial level positions (%)",
+      "dcid": "worldBank/SG_GEN_MNST_ZS"
+    },
+    {
+      "name": "Teenage mothers (% of women ages 15-19 who have had children or are currently pregnant)",
+      "dcid": "worldBank/SP_MTR_1519_ZS"
+    },
+    {
+      "name": "Married women of age 15 to 49 years using injectables as one of the family planning methods (%), rural",
+      "dcid": "Count_Person_15To49Years_Injectables_Female_Married_Rural"
+    },
+    {
+      "name": "Married women of age 15 to 49 years using injectables as one of the family planning methods (%), urban",
+      "dcid": "Count_Person_15To49Years_Injectables_Female_Married_Urban"
+    },
+    {
+      "name": "Currently married women age group 15 to 49 years consuming pill (%), rural",
+      "dcid": "Count_Person_15To49Years_BirthControlPill_Female_Married_Rural_AsAFractionOf_Count_Person_15To49Years_Female_Married_Rural"
+    },
+    {
+      "name": "Currently married women age group 15 to 49 years consuming pill (%), urban",
+      "dcid": "Count_Person_15To49Years_BirthControlPill_Female_Married_Urban_AsAFractionOf_Count_Person_15To49Years_Female_Married_Urban"
+    },
+    {
+      "name": "Ever-married women age group 18 to 49 years who have ever experienced spousal violence (%), rural",
+      "dcid": "Count_Person_18To49Years_SpousalViolence_Female_EverMarried_Rural_AsAFractionOf_Count_Person_18To49Years_Female_EverMarried_Rural"
+    },
+    {
+      "name": "Ever-married women age group 18 to 49 years who have ever experienced spousal violence (%), urban",
+      "dcid": "Count_Person_18To49Years_SpousalViolence_Female_EverMarried_Urban_AsAFractionOf_Count_Person_18To49Years_Female_EverMarried_Urban"
+    },
+    {
+      "name": "Ever-married women age group 18 to 49 years who have experienced physical violence during any pregnancy (%)",
+      "dcid": "Count_Person_18To49Years_PhysicalViolence_Female_EverMarried_ConditionPregnant_AsAFractionOf_Count_Person_18To49Years_Female_EverMarried_ConditionPregnant"
+    },
+    {
+      "name": "Female sterilization married women-15 to 49 years (%), rural",
+      "dcid": "Count_Person_15To49Years_Sterilization_Female_Married_Rural_AsAFractionOf_Count_Person_15To49Years_Female_Married_Rural"
+    },
+    {
+      "name": "Female sterilization married women-15 to 49 years (%), urban",
+      "dcid": "Count_Person_15To49Years_Sterilization_Female_Married_Urban_AsAFractionOf_Count_Person_15To49Years_Female_Married_Urban"
+    },
+    {
+      "name": "Married women age group 15 to 49 years Unmet need for family planning (%), rural",
+      "dcid": "Count_Person_15To49Years_WithUnmetNeed_Female_Married_Rural_AsAFractionOf_Count_Person_15To49Years_Female_Married_Rural"
+    },
+    {
+      "name": "Married women age group 15 to 49 years Unmet need for family planning (%), urban",
+      "dcid": "Count_Person_15To49Years_WithUnmetNeed_Female_Married_Urban_AsAFractionOf_Count_Person_15To49Years_Female_Married_Urban"
+    },
+    {
+      "name": "Married women age group 15 to 49 years any modern family planning method (%), rural",
+      "dcid": "Count_Person_15To49Years_ModernFamilyPlanning_Female_Married_Rural_AsAFractionOf_Count_Person_15To49Years_Female_Married_Rural"
+    },
+    {
+      "name": "Married women age group 15 to 49 years any modern family planning method (%), urban",
+      "dcid": "Count_Person_15To49Years_ModernFamilyPlanning_Female_Married_Urban_AsAFractionOf_Count_Person_15To49Years_Female_Married_Urban"
+    },
+    {
+      "name": "Married women age group 15 to 49 years use any family planning methods (%), rural",
+      "dcid": "Count_Person_15To49Years_AnyFamilyPlanning_Female_Married_Rural_AsAFractionOf_Count_Person_15To49Years_Female_Married_Rural"
+    },
+    {
+      "name": "Married women age group 15 to 49 years use any family planning methods (%), urban",
+      "dcid": "Count_Person_15To49Years_AnyFamilyPlanning_Female_Married_Urban_AsAFractionOf_Count_Person_15To49Years_Female_Married_Urban"
+    },
+    {
+      "name": "Married women age group 15 to 49 years using Intrauterine Device ( IUD ) or Postpartum Intrauterine Contraceptive Device ( PPIUD ) as family planning methods (%), rural",
+      "dcid": "Count_Person_15To49Years_IntrauterineDeviceOrPostpartumIntrauterineContraceptiveDevice_Female_Married_Rural_AsAFractionOf_Count_Person_15To49Years_Female_Married_Rural"
+    },
+    {
+      "name": "Married women age group 15 to 49 years using Intrauterine Device ( IUD ) or Postpartum Intrauterine Contraceptive Device ( PPIUD ) as family planning methods (%), urban",
+      "dcid": "Count_Person_15To49Years_IntrauterineDeviceOrPostpartumIntrauterineContraceptiveDevice_Female_Married_Urban_AsAFractionOf_Count_Person_15To49Years_Female_Married_Urban"
+    },
+    {
+      "name": "Married women age group 15 to 49 years who usually participate in three household decisions (%), rural",
+      "dcid": "Count_Person_15To49Years_Female_ParticipatedInThreeDecisions_Married_Rural_AsAFractionOf_Count_Person_15To49Years_Female_Married_Rural"
+    },
+    {
+      "name": "Married women age group 15 to 49 years who usually participate in three household decisions (%), urban",
+      "dcid": "Count_Person_15To49Years_Female_ParticipatedInThreeDecisions_Married_Urban_AsAFractionOf_Count_Person_15To49Years_Female_Married_Urban"
+    },
+    {
+      "name": "Married women of age 15 to 49 years using male sterlization as one of the family planning methods (%), rural",
+      "dcid": "Count_Person_15To49Years_MaleSterlization_Female_Married_Rural_AsAFractionOf_Count_Person_15To49Years_Female_Married_Rural"
+    },
+    {
+      "name": "Married women of age 15 to 49 years using male sterlization as one of the family planning methods (%), urban",
+      "dcid": "Count_Person_15To49Years_MaleSterlization_Female_Married_Urban_AsAFractionOf_Count_Person_15To49Years_Female_Married_Urban"
+    },
+    {
+      "name": "Married women using condom in the age group of 15 to 49 years (%), rural",
+      "dcid": "Count_Person_15To49Years_Condom_Female_Married_Rural_AsAFractionOf_Count_Person_15To49Years_Female_Married_Rural"
+    },
+    {
+      "name": "Married women using condom in the age group of 15 to 49 years (%), urban",
+      "dcid": "Count_Person_15To49Years_Condom_Female_Married_Urban_AsAFractionOf_Count_Person_15To49Years_Female_Married_Urban"
+    },
+    {
+      "name": "Young women age group 18 to 29 years who experienced sexual violence by age18 (%), rural",
+      "dcid": "Count_Person_18To29Years_SexualViolence_Female_Rural_18OrLessYears_AsAFractionOf_Count_Person_18To29Years_Female_Rural_18OrLessYears"
+    },
+    {
+      "name": "Young women age group 18 to 29 years who experienced sexual violence by age18 (%), urban",
+      "dcid": "Count_Person_18To29Years_SexualViolence_Female_Urban_18OrLessYears_AsAFractionOf_Count_Person_18To29Years_Female_Urban_18OrLessYears"
+    },
+    {
+      "name": "Number Of Non-Pregnant Women (Aged 15-49 Years) With Anaemia (Thousands), Female",
+      "dcid": "WHO/NUTRITION_ANAEMIA_NONPREGNANT_NUM_Female"
+    },
+    {
+      "name": "Number Of Non-Pregnant Women (Aged 15-49 Years) With Anaemia (Thousands), Mild",
+      "dcid": "WHO/NUTRITION_ANAEMIA_NONPREGNANT_NUM_Mild"
+    },
+    {
+      "name": "Number Of Non-Pregnant Women (Aged 15-49 Years) With Anaemia (Thousands), Moderate",
+      "dcid": "WHO/NUTRITION_ANAEMIA_NONPREGNANT_NUM_Moderate"
+    },
+    {
+      "name": "Number Of Non-Pregnant Women (Aged 15-49 Years) With Anaemia (Thousands), Severe",
+      "dcid": "WHO/NUTRITION_ANAEMIA_NONPREGNANT_NUM_Severe"
+    },
+    {
+      "name": "Number Of Non-Pregnant Women (Aged 15-49 Years) With Anaemia (Thousands), Total",
+      "dcid": "WHO/NUTRITION_ANAEMIA_NONPREGNANT_NUM_Total"
+    },
+    {
+      "name": "Number Of Pregnant Women (Aged 15-49 Years) With Anaemia (Thousands), Female",
+      "dcid": "WHO/NUTRITION_ANAEMIA_PREGNANT_NUM_Female"
+    },
+    {
+      "name": "Number Of Pregnant Women (Aged 15-49 Years) With Anaemia (Thousands), Mild",
+      "dcid": "WHO/NUTRITION_ANAEMIA_PREGNANT_NUM_Mild"
+    },
+    {
+      "name": "Number Of Pregnant Women (Aged 15-49 Years) With Anaemia (Thousands), Moderate",
+      "dcid": "WHO/NUTRITION_ANAEMIA_PREGNANT_NUM_Moderate"
+    },
+    {
+      "name": "Number Of Pregnant Women (Aged 15-49 Years) With Anaemia (Thousands), Severe",
+      "dcid": "WHO/NUTRITION_ANAEMIA_PREGNANT_NUM_Severe"
+    },
+    {
+      "name": "Number Of Pregnant Women (Aged 15-49 Years) With Anaemia (Thousands), Total",
+      "dcid": "WHO/NUTRITION_ANAEMIA_PREGNANT_NUM_Total"
+    },
+    {
+      "name": "Number Of Women Of Reproductive Age (Aged 15-49 Years) With Anaemia (Thousands), Female",
+      "dcid": "WHO/NUTRITION_ANAEMIA_REPRODUCTIVEAGE_NUM_Female"
+    },
+    {
+      "name": "Number Of Women Of Reproductive Age (Aged 15-49 Years) With Anaemia (Thousands), Mild",
+      "dcid": "WHO/NUTRITION_ANAEMIA_REPRODUCTIVEAGE_NUM_Mild"
+    },
+    {
+      "name": "Number Of Women Of Reproductive Age (Aged 15-49 Years) With Anaemia (Thousands), Moderate",
+      "dcid": "WHO/NUTRITION_ANAEMIA_REPRODUCTIVEAGE_NUM_Moderate"
+    },
+    {
+      "name": "Number Of Women Of Reproductive Age (Aged 15-49 Years) With Anaemia (Thousands), Severe",
+      "dcid": "WHO/NUTRITION_ANAEMIA_REPRODUCTIVEAGE_NUM_Severe"
+    },
+    {
+      "name": "Number Of Women Of Reproductive Age (Aged 15-49 Years) With Anaemia (Thousands), Total",
+      "dcid": "WHO/NUTRITION_ANAEMIA_REPRODUCTIVEAGE_NUM_Total"
+    },
+    {
+      "name": "Prevalence Of Anaemia In Non-Pregnant Women (Aged 15-49) (%), Female",
+      "dcid": "WHO/NUTRITION_ANAEMIA_NONPREGNANT_PREV_Female"
+    },
+    {
+      "name": "Prevalence Of Anaemia In Non-Pregnant Women (Aged 15-49) (%), Mild",
+      "dcid": "WHO/NUTRITION_ANAEMIA_NONPREGNANT_PREV_Mild"
+    },
+    {
+      "name": "Prevalence Of Anaemia In Non-Pregnant Women (Aged 15-49) (%), Moderate",
+      "dcid": "WHO/NUTRITION_ANAEMIA_NONPREGNANT_PREV_Moderate"
+    },
+    {
+      "name": "Prevalence Of Anaemia In Non-Pregnant Women (Aged 15-49) (%), Severe",
+      "dcid": "WHO/NUTRITION_ANAEMIA_NONPREGNANT_PREV_Severe"
+    },
+    {
+      "name": "Prevalence Of Anaemia In Non-Pregnant Women (Aged 15-49) (%), Total",
+      "dcid": "WHO/NUTRITION_ANAEMIA_NONPREGNANT_PREV_Total"
+    },
+    {
+      "name": "Prevalence Of Anaemia In Pregnant Women (Aged 15-49) (%), Female",
+      "dcid": "WHO/NUTRITION_ANAEMIA_PREGNANT_PREV_Female"
+    },
+    {
+      "name": "Prevalence Of Anaemia In Pregnant Women (Aged 15-49) (%), Mild",
+      "dcid": "WHO/NUTRITION_ANAEMIA_PREGNANT_PREV_Mild"
+    },
+    {
+      "name": "Prevalence Of Anaemia In Pregnant Women (Aged 15-49) (%), Moderate",
+      "dcid": "WHO/NUTRITION_ANAEMIA_PREGNANT_PREV_Moderate"
+    },
+    {
+      "name": "Prevalence Of Anaemia In Pregnant Women (Aged 15-49) (%), Severe",
+      "dcid": "WHO/NUTRITION_ANAEMIA_PREGNANT_PREV_Severe"
+    },
+    {
+      "name": "Prevalence Of Anaemia In Pregnant Women (Aged 15-49) (%), Total",
+      "dcid": "WHO/NUTRITION_ANAEMIA_PREGNANT_PREV_Total"
+    },
+    {
+      "name": "Prevalence Of Anaemia In Women Of Reproductive Age (Aged 15-49) (%), Female",
+      "dcid": "WHO/NUTRITION_ANAEMIA_REPRODUCTIVEAGE_PREV_Female"
+    },
+    {
+      "name": "Prevalence Of Anaemia In Women Of Reproductive Age (Aged 15-49) (%), Mild",
+      "dcid": "WHO/NUTRITION_ANAEMIA_REPRODUCTIVEAGE_PREV_Mild"
+    },
+    {
+      "name": "Prevalence Of Anaemia In Women Of Reproductive Age (Aged 15-49) (%), Moderate",
+      "dcid": "WHO/NUTRITION_ANAEMIA_REPRODUCTIVEAGE_PREV_Moderate"
+    },
+    {
+      "name": "Prevalence Of Anaemia In Women Of Reproductive Age (Aged 15-49) (%), Severe",
+      "dcid": "WHO/NUTRITION_ANAEMIA_REPRODUCTIVEAGE_PREV_Severe"
+    },
+    {
+      "name": "Prevalence Of Anaemia In Women Of Reproductive Age (Aged 15-49) (%), Total",
+      "dcid": "WHO/NUTRITION_ANAEMIA_REPRODUCTIVEAGE_PREV_Total"
+    },
+    {
+      "name": "Proportion Of Women Aged 15-49 Years Who Make Their Own Informed Decisions Regarding Sexual Relations, Contraceptive Use And Reproductive Health Care (%)",
+      "dcid": "WHO/SG_DMK_SRCR_FN_ZS"
+    },
+    {
+      "name": "Women who were first married by age 15 (% of women ages 20-24)",
+      "dcid": "worldBank/SP_M15_2024_FE_ZS"
+    },
+    {
+      "name": "Women who were first married by age 18 (% of women ages 20-24)",
+      "dcid": "worldBank/SP_M18_2024_FE_ZS"
+    },
+    {
+      "name": "Women's share of population ages 15+ living with HIV (%)",
+      "dcid": "worldBank/SH_DYN_AIDS_FE_ZS"
+    },
+    {
+      "name": "Ever-married women age group 18 to 49 years who have experienced physical violence during any pregnancy (%), rural",
+      "dcid": "Count_Person_18To49Years_PhysicalViolence_Female_EverMarried_ConditionPregnant_Rural_AsAFractionOf_Count_Person_18To49Years_Female_EverMarried_ConditionPregnant_Rural"
+    },
+    {
+      "name": "Ever-married women age group 18 to 49 years who have experienced physical violence during any pregnancy (%), urban",
+      "dcid": "Count_Person_18To49Years_PhysicalViolence_Female_EverMarried_ConditionPregnant_Urban_AsAFractionOf_Count_Person_18To49Years_Female_EverMarried_ConditionPregnant_Urban"
+    },
+    {
+      "name": "Prevalence Of Cervical Cancer Screening  Among Women Aged 30-49 Years (%), Female,30 To49 Years, In Lifetime",
+      "dcid": "WHO/NCD_CXCA_SCREENED_WITHIN_TIMEPERIOD_Female_30To49Years_InLifetime"
+    },
+    {
+      "name": "Prevalence Of Cervical Cancer Screening  Among Women Aged 30-49 Years (%), Female,30 To49 Years, In The Last Five Years",
+      "dcid": "WHO/NCD_CXCA_SCREENED_WITHIN_TIMEPERIOD_Female_30To49Years_InTheLastFiveYears"
+    },
+    {
+      "name": "Prevalence Of Cervical Cancer Screening  Among Women Aged 30-49 Years (%), Female,30 To49 Years, In The Last Three Years",
+      "dcid": "WHO/NCD_CXCA_SCREENED_WITHIN_TIMEPERIOD_Female_30To49Years_InTheLastThreeYears"
+    },
+    {
+      "name": "Prevalence Of Cervical Cancer Screening  Among Women Aged 30-49 Years (%), Female,30 To49 Years, In The Last Year",
+      "dcid": "WHO/NCD_CXCA_SCREENED_WITHIN_TIMEPERIOD_Female_30To49Years_InTheLastYear"
+    },
+    {
+      "name": "Proportion Of Ever-Partnered Women And Girls Aged 15-49 Years Subjected To Physical And/Or Sexual Violence By A Current Or Former Intimate Partner In The Previous 12 Months (SDGIPV12M)",
+      "dcid": "WHO/SDGIPV12M"
+    },
+    {
+      "name": "Proportion Of Ever-Partnered Women And Girls Aged 15-49 Years Subjected To Physical And/Or Sexual Violence By A Current Or Former Intimate Partner In Their Lifetime",
+      "dcid": "WHO/SDGIPVLT"
+    },
+    {
+      "name": "Women Accessing Antenatal Care (Anc) Services Who Were Tested For Syphilis (%)",
+      "dcid": "WHO/PerctestedANC"
+    },
+    {
+      "name": "Women Of Reproductive Age (15 49 Years) Who Are Married Or In-Union Who Have Their Need For Family Planning Satisfied With Modern Methods (%), Unpd",
+      "dcid": "WHO/FAMILYPLANNINGUNPDUHC"
+    }
+  ],
+  "matches": [
+    "women",
+    "women's",
+    "women)",
+    "women-15",
+    "women-ever",
+    "women-mildly",
+    "women-moderately",
+    "womens"
+  ]
+}

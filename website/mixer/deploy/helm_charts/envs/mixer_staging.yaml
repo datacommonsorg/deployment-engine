@@ -1,0 +1,52 @@
+project: datcom-mixer-staging
+cluster_prefix: mixer
+
+# Helm config
+mixer:
+  image:
+    tag: ""
+  hostProject: datcom-mixer-staging
+  serviceName: staging.api.datacommons.org
+  project: datcom-mixer-staging
+  cluster_prefix: mixer
+  redis:
+    enabled: true
+    configFile: |
+      instances:
+        - region: "us-central1"
+          host: "10.55.198.51"
+          port: "6379"
+  enableOtlp: true
+
+ingress:
+  enabled: true
+  name: mixer-ingress-staging
+  annotations:
+    {
+      ingress.gcp.kubernetes.io/pre-shared-cert: "mixer-certificate,multi-domain-2025,api-esp",
+    }
+
+serviceGroups:
+  svg:
+    replicas: 2
+    maxSurge: 0
+  recon:
+    replicas: 4
+  node:
+    replicas: 20
+  observation:
+    replicas: 10
+  default:
+    replicas: 5
+
+# GCP level config
+ip: 34.107.161.252
+region: us-central1
+api_title: DataCommons API (Staging)
+nodes: 2
+
+embeddingsSidecar:
+  env:
+    vertex_ai_models:
+      uae-large-v1-model:
+        prediction_endpoint_id: "8435477397553283072"

@@ -1,0 +1,141 @@
+{
+  "data": [
+    {
+      "node": "dc/g/Root",
+      "info": {
+        "absoluteName": "Data Commons Variables",
+        "childStatVarGroups": [
+          {
+            "id": "dc/g/Agriculture",
+            "specializedEntity": "Agriculture",
+            "displayName": "Agriculture",
+            "descendentStatVarCount": 158
+          },
+          {
+            "id": "dc/g/Demographics",
+            "specializedEntity": "Demographics",
+            "displayName": "Demographics",
+            "descendentStatVarCount": 12853
+          },
+          {
+            "id": "dc/g/Economy",
+            "specializedEntity": "Economy",
+            "displayName": "Economy",
+            "descendentStatVarCount": 21905
+          },
+          {
+            "id": "dc/g/Education",
+            "specializedEntity": "Education",
+            "displayName": "Education",
+            "descendentStatVarCount": 11261
+          },
+          {
+            "id": "dc/g/Energy",
+            "specializedEntity": "Energy",
+            "displayName": "Energy",
+            "descendentStatVarCount": 2588
+          },
+          {
+            "id": "dc/g/Environment",
+            "specializedEntity": "Environment",
+            "displayName": "Environment",
+            "descendentStatVarCount": 388
+          },
+          {
+            "id": "dc/g/Health",
+            "specializedEntity": "Health",
+            "displayName": "Health",
+            "descendentStatVarCount": 6907
+          },
+          {
+            "id": "dc/g/Housing",
+            "specializedEntity": "Housing",
+            "displayName": "Housing",
+            "descendentStatVarCount": 521
+          },
+          {
+            "id": "dc/g/Crime",
+            "specializedEntity": "Crime",
+            "displayName": "Crime",
+            "descendentStatVarCount": 3823
+          },
+          {
+            "id": "dc/g/AboutDataCommons",
+            "specializedEntity": "About Data Commons",
+            "displayName": "About Data Commons"
+          },
+          {
+            "id": "dc/g/Uncategorized",
+            "specializedEntity": "Uncategorized",
+            "displayName": "Uncategorized",
+            "descendentStatVarCount": 470
+          },
+          {
+            "id": "dc/g/UN",
+            "specializedEntity": "12 UN Data Thematic Areas",
+            "displayName": "12 UN Data Thematic Areas"
+          },
+          {
+            "id": "dc/g/SDG",
+            "specializedEntity": "Sustainable Development Goals",
+            "displayName": "Sustainable Development Goals"
+          },
+          {
+            "id": "dc/g/SQL",
+            "specializedEntity": "SQL stat var group",
+            "displayName": "SQL stat var group",
+            "descendentStatVarCount": 2
+          }
+        ],
+        "descendentStatVarCount": 43772
+      }
+    },
+    {
+      "node": "dc/g/SQL",
+      "info": {
+        "absoluteName": "SQL stat var group",
+        "childStatVarGroups": [
+          {
+            "id": "dc/g/SQLite",
+            "specializedEntity": "SQLite stat var group",
+            "displayName": "SQLite stat var group",
+            "descendentStatVarCount": 2
+          }
+        ],
+        "descendentStatVarCount": 2,
+        "parentStatVarGroups": [
+          "dc/g/Root"
+        ]
+      }
+    },
+    {
+      "node": "dc/g/SQLite",
+      "info": {
+        "absoluteName": "SQLite stat var group",
+        "childStatVars": [
+          {
+            "id": "test_var_1",
+            "searchNames": [
+              "total number of sql query used",
+              "this is the count of sql query for the entire database"
+            ],
+            "displayName": "total number of sql query used",
+            "hasData": true
+          },
+          {
+            "id": "test_var_2",
+            "searchNames": [
+              "total number of sql joins"
+            ],
+            "displayName": "total number of sql joins",
+            "hasData": true
+          }
+        ],
+        "descendentStatVarCount": 2,
+        "parentStatVarGroups": [
+          "dc/g/SQL"
+        ]
+      }
+    }
+  ]
+}

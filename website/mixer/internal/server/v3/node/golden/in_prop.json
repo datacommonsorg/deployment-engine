@@ -1,0 +1,18 @@
+{
+  "data": {
+    "Count_Person_Female": {
+      "properties": [
+        "measurementDenominator",
+        "member",
+        "outputProperty"
+      ]
+    },
+    "foo": {},
+    "test_var_1": {
+      "properties": [
+        "measuredProperty",
+        "outputProperty"
+      ]
+    }
+  }
+}

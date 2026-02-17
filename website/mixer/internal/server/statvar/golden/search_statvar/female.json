@@ -1,0 +1,2730 @@
+{
+  "statVars": [
+    {
+      "name": "Ratio for female members of parliaments, Lower Chamber or Unicameral, Lower Chamber or Unicameral",
+      "dcid": "sdg/SG_DMK_PARLMP_LC"
+    },
+    {
+      "name": "Ratio for female members of parliaments, Upper Chamber, Upper Chamber",
+      "dcid": "sdg/SG_DMK_PARLMP_UC"
+    },
+    {
+      "name": "Count of Mortality Event: Female",
+      "dcid": "Count_Death_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Inflammatory Diseases of Female Pelvic Organs",
+      "dcid": "Count_MortalityEvent_InflammatoryDiseasesOfFemalePelvicOrgans"
+    },
+    {
+      "name": "Death rate due to road traffic injuries [Female]",
+      "dcid": "sdg/SH_STA_TRAF.SEX--F"
+    },
+    {
+      "name": "Detected victims of human trafficking [Female]",
+      "dcid": "sdg/VC_HTF_DETV.SEX--F"
+    },
+    {
+      "name": "Detected victims of human trafficking [Female]",
+      "dcid": "sdg/VC_HTF_DETVR.SEX--F"
+    },
+    {
+      "name": "Female Life Expectancy",
+      "dcid": "LifeExpectancy_Person_Female"
+    },
+    {
+      "name": "Female population",
+      "dcid": "Count_Person_Female"
+    },
+    {
+      "name": "Maternal mortality ratio [Female]",
+      "dcid": "sdg/SH_STA_MORT.SEX--F"
+    },
+    {
+      "name": "Mortality rate attributed to unintentional poisonings [Female]",
+      "dcid": "sdg/SH_STA_POISN.SEX--F"
+    },
+    {
+      "name": "Number of deaths attributed to suicide [Female]",
+      "dcid": "sdg/SH_STA_SCIDEN.SEX--F"
+    },
+    {
+      "name": "Number of seats held by women in national parliaments [Female]",
+      "dcid": "sdg/SG_GEN_PARLN.SEX--F"
+    },
+    {
+      "name": "Number of victims of intentional homicide [Female]",
+      "dcid": "sdg/VC_IHR_PSRCN.SEX--F"
+    },
+    {
+      "name": "Number of victims of intentional homicide per 100K population [Female]",
+      "dcid": "sdg/VC_IHR_PSRC.SEX--F"
+    },
+    {
+      "name": "Participation rate in organized learning [Female]",
+      "dcid": "sdg/SE_PRE_PARTN.SEX--F"
+    },
+    {
+      "name": "Police reporting rate for physical violence in the previous 12 months [Female]",
+      "dcid": "sdg/VC_PRR_PHY_VIO.SEX--F"
+    },
+    {
+      "name": "Proportion of employed population covered in the event of work injury [Female]",
+      "dcid": "sdg/SI_COV_WKINJRY.SEX--F"
+    },
+    {
+      "name": "Proportion of individuals using the Internet [Female]",
+      "dcid": "sdg/IT_USE_ii99.SEX--F"
+    },
+    {
+      "name": "Proportion of population above statutory pensionable age receiving a pension [Female]",
+      "dcid": "sdg/SI_COV_PENSN.SEX--F"
+    },
+    {
+      "name": "Proportion of population subjected to robbery in the previous 12 months [Female]",
+      "dcid": "sdg/VC_VOV_ROBB.SEX--F"
+    },
+    {
+      "name": "Proportion of population subjected to sexual assault in the previous 12 months [Female]",
+      "dcid": "sdg/VC_VOV_SEX_ASLT.SEX--F"
+    },
+    {
+      "name": "Proportion of population with severe disabilities receiving disability cash benefit [Female]",
+      "dcid": "sdg/SI_COV_DISAB.SEX--F"
+    },
+    {
+      "name": "Proportion of seats held by women in national parliaments [Female]",
+      "dcid": "sdg/SG_GEN_PARL.SEX--F"
+    },
+    {
+      "name": "Suicide mortality rate [Female]",
+      "dcid": "sdg/SH_STA_SCIDE.SEX--F"
+    },
+    {
+      "name": "Count of Live Birth Pregnancy Event: Male or Female Sterilization (As Fraction of Count Birth Event Live Birth)",
+      "dcid": "Percent_LiveBirthPregnancyEvent_MaleOrFemaleSterilization_AsAFractionOf_Count_BirthEvent_LiveBirth"
+    },
+    {
+      "name": "Count of Mortality Event: Female (As Fraction of Count Person Female)",
+      "dcid": "Count_Death_Female_AsAFractionOf_Count_Person_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Inflammatory Diseases of Female Pelvic Organs (Per Capita)",
+      "dcid": "Count_MortalityEvent_InflammatoryDiseasesOfFemalePelvicOrgans_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Male count as a fraction of female count",
+      "dcid": "Count_Person_Male_AsAFractionOf_Count_Person_Female"
+    },
+    {
+      "name": "Median Age of Female Population",
+      "dcid": "Median_Age_Person_Female"
+    },
+    {
+      "name": "Median Income of Women (15 Years or Older) With Income",
+      "dcid": "Median_Income_Person_15OrMoreYears_Female_WithIncome"
+    },
+    {
+      "name": "Confidence Interval Lower Limit Count of Live Birth Pregnancy Event: Male or Female Sterilization (As Fraction of Count Birth Event Live Birth)",
+      "dcid": "ConfidenceIntervalLowerLimit_Percent_LiveBirthPregnancyEvent_MaleOrFemaleSterilization_AsAFractionOf_Count_BirthEvent_LiveBirth"
+    },
+    {
+      "name": "Confidence Interval Upper Limit Count of Live Birth Pregnancy Event: Male or Female Sterilization (As Fraction of Count Birth Event Live Birth)",
+      "dcid": "ConfidenceIntervalUpperLimit_Percent_LiveBirthPregnancyEvent_MaleOrFemaleSterilization_AsAFractionOf_Count_BirthEvent_LiveBirth"
+    },
+    {
+      "name": "Count of Mortality Event (Age Adjusted): Female (As Fraction of Count Person Female)",
+      "dcid": "Count_Death_Female_AgeAdjusted_AsAFractionOf_Count_Person_Female"
+    },
+    {
+      "name": "Adolescent birth rate [10 to 14 years old, Female]",
+      "dcid": "sdg/SP_DYN_ADKL.AGE--Y10T14__SEX--F"
+    },
+    {
+      "name": "Adolescent birth rate [15 to 19 years old, Female]",
+      "dcid": "sdg/SP_DYN_ADKL.AGE--Y15T19__SEX--F"
+    },
+    {
+      "name": "Age-standardized prevalence of current tobacco use among persons aged 15 years and older [15 years old and over, Female]",
+      "dcid": "sdg/SH_PRV_SMOK.AGE--Y_GE15__SEX--F"
+    },
+    {
+      "name": "Alcohol consumption per capita within a calendar year [15 years old and over, Female]",
+      "dcid": "sdg/SH_ALC_CONSPT.AGE--Y_GE15__SEX--F"
+    },
+    {
+      "name": "Alcohol use disorders, 12-month prevalence [15 years old and over, Female]",
+      "dcid": "sdg/SH_SUD_ALCOL.AGE--Y_GE15__SEX--F"
+    },
+    {
+      "name": "American Indian and Alaska Native Female Population, Monoracial or Multiracial",
+      "dcid": "Count_Person_Female_AmericanIndianAndAlaskaNativeAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "American Indian or Alaska Native Monoracial Female Population",
+      "dcid": "Count_Person_Female_AmericanIndianOrAlaskaNativeAlone"
+    },
+    {
+      "name": "Asian Monoracial Female Population",
+      "dcid": "Count_Person_Female_AsianAlone"
+    },
+    {
+      "name": "Asian Multiracial Female Population",
+      "dcid": "Count_Person_Female_AsianAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Asian or Pacific Islander Female Population",
+      "dcid": "Count_Person_Female_AsianOrPacificIslander"
+    },
+    {
+      "name": "Average hourly earnings of employees by sex and occupation [15 years old and over, Female]",
+      "dcid": "sdg/SL_EMP_EARN.AGE--Y_GE15__SEX--F"
+    },
+    {
+      "name": "Black or African American Female Population, Monoracial or Multiracial",
+      "dcid": "Count_Person_Female_BlackOrAfricanAmericanAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Black or African American Monoracial Female Population",
+      "dcid": "Count_Person_Female_BlackOrAfricanAmericanAlone"
+    },
+    {
+      "name": "Completion rate [Female, Lower secondary education]",
+      "dcid": "sdg/SE_TOT_CPLR.SEX--F__EDUCATION_LEV--ISCED11_2"
+    },
+    {
+      "name": "Completion rate [Female, Primary education]",
+      "dcid": "sdg/SE_TOT_CPLR.SEX--F__EDUCATION_LEV--ISCED11_1"
+    },
+    {
+      "name": "Completion rate [Female, Upper secondary education]",
+      "dcid": "sdg/SE_TOT_CPLR.SEX--F__EDUCATION_LEV--ISCED11_3"
+    },
+    {
+      "name": "Count of Acute, Female Hepatitis A incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionAcuteCondition_HepatitisA"
+    },
+    {
+      "name": "Count of Acute, Female Hepatitis B incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionAcuteCondition_HepatitisB"
+    },
+    {
+      "name": "Count of Acute, Female Hepatitis C incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionAcuteCondition_HepatitisC"
+    },
+    {
+      "name": "Count of Acute, Female Q fever incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionAcuteCondition_QFever"
+    },
+    {
+      "name": "Count of Anaplasma phagocytophilum infection, Female Anaplasma phagocytophilum infection incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionHumanGranulocyticAnaplasmosis"
+    },
+    {
+      "name": "Count of Carbapenemase-producing carbapenem-resistant Enterobacteriaceae, Female Carbapenem Resistant Enterobacteriaceae incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionCarbapenemResistantEnterobacteriaceae"
+    },
+    {
+      "name": "Count of Chlamydia trachomatis infection, Female Chlamydia trachomatis infection incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionChlamydia"
+    },
+    {
+      "name": "Count of Cholera, Female cholera incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionCholera"
+    },
+    {
+      "name": "Count of Chronic, Female Q fever incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionChronicCondition_QFever"
+    },
+    {
+      "name": "Count of Congenital Syphilis, Female congenital syphilis incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionCongenitalSyphilis"
+    },
+    {
+      "name": "Count of Dengue, Female dengue fever incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionDengueDisease"
+    },
+    {
+      "name": "Count of Eastern equine encephalitis, Neuroinvasive, Female Eastern equine encephalitis virus disease incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionNeuroinvasiveDisease_EasternEquineEncephalitis"
+    },
+    {
+      "name": "Count of Ehrlichia chaffeensis infection, Female Ehrlichia chaffeensis incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionHumanMonocyticEhrlichiosis"
+    },
+    {
+      "name": "Count of Ehrlichia ewingii infection, Female Ehrlichia ewingii infection incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionEhrlichiaEwingiiInfection"
+    },
+    {
+      "name": "Count of Female Babesiosis incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionBabesiosis"
+    },
+    {
+      "name": "Count of Female Botulism incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionBotulism"
+    },
+    {
+      "name": "Count of Female Brucellosis incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionBrucellosis"
+    },
+    {
+      "name": "Count of Female COVID19 incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionCOVID19"
+    },
+    {
+      "name": "Count of Female Campylobacteriosis incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionCampylobacteriosis"
+    },
+    {
+      "name": "Count of Female Chancroid incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionChancroid"
+    },
+    {
+      "name": "Count of Female Chickenpox incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionChickenpox"
+    },
+    {
+      "name": "Count of Female Chikungunya virus disease incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionChikungunya"
+    },
+    {
+      "name": "Count of Female Coccidioidomycosis incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionCoccidioidomycosis"
+    },
+    {
+      "name": "Count of Female Cryptosporidiosis incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionCryptosporidiosis"
+    },
+    {
+      "name": "Count of Female Cyclosporiasis incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionCyclosporiasis"
+    },
+    {
+      "name": "Count of Female Dengue-like illness incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionDengueLikeIllness"
+    },
+    {
+      "name": "Count of Female Diphtheria incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionDiphtheria"
+    },
+    {
+      "name": "Count of Female Foodborne Botulism incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionFoodborneBotulism"
+    },
+    {
+      "name": "Count of Female Giardiasis incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionGiardiasis"
+    },
+    {
+      "name": "Count of Female Gonorrhea incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionGonorrhea"
+    },
+    {
+      "name": "Count of Female Guanarito virus incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionGuanaritoHemorrhagicFever"
+    },
+    {
+      "name": "Count of Female HIV/Acquired Immune Deficiency Syndrome incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionHIVAIDS"
+    },
+    {
+      "name": "Count of Female Hantavirus pulmonary syndrome incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionHantavirusPulmonarySyndrome"
+    },
+    {
+      "name": "Count of Female Infant Botulism incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionInfantBotulism"
+    },
+    {
+      "name": "Count of Female Junin virus incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionJuninHemorrhagicFever"
+    },
+    {
+      "name": "Count of Female Lassa virus incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionLassaHemorrhagicFever"
+    },
+    {
+      "name": "Count of Female Leprosy incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionLeprosy"
+    },
+    {
+      "name": "Count of Female Leptospirosis incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionLeptospirosis"
+    },
+    {
+      "name": "Count of Female Listeriosis incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionListeriosis"
+    },
+    {
+      "name": "Count of Female Lyme disease incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionLymeDisease"
+    },
+    {
+      "name": "Count of Female Malaria incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionMalaria"
+    },
+    {
+      "name": "Count of Female Measles incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionMeasles"
+    },
+    {
+      "name": "Count of Female Mumps incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionMumps"
+    },
+    {
+      "name": "Count of Female Non-hantavirus pulmonary syndrome incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionHaemophilusMeningitis"
+    },
+    {
+      "name": "Count of Female Nonparalytic poliomyelitis incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionNonparalyticPoliomyelitis"
+    },
+    {
+      "name": "Count of Female Novel Influenza A virus infections incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionNovelInfluenzaAViralInfection"
+    },
+    {
+      "name": "Count of Female Other wound \u0026 unspecified Botulism incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionWoundBotulism"
+    },
+    {
+      "name": "Count of Female Paralytic poliomyelitis incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionParalyticPoliomyelitis"
+    },
+    {
+      "name": "Count of Female Paratyphoid incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionParatyphoid"
+    },
+    {
+      "name": "Count of Female Pertussis incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionPertussis"
+    },
+    {
+      "name": "Count of Female Plague incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionPlague"
+    },
+    {
+      "name": "Count of Female Psittacosis incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionPsittacosis"
+    },
+    {
+      "name": "Count of Female Q fever incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionQFever"
+    },
+    {
+      "name": "Count of Female Rabies incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionRabiesinhuman"
+    },
+    {
+      "name": "Count of Female Rubella incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionRubella"
+    },
+    {
+      "name": "Count of Female Salmonellosis incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionSalmonellosisExceptTyphiAndParatyphi"
+    },
+    {
+      "name": "Count of Female Severe dengue incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionSevereDengue"
+    },
+    {
+      "name": "Count of Female Shigellosis incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionShigellosis"
+    },
+    {
+      "name": "Count of Female Smallpox incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionSmallpox"
+    },
+    {
+      "name": "Count of Female Spotted fever rickettsiosis incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionSpottedFeverRickettsiosis"
+    },
+    {
+      "name": "Count of Female Streptococcal toxic shock syndrome incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionStreptococcalToxicShockSyndrome"
+    },
+    {
+      "name": "Count of Female Syphilis incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionSyphilis"
+    },
+    {
+      "name": "Count of Female Syphilis primary and secondary incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionSyphilisPrimaryAndSecondary"
+    },
+    {
+      "name": "Count of Female Tetanus incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionTetanus"
+    },
+    {
+      "name": "Count of Female Trichinellosis incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionTrichinellosis"
+    },
+    {
+      "name": "Count of Female Tuberculosis incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionTuberculosis"
+    },
+    {
+      "name": "Count of Female Tularemia incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionTularemia"
+    },
+    {
+      "name": "Count of Female Vancomycin-intermediate Staphylococcus aureus incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionVancomycinIntermediateStaphylococcusAureus"
+    },
+    {
+      "name": "Count of Female Vancomycin-resistant Staphylococcus aureus incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionVancomycinResistantStaphylococcusAureus"
+    },
+    {
+      "name": "Count of Hate Crime Incidents: Bias Against Gender, Female Victim",
+      "dcid": "Count_CriminalIncidents_BiasMotivationGender_IsHateCrime_Female"
+    },
+    {
+      "name": "Count of Invasive pneumococcal, , Female pneumococcal disease incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionStreptococcusPneumonia"
+    },
+    {
+      "name": "Count of Jamestown Canyon virus s, Neuroinvasive, Female Jamestown Canyon virus disease incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionNeuroinvasiveDisease_JamestownCanyonVirusDisease"
+    },
+    {
+      "name": "Count of Jamestown Canyon virus s, Non-neuroinvasive, Female Jamestown Canyon virus disease incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionNonNeuroinvasiveDisease_JamestownCanyonVirusDisease"
+    },
+    {
+      "name": "Count of LegionnairesDisease, Female Legionellosis incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionLegionnairesDisease"
+    },
+    {
+      "name": "Count of Mortality Event: 10 - 14 Years, Female",
+      "dcid": "Count_Death_10To14Years_Female"
+    },
+    {
+      "name": "Count of Mortality Event: 14 Years or Less, Female",
+      "dcid": "Count_Death_Upto14Years_Female"
+    },
+    {
+      "name": "Count of Mortality Event: 15 - 19 Years, Female",
+      "dcid": "Count_Death_15To19Years_Female"
+    },
+    {
+      "name": "Count of Mortality Event: 15 - 64 Years, Female",
+      "dcid": "Count_Death_15To64Years_Female"
+    },
+    {
+      "name": "Count of Mortality Event: 20 - 24 Years, Female",
+      "dcid": "Count_Death_20To24Years_Female"
+    },
+    {
+      "name": "Count of Mortality Event: 25 - 29 Years, Female",
+      "dcid": "Count_Death_25To29Years_Female"
+    },
+    {
+      "name": "Count of Mortality Event: 30 - 34 Years, Female",
+      "dcid": "Count_Death_30To34Years_Female"
+    },
+    {
+      "name": "Count of Mortality Event: 35 - 39 Years, Female",
+      "dcid": "Count_Death_35To39Years_Female"
+    },
+    {
+      "name": "Count of Mortality Event: 35 - 44 Years, Inflammatory Diseases of Female Pelvic Organs",
+      "dcid": "Count_MortalityEvent_Years35To44_InflammatoryDiseasesOfFemalePelvicOrgans"
+    },
+    {
+      "name": "Count of Mortality Event: 4 Years or Less, Female",
+      "dcid": "Count_Death_Upto4Years_Female"
+    },
+    {
+      "name": "Count of Mortality Event: 40 - 44 Years, Female",
+      "dcid": "Count_Death_40To44Years_Female"
+    },
+    {
+      "name": "Count of Mortality Event: 45 - 49 Years, Female",
+      "dcid": "Count_Death_45To49Years_Female"
+    },
+    {
+      "name": "Count of Mortality Event: 45 - 54 Years, Inflammatory Diseases of Female Pelvic Organs",
+      "dcid": "Count_MortalityEvent_Years45To54_InflammatoryDiseasesOfFemalePelvicOrgans"
+    },
+    {
+      "name": "Count of Mortality Event: 5 - 9 Years, Female",
+      "dcid": "Count_Death_5To9Years_Female"
+    },
+    {
+      "name": "Count of Mortality Event: 50 - 54 Years, Female",
+      "dcid": "Count_Death_50To54Years_Female"
+    },
+    {
+      "name": "Count of Mortality Event: 55 - 59 Years, Female",
+      "dcid": "Count_Death_55To59Years_Female"
+    },
+    {
+      "name": "Count of Mortality Event: 55 - 64 Years, Inflammatory Diseases of Female Pelvic Organs",
+      "dcid": "Count_MortalityEvent_Years55To64_InflammatoryDiseasesOfFemalePelvicOrgans"
+    },
+    {
+      "name": "Count of Mortality Event: 60 - 64 Years, Female",
+      "dcid": "Count_Death_60To64Years_Female"
+    },
+    {
+      "name": "Count of Mortality Event: 65 - 69 Years, Female",
+      "dcid": "Count_Death_65To69Years_Female"
+    },
+    {
+      "name": "Count of Mortality Event: 65 - 74 Years, Inflammatory Diseases of Female Pelvic Organs",
+      "dcid": "Count_MortalityEvent_Years65To74_InflammatoryDiseasesOfFemalePelvicOrgans"
+    },
+    {
+      "name": "Count of Mortality Event: 65 Years or More, Female",
+      "dcid": "Count_Death_65OrMoreYears_Female"
+    },
+    {
+      "name": "Count of Mortality Event: 70 - 74 Years, Female",
+      "dcid": "Count_Death_70To74Years_Female"
+    },
+    {
+      "name": "Count of Mortality Event: 75 - 79 Years, Female",
+      "dcid": "Count_Death_75To79Years_Female"
+    },
+    {
+      "name": "Count of Mortality Event: 75 - 84 Years, Inflammatory Diseases of Female Pelvic Organs",
+      "dcid": "Count_MortalityEvent_Years75To84_InflammatoryDiseasesOfFemalePelvicOrgans"
+    },
+    {
+      "name": "Count of Mortality Event: 80 Years or More, Female",
+      "dcid": "Count_Death_80OrMoreYears_Female"
+    },
+    {
+      "name": "Count of Mortality Event: 85 Years or More, Inflammatory Diseases of Female Pelvic Organs",
+      "dcid": "Count_MortalityEvent_85OrMoreYears_InflammatoryDiseasesOfFemalePelvicOrgans"
+    },
+    {
+      "name": "Count of Mortality Event: A00-B99 (Certain Infectious And Parasitic Diseases), Female",
+      "dcid": "Count_Death_CertainInfectiousParasiticDiseases_Female"
+    },
+    {
+      "name": "Count of Mortality Event: AIDS, Female",
+      "dcid": "Count_MortalityEvent_AIDS_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Accidental Discharge of Firearms, Female",
+      "dcid": "Count_MortalityEvent_AccidentalDischargeOfFirearms_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Accidental Drowning And Submersion, Female",
+      "dcid": "Count_MortalityEvent_AccidentalDrowningAndSubmersion_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Accidental Exposure To Smoke_Fire And Flames, Female",
+      "dcid": "Count_MortalityEvent_AccidentalExposureToSmokeFireAndFlames_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Accidental Poisoning And Exposure To Noxious Substances, Female",
+      "dcid": "Count_MortalityEvent_AccidentalPoisoningAndExposureToNoxiousSubstances_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Accidents(Unintentional Injuries), Female",
+      "dcid": "Count_MortalityEvent_Accidents(UnintentionalInjuries)_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Acute And Rapidly Progressive Nephritic And Nephrotic Syndrome, Female",
+      "dcid": "Count_MortalityEvent_AcuteAndRapidlyProgressiveNephriticAndNephroticSyndrome_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Acute And Subacute Endocarditis, Female",
+      "dcid": "Count_MortalityEvent_AcuteAndSubacuteEndocarditis_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Acute Bronchitis And Bronchiolitis, Female",
+      "dcid": "Count_MortalityEvent_AcuteBronchitisAndBronchiolitis_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Acute Myocardial Infarction, Female",
+      "dcid": "Count_MortalityEvent_AcuteMyocardialInfarction_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Acute Rheumatic Fever And Chronic Rheumatic Heart Diseases, Female",
+      "dcid": "Count_MortalityEvent_AcuteRheumaticFeverAndChronicRheumaticHeartDiseases_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Alcoholic Liver Disease, Female",
+      "dcid": "Count_MortalityEvent_AlcoholicLiverDisease_Female"
+    },
+    {
+      "name": "Count of Mortality Event: All Other And Unspecified Malignant Neoplasms, Female",
+      "dcid": "Count_MortalityEvent_AllOtherAndUnspecifiedMalignantNeoplasms_Female"
+    },
+    {
+      "name": "Count of Mortality Event: All Other Diseases(Residual), Female",
+      "dcid": "Count_MortalityEvent_AllOtherDiseases(Residual)_Female"
+    },
+    {
+      "name": "Count of Mortality Event: All Other Forms of Chronic Ischemic Heart Disease, Female",
+      "dcid": "Count_MortalityEvent_AllOtherFormsOfChronicIschemicHeartDisease_Female"
+    },
+    {
+      "name": "Count of Mortality Event: All Other Forms of Heart Disease, Female",
+      "dcid": "Count_MortalityEvent_AllOtherFormsOfHeartDisease_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Alzheimers Disease, Female",
+      "dcid": "Count_MortalityEvent_AlzheimersDisease_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Aortic Aneurysm And Dissection, Female",
+      "dcid": "Count_MortalityEvent_AorticAneurysmAndDissection_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Assault(Homicide), Female",
+      "dcid": "Count_MortalityEvent_Assault(Homicide)_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Assault(Homicide)By Discharge of Firearms, Female",
+      "dcid": "Count_MortalityEvent_Assault(Homicide)ByDischargeOfFirearms_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Assault(Homicide)By Other And Unspecified Means And Their Sequelae, Female",
+      "dcid": "Count_MortalityEvent_Assault(Homicide)ByOtherAndUnspecifiedMeansAndTheirSequelae_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Asthma, Female",
+      "dcid": "Count_MortalityEvent_Asthma_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Atherosclerosis, Female",
+      "dcid": "Count_MortalityEvent_Atherosclerosis_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Atherosclerotic Cardiovascular Disease_So Described, Female",
+      "dcid": "Count_MortalityEvent_AtheroscleroticCardiovascularDiseaseSoDescribed_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Bronchitis_Chronic And Unspecified, Female",
+      "dcid": "Count_MortalityEvent_BronchitisChronicAndUnspecified_Female"
+    },
+    {
+      "name": "Count of Mortality Event: C00-D48 (Neoplasms), Female",
+      "dcid": "Count_Death_Neoplasms_Female"
+    },
+    {
+      "name": "Count of Mortality Event: COVID-19, Female",
+      "dcid": "Count_MortalityEvent_COVID19_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Cerebrovascular Diseases, Female",
+      "dcid": "Count_MortalityEvent_CerebrovascularDiseases_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Certain Other Intestinal Infections, Female",
+      "dcid": "Count_MortalityEvent_CertainOtherIntestinalInfections_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Cholelithiasis And Other Disorders of Gallbladder, Female",
+      "dcid": "Count_MortalityEvent_CholelithiasisAndOtherDisordersOfGallbladder_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Chronic Glomerulonephritis_Nephritis And Nephritis Not Specified as Acute or Chronic_And Renal Sclerosis Unspecified, Female",
+      "dcid": "Count_MortalityEvent_ChronicGlomerulonephritisNephritisAndNephritisNotSpecifiedAsAcuteOrChronicAndRenalSclerosisUnspecified_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Chronic Liver Disease And Cirrhosis, Female",
+      "dcid": "Count_MortalityEvent_ChronicLiverDiseaseAndCirrhosis_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Chronic Lower Respiratory Diseases, Female",
+      "dcid": "Count_MortalityEvent_ChronicLowerRespiratoryDiseases_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Complications of Medical And Surgical Care, Female",
+      "dcid": "Count_MortalityEvent_ComplicationsOfMedicalAndSurgicalCare_Female"
+    },
+    {
+      "name": "Count of Mortality Event: D50-D89 (Diseases of The Blood And Blood-forming Organs And Certain Disorders Involving The Immune Mechanism), Female",
+      "dcid": "Count_Death_DiseasesOfBloodAndBloodFormingOrgansAndImmuneDisorders_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Diabetes Mellitus, Female",
+      "dcid": "Count_MortalityEvent_DiabetesMellitus_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Discharge of Firearms_Undetermined Intent, Female",
+      "dcid": "Count_MortalityEvent_DischargeOfFirearmsUndeterminedIntent_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Diseases of Appendix, Female",
+      "dcid": "Count_MortalityEvent_DiseasesOfAppendix_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Diseases of Heart, Female",
+      "dcid": "Count_MortalityEvent_DiseasesOfHeart_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Diseases of Pericardium And Acute Myocarditis, Female",
+      "dcid": "Count_MortalityEvent_DiseasesOfPericardiumAndAcuteMyocarditis_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Emphysema, Female",
+      "dcid": "Count_MortalityEvent_Emphysema_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Enterocolitis Due To Clostridium Difficile, Female",
+      "dcid": "Count_MortalityEvent_EnterocolitisDueToClostridiumDifficile_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Essential(Primary)Hypertension And Hypertensive Renal Disease, Female",
+      "dcid": "Count_MortalityEvent_Essential(Primary)HypertensionAndHypertensiveRenalDisease_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Events of Undetermined Intent, Female",
+      "dcid": "Count_MortalityEvent_EventsOfUndeterminedIntent_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Falls, Female",
+      "dcid": "Count_MortalityEvent_Falls_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Heart Failure, Female",
+      "dcid": "Count_MortalityEvent_HeartFailure_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Hernia, Female",
+      "dcid": "Count_MortalityEvent_Hernia_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Hodgkins Disease, Female",
+      "dcid": "Count_MortalityEvent_HodgkinsDisease_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Hypertensive Heart And Renal Disease, Female",
+      "dcid": "Count_MortalityEvent_HypertensiveHeartAndRenalDisease_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Hypertensive Heart Disease, Female",
+      "dcid": "Count_MortalityEvent_HypertensiveHeartDisease_Female"
+    },
+    {
+      "name": "Count of Mortality Event: I00-I99 (Diseases of The Circulatory System), Female",
+      "dcid": "Count_Death_DiseasesOfTheCirculatorySystem_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Infections of Kidney, Female",
+      "dcid": "Count_MortalityEvent_InfectionsOfKidney_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Inflammatory Diseases of Female Pelvic Organs, Black or African American Alone",
+      "dcid": "Count_MortalityEvent_InflammatoryDiseasesOfFemalePelvicOrgans_BlackOrAfricanAmericanAlone"
+    },
+    {
+      "name": "Count of Mortality Event: Inflammatory Diseases of Female Pelvic Organs, Female",
+      "dcid": "Count_MortalityEvent_InflammatoryDiseasesOfFemalePelvicOrgans_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Inflammatory Diseases of Female Pelvic Organs, White Alone",
+      "dcid": "Count_MortalityEvent_InflammatoryDiseasesOfFemalePelvicOrgans_WhiteAlone"
+    },
+    {
+      "name": "Count of Mortality Event: Influenza And Pneumonia, Female",
+      "dcid": "Count_MortalityEvent_InfluenzaAndPneumonia_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Influenza, Female",
+      "dcid": "Count_MortalityEvent_Influenza_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Intentional Self-Harm(Suicide)By Discharge of Firearms, Female",
+      "dcid": "Count_MortalityEvent_IntentionalSelf-Harm(Suicide)ByDischargeOfFirearms_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Intentional Self-Harm(Suicide)By Other And Unspecified Means And Their Sequelae, Female",
+      "dcid": "Count_MortalityEvent_IntentionalSelf-Harm(Suicide)ByOtherAndUnspecifiedMeansAndTheirSequelae_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Ischemic Heart Diseases, Female",
+      "dcid": "Count_MortalityEvent_IschemicHeartDiseases_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Legal Intervention, Female",
+      "dcid": "Count_MortalityEvent_LegalIntervention_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Leukemia, Female",
+      "dcid": "Count_MortalityEvent_Leukemia_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Malignant Melanoma of Skin, Female",
+      "dcid": "Count_MortalityEvent_MalignantMelanomaOfSkin_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Malignant Neoplasm of Bladder, Female",
+      "dcid": "Count_MortalityEvent_MalignantNeoplasmOfBladder_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Malignant Neoplasm of Breast, Female",
+      "dcid": "Count_MortalityEvent_MalignantNeoplasmOfBreast_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Malignant Neoplasm of Cervix Uteri, Female",
+      "dcid": "Count_MortalityEvent_MalignantNeoplasmOfCervixUteri_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Malignant Neoplasm of Esophagus, Female",
+      "dcid": "Count_MortalityEvent_MalignantNeoplasmOfEsophagus_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Malignant Neoplasm of Larynx, Female",
+      "dcid": "Count_MortalityEvent_MalignantNeoplasmOfLarynx_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Malignant Neoplasm of Ovary, Female",
+      "dcid": "Count_MortalityEvent_MalignantNeoplasmOfOvary_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Malignant Neoplasm of Pancreas, Female",
+      "dcid": "Count_MortalityEvent_MalignantNeoplasmOfPancreas_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Malignant Neoplasm of Stomach, Female",
+      "dcid": "Count_MortalityEvent_MalignantNeoplasmOfStomach_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Malignant Neoplasms of Colon_Rectum And Anus, Female",
+      "dcid": "Count_MortalityEvent_MalignantNeoplasmsOfColonRectumAndAnus_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Malignant Neoplasms of Corpus Uteri And Uterus_Part Unspecified, Female",
+      "dcid": "Count_MortalityEvent_MalignantNeoplasmsOfCorpusUteriAndUterusPartUnspecified_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Malignant Neoplasms of Kidney And Renal Pelvis, Female",
+      "dcid": "Count_MortalityEvent_MalignantNeoplasmsOfKidneyAndRenalPelvis_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Malignant Neoplasms of Lip_Oral Cavity And Pharynx, Female",
+      "dcid": "Count_MortalityEvent_MalignantNeoplasmsOfLipOralCavityAndPharynx_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Malignant Neoplasms of Liver And Intrahepatic Bile Ducts, Female",
+      "dcid": "Count_MortalityEvent_MalignantNeoplasmsOfLiverAndIntrahepaticBileDucts_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Malignant Neoplasms of Lymphoid_Hematopoietic And Related Tissue, Female",
+      "dcid": "Count_MortalityEvent_MalignantNeoplasmsOfLymphoidHematopoieticAndRelatedTissue_Female"
+    },
+    {
+      "name": "Count of Mortality Event: MalignantNeoplasmsOfMeninges,BrainAndOtherPartsOfCentralNervousSystem, Female",
+      "dcid": "Count_MortalityEvent_MalignantNeoplasmsOfMeningesBrainAndOtherPartsOfCentralNervousSystem_Female"
+    },
+    {
+      "name": "Count of Mortality Event: MalignantNeoplasmsOfTrachea,BronchusAndLung, Female",
+      "dcid": "Count_MortalityEvent_MalignantNeoplasmsOfTracheaBronchusAndLung_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Malnutrition, Female",
+      "dcid": "Count_MortalityEvent_Malnutrition_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Meningitis, Female",
+      "dcid": "Count_MortalityEvent_Meningitis_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Meningococcal Infection, Female",
+      "dcid": "Count_MortalityEvent_MeningococcalInfection_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Motor Vehicle Accidents, Female",
+      "dcid": "Count_MortalityEvent_MotorVehicleAccidents_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Multiple Myeloma And Immunoproliferative Neoplasms, Female",
+      "dcid": "Count_MortalityEvent_MultipleMyelomaAndImmunoproliferativeNeoplasms_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Nephritis_Nephrotic Syndrome And Nephrosis, Female",
+      "dcid": "Count_MortalityEvent_NephritisNephroticSyndromeAndNephrosis_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Non-Hodgkins Lymphoma, Female",
+      "dcid": "Count_MortalityEvent_Non-HodgkinsLymphoma_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Nontransport Accidents, Female",
+      "dcid": "Count_MortalityEvent_NontransportAccidents_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Nutritional Deficiencies, Female",
+      "dcid": "Count_MortalityEvent_NutritionalDeficiencies_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Other Acute Ischemic Heart Diseases, Female",
+      "dcid": "Count_MortalityEvent_OtherAcuteIschemicHeartDiseases_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Other Acute Lower Respiratory Infections, Female",
+      "dcid": "Count_MortalityEvent_OtherAcuteLowerRespiratoryInfections_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Other And Unspecified Events of Undetermined Intent And Their Sequelae, Female",
+      "dcid": "Count_MortalityEvent_OtherAndUnspecifiedEventsOfUndeterminedIntentAndTheirSequelae_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Other And Unspecified Malignant Neoplasms of Lymphoid_Hematopoietic And Related Tissue, Female",
+      "dcid": "Count_MortalityEvent_OtherAndUnspecifiedMalignantNeoplasmsOfLymphoidHematopoieticAndRelatedTissue_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Other And Unspecified Nontransport Accidents And Their Sequelae, Female",
+      "dcid": "Count_MortalityEvent_OtherAndUnspecifiedNontransportAccidentsAndTheirSequelae_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Other Chronic Liver Disease And Cirrhosis, Female",
+      "dcid": "Count_MortalityEvent_OtherChronicLiverDiseaseAndCirrhosis_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Other Chronic Lower Respiratory Diseases, Female",
+      "dcid": "Count_MortalityEvent_OtherChronicLowerRespiratoryDiseases_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Other Complications of Pregnancy_Childbirth And The Puerperium, Female",
+      "dcid": "Count_MortalityEvent_OtherComplicationsOfPregnancyChildbirthAndThePuerperium_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Other Diseases of Arteries_Arterioles And Capillaries, Female",
+      "dcid": "Count_MortalityEvent_OtherDiseasesOfArteriesArteriolesAndCapillaries_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Other Diseases of Circulatory System, Female",
+      "dcid": "Count_MortalityEvent_OtherDiseasesOfCirculatorySystem_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Other Diseases of Respiratory System, Female",
+      "dcid": "Count_MortalityEvent_OtherDiseasesOfRespiratorySystem_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Other Disorders of Circulatory System, Female",
+      "dcid": "Count_MortalityEvent_OtherDisordersOfCirculatorySystem_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Other Disorders of Kidney, Female",
+      "dcid": "Count_MortalityEvent_OtherDisordersOfKidney_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Other Forms of Chronic Ischemic Heart Disease, Female",
+      "dcid": "Count_MortalityEvent_OtherFormsOfChronicIschemicHeartDisease_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Other Heart Diseases, Female",
+      "dcid": "Count_MortalityEvent_OtherHeartDiseases_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Other Land Transport Accidents, Female",
+      "dcid": "Count_MortalityEvent_OtherLandTransportAccidents_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Other Nutritional Deficiencies, Female",
+      "dcid": "Count_MortalityEvent_OtherNutritionalDeficiencies_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Other Tuberculosis, Female",
+      "dcid": "Count_MortalityEvent_OtherTuberculosis_Female"
+    },
+    {
+      "name": "Count of Mortality Event: P00-P96 (Certain Conditions Originating in The Perinatal Period), Female",
+      "dcid": "Count_Death_CertainConditionsOriginatingInThePerinatalPeriod_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Parkinsons Disease, Female",
+      "dcid": "Count_MortalityEvent_ParkinsonsDisease_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Peptic Ulcer, Female",
+      "dcid": "Count_MortalityEvent_PepticUlcer_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Pneumoconioses And Chemical Effects, Female",
+      "dcid": "Count_MortalityEvent_PneumoconiosesAndChemicalEffects_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Pneumonia, Female",
+      "dcid": "Count_MortalityEvent_Pneumonia_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Pneumonitis Due To Solids And Liquids, Female",
+      "dcid": "Count_MortalityEvent_PneumonitisDueToSolidsAndLiquids_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Pregnancy With Abortive Outcome, Female",
+      "dcid": "Count_MortalityEvent_PregnancyWithAbortiveOutcome_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Pregnancy_Childbirth And The Puerperium, Female",
+      "dcid": "Count_MortalityEvent_PregnancyChildbirthAndThePuerperium_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Q00-Q99 (Congenital Malformations, Deformations And Chromosomal Abnormalities), Female",
+      "dcid": "Count_Death_CongenitalMalformationsDeformationsChromosomalAbnormalities_Female"
+    },
+    {
+      "name": "Count of Mortality Event: R00-R99 (Symptoms, Signs And Abnormal Clinical And Laboratory Findings, Not Elsewhere Classified), Female",
+      "dcid": "Count_Death_AbnormalNotClassfied_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Renal Failure, Female",
+      "dcid": "Count_MortalityEvent_RenalFailure_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Respiratory Tuberculosis, Female",
+      "dcid": "Count_MortalityEvent_RespiratoryTuberculosis_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Salmonella Infections, Female",
+      "dcid": "Count_MortalityEvent_SalmonellaInfections_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Septicemia, Female",
+      "dcid": "Count_MortalityEvent_Septicemia_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Suicide, Female",
+      "dcid": "Count_MortalityEvent_Suicide_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Syphilis, Female",
+      "dcid": "Count_MortalityEvent_Syphilis_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Transport Accidents, Female",
+      "dcid": "Count_MortalityEvent_TransportAccidents_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Tuberculosis, Female",
+      "dcid": "Count_MortalityEvent_Tuberculosis_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Unspecified Acute Lower Respiratory Infection, Female",
+      "dcid": "Count_MortalityEvent_UnspecifiedAcuteLowerRespiratoryInfection_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Viral Hepatitis, Female",
+      "dcid": "Count_MortalityEvent_ViralHepatitis_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Water_Air And Space_And Other And Unspecified Transport Accidents And Their Sequelae, Female",
+      "dcid": "Count_MortalityEvent_WaterAirAndSpaceAndOtherAndUnspecifiedTransportAccidentsAndTheirSequelae_Female"
+    },
+    {
+      "name": "Count of Mortality Event: Whooping Cough, Female",
+      "dcid": "Count_MortalityEvent_WhoopingCough_Female"
+    },
+    {
+      "name": "Count of Mortality Event: in Situ Neoplasms_Benign Neoplasms And Neoplasms of Uncertain or Unknown Behavior, Female",
+      "dcid": "Count_MortalityEvent_InSituNeoplasmsBenignNeoplasmsAndNeoplasmsOfUncertainOrUnknownBehavior_Female"
+    },
+    {
+      "name": "Count of Neuroinvasive, Female La Crosse virus disease incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionNeuroinvasiveDisease_LaCrosseVirusDisease"
+    },
+    {
+      "name": "Count of Neuroinvasive, Female Powassan virus disease incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionNeuroinvasiveDisease_PowassanVirusDisease"
+    },
+    {
+      "name": "Count of Neuroinvasive, Female St. Louis encephalitis virus disease incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionNeuroinvasiveDisease_StLouisEncephalitis"
+    },
+    {
+      "name": "Count of Neuroinvasive, Female West Nile virus disease incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionNeuroinvasiveDisease_WestNileVirusDisease"
+    },
+    {
+      "name": "Count of Non-neuroinvasive, Female Powassan virus disease incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionNonNeuroinvasiveDisease_PowassanVirusDisease"
+    },
+    {
+      "name": "Count of Non-neuroinvasive, Female St. Louis encephalitis virus disease incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionNonNeuroinvasiveDisease_StLouisEncephalitis"
+    },
+    {
+      "name": "Count of Non-neuroinvasive, Female West Nile virus disease incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionNonNeuroinvasiveDisease_WestNileVirusDisease"
+    },
+    {
+      "name": "Count of Non-neurovasive, Female La Crosse virus disease incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionLaCrosseVirusDisease"
+    },
+    {
+      "name": "Count of Other toxic shock syndrome, Female ToxicShockSyndromExceptStreptococcal incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionToxicShockSyndromExceptStreptococcal"
+    },
+    {
+      "name": "Count of Perinatal infection, Female Hepatitis B incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionPerinatalInfection_HepatitisB"
+    },
+    {
+      "name": "Count of Perinatal infection, Female Hepatitis C incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionPerinatalInfection_HepatitisC"
+    },
+    {
+      "name": "Count of Shiga toxin-producing Escherichia coli, Female Shiga toxin-producing Escherichia Coli incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionShigaToxinEColi"
+    },
+    {
+      "name": "Count of Typhoid fever, Female Typhoid incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionTyphoidFever"
+    },
+    {
+      "name": "Count of Undetermined ehrlichiosis/anaplasmosis, Female UndeterminedEhrlichiosis/Anaplasmosis incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionEhrlichiosis"
+    },
+    {
+      "name": "Count of Vibriosis, Female Vibriosis except cholera incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionVibriosisExcludingCholera"
+    },
+    {
+      "name": "Count of congenital, Female Rubella incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionCongenitalDisease_Rubella"
+    },
+    {
+      "name": "Count of female Hepatitis C incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionHepatitisC"
+    },
+    {
+      "name": "Count of invasive, ,, Female Haemophilus influenzae incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionInvasiveDisease_HaemophilusInfluenzae"
+    },
+    {
+      "name": "Count of non-congenital, Female Zika fever incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionNonCongenitalDisease_ZikaVirusDisease"
+    },
+    {
+      "name": "Count of non-congenital, Female Zika virus infection incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionNonCongenitalDisease_ZikaVirusInfection"
+    },
+    {
+      "name": "Count of post-diarrheal, Female Hemolytic uremic syndrome incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionPostDiarrheal_HemolyticUremicSyndrome"
+    },
+    {
+      "name": "Count of, Female Meningococcal disease incidents",
+      "dcid": "Count_MedicalConditionIncident_Female_ConditionMeningococcalMeningitis"
+    },
+    {
+      "name": "Detected victims of human trafficking [18 years old and over, Female]",
+      "dcid": "sdg/VC_HTF_DETV.AGE--Y_GE18__SEX--F"
+    },
+    {
+      "name": "Detected victims of human trafficking [18 years old and over, Female]",
+      "dcid": "sdg/VC_HTF_DETVR.AGE--Y_GE18__SEX--F"
+    },
+    {
+      "name": "Detected victims of human trafficking [under 18 years old, Female]",
+      "dcid": "sdg/VC_HTF_DETV.AGE--Y0T17__SEX--F"
+    },
+    {
+      "name": "Detected victims of human trafficking [under 18 years old, Female]",
+      "dcid": "sdg/VC_HTF_DETVR.AGE--Y0T17__SEX--F"
+    },
+    {
+      "name": "Detected victims of human trafficking for forced labour, servitude and slavery [18 years old and over, Female]",
+      "dcid": "sdg/VC_HTF_DETVFL.AGE--Y_GE18__SEX--F"
+    },
+    {
+      "name": "Detected victims of human trafficking for forced labour, servitude and slavery [18 years old and over, Female]",
+      "dcid": "sdg/VC_HTF_DETVFLR.AGE--Y_GE18__SEX--F"
+    },
+    {
+      "name": "Detected victims of human trafficking for forced labour, servitude and slavery [under 18 years old, Female]",
+      "dcid": "sdg/VC_HTF_DETVFL.AGE--Y0T17__SEX--F"
+    },
+    {
+      "name": "Detected victims of human trafficking for forced labour, servitude and slavery [under 18 years old, Female]",
+      "dcid": "sdg/VC_HTF_DETVFLR.AGE--Y0T17__SEX--F"
+    },
+    {
+      "name": "Detected victims of human trafficking for other purposes [18 years old and over, Female]",
+      "dcid": "sdg/VC_HTF_DETVOP.AGE--Y_GE18__SEX--F"
+    },
+    {
+      "name": "Detected victims of human trafficking for other purposes [18 years old and over, Female]",
+      "dcid": "sdg/VC_HTF_DETVOPR.AGE--Y_GE18__SEX--F"
+    },
+    {
+      "name": "Detected victims of human trafficking for other purposes [under 18 years old, Female]",
+      "dcid": "sdg/VC_HTF_DETVOP.AGE--Y0T17__SEX--F"
+    },
+    {
+      "name": "Detected victims of human trafficking for other purposes [under 18 years old, Female]",
+      "dcid": "sdg/VC_HTF_DETVOPR.AGE--Y0T17__SEX--F"
+    },
+    {
+      "name": "Detected victims of human trafficking for sexual exploitation [18 years old and over, Female]",
+      "dcid": "sdg/VC_HTF_DETVSX.AGE--Y_GE18__SEX--F"
+    },
+    {
+      "name": "Detected victims of human trafficking for sexual exploitation [18 years old and over, Female]",
+      "dcid": "sdg/VC_HTF_DETVSXR.AGE--Y_GE18__SEX--F"
+    },
+    {
+      "name": "Detected victims of human trafficking for sexual exploitation [under 18 years old, Female]",
+      "dcid": "sdg/VC_HTF_DETVSX.AGE--Y0T17__SEX--F"
+    },
+    {
+      "name": "Detected victims of human trafficking for sexual exploitation [under 18 years old, Female]",
+      "dcid": "sdg/VC_HTF_DETVSXR.AGE--Y0T17__SEX--F"
+    },
+    {
+      "name": "Earning Female Population",
+      "dcid": "Count_Person_Female_WithEarnings"
+    },
+    {
+      "name": "Female Population Above Poverty Level in the Past Year",
+      "dcid": "Count_Person_Female_AbovePovertyLevelInThePast12Months"
+    },
+    {
+      "name": "Female Population Aged 25 to 34",
+      "dcid": "Count_Person_25To34Years_Female"
+    },
+    {
+      "name": "Female Population Below Poverty Level in the Last Year",
+      "dcid": "Count_Person_Female_BelowPovertyLevelInThePast12Months"
+    },
+    {
+      "name": "Female Population Identifying as Multiracial",
+      "dcid": "Count_Person_Female_TwoOrMoreRaces"
+    },
+    {
+      "name": "Female Population Identifying as Native Hawaiian/Other Pacific Islander Alone",
+      "dcid": "Count_Person_Female_NativeHawaiianAndOtherPacificIslanderAlone"
+    },
+    {
+      "name": "Female Population Identifying as Native Hawaiian/Other Pacific Islander Alone",
+      "dcid": "Count_Person_Female_NativeHawaiianOrOtherPacificIslanderAlone"
+    },
+    {
+      "name": "Female Population Identifying as Native Hawaiian/Other Pacific Islander, Monoracial/Multiracial",
+      "dcid": "Count_Person_Female_NativeHawaiianAndOtherPacificIslanderAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Female Population Identifying as Some Other Race Alone",
+      "dcid": "Count_Person_Female_SomeOtherRaceAlone"
+    },
+    {
+      "name": "Female Population Identifying as White Alone",
+      "dcid": "Count_Person_Female_WhiteAlone"
+    },
+    {
+      "name": "Female Population Institutionalized in Group Quarters",
+      "dcid": "Count_Person_Female_ResidesInInstitutionalizedGroupQuarters"
+    },
+    {
+      "name": "Female Population With Disabilities",
+      "dcid": "Count_Person_WithDisability_Female"
+    },
+    {
+      "name": "Female Population in Adult Correctional Facilities",
+      "dcid": "Count_Person_Female_ResidesInAdultCorrectionalFacilities"
+    },
+    {
+      "name": "Female Population in College/University Student Housing",
+      "dcid": "Count_Person_Female_ResidesInCollegeOrUniversityStudentHousing"
+    },
+    {
+      "name": "Female Population in Group Quarters",
+      "dcid": "Count_Person_Female_ResidesInGroupQuarters"
+    },
+    {
+      "name": "Female Population in Juvenile Facilities",
+      "dcid": "Count_Person_Female_ResidesInJuvenileFacilities"
+    },
+    {
+      "name": "Female Population in Military Quarters/on Military Ships",
+      "dcid": "Count_Person_Female_ResidesInMilitaryQuartersOrMilitaryShips"
+    },
+    {
+      "name": "Female Population in Non Institutionalized Group Quarters",
+      "dcid": "Count_Person_Female_ResidesInNoninstitutionalizedGroupQuarters"
+    },
+    {
+      "name": "Female Population in Nursing Facilities",
+      "dcid": "Count_Person_Female_ResidesInNursingFacilities"
+    },
+    {
+      "name": "Female White Population, Monoracial/Multiracial",
+      "dcid": "Count_Person_Female_WhiteAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Foreign Born Female Population",
+      "dcid": "Count_Person_Female_ForeignBorn"
+    },
+    {
+      "name": "Health worker distribution [Female, Type of occupation = Medical doctors]",
+      "dcid": "sdg/SH_MED_HWRKDIS.SEX--F__OCCUPATION--ISCO08_221"
+    },
+    {
+      "name": "Health worker distribution [Female, Type of occupation = Nursing personnel]",
+      "dcid": "sdg/SH_MED_HWRKDIS.SEX--F__OCCUPATION--ISCO08_2221_3221"
+    },
+    {
+      "name": "Hispanic Female Population",
+      "dcid": "Count_Person_Female_HispanicOrLatino"
+    },
+    {
+      "name": "Hispanic Female Population Identifying as American Indian/Alaska Native Alone",
+      "dcid": "Count_Person_Female_HispanicOrLatino_AmericanIndianOrAlaskaNativeAlone"
+    },
+    {
+      "name": "Hispanic Female Population Identifying as American Indian/Alaska Native, Monoracial/Multiracial",
+      "dcid": "Count_Person_Female_HispanicOrLatino_AmericanIndianAndAlaskaNativeAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Hispanic Female Population Identifying as Asian Alone",
+      "dcid": "Count_Person_Female_HispanicOrLatino_AsianAlone"
+    },
+    {
+      "name": "Hispanic Female Population Identifying as Asian, Monoracial/Multiracial",
+      "dcid": "Count_Person_Female_HispanicOrLatino_AsianAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Hispanic Female Population Identifying as Asian/Pacific Islander",
+      "dcid": "Count_Person_Female_HispanicOrLatino_AsianOrPacificIslander"
+    },
+    {
+      "name": "Hispanic Female Population Identifying as Black/African American Alone",
+      "dcid": "Count_Person_Female_HispanicOrLatino_BlackOrAfricanAmericanAlone"
+    },
+    {
+      "name": "Hispanic Female Population Identifying as Black/African American, Monoracial/Multiracial",
+      "dcid": "Count_Person_Female_HispanicOrLatino_BlackOrAfricanAmericanAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Hispanic Female Population Identifying as Native Hawaiian/Other Pacific Islander Alone",
+      "dcid": "Count_Person_Female_HispanicOrLatino_NativeHawaiianOrOtherPacificIslanderAlone"
+    },
+    {
+      "name": "Hispanic Female Population Identifying as Native Hawaiian/Other Pacific Islander, Monoracial/Multiracial",
+      "dcid": "Count_Person_Female_HispanicOrLatino_NativeHawaiianAndOtherPacificIslanderAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Hispanic Female Population Identifying as White Alone",
+      "dcid": "Count_Person_Female_HispanicOrLatino_WhiteAlone"
+    },
+    {
+      "name": "Hispanic Female Population Identifying as White, Monoracial/Multiracial",
+      "dcid": "Count_Person_Female_HispanicOrLatino_WhiteAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Hispanic Multiracial Female Population",
+      "dcid": "Count_Person_Female_HispanicOrLatino_TwoOrMoreRaces"
+    },
+    {
+      "name": "Household Reference Person in Universe: Non-Institutional, female",
+      "dcid": "Count_Household_Female_NonInstitutionalized"
+    },
+    {
+      "name": "Infant deaths [under 1 year old, Female]",
+      "dcid": "sdg/SH_DYN_IMRTN.AGE--Y0__SEX--F"
+    },
+    {
+      "name": "Infant mortality rate [under 1 year old, Female]",
+      "dcid": "sdg/SH_DYN_IMRT.AGE--Y0__SEX--F"
+    },
+    {
+      "name": "Mortality rate attributed to cardiovascular disease, cancer, diabetes or chronic respiratory disease [30 to 70 years old, Female]",
+      "dcid": "sdg/SH_DTH_NCOM.AGE--Y30T70__SEX--F"
+    },
+    {
+      "name": "Non Hispanic Female Population",
+      "dcid": "Count_Person_Female_NotHispanicOrLatino"
+    },
+    {
+      "name": "Non Hispanic Female Population Identifying as American Indian/Alaska Native Alone",
+      "dcid": "Count_Person_Female_NotHispanicOrLatino_AmericanIndianOrAlaskaNativeAlone"
+    },
+    {
+      "name": "Non Hispanic Female Population Identifying as American Indian/Alaska Native, Monoracial/Multiracial",
+      "dcid": "Count_Person_Female_NotHispanicOrLatino_AmericanIndianAndAlaskaNativeAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Non Hispanic Female Population Identifying as Asian Alone",
+      "dcid": "Count_Person_Female_NotHispanicOrLatino_AsianAlone"
+    },
+    {
+      "name": "Non Hispanic Female Population Identifying as Asian, Monoracial/Multiracial",
+      "dcid": "Count_Person_Female_NotHispanicOrLatino_AsianAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Non Hispanic Female Population Identifying as Asian/Pacific Islander",
+      "dcid": "Count_Person_Female_NotHispanicOrLatino_AsianOrPacificIslander"
+    },
+    {
+      "name": "Non Hispanic Female Population Identifying as Black/African American Alone",
+      "dcid": "Count_Person_Female_NotHispanicOrLatino_BlackOrAfricanAmericanAlone"
+    },
+    {
+      "name": "Non Hispanic Female Population Identifying as Black/African American, Monoracial/Multiracial",
+      "dcid": "Count_Person_Female_NotHispanicOrLatino_BlackOrAfricanAmericanAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Non Hispanic Female Population Identifying as Multiracial",
+      "dcid": "Count_Person_Female_NotHispanicOrLatino_TwoOrMoreRaces"
+    },
+    {
+      "name": "Non Hispanic Female Population Identifying as Native Hawaiian/Other Pacific Islander Alone",
+      "dcid": "Count_Person_Female_NotHispanicOrLatino_NativeHawaiianOrOtherPacificIslanderAlone"
+    },
+    {
+      "name": "Non Hispanic Female Population Identifying as Native Hawaiian/Other Pacific Islander, Monoracial/Multiracial",
+      "dcid": "Count_Person_Female_NotHispanicOrLatino_NativeHawaiianAndOtherPacificIslanderAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Non Hispanic Female Population Identifying as White, Monoracial/Multiracial",
+      "dcid": "Count_Person_Female_NotHispanicOrLatino_WhiteAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Non White Female Population",
+      "dcid": "Count_Person_Female_NonWhite"
+    },
+    {
+      "name": "Number of deaths attributed to non-communicable diseases [Female, Cancer]",
+      "dcid": "sdg/SH_DTH_NCD.SEX--F__NAME_OF_NON_COMMUNICABLE_DISEASE--NCD_CNCR"
+    },
+    {
+      "name": "Number of deaths attributed to non-communicable diseases [Female, Cardiovascular disease]",
+      "dcid": "sdg/SH_DTH_NCD.SEX--F__NAME_OF_NON_COMMUNICABLE_DISEASE--NCD_CARDIO"
+    },
+    {
+      "name": "Number of deaths attributed to non-communicable diseases [Female, Chronic respiratory disease]",
+      "dcid": "sdg/SH_DTH_NCD.SEX--F__NAME_OF_NON_COMMUNICABLE_DISEASE--NCD_CRESPD"
+    },
+    {
+      "name": "Number of deaths attributed to non-communicable diseases [Female, Diabetes]",
+      "dcid": "sdg/SH_DTH_NCD.SEX--F__NAME_OF_NON_COMMUNICABLE_DISEASE--NCD_DIABTS"
+    },
+    {
+      "name": "Number of new HIV infections per 1,000 uninfected population [15 to 24 years old, Female]",
+      "dcid": "sdg/SH_HIV_INCD.AGE--Y15T24__SEX--F"
+    },
+    {
+      "name": "Number of new HIV infections per 1,000 uninfected population [15 to 49 years old, Female]",
+      "dcid": "sdg/SH_HIV_INCD.AGE--Y15T49__SEX--F"
+    },
+    {
+      "name": "Number of new HIV infections per 1,000 uninfected population [50 years old and over, Female]",
+      "dcid": "sdg/SH_HIV_INCD.AGE--Y_GE50__SEX--F"
+    },
+    {
+      "name": "Number of speakers in parliament, Lower Chamber or Unicameral [46 years old and over, Female]",
+      "dcid": "sdg/SG_DMK_PARLSP_LC.AGE--Y_GE46__SEX--F"
+    },
+    {
+      "name": "Number of speakers in parliament, Upper Chamber [46 years old and over, Female]",
+      "dcid": "sdg/SG_DMK_PARLSP_UC.AGE--Y_GE46__SEX--F"
+    },
+    {
+      "name": "Participation rate in formal and non-formal education and training [15 to 24 years old, Female]",
+      "dcid": "sdg/SE_ADT_EDUCTRN.AGE--Y15T24__SEX--F"
+    },
+    {
+      "name": "Participation rate in formal and non-formal education and training [15 to 64 years old, Female]",
+      "dcid": "sdg/SE_ADT_EDUCTRN.AGE--Y15T64__SEX--F"
+    },
+    {
+      "name": "Participation rate in formal and non-formal education and training [25 to 54 years old, Female]",
+      "dcid": "sdg/SE_ADT_EDUCTRN.AGE--Y25T54__SEX--F"
+    },
+    {
+      "name": "Participation rate in formal and non-formal education and training [55 to 64 years old, Female]",
+      "dcid": "sdg/SE_ADT_EDUCTRN.AGE--Y55T64__SEX--F"
+    },
+    {
+      "name": "Population in moderate or severe food insecurity [15 years old and over, Female]",
+      "dcid": "sdg/AG_PRD_FIESMSN.AGE--Y_GE15__SEX--F"
+    },
+    {
+      "name": "Population in severe food insecurity [15 years old and over, Female]",
+      "dcid": "sdg/AG_PRD_FIESSN.AGE--Y_GE15__SEX--F"
+    },
+    {
+      "name": "Population: 0 - 4 Years, Female",
+      "dcid": "Count_Person_0To4Years_Female"
+    },
+    {
+      "name": "Population: 1 Years or More, Female",
+      "dcid": "Count_Person_1OrMoreYears_Female"
+    },
+    {
+      "name": "Population: 10 - 14 Years, Female",
+      "dcid": "Count_Person_10To14Years_Female"
+    },
+    {
+      "name": "Population: 10th Grade, Female",
+      "dcid": "Count_Person_25OrMoreYears_EducationalAttainment10ThGrade_Female"
+    },
+    {
+      "name": "Population: 11th Grade, Female",
+      "dcid": "Count_Person_25OrMoreYears_EducationalAttainment11ThGrade_Female"
+    },
+    {
+      "name": "Population: 12th Grade No Diploma, Female",
+      "dcid": "Count_Person_25OrMoreYears_EducationalAttainment12ThGradeNoDiploma_Female"
+    },
+    {
+      "name": "Population: 14 Years or Less, Female",
+      "dcid": "Count_Person_Upto14Years_Female"
+    },
+    {
+      "name": "Population: 15 - 17 Years, Female",
+      "dcid": "Count_Person_15To17Years_Female"
+    },
+    {
+      "name": "Population: 15 - 19 Years, Female",
+      "dcid": "Count_Person_15To19Years_Female"
+    },
+    {
+      "name": "Population: 15 - 44 Years, Female",
+      "dcid": "Count_Person_15To44Years_Female"
+    },
+    {
+      "name": "Population: 15 - 50 Years, Female",
+      "dcid": "Count_Person_15To50Years_Female"
+    },
+    {
+      "name": "Population: 15 - 64 Years, Female",
+      "dcid": "Count_Person_15To64Years_Female"
+    },
+    {
+      "name": "Population: 15 Years or More, Female",
+      "dcid": "Count_Person_15OrMoreYears_Female"
+    },
+    {
+      "name": "Population: 16 - 19 Years, Female",
+      "dcid": "Count_Person_16To19Years_Female"
+    },
+    {
+      "name": "Population: 16 - 50 Years, Female",
+      "dcid": "Count_Person_16To50Years_Female"
+    },
+    {
+      "name": "Population: 16 - 64 Years, Female",
+      "dcid": "Count_Person_16To64Years_Female"
+    },
+    {
+      "name": "Population: 16 Years or More, Female",
+      "dcid": "Count_Person_16OrMoreYears_Female"
+    },
+    {
+      "name": "Population: 18 - 19 Years, Female",
+      "dcid": "Count_Person_18To19Years_Female"
+    },
+    {
+      "name": "Population: 18 - 24 Years, Female",
+      "dcid": "Count_Person_18To24Years_Female"
+    },
+    {
+      "name": "Population: 18 - 64 Years, Female",
+      "dcid": "Count_Person_18To64Years_Female"
+    },
+    {
+      "name": "Population: 18 Years or Less, Female",
+      "dcid": "Count_Person_18OrLessYears_Female"
+    },
+    {
+      "name": "Population: 18 Years or More, Female",
+      "dcid": "Count_Person_18OrMoreYears_Female"
+    },
+    {
+      "name": "Population: 20 - 21 Years, Female",
+      "dcid": "Count_Person_20To21Years_Female"
+    },
+    {
+      "name": "Population: 20 - 24 Years, Female",
+      "dcid": "Count_Person_20To24Years_Female"
+    },
+    {
+      "name": "Population: 20 - 34 Years, Female",
+      "dcid": "Count_Person_20To34Years_Female"
+    },
+    {
+      "name": "Population: 21 - 64 Years, Female",
+      "dcid": "Count_Person_21To64Years_Female"
+    },
+    {
+      "name": "Population: 21 Years or More, Female",
+      "dcid": "Count_Person_21OrMoreYears_Female"
+    },
+    {
+      "name": "Population: 22 - 24 Years, Female",
+      "dcid": "Count_Person_22To24Years_Female"
+    },
+    {
+      "name": "Population: 25 - 29 Years, Female",
+      "dcid": "Count_Person_25To29Years_Female"
+    },
+    {
+      "name": "Population: 25 Years or More, Female",
+      "dcid": "Count_Person_25OrMoreYears_Female"
+    },
+    {
+      "name": "Population: 3 Years or More, Female",
+      "dcid": "Count_Person_3OrMoreYears_Female"
+    },
+    {
+      "name": "Population: 30 - 34 Years, Female",
+      "dcid": "Count_Person_30To34Years_Female"
+    },
+    {
+      "name": "Population: 35 - 39 Years, Female",
+      "dcid": "Count_Person_35To39Years_Female"
+    },
+    {
+      "name": "Population: 35 - 44 Years, Female",
+      "dcid": "Count_Person_35To44Years_Female"
+    },
+    {
+      "name": "Population: 35 - 50 Years, Female",
+      "dcid": "Count_Person_35To50Years_Female"
+    },
+    {
+      "name": "Population: 4 Years or Less, Female",
+      "dcid": "Count_Person_Upto4Years_Female"
+    },
+    {
+      "name": "Population: 40 - 44 Years, Female",
+      "dcid": "Count_Person_40To44Years_Female"
+    },
+    {
+      "name": "Population: 40 - 64 Years, Female",
+      "dcid": "Count_Person_40To64Years_Female"
+    },
+    {
+      "name": "Population: 45 - 49 Years, Female",
+      "dcid": "Count_Person_45To49Years_Female"
+    },
+    {
+      "name": "Population: 45 - 54 Years, Female",
+      "dcid": "Count_Person_45To54Years_Female"
+    },
+    {
+      "name": "Population: 45 - 64 Years, Female",
+      "dcid": "Count_Person_45To64Years_Female"
+    },
+    {
+      "name": "Population: 5 - 14 Years, Female",
+      "dcid": "Count_Person_Years5To14_Female"
+    },
+    {
+      "name": "Population: 5 - 9 Years, Female",
+      "dcid": "Count_Person_5To9Years_Female"
+    },
+    {
+      "name": "Population: 5 Years or Less, Female",
+      "dcid": "Count_Person_Upto5Years_Female"
+    },
+    {
+      "name": "Population: 50 - 54 Years, Female",
+      "dcid": "Count_Person_50To54Years_Female"
+    },
+    {
+      "name": "Population: 50 - 64 Years, Female",
+      "dcid": "Count_Person_50To64Years_Female"
+    },
+    {
+      "name": "Population: 55 - 59 Years, Female",
+      "dcid": "Count_Person_55To59Years_Female"
+    },
+    {
+      "name": "Population: 55 - 64 Years, Female",
+      "dcid": "Count_Person_55To64Years_Female"
+    },
+    {
+      "name": "Population: 5th And 6th Grade, Female",
+      "dcid": "Count_Person_25OrMoreYears_EducationalAttainment5ThAnd6ThGrade_Female"
+    },
+    {
+      "name": "Population: 60 - 61 Years, Female",
+      "dcid": "Count_Person_60To61Years_Female"
+    },
+    {
+      "name": "Population: 60 - 64 Years, Female",
+      "dcid": "Count_Person_60To64Years_Female"
+    },
+    {
+      "name": "Population: 60 Years or More, Female",
+      "dcid": "Count_Person_60OrMoreYears_Female"
+    },
+    {
+      "name": "Population: 62 - 64 Years, Female",
+      "dcid": "Count_Person_62To64Years_Female"
+    },
+    {
+      "name": "Population: 62 Years or More, Female",
+      "dcid": "Count_Person_62OrMoreYears_Female"
+    },
+    {
+      "name": "Population: 64 Years or Less, Female",
+      "dcid": "Count_Person_Upto64Years_Female"
+    },
+    {
+      "name": "Population: 65 - 66 Years, Female",
+      "dcid": "Count_Person_65To66Years_Female"
+    },
+    {
+      "name": "Population: 65 - 69 Years, Female",
+      "dcid": "Count_Person_65To69Years_Female"
+    },
+    {
+      "name": "Population: 65 - 74 Years, Female",
+      "dcid": "Count_Person_65To74Years_Female"
+    },
+    {
+      "name": "Population: 65 Years or More, Female",
+      "dcid": "Count_Person_65OrMoreYears_Female"
+    },
+    {
+      "name": "Population: 67 - 69 Years, Female",
+      "dcid": "Count_Person_67To69Years_Female"
+    },
+    {
+      "name": "Population: 70 - 74 Years, Female",
+      "dcid": "Count_Person_70To74Years_Female"
+    },
+    {
+      "name": "Population: 75 - 79 Years, Female",
+      "dcid": "Count_Person_75To79Years_Female"
+    },
+    {
+      "name": "Population: 75 Years or More, Female",
+      "dcid": "Count_Person_75OrMoreYears_Female"
+    },
+    {
+      "name": "Population: 7th And 8th Grade, Female",
+      "dcid": "Count_Person_25OrMoreYears_EducationalAttainment7ThAnd8ThGrade_Female"
+    },
+    {
+      "name": "Population: 80 - 84 Years, Female",
+      "dcid": "Count_Person_80To84Years_Female"
+    },
+    {
+      "name": "Population: 80 Years or More, Female",
+      "dcid": "Count_Person_80OrMoreYears_Female"
+    },
+    {
+      "name": "Population: 85 Years or More, Female",
+      "dcid": "Count_Person_85OrMoreYears_Female"
+    },
+    {
+      "name": "Population: 9th Grade, Female",
+      "dcid": "Count_Person_25OrMoreYears_EducationalAttainment9ThGrade_Female"
+    },
+    {
+      "name": "Population: Arts Humanities And Other Major, Female",
+      "dcid": "Count_Person_BachelorOfArtsHumanitiesAndOtherMajor_Female"
+    },
+    {
+      "name": "Population: Associates Degree, Female",
+      "dcid": "Count_Person_25OrMoreYears_EducationalAttainmentAssociatesDegree_Female"
+    },
+    {
+      "name": "Population: Bachelors Degree or Higher, Female",
+      "dcid": "Count_Person_25OrMoreYears_EducationalAttainmentBachelorsDegreeOrHigher_Female"
+    },
+    {
+      "name": "Population: Bachelors Degree, Female",
+      "dcid": "Count_Person_25OrMoreYears_EducationalAttainmentBachelorsDegree_Female"
+    },
+    {
+      "name": "Population: Bachelors Degree, Female",
+      "dcid": "Count_Person_EducationalAttainmentBachelorsDegree_Female"
+    },
+    {
+      "name": "Population: Business Major, Female",
+      "dcid": "Count_Person_BachelorOfBusinessMajor_Female"
+    },
+    {
+      "name": "Population: Civilian, Female",
+      "dcid": "Count_Person_18OrMoreYears_Civilian_Female"
+    },
+    {
+      "name": "Population: Doctorate Degree, Female",
+      "dcid": "Count_Person_25OrMoreYears_EducationalAttainmentDoctorateDegree_Female"
+    },
+    {
+      "name": "Population: Doctorate Degree, Female",
+      "dcid": "Count_Person_EducationalAttainmentDoctorateDegree_Female"
+    },
+    {
+      "name": "Population: Education Major, Female",
+      "dcid": "Count_Person_BachelorOfEducationMajor_Female"
+    },
+    {
+      "name": "Population: Female, 10,000 - 12,499 USD",
+      "dcid": "dc/mk1360ltj6cxg"
+    },
+    {
+      "name": "Population: Female, 100,000 USD or More",
+      "dcid": "dc/9bwh94d7xpj75"
+    },
+    {
+      "name": "Population: Female, 12,500 - 14,999 USD",
+      "dcid": "dc/qg78yhyjktmmd"
+    },
+    {
+      "name": "Population: Female, 15,000 - 17,499 USD",
+      "dcid": "dc/n94wjjlc1yxm1"
+    },
+    {
+      "name": "Population: Female, 17,500 - 19,999 USD",
+      "dcid": "dc/bqgcvte9ed9hb"
+    },
+    {
+      "name": "Population: Female, 2,499 USD or Less",
+      "dcid": "dc/7g8kqy8snezfc"
+    },
+    {
+      "name": "Population: Female, 2,500 - 4,999 USD",
+      "dcid": "dc/wppyr5y1envg9"
+    },
+    {
+      "name": "Population: Female, 20,000 - 22,499 USD",
+      "dcid": "dc/cj3z7kw5h2hmd"
+    },
+    {
+      "name": "Population: Female, 22,500 - 24,999 USD",
+      "dcid": "dc/27zb6ms372v2b"
+    },
+    {
+      "name": "Population: Female, 25,000 - 29,999 USD",
+      "dcid": "dc/qh19c85jm0gl8"
+    },
+    {
+      "name": "Population: Female, 30,000 - 34,999 USD",
+      "dcid": "dc/60hq6b0btrs51"
+    },
+    {
+      "name": "Population: Female, 35,000 - 39,999 USD",
+      "dcid": "dc/rm59y5l5fvmc1"
+    },
+    {
+      "name": "Population: Female, 40,000 - 44,999 USD",
+      "dcid": "dc/p9rbq9r4rezs2"
+    },
+    {
+      "name": "Population: Female, 45,000 - 49,999 USD",
+      "dcid": "dc/8fmywwdxjx69c"
+    },
+    {
+      "name": "Population: Female, 5,000 - 7,499 USD",
+      "dcid": "dc/d0fe8esql5qfd"
+    },
+    {
+      "name": "Population: Female, 50,000 - 54,999 USD",
+      "dcid": "dc/8gg4kdvdqb4hf"
+    },
+    {
+      "name": "Population: Female, 55,000 - 64,999 USD",
+      "dcid": "dc/zswhgzk0r05h"
+    },
+    {
+      "name": "Population: Female, 65,000 - 74,999 USD",
+      "dcid": "dc/442e9gs79kb91"
+    },
+    {
+      "name": "Population: Female, 7,500 - 9,999 USD",
+      "dcid": "dc/xz496t0vg4whg"
+    },
+    {
+      "name": "Population: Female, 75,000 - 99,999 USD",
+      "dcid": "dc/dpg6zdvclxtm2"
+    },
+    {
+      "name": "Population: Female, American Indian or Alaska Native Alone",
+      "dcid": "Count_Person_Female_AmericanIndianAndAlaskaNativeAlone"
+    },
+    {
+      "name": "Population: Female, Divorced",
+      "dcid": "Count_Person_Female_Divorced"
+    },
+    {
+      "name": "Population: Female, Divorced in The Past 12 Months",
+      "dcid": "Count_Person_15OrMoreYears_Female_DivorcedInThePast12Months"
+    },
+    {
+      "name": "Population: Female, Enrolled in College Undergraduate Years",
+      "dcid": "dc/0yv0ry7tjmwzc"
+    },
+    {
+      "name": "Population: Female, Enrolled in Grade 1 To Grade 4",
+      "dcid": "dc/xj1ljvqpeqrq9"
+    },
+    {
+      "name": "Population: Female, Enrolled in Grade 5 To Grade 8",
+      "dcid": "dc/9ktyl7hpxcd5d"
+    },
+    {
+      "name": "Population: Female, Enrolled in Grade 9 To Grade 12",
+      "dcid": "dc/gy5jtysjhg5vb"
+    },
+    {
+      "name": "Population: Female, Enrolled in Graduate or Professional School",
+      "dcid": "dc/w9fkdyz57spqf"
+    },
+    {
+      "name": "Population: Female, Enrolled in Kindergarten",
+      "dcid": "dc/g8kg52zcxzw9f"
+    },
+    {
+      "name": "Population: Female, Enrolled in Nursery School Preschool",
+      "dcid": "dc/wxhnj8xvjcwl"
+    },
+    {
+      "name": "Population: Female, Enrolled in School",
+      "dcid": "Count_Person_3OrMoreYears_Female_EnrolledInSchool"
+    },
+    {
+      "name": "Population: Female, Married And Not Separated",
+      "dcid": "Count_Person_Female_MarriedAndNotSeparated"
+    },
+    {
+      "name": "Population: Female, Married in The Past 12 Months",
+      "dcid": "Count_Person_15OrMoreYears_Female_MarriedInThePast12Months"
+    },
+    {
+      "name": "Population: Female, Never Married",
+      "dcid": "Count_Person_Female_NeverMarried"
+    },
+    {
+      "name": "Population: Female, No Health Insurance",
+      "dcid": "Count_Person_Female_NoHealthInsurance"
+    },
+    {
+      "name": "Population: Female, Not Enrolled in School",
+      "dcid": "Count_Person_3OrMoreYears_Female_NotEnrolledInSchool"
+    },
+    {
+      "name": "Population: Female, Not Hispanic or Latino \u0026 White Alone",
+      "dcid": "Count_Person_Female_NotHispanicOrLatino_WhiteAlone"
+    },
+    {
+      "name": "Population: Female, Not Worked Full Time",
+      "dcid": "Count_Person_NotWorkedFullTime"
+    },
+    {
+      "name": "Population: Female, Now Married",
+      "dcid": "Count_Person_NowMarried"
+    },
+    {
+      "name": "Population: Female, Private School",
+      "dcid": "Count_Person_3OrMoreYears_Female_EnrolledInPrivateSchool"
+    },
+    {
+      "name": "Population: Female, Public School",
+      "dcid": "Count_Person_3OrMoreYears_Female_EnrolledInPublicSchool"
+    },
+    {
+      "name": "Population: Female, Separated",
+      "dcid": "Count_Person_Female_Separated"
+    },
+    {
+      "name": "Population: Female, Widowed",
+      "dcid": "Count_Person_Female_Widowed"
+    },
+    {
+      "name": "Population: Female, With Health Insurance",
+      "dcid": "Count_Person_Female_WithHealthInsurance"
+    },
+    {
+      "name": "Population: Female, Worked Full Time",
+      "dcid": "dc/q779fwy6k8skd"
+    },
+    {
+      "name": "Population: High School Graduate Ged or Alternative, Female",
+      "dcid": "dc/5dt0l8ps8dvt2"
+    },
+    {
+      "name": "Population: High School Graduate Includes Equivalency, Female",
+      "dcid": "Count_Person_25OrMoreYears_EducationalAttainmentHighSchoolGraduateIncludesEquivalency_Female"
+    },
+    {
+      "name": "Population: Masters Degree, Female",
+      "dcid": "Count_Person_25OrMoreYears_EducationalAttainmentMastersDegree_Female"
+    },
+    {
+      "name": "Population: No Schooling Completed, Female",
+      "dcid": "Count_Person_25OrMoreYears_EducationalAttainmentNoSchoolingCompleted_Female"
+    },
+    {
+      "name": "Population: Nursery To 4th Grade, Female",
+      "dcid": "Count_Person_25OrMoreYears_EducationalAttainmentNurseryTo4ThGrade_Female"
+    },
+    {
+      "name": "Population: Professional School Degree, Female",
+      "dcid": "Count_Person_25OrMoreYears_EducationalAttainmentProfessionalSchoolDegree_Female"
+    },
+    {
+      "name": "Population: Science And Engineering Major, Female",
+      "dcid": "Count_Person_BachelorOfScienceAndEngineeringMajor_Female"
+    },
+    {
+      "name": "Population: Science And Engineering Related Major, Female",
+      "dcid": "Count_Person_BachelorOfScienceAndEngineeringRelatedMajor_Female"
+    },
+    {
+      "name": "Population: Some College 1 or More Years No Degree, Female",
+      "dcid": "Count_Person_25OrMoreYears_EducationalAttainmentSomeCollege1OrMoreYearsNoDegree_Female"
+    },
+    {
+      "name": "Population: Some College Less Than 1 Year, Female",
+      "dcid": "Count_Person_25OrMoreYears_EducationalAttainmentSomeCollegeLessThan1Year_Female"
+    },
+    {
+      "name": "Population: With Own Children Under 18, Female",
+      "dcid": "Count_Person_WithOwnChildrenUnder18_Female"
+    },
+    {
+      "name": "Population: Years 0, Female",
+      "dcid": "Count_Person_0Years_Female"
+    },
+    {
+      "name": "Population: Years 1, Female",
+      "dcid": "Count_Person_1Years_Female"
+    },
+    {
+      "name": "Population: Years 10, Female",
+      "dcid": "Count_Person_10Years_Female"
+    },
+    {
+      "name": "Population: Years 100, Female",
+      "dcid": "Count_Person_100Years_Female"
+    },
+    {
+      "name": "Population: Years 11, Female",
+      "dcid": "Count_Person_11Years_Female"
+    },
+    {
+      "name": "Population: Years 12, Female",
+      "dcid": "Count_Person_12Years_Female"
+    },
+    {
+      "name": "Population: Years 13, Female",
+      "dcid": "Count_Person_13Years_Female"
+    },
+    {
+      "name": "Population: Years 14, Female",
+      "dcid": "Count_Person_14Years_Female"
+    },
+    {
+      "name": "Population: Years 15, Female",
+      "dcid": "Count_Person_15Years_Female"
+    },
+    {
+      "name": "Population: Years 16, Female",
+      "dcid": "Count_Person_16Years_Female"
+    },
+    {
+      "name": "Population: Years 17, Female",
+      "dcid": "Count_Person_17Years_Female"
+    },
+    {
+      "name": "Population: Years 18, Female",
+      "dcid": "Count_Person_18Years_Female"
+    },
+    {
+      "name": "Population: Years 19, Female",
+      "dcid": "Count_Person_19Years_Female"
+    },
+    {
+      "name": "Population: Years 2, Female",
+      "dcid": "Count_Person_2Years_Female"
+    },
+    {
+      "name": "Population: Years 20, Female",
+      "dcid": "Count_Person_20Years_Female"
+    },
+    {
+      "name": "Population: Years 21, Female",
+      "dcid": "Count_Person_21Years_Female"
+    },
+    {
+      "name": "Population: Years 22, Female",
+      "dcid": "Count_Person_22Years_Female"
+    },
+    {
+      "name": "Population: Years 23, Female",
+      "dcid": "Count_Person_23Years_Female"
+    },
+    {
+      "name": "Population: Years 24, Female",
+      "dcid": "Count_Person_24Years_Female"
+    },
+    {
+      "name": "Population: Years 25, Female",
+      "dcid": "Count_Person_25Years_Female"
+    },
+    {
+      "name": "Population: Years 26, Female",
+      "dcid": "Count_Person_26Years_Female"
+    },
+    {
+      "name": "Population: Years 27, Female",
+      "dcid": "Count_Person_27Years_Female"
+    },
+    {
+      "name": "Population: Years 28, Female",
+      "dcid": "Count_Person_28Years_Female"
+    },
+    {
+      "name": "Population: Years 29, Female",
+      "dcid": "Count_Person_29Years_Female"
+    },
+    {
+      "name": "Population: Years 3, Female",
+      "dcid": "Count_Person_3Years_Female"
+    },
+    {
+      "name": "Population: Years 30, Female",
+      "dcid": "Count_Person_30Years_Female"
+    },
+    {
+      "name": "Population: Years 31, Female",
+      "dcid": "Count_Person_31Years_Female"
+    },
+    {
+      "name": "Population: Years 32, Female",
+      "dcid": "Count_Person_32Years_Female"
+    },
+    {
+      "name": "Population: Years 33, Female",
+      "dcid": "Count_Person_33Years_Female"
+    },
+    {
+      "name": "Population: Years 34, Female",
+      "dcid": "Count_Person_34Years_Female"
+    },
+    {
+      "name": "Population: Years 35, Female",
+      "dcid": "Count_Person_35Years_Female"
+    },
+    {
+      "name": "Population: Years 36, Female",
+      "dcid": "Count_Person_36Years_Female"
+    },
+    {
+      "name": "Population: Years 37, Female",
+      "dcid": "Count_Person_37Years_Female"
+    },
+    {
+      "name": "Population: Years 38, Female",
+      "dcid": "Count_Person_38Years_Female"
+    },
+    {
+      "name": "Population: Years 39, Female",
+      "dcid": "Count_Person_39Years_Female"
+    },
+    {
+      "name": "Population: Years 4, Female",
+      "dcid": "Count_Person_4Years_Female"
+    },
+    {
+      "name": "Population: Years 40, Female",
+      "dcid": "Count_Person_40Years_Female"
+    },
+    {
+      "name": "Population: Years 41, Female",
+      "dcid": "Count_Person_41Years_Female"
+    },
+    {
+      "name": "Population: Years 42, Female",
+      "dcid": "Count_Person_42Years_Female"
+    },
+    {
+      "name": "Population: Years 43, Female",
+      "dcid": "Count_Person_43Years_Female"
+    },
+    {
+      "name": "Population: Years 44, Female",
+      "dcid": "Count_Person_44Years_Female"
+    },
+    {
+      "name": "Population: Years 45, Female",
+      "dcid": "Count_Person_45Years_Female"
+    },
+    {
+      "name": "Population: Years 46, Female",
+      "dcid": "Count_Person_46Years_Female"
+    },
+    {
+      "name": "Population: Years 47, Female",
+      "dcid": "Count_Person_47Years_Female"
+    },
+    {
+      "name": "Population: Years 48, Female",
+      "dcid": "Count_Person_48Years_Female"
+    },
+    {
+      "name": "Population: Years 49, Female",
+      "dcid": "Count_Person_49Years_Female"
+    },
+    {
+      "name": "Population: Years 5, Female",
+      "dcid": "Count_Person_5Years_Female"
+    },
+    {
+      "name": "Population: Years 50, Female",
+      "dcid": "Count_Person_50Years_Female"
+    },
+    {
+      "name": "Population: Years 51, Female",
+      "dcid": "Count_Person_51Years_Female"
+    },
+    {
+      "name": "Population: Years 52, Female",
+      "dcid": "Count_Person_52Years_Female"
+    },
+    {
+      "name": "Population: Years 53, Female",
+      "dcid": "Count_Person_53Years_Female"
+    },
+    {
+      "name": "Population: Years 54, Female",
+      "dcid": "Count_Person_54Years_Female"
+    },
+    {
+      "name": "Population: Years 55, Female",
+      "dcid": "Count_Person_55Years_Female"
+    },
+    {
+      "name": "Population: Years 56, Female",
+      "dcid": "Count_Person_56Years_Female"
+    },
+    {
+      "name": "Population: Years 57, Female",
+      "dcid": "Count_Person_57Years_Female"
+    },
+    {
+      "name": "Population: Years 58, Female",
+      "dcid": "Count_Person_58Years_Female"
+    },
+    {
+      "name": "Population: Years 59, Female",
+      "dcid": "Count_Person_59Years_Female"
+    },
+    {
+      "name": "Population: Years 6, Female",
+      "dcid": "Count_Person_6Years_Female"
+    },
+    {
+      "name": "Population: Years 60, Female",
+      "dcid": "Count_Person_60Years_Female"
+    },
+    {
+      "name": "Population: Years 61, Female",
+      "dcid": "Count_Person_61Years_Female"
+    },
+    {
+      "name": "Population: Years 62, Female",
+      "dcid": "Count_Person_62Years_Female"
+    },
+    {
+      "name": "Population: Years 63, Female",
+      "dcid": "Count_Person_63Years_Female"
+    },
+    {
+      "name": "Population: Years 64, Female",
+      "dcid": "Count_Person_64Years_Female"
+    },
+    {
+      "name": "Population: Years 65, Female",
+      "dcid": "Count_Person_65Years_Female"
+    },
+    {
+      "name": "Population: Years 66, Female",
+      "dcid": "Count_Person_66Years_Female"
+    },
+    {
+      "name": "Population: Years 67, Female",
+      "dcid": "Count_Person_67Years_Female"
+    },
+    {
+      "name": "Population: Years 68, Female",
+      "dcid": "Count_Person_68Years_Female"
+    },
+    {
+      "name": "Population: Years 69, Female",
+      "dcid": "Count_Person_69Years_Female"
+    },
+    {
+      "name": "Population: Years 7, Female",
+      "dcid": "Count_Person_7Years_Female"
+    },
+    {
+      "name": "Population: Years 70, Female",
+      "dcid": "Count_Person_70Years_Female"
+    },
+    {
+      "name": "Population: Years 71, Female",
+      "dcid": "Count_Person_71Years_Female"
+    },
+    {
+      "name": "Population: Years 72, Female",
+      "dcid": "Count_Person_72Years_Female"
+    },
+    {
+      "name": "Population: Years 73, Female",
+      "dcid": "Count_Person_73Years_Female"
+    },
+    {
+      "name": "Population: Years 74, Female",
+      "dcid": "Count_Person_74Years_Female"
+    },
+    {
+      "name": "Population: Years 75, Female",
+      "dcid": "Count_Person_75Years_Female"
+    },
+    {
+      "name": "Population: Years 76, Female",
+      "dcid": "Count_Person_76Years_Female"
+    },
+    {
+      "name": "Population: Years 77, Female",
+      "dcid": "Count_Person_77Years_Female"
+    },
+    {
+      "name": "Population: Years 78, Female",
+      "dcid": "Count_Person_78Years_Female"
+    },
+    {
+      "name": "Population: Years 79, Female",
+      "dcid": "Count_Person_79Years_Female"
+    },
+    {
+      "name": "Population: Years 8, Female",
+      "dcid": "Count_Person_8Years_Female"
+    },
+    {
+      "name": "Population: Years 80, Female",
+      "dcid": "Count_Person_80Years_Female"
+    },
+    {
+      "name": "Population: Years 81, Female",
+      "dcid": "Count_Person_81Years_Female"
+    },
+    {
+      "name": "Population: Years 82, Female",
+      "dcid": "Count_Person_82Years_Female"
+    },
+    {
+      "name": "Population: Years 83, Female",
+      "dcid": "Count_Person_83Years_Female"
+    },
+    {
+      "name": "Population: Years 84, Female",
+      "dcid": "Count_Person_84Years_Female"
+    },
+    {
+      "name": "Population: Years 85, Female",
+      "dcid": "Count_Person_85Years_Female"
+    },
+    {
+      "name": "Population: Years 86, Female",
+      "dcid": "Count_Person_86Years_Female"
+    },
+    {
+      "name": "Population: Years 87, Female",
+      "dcid": "Count_Person_87Years_Female"
+    },
+    {
+      "name": "Population: Years 88, Female",
+      "dcid": "Count_Person_88Years_Female"
+    },
+    {
+      "name": "Population: Years 89, Female",
+      "dcid": "Count_Person_89Years_Female"
+    },
+    {
+      "name": "Population: Years 9, Female",
+      "dcid": "Count_Person_9Years_Female"
+    },
+    {
+      "name": "Population: Years 90, Female",
+      "dcid": "Count_Person_90Years_Female"
+    },
+    {
+      "name": "Population: Years 91, Female",
+      "dcid": "Count_Person_91Years_Female"
+    },
+    {
+      "name": "Population: Years 92, Female",
+      "dcid": "Count_Person_92Years_Female"
+    },
+    {
+      "name": "Population: Years 93, Female",
+      "dcid": "Count_Person_93Years_Female"
+    },
+    {
+      "name": "Population: Years 94, Female",
+      "dcid": "Count_Person_94Years_Female"
+    },
+    {
+      "name": "Population: Years 95, Female",
+      "dcid": "Count_Person_95Years_Female"
+    },
+    {
+      "name": "Population: Years 96, Female",
+      "dcid": "Count_Person_96Years_Female"
+    },
+    {
+      "name": "Population: Years 97, Female",
+      "dcid": "Count_Person_97Years_Female"
+    },
+    {
+      "name": "Population: Years 98, Female",
+      "dcid": "Count_Person_98Years_Female"
+    },
+    {
+      "name": "Population: Years 99, Female",
+      "dcid": "Count_Person_99Years_Female"
+    },
+    {
+      "name": "Prevalence of moderate or severe food insecurity in the population [15 years old and over, Female]",
+      "dcid": "sdg/AG_PRD_FIESMS.AGE--Y_GE15__SEX--F"
+    },
+    {
+      "name": "Prevalence of severe food insecurity in the population [15 years old and over, Female]",
+      "dcid": "sdg/AG_PRD_FIESS.AGE--Y_GE15__SEX--F"
+    },
+    {
+      "name": "Proportion of adults with an account at a financial institution or mobile-money-service provider [15 years old and over, Female]",
+      "dcid": "sdg/FB_BNK_ACCSS.AGE--Y_GE15__SEX--F"
+    },
+    {
+      "name": "Proportion of ever-partnered women and girls subjected to physical and/or sexual violence by a current or former intimate partner in the previous 12 months [15 to 49 years old, Female]",
+      "dcid": "sdg/VC_VAW_MARR.AGE--Y15T49__SEX--F"
+    },
+    {
+      "name": "Proportion of ever-partnered women and girls subjected to physical and/or sexual violence by a current or former intimate partner in the previous 12 months [15 years old and over, Female]",
+      "dcid": "sdg/VC_VAW_MARR.AGE--Y_GE15__SEX--F"
+    },
+    {
+      "name": "Proportion of teachers with the minimum required qualifications [Female, Lower secondary education]",
+      "dcid": "sdg/SE_TRA_GRDL.SEX--F__EDUCATION_LEV--ISCED11_2"
+    },
+    {
+      "name": "Proportion of teachers with the minimum required qualifications [Female, Pre-primary education]",
+      "dcid": "sdg/SE_TRA_GRDL.SEX--F__EDUCATION_LEV--ISCED11_02"
+    },
+    {
+      "name": "Proportion of teachers with the minimum required qualifications [Female, Primary education]",
+      "dcid": "sdg/SE_TRA_GRDL.SEX--F__EDUCATION_LEV--ISCED11_1"
+    },
+    {
+      "name": "Proportion of teachers with the minimum required qualifications [Female, Secondary education]",
+      "dcid": "sdg/SE_TRA_GRDL.SEX--F__EDUCATION_LEV--AGG_2_3"
+    },
+    {
+      "name": "Proportion of teachers with the minimum required qualifications [Female, Upper secondary education]",
+      "dcid": "sdg/SE_TRA_GRDL.SEX--F__EDUCATION_LEV--ISCED11_3"
+    },
+    {
+      "name": "Proportion of time spent on unpaid care work [15 to 24 years old, Female]",
+      "dcid": "sdg/SL_DOM_TSPDCW.AGE--Y15T24__SEX--F"
+    },
+    {
+      "name": "Proportion of time spent on unpaid care work [15 years old and over, Female]",
+      "dcid": "sdg/SL_DOM_TSPDCW.AGE--Y_GE15__SEX--F"
+    },
+    {
+      "name": "Proportion of time spent on unpaid care work [25 to 34 years old, Female]",
+      "dcid": "sdg/SL_DOM_TSPDCW.AGE--Y25T34__SEX--F"
+    },
+    {
+      "name": "Proportion of time spent on unpaid care work [35 to 44 years old, Female]",
+      "dcid": "sdg/SL_DOM_TSPDCW.AGE--Y35T44__SEX--F"
+    },
+    {
+      "name": "Proportion of time spent on unpaid care work [45 to 54 years old, Female]",
+      "dcid": "sdg/SL_DOM_TSPDCW.AGE--Y45T54__SEX--F"
+    },
+    {
+      "name": "Proportion of time spent on unpaid care work [55 to 64 years old, Female]",
+      "dcid": "sdg/SL_DOM_TSPDCW.AGE--Y55T64__SEX--F"
+    },
+    {
+      "name": "Proportion of time spent on unpaid care work [65 years old and over, Female]",
+      "dcid": "sdg/SL_DOM_TSPDCW.AGE--Y_GE65__SEX--F"
+    },
+    {
+      "name": "Proportion of time spent on unpaid domestic chores [15 to 24 years old, Female]",
+      "dcid": "sdg/SL_DOM_TSPDDC.AGE--Y15T24__SEX--F"
+    },
+    {
+      "name": "Proportion of time spent on unpaid domestic chores [15 years old and over, Female]",
+      "dcid": "sdg/SL_DOM_TSPDDC.AGE--Y_GE15__SEX--F"
+    },
+    {
+      "name": "Proportion of time spent on unpaid domestic chores [25 to 34 years old, Female]",
+      "dcid": "sdg/SL_DOM_TSPDDC.AGE--Y25T34__SEX--F"
+    },
+    {
+      "name": "Proportion of time spent on unpaid domestic chores [35 to 44 years old, Female]",
+      "dcid": "sdg/SL_DOM_TSPDDC.AGE--Y35T44__SEX--F"
+    },
+    {
+      "name": "Proportion of time spent on unpaid domestic chores [45 to 54 years old, Female]",
+      "dcid": "sdg/SL_DOM_TSPDDC.AGE--Y45T54__SEX--F"
+    },
+    {
+      "name": "Proportion of time spent on unpaid domestic chores [55 to 64 years old, Female]",
+      "dcid": "sdg/SL_DOM_TSPDDC.AGE--Y55T64__SEX--F"
+    },
+    {
+      "name": "Proportion of time spent on unpaid domestic chores [65 years old and over, Female]",
+      "dcid": "sdg/SL_DOM_TSPDDC.AGE--Y_GE65__SEX--F"
+    },
+    {
+      "name": "Proportion of time spent on unpaid domestic chores and care work [15 to 24 years old, Female]",
+      "dcid": "sdg/SL_DOM_TSPD.AGE--Y15T24__SEX--F"
+    },
+    {
+      "name": "Proportion of time spent on unpaid domestic chores and care work [15 years old and over, Female]",
+      "dcid": "sdg/SL_DOM_TSPD.AGE--Y_GE15__SEX--F"
+    },
+    {
+      "name": "Proportion of time spent on unpaid domestic chores and care work [25 to 34 years old, Female]",
+      "dcid": "sdg/SL_DOM_TSPD.AGE--Y25T34__SEX--F"
+    },
+    {
+      "name": "Proportion of time spent on unpaid domestic chores and care work [35 to 44 years old, Female]",
+      "dcid": "sdg/SL_DOM_TSPD.AGE--Y35T44__SEX--F"
+    },
+    {
+      "name": "Proportion of time spent on unpaid domestic chores and care work [45 to 54 years old, Female]",
+      "dcid": "sdg/SL_DOM_TSPD.AGE--Y45T54__SEX--F"
+    },
+    {
+      "name": "Proportion of time spent on unpaid domestic chores and care work [55 to 64 years old, Female]",
+      "dcid": "sdg/SL_DOM_TSPD.AGE--Y55T64__SEX--F"
+    },
+    {
+      "name": "Proportion of time spent on unpaid domestic chores and care work [65 years old and over, Female]",
+      "dcid": "sdg/SL_DOM_TSPD.AGE--Y_GE65__SEX--F"
+    },
+    {
+      "name": "Proportion of women aged 15-49 years with anaemia [15 to 49 years old, Female]",
+      "dcid": "sdg/SH_STA_ANEM.AGE--Y15T49__SEX--F"
+    },
+    {
+      "name": "Proportion of women aged 15-49 years with anaemia, non-pregnant [15 to 49 years old, Female]",
+      "dcid": "sdg/SH_STA_ANEM_NPRG.AGE--Y15T49__SEX--F"
+    },
+    {
+      "name": "Proportion of women aged 15-49 years with anaemia, pregnant [15 to 49 years old, Female]",
+      "dcid": "sdg/SH_STA_ANEM_PREG.AGE--Y15T49__SEX--F"
+    },
+    {
+      "name": "Proportion of women in managerial positions - 13th ICLS - 13th ICLS [15 years old and over, Female]",
+      "dcid": "sdg/IC_GEN_MGTL.AGE--Y_GE15__SEX--F"
+    },
+    {
+      "name": "Proportion of women in managerial positions - 19th ICLS - 19th ICLS [15 years old and over, Female]",
+      "dcid": "sdg/IC_GEN_MGTL_19ICLS.AGE--Y_GE15__SEX--F"
+    },
+    {
+      "name": "Proportion of women in senior and middle management positions - 13th ICLS - 13th ICLS [15 years old and over, Female]",
+      "dcid": "sdg/IC_GEN_MGTN.AGE--Y_GE15__SEX--F"
+    },
+    {
+      "name": "Proportion of women in senior and middle management positions - 19th ICLS - 19th ICLS [15 years old and over, Female]",
+      "dcid": "sdg/IC_GEN_MGTN_19ICLS.AGE--Y_GE15__SEX--F"
+    },
+    {
+      "name": "Proportion of women of reproductive age who have their need for family planning satisfied with modern methods [15 to 49 years old, Female]",
+      "dcid": "sdg/SH_FPL_MTMM.AGE--Y15T49__SEX--F"
+    },
+    {
+      "name": "Proportion of youth and adults with information and communications technology skills [Female, Doing a formal online course]",
+      "dcid": "sdg/SE_ADT_ACTS.SEX--F__TYPE_OF_SKILL--SKILL_FONLCRS"
+    },
+    {
+      "name": "Proportion of youth and adults with information and communications technology skills [Female, Participating in social networks]",
+      "dcid": "sdg/SE_ADT_ACTS.SEX--F__TYPE_OF_SKILL--SKILL_SNTWK"
+    },
+    {
+      "name": "Proportion of youth and adults with information and communications technology skills [Female, Seeking health information (on injury, disease, nutrition, etc.)]",
+      "dcid": "sdg/SE_ADT_ACTS.SEX--F__TYPE_OF_SKILL--SKILL_HLTHINF"
+    },
+    {
+      "name": "Proportion of youth and adults with information and communications technology skills [Female, Telephoning over the Internet/VoIP]",
+      "dcid": "sdg/SE_ADT_ACTS.SEX--F__TYPE_OF_SKILL--SKILL_VOIP"
+    },
+    {
+      "name": "Proportion of youth and adults with information and communications technology skills [Female, Using Internet banking]",
+      "dcid": "sdg/SE_ADT_ACTS.SEX--F__TYPE_OF_SKILL--SKILL_INTBNK"
+    },
+    {
+      "name": "Proportion of youth not in education, employment or training - 13th ICLS [15 to 24 years old, Female]",
+      "dcid": "sdg/SL_TLF_NEET.AGE--Y15T24__SEX--F"
+    },
+    {
+      "name": "Proportion of youth not in education, employment or training - 19th ICLS [15 to 24 years old, Female]",
+      "dcid": "sdg/SL_TLF_NEET_19ICLS.AGE--Y15T24__SEX--F"
+    },
+    {
+      "name": "Proportions of positions in the judiciary compared to national distributions, Constitutional Court [Female, Type of occupation = JUDGES]",
+      "dcid": "sdg/SG_DMK_JDC_CNS.SEX--F__OCCUPATION--ISCO08_2612"
+    },
+    {
+      "name": "Proportions of positions in the public service compared to national distributions [Female, Type of occupation = Total national-level public service personnel (including police, education, health, front-desk administrative and all other public service personnel)]",
+      "dcid": "sdg/SG_DMK_PSRVC.SEX--F__OCCUPATION--AGG_PSP"
+    },
+    {
+      "name": "Under-five deaths [under 5 years old, Female]",
+      "dcid": "sdg/SH_DYN_MORTN.AGE--Y0T4__SEX--F"
+    },
+    {
+      "name": "Under-five mortality rate [under 5 years old, Female]",
+      "dcid": "sdg/SH_DYN_MORT.AGE--Y0T4__SEX--F"
+    },
+    {
+      "name": "Unemployment rate - 13th ICLS [15 to 24 years old, Female]",
+      "dcid": "sdg/SL_TLF_UEM.AGE--Y15T24__SEX--F"
+    },
+    {
+      "name": "Unemployment rate - 13th ICLS [15 years old and over, Female]",
+      "dcid": "sdg/SL_TLF_UEM.AGE--Y_GE15__SEX--F"
+    },
+    {
+      "name": "Unemployment rate - 13th ICLS [15 years old and over, Female]",
+      "dcid": "sdg/SL_TLF_UEMDIS.AGE--Y_GE15__SEX--F"
+    },
+    {
+      "name": "Unemployment rate - 13th ICLS [25 years old and over, Female]",
+      "dcid": "sdg/SL_TLF_UEM.AGE--Y_GE25__SEX--F"
+    },
+    {
+      "name": "Unemployment rate - 19th ICLS [15 to 24 years old, Female]",
+      "dcid": "sdg/SL_TLF_UEM_19ICLS.AGE--Y15T24__SEX--F"
+    },
+    {
+      "name": "Unemployment rate - 19th ICLS [15 years old and over, Female]",
+      "dcid": "sdg/SL_TLF_UEMDIS_19ICLS.AGE--Y_GE15__SEX--F"
+    },
+    {
+      "name": "Unemployment rate - 19th ICLS [15 years old and over, Female]",
+      "dcid": "sdg/SL_TLF_UEM_19ICLS.AGE--Y_GE15__SEX--F"
+    },
+    {
+      "name": "Unemployment rate - 19th ICLS [25 years old and over, Female]",
+      "dcid": "sdg/SL_TLF_UEM_19ICLS.AGE--Y_GE25__SEX--F"
+    },
+    {
+      "name": "White Non Hispanic Female Population",
+      "dcid": "Count_Person_Female_WhiteAloneNotHispanicOrLatino"
+    }
+  ],
+  "matches": [
+    "female",
+    "female)",
+    "female]",
+    "females"
+  ]
+}

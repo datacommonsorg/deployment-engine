@@ -1,0 +1,47 @@
+{
+  "by_variable": {
+    "Count_Person": {
+      "by_entity": {
+        "country/BRA": {},
+        "country/CAN": {},
+        "geoId/06": {},
+        "geoId/0647766": {},
+        "test_entity": {},
+        "wikidataId/Q613": {}
+      }
+    },
+    "Count_Person_Female": {
+      "by_entity": {
+        "country/BRA": {},
+        "country/CAN": {},
+        "geoId/06": {},
+        "geoId/0647766": {},
+        "wikidataId/Q613": {}
+      }
+    },
+    "GenderIncomeInequality_Person_15OrMoreYears_WithIncome": {
+      "by_entity": {
+        "geoId/06": {},
+        "geoId/0647766": {}
+      }
+    },
+    "dc/g/SQL": {
+      "by_entity": {
+        "geoId/06": {},
+        "test_entity": {}
+      }
+    },
+    "dc/topic/Businesses": {
+      "by_entity": {
+        "geoId/06": {}
+      }
+    },
+    "dummy": {},
+    "test_var_1": {
+      "by_entity": {
+        "geoId/06": {},
+        "test_entity": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+project: datcom-mixer
+cluster_prefix: mixer
+
+# Helm config
+mixer:
+  hostProject: datcom-mixer
+  serviceName: api.datacommons.org
+  cluster_prefix: mixer
+  project: datcom-mixer
+  redis:
+    enabled: true
+    configFile: |
+      instances:
+        - region: "us-central1"
+          host: "10.139.83.75"
+          port: "6379"
+  enableOtlp: true
+
+ingress:
+  enabled: true
+  name: mixer-ingress-prod
+  annotations:
+    {
+      ingress.gcp.kubernetes.io/pre-shared-cert: "mixer-certificate,multi-domain-2025,api-esp",
+    }
+
+serviceGroups:
+  svg:
+    replicas: 10
+  recon:
+    replicas: 90
+  node:
+    replicas: 60
+  observation:
+    replicas: 60
+  default:
+    replicas: 30
+
+# GCP level config
+ip: 35.244.133.155
+region: us-central1
+api_title: DataCommons API
+nodes: 6
+
+embeddingsSidecar:
+  env:
+    vertex_ai_models:
+      uae-large-v1-model:
+        prediction_endpoint_id: "430892009855647744"

@@ -1,0 +1,54 @@
+# Copyright 2019 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# This cloud build is triggered when there is code change, but can also involve
+# data change.
+
+steps:
+  - name: gcr.io/datcom-ci/deploy-tool
+    entrypoint: "bash"
+    args:
+      - "-c"
+      - |
+        yq eval -i 'del(.tables)' deploy/storage/base_bigtable_info.yaml
+        yq eval -i '.tables = []' deploy/storage/base_bigtable_info.yaml
+        cp deploy/storage/base_bigtable_info.yaml /tmp/base_bigtable_info.yaml
+        for src in $(gsutil ls gs://datcom-control/autopush/*_latest_base_cache_version.txt); do
+          echo "Copying $src"
+          export TABLE="$(gsutil cat $src)"
+          yq eval -i '.tables += [env(TABLE)]' /tmp/base_bigtable_info.yaml
+        done
+
+  - name: golang
+    entrypoint: "bash"
+    args:
+      - -c
+      - |
+        ./scripts/golden_diff_notify.sh "$(</tmp/base_bigtable_info.yaml)"
+        cd tools/send_email
+        go run main.go \
+          --subject="Mixer golden data diff from latest import group build" \
+          --receiver="datacommons-alerts+pipelines@google.com" \
+          --body_file="/tmp/golden-diff.html" \
+          --mime_type="text/html"
+
+options:
+  volumes:
+    - name: tmp
+      path: /tmp
+    - name: go-modules
+      path: /go
+  machineType: "N1_HIGHCPU_32"
+
+timeout: 3600s

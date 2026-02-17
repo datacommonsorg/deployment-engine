@@ -1,0 +1,36 @@
+{
+  "entities": [
+    {
+      "node": "Cash",
+      "candidates": [
+        {
+          "dcid": "geoId/0511920"
+        }
+      ]
+    },
+    {
+      "node": "Middle Point",
+      "candidates": [
+        {
+          "dcid": "geoId/3949728"
+        }
+      ]
+    },
+    {
+      "node": "Middle Point, USA",
+      "candidates": [
+        {
+          "dcid": "geoId/3949728"
+        }
+      ]
+    },
+    {
+      "node": "cash",
+      "candidates": [
+        {
+          "dcid": "geoId/0511920"
+        }
+      ]
+    }
+  ]
+}

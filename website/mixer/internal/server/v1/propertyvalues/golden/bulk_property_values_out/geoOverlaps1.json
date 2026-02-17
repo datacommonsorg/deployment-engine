@@ -1,0 +1,72 @@
+{
+  "data": [
+    {
+      "node": "country/USA"
+    },
+    {
+      "node": "geoId/06053",
+      "values": [
+        {
+          "name": "Congressional District 18 (113th Congress), California",
+          "types": [
+            "CongressionalDistrict"
+          ],
+          "dcid": "geoId/0618",
+          "provenanceId": "dc/base/WikidataOtherIdGeos"
+        },
+        {
+          "name": "Congressional District 19 (113th Congress), California",
+          "types": [
+            "CongressionalDistrict"
+          ],
+          "dcid": "geoId/0619",
+          "provenanceId": "dc/base/WikidataOtherIdGeos"
+        },
+        {
+          "name": "93210",
+          "types": [
+            "CensusZipCodeTabulationArea"
+          ],
+          "dcid": "zip/93210",
+          "provenanceId": "dc/base/WikidataOtherIdGeos"
+        },
+        {
+          "name": "93426",
+          "types": [
+            "CensusZipCodeTabulationArea"
+          ],
+          "dcid": "zip/93426",
+          "provenanceId": "dc/base/WikidataOtherIdGeos"
+        },
+        {
+          "name": "93451",
+          "types": [
+            "CensusZipCodeTabulationArea"
+          ],
+          "dcid": "zip/93451",
+          "provenanceId": "dc/base/WikidataOtherIdGeos"
+        },
+        {
+          "name": "93461",
+          "types": [
+            "CensusZipCodeTabulationArea"
+          ],
+          "dcid": "zip/93461",
+          "provenanceId": "dc/base/WikidataOtherIdGeos"
+        },
+        {
+          "name": "93930",
+          "types": [
+            "CensusZipCodeTabulationArea"
+          ],
+          "dcid": "zip/93930",
+          "provenanceId": "dc/base/WikidataOtherIdGeos"
+        }
+      ]
+    },
+    {
+      "node": "geoId/06"
+    }
+  ],
+  "nextToken": "H4sIAAAAAAAA/xzHsQqCYBQF4Dppna7bmYIeIiFqD6emlqa2G15EEH/xz54/aPyss6qLdG9P9bW+nP94fGMefMp2bGLMS371U5PaePp7GfzTp/E2h2slcC0QAjcCC4GlwK3AnUAK3As0FawO5Q8AAP//AQAA//8IJJ1uaQAAAA=="
+}

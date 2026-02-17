@@ -1,0 +1,15 @@
+{
+  "nuts/UKI1": [
+    {
+      "SubjectID": "nuts/UKI1",
+      "Predicate": "typeOf",
+      "Provenance": "dc/base/EuroGeos",
+      "Value": "AdministrativeArea2",
+      "Bytes": null,
+      "Name": "AdministrativeArea2",
+      "Types": [
+        "Class"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,266 @@
+{
+  "data": [
+    {
+      "node": "dc/g/Economy",
+      "info": {
+        "absoluteName": "Economy",
+        "childStatVars": [
+          {
+            "id": "Median_Income_Household",
+            "searchNames": [
+              "Median Income of Household",
+              "Median Income for All Households"
+            ],
+            "displayName": "Median Income for All Households",
+            "definition": "st=medianValue,mp=income,pt=Household"
+          },
+          {
+            "id": "Weekly_Median_Income_Household",
+            "searchNames": [
+              "Median Income of Household (Weekly)"
+            ],
+            "displayName": "Median Income of Household (Weekly)",
+            "definition": "mq=Weekly,st=medianValue,mp=income,pt=Household"
+          },
+          {
+            "id": "Count_Product_MobileCellularSubscription_AsFractionOf_Count_Person",
+            "searchNames": [
+              "Count of Product With Product Type is Mobile Cellular Subscription (Per Capita)",
+              "Mobile Phone Subscriptions Per Person in a Population"
+            ],
+            "displayName": "Mobile Phone Subscriptions Per Person in a Population",
+            "definition": "md=Count_Person,mp=count,pt=Product,productType=MobileCellularSubscription",
+            "hasData": true
+          },
+          {
+            "id": "Monthly_Count_Bank_FinancialProduct_UPI",
+            "searchNames": [
+              "Monthly Count of Bank With Financial Product is UPI",
+              "No. of Banks live on UPI"
+            ],
+            "displayName": "No. of Banks live on UPI",
+            "definition": "mq=Monthly,mp=count,pt=Bank,financialProduct=UPI"
+          }
+        ],
+        "childStatVarGroups": [
+          {
+            "id": "dc/g/Employment",
+            "specializedEntity": "Employment and Business",
+            "displayName": "Employment and Business",
+            "descendentStatVarCount": 2
+          },
+          {
+            "id": "dc/g/Person_Age",
+            "specializedEntity": "Age",
+            "displayName": "Person by Age"
+          },
+          {
+            "id": "dc/g/Amount",
+            "specializedEntity": "Amount",
+            "displayName": "Amount"
+          },
+          {
+            "id": "dc/g/Person_AssessmentType",
+            "specializedEntity": "Assessment Type",
+            "displayName": "Person by Assessment Type"
+          },
+          {
+            "id": "dc/g/Person_AssetsOwned",
+            "specializedEntity": "Assets Owned",
+            "displayName": "Person by Assets Owned"
+          },
+          {
+            "id": "dc/g/Person_BankAccountType",
+            "specializedEntity": "Bank Account Type",
+            "displayName": "Person by Bank Account Type"
+          },
+          {
+            "id": "dc/g/Person_CandidatesStatus",
+            "specializedEntity": "Candidates Status",
+            "displayName": "Person by Candidates Status"
+          },
+          {
+            "id": "dc/g/Commodity",
+            "specializedEntity": "Commodity",
+            "displayName": "Commodity"
+          },
+          {
+            "id": "dc/g/ConsumerGoodsAndServices",
+            "specializedEntity": "Consumer Goods And Services",
+            "displayName": "Consumer Goods And Services"
+          },
+          {
+            "id": "dc/g/Currency",
+            "specializedEntity": "Currency",
+            "displayName": "Currency"
+          },
+          {
+            "id": "dc/g/Debt",
+            "specializedEntity": "Debt",
+            "displayName": "Debt"
+          },
+          {
+            "id": "dc/g/EconomicActivity",
+            "specializedEntity": "Economic Activity",
+            "displayName": "Economic Activity",
+            "descendentStatVarCount": 5
+          },
+          {
+            "id": "dc/g/Person_EconomicActivitySource",
+            "specializedEntity": "Economic Activity Source",
+            "displayName": "Person by Economic Activity Source"
+          },
+          {
+            "id": "dc/g/ExpenditureActivity",
+            "specializedEntity": "Expenditure Activity",
+            "displayName": "Expenditure Activity"
+          },
+          {
+            "id": "dc/g/FinancialInstrument",
+            "specializedEntity": "Financial Instrument",
+            "displayName": "Financial Instrument"
+          },
+          {
+            "id": "dc/g/FinancialTransaction",
+            "specializedEntity": "Financial Transaction",
+            "displayName": "Financial Transaction"
+          },
+          {
+            "id": "dc/g/Household_HouseholdType",
+            "specializedEntity": "Household Type",
+            "displayName": "Household by Household Type"
+          },
+          {
+            "id": "dc/g/Household_Income",
+            "specializedEntity": "Income (Household)",
+            "displayName": "Household by Income"
+          },
+          {
+            "id": "dc/g/Person_Income",
+            "specializedEntity": "Income (Individual)",
+            "displayName": "Person by Income"
+          },
+          {
+            "id": "dc/g/Person_IncomeSource",
+            "specializedEntity": "Income Source",
+            "displayName": "Person by Income Source"
+          },
+          {
+            "id": "dc/g/Household_IncomeStatus",
+            "specializedEntity": "Income Status (Household)",
+            "displayName": "Household by Income Status"
+          },
+          {
+            "id": "dc/g/Person_IncomeStatus",
+            "specializedEntity": "Income Status (Individual)",
+            "displayName": "Person by Income Status"
+          },
+          {
+            "id": "dc/g/Person_IncomeType",
+            "specializedEntity": "Income Type",
+            "displayName": "Person by Income Type"
+          },
+          {
+            "id": "dc/g/Investment",
+            "specializedEntity": "Investment",
+            "displayName": "Investment"
+          },
+          {
+            "id": "dc/g/Jobs",
+            "specializedEntity": "Jobs",
+            "displayName": "Jobs"
+          },
+          {
+            "id": "dc/g/Person_LaborForceStatus",
+            "specializedEntity": "Labor Force Status",
+            "displayName": "Person by Labor Force Status"
+          },
+          {
+            "id": "dc/g/Economy_Miscellaneous",
+            "specializedEntity": "Miscellaneous",
+            "displayName": "Miscellaneous",
+            "descendentStatVarCount": 131
+          },
+          {
+            "id": "dc/g/NetworkSubscriber",
+            "specializedEntity": "Network Subscriber",
+            "displayName": "Network Subscriber"
+          },
+          {
+            "id": "dc/g/Person_Occupation",
+            "specializedEntity": "Occupation",
+            "displayName": "Person by Occupation"
+          },
+          {
+            "id": "dc/g/Person_OccupationalCategory",
+            "specializedEntity": "Occupational Category",
+            "displayName": "Person by Occupational Category"
+          },
+          {
+            "id": "dc/g/Person_PaymentMethod",
+            "specializedEntity": "Payment Method",
+            "displayName": "Person by Payment Method"
+          },
+          {
+            "id": "dc/g/Person_PovertyStatus",
+            "specializedEntity": "Poverty Status",
+            "displayName": "Person by Poverty Status"
+          },
+          {
+            "id": "dc/g/Person_RegistrationStatus",
+            "specializedEntity": "Registration Status",
+            "displayName": "Person by Registration Status"
+          },
+          {
+            "id": "dc/g/Remittance",
+            "specializedEntity": "Remittance",
+            "displayName": "Remittance"
+          },
+          {
+            "id": "dc/g/Stock",
+            "specializedEntity": "Stock",
+            "displayName": "Stock"
+          },
+          {
+            "id": "dc/g/Transportation",
+            "specializedEntity": "Transportation",
+            "displayName": "Transportation"
+          },
+          {
+            "id": "dc/g/TreasuryBill",
+            "specializedEntity": "Treasury Bill",
+            "displayName": "Treasury Bill"
+          },
+          {
+            "id": "dc/g/TreasuryBond",
+            "specializedEntity": "Treasury Bond",
+            "displayName": "Treasury Bond"
+          },
+          {
+            "id": "dc/g/TreasuryNote",
+            "specializedEntity": "Treasury Note",
+            "displayName": "Treasury Note"
+          },
+          {
+            "id": "dc/g/TreasurySecurity",
+            "specializedEntity": "Treasury Security",
+            "displayName": "Treasury Security"
+          },
+          {
+            "id": "dc/g/Person_WealthIndex",
+            "specializedEntity": "Wealth Index",
+            "displayName": "Person by Wealth Index"
+          }
+        ],
+        "descendentStatVarCount": 131,
+        "parentStatVarGroups": [
+          "dc/g/Root"
+        ]
+      }
+    },
+    {
+      "node": "invalid",
+      "info": {}
+    }
+  ]
+}

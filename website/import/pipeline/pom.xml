@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.datacommons</groupId>
+    <artifactId>pipeline</artifactId>
+    <version>${revision}</version>
+    <name>Data Commons - Import Pipeline</name>
+    <url>https://datacommons.org</url>
+    <packaging>pom</packaging>
+
+  <parent>
+      <groupId>org.datacommons</groupId>
+      <artifactId>datacommons-import</artifactId>
+      <version>${revision}</version>
+      <relativePath>..</relativePath>
+  </parent>
+
+  <modules>
+    <module>differ</module>
+    <module>ingestion</module>
+    <module>model</module>
+    <module>util</module>
+  </modules>
+
+  <build>
+    <pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.3.2</version>
+                <configuration>
+                    <skip>true</skip>
+                    <executable>java</executable>
+                </configuration>
+            </plugin>
+        </plugins>
+    </pluginManagement>
+</build>
+</project>

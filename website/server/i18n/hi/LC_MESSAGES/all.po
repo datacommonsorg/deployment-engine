@@ -1,0 +1,860 @@
+msgid "%(placeType)s in %(parentPlaces)s"
+msgstr "%(parentPlaces)s में %(placeType)s"
+
+msgid "<a href=\"https://datacommons.org\">Data Commons</a> from Google"
+msgstr "Google का <a href=\"https://datacommons.org\">Data Commons</a>"
+
+msgid "APIs"
+msgstr "एपीआई"
+
+msgid "About"
+msgstr "इसके बारे में जानकारी"
+
+msgid "About Data Commons"
+msgstr "Data Commons के बारे में जानकारी"
+
+msgid "Administrative Area"
+msgstr "प्रशासनिक क्षेत्र"
+
+msgid "Administrative Area 1 Place"
+msgstr "प्रशासनिक क्षेत्र 1 के तहत आने वाला इलाका"
+
+msgid "Administrative Area 1 Places"
+msgstr "प्रशासनिक क्षेत्र 1 के तहत आने वाले इलाके"
+
+msgid "Administrative Area 2 Place"
+msgstr "प्रशासनिक क्षेत्र 2 के तहत आने वाला इलाका"
+
+msgid "Administrative Area 2 Places"
+msgstr "प्रशासनिक क्षेत्र 2 के तहत आने वाले इलाके"
+
+msgid "Administrative Area 3 Place"
+msgstr "प्रशासनिक क्षेत्र 3 के तहत आने वाला इलाका"
+
+msgid "Administrative Area 3 Places"
+msgstr "प्रशासनिक क्षेत्र 3 के तहत आने वाले इलाके"
+
+msgid "Administrative Area 4 Place"
+msgstr "प्रशासनिक क्षेत्र 4 के तहत आने वाला इलाका"
+
+msgid "Administrative Area 4 Places"
+msgstr "प्रशासनिक क्षेत्र 4 के तहत आने वाले इलाके"
+
+msgid "Administrative Area 5 Place"
+msgstr "प्रशासकीय क्षेत्र 5 के तहत आने वाले इलाके"
+
+msgid "Administrative Area 5 Places"
+msgstr "प्रशासनिक क्षेत्र 5 के तहत आने वाले इलाके"
+
+msgid "Administrative Areas"
+msgstr "प्रशासनिक क्षेत्र"
+
+msgid "An initiative from"
+msgstr "इनकी पहल"
+
+msgid "Back to homepage"
+msgstr "होम पेज पर वापस जाएं"
+
+msgid "BigQuery"
+msgstr "BigQuery"
+
+msgid "Blog"
+msgstr "ब्लॉग"
+
+msgid "Borough"
+msgstr "नगर"
+
+msgid "Boroughs"
+msgstr "नगर"
+
+msgid "Cities"
+msgstr "शहर"
+
+msgid "Cities, India"
+msgstr "शहर, भारत"
+
+msgid "Cities, United States"
+msgstr "संयुक्त राज्य अमेरिका के शहर"
+
+msgid "City"
+msgstr "शहर"
+
+msgid "Contribute"
+msgstr "योगदान"
+
+msgid "Counties"
+msgstr "काउंटी"
+
+msgid "Counties, United States"
+msgstr "संयुक्त राज्य अमेरिका की काउंटी"
+
+msgid "Countries"
+msgstr "देश"
+
+msgid "Country"
+msgstr "देश"
+
+msgid "County"
+msgstr "काउंटी"
+
+msgid "Data Commons"
+msgstr "Data Commons"
+
+msgid "Data Download Tool"
+msgstr "डेटा डाउनलोड टूल"
+
+msgid "Data Sources"
+msgstr "डेटा सोर्स"
+
+msgid "Disclaimers"
+msgstr "खंंडन"
+
+msgid "Districts, India"
+msgstr "ज़िला, भारत"
+
+msgid "Documentation"
+msgstr "दस्तावेज़"
+
+msgid "Economic Indicators, Worldwide"
+msgstr "दुनिया भर में इकॉनमिक इंडिकेटर"
+
+msgid "Enter a country, state, county or city"
+msgstr "देश, राज्य, काउंटी या शहर का नाम डालें"
+
+msgid "Enter a country, state, district or city"
+msgstr "Enter a country, state, district or city"
+
+msgid "Eurostat NUTS 1 Place"
+msgstr "यूरोस्टेट एनयूटीएस 1 के तहत आने वाला इलाका"
+
+msgid "Eurostat NUTS 1 Places"
+msgstr "यूरोस्टेट एनयूटीएस 1 के तहत आने वाले इलाके"
+
+msgid "Eurostat NUTS 2 Place"
+msgstr "यूरोस्टेट एनयूटीएस 2 के तहत आने वाला इलाका"
+
+msgid "Eurostat NUTS 2 Places"
+msgstr "यूरोस्टेट एनयूटीएस 2 के तहत आने वाले इलाके"
+
+msgid "Eurostat NUTS 3 Place"
+msgstr "यूरोस्टेट एनयूटीएस 3 के तहत आने वाला इलाका"
+
+msgid "Eurostat NUTS 3 Places"
+msgstr "यूरोस्टेट एनयूटीएस 3 के तहत आने वाले इलाके"
+
+msgid "Explore"
+msgstr "एक्सप्लोर करें"
+
+msgid "Explore the data"
+msgstr "डेटा को एक्सप्लोर करें"
+
+msgid "FAQ"
+msgstr "अक्सर पूछे जाने वाले सवाल"
+
+msgid "Feedback"
+msgstr "सुझाव/राय दें या शिकायत करें"
+
+msgid "Frequently Asked Questions"
+msgstr "अक्सर पूछे जाने वाले सवाल"
+
+msgid "Gini Index"
+msgstr "Gini इंडेक्स"
+
+msgid "Github Repository"
+msgstr "GitHub डेटा स्टोर करने की जगह"
+
+msgid "Government Expenditures on Education"
+msgstr "शिक्षा पर सरकारी खर्च"
+
+msgid "Government Expenditures on Military"
+msgstr "सेना पर सरकारी खर्च"
+
+msgid "Gross National Income"
+msgstr "सकल राष्ट्रीय आय"
+
+msgid "Highest Crime Per Capita"
+msgstr "प्रति व्यक्ति आपराधिक गतिविधियों की सबसे ज़्यादा संख्या"
+
+msgid "Highest Median Age"
+msgstr "सबसे ज़्यादा औसत उम्र"
+
+msgid "Highest Median Income"
+msgstr "सबसे ज़्यादा औसत आमदनी वाले"
+
+msgid "Highest Unemployment Rate"
+msgstr "सबसे ज़्यादा बेरोज़गारी दर"
+
+msgid "Knowledge Graph"
+msgstr "नॉलेज ग्राफ़"
+
+msgid "Largest Population"
+msgstr "सबसे ज़्यादा जनसंख्या"
+
+msgid "Life Expectancy"
+msgstr "औसत उम्र"
+
+msgid "Map Explorer"
+msgstr "मैप एक्सप्लोरर"
+
+msgid "Median Age"
+msgstr "मीडियन उम्र"
+
+msgid "Median Income"
+msgstr "मीडियन इनकम"
+
+msgid "Median Income, United States"
+msgstr "संयुक्त राज्य अमेरिका में औसत आय"
+
+msgid "Natural Disaster Dashboard"
+msgstr "प्राकृतिक आपदाओं की जानकारी वाला डैशबोर्ड"
+
+msgid "Neighborhood"
+msgstr "आस-पास"
+
+msgid "Neighborhoods"
+msgstr "आस-पास"
+
+msgid "Other %(placeType)s in %(parentPlace)s"
+msgstr "%(parentPlace)s में अन्य %(placeType)s"
+
+msgid "PLACE_EXPLORER_INTRO"
+msgstr "<p>जगह एक्सप्लोर करने वाले टूल से आपको किसी जगह का सबसे ज़रूरी डेटा समझने में मदद मिलती है. यह टूल किसी जगह के बारे में शिक्षा और अर्थशास्त्र से जुड़ा डेटा, चार्ट में दिखाता है. इस डेटा में लोगों की जानकारी (जैसे, उम्र, लिंग, आय, शिक्षा वगैरह) भी शामिल होती है. साथ ही, अन्य जगहों का डेटा भी दिखाया जाता है, ताकि तुलना की जा सके. आप मेट्रिक के हिसाब से अलग-अलग जगहों की रैंक भी देख सकते हैं. इन मेट्रिक में बेरोज़गारी, अपराध, और आय शामिल हैं.</p><p>आप ऊपर दिए गए खोज बॉक्स का इस्तेमाल करके, अपने पसंदीदा शहर, पिन कोड, देश, राज्य या देश के हिसाब से डेटा के चार्ट देख सकते हैं.</p><p>इसके अलावा, आप सबसे मशहूर कुछ जगहों को एक्सप्लोर कर सकते हैं ...</p>"
+
+msgid "Place"
+msgstr "जगह"
+
+msgid "Place Explorer"
+msgstr "जगह एक्सप्लोर करने वाला टूल"
+
+msgid "Place Rankings"
+msgstr "प्लेस रैंकिंग"
+
+msgid "Places"
+msgstr "जगहें"
+
+msgid "Population"
+msgstr "जनसंख्या"
+
+msgid "Privacy Policy"
+msgstr "निजता नीति"
+
+msgid "Rankings"
+msgstr "रैंकिंग"
+
+msgid "Scatter Plot Explorer"
+msgstr "स्कैटर प्लॉट एक्सप्लोरर"
+
+msgid "Show about links"
+msgstr "Show about links"
+
+msgid "Show documentation links"
+msgstr "दस्तावेज़ के लिंक दिखाएं"
+
+msgid "Show exploration tools"
+msgstr "Show exploration tools"
+
+msgid "Show site navigation"
+msgstr "Show site navigation"
+
+msgid "State"
+msgstr "राज्य"
+
+msgid "States"
+msgstr "राज्य"
+
+msgid "States, India"
+msgstr "राज्य, भारत"
+
+msgid "States, United States"
+msgstr "संयुक्त राज्य अमेरिका के राज्य"
+
+msgid "Statistical Variable Explorer"
+msgstr "स्टैटिस्टिकल वैरिएबल एक्सप्लोरर"
+
+msgid "Sustainability Explorer"
+msgstr "सस्टेनबिलिटी एक्सप्लोरर"
+
+msgid "Terms Of Use"
+msgstr "इस्तेमाल की शर्तें"
+
+msgid "Terms and Conditions"
+msgstr "नियम और शर्तें"
+
+msgid "Timelines Explorer"
+msgstr "टाइमलाइन एक्सप्लोर करने वाला टूल"
+
+msgid "Tools"
+msgstr "टूल"
+
+msgid "Town"
+msgstr "कस्बा"
+
+msgid "Towns"
+msgstr "कस्बे"
+
+msgid "Tutorials"
+msgstr "ट्यूटोरियल"
+
+msgid "Unemployment Rate"
+msgstr "बेरोज़गारी दर"
+
+msgid "Unemployment Rate, United States"
+msgstr "संयुक्त राज्य अमेरिका में बेरोज़गारी की दर"
+
+msgid "Village"
+msgstr "गांव"
+
+msgid "Villages"
+msgstr "गांव"
+
+msgid "Worldwide"
+msgstr "दुनिया भर में"
+
+msgid "ZIP Code"
+msgstr "पिन कोड"
+
+msgid "ZIP Codes"
+msgstr "पिन कोड"
+
+msgid "by city"
+msgstr "शहर के हिसाब से"
+
+msgid "by county"
+msgstr "काउंटी के हिसाब से"
+
+msgid "by state"
+msgstr "राज्य के हिसाब से"
+
+msgid "in United States"
+msgstr "संयुक्त राज्य अमेरिका में"
+
+msgid "CHART_TITLE-Air pollutant cancer risk"
+msgstr "जहरीली हवा से होने वाले कैंसर का जीवन भर खतरा"
+
+msgid "CHART_TITLE-Air_quality_index"
+msgstr "एयर क्वालिटी इंडेक्स"
+
+msgid "CHART_TITLE-Alcohol_consumption_per_capita"
+msgstr "अल्कोहल की प्रति व्यक्ति खपत (सालाना)"
+
+msgid "CHART_TITLE-Annual_emissions_greenhouse_gas"
+msgstr "ग्रीनहाउस गैस का सालाना उत्सर्जन"
+
+msgid "CHART_TITLE-Arson"
+msgstr "आगज़नी"
+
+msgid "CHART_TITLE-Arson_rate"
+msgstr "प्रति एक लाख लोगों के अनुपात में आगज़नी की घटनाएं"
+
+msgid "CHART_TITLE-Associate_degree_gender"
+msgstr "लैंगिग जानकारी के हिसाब से, असोसिएट डिग्री पाने वालों की दर"
+
+msgid "CHART_TITLE-Associate_degree_rate_gender"
+msgstr "लिंग के हिसाब से असोसिएट डिग्री पाने वालों की दर"
+
+msgid "CHART_TITLE-Bachelors_degree_rate_gender"
+msgstr "लिंग के हिसाब से ऐसे लोगों की दर जो स्नातक हैं"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Air"
+msgstr "हवा"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Crime"
+msgstr "अपराध"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Demographics"
+msgstr "लोगों की जानकारी, जैसे कि उम्र, लिंग, आय, शिक्षा वगैरह"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Disasters"
+msgstr "आपदाएं"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Economics"
+msgstr "अर्थशास्त्र"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Education"
+msgstr "शिक्षा"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Emissions"
+msgstr "उत्सर्जन"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Energy"
+msgstr "ऊर्जा"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Environment"
+msgstr "एनवायरमेंट"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Equity"
+msgstr "इक्विटी"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Health"
+msgstr "स्वास्थ्य"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Housing"
+msgstr "घर"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Income"
+msgstr "आय"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Overview"
+msgstr "खास जानकारी"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Poverty"
+msgstr "गरीबी"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Temperature"
+msgstr "तापमान"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Water"
+msgstr "पानी"
+
+msgid "CHART_TITLE-Children_employed"
+msgstr "नौकरी करने वाले बच्चों की संख्या"
+
+msgid "CHART_TITLE-Children_employed_gender"
+msgstr "नौकरी करने वाले बच्चों की संख्या, लिंग के हिसाब से"
+
+msgid "CHART_TITLE-Children_severe_wasting"
+msgstr "पांच साल से छोटे बच्चों में गंभीर कुपोषण"
+
+msgid "CHART_TITLE-Children_severe_wasting_by_gender"
+msgstr "पांच साल से छोटे बच्चों में गंभीर कुपोषण (लंबाई के मुताबिक कम वज़न), लिंग के हिसाब से"
+
+msgid "CHART_TITLE-Children_wasting"
+msgstr "पांच साल से छोटे बच्चों में कुपोषण"
+
+msgid "CHART_TITLE-Children_wasting_by_gender"
+msgstr "पांच साल से छोटे बच्चों में कुपोषण"
+
+msgid "CHART_TITLE-Citizenship"
+msgstr "नागरिकता का दर्जा"
+
+msgid "CHART_TITLE-Citizenship_distribution"
+msgstr "नागरिकता के दर्जे के हिसाब से जनसंख्या का वितरण"
+
+msgid "CHART_TITLE-Covid_cases"
+msgstr "COVID-19 के बढ़ते मामले"
+
+msgid "CHART_TITLE-Covid_cases_per_capita"
+msgstr "COVID-19 के प्रति व्यक्ति बढ़ते मामले"
+
+msgid "CHART_TITLE-Covid_deaths"
+msgstr "COVID-19 की वजह से हुई मौतें"
+
+msgid "CHART_TITLE-Covid_deaths_per_capita"
+msgstr "प्रति व्यक्ति COVID-19 से होने वाली मौतें"
+
+msgid "CHART_TITLE-Crime_rate"
+msgstr "हर एक लाख लोगों में होने वाले अपराधों की संख्या"
+
+msgid "CHART_TITLE-Cyclones"
+msgstr "चक्रवात"
+
+msgid "CHART_TITLE-Earthquakes"
+msgstr "भूकंपों की संख्या"
+
+msgid "CHART_TITLE-Educational_attainment"
+msgstr "शिक्षा पाने वाले लोगों की संख्या"
+
+msgid "CHART_TITLE-Educational_attainment_rate"
+msgstr "शिक्षा पाने वाले लोग"
+
+msgid "CHART_TITLE-Electricity_consumption_per_capita"
+msgstr "प्रति व्यक्ति बिजली की खपत"
+
+msgid "CHART_TITLE-Electricity_generation"
+msgstr "प्रति व्यक्ति बिजली का उत्पादन"
+
+msgid "CHART_TITLE-Electricity_price"
+msgstr "बिजली का शुल्क"
+
+msgid "CHART_TITLE-Energy_use"
+msgstr "ऊर्जा की खपत (प्रति व्यक्ति किलोग्राम तेल)"
+
+msgid "CHART_TITLE-Fertility_rate"
+msgstr "प्रजनन दर"
+
+msgid "CHART_TITLE-Gdp"
+msgstr "सकल घरेलू उत्पाद (जीडीपी)"
+
+msgid "CHART_TITLE-Gdp_growth_rate"
+msgstr "सकल घरेलू उत्पाद (GDP) वृद्धि दर"
+
+msgid "CHART_TITLE-Gdp_per_capita"
+msgstr "प्रति व्यक्ति सकल घरेलू उत्पाद"
+
+msgid "CHART_TITLE-Gini_index"
+msgstr "Gini इंडेक्स"
+
+msgid "CHART_TITLE-Gni"
+msgstr "सकल राष्ट्रीय आय (क्रय क्षमता की समानता)"
+
+msgid "CHART_TITLE-Gni_per_capita"
+msgstr "प्रति व्यक्ति सकल राष्ट्रीय आय (क्रय क्षमता की समानता)"
+
+msgid "CHART_TITLE-Government_debt"
+msgstr "सरकारी क़र्ज़"
+
+msgid "CHART_TITLE-Government_debt_per_capita"
+msgstr "प्रति व्यक्ति सरकारी क़र्ज़"
+
+msgid "CHART_TITLE-Government_expenditures_education"
+msgstr "शिक्षा पर सरकारी खर्च (कुल सरकारी खर्च का %)"
+
+msgid "CHART_TITLE-Government_expenditures_education_gdp"
+msgstr "शिक्षा पर सरकारी खर्च (GDP का %)"
+
+msgid "CHART_TITLE-Government_expenditures_military"
+msgstr "सेना पर होने वाला सरकारी खर्च"
+
+msgid "CHART_TITLE-Government_expenditures_military_per_gdp"
+msgstr "सेना पर होने वाला सरकारी खर्च (GDP का प्रतिशत)"
+
+msgid "CHART_TITLE-Graduate_or_professional_degree_gender"
+msgstr "लैंगिग जानकारी के हिसाब से, ग्रैजुएट या प्रोफ़ेशनल डिग्री वाले लोगों की संख्या"
+
+msgid "CHART_TITLE-Graduate_or_professional_degree_rate_gender"
+msgstr "लिंग के हिसाब से ऐसे लोगों की संख्या जिनके पास प्रोफ़ेशनल डिग्री है"
+
+msgid "CHART_TITLE-Hate_Crime"
+msgstr "नफ़रत फैलाने वाला अपराध"
+
+msgid "CHART_TITLE-Hate_Crime_Disability"
+msgstr "दिव्यांगों के ख़िलाफ़ नफ़रत फैलाने वाला अपराध"
+
+msgid "CHART_TITLE-Hate_Crime_Disability_rate"
+msgstr "प्रति 1,00,000 व्यक्ति, दिव्यांगों के ख़िलाफ़ नफ़रत फैलाने वाले अपराध"
+
+msgid "CHART_TITLE-Hate_Crime_Ethnicity"
+msgstr "जाति के आधार पर नफ़रत फैलाने वाला अपराध"
+
+msgid "CHART_TITLE-Hate_Crime_Ethnicity_rate"
+msgstr "प्रति 1,00,000 व्यक्ति, जाति के आधार पर नफ़रत फैलाने वाले अपराध"
+
+msgid "CHART_TITLE-Hate_Crime_Gender"
+msgstr "लिंग के आधार पर नफ़रत फैलाने वाला अपराध"
+
+msgid "CHART_TITLE-Hate_Crime_Gender_rate"
+msgstr "प्रति 1,00,000 व्यक्ति, लिंग के आधार पर नफ़रत फैलाने वाले अपराध"
+
+msgid "CHART_TITLE-Hate_Crime_Race"
+msgstr "नस्ल के आधार पर नफ़रत फैलाने वाला अपराध"
+
+msgid "CHART_TITLE-Hate_Crime_Race_rate"
+msgstr "प्रति 1,00,000 व्यक्ति, नस्ल के आधार पर नफ़रत फैलाने वाले अपराध"
+
+msgid "CHART_TITLE-Hate_Crime_Religion"
+msgstr "धर्म के आधार पर नफ़रत फैलाने वाला अपराध"
+
+msgid "CHART_TITLE-Hate_Crime_Religion_rate"
+msgstr "प्रति 1,00,000 व्यक्ति, धर्म के आधार पर नफ़रत फैलाने वाले अपराध"
+
+msgid "CHART_TITLE-Hate_Crime_Sexual_Orientation"
+msgstr "यौन रुझान के आधार पर नफ़रत फैलाने वाला अपराध"
+
+msgid "CHART_TITLE-Hate_Crime_Sexual_Orientation_rate"
+msgstr "प्रति 1,00,000 व्यक्ति, यौन रुझान के आधार पर नफ़रत फैलाने वाले अपराध"
+
+msgid "CHART_TITLE-Hate_Crime_rate"
+msgstr "प्रति 1,00,000 व्यक्ति, नफ़रत फैलाने वाले अपराध"
+
+msgid "CHART_TITLE-Health_behaviors"
+msgstr "स्वास्थ्य से जुड़ी बुरी आदतें"
+
+msgid "CHART_TITLE-Health_outcomes"
+msgstr "स्वास्थ्य पर असर"
+
+msgid "CHART_TITLE-Household_income"
+msgstr "पारिवारिक आय"
+
+msgid "CHART_TITLE-Household_income_by_bracket"
+msgstr "आय वर्ग के हिसाब से परिवारों का प्रतिशत"
+
+msgid "CHART_TITLE-Housing_units"
+msgstr "घरों की संख्या"
+
+msgid "CHART_TITLE-Housing_units_date_built"
+msgstr "बनने की तारीख के हिसाब से घरों की संख्या"
+
+msgid "CHART_TITLE-Housing_units_date_built_distrubtion"
+msgstr "बनने की तारीख के हिसाब से ऐसे घरों का प्रतिशत जिनमें लोग नहीं रहते हैं"
+
+msgid "CHART_TITLE-Housing_units_per_capita"
+msgstr "प्रति व्यक्ति घरों की संख्या"
+
+msgid "CHART_TITLE-Housing_units_price"
+msgstr "कीमत के हिसाब से घरों की संख्या"
+
+msgid "CHART_TITLE-Housing_units_price_distribution"
+msgstr "कीमत के हिसाब से ऐसे घरों की संख्या जिनमें लोग रहते हैं"
+
+msgid "CHART_TITLE-Housing_units_race"
+msgstr "परिवार के सदस्य की नस्ल के हिसाब से घरों की कुल संख्या"
+
+msgid "CHART_TITLE-Housing_units_race_distribution"
+msgstr "परिवार के सदस्य की नस्ल के हिसाब से घरों का प्रतिशत"
+
+msgid "CHART_TITLE-Housing_units_rental_status"
+msgstr "किराये के हिसाब से घरों की संख्या"
+
+msgid "CHART_TITLE-Housing_units_rental_status_distribution"
+msgstr "किराये के हिसाब से ऐसे घरों का प्रतिशत जिनमें लोग रहते हैं"
+
+msgid "CHART_TITLE-Individual_income"
+msgstr "व्यक्तिगत आय"
+
+msgid "CHART_TITLE-Individual_income_by_bracket"
+msgstr "आय वर्ग के हिसाब से लोगों का प्रतिशत"
+
+msgid "CHART_TITLE-Infant_mortality_rate"
+msgstr "नवजातों के मरने की दर"
+
+msgid "CHART_TITLE-Infant_mortality_rate_gender"
+msgstr "शिशुओं के मरने की दर, लिंग के हिसाब से"
+
+msgid "CHART_TITLE-Inward_remittance"
+msgstr "लोगों के बैंक खातों में जमा कुल रकम"
+
+msgid "CHART_TITLE-Inward_remittance_per_gdp"
+msgstr "लोगों के बैंक खातों में जमा कुल रकम (GDP का %)"
+
+msgid "CHART_TITLE-Labor_force"
+msgstr "मज़दूरों की संख्या"
+
+msgid "CHART_TITLE-Labor_force_rate"
+msgstr "मज़दूरी करने वालों की दर"
+
+msgid "CHART_TITLE-Life_expectancy"
+msgstr "औसत उम्र (साल)"
+
+msgid "CHART_TITLE-Literacy"
+msgstr "साक्षरता"
+
+msgid "CHART_TITLE-Marital_status"
+msgstr "वैवाहिक स्थिति"
+
+msgid "CHART_TITLE-Marital_status_distribution"
+msgstr "वैवाहिक स्थिति के हिसाब से"
+
+msgid "CHART_TITLE-Market_capitalization"
+msgstr "घरेलू कंपनियों का बाज़ार पूंजीकरण"
+
+msgid "CHART_TITLE-Market_capitalization_per_gdp"
+msgstr "घरेलू कंपनियों का बाज़ार पूंजीकरण (GDP का प्रतिशत)"
+
+msgid "CHART_TITLE-Mean_concentration_DieselPM"
+msgstr "डीज़ल पीएम की मात्रा का औसत"
+
+msgid "CHART_TITLE-Mean_concentration_Ozone"
+msgstr "ओज़ोन की मात्रा का औसत"
+
+msgid "CHART_TITLE-Mean_concentration_PM2.5"
+msgstr "PM2.5 की मात्रा का औसत"
+
+msgid "CHART_TITLE-Median_age"
+msgstr "औसत उम्र"
+
+msgid "CHART_TITLE-Median_age_gender"
+msgstr "लिंग के हिसाब से औसत उम्र"
+
+msgid "CHART_TITLE-Median_age_race"
+msgstr "नस्ल के हिसाब से औसत उम्र"
+
+msgid "CHART_TITLE-Median_household_income"
+msgstr "औसत पारिवारिक आय"
+
+msgid "CHART_TITLE-Median_household_income_race"
+msgstr "नस्ल के हिसाब से औसत पारिवारिक आय"
+
+msgid "CHART_TITLE-Median_income_gender"
+msgstr "लिंग के हिसाब से औसत आय"
+
+msgid "CHART_TITLE-Median_individual_income"
+msgstr "औसत व्यक्तिगत आय"
+
+msgid "CHART_TITLE-Mortality_events"
+msgstr "मौत की घटनाएं"
+
+msgid "CHART_TITLE-Mortality_events_per_capita"
+msgstr "प्रति व्यक्ति मरने वालों की संख्या"
+
+msgid "CHART_TITLE-Outward_remittance"
+msgstr "बाहर भेजे गए पैसे"
+
+msgid "CHART_TITLE-Outward_remittance_per_gdp"
+msgstr "लोगों के बैंक खातों से निकाली गई कुल रकम"
+
+msgid "CHART_TITLE-Palmer_drought_severity_index"
+msgstr "पामर ड्राउट सिवेरिटी इंडेक्स"
+
+msgid "CHART_TITLE-Percent_without_health_insurance_gender"
+msgstr "लिंग के हिसाब से ऐसे लोगों का प्रतिशत जिनके पास स्वास्थ्य बीमा नहीं है"
+
+msgid "CHART_TITLE-Percent_without_health_insurance_race"
+msgstr "नस्ल के हिसाब से ऐसे लोगों का प्रतिशत जिनके पास स्वास्थ्य बीमा नहीं है"
+
+msgid "CHART_TITLE-Percentage of literate and illiterate population"
+msgstr "पढ़े-लिखे और नहीं पढ़े-लिखे लोगों की जनसंख्या का प्रतिशत"
+
+msgid "CHART_TITLE-Percentage of population by religon"
+msgstr "धर्म के आधार पर जनसंख्या का प्रतिशत"
+
+msgid "CHART_TITLE-Percentage of population by social category"
+msgstr "सोशल कैटगरी के आधार पर जनसंख्या का प्रतिशत"
+
+msgid "CHART_TITLE-Percentage of urban and rural households"
+msgstr "शहरी बनाम ग्रामीण परिवारों का प्रतिशत"
+
+msgid "CHART_TITLE-Percentage of urban vs rural homeless population"
+msgstr "शहरी बनाम ग्रामीण बेघर जनसंख्या का प्रतिशत"
+
+msgid "CHART_TITLE-Percentage of workers and nonworkers"
+msgstr "कामकाजी और गैर-कामकाजी लोगों का प्रतिशत"
+
+msgid "CHART_TITLE-Percentage_employed"
+msgstr "नौकरी करने वाले लोगों का प्रतिशत"
+
+msgid "CHART_TITLE-Population"
+msgstr "जनसंख्या"
+
+msgid "CHART_TITLE-Population_age"
+msgstr "उम्र के हिसाब से जनसंख्या"
+
+msgid "CHART_TITLE-Population_age_distribution"
+msgstr "उम्र वर्ग में आने वाले लोगों का प्रतिशत"
+
+msgid "CHART_TITLE-Population_density"
+msgstr "जनसंख्या का घनत्व (प्रति वर्ग कि॰मी॰ में रहने वाले लोग)"
+
+msgid "CHART_TITLE-Population_gender"
+msgstr "लिंग के हिसाब से जनसंख्या"
+
+msgid "CHART_TITLE-Population_gender_distribution"
+msgstr "लिंग के हिसाब से"
+
+msgid "CHART_TITLE-Population_growth_rate"
+msgstr "जनसंख्या में बढ़ोतरी की दर"
+
+msgid "CHART_TITLE-Population_race"
+msgstr "नस्ल के हिसाब से जनसंख्या"
+
+msgid "CHART_TITLE-Population_race_distribution"
+msgstr "नस्ल के हिसाब से जनसंख्या"
+
+msgid "CHART_TITLE-Poverty_rate"
+msgstr "गरीबी दर"
+
+msgid "CHART_TITLE-Poverty_rate_gender"
+msgstr "लिंग के हिसाब से गरीबी दर"
+
+msgid "CHART_TITLE-Poverty_rate_race"
+msgstr "नस्ल के हिसाब से गरीबी दर"
+
+msgid "CHART_TITLE-Prescribed_drugs"
+msgstr "बताई गई दवाइयां (हर तिमाही में)"
+
+msgid "CHART_TITLE-Prescribed_drugs_per_capita"
+msgstr "बताई गई दवाई प्रति व्यक्ति (हर तिमाही में)"
+
+msgid "CHART_TITLE-Projected_temperature_change_under_rcp26_based_on_year_2006"
+msgstr "आरसीपी 2.6 के आधार पर, तापमान में होने वाला ज़्यादा से ज़्यादा बदलाव (यह अनुमान साल 2006 में लगाया गया था)"
+
+msgid "CHART_TITLE-Projected_temperature_change_under_rcp45_based_on_year_2006"
+msgstr "आरसीपी 4.5 के आधार पर, तापमान में ज़्यादा से ज़्यादा बदलाव का अनुमान (यह अनुमान साल 2006 में लगाया गया था)"
+
+msgid "CHART_TITLE-Projected_temperature_change_under_rcp60_based_on_year_2006"
+msgstr "आरसीपी 6.0 के आधार पर, तापमान में होने वाला ज़्यादा से ज़्यादा बदलाव (यह अनुमान साल 2006 में लगाया गया था)"
+
+msgid "CHART_TITLE-Projected_temperature_change_under_rcp85_based_on_year_2006"
+msgstr "आरसीपी 8.5 के आधार पर, तापमान में ज़्यादा से ज़्यादा बदलाव (यह अनुमान साल 2006 में लगाया गया था)"
+
+msgid "CHART_TITLE-Property_crime"
+msgstr "प्रॉपर्टी से जुड़े अपराधों की कुल संख्या"
+
+msgid "CHART_TITLE-Property_crime_rate"
+msgstr "प्रॉपर्टी से जुड़े अपराधों की कुल संख्या, 1 लाख लोगों में"
+
+msgid "CHART_TITLE-Religion"
+msgstr "धर्म"
+
+msgid "CHART_TITLE-School_enrollment"
+msgstr "स्कूल में नाम दर्ज कराने वालों की संख्या"
+
+msgid "CHART_TITLE-School_enrollment_rate"
+msgstr "स्कूल में नाम दर्ज कराने वालों की दर"
+
+msgid "CHART_TITLE-Social Category"
+msgstr "सोशल कैटगरी"
+
+msgid "CHART_TITLE-State_unemployment_claims"
+msgstr "राज्य में बेरोज़गारी भत्तों के दावे"
+
+msgid "CHART_TITLE-State_unemployment_claims_rate"
+msgstr "राज्य में बेरोज़गारी भत्तों के लिए दावा करने वालों की दर"
+
+msgid "CHART_TITLE-Total_crime"
+msgstr "अपराधों की कुल संख्या"
+
+msgid "CHART_TITLE-Total_employed"
+msgstr "रोज़गार पाने वालों की संख्या"
+
+msgid "CHART_TITLE-Unemployment_rate"
+msgstr "बेरोज़गारी दर"
+
+msgid "CHART_TITLE-Unemployment_rate-urban-v-rural"
+msgstr "बेरोज़गारी दर: शहरी बनाम ग्रामीण"
+
+msgid "CHART_TITLE-Unemployment_rate_gender"
+msgstr "बेरोज़गारी दर, लिंग के हिसाब से"
+
+msgid "CHART_TITLE-Urban and rural households"
+msgstr "शहरी और ग्रामीण परिवार"
+
+msgid "CHART_TITLE-Urban vs rural homeless population"
+msgstr "शहरी बनाम ग्रामीण बेघर लोगों की जनसंख्या"
+
+msgid "CHART_TITLE-Urban vs rural poverty population"
+msgstr "शहरी बनाम ग्रामीण: गरीबी में रहने वाले लोगों की जनसंख्या"
+
+msgid "CHART_TITLE-Urban vs rural poverty rate"
+msgstr "शहरी बनाम ग्रामीण गरीबी दर"
+
+msgid "CHART_TITLE-Urban_v_rural_population"
+msgstr "शहरी और ग्रामीण जनसंख्या"
+
+msgid "CHART_TITLE-Violent_crime"
+msgstr "हिंसक अपराधों की कुल संख्या"
+
+msgid "CHART_TITLE-Violent_crime_rate"
+msgstr "हर एक लाख लोगों के अनुपात में हिंसक अपराधों की संख्या"
+
+msgid "CHART_TITLE-Worker wages (daily)"
+msgstr "कामकाजी व्यक्ति का औसत वेतन (दिन का)"
+
+msgid "CHART_TITLE-Worker wages (monthly)"
+msgstr "कामकाजी व्यक्ति का औसत वेतन (महीने का)"
+
+msgid "CHART_TITLE-Worker wages (monthly): female vs male"
+msgstr "कामकाजी व्यक्ति का औसत वेतन (महीने का): महिला बनाम पुरुष"
+
+msgid "CHART_TITLE-Worker wages (monthly): urban vs rural"
+msgstr "कामकाजी व्यक्ति का औसत वेतन (महीने का): शहरी बनाम ग्रामीण"
+
+msgid "CHART_TITLE-Worker-vs-nonworker-population"
+msgstr "कामकाजी बनाम गैर-कामकाजी लोगों की जनसंख्या"
+
+msgid "CHART_TITLE-carbon_dioxide_emissions_nonbiogenic"
+msgstr "कार्बन डाइऑक्साइड का उत्सर्जन (नॉन-बायोजनिक यानी निर्जीव चीज़ों से होने वाला उत्सर्जन)"
+
+msgid "CHART_TITLE-carbon_dioxide_emissions_per_capita"
+msgstr "प्रति व्यक्ति कार्बन डाइऑक्साइड का उत्सर्जन"
+
+msgid "CHART_TITLE-methane_emissions_nonbiogenic"
+msgstr "मीथेन का उत्सर्जन (नॉन-बायोजनिक यानी निर्जीव चीज़ों से होने वाला उत्सर्जन)"
+
+msgid "CHART_TITLE-nitrous_oxide_emissions_non_biogenic"
+msgstr "नाइट्रस ऑक्साइड का उत्सर्जन (नॉन-बायोजनिक यानी निर्जीव चीज़ों से होने वाला उत्सर्जन)"
+
+msgid "CHART_TITLE-water_withdrawal_rate"
+msgstr "पानी निकाले जाने की दर"
+
+
+

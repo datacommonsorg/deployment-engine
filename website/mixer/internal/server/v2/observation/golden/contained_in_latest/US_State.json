@@ -1,0 +1,5260 @@
+{
+  "by_variable": {
+    "Annual_Generation_Electricity": {
+      "by_entity": {
+        "geoId/01": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 142921215640
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/02": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 6690505810
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/04": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 116026510770
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/05": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 61542483610
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/06": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 214191383340
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/08": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 58798395380
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/09": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 44761412400
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/10": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 4799212140
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/11": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 187195220
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/12": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 266119235980
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/13": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 139805428400
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/15": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 9160978980
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/16": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 20035438040
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/17": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 185012934580
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/18": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 97012880110
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/19": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 70464147590
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/20": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 57696154940
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/21": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 66950848289.99999
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/22": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 99622835010
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/23": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 14655177500
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/24": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 35424815750
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/25": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 20914889810
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/26": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 124200090040
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/27": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 58595221550
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/28": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 77336711780
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/29": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 66875709630
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/30": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 26872883370
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/31": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 37228949710
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/32": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 45528427470
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/33": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 16942479480.000002
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/34": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 60175245330
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/35": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 39697294060
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/36": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 129015492650
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/37": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 134965395909.99998
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/38": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 42557243130
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/39": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 142746705850
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/40": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 94069145480
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/41": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 64661249240
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/42": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 241498648490
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/44": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 9777026500
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/45": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 100485415820
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/46": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 20871993590
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/47": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 76166766270
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/48": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 566502687690
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/49": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 35133906260
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/50": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 2258890640
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/51": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 102698615000
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/53": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 102397710650
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/54": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 50594818010
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/55": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 65276344090
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/56": {
+          "ordered_facets": [
+            {
+              "facet_id": "2392525955",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 40709150170
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        }
+      }
+    },
+    "Count_Person_Employed": {
+      "by_entity": {
+        "geoId/01": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 2296465
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 2274568
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 2310036
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/02": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 356929
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 342729
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 347889
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/04": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3626007
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3611065
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3645238
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/05": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 1377854
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 1360249
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 1373355
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/06": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 18776340
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 18600912
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 18763251
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/08": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3153355
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3128165
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3136450
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/09": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 1866816
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 1882637
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 1876668
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/10": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 488940
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 488174
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 488625
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/11": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 384554
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 394332
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 393744
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/12": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 10740707
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 10781312
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 10771993
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/13": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 5181384
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 5211103
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 5200427
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/15": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 665508
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 660079
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 668973
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/16": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 974518
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 965824
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 972377
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/17": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 6245786
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 6294096
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 6288161
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/18": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3363130
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3310992
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3364328
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/19": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 1666062
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 1660854
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 1673462
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/20": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 1494263
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 1490553
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 1496590
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/21": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 2015531
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 1987643
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 2014738
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/22": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 1979835
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 1988780
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 1983895
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/23": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 697947
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 683421
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 683273
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/24": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3103761
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3149292
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3123084
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/25": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3810917
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3744201
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3774316
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/26": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4805687
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 4823716
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4799371
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/27": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3043052
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3035505
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3043312
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/28": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 1223635
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 1231220
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 1235544
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/29": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3042555
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3016886
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3040334
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/30": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 566290
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 561464
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 559114
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/31": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 1064091
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 1039867
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 1057417
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/32": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 1584725
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 1556165
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 1591135
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/33": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 759004
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 751640
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 751585
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/34": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4630276
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 4676064
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4641666
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/35": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 943513
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 942377
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 949835
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/36": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 9441820
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 9411747
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 9463509
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/37": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 5054280
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 5092844
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 5088201
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/38": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 424416
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 415427
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 419407
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/39": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 5672515
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 5646076
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 5657013
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/40": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 1948594
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 1920156
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 1944869
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/41": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 2118769
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 2105973
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 2105655
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/42": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 6255266
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 6337479
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 6267449
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/44": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 564938
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 565041
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 561677
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/45": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 2453941
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 2430453
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 2464843
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/46": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 483905
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 479452
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 483291
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/47": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3381844
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3303023
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3363699
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/48": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 15144613
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 14971373
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 15213480
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/49": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 1767497
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 1774702
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 1781425
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/50": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 343285
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 347673
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 343482
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/51": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4366940
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 4454616
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4384878
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/53": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3856264
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3878215
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3841679
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/54": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 753516
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 754828
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 751267
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/55": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3043193
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3081171
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3045394
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/56": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 282703
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 287117
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 281090
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/72": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 1164645
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 1153020
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 1171041
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        }
+      }
+    },
+    "UnemploymentRate_Person": {
+      "by_entity": {
+        "geoId/01": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 2.7
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3.1
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 2.9
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/02": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.9
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 4.6
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.7
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/04": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.8
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3.6
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.1
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/05": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.1
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3.5
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.8
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/06": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 5.8
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 5.3
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 5.5
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/08": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.7
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 4.3
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.2
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/09": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.8
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3.2
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.8
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/10": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 5.2
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3.7
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.3
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/11": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 6.9
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 5.2
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 6
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/12": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.4
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3.4
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.8
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/13": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.6
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3.5
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.4
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/15": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 2.6
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 2.7
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/16": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.6
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3.7
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.7
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/17": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.7
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 5
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.4
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/18": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.8
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 4.2
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.6
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/19": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.2
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.8
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/20": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.3
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3.6
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.8
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/21": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.3
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 5.1
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.7
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/22": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.3
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 4.4
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.4
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/23": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 2.9
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3.1
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.2
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/24": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.3
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.6
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/25": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.7
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 4
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.8
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/26": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 5
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 4.7
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 5.2
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/27": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.2
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.6
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/28": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.2
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3.2
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.9
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/29": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.5
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3.7
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.1
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/30": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 2.8
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 2.9
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/31": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 2.8
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 2.8
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/32": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 5.3
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 5.6
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 5.3
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/33": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 2.6
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/34": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 5.6
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 4.5
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 5
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/35": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.3
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 4.1
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.1
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/36": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.7
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 4.3
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/37": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3.6
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.7
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/38": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 2.5
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 2.4
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 2.5
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/39": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.9
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 4.3
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 5
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/40": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.4
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3.3
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.1
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/41": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 5.5
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 4.2
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 5
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/42": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.8
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3.6
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/44": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.5
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 4.3
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.6
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/45": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.9
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 4.1
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.3
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/46": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 2.2
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 1.8
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 1.9
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/47": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.6
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3.4
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.6
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/48": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.7
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 4.1
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.1
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/49": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.8
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3.2
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.3
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/50": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 2.6
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 2.3
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 2.5
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/51": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.9
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 2.9
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.6
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/53": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.7
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 4.5
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.5
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/54": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 4.3
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 4.1
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.8
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/55": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.2
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.1
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/56": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 2.7
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 3.2
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 3.2
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        },
+        "geoId/72": {
+          "ordered_facets": [
+            {
+              "facet_id": "324358135",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 6.4
+                }
+              ]
+            },
+            {
+              "facet_id": "2978659163",
+              "observations": [
+                {
+                  "date": "2024",
+                  "value": 5.6
+                }
+              ]
+            },
+            {
+              "facet_id": "1249140336",
+              "observations": [
+                {
+                  "date": "2025-08",
+                  "value": 5.6
+                }
+              ]
+            }
+          ],
+          "place_types": [
+            "AdministrativeArea1",
+            "State"
+          ]
+        }
+      }
+    },
+    "test_var_1": {
+      "by_entity": {
+        "geoId/01": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 1
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/02": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 2
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/04": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 4
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/05": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2008",
+                  "value": 87
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2008",
+              "latest_date": "2008"
+            }
+          ]
+        },
+        "geoId/06": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2015",
+                  "value": 42
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2015",
+              "latest_date": "2015"
+            }
+          ]
+        },
+        "geoId/08": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 8
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/09": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 9
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/10": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 10
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/11": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 11
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/12": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 12
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/13": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 13
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/15": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 15
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/16": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 16
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/17": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 17
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/18": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 18
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/19": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 19
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/20": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 20
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/21": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 21
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/22": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 22
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/23": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 23
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/24": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 24
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/25": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 25
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/26": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 26
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/27": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 27
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/28": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 28
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/29": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 29
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/30": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 30
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/31": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 31
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/32": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 32
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/33": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 33
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/34": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 34
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/35": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 35
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/36": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 36
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/37": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 37
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/38": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 38
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/39": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 39
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/40": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 40
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/41": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 41
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/42": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 42
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/44": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 44
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/45": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 45
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/46": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 46
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/47": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 47
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        },
+        "geoId/48": {
+          "ordered_facets": [
+            {
+              "facet_id": "2921750529",
+              "observations": [
+                {
+                  "date": "2023",
+                  "value": 48
+                }
+              ],
+              "obs_count": 1,
+              "earliest_date": "2023",
+              "latest_date": "2023"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "facets": {
+    "1249140336": {
+      "import_name": "BLS_LAUS",
+      "provenance_url": "https://www.bls.gov/lau/",
+      "measurement_method": "BLSSeasonallyAdjusted",
+      "observation_period": "P1M"
+    },
+    "2392525955": {
+      "import_name": "EIA_Electricity",
+      "provenance_url": "https://www.eia.gov/opendata/browser/electricity",
+      "unit": "KilowattHour"
+    },
+    "2921750529": {
+      "import_name": "Custom Prov",
+      "provenance_url": "custom.datacommons.org"
+    },
+    "2978659163": {
+      "import_name": "BLS_LAUS",
+      "provenance_url": "https://www.bls.gov/lau/",
+      "measurement_method": "BLSSeasonallyUnadjusted",
+      "observation_period": "P1Y"
+    },
+    "324358135": {
+      "import_name": "BLS_LAUS",
+      "provenance_url": "https://www.bls.gov/lau/",
+      "measurement_method": "BLSSeasonallyUnadjusted",
+      "observation_period": "P1M"
+    }
+  }
+}

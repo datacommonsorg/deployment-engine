@@ -1,0 +1,385 @@
+# Copyright 2023 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# A k8s deployment defines what containers to servce,
+# how many pods should be served, and how much resources
+# should be allocated, and how new pods are rolled out.
+#
+# Mixer defines 1 deployment per service group.
+# A deployment is what autoscalers scale.
+
+{{- $index := 0 }}
+{{- range $serviceName, $group := .Values.serviceGroups }}
+{{- if gt $index 0 }}
+---
+{{- end  }}
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "mixer.fullname" $ }}-{{ $serviceName }}
+  namespace: {{ $.Release.Namespace }}
+  labels:
+    service:  {{ include "mixer.fullname" $ }}-{{ $serviceName }}
+    {{- include "mixer.labels" $ | nindent 4 }}
+spec:
+  replicas: {{ $group.replicas }}
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      # maximum number of Pods that can be created over the desired number of Pods
+      # 25% of default pods (+1 in case default < 4)
+      maxSurge: {{ $group.maxSurge | default (div $group.replicas 4 | add 1) }}
+      # Maximum number of pods that can be unavailable during the update process
+      # 25% of default pods (+1 in case default < 4)
+      maxUnavailable: {{ div $group.replicas 4 | add 1 }}
+  selector:
+    matchLabels:
+      service:  {{ include "mixer.fullname" $ }}-{{ $serviceName }}
+      {{- include "mixer.selectorLabels" $ | nindent 6 }}
+  template:
+    metadata:
+      annotations:
+        timestamp: {{ now | quote }}
+        configmap.reloader.stakater.com/reload: "mixer-feature-flags"
+      labels:
+        service:  {{ include "mixer.fullname" $ }}-{{ $serviceName }}
+        {{- include "mixer.selectorLabels" $ | nindent 8 }}
+    spec:
+      {{- if $group.nodePool }}
+      nodeSelector:
+        cloud.google.com/gke-nodepool: {{ $group.nodePool }}
+      {{- end }}
+      serviceAccountName: {{ $.Values.serviceAccount.name }}
+      volumes:
+        - name: schema-mapping
+          configMap:
+            name: {{ include "mixer.fullname" $ }}-schema-mapping
+        - name: blocklist-svg
+          configMap:
+            name: blocklist-svg
+            optional: true
+        - name: service-config-volume
+          configMap:
+            defaultMode: 420
+            name: service-config-configmap
+        - name: dynamic-config
+          emptyDir: {}
+        - name: static-bt-config-volume
+          configMap:
+            name: {{ include "mixer.fullname" $ }}-store-config
+            items:
+              - key: base_bigtable_info.yaml
+                path: base_bigtable_info.yaml
+        - name: feature-flags
+          configMap:
+            name: mixer-feature-flags
+            optional: true
+      {{- if $group.enableEmbeddingsSidecar }}
+        - name: embeddings-config
+          configMap:
+            name: {{ include "mixer.fullname" $ }}-embeddings-config
+            optional: true
+      {{- end }}
+      initContainers:
+        - name: update-bigtable-info
+          image: gcr.io/datcom-ci/datacommons-script-runner:latest
+          command:
+            - /bin/bash
+            - -c
+            - |
+              # This Init Container only runs for dev and autopush
+              {{- if or (eq $.Values.mixer.hostProject "datcom-website-autopush") (eq $.Values.mixer.hostProject "datcom-mixer-autopush") (eq $.Values.mixer.hostProject "datcom-website-dev") (eq $.Values.mixer.hostProject "datcom-mixer-dev-316822") }}
+              set -e
+              echo "Fetching Bigtable info from GCS for {{ $.Values.mixer.hostProject }}..."
+              BT_OUTPUT_FILE="/dynamic-config/base_bigtable_info.yaml"
+              echo "project: datcom-store" > $BT_OUTPUT_FILE
+              echo "instance: prophet-cache" >> $BT_OUTPUT_FILE
+              echo "tables:" >> $BT_OUTPUT_FILE
+              for src in $(gsutil ls gs://datcom-control/autopush/*_latest_base_cache_version.txt); do
+                TABLE="$(gsutil cat "$src")"
+                if [[ $TABLE == experimental* ]] && [[ "{{ $.Values.mixer.hostProject }}" != "datcom-website-autopush" ]] && [[ "{{ $.Values.mixer.hostProject }}" != "datcom-mixer-autopush" ]]; then
+                  continue
+                fi
+                echo "Adding table: $TABLE"
+                if [[ $TABLE != "" ]]; then
+                  echo "  - $TABLE" >> $BT_OUTPUT_FILE
+                fi
+              done
+              echo "Successfully generated dynamic Bigtable config file."
+              cat $BT_OUTPUT_FILE
+
+              echo "Fetching BigQuery version from GCS..."
+              BQ_OUTPUT_FILE="/dynamic-config/bigquery.version"
+              gsutil cp gs://datcom-control/latest_base_bigquery_version.txt $BQ_OUTPUT_FILE
+              echo "Successfully fetched BigQuery version."
+              cat $BQ_OUTPUT_FILE
+              {{- else }}
+              echo "Skipping dynamic config fetch for {{ default "unknown" $.Values.mixer.hostProject }}."
+              {{- end }}
+          volumeMounts:
+            - name: dynamic-config
+              mountPath: /dynamic-config
+      containers:
+        - name: mixer
+          image:  "{{ $.Values.mixer.image.repository }}{{- if $.Values.mixer.image.tag -}}:{{ $.Values.mixer.image.tag }}{{- end }}"
+          imagePullPolicy: {{ $.Values.mixer.image.pullPolicy }}
+          resources:
+            limits:
+              memory: {{ $group.resources.memoryLimit }}
+            requests:
+              memory:  {{ $group.resources.memoryRequest }}
+          command:
+            - /bin/sh
+            - -c
+            - |
+              set -e
+              # Set paths for dynamic and static configs
+              DYNAMIC_BT_CONFIG_FILE="/dynamic-config/base_bigtable_info.yaml"
+              STATIC_BT_CONFIG_FILE="/static-config/base_bigtable_info.yaml"
+              DYNAMIC_BQ_VERSION_FILE="/dynamic-config/bigquery.version"
+
+              # Default to the static Bigtable config
+              FINAL_BT_CONFIG_CONTENT=$(cat $STATIC_BT_CONFIG_FILE)
+              # Default to the static BigQuery version from the original env var
+              FINAL_BQ_VERSION="${BIGQUERY}"
+
+              # If the dynamic Bigtable config file was created, use it.
+              if [ -f "$DYNAMIC_BT_CONFIG_FILE" ]; then
+                echo "Dynamic Bigtable config file found. Using it."
+                FINAL_BT_CONFIG_CONTENT=$(cat $DYNAMIC_BT_CONFIG_FILE)
+              else
+                echo "Dynamic Bigtable config file not found. Using static config."
+              fi
+
+              # If the dynamic BigQuery version file was created, use it.
+              if [ -f "$DYNAMIC_BQ_VERSION_FILE" ]; then
+                echo "Dynamic BigQuery version file found. Using it."
+                FINAL_BQ_VERSION=$(cat $DYNAMIC_BQ_VERSION_FILE)
+              else
+                echo "Dynamic BigQuery version file not found. Using static version."
+              fi
+
+              # Start the mixer with the determined configs
+              /go/bin/mixer --base_bigtable_info="$FINAL_BT_CONFIG_CONTENT" \
+              --custom_bigtable_info="${CUSTOM_BIGTABLE_INFO}" \
+              --host_project="${HOST_PROJECT}" \
+              --bq_dataset="$FINAL_BQ_VERSION" \
+              --schema_path=/datacommons/mapping \
+              --remote_mixer_domain={{ $.Values.mixer.remoteMixerDomain }} \
+              --use_base_bigtable={{ $.Values.mixer.useBaseBigtable }} \
+              --use_custom_bigtable={{ $.Values.mixer.useCustomBigtable }} \
+              --use_branch_bigtable={{ $.Values.mixer.useBranchBigtable }} \
+              {{- if eq $.Values.mixer.bigqueryOnly true }}
+              --bigquery_only=true \
+              {{- end }}
+              --cache_svg={{ default false $group.cacheSVG }} \
+              {{- if eq $.Values.mixer.foldRemoteRootSvg true }}
+              --fold_remote_root_svg=true \
+              {{- end }}
+              {{- if eq $.Values.mixer.cacheSVFormula true }}
+              --cache_sv_formula=true \
+              {{- end }}
+              --spanner_graph_info="${SPANNER_GRAPH_INFO}" \
+              --use_redis={{ $.Values.mixer.redis.enabled }} \
+              --redis_info="${REDIS_INFO}" \
+              {{- if eq $.Values.mixer.enableOtlp true}}
+              --metrics_exporter=otlp \
+              {{- end }}
+              {{- if eq $.Values.mixer.writeUsageLogs true}}
+              --write_usage_logs=true \
+              {{- end }}
+              {{- if $group.enableEmbeddingsSidecar }}
+              --embeddings_server_url="http://localhost:{{ $.Values.embeddingsSidecar.port }}" \
+              {{- end }}
+              --feature_flags_path=/datacommons/flags/feature_flags.yaml
+          volumeMounts:
+            - name: schema-mapping
+              mountPath: /datacommons/mapping
+            - name: blocklist-svg
+              mountPath: /datacommons/svg
+            - name: dynamic-config
+              mountPath: /dynamic-config
+            - name: static-bt-config-volume
+              mountPath: /static-config
+              readOnly: true
+            - name: feature-flags
+              mountPath: /datacommons/flags
+              readOnly: true
+          env:
+            - name: HOST_PROJECT
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ include "mixer.fullname" $ }}-mixer-config
+                  key: hostProject
+            - name: BIGQUERY
+              {{- if eq $.Values.mixer.bigqueryOnly true }}
+              value: {{ $.Values.mixer.bigqueryTableRef }}
+              {{- else }}
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ include "mixer.fullname" $ }}-store-config
+                  key: bigquery.version
+              {{- end }}
+            - name: CUSTOM_BIGTABLE_INFO
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ include "mixer.fullname" $ }}-store-config
+                  key: custom_bigtable_info.yaml
+            - name: SPANNER_GRAPH_INFO
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ include "mixer.fullname" $ }}-store-config
+                  key: spanner_graph_info.yaml
+          {{- if $.Values.mixer.redis.enabled }}
+            - name: REDIS_INFO
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ include "mixer.fullname" $ }}-store-config
+                  key: redis_info.yaml
+                  optional: true
+          {{- end }}
+            - name: MIXER_HASH
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ include "mixer.fullname" $ }}-githash
+                  key: mixer_hash.txt
+          {{- if eq $.Values.mixer.enableOtlp true}}
+            - name: OTEL_EXPORTER_OTLP_ENDPOINT
+              value: http://opentelemetry-collector.opentelemetry.svc.cluster.local:4317
+          {{- end }}
+          ports:
+            - containerPort: 12345
+          startupProbe:
+            exec:
+              command: ["/bin/grpc_health_probe", "-addr=:12345", "-connect-timeout=10s"]
+            failureThreshold: 30
+            initialDelaySeconds: 60
+            periodSeconds: 10
+            timeoutSeconds: 10
+          readinessProbe:
+            exec:
+              command: ["/bin/grpc_health_probe", "-addr=:12345"]
+            periodSeconds: 10
+            initialDelaySeconds: 60
+            timeoutSeconds: 10
+          livenessProbe:
+            exec:
+              command: ["/bin/grpc_health_probe", "-addr=:12345"]
+            periodSeconds: 10
+            initialDelaySeconds: 60
+            timeoutSeconds: 10
+      {{- if $group.enableEmbeddingsSidecar }}
+        - name: embeddings
+          image: "{{ $.Values.embeddingsSidecar.image.repository }}:{{ default "latest" $.Values.embeddingsSidecar.image.tag }}"
+          imagePullPolicy: {{ $.Values.embeddingsSidecar.image.pullPolicy }}
+          resources:
+            limits:
+              memory: {{ $.Values.embeddingsSidecar.memory }}
+              cpu: {{ $.Values.embeddingsSidecar.cpuLimit }}
+            requests:
+              memory: {{ $.Values.embeddingsSidecar.memory }}
+              cpu: {{ $.Values.embeddingsSidecar.cpuRequest }}
+          env:
+            - name: NUM_WORKERS
+              value: {{ $.Values.embeddingsSidecar.workers | quote }}
+            - name: ADDITIONAL_CATALOG_PATH
+              # Required to tell the app to load the catalog baked into the image at this path.
+              value: "/workspace/catalog.yaml"
+          ports:
+            - containerPort: {{ $.Values.embeddingsSidecar.port }}
+          # --- 1. THE STARTUP PROBE (The "Patience" Phase) ---
+          # Job: Give the container time to download embedding files and load models.
+          # Rule: While this is running, Liveness and Readiness probes are DISABLED.
+          startupProbe:
+            httpGet:
+              path: /healthz
+              port: {{ $.Values.embeddingsSidecar.port }}
+            # Calculation: failureThreshold * periodSeconds = Total time allowed for startup.
+            # 30 tries * 10s = 300 seconds (5 minutes) total grace period.
+            failureThreshold: 30
+            periodSeconds: 10
+            # How long to wait for the health check response itself.
+            timeoutSeconds: 5
+          # --- 2. THE READINESS PROBE (The "Traffic" Gatekeeper) ---
+          # Job: Determines if the Pod is healthy enough to handle user requests right now.
+          # Failure: If this fails, GKE removes the Pod from the Load Balancer/Service.
+          # Recovery: If it starts passing again, traffic resumes automatically. No restart.
+          readinessProbe:
+            httpGet:
+              path: /healthz
+              port: {{ $.Values.embeddingsSidecar.port }}
+            # Check every 10s. If the server is too bogged down by heavy embedding 
+            # computations to respond in 5s, stop sending traffic to avoid user timeouts.
+            periodSeconds: 10
+            failureThreshold: 3 # If it fails 3 times in a row, mark the Pod as "Not Ready."
+            # How long to wait for the health check response itself.
+            timeoutSeconds: 5
+          # --- 3. THE LIVENESS PROBE (The "Self-Healing" Kill-Switch) ---
+          # Job: Detects if the process has deadlocked or frozen (e.g., Python GIL hang).
+          # Failure: If this fails, GKE KILLS the container and starts a fresh one.
+          # Note: Only starts after the startupProbe succeeds.
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: {{ $.Values.embeddingsSidecar.port }}
+            # Checked less frequently than readiness (every 20s) to save resources.
+            periodSeconds: 20
+            # If it fails 3 times (1 minute of silence), GKE will trigger a Pod restart.
+            failureThreshold: 3
+            # If the process is so broken it can't respond to a ping in 5s, it's a "zombie."
+            timeoutSeconds: 5
+          volumeMounts:
+            - name: embeddings-config
+              mountPath: /datacommons/nl
+      {{- end }}
+        - name: esp
+          image:  "{{ $.Values.esp.image.repository }}{{- if $.Values.esp.image.tag -}}:{{ $.Values.esp.image.tag }}{{- end }}"
+          imagePullPolicy: {{ $.Values.esp.image.pullPolicy }}
+          resources:
+            limits:
+              memory: "300M"
+            requests:
+              memory: "300M"
+          volumeMounts:
+            - mountPath: /etc/espv2_config
+              name: service-config-volume
+          args:
+            - --listener_port=8081
+            - --backend=grpc://127.0.0.1:12345
+            - --cors_preset=basic
+            - --healthz=healthz
+            - --service_json_path=/etc/espv2_config/service_config.json
+            - --envoy_connection_buffer_limit_bytes=209715200 # 200Mb
+          env:
+            - name: SERVICE_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ include "mixer.fullname" $ }}-mixer-config
+                  key: serviceName
+          readinessProbe:
+            httpGet:
+              path: /healthz
+              port: 8081
+            initialDelaySeconds: 60
+            periodSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: 8081
+            periodSeconds: 5
+            initialDelaySeconds: 5
+          ports:
+            - containerPort: 8081
+{{- $index = add $index 1 }}
+{{- end }}

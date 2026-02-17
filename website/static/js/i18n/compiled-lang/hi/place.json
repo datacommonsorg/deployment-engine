@@ -1,0 +1,1038 @@
+{
+  "alert-no_data_for_place": [
+    {
+      "type": 0,
+      "value": "माफ़ करें, हमारे पास "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": " के बारे में कोई डेटा नहीं है"
+    }
+  ],
+  "category_in_place": [
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": " के लिए, "
+    },
+    {
+      "type": 1,
+      "value": "category"
+    },
+    {
+      "type": 0,
+      "value": " से जुड़ा डेटा"
+    }
+  ],
+  "chart-title-with-per-capita-and-date": [
+    {
+      "type": 1,
+      "value": "variableName"
+    },
+    {
+      "type": 0,
+      "value": " (प्रति व्यक्ति के हिसाब से, "
+    },
+    {
+      "type": 1,
+      "value": "date"
+    },
+    {
+      "type": 0,
+      "value": " में)"
+    }
+  ],
+  "chart-title-with-per-capita-no-date": [
+    {
+      "type": 1,
+      "value": "variableName"
+    },
+    {
+      "type": 0,
+      "value": " (प्रति व्यक्ति)"
+    }
+  ],
+  "chart-title-with-two-variables": [
+    {
+      "type": 1,
+      "value": "variable1"
+    },
+    {
+      "type": 0,
+      "value": " बनाम "
+    },
+    {
+      "type": 1,
+      "value": "variable2"
+    }
+  ],
+  "chart-title-with-two-variables-and-location": [
+    {
+      "type": 1,
+      "value": "place"
+    },
+    {
+      "type": 0,
+      "value": " के "
+    },
+    {
+      "type": 1,
+      "value": "placeType"
+    },
+    {
+      "type": 0,
+      "value": " में "
+    },
+    {
+      "type": 1,
+      "value": "variable1"
+    },
+    {
+      "type": 0,
+      "value": " बनाम "
+    },
+    {
+      "type": 1,
+      "value": "variable2"
+    }
+  ],
+  "chart_clause-other_placeType": [
+    {
+      "type": 1,
+      "value": "chartTitle"
+    },
+    {
+      "type": 0,
+      "value": ": अन्य "
+    },
+    {
+      "type": 1,
+      "value": "placeType"
+    }
+  ],
+  "chart_clause-places_that_contain_place": [
+    {
+      "type": 1,
+      "value": "chartTitle"
+    },
+    {
+      "type": 0,
+      "value": ": "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": " वाली जगहें"
+    }
+  ],
+  "chart_clause-places_within_place": [
+    {
+      "type": 1,
+      "value": "chartTitle"
+    },
+    {
+      "type": 0,
+      "value": ": "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": " में जगहें"
+    }
+  ],
+  "chart_clause-placetype_near_place": [
+    {
+      "type": 1,
+      "value": "chartTitle"
+    },
+    {
+      "type": 0,
+      "value": ": "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": " के आस-पास की "
+    },
+    {
+      "type": 1,
+      "value": "placeType"
+    }
+  ],
+  "chart_clause-rankings_in_place": [
+    {
+      "type": 1,
+      "value": "variable"
+    },
+    {
+      "type": 0,
+      "value": ": "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": " में रैंकिंग"
+    }
+  ],
+  "chart_clause-variable_in_place": [
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": " में "
+    },
+    {
+      "type": 1,
+      "value": "variable"
+    }
+  ],
+  "chart_metadata-dotted_line_explanation": [
+    {
+      "type": 0,
+      "value": "(बिंदुओं वाली लाइन वह डेटा बताती है जो मौजूद नहीं है)"
+    }
+  ],
+  "chart_metadata-explore_more": [
+    {
+      "type": 0,
+      "value": "ज़्यादा एक्सप्लोर करें ›"
+    }
+  ],
+  "chart_metadata-export": [
+    {
+      "type": 0,
+      "value": "एक्सपोर्ट करें"
+    }
+  ],
+  "chart_metadata-feedback": [
+    {
+      "type": 0,
+      "value": "सुझाव/राय दें या शिकायत करें"
+    }
+  ],
+  "chart_metadata-provenance": [
+    {
+      "type": 1,
+      "value": "sources"
+    },
+    {
+      "type": 0,
+      "value": " से लिया गया डेटा"
+    }
+  ],
+  "child_places_menu-places_in_place": [
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": " में जगहें"
+    }
+  ],
+  "chooseVariable": [
+    {
+      "type": 0,
+      "value": "मेटाडेटा देखने के लिए कोई वैरिएबल चुनें"
+    }
+  ],
+  "close": [
+    {
+      "type": 0,
+      "value": "बंद करें"
+    }
+  ],
+  "dateRange": [
+    {
+      "type": 1,
+      "value": "minDate"
+    },
+    {
+      "type": 0,
+      "value": " से "
+    },
+    {
+      "type": 1,
+      "value": "maxDate"
+    },
+    {
+      "type": 0,
+      "value": " तक"
+    }
+  ],
+  "disasterTool": [
+    {
+      "type": 0,
+      "value": "आपदा की जानकारी देने वाला टूल"
+    }
+  ],
+  "download": [
+    {
+      "type": 0,
+      "value": "डाउनलोड करें"
+    }
+  ],
+  "embed_citation": [
+    {
+      "type": 0,
+      "value": "Data Commons के ज़रिए "
+    },
+    {
+      "type": 1,
+      "value": "sources"
+    },
+    {
+      "type": 0,
+      "value": " से मिला डेटा"
+    }
+  ],
+  "embed_download_chart_link": [
+    {
+      "type": 0,
+      "value": "चार्ट की इमेज डाउनलोड करें"
+    }
+  ],
+  "embed_download_csv_link": [
+    {
+      "type": 0,
+      "value": "डेटा को CSV के तौर पर डाउनलोड करें"
+    }
+  ],
+  "embed_export_chart_link": [
+    {
+      "type": 0,
+      "value": "यह चार्ट भेजें"
+    }
+  ],
+  "enterQuery": [
+    {
+      "type": 0,
+      "value": "जानकारी पाने के लिए कोई सवाल पूछें"
+    }
+  ],
+  "exploreLink": [
+    {
+      "type": 1,
+      "value": "toolName"
+    },
+    {
+      "type": 0,
+      "value": " में एक्सप्लोर करें"
+    }
+  ],
+  "explore_data_on": [
+    {
+      "type": 0,
+      "value": "इससे जुड़ा डेटा देखें... \""
+    },
+    {
+      "type": 1,
+      "value": "sampleQuestion"
+    },
+    {
+      "type": 0,
+      "value": "\""
+    }
+  ],
+  "header-overview": [
+    {
+      "type": 0,
+      "value": "खास जानकारी"
+    }
+  ],
+  "key_demographics": [
+    {
+      "type": 0,
+      "value": "अहम डेमोग्राफ़िक्स"
+    }
+  ],
+  "knowledge_graph": [
+    {
+      "type": 0,
+      "value": "नॉलेज ग्राफ़"
+    }
+  ],
+  "link-return_to_overview": [
+    {
+      "type": 0,
+      "value": "खास जानकारी वाले पेज पर वापस जाएं"
+    }
+  ],
+  "loading": [
+    {
+      "type": 0,
+      "value": "लोड हो रहा है..."
+    }
+  ],
+  "mapTool": [
+    {
+      "type": 0,
+      "value": "मैप टूल"
+    }
+  ],
+  "more_charts": [
+    {
+      "type": 0,
+      "value": "और चार्ट देखें"
+    }
+  ],
+  "more_charts_link": [
+    {
+      "type": 0,
+      "value": "और चार्ट"
+    }
+  ],
+  "no_charts": [
+    {
+      "type": 1,
+      "value": "place"
+    },
+    {
+      "type": 0,
+      "value": " के लिए, "
+    },
+    {
+      "type": 1,
+      "value": "category"
+    },
+    {
+      "type": 0,
+      "value": " से जुड़ा कोई डेटा नहीं मिला."
+    }
+  ],
+  "place_breadcrumb": [
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": " में "
+    },
+    {
+      "type": 1,
+      "value": "placeType"
+    }
+  ],
+  "place_not_found": [
+    {
+      "type": 0,
+      "value": "\""
+    },
+    {
+      "type": 1,
+      "value": "placeDcid"
+    },
+    {
+      "type": 0,
+      "value": "\" जगह की जानकारी नहीं मिली."
+    }
+  ],
+  "place_page_ranking_table-ranking_in": [
+    {
+      "type": 0,
+      "value": "रैंकिंग (में)"
+    }
+  ],
+  "place_page_ranking_table-ranking_value": [
+    {
+      "type": 1,
+      "value": "total"
+    },
+    {
+      "type": 0,
+      "value": " में से "
+    },
+    {
+      "type": 1,
+      "value": "rank"
+    }
+  ],
+  "place_type_in_places": [
+    {
+      "type": 1,
+      "value": "parentPlaces"
+    },
+    {
+      "type": 0,
+      "value": " में "
+    },
+    {
+      "type": 1,
+      "value": "placeType"
+    }
+  ],
+  "plural_administrative_area": [
+    {
+      "type": 0,
+      "value": "प्रशासकीय क्षेत्र"
+    }
+  ],
+  "plural_administrative_area_level": [
+    {
+      "type": 0,
+      "value": "प्रशासकीय क्षेत्र "
+    },
+    {
+      "type": 1,
+      "value": "level"
+    },
+    {
+      "type": 0,
+      "value": " वाले इलाके"
+    }
+  ],
+  "plural_borough": [
+    {
+      "type": 0,
+      "value": "नगर"
+    }
+  ],
+  "plural_city": [
+    {
+      "type": 0,
+      "value": "शहर"
+    }
+  ],
+  "plural_continent": [
+    {
+      "type": 0,
+      "value": "महाद्वीप"
+    }
+  ],
+  "plural_country": [
+    {
+      "type": 0,
+      "value": "देश"
+    }
+  ],
+  "plural_county": [
+    {
+      "type": 0,
+      "value": "काउंटी"
+    }
+  ],
+  "plural_eurostat_nuts": [
+    {
+      "type": 0,
+      "value": "यूरोस्टेट एनयूटीएस "
+    },
+    {
+      "type": 1,
+      "value": "level"
+    },
+    {
+      "type": 0,
+      "value": " वाले इलाके"
+    }
+  ],
+  "plural_neighborhood": [
+    {
+      "type": 0,
+      "value": "आस-पड़ोस"
+    }
+  ],
+  "plural_places": [
+    {
+      "type": 0,
+      "value": "जगहें"
+    }
+  ],
+  "plural_state": [
+    {
+      "type": 0,
+      "value": "राज्य"
+    }
+  ],
+  "plural_town": [
+    {
+      "type": 0,
+      "value": "कस्बा"
+    }
+  ],
+  "plural_village": [
+    {
+      "type": 0,
+      "value": "गांव"
+    }
+  ],
+  "plural_zip_codes": [
+    {
+      "type": 0,
+      "value": "पिन कोड"
+    }
+  ],
+  "ranking-document_title": [
+    {
+      "type": 1,
+      "value": "statVar"
+    },
+    {
+      "type": 0,
+      "value": " के हिसाब से रैंकिंग - "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": " में "
+    },
+    {
+      "type": 1,
+      "value": "pluralPlaceType"
+    }
+  ],
+  "ranking-loading": [
+    {
+      "type": 0,
+      "value": "लोड हो रहा है..."
+    }
+  ],
+  "ranking-no_data": [
+    {
+      "type": 0,
+      "value": "रैंकिंग से जुड़ी कोई जानकारी नहीं है"
+    }
+  ],
+  "ranking-page_title": [
+    {
+      "type": 1,
+      "value": "statVar"
+    },
+    {
+      "type": 0,
+      "value": " के हिसाब से रैंकिंग"
+    }
+  ],
+  "ranking-sort_bottom": [
+    {
+      "type": 0,
+      "value": "सबसे कम "
+    },
+    {
+      "type": 1,
+      "value": "rankSize"
+    },
+    {
+      "type": 0,
+      "value": " आइटम दिखाएं"
+    }
+  ],
+  "ranking-sort_top": [
+    {
+      "type": 0,
+      "value": "सबसे ज़्यादा "
+    },
+    {
+      "type": 1,
+      "value": "rankSize"
+    },
+    {
+      "type": 0,
+      "value": " आइटम दिखाएं"
+    }
+  ],
+  "ranking-subtitle_all": [
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": " में सभी "
+    },
+    {
+      "type": 1,
+      "value": "pluralPlaceType"
+    }
+  ],
+  "ranking-subtitle_all_percapita": [
+    {
+      "type": 0,
+      "value": "प्रति व्यक्ति के हिसाब से "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": " में सभी "
+    },
+    {
+      "type": 1,
+      "value": "pluralPlaceType"
+    }
+  ],
+  "ranking-subtitle_bottom": [
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": " से नीचे से "
+    },
+    {
+      "type": 1,
+      "value": "rankSize"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "pluralPlaceType"
+    }
+  ],
+  "ranking-subtitle_bottom_percapita": [
+    {
+      "type": 0,
+      "value": "प्रति व्यक्ति के हिसाब से "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": " में नीचे से "
+    },
+    {
+      "type": 1,
+      "value": "rankSize"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "pluralPlaceType"
+    }
+  ],
+  "ranking-subtitle_none": [
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": " में "
+    },
+    {
+      "type": 1,
+      "value": "pluralPlaceType"
+    }
+  ],
+  "ranking-subtitle_none_percapita": [
+    {
+      "type": 0,
+      "value": "प्रति व्यक्ति के हिसाब से "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": " में "
+    },
+    {
+      "type": 1,
+      "value": "pluralPlaceType"
+    }
+  ],
+  "ranking-subtitle_top": [
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": " में टॉप "
+    },
+    {
+      "type": 1,
+      "value": "rankSize"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "pluralPlaceType"
+    }
+  ],
+  "ranking-subtitle_top_percapita": [
+    {
+      "type": 0,
+      "value": "प्रति व्यक्ति के हिसाब से "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": " में टॉप "
+    },
+    {
+      "type": 1,
+      "value": "rankSize"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "pluralPlaceType"
+    }
+  ],
+  "ranking-tile-latest-data-available-footer": [
+    {
+      "type": 0,
+      "value": "सबसे नए डेटा के आधार पर रैंकिंग तय की गई है. उस साल की पूरी रिपोर्ट न होने की वजह से, शायद कुछ जगहों की जानकारी मौजूद न हो."
+    }
+  ],
+  "ranking-tile-latest-data-footer": [
+    {
+      "type": 0,
+      "value": "इस रैंकिंग में कई सालों का डेटा शामिल है, ताकि जगहों की पूरी जानकारी मिल सके."
+    }
+  ],
+  "ranking_table-header_rank": [
+    {
+      "type": 0,
+      "value": "रैंक"
+    }
+  ],
+  "ranking_table-header_value": [
+    {
+      "type": 0,
+      "value": "मान"
+    }
+  ],
+  "relevant_topics": [
+    {
+      "type": 0,
+      "value": "काम के विषय"
+    }
+  ],
+  "scatterTool": [
+    {
+      "type": 0,
+      "value": "स्कैटर टूल"
+    }
+  ],
+  "search_bar_placeholder-search_again": [
+    {
+      "type": 0,
+      "value": "कोई दूसरी जगह खोजें"
+    }
+  ],
+  "seePerCapita": [
+    {
+      "type": 0,
+      "value": "प्रति व्यक्ति से जुड़ा डेटा देखें"
+    }
+  ],
+  "selectVariable": [
+    {
+      "type": 0,
+      "value": "किसी वैरिएबल को सूची में से चुनकर, उससे जुड़ी जानकारी देखें. नीचे दिए गए लिंक की मदद से नए टैब में स्टैटिस्टिकल वैरिएबल एक्सप्लोरर खोले जा सकते हैं."
+    }
+  ],
+  "showMetadata": [
+    {
+      "type": 0,
+      "value": "मेटाडेटा दिखाएं"
+    }
+  ],
+  "singular_administrative_area": [
+    {
+      "type": 0,
+      "value": "प्रशासकीय क्षेत्र"
+    }
+  ],
+  "singular_administrative_area_level": [
+    {
+      "type": 0,
+      "value": "प्रशासकीय क्षेत्र "
+    },
+    {
+      "type": 1,
+      "value": "level"
+    },
+    {
+      "type": 0,
+      "value": " वाले इलाके"
+    }
+  ],
+  "singular_borough": [
+    {
+      "type": 0,
+      "value": "नगर"
+    }
+  ],
+  "singular_city": [
+    {
+      "type": 0,
+      "value": "शहर"
+    }
+  ],
+  "singular_continent": [
+    {
+      "type": 0,
+      "value": "महाद्वीप"
+    }
+  ],
+  "singular_country": [
+    {
+      "type": 0,
+      "value": "देश"
+    }
+  ],
+  "singular_county": [
+    {
+      "type": 0,
+      "value": "काउंटी"
+    }
+  ],
+  "singular_eurostat_nuts": [
+    {
+      "type": 0,
+      "value": "यूरोस्टेट एनयूटीएस "
+    },
+    {
+      "type": 1,
+      "value": "level"
+    },
+    {
+      "type": 0,
+      "value": " वाले इलाके"
+    }
+  ],
+  "singular_neighborhood": [
+    {
+      "type": 0,
+      "value": "आस-पड़ोस"
+    }
+  ],
+  "singular_place": [
+    {
+      "type": 0,
+      "value": "जगह"
+    }
+  ],
+  "singular_state": [
+    {
+      "type": 0,
+      "value": "राज्य"
+    }
+  ],
+  "singular_town": [
+    {
+      "type": 0,
+      "value": "कस्बा"
+    }
+  ],
+  "singular_village": [
+    {
+      "type": 0,
+      "value": "गांव"
+    }
+  ],
+  "singular_zip_code": [
+    {
+      "type": 0,
+      "value": "पिन कोड"
+    }
+  ],
+  "snap-to-latest-data-checkbox-label": [
+    {
+      "type": 0,
+      "value": "सबसे ज़्यादा कवरेज वाली तारीख दिखाएं"
+    }
+  ],
+  "snap-to-latest-data-help-tooltip": [
+    {
+      "type": 0,
+      "value": "'सबसे ज़्यादा कवरेज वाली तारीख दिखाएं' में, ज़्यादा से ज़्यादा कवरेज वाला नया डेटा दिखाया जाता है. उस साल की पूरी रिपोर्ट न होने की वजह से, शायद कुछ जगहों की जानकारी मौजूद न हो."
+    }
+  ],
+  "snap-to-latest-data-overlap-help-tooltip": [
+    {
+      "type": 0,
+      "value": "सबसे ज़्यादा कवरेज वाला डेटा, इस चार्ट के लिए सबसे नया डेटा भी होता है."
+    }
+  ],
+  "source": [
+    {
+      "type": 0,
+      "value": "सोर्स"
+    }
+  ],
+  "sources": [
+    {
+      "type": 0,
+      "value": "स्रोत"
+    }
+  ],
+  "summary_overview": [
+    {
+      "type": 0,
+      "value": "खास जानकारी"
+    }
+  ],
+  "summary_overview_tooltip": [
+    {
+      "type": 0,
+      "value": "हम सोर्स से जुटाए गए अपने डेटा से अहम जानकारी पाने के लिए, एआई का इस्तेमाल करते हैं. हर चार्ट पर इस डेटा का लिंक मौजूद है. हमारा मकसद सटीक जानकारी देना है. इसलिए, कृपया जानकारी की समीक्षा करें और सोर्स डेटा देखें."
+    }
+  ],
+  "the_world": [
+    {
+      "type": 0,
+      "value": "दुनिया में"
+    }
+  ],
+  "timelineTool": [
+    {
+      "type": 0,
+      "value": "टाइमलाइन टूल"
+    }
+  ],
+  "viaGoogle": [
+    {
+      "type": 0,
+      "value": "Google से"
+    }
+  ]
+}

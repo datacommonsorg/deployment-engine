@@ -1,0 +1,427 @@
+{
+  "header": [
+    "?a"
+  ],
+  "rows": [
+    {
+      "cells": [
+        {
+          "value": "AmericanIndianAndAlaskaNativeAlone"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "AmericanIndianAndAlaskaNativeAloneOrInCombinationWithOneOrMoreOtherRaces"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "AmericanIndianOrAlaskaNative"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "AmericanIndianOrAlaskaNativeAlone"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "Arab"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "Asian"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "AsianAlone"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "AsianAloneOrInCombinationWithOneOrMoreOtherRaces"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "AsianIndian"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "AsianOrPacificIslander"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "Black"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "BlackAfrican"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "BlackOrAfricanAmericanAlone"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "BlackOrAfricanAmericanAloneOrInCombinationWithOneOrMoreOtherRaces"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "Brazil_Amarela"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "Brazil_Branca"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "Brazil_Indigneous"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "Brazil_Pardo"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "CDC_AmericanIndianAndAlaskaNativeAlone"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "CDC_OtherRace"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "CDC_RaceUnknownOrNotStated"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "Chinese"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "DAD_Black"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "DAD_NonBlack"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "Filipino"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "GuamanianOrChamorro"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "HawaiianNativeOrPacificIslander"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "HispanicOrLatino"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "Indian"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "Japanese"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "Korean"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "NTIA_OtherRace"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "NativeHawaiian"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "NativeHawaiianAndOtherPacificIslanderAlone"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "NativeHawaiianAndOtherPacificIslanderAloneOrInCombinationWithOneOrMoreOtherRaces"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "NativeHawaiianOrOtherPacificIslanderAlone"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "NonWhite"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "NotHispanicOrLatino"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "OneRace"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "OtherAsian"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "OtherPacificIslander"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "Samoan"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "SomeOtherRaceAlone"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "SomeOtherRaceAloneOrInCombinationWithOneOrMoreOtherRaces"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "SouthAfrica_Coloured"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "TwoOrMoreRaces"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "UCR_OtherRace"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "USC_AmericanIndianAndAlaskaNativeAlone"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "USC_AsianAlone"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "USC_BlackOrAfricanAmericanAlone"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "USC_HispanicOrLatinoRace"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "USC_RacialMinority"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "USC_RacialNonMinority"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "USC_WhiteAloneNotHispanicOrLatino"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "UnknownRace"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "Vietnamese"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "White"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "WhiteAlone"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "WhiteAloneNotHispanicOrLatino"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "WhiteAloneOrInCombinationWithOneOrMoreOtherRaces"
+        }
+      ]
+    }
+  ]
+}

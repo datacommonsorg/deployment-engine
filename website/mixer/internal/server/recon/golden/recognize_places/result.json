@@ -1,0 +1,625 @@
+{
+  "queryItems": {
+    "California economy and Florida": {
+      "items": [
+        {
+          "span": "California",
+          "places": [
+            {
+              "dcid": "geoId/06"
+            },
+            {
+              "dcid": "geoId/2412150"
+            },
+            {
+              "dcid": "geoId/4210768"
+            },
+            {
+              "dcid": "geoId/2910468"
+            },
+            {
+              "dcid": "geoId/2111872"
+            }
+          ]
+        },
+        {
+          "span": "economy and"
+        },
+        {
+          "span": "Florida",
+          "places": [
+            {
+              "dcid": "geoId/12"
+            },
+            {
+              "dcid": "wikidataId/Q1093490"
+            },
+            {
+              "dcid": "wikidataId/Q842472"
+            },
+            {
+              "dcid": "wikidataId/Q4711417"
+            },
+            {
+              "dcid": "geoId/72054"
+            },
+            {
+              "dcid": "geoId/3626319"
+            },
+            {
+              "dcid": "wikidataId/Q5027600"
+            },
+            {
+              "dcid": "geoId/2524120"
+            },
+            {
+              "dcid": "geoId/3927538"
+            },
+            {
+              "dcid": "geoId/2924760"
+            }
+          ]
+        }
+      ]
+    },
+    "Chinese speakers in California": {
+      "items": [
+        {
+          "span": "Chinese speakers in"
+        },
+        {
+          "span": "California",
+          "places": [
+            {
+              "dcid": "geoId/06"
+            },
+            {
+              "dcid": "geoId/2412150"
+            },
+            {
+              "dcid": "geoId/4210768"
+            },
+            {
+              "dcid": "geoId/2910468"
+            },
+            {
+              "dcid": "geoId/2111872"
+            }
+          ]
+        }
+      ]
+    },
+    "Compare literacy among Chinese provinces": {
+      "items": [
+        {
+          "span": "Compare literacy among"
+        },
+        {
+          "span": "Chinese",
+          "places": [
+            {
+              "dcid": "country/CHN"
+            }
+          ]
+        },
+        {
+          "span": "provinces"
+        }
+      ]
+    },
+    "I want to find the Middle Point of a line": {
+      "items": [
+        {
+          "span": "I want to find the Middle Point of a line"
+        }
+      ]
+    },
+    "I went to Half Moon Bay California and California, Washington County": {
+      "items": [
+        {
+          "span": "I went to"
+        },
+        {
+          "span": "Half Moon Bay California",
+          "places": [
+            {
+              "dcid": "geoId/0631708"
+            }
+          ]
+        },
+        {
+          "span": "and"
+        },
+        {
+          "span": "California , Washington County",
+          "places": [
+            {
+              "dcid": "geoId/4210768"
+            }
+          ]
+        }
+      ]
+    },
+    "I went to Middle Point, USA": {
+      "items": [
+        {
+          "span": "I went to"
+        },
+        {
+          "span": "Middle Point , USA",
+          "places": [
+            {
+              "dcid": "geoId/3949728"
+            }
+          ]
+        }
+      ]
+    },
+    "What is the electricity access in african countries": {
+      "items": [
+        {
+          "span": "What is the electricity access in"
+        },
+        {
+          "span": "african",
+          "places": [
+            {
+              "dcid": "africa"
+            }
+          ]
+        },
+        {
+          "span": "countries"
+        }
+      ]
+    },
+    "crime in new york state": {
+      "items": [
+        {
+          "span": "crime in"
+        },
+        {
+          "span": "new york state",
+          "places": [
+            {
+              "dcid": "geoId/36"
+            }
+          ]
+        }
+      ]
+    },
+    "economy of Asia": {
+      "items": [
+        {
+          "span": "economy of"
+        },
+        {
+          "span": "Asia",
+          "places": [
+            {
+              "dcid": "asia"
+            }
+          ]
+        }
+      ]
+    },
+    "life expectancy in Australia and Canada": {
+      "items": [
+        {
+          "span": "life expectancy in"
+        },
+        {
+          "span": "Australia",
+          "places": [
+            {
+              "dcid": "country/AUS"
+            }
+          ]
+        },
+        {
+          "span": "and"
+        },
+        {
+          "span": "Canada",
+          "places": [
+            {
+              "dcid": "country/CAN"
+            }
+          ]
+        }
+      ]
+    },
+    "life expectancy in New York city and Alabama": {
+      "items": [
+        {
+          "span": "life expectancy in"
+        },
+        {
+          "span": "New York city",
+          "places": [
+            {
+              "dcid": "geoId/3651000"
+            }
+          ]
+        },
+        {
+          "span": "and"
+        },
+        {
+          "span": "Alabama",
+          "places": [
+            {
+              "dcid": "geoId/01"
+            },
+            {
+              "dcid": "wikidataId/Q3709658"
+            }
+          ]
+        }
+      ]
+    },
+    "median income in africa": {
+      "items": [
+        {
+          "span": "median income in"
+        },
+        {
+          "span": "africa",
+          "places": [
+            {
+              "dcid": "africa"
+            }
+          ]
+        }
+      ]
+    },
+    "population in 94043 vs sunnyvale": {
+      "items": [
+        {
+          "span": "population in"
+        },
+        {
+          "span": "94043",
+          "places": [
+            {
+              "dcid": "zip/94043"
+            }
+          ]
+        },
+        {
+          "span": "vs"
+        },
+        {
+          "span": "sunnyvale",
+          "places": [
+            {
+              "dcid": "geoId/0677000"
+            },
+            {
+              "dcid": "geoId/4871156"
+            }
+          ]
+        }
+      ]
+    },
+    "tell me about chicago": {
+      "items": [
+        {
+          "span": "tell me about"
+        },
+        {
+          "span": "chicago",
+          "places": [
+            {
+              "dcid": "geoId/1714000"
+            }
+          ]
+        }
+      ]
+    },
+    "tell me about palo alto": {
+      "items": [
+        {
+          "span": "tell me about"
+        },
+        {
+          "span": "palo alto",
+          "places": [
+            {
+              "dcid": "geoId/0655282"
+            },
+            {
+              "dcid": "geoId/19147"
+            },
+            {
+              "dcid": "geoId/4257752"
+            }
+          ]
+        }
+      ]
+    },
+    "the birds in ME and USA are chirpy, according to me": {
+      "items": [
+        {
+          "span": "the birds in"
+        },
+        {
+          "span": "ME",
+          "places": [
+            {
+              "dcid": "geoId/23"
+            },
+            {
+              "dcid": "country/MNE"
+            }
+          ]
+        },
+        {
+          "span": "and"
+        },
+        {
+          "span": "USA",
+          "places": [
+            {
+              "dcid": "country/USA"
+            }
+          ]
+        },
+        {
+          "span": "are chirpy , according to me"
+        }
+      ]
+    },
+    "the birds in San Jose California are chirpy": {
+      "items": [
+        {
+          "span": "the birds in"
+        },
+        {
+          "span": "San Jose California",
+          "places": [
+            {
+              "dcid": "geoId/0668000"
+            }
+          ]
+        },
+        {
+          "span": "are chirpy"
+        }
+      ]
+    },
+    "the birds in San Jose are chirpy": {
+      "items": [
+        {
+          "span": "the birds in"
+        },
+        {
+          "span": "San Jose",
+          "places": [
+            {
+              "dcid": "geoId/0668000"
+            },
+            {
+              "dcid": "wikidataId/Q55599"
+            },
+            {
+              "dcid": "geoId/3568430"
+            },
+            {
+              "dcid": "geoId/0463260"
+            },
+            {
+              "dcid": "geoId/1767613"
+            },
+            {
+              "dcid": "geoId/3568500"
+            }
+          ]
+        },
+        {
+          "span": "are chirpy"
+        }
+      ]
+    },
+    "the birds in San Jose, CA, USA, Mountain View, CA and Canada are chirpy": {
+      "items": [
+        {
+          "span": "the birds in"
+        },
+        {
+          "span": "San Jose , CA , USA",
+          "places": [
+            {
+              "dcid": "geoId/0668000"
+            }
+          ]
+        },
+        {
+          "span": ","
+        },
+        {
+          "span": "Mountain View , CA",
+          "places": [
+            {
+              "dcid": "geoId/0649670"
+            },
+            {
+              "dcid": "geoId/0649651"
+            }
+          ]
+        },
+        {
+          "span": "and"
+        },
+        {
+          "span": "Canada",
+          "places": [
+            {
+              "dcid": "country/CAN"
+            }
+          ]
+        },
+        {
+          "span": "are chirpy"
+        }
+      ]
+    },
+    "the birds in San Jose, California are chirpy": {
+      "items": [
+        {
+          "span": "the birds in"
+        },
+        {
+          "span": "San Jose , California",
+          "places": [
+            {
+              "dcid": "geoId/0668000"
+            }
+          ]
+        },
+        {
+          "span": "are chirpy"
+        }
+      ]
+    },
+    "the birds in San Jose, Mountain View and Sunnyvale are chirpy": {
+      "items": [
+        {
+          "span": "the birds in"
+        },
+        {
+          "span": "San Jose",
+          "places": [
+            {
+              "dcid": "geoId/0668000"
+            },
+            {
+              "dcid": "wikidataId/Q55599"
+            },
+            {
+              "dcid": "geoId/3568430"
+            },
+            {
+              "dcid": "geoId/0463260"
+            },
+            {
+              "dcid": "geoId/1767613"
+            },
+            {
+              "dcid": "geoId/3568500"
+            }
+          ]
+        },
+        {
+          "span": ","
+        },
+        {
+          "span": "Mountain View",
+          "places": [
+            {
+              "dcid": "geoId/0649670"
+            },
+            {
+              "dcid": "geoId/3744770"
+            },
+            {
+              "dcid": "geoId/1553300"
+            },
+            {
+              "dcid": "geoId/0547540"
+            },
+            {
+              "dcid": "geoId/2950438"
+            },
+            {
+              "dcid": "geoId/0649651"
+            },
+            {
+              "dcid": "geoId/5655345"
+            },
+            {
+              "dcid": "geoId/4049650"
+            },
+            {
+              "dcid": "geoId/0852350"
+            },
+            {
+              "dcid": "wikidataId/Q950305"
+            },
+            {
+              "dcid": "geoId/3550515"
+            },
+            {
+              "dcid": "geoId/5655200"
+            }
+          ]
+        },
+        {
+          "span": "and"
+        },
+        {
+          "span": "Sunnyvale",
+          "places": [
+            {
+              "dcid": "geoId/0677000"
+            },
+            {
+              "dcid": "geoId/4871156"
+            }
+          ]
+        },
+        {
+          "span": "are chirpy"
+        }
+      ]
+    },
+    "what about mountain view": {
+      "items": [
+        {
+          "span": "what about"
+        },
+        {
+          "span": "mountain view",
+          "places": [
+            {
+              "dcid": "geoId/0649670"
+            },
+            {
+              "dcid": "geoId/3744770"
+            },
+            {
+              "dcid": "geoId/1553300"
+            },
+            {
+              "dcid": "geoId/0547540"
+            },
+            {
+              "dcid": "geoId/2950438"
+            },
+            {
+              "dcid": "geoId/0649651"
+            },
+            {
+              "dcid": "geoId/5655345"
+            },
+            {
+              "dcid": "geoId/4049650"
+            },
+            {
+              "dcid": "geoId/0852350"
+            },
+            {
+              "dcid": "wikidataId/Q950305"
+            },
+            {
+              "dcid": "geoId/3550515"
+            },
+            {
+              "dcid": "geoId/5655200"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

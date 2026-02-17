@@ -1,0 +1,224 @@
+{
+  "StatisticalVariable": [
+    {
+      "SubjectID": "StatisticalVariable",
+      "Predicate": "typeOf",
+      "Provenance": "dc/base/HumanReadableStatVars",
+      "Value": "AmountInterestRepayment_Debt_OfficialCreditor_PubliclyGuaranteed_Bilateral_LongTermExternalDebt_LenderCountryVNM",
+      "Bytes": null,
+      "Name": "Publicly guaranteed bilateral external debt interest repayment to official creditor, Vietnam.",
+      "Types": [
+        "StatisticalVariable"
+      ]
+    },
+    {
+      "SubjectID": "StatisticalVariable",
+      "Predicate": "typeOf",
+      "Provenance": "dc/base/HumanReadableStatVars",
+      "Value": "AmountInterestRepayment_Debt_OfficialCreditor_PubliclyGuaranteed_Bilateral_LongTermExternalDebt_LenderCountryZAF",
+      "Bytes": null,
+      "Name": "Publicly guaranteed bilateral external debt interest repayment to official creditor, South Africa.",
+      "Types": [
+        "StatisticalVariable"
+      ]
+    },
+    {
+      "SubjectID": "StatisticalVariable",
+      "Predicate": "typeOf",
+      "Provenance": "dc/base/HumanReadableStatVars",
+      "Value": "AmountInterestRepayment_Debt_OfficialCreditor_PubliclyGuaranteed_Bilateral_LongTermExternalDebt_LenderCountryZMB",
+      "Bytes": null,
+      "Name": "Publicly guaranteed bilateral external debt interest repayment to official creditor, Zambia.",
+      "Types": [
+        "StatisticalVariable"
+      ]
+    },
+    {
+      "SubjectID": "StatisticalVariable",
+      "Predicate": "typeOf",
+      "Provenance": "dc/base/HumanReadableStatVars",
+      "Value": "AmountInterestRepayment_Debt_OfficialCreditor_PubliclyGuaranteed_Bilateral_LongTermExternalDebt_LenderCountryZWE",
+      "Bytes": null,
+      "Name": "Publicly guaranteed bilateral external debt interest repayment to official creditor, Zimbabwe.",
+      "Types": [
+        "StatisticalVariable"
+      ]
+    },
+    {
+      "SubjectID": "StatisticalVariable",
+      "Predicate": "typeOf",
+      "Provenance": "dc/base/HumanReadableStatVars",
+      "Value": "AmountInterestRepayment_Debt_OfficialCreditor_PubliclyGuaranteed_Bilateral_LongTermExternalDebt_LenderEuropeanUnion",
+      "Bytes": null,
+      "Name": "Publicly guaranteed bilateral external debt interest repayment to official creditor, European Union.",
+      "Types": [
+        "StatisticalVariable"
+      ]
+    },
+    {
+      "SubjectID": "StatisticalVariable",
+      "Predicate": "typeOf",
+      "Provenance": "dc/base/HumanReadableStatVars",
+      "Value": "AmountInterestRepayment_Debt_OfficialCreditor_PubliclyGuaranteed_Bilateral_LongTermExternalDebt_LenderGermanDemRep",
+      "Bytes": null,
+      "Name": "Publicly guaranteed bilateral external debt interest repayment to official creditor, German Dem. Rep..",
+      "Types": [
+        "StatisticalVariable"
+      ]
+    },
+    {
+      "SubjectID": "StatisticalVariable",
+      "Predicate": "typeOf",
+      "Provenance": "dc/base/HumanReadableStatVars",
+      "Value": "AmountInterestRepayment_Debt_OfficialCreditor_PubliclyGuaranteed_Bilateral_LongTermExternalDebt_LenderMultipleLenders",
+      "Bytes": null,
+      "Name": "Publicly guaranteed bilateral external debt interest repayment to official creditor, Multiple Lenders.",
+      "Types": [
+        "StatisticalVariable"
+      ]
+    },
+    {
+      "SubjectID": "StatisticalVariable",
+      "Predicate": "typeOf",
+      "Provenance": "dc/base/HumanReadableStatVars",
+      "Value": "AmountInterestRepayment_Debt_OfficialCreditor_PubliclyGuaranteed_LongTermExternalDebt",
+      "Bytes": null,
+      "Name": "Publicly guaranteed long term external debt interest repayment to official creditor, all lenders.",
+      "Types": [
+        "StatisticalVariable"
+      ]
+    },
+    {
+      "SubjectID": "StatisticalVariable",
+      "Predicate": "typeOf",
+      "Provenance": "dc/base/HumanReadableStatVars",
+      "Value": "AmountInterestRepayment_Debt_OfficialCreditor_PubliclyGuaranteed_LongTermExternalDebt_LenderAfricanDevBank",
+      "Bytes": null,
+      "Name": "Publicly guaranteed long term external debt interest repayment to official creditor, African Dev. Bank.",
+      "Types": [
+        "StatisticalVariable"
+      ]
+    },
+    {
+      "SubjectID": "StatisticalVariable",
+      "Predicate": "typeOf",
+      "Provenance": "dc/base/HumanReadableStatVars",
+      "Value": "AmountInterestRepayment_Debt_OfficialCreditor_PubliclyGuaranteed_LongTermExternalDebt_LenderAfricanExportImportBank",
+      "Bytes": null,
+      "Name": "Publicly guaranteed long term external debt interest repayment to official creditor, African Export-Import Bank.",
+      "Types": [
+        "StatisticalVariable"
+      ]
+    },
+    {
+      "SubjectID": "StatisticalVariable",
+      "Predicate": "typeOf",
+      "Provenance": "dc/base/HumanReadableStatVars",
+      "Value": "AmountInterestRepayment_Debt_OfficialCreditor_PubliclyGuaranteed_LongTermExternalDebt_LenderArabAfricanInternationalBank",
+      "Bytes": null,
+      "Name": "Publicly guaranteed long term external debt interest repayment to official creditor, Arab African International Bank.",
+      "Types": [
+        "StatisticalVariable"
+      ]
+    },
+    {
+      "SubjectID": "StatisticalVariable",
+      "Predicate": "typeOf",
+      "Provenance": "dc/base/HumanReadableStatVars",
+      "Value": "AmountInterestRepayment_Debt_OfficialCreditor_PubliclyGuaranteed_LongTermExternalDebt_LenderArabBankforEconomicDevinAfrica",
+      "Bytes": null,
+      "Name": "Publicly guaranteed long term external debt interest repayment to official creditor, Arab Bank for Economic Dev. in Africa (BADEA).",
+      "Types": [
+        "StatisticalVariable"
+      ]
+    },
+    {
+      "SubjectID": "StatisticalVariable",
+      "Predicate": "typeOf",
+      "Provenance": "dc/base/HumanReadableStatVars",
+      "Value": "AmountInterestRepayment_Debt_OfficialCreditor_PubliclyGuaranteed_LongTermExternalDebt_LenderArabFundforEconomicSocialDevelopment",
+      "Bytes": null,
+      "Name": "Publicly guaranteed long term external debt interest repayment to official creditor, Arab Fund for Economic \u0026 Social Development.",
+      "Types": [
+        "StatisticalVariable"
+      ]
+    },
+    {
+      "SubjectID": "StatisticalVariable",
+      "Predicate": "typeOf",
+      "Provenance": "dc/base/HumanReadableStatVars",
+      "Value": "AmountInterestRepayment_Debt_OfficialCreditor_PubliclyGuaranteed_LongTermExternalDebt_LenderArabFundforTechAssisttoAfricanCountries",
+      "Bytes": null,
+      "Name": "Publicly guaranteed long term external debt interest repayment to official creditor, Arab Fund for Tech. Assist. to African Countries.",
+      "Types": [
+        "StatisticalVariable"
+      ]
+    },
+    {
+      "SubjectID": "StatisticalVariable",
+      "Predicate": "typeOf",
+      "Provenance": "dc/base/HumanReadableStatVars",
+      "Value": "AmountInterestRepayment_Debt_OfficialCreditor_PubliclyGuaranteed_LongTermExternalDebt_LenderArabLeague",
+      "Bytes": null,
+      "Name": "Publicly guaranteed long term external debt interest repayment to official creditor, Arab League.",
+      "Types": [
+        "StatisticalVariable"
+      ]
+    },
+    {
+      "SubjectID": "StatisticalVariable",
+      "Predicate": "typeOf",
+      "Provenance": "dc/base/HumanReadableStatVars",
+      "Value": "AmountInterestRepayment_Debt_OfficialCreditor_PubliclyGuaranteed_LongTermExternalDebt_LenderArabMonetaryFund",
+      "Bytes": null,
+      "Name": "Publicly guaranteed long term external debt interest repayment to official creditor, Arab Monetary Fund.",
+      "Types": [
+        "StatisticalVariable"
+      ]
+    },
+    {
+      "SubjectID": "StatisticalVariable",
+      "Predicate": "typeOf",
+      "Provenance": "dc/base/HumanReadableStatVars",
+      "Value": "AmountInterestRepayment_Debt_OfficialCreditor_PubliclyGuaranteed_LongTermExternalDebt_LenderArabTownsOrganization",
+      "Bytes": null,
+      "Name": "Publicly guaranteed long term external debt interest repayment to official creditor, Arab Towns Organization (ATO).",
+      "Types": [
+        "StatisticalVariable"
+      ]
+    },
+    {
+      "SubjectID": "StatisticalVariable",
+      "Predicate": "typeOf",
+      "Provenance": "dc/base/HumanReadableStatVars",
+      "Value": "AmountInterestRepayment_Debt_OfficialCreditor_PubliclyGuaranteed_LongTermExternalDebt_LenderAsianDevBank",
+      "Bytes": null,
+      "Name": "Publicly guaranteed long term external debt interest repayment to official creditor, Asian Dev. Bank.",
+      "Types": [
+        "StatisticalVariable"
+      ]
+    },
+    {
+      "SubjectID": "StatisticalVariable",
+      "Predicate": "typeOf",
+      "Provenance": "dc/base/HumanReadableStatVars",
+      "Value": "AmountInterestRepayment_Debt_OfficialCreditor_PubliclyGuaranteed_LongTermExternalDebt_LenderAsianInfrastructureInvestmentBank",
+      "Bytes": null,
+      "Name": "Publicly guaranteed long term external debt interest repayment to official creditor, Asian Infrastructure Investment Bank.",
+      "Types": [
+        "StatisticalVariable"
+      ]
+    },
+    {
+      "SubjectID": "StatisticalVariable",
+      "Predicate": "typeOf",
+      "Provenance": "dc/base/HumanReadableStatVars",
+      "Value": "AmountInterestRepayment_Debt_OfficialCreditor_PubliclyGuaranteed_LongTermExternalDebt_LenderBankforInternationalSettlements",
+      "Bytes": null,
+      "Name": "Publicly guaranteed long term external debt interest repayment to official creditor, Bank for International Settlements (BIS).",
+      "Types": [
+        "StatisticalVariable"
+      ]
+    }
+  ]
+}

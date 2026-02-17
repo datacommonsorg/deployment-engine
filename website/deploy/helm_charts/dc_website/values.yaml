@@ -1,0 +1,174 @@
+# Default values for dc-website.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+###############################################################################
+# Config for Website
+###############################################################################
+website:
+  githash:
+
+  image:
+    project: "datcom-ci"
+    pullPolicy: Always
+    tag:
+
+  flaskEnv: "custom"
+
+  # IAP(Identity Aware Proxy) config.
+  # IAP can be enabled independently of ingress.
+  iap:
+    enabled: false
+
+  replicas: 1
+
+  redis:
+    enabled: false
+    configFile:
+
+  nodePool:
+
+  dataGemma:
+    enabled: false
+
+nameOverride: ""
+fullnameOverride: ""
+
+# Namespace for the deployment.
+# Set enabled to false to deploy into an existing namespace.
+namespace:
+  create: false
+  name: website
+
+# Config for k8s-sa(service account). The k8s-sa will be bound to a
+# GCP-sa using annotations, specified below.
+serviceAccount:
+  name: website-ksa
+
+ingress:
+  name: website-ingress
+  ipName: dc-website-ip
+  certName: dc-website-cert
+  enabled: false
+
+###############################################################################
+# Config for Mixer helm chart
+###############################################################################
+mixer:
+  githash:
+
+  image:
+    project: "datcom-ci"
+    pullPolicy: Always
+    tag: ""
+
+    hostProject:
+    serviceName:
+
+    schemaConfigs:
+
+esp:
+  image:
+    repository: gcr.io/endpoints-release/endpoints-runtime
+    tag: "2"
+    pullPolicy: Always
+
+kgStoreConfig:
+  bigqueryVersion:
+  baseBigtableInfo:
+  customBigtableInfo: ""
+
+serviceGroups:
+  svg:
+    urlPaths:
+      - "/place/stat-var-group/*"
+      - "/stat-var/*"
+      - "/v1/variable/*"
+      - "/v1/bulk/info/variable-group"
+      - "/v1/bulk/info/variable"
+    replicas: 1
+    resources:
+      memoryRequest: "8G"
+      memoryLimit: "8G"
+    cacheSVG: true
+    nodePool:
+  observation:
+    urlPaths:
+      - "/v2/observation"
+    replicas: 1
+    resources:
+      memoryRequest: "4G"
+      memoryLimit: "4G"
+    nodePool:
+  node:
+    urlPaths:
+      - "/v2/node"
+    replicas: 1
+    resources:
+      memoryRequest: "8G"
+      memoryLimit: "8G"
+    cacheSVG: true
+    nodePool:
+  default:
+    urlPaths:
+      - "/*"
+    replicas: 1
+    resources:
+      memoryRequest: "2G"
+      memoryLimit: "2G"
+    nodePool:
+
+###############################################################################
+# Config for NL
+###############################################################################
+nl:
+  enabled: false
+  image:
+    tag: ""
+  memory: "2G"
+  workers: 1
+  catalog: {}
+  env:
+    default_indexes: []
+    enabled_indexes: []
+    vertex_ai_models: {}
+    enable_reranking: false
+
+###############################################################################
+# Config for Stat Var Groups which is shared between Website and Mixer
+###############################################################################
+svg:
+  blocklistFile: []
+
+###############################################################################
+# Config for NodeJS Server
+###############################################################################
+nodejs:
+  # If nodejs is enabled, must also enable nl.
+  # When enabling the NodeJS server for the first time for a project, need to
+  # update the cluster config by following instructions here: https://github.com/datacommonsorg/website/blob/master/gke/README.md
+  enabled: false
+  image:
+    tag: ""
+  env: "gke"
+  replicas:
+  apiRoot:
+  nodePool:
+
+###############################################################################
+# Config for Cron Testing Job
+###############################################################################
+cronTesting:
+  enabled: false
+  # These are the in-cluster service endpoints that are set during script
+  # deployment runtime.
+  webApiRoot:
+  nodejsRoot:
+  # whether or not sanity tests are enabled
+  enableSanity: true
+  # whether or not adversarial tests are enabled
+  enableAdversarial: true
+  # node pool to use
+  nodePool:
+  # schedule to run the cron tests on
+  schedule:

@@ -1,0 +1,183 @@
+/**
+ * Copyright 2021 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+@import "base_tools";
+@import "stat_var_widget";
+@import "../place/place";
+@import "../table";
+
+#main-pane #plot-container {
+  direction: initial;
+  overflow-y: scroll;
+  padding: 2rem;
+}
+
+#stat-var-explorer h2 {
+  color: var(--secondary);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-transform: none;
+}
+
+#stat-var-explorer a {
+  text-decoration: underline;
+}
+
+#stat-var-explorer .description-text {
+  color: var(--secondary);
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-transform: none;
+}
+
+#stat-var-explorer .highlight-text {
+  color: var(--secondary);
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+#stat-var-explorer .number-column {
+  text-align: right;
+}
+
+#placeholder-container a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+#placeholder-container a:hover {
+  text-decoration: underline;
+}
+
+#plot-container .tool-header {
+  color: #212529;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+#plot-container .tool-description {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.dataset-selector-card {
+  border: 1px solid #dee2e6;
+  border-radius: 16px;
+  overflow: visible;
+  padding: 16px 1px;
+  margin: 12px 0 24px 0;
+}
+
+.dataset-selector-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  justify-content: center;
+}
+
+.dataset-selector-label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0.5rem;
+}
+
+.dataset-selector-custom-input {
+  flex-basis: 400px;
+  flex-grow: 1;
+  font-size: 1rem;
+  height: 100%;
+  margin: 0.5rem;
+}
+
+.dataset-selector-custom-input:focus {
+  outline: none;
+  border: 1.5px solid rgba(0, 0, 0, 0.5);
+  border-radius: 0.25rem;
+  box-shadow: none;
+}
+
+#place-type-summary-section .type-column {
+  width: 30%;
+}
+
+#place-type-summary-section .node-table tr > td:last-of-type,
+.node-table tr > th:last-of-type {
+  width: 50%;
+}
+
+#place-type-summary-section a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+#place-type-summary-section a:hover {
+  text-decoration: underline;
+}
+
+#provenance-summary-section .provenance-summary {
+  margin: 15px 12px;
+}
+
+#provenance-summary-section h4 {
+  font-size: 1rem;
+  margin: 0 0 5px;
+}
+
+#provenance-summary-section .type-column {
+  width: 25%;
+}
+
+#provenance-summary-section .series-key-column {
+  width: 30%;
+}
+
+#provenance-summary-section .dc-aggregate {
+  font-style: italic;
+}
+
+#provenance-summary-section .detail-text {
+  font-size: 0.8rem;
+}
+
+#provenance-summary-section ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#provenance-summary-section li {
+  margin: 0;
+}
+
+#date-range-separator {
+  color: var(--gray);
+  font-weight: bolder;
+}
+
+#select-variable-button {
+  margin-top: 1.5rem;
+}
