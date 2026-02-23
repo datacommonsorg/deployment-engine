@@ -50,9 +50,9 @@ class Config(_base.Config):
       "health_example_data.csv": {
           "dcid": STRING,
           "year": DATE_YEAR,
-          "Percent_Person_WithHealthyVitaminD": NUMBER,
-          "Percent_Person_Vaccinated": NUMBER,
-          "Percent_Person_Sick": NUMBER,
+          "Health_Insights_Percent_Person_WithHealthyVitaminD": NUMBER,
+          "Health_Insights_Percent_Person_Vaccinated": NUMBER,
+          "Health_Insights_Percent_Person_Sick": NUMBER,
       }
   }
 

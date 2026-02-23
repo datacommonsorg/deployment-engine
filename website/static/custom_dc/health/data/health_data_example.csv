@@ -1,4 +1,14 @@
-dcid,year,Percent_Person_WithHealthyVitaminD,Percent_Person_Vaccinated,Percent_Person_Sick
+dcid,year,Health_Insights_Percent_Person_WithHealthyVitaminD,Health_Insights_Percent_Person_Vaccinated,Health_Insights_Percent_Person_Sick
+country/USA,2023,78.7,67.9,5.6
+country/USA,2024,80.9,69.7,5.1
+geoId/06,2023,85.3,74.0,3.9
+geoId/06,2024,87.2,75.7,3.5
+geoId/25,2023,62.5,81.2,4.2
+geoId/25,2024,65.8,83.5,3.8
+geoId/47,2023,68.5,52.8,8.5
+geoId/47,2024,71.2,54.5,8.0
+geoId/48,2023,80.8,62.4,6.7
+geoId/48,2024,82.7,64.1,6.2
 geoId/2507000,2023,62.5,81.2,4.2
 geoId/2507000,2024,65.8,83.5,3.8
 geoId/4835000,2023,78.2,61.5,6.8

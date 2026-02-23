@@ -111,6 +111,7 @@
         <div class="upload-card">
           <h3 class="upload-title">Upload Applicant Data</h3>
           <p class="upload-meta">Supported format: CSV</p>
+          <p class="upload-meta">Maximum file size: 10 MB</p>
           <p class="upload-note">
             Uploaded data powers recruitment insights and forecasts.
             <br><br>
@@ -142,6 +143,7 @@
             </md-outlined-button>
           </div>
           <input type="file" id="applicantFileInput" accept=".csv" class="hidden"
+            data-max-file-size-mb="10"
             onchange="handleFileSelect(event, 'applicant')">
         </div>
 

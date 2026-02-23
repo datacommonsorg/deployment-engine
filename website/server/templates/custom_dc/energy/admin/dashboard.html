@@ -137,6 +137,7 @@ limitations under the License.
           <p class="upload-meta">Choose the type of data you're uploading to ensure proper validation</p>
 
           <p class="upload-meta">Supported format: CSV</p>
+          <p class="upload-meta">Maximum file size: 10 MB</p>
           <p class="upload-note">
             Asset data enables proximity analysis, risk assessment, and compliance tracking.
             <br><br>
@@ -168,6 +169,7 @@ limitations under the License.
             </md-outlined-button>
           </div>
           <input type="file" id="applicantFileInput" accept=".csv" class="hidden"
+            data-max-file-size-mb="10"
             onchange="handleFileSelect(event, 'applicant')">
         </div>
 

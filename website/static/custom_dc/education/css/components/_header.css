@@ -244,7 +244,7 @@
   left: 0;
   right: 0;
   width: 100%;
-  background: var(--md-sys-color-surface);
+  background: #ffffff;
   border-bottom: 1px solid var(--md-sys-color-outline);
   opacity: 0;
   visibility: hidden;

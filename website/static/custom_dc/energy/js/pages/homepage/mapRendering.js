@@ -15,7 +15,7 @@ const datasets = {
   },
   asset: {
     title: 'Private asset locations with regulatory overlap analysis',
-    variable: 'Count_Asset_WithRegulatoryOverlap',
+    variable: 'Energy_Insights_Count_Asset_WithRegulatoryOverlap',
     colors: '#0D47A1 #1565C0 #1E88E5 #42A5F5 #90CAF9',
     childPlaceType: "State",
   },

@@ -76,7 +76,8 @@ RUN pip3 install --upgrade pip setuptools \
     && pip3 install --no-cache-dir -r /workspace/server/requirements.txt \
     && pip3 install --no-cache-dir -r /workspace/torch_requirements.txt --index-url https://download.pytorch.org/whl/cpu \
     && pip3 install --no-cache-dir -r /workspace/nl_server/requirements.txt \
-    && pip3 install --no-cache-dir -r /workspace/import/requirements.txt
+    && pip3 install --no-cache-dir -r /workspace/import/requirements.txt \
+    && pip3 install requests==2.31.0 setuptools==80.9.0
 
 # Copy website app script.
 COPY web_app.py ./web_app.py
@@ -166,6 +167,7 @@ COPY build/cdc_services/run.sh .
 COPY import/simple/ ./import/
 COPY upload_db_configs.py ./upload_db_configs.py
 COPY download_mcf_parser.py ./download_mcf_parser.py
+COPY tools/ ./tools/
 
 # Make script executable.
 RUN chmod +x run.sh

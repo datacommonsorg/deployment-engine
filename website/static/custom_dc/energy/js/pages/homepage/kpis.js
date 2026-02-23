@@ -14,7 +14,7 @@ const KPI_WIDGET_METRICS = {
     },
   },
   highRiskIssues: {
-    name: 'Count_Person_HighRiskIssues',
+    name: 'Energy_Insights_Count_Person_HighRiskIssues',
     threasholds: {
       low: 5000,
       high: 8000,

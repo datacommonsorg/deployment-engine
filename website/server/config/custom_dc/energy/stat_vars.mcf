@@ -1,125 +1,182 @@
-Node: dcid:Count_Person_HighRiskIssues
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+Node: dcid:c/g/Energy_Insights
+typeOf: dcs:StatVarGroup
+name: "Energy Insights"
+specializationOf: dcid:dc/g/Root
+
+Node: dcid:Energy_Insights_Count_Person_HighRiskIssues
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:count
+statType: dcs:measuredValue
 name: "High-risk issues (private, last 30 days)"
+description: "Count of high-risk issues identified in the last 30 days."
+searchDescription: "High-risk issues count"
+searchDescription: "Recent risk issues"
+searchDescription: "Risk assessment count"
+searchDescription: "High-risk problems"
+memberOf: dcid:c/g/Energy_Insights
 
-Node: dcid:Count_Asset_WithRegulatoryOverlap
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Thing
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+Node: dcid:Energy_Insights_Count_Asset_WithRegulatoryOverlap
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Thing
+measuredProperty: dcs:count
+statType: dcs:measuredValue
 name: "Assets with regulatory overlap (private)"
+description: "Count of assets that have regulatory overlap."
+searchDescription: "Regulatory overlap assets"
+searchDescription: "Compliance overlap count"
+searchDescription: "Multi-regulation assets"
+searchDescription: "Regulatory overlap total"
+memberOf: dcid:c/g/Energy_Insights
 
-# =====================================================
-# OIL & GAS LEASE STATISTICAL VARIABLES
-# Used by the Leases tab in the energy dashboard
-# =====================================================
-
-# Total count of oil and gas leases in a geographic area
-Node: dcid:Count_OilGasLease
-typeOf: dcid:StatisticalVariable
+Node: dcid:Energy_Insights_Count_OilGasLease
+typeOf: dcs:StatisticalVariable
 populationType: dcid:OilAndGasLease
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+measuredProperty: dcs:count
+statType: dcs:measuredValue
 name: "Total Oil & Gas Leases"
-description: "Total number of oil and gas leases in the area"
+description: "Total number of oil and gas leases in the area."
+searchDescription: "Oil gas leases total"
+searchDescription: "Total leases count"
+searchDescription: "Oil gas lease number"
+searchDescription: "Lease count"
+memberOf: dcid:c/g/Energy_Insights
 
-# Count of active oil and gas leases
-Node: dcid:Count_OilGasLease_Active
-typeOf: dcid:StatisticalVariable
+Node: dcid:Energy_Insights_Count_OilGasLease_Active
+typeOf: dcs:StatisticalVariable
 populationType: dcid:OilAndGasLease
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+measuredProperty: dcs:count
+statType: dcs:measuredValue
 operationalStatus: dcid:Active
 name: "Active Oil & Gas Leases"
-description: "Number of currently active oil and gas leases"
+description: "Number of currently active oil and gas leases."
+searchDescription: "Active leases count"
+searchDescription: "Operational leases"
+searchDescription: "Active oil gas leases"
+searchDescription: "Current leases"
+memberOf: dcid:c/g/Energy_Insights
 
-# Count of idle oil and gas leases
-Node: dcid:Count_OilGasLease_Idle
-typeOf: dcid:StatisticalVariable
+Node: dcid:Energy_Insights_Count_OilGasLease_Idle
+typeOf: dcs:StatisticalVariable
 populationType: dcid:OilAndGasLease
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+measuredProperty: dcs:count
+statType: dcs:measuredValue
 operationalStatus: dcid:Idle
 name: "Idle Oil & Gas Leases"
-description: "Number of idle oil and gas leases"
+description: "Number of idle oil and gas leases."
+searchDescription: "Idle leases count"
+searchDescription: "Inactive leases"
+searchDescription: "Idle oil gas leases"
+searchDescription: "Non-operational leases"
+memberOf: dcid:c/g/Energy_Insights
 
-# Count of abandoned oil and gas leases
-Node: dcid:Count_OilGasLease_Abandoned
-typeOf: dcid:StatisticalVariable
+Node: dcid:Energy_Insights_Count_OilGasLease_Abandoned
+typeOf: dcs:StatisticalVariable
 populationType: dcid:OilAndGasLease
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+measuredProperty: dcs:count
+statType: dcs:measuredValue
 operationalStatus: dcid:Abandoned
 name: "Abandoned Oil & Gas Leases"
-description: "Number of abandoned oil and gas leases"
+description: "Number of abandoned oil and gas leases."
+searchDescription: "Abandoned leases count"
+searchDescription: "Orphaned leases"
+searchDescription: "Abandoned well sites"
+searchDescription: "Decommissioned leases"
+memberOf: dcid:c/g/Energy_Insights
 
-# Count of wellhead assets
-Node: dcid:Count_OilGasAsset_Wellhead
-typeOf: dcid:StatisticalVariable
+Node: dcid:Energy_Insights_Count_OilGasAsset_Wellhead
+typeOf: dcs:StatisticalVariable
 populationType: dcid:OilAndGasAsset
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+measuredProperty: dcs:count
+statType: dcs:measuredValue
 assetType: dcid:Wellhead
 name: "Wellhead Assets"
-description: "Number of wellhead assets in the area"
+description: "Number of wellhead assets in the area."
+searchDescription: "Wellhead assets count"
+searchDescription: "Well sites total"
+searchDescription: "Wellhead inventory"
+searchDescription: "Wells count"
+memberOf: dcid:c/g/Energy_Insights
 
-# Count of compressor station assets
-Node: dcid:Count_OilGasAsset_CompressorStation
-typeOf: dcid:StatisticalVariable
+Node: dcid:Energy_Insights_Count_OilGasAsset_CompressorStation
+typeOf: dcs:StatisticalVariable
 populationType: dcid:OilAndGasAsset
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+measuredProperty: dcs:count
+statType: dcs:measuredValue
 assetType: dcid:CompressorStation
 name: "Compressor Station Assets"
-description: "Number of compressor station assets in the area"
+description: "Number of compressor station assets in the area."
+searchDescription: "Compressor stations count"
+searchDescription: "Compression facilities"
+searchDescription: "Compressor inventory"
+searchDescription: "Station assets total"
+memberOf: dcid:c/g/Energy_Insights
 
-# Count of pipeline valve assets
-Node: dcid:Count_OilGasAsset_PipelineValve
-typeOf: dcid:StatisticalVariable
+Node: dcid:Energy_Insights_Count_OilGasAsset_PipelineValve
+typeOf: dcs:StatisticalVariable
 populationType: dcid:OilAndGasAsset
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+measuredProperty: dcs:count
+statType: dcs:measuredValue
 assetType: dcid:PipelineValve
 name: "Pipeline Valve Assets"
-description: "Number of pipeline valve assets in the area"
+description: "Number of pipeline valve assets in the area."
+searchDescription: "Pipeline valves count"
+searchDescription: "Valve assets total"
+searchDescription: "Pipeline valve inventory"
+searchDescription: "Valves count"
+memberOf: dcid:c/g/Energy_Insights
 
-# Count of tank battery assets
-Node: dcid:Count_OilGasAsset_TankBattery
-typeOf: dcid:StatisticalVariable
+Node: dcid:Energy_Insights_Count_OilGasAsset_TankBattery
+typeOf: dcs:StatisticalVariable
 populationType: dcid:OilAndGasAsset
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+measuredProperty: dcs:count
+statType: dcs:measuredValue
 assetType: dcid:TankBattery
 name: "Tank Battery Assets"
-description: "Number of tank battery assets in the area"
+description: "Number of tank battery assets in the area."
+searchDescription: "Tank batteries count"
+searchDescription: "Storage tank assets"
+searchDescription: "Tank battery inventory"
+searchDescription: "Battery tanks total"
+memberOf: dcid:c/g/Energy_Insights
 
-# Count of employees working on oil and gas leases
-Node: dcid:Count_Person_OilGasLeaseEmployee
-typeOf: dcid:StatisticalVariable
-populationType: dcid:Person
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+Node: dcid:Energy_Insights_Count_Person_OilGasLeaseEmployee
+typeOf: dcs:StatisticalVariable
+populationType: dcs:Person
+measuredProperty: dcs:count
+statType: dcs:measuredValue
 employment: dcid:OilAndGasLease
 name: "Oil & Gas Lease Employees"
-description: "Number of employees working on oil and gas leases"
+description: "Number of employees working on oil and gas leases."
+searchDescription: "Lease employees count"
+searchDescription: "Oil gas workforce"
+searchDescription: "Lease workers total"
+searchDescription: "Employment count"
+memberOf: dcid:c/g/Energy_Insights
 
-# Last inspection date (encoded as YYYYMMDD integer)
-Node: dcid:Date_LastInspection_OilGasLease
-typeOf: dcid:StatisticalVariable
+Node: dcid:Energy_Insights_Date_LastInspection_OilGasLease
+typeOf: dcs:StatisticalVariable
 populationType: dcid:OilAndGasLease
-measuredProperty: dcid:date
-statType: dcid:measuredValue
+measuredProperty: dcs:date
+statType: dcs:measuredValue
 name: "Last Inspection Date"
-description: "Date of last LDAR inspection (YYYYMMDD format)"
+description: "Date of last LDAR inspection (YYYYMMDD format)."
+searchDescription: "Last inspection date"
+searchDescription: "LDAR inspection date"
+searchDescription: "Recent inspection date"
+searchDescription: "Compliance inspection date"
+memberOf: dcid:c/g/Energy_Insights
 
-# Days since last inspection
-Node: dcid:Count_DaysSinceLastInspection_OilGasLease
-typeOf: dcid:StatisticalVariable
+Node: dcid:Energy_Insights_Count_DaysSinceLastInspection_OilGasLease
+typeOf: dcs:StatisticalVariable
 populationType: dcid:OilAndGasLease
-measuredProperty: dcid:count
-statType: dcid:measuredValue
+measuredProperty: dcs:count
+statType: dcs:measuredValue
 name: "Days Since Last Inspection"
-description: "Number of days since last LDAR inspection"
+description: "Number of days since last LDAR inspection."
+unit: dcs:Days
+searchDescription: "Days since inspection"
+searchDescription: "Inspection overdue days"
+searchDescription: "LDAR inspection gap"
+searchDescription: "Compliance check interval"
+memberOf: dcid:c/g/Energy_Insights

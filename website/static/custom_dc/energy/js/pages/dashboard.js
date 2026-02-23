@@ -23,6 +23,25 @@ const selectedFiles = {
   logo: null
 };
 
+const DEFAULT_MAX_UPLOAD_FILE_SIZE_MB = 10;
+
+function getMaxUploadFileSizeMb() {
+  const fileInput = document.getElementById('applicantFileInput');
+  const configuredLimit = Number(fileInput?.dataset.maxFileSizeMb);
+  if (Number.isFinite(configuredLimit) && configuredLimit > 0) {
+    return configuredLimit;
+  }
+  return DEFAULT_MAX_UPLOAD_FILE_SIZE_MB;
+}
+
+function getMaxUploadFileSizeBytes() {
+  return getMaxUploadFileSizeMb() * 1024 * 1024;
+}
+
+function getMaxUploadFileSizeLabel() {
+  return formatFileSize(getMaxUploadFileSizeBytes());
+}
+
 /**
  * Initialize dashboard functionality
  */
@@ -239,6 +258,12 @@ function handleFileSelect(event, fileType) {
     return;
   }
 
+  if (fileType === 'applicant' && file.size > getMaxUploadFileSizeBytes()) {
+    alert(`File is too large. Maximum file size is ${getMaxUploadFileSizeLabel()}.`);
+    event.target.value = '';
+    return;
+  }
+
   if (fileType === 'logo' && !file.type.startsWith('image/')) {
     alert('Please upload an image file');
     event.target.value = '';
@@ -331,7 +356,13 @@ async function uploadDataFile() {
       body: formData,
     });
 
-    const jsonData = await response.json();
+    let jsonData = {};
+    try {
+      jsonData = await response.json();
+    } catch (parseError) {
+      // 413 responses may be plain text/html from the proxy.
+      jsonData = {};
+    }
 
     // Show upload response message
     const uploadResponseMsg = document.getElementById('uploadResponseMessage');
@@ -352,7 +383,13 @@ async function uploadDataFile() {
 
       if (uploadErrorBlock) {
         uploadErrorBlock.classList.remove('hidden');
-        let errorHtml = `<h4 class="error-title">Errors:</h4><p class="error-item">${jsonData.message}</p>`;
+        const errorMessage = response.status === 413
+          ? `File is too large. Maximum file size is ${getMaxUploadFileSizeLabel()}.`
+          : (jsonData.message || 'An error occurred during upload.');
+        if (response.status === 413) {
+          alert(errorMessage);
+        }
+        let errorHtml = `<h4 class="error-title">Errors:</h4><p class="error-item">${errorMessage}</p>`;
 
         // Display validation errors
         if (jsonData.validation_errors && jsonData.validation_errors.length > 0) {

@@ -82,7 +82,7 @@ const TAB_CONFIG = {
       // The Well ID or Facility Name (e.g., Unit-45B).
       // ---
       // DERIVED: assetid
-      // API Variable: Count_OilGasLease (custom - from leases.csv)
+      // API Variable: Energy_Insights_Count_OilGasLease (custom - from leases.csv)
       // Source: County geoId + total lease count
       // Format: "County-{countyId}-LEASE-{totalLeases}"
       // Fallback (public): "County-{countyId}-ASSET"
@@ -93,10 +93,10 @@ const TAB_CONFIG = {
       // ---
       // CALCULATED: assettype
       // API Variables (custom - from leases.csv):
-      //   - Count_OilGasAsset_Wellhead
-      //   - Count_OilGasAsset_CompressorStation
-      //   - Count_OilGasAsset_PipelineValve
-      //   - Count_OilGasAsset_TankBattery
+      //   - Energy_Insights_Count_OilGasAsset_Wellhead
+      //   - Energy_Insights_Count_OilGasAsset_CompressorStation
+      //   - Energy_Insights_Count_OilGasAsset_PipelineValve
+      //   - Energy_Insights_Count_OilGasAsset_TankBattery
       // Formula:
       // - "Compressor Station" if compressors > wellheads
       // - "Multi-Well Field" if wellheads > 10
@@ -112,10 +112,10 @@ const TAB_CONFIG = {
       // ---
       // CALCULATED: status
       // API Variables (custom - from leases.csv):
-      //   - Count_OilGasLease (total)
-      //   - Count_OilGasLease_Active
-      //   - Count_OilGasLease_Idle
-      //   - Count_OilGasLease_Abandoned
+      //   - Energy_Insights_Count_OilGasLease (total)
+      //   - Energy_Insights_Count_OilGasLease_Active
+      //   - Energy_Insights_Count_OilGasLease_Idle
+      //   - Energy_Insights_Count_OilGasLease_Abandoned
       // Formula:
       // - "Abandoned" if abandonedLeases > activeLeases
       // - "Idle" if idleLeases > activeLeases * 0.5
@@ -140,8 +140,8 @@ const TAB_CONFIG = {
       // Date of the last LDAR (Leak Detection and Repair) sweep.
       // ---
       // API Variables (custom - from leases.csv):
-      //   - Date_LastInspection_OilGasLease (YYYYMMDD format integer)
-      //   - Count_DaysSinceLastInspection_OilGasLease
+      //   - Energy_Insights_Date_LastInspection_OilGasLease (YYYYMMDD format integer)
+      //   - Energy_Insights_Count_DaysSinceLastInspection_OilGasLease
       // Format: "YYYY-MM-DD (Xd ago)"
       // Fallback (public): extractObservationDate() from Count_OilAndGasWell
       "Last Inspection",
@@ -151,11 +151,11 @@ const TAB_CONFIG = {
       // ---
       // CALCULATED: responsible
       // API Variables (custom - from leases.csv):
-      //   - Count_OilGasAsset_Wellhead
-      //   - Count_OilGasAsset_CompressorStation
-      //   - Count_OilGasAsset_PipelineValve
-      //   - Count_OilGasAsset_TankBattery
-      //   - Count_Person_OilGasLeaseEmployee
+      //   - Energy_Insights_Count_OilGasAsset_Wellhead
+      //   - Energy_Insights_Count_OilGasAsset_CompressorStation
+      //   - Energy_Insights_Count_OilGasAsset_PipelineValve
+      //   - Energy_Insights_Count_OilGasAsset_TankBattery
+      //   - Energy_Insights_Count_Person_OilGasLeaseEmployee
       // Format: "{totalAssets} assets, {employees} employees"
       // Fallback (public): Count_OilAndGasWell + Count_PowerPlant, Count_Person_Employed_NAICSMining
       "Responsible Person",
@@ -516,27 +516,27 @@ const RowBuilders = {
   async leases(counties) {
     // Try custom data first
     const customData = await ApiService.fetchObservations([
-      "Count_OilGasLease", "Count_OilGasLease_Active", "Count_OilGasLease_Idle", "Count_OilGasLease_Abandoned",
-      "Count_OilGasAsset_Wellhead", "Count_OilGasAsset_CompressorStation", "Count_OilGasAsset_PipelineValve",
-      "Count_OilGasAsset_TankBattery", "Count_Person_OilGasLeaseEmployee",
-      "Date_LastInspection_OilGasLease", "Count_DaysSinceLastInspection_OilGasLease"
+      "Energy_Insights_Count_OilGasLease", "Energy_Insights_Count_OilGasLease_Active", "Energy_Insights_Count_OilGasLease_Idle", "Energy_Insights_Count_OilGasLease_Abandoned",
+      "Energy_Insights_Count_OilGasAsset_Wellhead", "Energy_Insights_Count_OilGasAsset_CompressorStation", "Energy_Insights_Count_OilGasAsset_PipelineValve",
+      "Energy_Insights_Count_OilGasAsset_TankBattery", "Energy_Insights_Count_Person_OilGasLeaseEmployee",
+      "Energy_Insights_Date_LastInspection_OilGasLease", "Energy_Insights_Count_DaysSinceLastInspection_OilGasLease"
     ], counties, "");
 
     const rows = counties.flatMap(geoId => {
       const get = (varName) => DataExtractor.getValue(customData.byVariable?.[varName], geoId);
-      const total = get("Count_OilGasLease");
+      const total = get("Energy_Insights_Count_OilGasLease");
       if (!total) return [];
 
-      const active = get("Count_OilGasLease_Active");
-      const idle = get("Count_OilGasLease_Idle");
-      const abandoned = get("Count_OilGasLease_Abandoned");
-      const wellheads = get("Count_OilGasAsset_Wellhead");
-      const compressors = get("Count_OilGasAsset_CompressorStation");
-      const valves = get("Count_OilGasAsset_PipelineValve");
-      const tanks = get("Count_OilGasAsset_TankBattery");
-      const employees = get("Count_Person_OilGasLeaseEmployee");
-      const inspDate = get("Date_LastInspection_OilGasLease");
-      const daysSince = get("Count_DaysSinceLastInspection_OilGasLease");
+      const active = get("Energy_Insights_Count_OilGasLease_Active");
+      const idle = get("Energy_Insights_Count_OilGasLease_Idle");
+      const abandoned = get("Energy_Insights_Count_OilGasLease_Abandoned");
+      const wellheads = get("Energy_Insights_Count_OilGasAsset_Wellhead");
+      const compressors = get("Energy_Insights_Count_OilGasAsset_CompressorStation");
+      const valves = get("Energy_Insights_Count_OilGasAsset_PipelineValve");
+      const tanks = get("Energy_Insights_Count_OilGasAsset_TankBattery");
+      const employees = get("Energy_Insights_Count_Person_OilGasLeaseEmployee");
+      const inspDate = get("Energy_Insights_Date_LastInspection_OilGasLease");
+      const daysSince = get("Energy_Insights_Count_DaysSinceLastInspection_OilGasLease");
 
       const assetType = compressors > wellheads ? "Compressor Station" :
         wellheads > 10 ? "Multi-Well Field" :

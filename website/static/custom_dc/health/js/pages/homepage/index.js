@@ -45,8 +45,8 @@ const CONFIG = {
 };
 
 const HEALTH_VARIABLES = {
-  LINE_CHART: 'Percent_Person_WithHealthyVitaminD Percent_Person_Vaccinated Percent_Person_Sick Percent_Person_WithAsthma Percent_Person_WithDiabetes Percent_Person_WithHighBloodPressure Percent_Person_Smoking Percent_Person_PhysicalInactivity',
-  BAR_CHART: 'Percent_Person_WithHealthyVitaminD Percent_Person_Vaccinated Percent_Person_Sick Percent_Person_WithDiabetes Percent_Person_WithHighBloodPressure Percent_Person_WithAsthma Percent_Person_Smoking Percent_Person_PhysicalInactivity',
+  LINE_CHART: 'Health_Insights_Percent_Person_WithHealthyVitaminD Health_Insights_Percent_Person_Vaccinated Health_Insights_Percent_Person_Sick Percent_Person_WithAsthma Percent_Person_WithDiabetes Percent_Person_WithHighBloodPressure Percent_Person_Smoking Percent_Person_PhysicalInactivity',
+  BAR_CHART: 'Health_Insights_Percent_Person_WithHealthyVitaminD Health_Insights_Percent_Person_Vaccinated Health_Insights_Percent_Person_Sick Percent_Person_WithDiabetes Percent_Person_WithHighBloodPressure Percent_Person_WithAsthma Percent_Person_Smoking Percent_Person_PhysicalInactivity',
   COLORS: '#FFD700 #4CAF50 #F44336 #8B0000 #B22222 #DC143C #F4A460 #FFB6C1'
 };
 
@@ -676,9 +676,9 @@ async function getLatestDateFromCSV(place, variable, apiRoot) {
 
     // List of custom variables that should be in the CSV
     const customVariables = [
-      'Percent_Person_WithHealthyVitaminD',
-      'Percent_Person_Vaccinated',
-      'Percent_Person_Sick'
+      'Health_Insights_Percent_Person_WithHealthyVitaminD',
+      'Health_Insights_Percent_Person_Vaccinated',
+      'Health_Insights_Percent_Person_Sick'
     ];
 
     // Only try CSV for custom variables
@@ -908,9 +908,9 @@ async function updateMetricsUpdatedDate() {
 
     // List of custom variables that need custom DC API
     const customVariables = [
-      'Percent_Person_WithHealthyVitaminD',
-      'Percent_Person_Vaccinated',
-      'Percent_Person_Sick'
+      'Health_Insights_Percent_Person_WithHealthyVitaminD',
+      'Health_Insights_Percent_Person_Vaccinated',
+      'Health_Insights_Percent_Person_Sick'
     ];
 
     // Ensure all custom variable widgets have apiRoot set

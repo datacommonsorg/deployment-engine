@@ -16,6 +16,9 @@
 
 import { fetchData, renderDomainInfo } from '../utils/api.js';
 
+const FEEDBACK_FORM_BASE_URL =
+    'https://docs.google.com/forms/d/e/1FAIpQLSdo_IpV4rlQzDcSZOBOnXLlJDSFv_lFU7j8m2_i1ctRCP3HGw/viewform';
+
 /**
  * Initialize header functionality
  * @param {Object} options - Configuration options
@@ -42,6 +45,9 @@ export function initializeHeader(options = {}) {
 
   // Initialize header navigation
   initializeHeaderNavigation();
+
+  // Prefill feedback form with the current page URL.
+  initializeFeedbackLink();
 }
 
 /**
@@ -170,4 +176,17 @@ function initializeHeaderNavigation() {
       window.location.href = url;
     }
   });
+}
+
+/**
+ * Prefill feedback link with the current page URL.
+ */
+function initializeFeedbackLink() {
+  const feedbackLink = document.getElementById('feedbackLink');
+  if (!feedbackLink) return;
+
+  const feedbackFormUrl = new URL(FEEDBACK_FORM_BASE_URL);
+  feedbackFormUrl.searchParams.set('usp', 'pp_url');
+  feedbackFormUrl.searchParams.set('entry.871991796', window.location.href);
+  feedbackLink.href = feedbackFormUrl.toString();
 }

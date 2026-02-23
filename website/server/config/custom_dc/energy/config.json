@@ -10,20 +10,7 @@
     }
   },
   "variables": {
-    "Count_Person_IsInternetUser_PerCapita": {
-      "name": "Internet Users Per Capita",
-      "description": "Percentage of population with internet access.",
-      "searchDescriptions": [
-        "Internet users per capita",
-        "Internet access rate",
-        "Internet penetration",
-        "Internet adoption percentage"
-      ],
-      "unit": "Percent",
-      "scalingFactor": "100",
-      "group": "Energy Insights"
-    },
-    "Count_Person_HighRiskIssues": {
+    "Energy_Insights_Count_Person_HighRiskIssues": {
       "name": "High-risk issues (private, last 30 days)",
       "description": "Count of high-risk issues identified in the last 30 days.",
       "searchDescriptions": [
@@ -34,7 +21,7 @@
       ],
       "group": "Energy Insights"
     },
-    "Count_Asset_WithRegulatoryOverlap": {
+    "Energy_Insights_Count_Asset_WithRegulatoryOverlap": {
       "name": "Assets with regulatory overlap (private)",
       "description": "Count of assets that have regulatory overlap.",
       "searchDescriptions": [
@@ -45,7 +32,7 @@
       ],
       "group": "Energy Insights"
     },
-    "Count_OilGasLease": {
+    "Energy_Insights_Count_OilGasLease": {
       "name": "Total Oil & Gas Leases",
       "description": "Total number of oil and gas leases in the area.",
       "searchDescriptions": [
@@ -56,7 +43,7 @@
       ],
       "group": "Energy Insights"
     },
-    "Count_OilGasLease_Active": {
+    "Energy_Insights_Count_OilGasLease_Active": {
       "name": "Active Oil & Gas Leases",
       "description": "Number of currently active oil and gas leases.",
       "searchDescriptions": [
@@ -67,7 +54,7 @@
       ],
       "group": "Energy Insights"
     },
-    "Count_OilGasLease_Idle": {
+    "Energy_Insights_Count_OilGasLease_Idle": {
       "name": "Idle Oil & Gas Leases",
       "description": "Number of idle oil and gas leases.",
       "searchDescriptions": [
@@ -78,7 +65,7 @@
       ],
       "group": "Energy Insights"
     },
-    "Count_OilGasLease_Abandoned": {
+    "Energy_Insights_Count_OilGasLease_Abandoned": {
       "name": "Abandoned Oil & Gas Leases",
       "description": "Number of abandoned oil and gas leases.",
       "searchDescriptions": [
@@ -89,7 +76,7 @@
       ],
       "group": "Energy Insights"
     },
-    "Count_OilGasAsset_Wellhead": {
+    "Energy_Insights_Count_OilGasAsset_Wellhead": {
       "name": "Wellhead Assets",
       "description": "Number of wellhead assets in the area.",
       "searchDescriptions": [
@@ -100,7 +87,7 @@
       ],
       "group": "Energy Insights"
     },
-    "Count_OilGasAsset_CompressorStation": {
+    "Energy_Insights_Count_OilGasAsset_CompressorStation": {
       "name": "Compressor Station Assets",
       "description": "Number of compressor station assets in the area.",
       "searchDescriptions": [
@@ -111,7 +98,7 @@
       ],
       "group": "Energy Insights"
     },
-    "Count_OilGasAsset_PipelineValve": {
+    "Energy_Insights_Count_OilGasAsset_PipelineValve": {
       "name": "Pipeline Valve Assets",
       "description": "Number of pipeline valve assets in the area.",
       "searchDescriptions": [
@@ -122,7 +109,7 @@
       ],
       "group": "Energy Insights"
     },
-    "Count_OilGasAsset_TankBattery": {
+    "Energy_Insights_Count_OilGasAsset_TankBattery": {
       "name": "Tank Battery Assets",
       "description": "Number of tank battery assets in the area.",
       "searchDescriptions": [
@@ -133,7 +120,7 @@
       ],
       "group": "Energy Insights"
     },
-    "Count_Person_OilGasLeaseEmployee": {
+    "Energy_Insights_Count_Person_OilGasLeaseEmployee": {
       "name": "Oil & Gas Lease Employees",
       "description": "Number of employees working on oil and gas leases.",
       "searchDescriptions": [
@@ -144,7 +131,7 @@
       ],
       "group": "Energy Insights"
     },
-    "Date_LastInspection_OilGasLease": {
+    "Energy_Insights_Date_LastInspection_OilGasLease": {
       "name": "Last Inspection Date",
       "description": "Date of last LDAR inspection (YYYYMMDD format).",
       "searchDescriptions": [
@@ -155,7 +142,7 @@
       ],
       "group": "Energy Insights"
     },
-    "Count_DaysSinceLastInspection_OilGasLease": {
+    "Energy_Insights_Count_DaysSinceLastInspection_OilGasLease": {
       "name": "Days Since Last Inspection",
       "description": "Number of days since last LDAR inspection.",
       "searchDescriptions": [
@@ -168,7 +155,6 @@
       "group": "Energy Insights"
     }
   },
-  "groupStatVarsByProperty": true,
   "sources": {
     "Energy Insights": {
       "url": "",

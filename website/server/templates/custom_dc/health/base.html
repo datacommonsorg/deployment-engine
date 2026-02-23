@@ -210,7 +210,7 @@ content - main page content
           </div>
 
           <!-- Feedback Link -->
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdo_IpV4rlQzDcSZOBOnXLlJDSFv_lFU7j8m2_i1ctRCP3HGw/viewform?usp=pp_url&entry.871991796=/" class="nav-link">Feedback</a>
+          <a id="feedbackLink" href="https://docs.google.com/forms/d/e/1FAIpQLSdo_IpV4rlQzDcSZOBOnXLlJDSFv_lFU7j8m2_i1ctRCP3HGw/viewform?usp=pp_url&entry.871991796=/" class="nav-link">Feedback</a>
 
           {% if session.get('username') %}
           <div class="user-avatar">{{ session.get('username').upper()[0] + session.get('username').upper()[1] }}</div>

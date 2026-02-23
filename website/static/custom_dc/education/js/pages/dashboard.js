@@ -167,6 +167,25 @@ const selectedFiles = {
   logo: null
 };
 
+const DEFAULT_MAX_UPLOAD_FILE_SIZE_MB = 10;
+
+function getMaxUploadFileSizeMb() {
+  const fileInput = document.getElementById('applicantFileInput');
+  const configuredLimit = Number(fileInput?.dataset.maxFileSizeMb);
+  if (Number.isFinite(configuredLimit) && configuredLimit > 0) {
+    return configuredLimit;
+  }
+  return DEFAULT_MAX_UPLOAD_FILE_SIZE_MB;
+}
+
+function getMaxUploadFileSizeBytes() {
+  return getMaxUploadFileSizeMb() * 1024 * 1024;
+}
+
+function getMaxUploadFileSizeLabel() {
+  return formatFileSize(getMaxUploadFileSizeBytes());
+}
+
 function handleFileSelect(event, fileType) {
   const file = event.target.files[0];
   if (!file) return;
@@ -174,6 +193,12 @@ function handleFileSelect(event, fileType) {
   // Validate file type
   if (fileType === 'applicant' && !file.name.endsWith('.csv')) {
     alert('Please upload a CSV file');
+    event.target.value = '';
+    return;
+  }
+
+  if (fileType === 'applicant' && file.size > getMaxUploadFileSizeBytes()) {
+    alert(`File is too large. Maximum file size is ${getMaxUploadFileSizeLabel()}.`);
     event.target.value = '';
     return;
   }
@@ -238,7 +263,13 @@ async function uploadDataFile() {
     body: formData,
   });
 
-  const json_data = await response.json();
+  let json_data = {};
+  try {
+    json_data = await response.json();
+  } catch (parseError) {
+    // 413 responses may be plain text/html from the proxy.
+    json_data = {};
+  }
 
   // Show the response message container
   document.getElementById('uploadResponseMessage').classList.remove('hidden');
@@ -249,7 +280,13 @@ async function uploadDataFile() {
     document.getElementById('uploadStatusMessage').textContent = `Upload failed for "${selectedFiles.applicant?.name ?? 'file'}"`;
 
     document.getElementById('uploadErrorBlock').classList.remove('hidden');
-    let errorHtml = `<h4 class="error-title">Errors:</h4><p class="error-item">${json_data.message}</p>`;
+    const errorMessage = response.status === 413
+      ? `File is too large. Maximum file size is ${getMaxUploadFileSizeLabel()}.`
+      : (json_data.message || 'An error occurred during upload.');
+    if (response.status === 413) {
+      alert(errorMessage);
+    }
+    let errorHtml = `<h4 class="error-title">Errors:</h4><p class="error-item">${errorMessage}</p>`;
 
     // Display validation errors (failed lines) if present
     if (json_data.validation_errors && json_data.validation_errors.length > 0) {

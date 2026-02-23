@@ -1,6 +1,7 @@
 Node: dcid:Recruitment_Insights_Applicants
 typeOf: dcs:StatisticalVariable
 name: "Applicants"
+description: "Total number of applicants."
 populationType: dcs:Person
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -8,6 +9,7 @@ statType: dcs:measuredValue
 Node: dcid:Recruitment_Insights_Accepted_Enrollments
 typeOf: dcs:StatisticalVariable
 name: "Accepted Enrollments"
+description: "Total number of accepted enrollments for the selected year."
 populationType: dcs:Person
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -15,6 +17,7 @@ statType: dcs:measuredValue
 Node: dcid:Recruitment_Insights_Opportunity_Score
 typeOf: dcs:StatisticalVariable
 name: "Score"
+description: "Composite opportunity score (0-100)."
 populationType: dcs:Place
 measuredProperty: dcs:index
 statType: dcs:measuredValue
@@ -22,6 +25,7 @@ statType: dcs:measuredValue
 Node: dcid:Recruitment_Insights_Household_Income
 typeOf: dcs:StatisticalVariable
 name: "Income"
+description: "Average household income (USD)."
 populationType: dcs:Household
 measuredProperty: dcs:income
 statType: dcs:meanValue
@@ -30,6 +34,7 @@ unit: dcs:USDollar
 Node: dcid:Recruitment_Insights_High_Opportunity_Markets
 typeOf: dcs:StatisticalVariable
 name: "High Opportunity Markets"
+description: "Count KPI (typically for country)."
 populationType: dcs:Place
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -37,6 +42,7 @@ statType: dcs:measuredValue
 Node: dcid:Recruitment_Insights_Avg_Applicants_Per_Region
 typeOf: dcs:StatisticalVariable
 name: "Avg Applicants Per Region"
+description: "Mean number of applicants across regions (typically for country)."
 populationType: dcs:Place
 measuredProperty: dcs:count
 statType: dcs:meanValue
@@ -44,6 +50,7 @@ statType: dcs:meanValue
 Node: dcid:Recruitment_Insights_Applicants_Per_Capita
 typeOf: dcs:StatisticalVariable
 name: "Applicants Per Capita"
+description: "Applicants per capita."
 populationType: dcs:Person
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -51,6 +58,7 @@ statType: dcs:measuredValue
 Node: dcid:Recruitment_Insights_Is_High_Opportunity_Region
 typeOf: dcs:StatisticalVariable
 name: "Is High Opportunity Region"
+description: "1 if region is classified as high-opportunity for the selected year, else 0."
 populationType: dcs:Place
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -58,6 +66,7 @@ statType: dcs:measuredValue
 Node: dcid:Recruitment_Insights_Is_Declining_Interest_Region
 typeOf: dcs:StatisticalVariable
 name: "Is Declining Interest Region"
+description: "1 if region shows declining interest for the selected year, else 0."
 populationType: dcs:Place
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -65,6 +74,7 @@ statType: dcs:measuredValue
 Node: dcid:Recruitment_Insights_High_Opportunity_Regions_Count
 typeOf: dcs:StatisticalVariable
 name: "High Opportunity Regions Count"
+description: "Count of regions classified as high-opportunity for the selected year."
 populationType: dcs:Place
 measuredProperty: dcs:count
 statType: dcs:measuredValue
@@ -72,6 +82,7 @@ statType: dcs:measuredValue
 Node: dcid:Recruitment_Insights_Declining_Interest_Regions_Count
 typeOf: dcs:StatisticalVariable
 name: "Declining Interest Regions Count"
+description: "Count of regions classified as declining interest for the selected year."
 populationType: dcs:Place
 measuredProperty: dcs:count
 statType: dcs:measuredValue

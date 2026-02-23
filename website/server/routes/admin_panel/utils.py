@@ -1,4 +1,6 @@
 from io import BytesIO
+import json
+import logging
 import os
 from pathlib import Path
 
@@ -56,6 +58,24 @@ def upload_file_to_storage(INPUT_DIR: str, blob_location,
       f.write(file_content.read())
 
 
+def file_exists_in_storage(input_dir: str, blob_location: str) -> bool:
+  """Check if a file exists in GCS or local storage."""
+  if is_gcs_path(input_dir):
+    client = storage.Client()
+
+    bucket_name, _ = get_path_parts(input_dir)
+
+    bucket = client.bucket(bucket_name)
+    blob = bucket.blob(blob_location)
+
+    return blob.exists()
+  else:
+    local_base_folder_loc = input_dir.rsplit('/', 1)[0]
+    filepath = os.path.join(local_base_folder_loc, blob_location)
+
+    return os.path.exists(filepath)
+
+
 def delete_file_from_storage(INPUT_DIR: str, blob_location: str) -> bool:
   """Delete a file from GCS or local storage. Returns True if deleted."""
   if is_gcs_path(INPUT_DIR):
@@ -82,20 +102,38 @@ def delete_file_from_storage(INPUT_DIR: str, blob_location: str) -> bool:
     return False
 
 
+def _get_input_csv_filenames(configs_location: Path) -> set:
+  """Return the set of CSV filenames declared in config.json inputFiles."""
+  config_path = configs_location / 'config.json'
+  if not config_path.exists():
+    return set()
+  with open(config_path) as f:
+    config = json.load(f)
+  return set(config.get('inputFiles', {}).keys())
+
+
 def upload_db_configs(cfg):
   """ Function for uploading default configs """
 
   configs_location = Path(
       __file__).resolve().parent.parent.parent / f'config/custom_dc/{cfg.ENV}/'
-  for cfg_file in os.listdir(configs_location):
-    cfg_file_bytes = BytesIO()
-    cfg_file_bytes.write(Path(configs_location / cfg_file).read_bytes())
-    cfg_file_bytes.seek(0)
 
+  csv_filenames = _get_input_csv_filenames(configs_location)
+
+  for cfg_file in os.listdir(configs_location):
     blob_location = f"{INPUT_DIR.rsplit('/', 1)[1]}/{cfg_file}"
 
     if is_gcs_path(INPUT_DIR):
       _, blob_name = get_path_parts(INPUT_DIR)
       blob_location = f'{blob_name}/{cfg_file}'
+
+    if cfg_file in csv_filenames and file_exists_in_storage(INPUT_DIR,
+                                                            blob_location):
+      logging.info('Skipping upload of %s: already exists in storage', cfg_file)
+      continue
+
+    cfg_file_bytes = BytesIO()
+    cfg_file_bytes.write(Path(configs_location / cfg_file).read_bytes())
+    cfg_file_bytes.seek(0)
 
     upload_file_to_storage(INPUT_DIR, blob_location, cfg_file_bytes)
