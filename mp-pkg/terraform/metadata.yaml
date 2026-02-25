@@ -1,0 +1,141 @@
+apiVersion: blueprints.cloud.google.com/v1alpha1
+kind: BlueprintMetadata
+metadata:
+  name: datacommons-marketplace
+  annotations:
+    config.kubernetes.io/local-config: "true"
+spec:
+  info:
+    title: Data Commons Accelerator
+    source: {}
+    actuationTool:
+      flavor: Terraform
+      version: ">= 1.5.7"
+    description: {}
+  content:
+    subBlueprints:
+      - name: cloudsql
+        location: modules/cloudsql
+      - name: gcs-bucket
+        location: modules/gcs-bucket
+      - name: k8s-secrets
+        location: modules/k8s-secrets
+      - name: maps-api-keys
+        location: modules/maps-api-keys
+  interfaces:
+    variables:
+      - name: goog_cm_deployment_name
+        description: Deployment name for the Data Commons Accelerator solution (used by GCP Marketplace for tracking and avoiding resource name collisions)
+        varType: string
+        required: true
+      - name: project_id
+        description: GCP project ID where Data Commons Accelerator will be deployed
+        varType: string
+        required: true
+      - name: create_new_cluster
+        description: Create a new GKE cluster with VPC networking.
+        varType: bool
+        defaultValue: true
+      - name: region
+        description: GCP region for new cluster and resources (e.g., us-central1). Only used when create_new_cluster is true.
+        varType: string
+        defaultValue: us-central1
+      - name: gke_cluster_name
+        description: Name of an existing GKE cluster. Only used when create_new_cluster is false.
+        varType: string
+        defaultValue: ""
+      - name: gke_cluster_location
+        description: Location (region or zone) of the existing GKE cluster. Only used when create_new_cluster is false.
+        varType: string
+        defaultValue: ""
+      - name: namespace
+        description: Kubernetes namespace for Data Commons Accelerator deployment. Defaults to the deployment name (goog_cm_deployment_name) if not provided.
+        varType: string
+        defaultValue: ""
+      - name: create_namespace
+        description: Create new Kubernetes namespace. Set to false if namespace already exists in the cluster.
+        varType: bool
+        defaultValue: true
+      - name: cloudsql_instance_name_override
+        description: Override CloudSQL instance name (uses generated name with random suffix if not specified)
+        varType: string
+        defaultValue: ""
+      - name: gcs_bucket_name_override
+        description: Override GCS bucket name (uses generated name with random suffix if not specified)
+        varType: string
+        defaultValue: ""
+      - name: service_account_name_override
+        description: Override GCP service account name (uses generated name with random suffix if not specified)
+        varType: string
+        defaultValue: ""
+      - name: dc_api_key
+        description: Data Commons API key for accessing Data Commons APIs
+        varType: string
+        required: true
+      - name: app_replicas
+        description: Number of replicas for the Data Commons Accelerator application deployment
+        varType: number
+        defaultValue: 1
+      - name: resource_tier
+        description: Resource allocation tier controlling application pod resources and CloudSQL database sizing (small, medium, large)
+        varType: string
+        defaultValue: medium
+      - name: enable_natural_language
+        description: Enable natural language query features
+        varType: bool
+        defaultValue: true
+      - name: enable_data_sync
+        description: Enable automatic synchronization of custom data from GCS bucket to CloudSQL database
+        varType: bool
+        defaultValue: true
+      - name: flask_env
+        description: Data Commons domain template (pre-built configurations for specific domains)
+        varType: string
+        defaultValue: health
+      - name: cdc_services_image_repo
+        description: Container image repository for CDC Services (populated by GCP Marketplace)
+        varType: string
+        defaultValue: ""
+      - name: cdc_services_image_tag
+        description: Container image tag for CDC Services (populated by GCP Marketplace)
+        varType: string
+        defaultValue: ""
+      - name: data_image_repo
+        description: Container image repository for Data service (populated by GCP Marketplace)
+        varType: string
+        defaultValue: ""
+      - name: data_image_tag
+        description: Container image tag for Data service (populated by GCP Marketplace)
+        varType: string
+        defaultValue: ""
+      - name: helm_chart_repo
+        description: Helm chart repository URL (populated by GCP Marketplace)
+        varType: string
+        defaultValue: ""
+      - name: helm_chart_name
+        description: Helm chart name (populated by GCP Marketplace)
+        varType: string
+        defaultValue: datacommons
+      - name: helm_chart_version
+        description: Helm chart version (populated by GCP Marketplace)
+        varType: string
+        defaultValue: ""
+    outputs:
+      - name: cloud_shell_access
+        description: "Cloud Shell quick access: GKE Console > cluster > Connect > Run in Cloud Shell, then run the port-forward command"
+      - name: gcs_bucket_url
+        description: GCS bucket URL (gs://<bucket_name>)
+      - name: kubectl_configure
+        description: Command to configure kubectl for your GKE cluster
+      - name: namespace
+        description: Kubernetes namespace where DataCommons is deployed
+      - name: port_forward
+        description: Port-forward command to access Data Commons locally (with auto-retry)
+      - name: retrieve_admin_credentials
+        description: Commands to retrieve admin panel credentials (username and password)
+      - name: upload_data
+        description: Command to upload custom data to GCS bucket
+      - name: verify_pods
+        description: Command to verify Data Commons pods are running
+      - name: view_logs
+        description: Command to view application logs

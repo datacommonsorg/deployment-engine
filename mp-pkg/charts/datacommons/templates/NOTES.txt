@@ -1,0 +1,85 @@
+# Copyright 2025 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+**********************************************************************
+*                                                                    *
+*  Data Commons has been successfully deployed!                      *
+*                                                                    *
+**********************************************************************
+
+Your Data Commons application is now running in the {{ .Release.Namespace }} namespace.
+
+## Quick Status Check
+
+To verify your deployment:
+
+  kubectl get pods -n {{ .Release.Namespace }}
+  kubectl get service {{ include "datacommons.fullname" . }} -n {{ .Release.Namespace }}
+  kubectl get application {{ .Release.Name }} -n {{ .Release.Namespace }}
+
+## Accessing the Application
+
+The Data Commons service is running on ClusterIP. To access it:
+
+### Option 1: Port Forward (for testing)
+
+  until kubectl port-forward svc/{{ include "datacommons.fullname" . }} 8080:8080 -n {{ .Release.Namespace }}; do
+    echo "Port-forward crashed. Respawning..." >&2
+    sleep 1
+  done
+
+Then open http://localhost:8080 in your browser.
+
+### Option 2: Quick Access via Cloud Shell (recommended)
+
+For the fastest way to access Data Commons:
+
+1. Go to GKE Console: https://console.cloud.google.com/kubernetes/list
+2. Click your cluster name
+3. Click the three-dot menu (more options) next to your cluster
+4. Select "Connect" and click "Run in Cloud Shell"
+5. Once Cloud Shell connects, run:
+
+   until kubectl port-forward svc/{{ include "datacommons.fullname" . }} 8080:8080 -n {{ .Release.Namespace }}; do
+     echo "Port-forward crashed. Respawning..." >&2
+     sleep 1
+   done
+
+6. Click "Web Preview" (top-right toolbar) > "Preview on port 8080"
+
+### Option 3: Configure Ingress (recommended for production)
+
+This chart does NOT create ingress resources. Create your own Ingress or Gateway:
+See more: https://docs.cloud.google.com/kubernetes-engine/docs/how-to/exposing-apps
+
+## Monitoring
+
+View application logs:
+
+  kubectl logs -l app=datacommons -n {{ .Release.Namespace }} --tail=100 -f
+
+Monitor pod health:
+
+  kubectl describe pod -l app=datacommons -n {{ .Release.Namespace }}
+
+## Troubleshooting
+
+If pods are not starting:
+1. Check events: kubectl describe pod -l app=datacommons -n {{ .Release.Namespace }}
+2. Verify secrets exist: kubectl get secret {{ .Values.existingSecret }} -n {{ .Release.Namespace }}
+3. Check Workload Identity: kubectl get serviceaccount {{ include "datacommons.serviceAccountName" . }} -n {{ .Release.Namespace }} -o yaml
+
+For more information, see: https://docs.datacommons.org/
+
+**********************************************************************
