@@ -55,7 +55,7 @@ data:
   GCP_PROJECT_ID: {{ .Values.global.projectId | quote }}
   {{- end }}
 
-  # Domain Template
+  # Sample
   FLASK_ENV: {{ .Values.config.flaskEnv | quote }}
 
   # Mixer Settings

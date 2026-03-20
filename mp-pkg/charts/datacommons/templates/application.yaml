@@ -36,7 +36,7 @@ spec:
       - Integration with Google Cloud SQL for data storage
       - Scalable Kubernetes-native architecture
       - Support for custom data imports from GCS
-      - Pre-built domain templates (Education, Health, Energy)
+      - Pre-built samples (Education, Health, Energy, Custom)
     links:
       - description: "Data Commons Documentation"
         url: "https://docs.datacommons.org/"

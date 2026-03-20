@@ -89,7 +89,7 @@ spec:
         varType: bool
         defaultValue: true
       - name: flask_env
-        description: Data Commons domain template (pre-built configurations for specific domains)
+        description: Data Commons sample (pre-built configurations for specific domains)
         varType: string
         defaultValue: health
       - name: cdc_services_image_repo

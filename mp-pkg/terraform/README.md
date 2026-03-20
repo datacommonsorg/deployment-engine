@@ -132,7 +132,7 @@ CloudSQL uses private IP connectivity via Private Service Access (PSA). A /20 IP
 | helm_chart_name | Helm chart name (populated by GCP Marketplace) | string | `"datacommons"` | no |
 | app_replicas | Number of replicas for the Data Commons Accelerator application deployment | number | `1` | no |
 | resource_tier | Resource allocation tier for the application (small, medium, large). Also controls CloudSQL machine tier and high availability. | string | `"medium"` | no |
-| flask_env | Data Commons domain template (health, education, energy) | string | `"health"` | no |
+| flask_env | Data Commons sample (health, education, energy, custom) | string | `"health"` | no |
 | dc_api_key | Data Commons API key for accessing Data Commons APIs | string | n/a | yes |
 | enable_natural_language | Enable natural language query features | bool | `true` | no |
 | enable_data_sync | Enable automatic synchronization of custom data from GCS bucket to CloudSQL database | bool | `true` | no |

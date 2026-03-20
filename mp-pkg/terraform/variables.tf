@@ -188,13 +188,13 @@ variable "enable_data_sync" {
 }
 
 variable "flask_env" {
-  description = "Data Commons domain template (pre-built configurations for specific domains)"
+  description = "Data Commons sample (pre-built configurations for specific domains)"
   type        = string
   default     = "health"
 
   validation {
-    condition     = contains(["health", "education", "energy"], var.flask_env)
-    error_message = "Domain template must be one of: health, education, energy."
+    condition     = contains(["health", "education", "energy", "custom"], var.flask_env)
+    error_message = "Sample must be one of: health, education, energy, custom."
   }
 }
 

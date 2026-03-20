@@ -29,7 +29,7 @@ The deployment form has **5 fields** across **2 sections**. A new GKE cluster is
 | Field | Default | Description |
 |-------|---------|-------------|
 | **Resource Tier** | Medium | Controls how much CPU and memory the application gets, and the size of the database |
-| **Domain Template** | Health | Pre-built configuration optimized for your domain |
+| **Samples** | Health | Pre-built configuration optimized for your domain |
 
 ### Resource Tier
 
@@ -39,15 +39,16 @@ The deployment form has **5 fields** across **2 sections**. A new GKE cluster is
 | Medium (recommended) | 4 GB | 2 cores | 2 | Standard | No |
 | Large | 8 GB | 4 cores | 3 | Large | Yes |
 
-### Domain Template
+### Samples
 
 | Option | Best for |
 |--------|----------|
 | Health | Health and epidemiology data |
 | Education | School, enrollment, and outcomes data |
 | Energy | Energy consumption and generation data |
+| Custom | Custom data configuration with no pre-built datasets |
 
-You can customize the template after deployment.
+You can customize the sample after deployment.
 
 ---
 

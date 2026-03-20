@@ -182,7 +182,7 @@ This section walks through deploying Data Commons Accelerator via GCP Marketplac
 
 ### Step 2: Complete the Deployment Configuration Form
 
-The Marketplace will open a deployment configuration form. Enter your **Deployment Name** and select a **GCP Region** at the top, then configure **Application Settings** (resource tier and domain template) and provide your **API Keys** (Data Commons API key). A new GKE cluster is created automatically.
+The Marketplace will open a deployment configuration form. Enter your **Deployment Name** and select a **GCP Region** at the top, then configure **Application Settings** (resource tier and sample) and provide your **API Keys** (Data Commons API key). A new GKE cluster is created automatically.
 
 > [!TIP]
 > Each field has built-in tooltips with detailed guidance—hover over or click the help icon next to any field for clarification. The form validates your inputs and shows clear error messages if anything is incorrect.
@@ -199,7 +199,7 @@ Once you've completed all sections:
 2. **Accept the terms** by checking the Terms checkbox
 3. **Click the Deploy button**
 
-Deployment takes approximately **15-20 minutes**. A progress indicator will appear.
+Deployment takes approximately **20–30 minutes**. A progress indicator will appear.
 
 > [!WARNING]
 > **Do not close the browser tab** during deployment. Closing it may interrupt the provisioning process.

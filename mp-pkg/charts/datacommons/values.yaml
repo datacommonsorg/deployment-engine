@@ -155,7 +155,7 @@ config:
   # Enable periodic data sync
   enableDataSync: true
 
-  # Domain template (FLASK_ENV)
+  # Sample (FLASK_ENV)
   flaskEnv: "custom"
 
   # Data Commons API root

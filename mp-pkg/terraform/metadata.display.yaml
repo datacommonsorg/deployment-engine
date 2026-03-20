@@ -61,11 +61,11 @@ spec:
               value: large
         flask_env:
           name: flask_env
-          title: Domain Template
+          title: Samples
           tooltip: |
             Select a pre-built Data Commons configuration optimized for a specific domain.
-            Each domain includes curated datasets, statistical variables, and visualizations tailored to that subject area.
-            Select the domain that best matches your use case.
+            Each sample includes curated datasets, statistical variables, and visualizations tailored to that subject area.
+            Select the sample that best matches your use case.
           placeholder: Choose from the list
           section: application
           enumValueLabels:
@@ -75,6 +75,8 @@ spec:
               value: health
             - label: Energy
               value: energy
+            - label: Custom
+              value: custom
         dc_api_key:
           name: dc_api_key
           title: Data Commons API Key

@@ -16,8 +16,8 @@ apiVersion: v2
 name: datacommons
 description: Custom Data Commons Accelerator deployment
 type: application
-version: 3.3.12
-appVersion: "v3.3.12"
+version: 3.4.3
+appVersion: "v3.4.3"
 
 # GCP Marketplace metadata
 annotations:

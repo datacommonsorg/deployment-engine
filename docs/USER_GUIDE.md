@@ -10,14 +10,15 @@ This guide explains how to access, configure, and use your Custom Data Commons i
 2. [Data Commons for Education](#data-commons-for-education)
 3. [Data Commons for Health](#data-commons-for-health)
 4. [Data Commons for Energy](#data-commons-for-energy)
-5. [Known Limitations](#known-limitations)
-6. [Request Support](#request-support)
+5. [Data Commons for Custom](#data-commons-for-custom)
+6. [Known Limitations](#known-limitations)
+7. [Request Support](#request-support)
 
 ---
 
 ## Getting Started
 
-To configure the landing page, upload your company logo, and manage private data, you need to log in as the Data Commons Administrator. The steps below apply to all domain templates (Education, Health, Energy).
+To configure the landing page, upload your company logo, and manage private data, you need to log in as the Data Commons Administrator. The steps below apply to all samples (Education, Health, Energy, Custom).
 
 > [!TIP]
 > For deployment and initial setup instructions, see the [Deployment Guide](DEPLOYMENT_GUIDE.md).
@@ -48,14 +49,14 @@ The application administrator password is not provided in the deployment outputs
 1. Navigate to your application URL (e.g., `https://education.example.com/`)
 2. To access the **Admin Panel**, append `/admin` to the URL (e.g., `https://education.example.com/admin/`)
 3. Enter the username and password retrieved in the previous step
-4. You will be logged in as an administrator for the domain template selected during deployment (Education, Health, or Energy)
+4. You will be logged in as an administrator for the sample selected during deployment (Education, Health, Energy, or Custom)
 
 ### Upload Custom Data
 
 To populate the dashboard with your custom data:
 
 1. See [Prepare and load your own data](https://docs.datacommons.org/custom_dc/custom_data.html).
-2. Ensure your data matches the required schema for your domain template. You can download a sample CSV directly from the application **Data & Files** tab and fill in your data there.
+2. Ensure your data matches the required schema for your selected sample. You can download a sample CSV directly from the application **Data & Files** tab and fill in your data there.
 3. Log in and navigate to the **Admin Panel**.
 4. Go to **Data & Files** tab.
 5. Locate the **Data Upload** section.
@@ -227,6 +228,24 @@ Review specific leak events in the table at the bottom of the dashboard:
 - **Suspected Asset:** The specific asset ID linked to the leak.
 - **Vulnerability Level:** Demographic risk score of the nearby community.
 - **Action Status:** Current operational status (e.g., "Normal Operations").
+
+---
+
+## Data Commons for Custom
+
+***Template: Custom Configuration***
+
+### Custom Overview
+
+The Custom sample provides a blank-slate Data Commons instance with no pre-loaded domain-specific datasets, statistical variables, or visualizations. Use this option when your use case doesn't align with the Education, Health, or Energy samples, or when you want to build a fully custom configuration from scratch.
+
+### Custom: For Administrators
+
+Upload your own data following the generic CSV schema. See [Getting Started](#getting-started) for upload instructions and UI customization.
+
+### Custom: For Data Analysts & Researchers
+
+The Custom instance starts with an empty dashboard. After your administrator uploads data, the dashboard will populate based on the uploaded dataset structure. Use the standard Data Commons exploration and visualization tools to analyze your data.
 
 ---
 
