@@ -15,6 +15,14 @@ from werkzeug.datastructures import FileStorage
 from .constants import INPUT_DIR
 
 
+def get_blob_location(filename: str) -> str:
+  """Build the blob storage path for a file relative to INPUT_DIR."""
+  if is_gcs_path(INPUT_DIR):
+    _, blob_name = get_path_parts(INPUT_DIR)
+    return f'{blob_name}/{filename}'
+  return f"{INPUT_DIR.rsplit('/', 1)[1]}/{filename}"
+
+
 def validate_session():
   """Validate session security (IP address consistency, session existence)"""
   if 'username' not in session:
@@ -119,6 +127,7 @@ def upload_db_configs(cfg):
       __file__).resolve().parent.parent.parent / f'config/custom_dc/{cfg.ENV}/'
 
   csv_filenames = _get_input_csv_filenames(configs_location)
+  admin_managed_files = getattr(cfg, 'ALLOWED_CONFIG_FILENAMES', set())
 
   for cfg_file in os.listdir(configs_location):
     blob_location = f"{INPUT_DIR.rsplit('/', 1)[1]}/{cfg_file}"
@@ -127,8 +136,9 @@ def upload_db_configs(cfg):
       _, blob_name = get_path_parts(INPUT_DIR)
       blob_location = f'{blob_name}/{cfg_file}'
 
-    if cfg_file in csv_filenames and file_exists_in_storage(INPUT_DIR,
-                                                            blob_location):
+    skip_filenames = csv_filenames | admin_managed_files
+    if cfg_file in skip_filenames and file_exists_in_storage(
+        INPUT_DIR, blob_location):
       logging.info('Skipping upload of %s: already exists in storage', cfg_file)
       continue
 

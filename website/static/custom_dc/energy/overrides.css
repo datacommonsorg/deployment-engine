@@ -20,3 +20,8 @@
 .search-section-container {
     top: 4rem;
 }
+
+#explore .search-section-container.sticky, 
+#explore .search-section-content {
+    display: none;
+}

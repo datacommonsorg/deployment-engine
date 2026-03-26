@@ -58,7 +58,10 @@ export function initializeDashboard() {
   window.handleFileSelect = handleFileSelect;
   window.removeFile = removeFile;
   window.uploadApplicantFile = uploadApplicantFile;
+  window.startDbSyncAndEmbeddingsBuild = startDbSyncAndEmbeddingsBuild;
   window.logout = logout;
+
+  checkDbSyncStatusOnLoad();
 }
 
 /**
@@ -348,7 +351,6 @@ async function uploadDataFile() {
 
   formData.append('file', selectedFiles.applicant);
   formData.append('baseFilename', document.getElementById('targetFileName').value);
-  formData.append('replaceFileMode', true);
 
   try {
     const response = await fetch(`${apiRoot}/admin/api/upload`, {
@@ -456,6 +458,130 @@ function logout() {
     console.error('Logout error:', error);
     window.location.href = '/';
   });
+}
+
+// DB Sync & Embeddings Build
+let dbSyncPollingTimer = null;
+
+function formatUtcToLocal(utcIsoString) {
+  const date = new Date(utcIsoString);
+  const mm = String(date.getMonth() + 1).padStart(2, '0');
+  const dd = String(date.getDate()).padStart(2, '0');
+  const yyyy = date.getFullYear();
+  const hh = String(date.getHours()).padStart(2, '0');
+  const min = String(date.getMinutes()).padStart(2, '0');
+  return `${mm}/${dd}/${yyyy} ${hh}:${min}`;
+}
+
+function showDbSyncRunningState(data) {
+  document.getElementById('dbSyncBtn').disabled = true;
+  document.getElementById('dbSyncStatus').classList.remove('hidden');
+  document.getElementById('dbSyncRunningChip').classList.remove('hidden');
+  document.getElementById('dbSyncSuccessChip').classList.add('hidden');
+  document.getElementById('dbSyncFailedChip').classList.add('hidden');
+  document.getElementById('dbSyncErrorRow').classList.add('hidden');
+  document.getElementById('dbSyncFinishedAtRow').classList.add('hidden');
+
+  if (data && data.started_at) {
+    document.getElementById('dbSyncStartedAt').textContent = formatUtcToLocal(data.started_at);
+    document.getElementById('dbSyncStartedAtRow').classList.remove('hidden');
+  } else {
+    document.getElementById('dbSyncStartedAtRow').classList.add('hidden');
+  }
+}
+
+function showDbSyncResult(data) {
+  document.getElementById('dbSyncStatus').classList.remove('hidden');
+  document.getElementById('dbSyncRunningChip').classList.add('hidden');
+  document.getElementById('dbSyncSuccessChip').classList.add('hidden');
+  document.getElementById('dbSyncFailedChip').classList.add('hidden');
+  document.getElementById('dbSyncErrorRow').classList.add('hidden');
+  document.getElementById('dbSyncStartedAtRow').classList.add('hidden');
+  document.getElementById('dbSyncFinishedAtRow').classList.add('hidden');
+  document.getElementById('dbSyncBtn').disabled = false;
+
+  if (data.status === 'completed') {
+    document.getElementById('dbSyncSuccessChip').classList.remove('hidden');
+  } else if (data.status === 'failed') {
+    document.getElementById('dbSyncFailedChip').classList.remove('hidden');
+    document.getElementById('dbSyncErrorRow').classList.remove('hidden');
+    document.getElementById('dbSyncErrorMessage').textContent = data.error || 'Unknown error';
+  }
+
+  if (data.started_at) {
+    document.getElementById('dbSyncStartedAt').textContent = formatUtcToLocal(data.started_at);
+    document.getElementById('dbSyncStartedAtRow').classList.remove('hidden');
+  }
+  if (data.finished_at) {
+    document.getElementById('dbSyncFinishedAt').textContent = formatUtcToLocal(data.finished_at);
+    document.getElementById('dbSyncFinishedAtRow').classList.remove('hidden');
+  }
+}
+
+async function startDbSyncAndEmbeddingsBuild() {
+  const apiRoot = getApiRoot();
+  showDbSyncRunningState();
+
+  try {
+    const res = await fetch(`${apiRoot}/admin/api/run-db-sync-and-embeddings-build`, { method: 'POST' });
+    const data = await res.json();
+    if (res.status === 409) {
+      showMsgAlert('error', 'Data sync and embeddings build is already in progress');
+      pollDbSyncStatus();
+      return;
+    }
+    if (!res.ok) {
+      showMsgAlert('error', data.message || 'Failed to start');
+      showDbSyncResult({ status: 'failed', error: data.message || 'Failed to start' });
+      return;
+    }
+    pollDbSyncStatus();
+  } catch (e) {
+    showMsgAlert('error', 'Failed to start data sync and embeddings build');
+    document.getElementById('dbSyncBtn').disabled = false;
+    document.getElementById('dbSyncStatus').classList.add('hidden');
+  }
+}
+
+function pollDbSyncStatus() {
+  const apiRoot = getApiRoot();
+  dbSyncPollingTimer = setTimeout(async () => {
+    try {
+      const res = await fetch(`${apiRoot}/admin/api/db-sync-and-embeddings-build-status`);
+      const data = await res.json();
+
+      if (data.status === 'running') {
+        showDbSyncRunningState(data);
+        pollDbSyncStatus();
+        return;
+      }
+
+      showDbSyncResult(data);
+      if (data.status === 'completed') {
+        showMsgAlert('success', 'Data sync and embeddings build completed');
+      } else if (data.status === 'failed') {
+        showMsgAlert('error', 'Data sync and embeddings build failed');
+      }
+    } catch (e) {
+      document.getElementById('dbSyncRunningChip').classList.add('hidden');
+      document.getElementById('dbSyncBtn').disabled = false;
+      showMsgAlert('error', 'Error checking build status');
+    }
+  }, 1000);
+}
+
+async function checkDbSyncStatusOnLoad() {
+  const apiRoot = getApiRoot();
+  try {
+    const res = await fetch(`${apiRoot}/admin/api/db-sync-and-embeddings-build-status`);
+    const data = await res.json();
+    if (data.status === 'running') {
+      showDbSyncRunningState(data);
+      pollDbSyncStatus();
+    }
+  } catch (e) {
+    // Silently ignore -- button stays enabled in idle state
+  }
 }
 
 // Initialize on DOM ready

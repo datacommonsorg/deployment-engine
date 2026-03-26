@@ -36,9 +36,11 @@ func TestV2ResolveCore_EmbeddingsFlag(t *testing.T) {
 	}
 	req := &pbv2.ResolveRequest{
 		Resolver: "indicator",
+		Property: "<-description->dcid", // Must be valid for indicator resolver
 		Nodes:    []string{"foo"},
 	}
-	_, err := sDisabled.V2ResolveCore(ctx, req)
+
+	_, err := sDisabled.V2ResolveCore(ctx, req, "description", "dcid", nil)
 	if err == nil {
 		t.Error("Expected error when flag is disabled, got nil")
 	} else {
@@ -69,7 +71,7 @@ func TestV2ResolveCore_EmbeddingsFlag(t *testing.T) {
 		embeddingsServerURL: "http://example.com",
 	}
 
-	_, _ = sEnabled.V2ResolveCore(ctx, req)
+	_, _ = sEnabled.V2ResolveCore(ctx, req, "description", "dcid", nil)
 
 	if !called {
 		t.Error("Expected HTTP client to be called when flag is enabled")

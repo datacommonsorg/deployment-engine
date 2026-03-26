@@ -22,7 +22,28 @@ from unittest.mock import patch
 
 from server.routes.admin_panel.utils import _get_input_csv_filenames
 from server.routes.admin_panel.utils import file_exists_in_storage
+from server.routes.admin_panel.utils import get_blob_location
 from server.routes.admin_panel.utils import upload_db_configs
+
+
+class TestGetBlobLocation(unittest.TestCase):
+  """Test get_blob_location helper."""
+
+  @patch('server.routes.admin_panel.utils.get_path_parts',
+         return_value=('my-bucket', 'data/input'))
+  @patch('server.routes.admin_panel.utils.is_gcs_path', return_value=True)
+  @patch('server.routes.admin_panel.utils.INPUT_DIR', 'gs://my-bucket/data/input')
+  def test_gcs_path(self, mock_is_gcs, mock_parts):
+    """Returns blob_name/filename for GCS paths."""
+    result = get_blob_location('config.json')
+    assert result == 'data/input/config.json'
+
+  @patch('server.routes.admin_panel.utils.is_gcs_path', return_value=False)
+  @patch('server.routes.admin_panel.utils.INPUT_DIR', '/tmp/base/input')
+  def test_local_path(self, mock_is_gcs):
+    """Returns dir_name/filename for local paths."""
+    result = get_blob_location('stat_vars.mcf')
+    assert result == 'input/stat_vars.mcf'
 
 
 class TestFileExistsInStorage(unittest.TestCase):

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Configuration Panel - Data Intelligence</title>
+
+  <link rel="icon" id="faviconLogo" href="https://docs.datacommons.org/assets/images/favicon.png" type="image/png" data-logo-url="{{ url_for('admin_panel.domain_logo') }}">
+
+  {% include 'custom_dc/custom/includes/head_common.html' %}
+
+  <link href="{{url_for('static', filename='custom_dc/custom/css/main.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='custom_dc/custom/css/pages/_dashboard.css')}}" rel="stylesheet">
+</head>
+
+<body class="custom-domain">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-left">
+      <md-icon-button href="{{ url_for('static.homepage') }}">
+        <md-icon>arrow_back</md-icon>
+      </md-icon-button>
+      <div class="header-title-group">
+        <h1 class="header-title">Admin Configuration Panel</h1>
+        <p class="header-subtitle">Customize your data intelligence platform</p>
+      </div>
+    </div>
+    <div class="button-group">
+      <md-outlined-button href="{{ url_for('static.homepage') }}">
+        <md-icon slot="icon">visibility</md-icon>
+        Preview Insights
+      </md-outlined-button>
+      <md-outlined-button onclick="logout()">
+        <md-icon slot="icon">logout</md-icon>
+        Sign Out
+      </md-outlined-button>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="container">
+    <!-- Snackbar Container - Top Right -->
+    <div class="snackbar-container" aria-live="polite" aria-atomic="false">
+      <div class="md3-snackbar" id="alertMessage" role="status" aria-live="polite" aria-atomic="false">
+        <span id="alertMessageContent" class="md3-snackbar-content"></span>
+        <md-icon-button class="md3-snackbar-action" id="alertDissmiss" aria-label="Dismiss message">
+          <md-icon>close</md-icon>
+        </md-icon-button>
+      </div>
+    </div>
+    <!-- Data & Files Tab -->
+    <div id="data-tab" class="tab-content active">
+      <!-- Steps Card -->
+      <md-card>
+        <h2 class="card-title section-title">Steps to get started</h2>
+
+        <div class="steps-container">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <p class="step-title">
+                Prepare your data CSV, config.json, and stat_vars.mcf files. See
+                <a href="https://docs.datacommons.org/custom_dc/config.html" target="_blank">configuration guide</a>
+                and <a href="https://docs.datacommons.org/custom_dc/custom_data.html" target="_blank">data format guide</a>
+                for more details.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <p class="step-title">Upload your files using the buttons below</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <p class="step-title">View insights and recommended target regions</p>
+            </div>
+          </div>
+        </div>
+      </md-card>
+
+      <!-- File Uploads -->
+      <div class="upload-card-container">
+      <md-card>
+        <div class="card-header">
+          <div class="card-icon-wrapper">
+            <md-icon>upload</md-icon>
+          </div>
+          <div class="card-title-group">
+            <h2 class="card-title">File Uploads</h2>
+            <p class="card-description">
+              Upload your data, configuration, and statistical variable files
+              <br>
+              <p class="card-notice">
+              <strong>Important:</strong>
+              <br>
+                All uploaded files take effect within a few hours automatically unless you manually trigger data processing. See user guide for more details.
+              </p>
+            </p>
+          </div>
+        </div>
+
+        <md-divider></md-divider>
+
+        <!-- Data CSV -->
+        <div class="upload-card">
+          <div class="upload-title-row">
+            <md-icon class="upload-section-icon">table_chart</md-icon>
+            <h3 class="upload-title">Data File</h3>
+          </div>
+          <p class="upload-meta">Supported format: CSV • Maximum file size: 10 MB</p>
+          <figure class="upload-note">Uploaded data powers insights and forecasts.</figure>
+
+          <div id="selectedFileDisplay" class="selected-file-display">
+            <md-icon class="selected-file-icon">description</md-icon>
+            <div class="selected-file-info">
+              <p class="selected-file-name" id="selectedFileName">filename.csv</p>
+              <p class="selected-file-size" id="selectedFileSize">0 KB</p>
+            </div>
+            <md-icon-button class="remove-file-btn" onclick="removeFile('applicant')">
+              <md-icon>close</md-icon>
+            </md-icon-button>
+          </div>
+
+          <div class="button-group">
+            <md-filled-button class="inline-button" onclick="document.getElementById('applicantFileInput').click()">
+              <md-icon slot="icon">upload</md-icon>
+              Choose File
+            </md-filled-button>
+            <md-outlined-button id="uploadDataBtn" disabled class="inline-button" onclick="uploadApplicantFile()">
+              <md-icon slot="icon">cloud_upload</md-icon>
+              Upload File
+            </md-outlined-button>
+          </div>
+          <input type="file" id="applicantFileInput" accept=".csv" class="hidden"
+            data-max-file-size-mb="10"
+            onchange="handleFileSelect(event, 'applicant')">
+        </div>
+
+        <div class="status-box hidden" id="uploadResponseMessage">
+          <div class="status-chips-container">
+            <md-filter-chip label="Upload Successful" id="successUploadStatus" class="status-chip-success hidden">
+            </md-filter-chip>
+            <md-filter-chip label="Upload Failed" id="failedUploadStatus" class="status-chip-error hidden">
+            </md-filter-chip>
+          </div>
+          <div class="status-row">
+            <span class="status-label">Upload message:</span>
+            <span class="status-value" id="uploadStatusMessage"></span>
+          </div>
+          <div class="status-row hidden" id="rowsUploaded">
+            <span class="status-label">Number of acceptable rows:</span>
+            <span class="status-value" id="rowsUploadedsMessage"></span>
+          </div>
+          <div class="status-row hidden" id="failedRows">
+            <span class="status-label">Number of unacceptable rows:</span>
+            <span class="status-value" id="failedRowsMessage"></span>
+          </div>
+          <div class="error-list hidden" id="uploadErrorBlock"></div>
+        </div>
+
+         <br/>
+
+        <!-- config.json -->
+        <div class="upload-card">
+          <div class="upload-title-row">
+            <md-icon class="upload-section-icon">data_object</md-icon>
+            <h3 class="upload-title">Data Configuration</h3>
+          </div>
+          <p class="upload-meta">Supported format: JSON • Filename: config.json</p>
+          <figure class="upload-note">Defines the structure of your data including input files, statistical variables, and data sources.</figure>
+
+          <div id="selectedConfigDisplay" class="selected-file-display">
+            <md-icon class="selected-file-icon">description</md-icon>
+            <div class="selected-file-info">
+              <p class="selected-file-name" id="selectedConfigName">config.json</p>
+            </div>
+            <md-icon-button class="remove-file-btn" onclick="removeConfigFile('config')">
+              <md-icon>close</md-icon>
+            </md-icon-button>
+          </div>
+
+          <div class="button-group">
+            <md-filled-button class="inline-button" onclick="document.getElementById('configFileInput').click()">
+              <md-icon slot="icon">upload</md-icon>
+              Choose File
+            </md-filled-button>
+            <md-outlined-button id="uploadConfigBtn" disabled class="inline-button" onclick="uploadConfigFile('config')">
+              <md-icon slot="icon">cloud_upload</md-icon>
+              Upload File
+            </md-outlined-button>
+          </div>
+          <input type="file" id="configFileInput" accept=".json" class="hidden"
+            onchange="handleConfigFileSelect(event, 'config')">
+        </div>
+
+        <div class="status-box hidden" id="configUploadResponseMessage">
+          <div class="status-chips-container">
+            <md-filter-chip label="Upload Successful" id="successConfigUploadStatus" class="status-chip-success hidden">
+            </md-filter-chip>
+            <md-filter-chip label="Upload Failed" id="failedConfigUploadStatus" class="status-chip-error hidden">
+            </md-filter-chip>
+          </div>
+          <div class="status-row">
+            <span class="status-label">Upload message:</span>
+            <span class="status-value" id="configUploadStatusMessage"></span>
+          </div>
+          <div class="error-list hidden" id="configUploadErrorBlock"></div>
+        </div>
+
+        <br/>
+
+        <!-- stat_vars.mcf -->
+        <div class="upload-card">
+          <div class="upload-title-row">
+            <md-icon class="upload-section-icon">analytics</md-icon>
+            <h3 class="upload-title">Statistical Variables</h3>
+          </div>
+          <p class="upload-meta">Supported format: MCF • Filename: stat_vars.mcf</p>
+          <figure class="upload-note">Defines the statistical variables used by your data, including types, properties, and metadata.</figure>
+
+          <div id="selectedStatvarsDisplay" class="selected-file-display">
+            <md-icon class="selected-file-icon">description</md-icon>
+            <div class="selected-file-info">
+              <p class="selected-file-name" id="selectedStatvarsName">stat_vars.mcf</p>
+            </div>
+            <md-icon-button class="remove-file-btn" onclick="removeConfigFile('statvars')">
+              <md-icon>close</md-icon>
+            </md-icon-button>
+          </div>
+
+          <div class="button-group">
+            <md-filled-button class="inline-button" onclick="document.getElementById('statvarsFileInput').click()">
+              <md-icon slot="icon">upload</md-icon>
+              Choose File
+            </md-filled-button>
+            <md-outlined-button id="uploadStatvarsBtn" disabled class="inline-button" onclick="uploadConfigFile('statvars')">
+              <md-icon slot="icon">cloud_upload</md-icon>
+              Upload File
+            </md-outlined-button>
+          </div>
+          <input type="file" id="statvarsFileInput" accept=".mcf" class="hidden"
+            onchange="handleConfigFileSelect(event, 'statvars')">
+        </div>
+
+        <div class="status-box hidden" id="statvarsUploadResponseMessage">
+          <div class="status-chips-container">
+            <md-filter-chip label="Upload Successful" id="successStatvarsUploadStatus" class="status-chip-success hidden">
+            </md-filter-chip>
+            <md-filter-chip label="Upload Failed" id="failedStatvarsUploadStatus" class="status-chip-error hidden">
+            </md-filter-chip>
+          </div>
+          <div class="status-row">
+            <span class="status-label">Upload message:</span>
+            <span class="status-value" id="statvarsUploadStatusMessage"></span>
+          </div>
+          <div class="error-list hidden" id="statvarsUploadErrorBlock"></div>
+        </div>
+
+        <md-divider class="divider-short"></md-divider>
+
+        <!-- DB Sync & Embeddings Build -->
+        <div class="db-sync-section">
+          <h3 class="upload-title">Process Data Insights</h3>
+          <p class="upload-meta">Run data sync and rebuild embeddings after uploading new data</p>
+
+          <md-filled-button class="inline-button" id="dbSyncBtn" onclick="startDbSyncAndEmbeddingsBuild()">
+            <md-icon slot="icon">sync</md-icon>
+            Process Data
+          </md-filled-button>
+
+          <!-- Polling status area -->
+          <div id="dbSyncStatus" class="status-box hidden">
+            <div class="status-row status-row-inline">
+              <md-filter-chip label="Running..." id="dbSyncRunningChip" class="status-chip-running hidden"></md-filter-chip>
+              <md-filter-chip label="Completed" id="dbSyncSuccessChip" class="status-chip-success hidden"></md-filter-chip>
+              <md-filter-chip label="Failed" id="dbSyncFailedChip" class="status-chip-error hidden"></md-filter-chip>
+            </div>
+            <div class="status-row hidden" id="dbSyncStartedAtRow">
+              <span class="status-label">Started at:</span>
+              <span class="status-value" id="dbSyncStartedAt"></span>
+            </div>
+            <div class="status-row hidden" id="dbSyncFinishedAtRow">
+              <span class="status-label">Finished at:</span>
+              <span class="status-value" id="dbSyncFinishedAt"></span>
+            </div>
+            <div class="status-row hidden" id="dbSyncErrorRow">
+              <span class="status-label">Error:</span>
+              <span class="status-value error" id="dbSyncErrorMessage"></span>
+            </div>
+          </div>
+        </div>
+      </md-card>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="module">
+    import { showMsgAlert } from '{{url_for("static", filename="custom_dc/custom/js/components/alert.js")}}';
+    window.showMsgAlert = showMsgAlert;
+  </script>
+  <script src={{url_for('static', filename='custom_dc/custom/js/pages/dashboard.js' )}}></script>
+</body>
+
+</html>

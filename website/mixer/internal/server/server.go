@@ -17,6 +17,7 @@ package server
 import (
 	"context"
 	"log/slog"
+	"math/rand"
 	"net/http"
 	"os"
 	"path"
@@ -26,9 +27,10 @@ import (
 	"sync/atomic"
 
 	cbt "cloud.google.com/go/bigtable"
-	pubsub "cloud.google.com/go/pubsub"
+	pubsub "cloud.google.com/go/pubsub/v2"
 	"github.com/datacommonsorg/mixer/internal/featureflags"
 	"github.com/datacommonsorg/mixer/internal/maps"
+	"github.com/datacommonsorg/mixer/internal/metrics"
 	"github.com/datacommonsorg/mixer/internal/parser/mcf"
 	dcpubsub "github.com/datacommonsorg/mixer/internal/pubsub"
 	"github.com/datacommonsorg/mixer/internal/server/cache"
@@ -43,15 +45,16 @@ import (
 
 // Server holds resources for a mixer server
 type Server struct {
-	store          *store.Store
-	metadata       *resource.Metadata
-	cachedata      atomic.Pointer[cache.Cache]
-	mapsClient     maps.MapsClient
-	httpClient     *http.Client
-	dispatcher     *dispatcher.Dispatcher
-	flags          *featureflags.Flags
-	writeUsageLogs bool
-	embeddingsServerURL  string
+	store                    *store.Store
+	metadata                 *resource.Metadata
+	cachedata                atomic.Pointer[cache.Cache]
+	mapsClient               maps.MapsClient
+	httpClient               *http.Client
+	dispatcher               *dispatcher.Dispatcher
+	flags                    *featureflags.Flags
+	writeUsageLogs           bool
+	embeddingsServerURL      string
+	resolveEmbeddingsIndexes string
 }
 
 func (s *Server) updateBranchTable(ctx context.Context, branchTableName string) error {
@@ -157,18 +160,35 @@ func NewMixerServer(
 	flags *featureflags.Flags,
 	writeUsageLogs bool,
 	embeddingsServerURL string,
+	resolveEmbeddingsIndexes string,
 ) *Server {
 	s := &Server{
-		store:          store,
-		metadata:       metadata,
-		cachedata:      atomic.Pointer[cache.Cache]{},
-		mapsClient:     mapsClient,
-		httpClient:     &http.Client{},
-		dispatcher:     dispatcher,
-		flags:          flags,
-		writeUsageLogs: writeUsageLogs,
-		embeddingsServerURL:embeddingsServerURL,
+		store:                    store,
+		metadata:                 metadata,
+		cachedata:                atomic.Pointer[cache.Cache]{},
+		mapsClient:               mapsClient,
+		httpClient:               &http.Client{},
+		dispatcher:               dispatcher,
+		flags:                    flags,
+		writeUsageLogs:           writeUsageLogs,
+		embeddingsServerURL:      embeddingsServerURL,
+		resolveEmbeddingsIndexes: resolveEmbeddingsIndexes,
 	}
 	s.cachedata.Store(cachedata)
 	return s
+}
+
+// shouldDivertV2 returns true if the request should be diverted to the dispatcher.
+func (s *Server) shouldDivertV2(ctx context.Context) bool {
+	fraction := s.flags.V2DivertFraction
+	if fraction <= 0 {
+		return false
+	}
+
+	divert := rand.Float64() < fraction
+
+	if divert {
+		metrics.RecordV2Diversion(ctx)
+	}
+	return divert
 }

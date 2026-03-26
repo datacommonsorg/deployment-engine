@@ -38,6 +38,8 @@ type Flags struct {
 	UseStaleReads bool `yaml:"UseStaleReads"`
 	// Whether to enable the embeddings resolver.
 	EnableEmbeddingsResolver bool `yaml:"EnableEmbeddingsResolver"`
+	// Fraction of V2 API requests to divert to the new dispatcher backend. Value from 0 to 1.0.
+	V2DivertFraction float64 `yaml:"V2DivertFraction"`
 }
 
 // setDefaultValues creates a new Flags struct with default values.
@@ -48,7 +50,8 @@ func setDefaultValues() *Flags {
 		UseSpannerGraph:          false,
 		SpannerGraphDatabase:     "",
 		UseStaleReads:            false,
-		EnableEmbeddingsResolver: false,
+		EnableEmbeddingsResolver: true,
+		V2DivertFraction:         0.0,
 	}
 }
 
@@ -66,7 +69,23 @@ func (f *Flags) validateFlagValues() error {
 	if f.UseStaleReads && !f.UseSpannerGraph {
 		return fmt.Errorf("UseStaleReads requires UseSpannerGraph to be true")
 	}
+	if f.V2DivertFraction < 0 || f.V2DivertFraction > 1.0 {
+		return fmt.Errorf("V2DivertFraction must be between 0 and 1.0, got %f", f.V2DivertFraction)
+	}
+	if f.V2DivertFraction > 0 && !f.EnableV3 {
+		return fmt.Errorf("V2DivertFraction > 0 requires EnableV3 to be true")
+	}
 	return nil
+}
+
+func (f Flags) String() string {
+	b, err := yaml.Marshal(f)
+	if err != nil {
+		// Use a type alias to avoid recursive String() call
+		type rawFlags Flags
+		return fmt.Sprintf("%+v", rawFlags(f))
+	}
+	return "\n" + string(b)
 }
 
 // Creates a new Flags struct with default values,

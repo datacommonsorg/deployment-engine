@@ -58,6 +58,7 @@ class TestAdminPanelAPI(unittest.TestCase):
     mock_cfg = MagicMock()
     mock_cfg.ALLOWED_DATA_EXTENSIONS = {'csv'}
     mock_cfg.ALLOWED_LOGO_EXTENSIONS = {'png'}
+    mock_cfg.ALLOWED_CONFIG_FILENAMES = {'config.json', 'stat_vars.mcf'}
     mock_cfg.CSV_SCHEMAS = {
         'test_file.csv': {
             'dcid': STRING,
@@ -549,6 +550,131 @@ class TestDomainConfigEndpoint(TestAdminPanelAPI):
     assert response.status_code == 200
     data = json.loads(response.data)
     assert data == mock_cfg.DEFAULT_DOMAIN_CONFIG
+
+
+class TestUploadConfigEndpoint(TestAdminPanelAPI):
+  """Test /admin/api/upload-config endpoint."""
+
+  def setUp(self):
+    super().setUp()
+    with self.client.session_transaction() as sess:
+      sess['username'] = 'testuser'
+
+  @patch('server.routes.admin_panel.api.lib_config.get_config')
+  @patch('server.routes.admin_panel.api.upload_file_to_storage')
+  @patch('server.routes.admin_panel.api.get_blob_location', return_value='input/config.json')
+  def test_upload_config_json_success(self, mock_blob_loc, mock_upload,
+                                      mock_get_config):
+    """Test successful config.json upload."""
+    mock_cfg = self._get_mock_config()
+    mock_get_config.return_value = mock_cfg
+
+    json_content = b'{"inputFiles": {}, "variables": {}, "sources": {}}'
+    file_data = BytesIO(json_content)
+    response = self.client.post('/admin/api/upload-config',
+                                data={'file': (file_data, 'config.json')},
+                                content_type='multipart/form-data')
+
+    assert response.status_code == 200
+    data = json.loads(response.data)
+    assert data['category'] == 'success'
+    assert 'uploaded successfully' in data['message']
+    assert mock_upload.called
+
+  @patch('server.routes.admin_panel.api.lib_config.get_config')
+  @patch('server.routes.admin_panel.api.upload_file_to_storage')
+  @patch('server.routes.admin_panel.api.get_blob_location',
+         return_value='input/stat_vars.mcf')
+  def test_upload_config_mcf_success(self, mock_blob_loc, mock_upload,
+                                     mock_get_config):
+    """Test successful stat_vars.mcf upload."""
+    mock_cfg = self._get_mock_config()
+    mock_get_config.return_value = mock_cfg
+
+    mcf_content = b'Node: dcid:MyVar\ntypeOf: dcs:StatisticalVariable\n'
+    file_data = BytesIO(mcf_content)
+    response = self.client.post('/admin/api/upload-config',
+                                data={'file': (file_data, 'stat_vars.mcf')},
+                                content_type='multipart/form-data')
+
+    assert response.status_code == 200
+    data = json.loads(response.data)
+    assert data['category'] == 'success'
+    assert mock_upload.called
+
+  @patch('server.routes.admin_panel.api.lib_config.get_config')
+  def test_upload_config_invalid_json(self, mock_get_config):
+    """Test that malformed JSON returns 400."""
+    mock_cfg = self._get_mock_config()
+    mock_get_config.return_value = mock_cfg
+
+    file_data = BytesIO(b'{invalid json content')
+    response = self.client.post('/admin/api/upload-config',
+                                data={'file': (file_data, 'config.json')},
+                                content_type='multipart/form-data')
+
+    assert response.status_code == 400
+    data = json.loads(response.data)
+    assert data['category'] == 'error'
+    assert 'Invalid JSON' in data['message']
+
+  @patch('server.routes.admin_panel.api.lib_config.get_config')
+  def test_upload_config_disallowed_filename(self, mock_get_config):
+    """Test that a filename not in ALLOWED_CONFIG_FILENAMES returns 400."""
+    mock_cfg = self._get_mock_config()
+    mock_get_config.return_value = mock_cfg
+
+    file_data = BytesIO(b'some content')
+    response = self.client.post('/admin/api/upload-config',
+                                data={'file': (file_data, 'unknown.txt')},
+                                content_type='multipart/form-data')
+
+    assert response.status_code == 400
+    data = json.loads(response.data)
+    assert data['category'] == 'error'
+    assert 'files are allowed' in data['message']
+
+  @patch('server.routes.admin_panel.api.lib_config.get_config')
+  def test_upload_config_no_file(self, mock_get_config):
+    """Test upload without file returns 400."""
+    mock_cfg = self._get_mock_config()
+    mock_get_config.return_value = mock_cfg
+
+    response = self.client.post('/admin/api/upload-config', data={})
+    assert response.status_code == 400
+    data = json.loads(response.data)
+    assert data['category'] == 'error'
+    assert 'No file part' in data['message']
+
+  def test_upload_config_requires_login(self):
+    """Test that unauthenticated request redirects."""
+    with self.client.session_transaction() as sess:
+      sess.clear()
+
+    response = self.client.post('/admin/api/upload-config',
+                                follow_redirects=False)
+    assert response.status_code in [302, 401]
+
+  @patch('server.routes.admin_panel.api.lib_config.get_config')
+  @patch('server.routes.admin_panel.api.upload_file_to_storage')
+  @patch('server.routes.admin_panel.api.get_blob_location',
+         return_value='input/stat_vars.mcf')
+  def test_upload_config_storage_exception(self, mock_blob_loc, mock_upload,
+                                           mock_get_config):
+    """Test that a storage failure returns 400."""
+    mock_cfg = self._get_mock_config()
+    mock_get_config.return_value = mock_cfg
+    mock_upload.side_effect = Exception('Storage error')
+
+    file_data = BytesIO(b'Node: dcid:MyVar\n')
+    response = self.client.post('/admin/api/upload-config',
+                                data={'file': (file_data, 'stat_vars.mcf')},
+                                content_type='multipart/form-data')
+
+    assert response.status_code == 400
+    data = json.loads(response.data)
+    assert data['category'] == 'error'
+    assert 'Error during uploading file' in data['message']
 
 
 class TestHelperFunctions(TestAdminPanelAPI):

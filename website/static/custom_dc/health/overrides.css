@@ -20,6 +20,11 @@
     top: 3.8rem;
 }
 
+#explore .search-section-container.sticky, 
+#explore .search-section-content {
+    display: none;
+}
+
 #main {
     align-items: center;
 }

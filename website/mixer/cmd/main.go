@@ -116,6 +116,11 @@ var (
 		"",
 		"URL for the embeddings server.",
 	)
+	resolveEmbeddingsIndexes = flag.String(
+		"resolve_embeddings_indexes",
+		"",
+		"Comma separated list of indexes to use for embeddings resolution.",
+	)
 )
 
 func main() {
@@ -186,7 +191,7 @@ func main() {
 	)
 
 	// Data sources.
-	sources := []*datasource.DataSource{}
+	sources := []datasource.DataSource{}
 
 	// Spanner Graph.
 	if flags.EnableV3 && flags.UseSpannerGraph {
@@ -197,11 +202,11 @@ func main() {
 		}
 		if flags.UseStaleReads {
 			spannerClient.Start()
-			defer spannerClient.Stop()
 		}
+		defer spannerClient.Close()
 		var ds datasource.DataSource = spanner.NewSpannerDataSource(spannerClient)
 		// TODO: Order sources by priority once other implementations are added.
-		sources = append(sources, &ds)
+		sources = append(sources, ds)
 	}
 	slog.Info("After Spanner client creation")
 
@@ -337,7 +342,7 @@ func main() {
 	// SQL Data Source
 	if flags.EnableV3 && sqldb.IsConnected(&sqlClient) {
 		var ds datasource.DataSource = sqldb.NewSQLDataSource(&sqlClient, remoteDataSource)
-		sources = append(sources, &ds)
+		sources = append(sources, ds)
 	}
 
 	// Store
@@ -379,7 +384,7 @@ func main() {
 
 	// Add remote data source if it was created.
 	if remoteDataSource != nil {
-		sources = append(sources, &remoteDataSource)
+		sources = append(sources, remoteDataSource)
 	}
 
 	// DataSources
@@ -422,7 +427,7 @@ func main() {
 	dispatcher := dispatcher.NewDispatcher(processors, dataSources)
 
 	// Create server object
-	mixerServer := server.NewMixerServer(store, metadata, c, mapsClient, dispatcher, flags, *writeUsageLogs, *embeddingsServerURL)
+	mixerServer := server.NewMixerServer(store, metadata, c, mapsClient, dispatcher, flags, *writeUsageLogs, *embeddingsServerURL, *resolveEmbeddingsIndexes)
 	pbs.RegisterMixerServer(srv, mixerServer)
 
 	// Subscribe to branch cache update

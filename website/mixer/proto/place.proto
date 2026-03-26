@@ -22,11 +22,9 @@
 //    /node/places-in
 //    /node/related-locations
 //    /node/ranking-locations
-//    /place/stats-var
 //    /place/stat-vars
 //    /place/metadata
 //    /v1/place/stat-vars/union
-//    /place/stat/date/within-place
 // ========================================
 
 syntax = "proto3";
@@ -114,18 +112,6 @@ message GetLocationsRankingsResponse {
 // StatsVars represent a list of statistical variable dcids.
 message StatsVars { repeated string statsVars = 1; }
 
-// Request message for GetPlaceStats API.
-message GetPlaceStatsVarRequest {
-  // DCIDs of the places.
-  repeated string dcids = 1;
-}
-
-// Response message for GetPlaceStats API.
-message GetPlaceStatsVarResponse {
-  // A map from place dcid to a list of statistical variable dcids.
-  map<string, StatsVars> places = 1;
-}
-
 // StatVars represent a list of statistical variable dcids.
 message StatVars { repeated string stat_vars = 1; }
 
@@ -150,17 +136,6 @@ message GetEntityStatVarsUnionRequest {
 }
 // Response message for GetEntityStatVarsUnionV1 API.
 message GetEntityStatVarsUnionResponse { repeated string stat_vars = 1; }
-
-message GetPlaceStatDateWithinPlaceRequest {
-  string ancestor_place = 1;
-  string place_type = 2;
-  repeated string stat_vars = 3;
-}
-
-message GetPlaceStatDateWithinPlaceResponse {
-  // Keyed by statVar.
-  map<string, DateList> data = 1;
-}
 
 // Metadata of a place. This is the raw cache data.
 message PlaceMetadataCache {

@@ -22,7 +22,9 @@ import (
 	"time"
 
 	"cloud.google.com/go/spanner"
+	"github.com/datacommonsorg/mixer/internal/metrics"
 	v2 "github.com/datacommonsorg/mixer/internal/server/v2"
+	"github.com/datacommonsorg/mixer/internal/translator/types"
 	"google.golang.org/api/iterator"
 	"google.golang.org/grpc/codes"
 )
@@ -44,7 +46,7 @@ func (sc *spannerDatabaseClient) GetNodeProps(ctx context.Context, ids []string,
 		props[id] = []*Property{}
 	}
 
-	err := sc.queryAndCollect(
+	err := sc.queryStructs(
 		ctx,
 		*GetNodePropsQuery(ids, out),
 		func() interface{} {
@@ -73,7 +75,7 @@ func (sc *spannerDatabaseClient) GetNodeEdgesByID(ctx context.Context, ids []str
 		edges[id] = []*Edge{}
 	}
 
-	err := sc.queryAndCollect(
+	err := sc.queryStructs(
 		ctx,
 		*GetNodeEdgesByIDQuery(ids, arc, pageSize, offset),
 		func() interface{} {
@@ -99,7 +101,7 @@ func (sc *spannerDatabaseClient) GetObservations(ctx context.Context, variables 
 		return nil, fmt.Errorf("entity must be specified")
 	}
 
-	err := sc.queryAndCollect(
+	err := sc.queryStructs(
 		ctx,
 		*GetObservationsQuery(variables, entities),
 		func() interface{} {
@@ -124,7 +126,7 @@ func (sc *spannerDatabaseClient) GetObservationsContainedInPlace(ctx context.Con
 		return observations, nil
 	}
 
-	err := sc.queryAndCollect(
+	err := sc.queryStructs(
 		ctx,
 		*GetObservationsContainedInPlaceQuery(variables, containedInPlace),
 		func() interface{} {
@@ -151,7 +153,7 @@ func (sc *spannerDatabaseClient) SearchNodes(ctx context.Context, query string, 
 		return nodes, nil
 	}
 
-	err := sc.queryAndCollect(
+	err := sc.queryStructs(
 		ctx,
 		*SearchNodesQuery(query, types),
 		func() interface{} {
@@ -184,7 +186,7 @@ func (sc *spannerDatabaseClient) ResolveByID(ctx context.Context, nodes []string
 		valueMap[value] = node
 	}
 
-	err := sc.queryAndCollect(
+	err := sc.queryStructs(
 		ctx,
 		*ResolveByIDQuery(nodes, in, out),
 		func() interface{} {
@@ -203,14 +205,23 @@ func (sc *spannerDatabaseClient) ResolveByID(ctx context.Context, nodes []string
 	return nodeToCandidates, nil
 }
 
+func (sc *spannerDatabaseClient) Sparql(ctx context.Context, nodes []types.Node, queries []*types.Query, opts *types.QueryOptions) ([][]string, error) {
+	query, err := SparqlQuery(nodes, queries, opts)
+	if err != nil {
+		return nil, fmt.Errorf("error building sparql query: %v", err)
+	}
+
+	return sc.queryDynamic(ctx, *query)
+}
+
 // fetchAndUpdateTimestamp queries Spanner and updates the timestamp.
 func (sc *spannerDatabaseClient) fetchAndUpdateTimestamp(ctx context.Context) error {
-	iter := sc.client.ReadOnlyTransaction().Query(ctx, *GetCompletionTimestampQuery())
+	iter := sc.client.Single().Query(ctx, *GetCompletionTimestampQuery())
 	defer iter.Stop()
 
 	row, err := iter.Next()
 	if err == iterator.Done {
-		return fmt.Errorf("no rows found in IngestionHistory")
+		return fmt.Errorf("no valid rows found in IngestionHistory")
 	}
 	if err != nil {
 		return fmt.Errorf("failed to fetch row: %w", err)
@@ -234,39 +245,60 @@ func (sc *spannerDatabaseClient) getStalenessTimestamp() (time.Time, error) {
 	return time.Time{}, fmt.Errorf("error getting staleness timestamp")
 }
 
-func (sc *spannerDatabaseClient) queryAndCollect(
+func (sc *spannerDatabaseClient) executeQuery(
 	ctx context.Context,
 	stmt spanner.Statement,
-	newStruct func() interface{},
-	withStruct func(interface{}),
+	handleRows func(*spanner.RowIterator) error,
 ) error {
+	runQuery := func(tb spanner.TimestampBound) error {
+		metrics.RecordSpannerQuery(ctx)
+		iter := sc.client.Single().WithTimestampBound(tb).Query(ctx, stmt)
+		defer iter.Stop()
+		return handleRows(iter)
+	}
+
 	if sc.useStaleReads {
 		ts, err := sc.getStalenessTimestamp()
 		if err != nil {
 			return err
 		}
-		ro := sc.client.Single().WithTimestampBound(spanner.ReadTimestamp(ts))
-		iter := ro.Query(ctx, stmt)
-		defer iter.Stop()
-
-		err = sc.processRows(iter, newStruct, withStruct)
+		err = runQuery(spanner.ReadTimestamp(ts))
 
 		// Log error if timestamp is older than retention and fall back to strong read.
 		if spanner.ErrCode(err) == codes.FailedPrecondition {
 			slog.Error("Stale read timestamp expired. Falling back to StrongRead.",
 				"expiredTimestamp", ts.String())
-			strongIter := sc.client.Single().WithTimestampBound(spanner.StrongRead()).Query(ctx, stmt)
-			defer strongIter.Stop()
-
-			return sc.processRows(strongIter, newStruct, withStruct)
+			return runQuery(spanner.StrongRead())
 		}
-
 		return err
-	} else {
-		iter := sc.client.Single().Query(ctx, stmt)
-		defer iter.Stop()
-		return sc.processRows(iter, newStruct, withStruct)
 	}
+	return runQuery(spanner.StrongRead())
+}
+
+// queryStructs executes a query and maps the results to an input struct.
+func (sc *spannerDatabaseClient) queryStructs(
+	ctx context.Context,
+	stmt spanner.Statement,
+	newStruct func() interface{},
+	withStruct func(interface{}),
+) error {
+	return sc.executeQuery(ctx, stmt, func(iter *spanner.RowIterator) error {
+		return sc.processRows(iter, newStruct, withStruct)
+	})
+}
+
+// queryDynamic executes a dynamically constructed query and returns the results as a slice of string slices.
+func (sc *spannerDatabaseClient) queryDynamic(
+	ctx context.Context,
+	stmt spanner.Statement,
+) ([][]string, error) {
+	var rowData [][]string
+	err := sc.executeQuery(ctx, stmt, func(iter *spanner.RowIterator) error {
+		result, err := sc.processDynamicRows(iter)
+		rowData = result
+		return err
+	})
+	return rowData, err
 }
 
 func (sc *spannerDatabaseClient) processRows(iter *spanner.RowIterator, newStruct func() interface{}, withStruct func(interface{})) error {
@@ -287,4 +319,29 @@ func (sc *spannerDatabaseClient) processRows(iter *spanner.RowIterator, newStruc
 	}
 
 	return nil
+}
+
+// processDynamicRows processes rows from dynamically constructed queries.
+func (sc *spannerDatabaseClient) processDynamicRows(iter *spanner.RowIterator) ([][]string, error) {
+	rowData := [][]string{}
+	for {
+		row, err := iter.Next()
+		if err == iterator.Done {
+			break
+		}
+		if err != nil {
+			return rowData, err
+		}
+
+		data := []string{}
+		for i := 0; i < row.Size(); i++ {
+			var val spanner.GenericColumnValue
+			if err := row.Column(i, &val); err != nil {
+				return rowData, err
+			}
+			data = append(data, val.Value.GetStringValue())
+		}
+		rowData = append(rowData, data)
+	}
+	return rowData, nil
 }

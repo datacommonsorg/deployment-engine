@@ -33,6 +33,8 @@ import (
 
 const (
 	// SQL query snippets.
+	// WHERE keyword for SQL queries.
+	sqlWhere = "\n\t\tWHERE\n\t\t\t"
 	// Prefix for graph queries with any node selection.
 	sqlReturn = "\n\t\tRETURN"
 	// DISTINCT keyword for SQL queries.
@@ -42,7 +44,7 @@ const (
 	// ORDER BY clause for SQL queries.
 	sqlOrderBy = "\n\t\tORDER BY "
 	// LIMIT clause for SQL queries.
-	sqlLimit = "\n\t\tLIMIT "
+	sqlLimit = "\n\t\tLIMIT @limit"
 )
 
 const (
@@ -57,31 +59,33 @@ func GetCompletionTimestampQuery() *spanner.Statement {
 }
 
 func GetNodePropsQuery(ids []string, out bool) *spanner.Statement {
+	getIds, params := getIdStatement(ids)
+
 	switch out {
 	case true:
 		return &spanner.Statement{
-			SQL:    statements.getPropsBySubjectID,
-			Params: map[string]interface{}{"ids": ids},
+			SQL:    fmt.Sprintf(statements.getPropsBySubjectID, getIds),
+			Params: params,
 		}
 	default:
 		return &spanner.Statement{
-			SQL:    statements.getPropsByObjectID,
-			Params: map[string]interface{}{"ids": ids},
+			SQL:    fmt.Sprintf(statements.getPropsByObjectID, getIds),
+			Params: params,
 		}
 	}
 }
 
 func GetNodeEdgesByIDQuery(ids []string, arc *v2.Arc, pageSize, offset int) *spanner.Statement {
-	params := map[string]interface{}{"ids": ids}
+	getIds, params := getIdStatement(ids)
 
 	// Attach predicates.
 	filterPredicate := ""
 	if arc.SingleProp != "" && arc.SingleProp != v3.Wildcard && arc.Decorator != v3.Chain {
 		filterPredicate = statements.filterPredicate
-		params["predicates"] = []string{arc.SingleProp}
+		params["predicate"] = arc.SingleProp
 	} else if len(arc.BracketProps) > 0 {
-		filterPredicate = statements.filterPredicate
-		params["predicates"] = arc.BracketProps
+		filterPredicate = statements.filterPredicates
+		params["predicate"] = arc.BracketProps
 	}
 
 	// Generate filters.
@@ -100,38 +104,39 @@ func GetNodeEdgesByIDQuery(ids []string, arc *v2.Arc, pageSize, offset int) *spa
 			objectFilter := ""
 			filterVal := addObjectValues(arc.Filter[prop])
 			if len(filterVal) > 0 {
-				objectFilter = fmt.Sprintf(statements.filterValue, i)
-				params["val"+strconv.Itoa(i)] = filterVal
+				if len(filterVal) == 1 {
+					objectFilter = fmt.Sprintf(statements.filterValue, i)
+					params["val"+strconv.Itoa(i)] = filterVal[0]
+				} else {
+					objectFilter = fmt.Sprintf(statements.filterValues, i)
+					params["val"+strconv.Itoa(i)] = filterVal
+				}
 			}
 			subqueries = append(subqueries, fmt.Sprintf(statements.filterProperty, i, objectFilter))
 			i += 1
 		}
 	}
 
-	// Order subqueries by selectivity (i.e. expected cardinality of edges) for query performance.
 	var subquery string
 	switch arc.Out {
 	case true:
 		if arc.Decorator == v3.Chain {
-			subquery = fmt.Sprintf(statements.getChainedEdgesBySubjectID, maxHops)
+			subquery = fmt.Sprintf(statements.getChainedEdgesBySubjectID, getIds, maxHops)
 			params["predicate"] = arc.SingleProp
 			params["result_predicate"] = arc.SingleProp + arc.Decorator
 		} else {
-			subquery = fmt.Sprintf(statements.getEdgesBySubjectID, filterPredicate)
+			subquery = fmt.Sprintf(statements.getEdgesBySubjectID, getIds, filterPredicate)
 		}
-		// Add filters last for out-edges.
-		subqueries = append([]string{subquery}, subqueries...)
 	case false:
 		if arc.Decorator == v3.Chain {
-			subquery = fmt.Sprintf(statements.getChainedEdgesByObjectID, maxHops)
+			subquery = fmt.Sprintf(statements.getChainedEdgesByObjectID, getIds, maxHops)
 			params["predicate"] = arc.SingleProp
 			params["result_predicate"] = arc.SingleProp + arc.Decorator
 		} else {
-			subquery = fmt.Sprintf(statements.getEdgesByObjectID, filterPredicate)
+			subquery = fmt.Sprintf(statements.getEdgesByObjectID, getIds, filterPredicate)
 		}
-		// Add filters first for in-edges.
-		subqueries = append(subqueries, subquery)
 	}
+	subqueries = append([]string{subquery}, subqueries...)
 
 	// Generate prefix and return statement.
 	var prefix, returnEdges string
@@ -241,46 +246,26 @@ func SparqlQuery(nodes []types.Node, queries []*types.Query, opts *types.QueryOp
 	sql := statements.graphPrefixAny
 	params := map[string]interface{}{}
 
-	aliasToDcid := mapAliasToDcid(queries)
+	safeAliasMap := generateSafeAliasMap(queries)
 	count := 0
 	triples := []string{}
-	dcids := map[string]bool{}
-	aliases := map[string]bool{}
+	nodeMaps := []string{}
 	for _, q := range queries {
-		// Skip dcid triples which will be resolved.
-		if q.Pred == "dcid" {
-			continue
-		}
-
 		eCount := strconv.Itoa(count)
 		params["predicate"+eCount] = q.Pred
 
 		// Parse subject.
-		aliases[q.Sub.Alias] = true
-		sId := getAlias(q.Sub)
+		sId := safeAliasMap[q.Sub.Alias]
 		var sFilter string
-		if dcid, ok := aliasToDcid[q.Sub.Alias]; ok {
-			if _, ok := dcids[dcid]; !ok {
-				sFilter = fmt.Sprintf(statements.nodeFilter, sId)
-				params[sId] = []string{dcid}
-				dcids[dcid] = true
-			}
-		}
 
 		// Parse object.
 		var oId, oFilter string
 		if node, ok := q.Obj.(types.Node); ok {
-			aliases[node.Alias] = true
-			oId = getAlias(node)
-			if dcid, ok := aliasToDcid[node.Alias]; ok {
-				if _, ok := dcids[dcid]; !ok {
-					oFilter = fmt.Sprintf(statements.nodeFilter, oId)
-					params[oId] = []string{dcid}
-					dcids[dcid] = true
-				}
+			oId = safeAliasMap[node.Alias]
+			if q.Pred == "dcid" {
+				nodeMaps = append(nodeMaps, oId+" = "+sId)
 			}
 		} else {
-			oId = "o" + eCount
 			var vals []string
 			switch v := q.Obj.(type) {
 			case []string:
@@ -290,22 +275,43 @@ func SparqlQuery(nodes []types.Node, queries []*types.Query, opts *types.QueryOp
 			default:
 				return nil, fmt.Errorf("unsupported object type: %T", q.Obj)
 			}
-			if q.Pred != "typeOf" { // typeOf has reference object.
+			if q.Pred != "typeOf" && q.Pred != "dcid" { // typeOf has reference object.
 				vals = addObjectValues(vals)
 			}
-			oFilter = fmt.Sprintf(statements.nodeFilter, oId)
-			params[oId] = vals
+			if q.Pred == "dcid" {
+				sFilter = fmt.Sprintf(statements.nodeFilter, sId)
+				params[sId] = vals
+			} else {
+				oId = "o" + eCount
+				oFilter = fmt.Sprintf(statements.nodeFilter, oId)
+				params[oId] = vals
+			}
+
 		}
 
-		triples = append(triples, fmt.Sprintf(statements.triple, sId, sFilter, count, oId, oFilter))
-		count++
+		if q.Pred == "dcid" {
+			if oId == "" {
+				triples = append(triples, fmt.Sprintf(statements.node, sId, sFilter))
+			} else {
+				triples = append(triples, fmt.Sprintf(statements.node, oId, oFilter))
+			}
+		} else {
+			triples = append(triples, fmt.Sprintf(statements.triple, sId, sFilter, count, oId, oFilter))
+			count++
+		}
+
 	}
 
 	sql += strings.Join(triples, ",\n\t\t")
 
+	if len(nodeMaps) > 0 {
+		sql += sqlWhere + strings.Join(nodeMaps, "\n\t\t\tAND ")
+	}
+
 	var nodeAliases []string
 	for _, n := range nodes {
-		nodeAliases = append(nodeAliases, getAlias(n)+".value")
+		alias := safeAliasMap[n.Alias]
+		nodeAliases = append(nodeAliases, alias+".value AS "+alias)
 	}
 	var distinct string
 	if opts.Distinct {
@@ -315,16 +321,17 @@ func SparqlQuery(nodes []types.Node, queries []*types.Query, opts *types.QueryOp
 
 	if opts.Orderby != "" {
 		// Verify that the orderby alias exists.
-		if _, ok := aliases[opts.Orderby]; !ok {
+		if _, ok := safeAliasMap[opts.Orderby]; !ok {
 			return nil, fmt.Errorf("orderby alias %s not found", opts.Orderby)
 		}
-		sql += sqlOrderBy + "\n\t\t\t" + opts.Orderby[1:] + "_.value"
+		sql += sqlOrderBy + "\n\t\t\t" + safeAliasMap[opts.Orderby]
 		if !opts.ASC {
 			sql += sqlDesc
 		}
 	}
 	if opts.Limit > 0 {
-		sql += sqlLimit + strconv.Itoa(opts.Limit)
+		sql += sqlLimit
+		params["limit"] = opts.Limit
 	}
 
 	return &spanner.Statement{
@@ -333,20 +340,23 @@ func SparqlQuery(nodes []types.Node, queries []*types.Query, opts *types.QueryOp
 	}, nil
 }
 
-// mapAliasToDcid maps SPARQL aliases to their corresponding DCIDs.
-func mapAliasToDcid(queries []*types.Query) map[string]string {
-	dcidMap := make(map[string]string)
+// generateSafeAliasMap generates a map of safe aliases for SPARQL queries.
+func generateSafeAliasMap(queries []*types.Query) map[string]string {
+	safeAliasMap := make(map[string]string)
+	count := 0
 	for _, q := range queries {
-		if q.Pred == "dcid" {
-			dcidMap[q.Sub.Alias] = q.Obj.(string)
+		if _, exists := safeAliasMap[q.Sub.Alias]; !exists {
+			safeAliasMap[q.Sub.Alias] = fmt.Sprintf("a%d", count)
+			count++
+		}
+		if node, ok := q.Obj.(types.Node); ok {
+			if _, exists := safeAliasMap[node.Alias]; !exists {
+				safeAliasMap[node.Alias] = fmt.Sprintf("a%d", count)
+				count++
+			}
 		}
 	}
-	return dcidMap
-}
-
-// getAlias returns a SPARQL alias for Spanner.
-func getAlias(node types.Node) string {
-	return node.Alias[1:] + "_"
+	return safeAliasMap
 }
 
 func generateValueHash(input string) string {
@@ -376,4 +386,12 @@ func addObjectValues(input []string) []string {
 		result = append(result, generateObjectValue(v))
 	}
 	return result
+}
+
+// getIdStatement returns the appropriate SQL statement and parameters for fetching IDs based on the number of input nodes.
+func getIdStatement(ids []string) (string, map[string]interface{}) {
+	if len(ids) == 1 {
+		return statements.getId, map[string]interface{}{"id": ids[0]}
+	}
+	return statements.getIds, map[string]interface{}{"id": ids}
 }

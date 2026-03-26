@@ -128,17 +128,17 @@ func setupInternal(
 	schemaPath := path.Join(path.Dir(filename), mcfPath)
 
 	// Data sources.
-	sources := []*datasource.DataSource{}
+	sources := []datasource.DataSource{}
 
 	var spannerDataSource datasource.DataSource
 	var spannerCleanup = func() {}
 	if enableV3 && useSpannerGraph {
 		spannerClient := NewSpannerClient()
 		if spannerClient != nil {
-			spannerCleanup = spannerClient.Stop
+			spannerCleanup = spannerClient.Close
 			spannerDataSource = spanner.NewSpannerDataSource(spannerClient)
 			// TODO: Order sources by priority once other implementations are added.
-			sources = append(sources, &spannerDataSource)
+			sources = append(sources, spannerDataSource)
 		}
 	}
 
@@ -174,7 +174,7 @@ func setupInternal(
 		}
 		if enableV3 {
 			var ds datasource.DataSource = sqldb.NewSQLDataSource(&sqlClient, spannerDataSource)
-			sources = append(sources, &ds)
+			sources = append(sources, ds)
 		}
 	}
 
@@ -205,7 +205,7 @@ func setupInternal(
 			log.Fatalf("Failed to create remote client: %v", err)
 		}
 		var ds datasource.DataSource = remote.NewRemoteDataSource(remoteClient)
-		sources = append(sources, &ds)
+		sources = append(sources, ds)
 	}
 
 	dataSources := datasources.NewDataSources(sources)
@@ -276,7 +276,7 @@ func newClient(
 		return nil, func() {}, err
 	}
 	// Create mixer server. writeUsageLogs is false by default for tests but is directly tested in handler_v2_test.go
-	mixerServer := server.NewMixerServer(mixerStore, metadata, cachedata, mapsClient, dispatcher, flags, false, "")
+	mixerServer := server.NewMixerServer(mixerStore, metadata, cachedata, mapsClient, dispatcher, flags, false, "", "")
 	srv := grpc.NewServer()
 	pbs.RegisterMixerServer(srv, mixerServer)
 	reflection.Register(srv)

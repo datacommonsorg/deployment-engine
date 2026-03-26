@@ -1,6 +1,6 @@
 {
   "inputFiles": {
-    "recruitment_insights.csv": {
+    "*recruitment_insights.csv": {
       "entityType": "Place",
       "provenance": "Recruitment Insights"
     }

@@ -22,6 +22,8 @@ import (
 	"io"
 	"log/slog"
 	"net/http"
+	"net/url"
+	"path"
 	"strings"
 
 	pbv2 "github.com/datacommonsorg/mixer/internal/proto/v2"
@@ -33,6 +35,7 @@ const (
 	TopicDcidSubstring              = "/topic/"
 	TopicDominantType               = "Topic"
 	StatisticalVariableDominantType = "StatisticalVariable"
+	SearchVarsQueryEndpoint         = "/api/search_vars"
 )
 
 // searchVarsRequest represents the request body for the embeddings server
@@ -81,19 +84,21 @@ func ResolveUsingEmbeddings(
 	ctx context.Context,
 	httpClient *http.Client,
 	embeddingsServerURL string,
+	idx string,
 	nodes []string,
+	typeOfValues []string,
 ) (*pbv2.ResolveResponse, error) {
 	if embeddingsServerURL == "" {
 		slog.Error("resolver=indicator requested, but the embeddings server is not configured for this deployment")
 		return nil, status.Errorf(codes.FailedPrecondition, "Indicator resolution is not available in this environment.")
 	}
 
-	searchResp, err := callEmbeddingsServer(ctx, httpClient, embeddingsServerURL, nodes)
+	searchResp, err := callEmbeddingsServer(ctx, httpClient, embeddingsServerURL, idx, nodes)
 	if err != nil {
 		return nil, err
 	}
 
-	return buildResolveResponse(nodes, searchResp), nil
+	return buildResolveResponse(nodes, searchResp, typeOfValues), nil
 }
 
 // callEmbeddingsServer handles the HTTP communication with the embeddings server.
@@ -102,6 +107,7 @@ func ResolveUsingEmbeddings(
 //   - ctx: Context for the request.
 //   - httpClient: HTTP client to use for the request.
 //   - embeddingsServerURL: Base URL of the embeddings server.
+//   - idx: The index to use for resolution.
 //   - nodes: List of query strings to resolve.
 //
 // Returns:
@@ -111,6 +117,7 @@ func callEmbeddingsServer(
 	ctx context.Context,
 	httpClient *http.Client,
 	embeddingsServerURL string,
+	idx string,
 	nodes []string,
 ) (*searchVarsResponse, error) {
 	// Construct the request body
@@ -124,7 +131,21 @@ func callEmbeddingsServer(
 	}
 
 	// Create the HTTP request
-	req, err := http.NewRequestWithContext(ctx, "POST", embeddingsServerURL+"/api/search_vars", bytes.NewBuffer(requestBytes))
+	searchVarsURL, err := url.Parse(embeddingsServerURL)
+	if err != nil {
+		slog.Error("Failed to parse embeddings server URL", "error", err, "url", embeddingsServerURL)
+		return nil, status.Errorf(codes.Internal, "An internal error occurred while connecting to the resolution service.")
+	}
+	searchVarsURL.Path = path.Join(searchVarsURL.Path, SearchVarsQueryEndpoint)
+
+	// The embeddings server expects the index to be passed as a query parameter
+	if idx != "" {
+		q := searchVarsURL.Query()
+		q.Set("idx", idx)
+		searchVarsURL.RawQuery = q.Encode()
+	}
+
+	req, err := http.NewRequestWithContext(ctx, "POST", searchVarsURL.String(), bytes.NewBuffer(requestBytes))
 	if err != nil {
 		slog.Error("Failed to create embeddings server request", "error", err, "url", embeddingsServerURL)
 		return nil, status.Errorf(codes.Internal, "An internal error occurred while connecting to the resolution service.")
@@ -163,7 +184,7 @@ func callEmbeddingsServer(
 // It iterates through the original requested nodes (queries) and attempts to find
 // corresponding results in the searchResp. If results are found, it delegates
 // to buildEntityCandidates to construct the candidate list.
-func buildResolveResponse(nodes []string, searchResp *searchVarsResponse) *pbv2.ResolveResponse {
+func buildResolveResponse(nodes []string, searchResp *searchVarsResponse, typeOfValues []string) *pbv2.ResolveResponse {
 	resolveResponse := &pbv2.ResolveResponse{
 		Entities: make([]*pbv2.ResolveResponse_Entity, 0, len(nodes)),
 	}
@@ -174,7 +195,7 @@ func buildResolveResponse(nodes []string, searchResp *searchVarsResponse) *pbv2.
 		}
 
 		if result, ok := searchResp.QueryResults[node]; ok {
-			entity.Candidates = buildEntityCandidates(&result)
+			entity.Candidates = buildEntityCandidates(&result, typeOfValues)
 		}
 		resolveResponse.Entities = append(resolveResponse.Entities, entity)
 	}
@@ -188,7 +209,7 @@ func buildResolveResponse(nodes []string, searchResp *searchVarsResponse) *pbv2.
 //   - Uses 'CosineScore' as the primary score.
 //   - Determines 'DominantType' based on the DCID (Topic vs StatVar).
 //   - Extracts the best matching sentence for metadata if available.
-func buildEntityCandidates(result *searchResult) []*pbv2.ResolveResponse_Entity_Candidate {
+func buildEntityCandidates(result *searchResult, typeOfValues []string) []*pbv2.ResolveResponse_Entity_Candidate {
 	candidates := make([]*pbv2.ResolveResponse_Entity_Candidate, 0, len(result.SV))
 	for i, statVarDcid := range result.SV {
 		// Safety check for parallel arrays
@@ -203,6 +224,20 @@ func buildEntityCandidates(result *searchResult) []*pbv2.ResolveResponse_Entity_
 		dominantType := StatisticalVariableDominantType
 		if strings.Contains(statVarDcid, TopicDcidSubstring) {
 			dominantType = TopicDominantType
+		}
+
+		// Filter by type if provided
+		if len(typeOfValues) > 0 {
+			match := false
+			for _, t := range typeOfValues {
+				if t == dominantType {
+					match = true
+					break
+				}
+			}
+			if !match {
+				continue
+			}
 		}
 
 		candidate := &pbv2.ResolveResponse_Entity_Candidate{

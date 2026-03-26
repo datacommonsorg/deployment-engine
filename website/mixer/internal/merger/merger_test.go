@@ -33,12 +33,14 @@ func TestMergeResolve(t *testing.T) {
 	}
 
 	for _, c := range []struct {
+		desc string
 		r1   *pbv2.ResolveResponse
 		r2   *pbv2.ResolveResponse
 		want *pbv2.ResolveResponse
 	}{
 		{
-			&pbv2.ResolveResponse{
+			desc: "Basic merge with overlapping nodes and new candidates",
+			r1: &pbv2.ResolveResponse{
 				Entities: []*pbv2.ResolveResponse_Entity{
 					{
 						Node: "node1",
@@ -49,7 +51,7 @@ func TestMergeResolve(t *testing.T) {
 					},
 				},
 			},
-			&pbv2.ResolveResponse{
+			r2: &pbv2.ResolveResponse{
 				Entities: []*pbv2.ResolveResponse_Entity{
 					{
 						Node: "node1",
@@ -65,7 +67,7 @@ func TestMergeResolve(t *testing.T) {
 					},
 				},
 			},
-			&pbv2.ResolveResponse{
+			want: &pbv2.ResolveResponse{
 				Entities: []*pbv2.ResolveResponse_Entity{
 					{
 						Node: "node1",
@@ -84,11 +86,77 @@ func TestMergeResolve(t *testing.T) {
 				},
 			},
 		},
+		{
+			desc: "Merge with score-based sorting and isolated nodes",
+			r1: &pbv2.ResolveResponse{
+				Entities: []*pbv2.ResolveResponse_Entity{
+					{
+						Node: "node1",
+						Candidates: []*pbv2.ResolveResponse_Entity_Candidate{
+							{Dcid: "id1.1", Metadata: map[string]string{"score": "0.5"}},
+							{Dcid: "id1.2", Metadata: map[string]string{"score": "0.9"}},
+						},
+					},
+					{
+						Node: "node2",
+						Candidates: []*pbv2.ResolveResponse_Entity_Candidate{
+							{Dcid: "id2.1", Metadata: map[string]string{"score": "0.8"}},
+							{Dcid: "id2.2", Metadata: map[string]string{"score": "0.6"}},
+						},
+					},
+				},
+			},
+			r2: &pbv2.ResolveResponse{
+				Entities: []*pbv2.ResolveResponse_Entity{
+					{
+						Node: "node1",
+						Candidates: []*pbv2.ResolveResponse_Entity_Candidate{
+							{Dcid: "id1.3", Metadata: map[string]string{"score": "0.7"}},
+						},
+					},
+					{
+						Node: "node3",
+						Candidates: []*pbv2.ResolveResponse_Entity_Candidate{
+							{Dcid: "id3.1", Metadata: map[string]string{"score": "0.4"}},
+							{Dcid: "id3.2", Metadata: map[string]string{"score": "0.9"}},
+						},
+					},
+				},
+			},
+			want: &pbv2.ResolveResponse{
+				Entities: []*pbv2.ResolveResponse_Entity{
+					{
+						Node: "node1",
+						Candidates: []*pbv2.ResolveResponse_Entity_Candidate{
+							{Dcid: "id1.2", Metadata: map[string]string{"score": "0.9"}},
+							{Dcid: "id1.3", Metadata: map[string]string{"score": "0.7"}},
+							{Dcid: "id1.1", Metadata: map[string]string{"score": "0.5"}},
+						},
+					},
+					{
+						Node: "node2",
+						Candidates: []*pbv2.ResolveResponse_Entity_Candidate{
+							{Dcid: "id2.1", Metadata: map[string]string{"score": "0.8"}},
+							{Dcid: "id2.2", Metadata: map[string]string{"score": "0.6"}},
+						},
+					},
+					{
+						Node: "node3",
+						Candidates: []*pbv2.ResolveResponse_Entity_Candidate{
+							{Dcid: "id3.2", Metadata: map[string]string{"score": "0.9"}},
+							{Dcid: "id3.1", Metadata: map[string]string{"score": "0.4"}},
+						},
+					},
+				},
+			},
+		},
 	} {
-		got := MergeResolve(c.r1, c.r2)
-		if diff := cmp.Diff(got, c.want, cmpOpts); diff != "" {
-			t.Errorf("MergeResolve(%v, %v) got diff: %s", c.r1, c.r2, diff)
-		}
+		t.Run(c.desc, func(t *testing.T) {
+			got := MergeResolve(c.r1, c.r2)
+			if diff := cmp.Diff(got, c.want, cmpOpts); diff != "" {
+				t.Errorf("MergeResolve mismatch (-got +want):\n%s", diff)
+			}
+		})
 	}
 }
 
@@ -189,13 +257,7 @@ func TestMergeLinkedGraph(t *testing.T) {
 			},
 		},
 	} {
-		var err error
-
 		got := mergeLinkedGraph(c.local, c.remote)
-		if err != nil {
-			t.Errorf("mergeLinkedGraph(%v, %v) = %s", c.local, c.remote, err)
-			continue
-		}
 		if diff := cmp.Diff(got, c.want, cmpOpts); diff != "" {
 			t.Errorf("mergeLinkedGraph(%v, %v) got diff: %s", c.local, c.remote, diff)
 		}
@@ -1766,6 +1828,113 @@ func TestMergeMultiNodeSearch(t *testing.T) {
 		}
 		if diff := cmp.Diff(got, c.want, cmpOpts); diff != "" {
 			t.Errorf("MergeMultiNodeSearch(%v) got diff: %s", c.allResp, diff)
+		}
+	}
+}
+
+func TestMergeMultiQueryResponse(t *testing.T) {
+	cmpOpts := cmp.Options{protocmp.Transform()}
+	for _, c := range []struct {
+		allResp []*pb.QueryResponse
+		orderby string
+		asc     bool
+		limit   int
+		want    *pb.QueryResponse
+	}{
+		{
+			[]*pb.QueryResponse{
+				{
+					Header: []string{"?a", "?b"},
+					Rows:   []*pb.QueryResponseRow{},
+				},
+				nil,
+				{
+					Header: []string{"?a", "?b"},
+					Rows: []*pb.QueryResponseRow{
+						{
+							Cells: []*pb.QueryResponseCell{
+								{Value: "A"},
+								{Value: "b3"},
+							},
+						},
+						{
+							Cells: []*pb.QueryResponseCell{
+								{Value: "B"},
+								{Value: "b1"},
+							},
+						},
+						{
+							Cells: []*pb.QueryResponseCell{
+								{Value: "D"},
+								{Value: "b5"},
+							},
+						},
+						{
+							Cells: []*pb.QueryResponseCell{
+								{Value: "D"},
+								{Value: "b2"},
+							},
+						},
+					},
+				},
+				{
+					Header: []string{"?a", "?b"},
+					Rows: []*pb.QueryResponseRow{
+						{
+							Cells: []*pb.QueryResponseCell{
+								{Value: "C"},
+								{Value: "b4"},
+							},
+						},
+						{
+							Cells: []*pb.QueryResponseCell{
+								{Value: "D"},
+								{Value: "b2"},
+							},
+						},
+					},
+				},
+			},
+			"?b",
+			false,
+			4,
+			&pb.QueryResponse{
+				Header: []string{"?a", "?b"},
+				Rows: []*pb.QueryResponseRow{
+					{
+						Cells: []*pb.QueryResponseCell{
+							{Value: "D"},
+							{Value: "b5"},
+						},
+					},
+					{
+						Cells: []*pb.QueryResponseCell{
+							{Value: "C"},
+							{Value: "b4"},
+						},
+					},
+					{
+						Cells: []*pb.QueryResponseCell{
+							{Value: "A"},
+							{Value: "b3"},
+						},
+					},
+					{
+						Cells: []*pb.QueryResponseCell{
+							{Value: "D"},
+							{Value: "b2"},
+						},
+					},
+				},
+			},
+		},
+	} {
+		got, err := MergeMultiQueryResponse(c.allResp, c.orderby, c.asc, c.limit)
+		if err != nil {
+			t.Errorf("MergeMultiQueryResponse(%v) got err: %s", c.allResp, err)
+		}
+		if diff := cmp.Diff(got, c.want, cmpOpts); diff != "" {
+			t.Errorf("MergeMultiQueryResponse(%v) got diff: %s", c.allResp, diff)
 		}
 	}
 }

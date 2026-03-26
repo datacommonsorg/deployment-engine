@@ -287,6 +287,34 @@
   }
 }
 
+/* DB Sync Section */
+.db-sync-section {
+  max-width: 42rem;
+}
+
+.db-sync-section .upload-title {
+  margin-bottom: 0.25rem;
+}
+
+.db-sync-section .upload-meta {
+  margin-bottom: 1.5rem;
+}
+
+.status-row-inline {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.status-box .status-chip-running {
+  --md-filter-chip-container-color: #E8F0FE;
+  --md-filter-chip-label-text-color: #1A73E8;
+  --md-filter-chip-icon-color: #1A73E8;
+  --md-filter-chip-disabled-container-color: #E8F0FE;
+  --md-filter-chip-disabled-label-text-color: #1A73E8;
+  --md-filter-chip-disabled-icon-color: #1A73E8;
+}
+
 /* Right-aligned button group */
 .button-group-right {
   justify-content: flex-end;

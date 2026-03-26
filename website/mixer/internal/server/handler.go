@@ -21,16 +21,13 @@ import (
 	"sort"
 
 	pb "github.com/datacommonsorg/mixer/internal/proto"
-	"github.com/datacommonsorg/mixer/internal/server/cache"
 	"github.com/datacommonsorg/mixer/internal/server/convert"
 	"github.com/datacommonsorg/mixer/internal/server/place"
 	"github.com/datacommonsorg/mixer/internal/server/placein"
 	"github.com/datacommonsorg/mixer/internal/server/recon"
-	"github.com/datacommonsorg/mixer/internal/server/search"
 	"github.com/datacommonsorg/mixer/internal/server/stat"
 	"github.com/datacommonsorg/mixer/internal/server/statvar"
 	"github.com/datacommonsorg/mixer/internal/server/translator"
-	"github.com/datacommonsorg/mixer/internal/server/v0/internalbio"
 	"github.com/datacommonsorg/mixer/internal/server/v0/placestatvar"
 	"github.com/datacommonsorg/mixer/internal/server/v0/propertylabel"
 	"github.com/datacommonsorg/mixer/internal/server/v0/propertyvalue"
@@ -79,14 +76,6 @@ func (s *Server) GetStats(ctx context.Context, in *pb.GetStatsRequest,
 func (s *Server) GetStatAll(ctx context.Context, in *pb.GetStatAllRequest,
 ) (*pb.GetStatAllResponse, error) {
 	return stat.GetStatAll(ctx, in, s.store)
-}
-
-// GetStatDateWithinPlace implements API for Mixer.GetStatDateWithinPlace.
-// Endpoint: /v1/stat/date/within-place
-func (s *Server) GetStatDateWithinPlace(
-	ctx context.Context, in *pb.GetStatDateWithinPlaceRequest,
-) (*pb.GetStatDateWithinPlaceResponse, error) {
-	return stat.GetStatDateWithinPlace(ctx, in, s.store)
 }
 
 // GetPlacesIn implements API for Mixer.GetPlacesIn.
@@ -156,22 +145,6 @@ func (s *Server) GetLocationsRankings(
 	return localResp, nil
 }
 
-// GetPlaceStatDateWithinPlace implements API for Mixer.GetPlaceStatDateWithinPlace.
-// Endpoint: /place/stat/date/within-place
-func (s *Server) GetPlaceStatDateWithinPlace(
-	ctx context.Context, in *pb.GetPlaceStatDateWithinPlaceRequest,
-) (*pb.GetPlaceStatDateWithinPlaceResponse, error) {
-	return place.GetPlaceStatDateWithinPlace(ctx, in, s.store)
-}
-
-// GetPlaceStatsVar implements API for Mixer.GetPlaceStatsVar.
-// TODO(shifucun): Migrate clients to use GetPlaceStatVars and deprecate this.
-func (s *Server) GetPlaceStatsVar(
-	ctx context.Context, in *pb.GetPlaceStatsVarRequest,
-) (*pb.GetPlaceStatsVarResponse, error) {
-	return statvar.GetPlaceStatsVar(ctx, in, s.store)
-}
-
 // GetPlaceStatVars implements API for Mixer.GetPlaceStatVars.
 func (s *Server) GetPlaceStatVars(
 	ctx context.Context, in *pb.GetPlaceStatVarsRequest,
@@ -238,20 +211,6 @@ func (s *Server) GetTriples(ctx context.Context, in *pb.GetTriplesRequest,
 	return &pb.PayloadResponse{Payload: string(jsonRaw)}, nil
 }
 
-// GetBioPageData implements API for Mixer.GetBioPageData.
-func (s *Server) GetBioPageData(
-	ctx context.Context, in *pb.GetBioPageDataRequest,
-) (*pb.GraphNodes, error) {
-	return internalbio.GetBioPageData(ctx, in, s.store)
-}
-
-// Search implements API for Mixer.Search.
-func (s *Server) Search(
-	ctx context.Context, in *pb.SearchRequest,
-) (*pb.SearchResponse, error) {
-	return search.Search(ctx, in, s.store.BqClient, s.metadata.BigQueryDataset)
-}
-
 // GetVersion implements API for Mixer.GetVersion.
 func (s *Server) GetVersion(
 	ctx context.Context, in *pb.GetVersionRequest,
@@ -270,6 +229,7 @@ func (s *Server) GetVersion(
 		GitHash:           os.Getenv("MIXER_HASH"),
 		RemoteMixerDomain: s.metadata.RemoteMixerDomain,
 		FeatureFlags:      string(featureFlagsJson),
+		DataSourceIds:     s.dispatcher.GetSources(),
 	}, nil
 }
 
@@ -306,18 +266,6 @@ func (s *Server) BulkFindEntities(
 	ctx context.Context, in *pb.BulkFindEntitiesRequest,
 ) (*pb.BulkFindEntitiesResponse, error) {
 	return recon.BulkFindEntities(ctx, in, s.store, s.mapsClient)
-}
-
-// UpdateCache implements API for Mixer.UpdateCache
-func (s *Server) UpdateCache(
-	ctx context.Context, in *pb.UpdateCacheRequest,
-) (*pb.UpdateCacheResponse, error) {
-	newCache, err := cache.NewCache(ctx, s.store, *s.cachedata.Load().Options(), s.metadata)
-	if err != nil {
-		return nil, err
-	}
-	s.cachedata.Swap(newCache)
-	return &pb.UpdateCacheResponse{}, err
 }
 
 // GetImportTableData implements API for Mixer.GetImportTableData

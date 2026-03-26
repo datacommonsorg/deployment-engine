@@ -111,7 +111,7 @@
             <br><br>
               <strong>Important:</strong>
               <br>
-              Data insights will be updated in few hours after successful upload. See user guide for more details.
+              Data insights will be updated in few hours automatically unless you manually trigger data processing. See user guide for more details.
           </p>
 
           <!-- Selected File Display -->
@@ -140,8 +140,6 @@
             data-max-file-size-mb="10"
             onchange="handleFileSelect(event, 'applicant')">
         </div>
-
-        <md-divider class="divider-short"></md-divider>
 
         <!-- Upload Status -->
         <div class="status-box hidden" id="uploadResponseMessage">
@@ -174,6 +172,40 @@
             <span class="status-value" id="failedRowsMessage"></span>
           </div>
           <div class="error-list hidden" id="uploadErrorBlock"></div>
+        </div>
+
+        <md-divider class="divider-short"></md-divider>
+
+        <!-- DB Sync & Embeddings Build -->
+        <div class="db-sync-section">
+          <h3 class="upload-title">Process Data Insights</h3>
+          <p class="upload-meta">Run data sync and rebuild embeddings after uploading new data</p>
+
+          <md-filled-button class="inline-button" id="dbSyncBtn" onclick="startDbSyncAndEmbeddingsBuild()">
+            <md-icon slot="icon">sync</md-icon>
+            Process Data
+          </md-filled-button>
+
+          <!-- Polling status area -->
+          <div id="dbSyncStatus" class="status-box hidden">
+            <div class="status-row status-row-inline">
+              <md-filter-chip label="Running..." id="dbSyncRunningChip" class="status-chip-running hidden"></md-filter-chip>
+              <md-filter-chip label="Completed" id="dbSyncSuccessChip" class="status-chip-success hidden"></md-filter-chip>
+              <md-filter-chip label="Failed" id="dbSyncFailedChip" class="status-chip-error hidden"></md-filter-chip>
+            </div>
+            <div class="status-row hidden" id="dbSyncStartedAtRow">
+              <span class="status-label">Started at:</span>
+              <span class="status-value" id="dbSyncStartedAt"></span>
+            </div>
+            <div class="status-row hidden" id="dbSyncFinishedAtRow">
+              <span class="status-label">Finished at:</span>
+              <span class="status-value" id="dbSyncFinishedAt"></span>
+            </div>
+            <div class="status-row hidden" id="dbSyncErrorRow">
+              <span class="status-label">Error:</span>
+              <span class="status-value error" id="dbSyncErrorMessage"></span>
+            </div>
+          </div>
         </div>
       </md-card>
     </div>

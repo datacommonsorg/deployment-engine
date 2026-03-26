@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # #### Stage 1: Build mixer. ####
-FROM golang:1.23.11 AS mixer
+FROM golang:1.24.0 AS mixer
 
 WORKDIR /workspace
 
@@ -49,7 +49,7 @@ RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o bin/mixer cmd/main.go
 
 
 # #### Stage 2: Build python servers (website and NL). ####
-FROM --platform=linux/amd64 python:3.11.4-slim as py-servers
+FROM --platform=linux/amd64 python:3.11.14-slim as py-servers
 
 ARG PIP_DISABLE_PIP_VERSION_CHECK=1
 ARG PIP_NO_CACHE_DIR=1
@@ -76,6 +76,7 @@ RUN pip3 install --upgrade pip setuptools \
     && pip3 install --no-cache-dir -r /workspace/server/requirements.txt \
     && pip3 install --no-cache-dir -r /workspace/torch_requirements.txt --index-url https://download.pytorch.org/whl/cpu \
     && pip3 install --no-cache-dir -r /workspace/nl_server/requirements.txt \
+    && pip3 install --no-cache-dir datacommons-mcp \
     && pip3 install --no-cache-dir -r /workspace/import/requirements.txt \
     && pip3 install requests==2.31.0 setuptools==80.9.0
 
@@ -140,7 +141,11 @@ ENV WEBSITE_MIXER_API_ROOT=http://127.0.0.1:8081 \
     USE_SQLITE=false \
     USE_CLOUDSQL=false \
     DC_API_ROOT=https://api.datacommons.org \
-    ENABLE_MODEL=true
+    ENABLE_MODEL=true \
+    ENABLE_MCP=true \
+    DC_TYPE=custom \
+    DC_API_BASE_URL=http://127.0.0.1:8081/v2 \
+    CUSTOM_DC_URL=http://127.0.0.1:7070
 
 WORKDIR /workspace
 
@@ -167,6 +172,11 @@ COPY build/cdc_services/run.sh .
 COPY import/simple/ ./import/
 COPY upload_db_configs.py ./upload_db_configs.py
 COPY download_mcf_parser.py ./download_mcf_parser.py
+
+# Copy db-sync and embeddings build script.
+COPY run_db_embeddings.sh ./run_db_embeddings.sh
+RUN chmod +x run_db_embeddings.sh
+
 COPY tools/ ./tools/
 
 # Make script executable.

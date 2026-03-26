@@ -1,6 +1,6 @@
 {
   "inputFiles": {
-    "health_insights.csv": {
+    "*health_insights.csv": {
       "entityType": "Place",
       "provenance": "Health Insights",
       "observationProperties": {

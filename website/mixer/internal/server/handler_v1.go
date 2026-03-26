@@ -25,10 +25,8 @@ import (
 	"github.com/datacommonsorg/mixer/internal/server/statvar/hierarchy"
 	"github.com/datacommonsorg/mixer/internal/server/statvar/search"
 	"github.com/datacommonsorg/mixer/internal/server/translator"
-	"github.com/datacommonsorg/mixer/internal/server/v1/event"
 	"github.com/datacommonsorg/mixer/internal/server/v1/info"
 	"github.com/datacommonsorg/mixer/internal/server/v1/observationdates"
-	"github.com/datacommonsorg/mixer/internal/server/v1/observationexistence"
 	"github.com/datacommonsorg/mixer/internal/server/v1/observations"
 	"github.com/datacommonsorg/mixer/internal/server/v1/page"
 	"github.com/datacommonsorg/mixer/internal/server/v1/properties"
@@ -110,13 +108,6 @@ func (s *Server) Variables(
 	ctx context.Context, in *pbv1.VariablesRequest,
 ) (*pbv1.VariablesResponse, error) {
 	return variables.Variables(ctx, in, s.store)
-}
-
-// BulkVariables implements API for mixer.BulkVariables.
-func (s *Server) BulkVariables(
-	ctx context.Context, in *pbv1.BulkVariablesRequest,
-) (*pbv1.BulkVariablesResponse, error) {
-	return variables.BulkVariables(ctx, in, s.store)
 }
 
 // PlaceInfo implements API for mixer.PlaceInfo.
@@ -361,13 +352,6 @@ func (s *Server) BulkObservationsPoint(
 	return observations.BulkPoint(ctx, in, s.store)
 }
 
-// BulkObservationsPointLinked implements API for mixer.BulkObservationsPointLinked.
-func (s *Server) BulkObservationsPointLinked(
-	ctx context.Context, in *pbv1.BulkObservationsPointLinkedRequest,
-) (*pbv1.BulkObservationsPointResponse, error) {
-	return observations.BulkPointLinked(ctx, in, s.store)
-}
-
 // ObservationsSeries implements API for mixer.ObservationsSeries.
 func (s *Server) ObservationsSeries(
 	ctx context.Context, in *pbv1.ObservationsSeriesRequest,
@@ -432,20 +416,6 @@ func (s *Server) BulkObservationDatesLinked(
 
 }
 
-// BulkObservationExistence implements API for mixer.BulkObservationExistence.
-func (s *Server) BulkObservationExistence(
-	ctx context.Context, in *pbv1.BulkObservationExistenceRequest,
-) (*pbv1.BulkObservationExistenceResponse, error) {
-	return observationexistence.BulkObservationExistence(ctx, in, s.store)
-}
-
-// BioPage implements API for mixer.BioPage.
-func (s *Server) BioPage(
-	ctx context.Context, in *pbv1.BioPageRequest,
-) (*pb.GraphNodes, error) {
-	return page.BioPage(ctx, in, s.store)
-}
-
 // PlacePage implements API for mixer.PlacePage.
 func (s *Server) PlacePage(ctx context.Context, in *pbv1.PlacePageRequest) (
 	*pbv1.PlacePageResponse, error) {
@@ -494,27 +464,6 @@ func (s *Server) VariableAncestors(
 		return remoteResp, nil
 	}
 	return localResp, nil
-}
-
-// DerivedObservationsSeries implements API for mixer.ObservationsSeries.
-func (s *Server) DerivedObservationsSeries(
-	ctx context.Context, in *pbv1.DerivedObservationsSeriesRequest,
-) (*pbv1.DerivedObservationsSeriesResponse, error) {
-	return observations.DerivedSeries(ctx, in, s.store)
-}
-
-// EventCollection implements API for mixer.EventCollection.
-func (s *Server) EventCollection(
-	ctx context.Context, in *pbv1.EventCollectionRequest,
-) (*pbv1.EventCollectionResponse, error) {
-	return event.Collection(ctx, in, s.store)
-}
-
-// EventCollectionDate implements API for mixer.EventCollectionDate.
-func (s *Server) EventCollectionDate(
-	ctx context.Context, in *pbv1.EventCollectionDateRequest,
-) (*pbv1.EventCollectionDateResponse, error) {
-	return event.CollectionDate(ctx, in, s.store)
 }
 
 // RecognizePlaces implements API for Mixer.RecognizePlaces.

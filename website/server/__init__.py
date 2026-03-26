@@ -40,6 +40,7 @@ from server.lib.nl.common.bad_words import load_bad_words
 from server.lib.nl.detection import llm_prompt
 from server.lib.nl.detection.agent.agent import create_detection_agent
 import server.lib.util as libutil
+from server.routes.tools import html as tools_html
 import server.services.bigtable as bt
 from server.services.discovery import configure_endpoints_from_ingress
 from server.services.discovery import get_health_check_urls
@@ -123,24 +124,6 @@ def register_routes_base_dc(app):
 
   from server.routes.disaster import api as disaster_api
   app.register_blueprint(disaster_api.bp)
-
-
-def register_routes_biomedical_dc(app):
-  # Apply the blueprints specific to biomedical dc
-  from server.routes.biomedical import html as bio_html
-  app.register_blueprint(bio_html.bp)
-
-  from server.routes.disease import api as disease_api
-  app.register_blueprint(disease_api.bp)
-
-  from server.routes.disease import html as disease_html
-  app.register_blueprint(disease_html.bp)
-
-  from server.routes.protein import api as protein_api
-  app.register_blueprint(protein_api.bp)
-
-  from server.routes.protein import html as protein_html
-  app.register_blueprint(protein_html.bp)
 
 
 def register_routes_disasters(app):
@@ -369,9 +352,6 @@ def create_app(nl_root=DEFAULT_NL_ROOT):
   if ingress_config_path:
     configure_endpoints_from_ingress(ingress_config_path)
 
-  if os.environ.get('FLASK_ENV') == 'biomedical':
-    register_routes_biomedical_dc(app)
-
   register_routes_common(app)
   register_routes_base_dc(app)
 
@@ -392,7 +372,7 @@ def create_app(nl_root=DEFAULT_NL_ROOT):
     app.register_blueprint(data_overview_html.bp)
 
   # Test was inclued to be able to run admin panel tests
-  if os.environ.get('FLASK_ENV') in ['education', 'energy', 'health', 'test']:
+  if os.environ.get('FLASK_ENV') in ['education', 'energy', 'health', 'test', 'custom']:
     register_routes_admin_panel_dc(app, cfg)
 
   # Load topic page config
@@ -481,6 +461,9 @@ def create_app(nl_root=DEFAULT_NL_ROOT):
   # Set custom dc template folder if set, otherwise use the environment name
   custom_dc_template_folder = app.config.get(
       'CUSTOM_DC_TEMPLATE_FOLDER', None) or app.config.get('ENV', None)
+
+  app.config['VIS_TOOL_EXAMPLES'] = tools_html.get_all_tool_examples(
+      app, custom_dc_template_folder)
 
   # Get and save the blocklisted svgs.
   blocklist_svg = []

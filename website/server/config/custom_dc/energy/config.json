@@ -1,10 +1,10 @@
 {
   "inputFiles": {
-    "leases.csv": {
+    "*leases.csv": {
       "provenance": "Energy Insights",
       "format": "variablePerRow"
     },
-    "asset_locations.csv": {
+    "*asset_locations.csv": {
       "provenance": "Energy Insights",
       "format": "variablePerRow"
     }
