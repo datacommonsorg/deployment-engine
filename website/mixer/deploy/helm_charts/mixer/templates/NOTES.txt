@@ -1,0 +1,12 @@
+The following k8s services were deployed.
+
+{{- if .Values.ingress.enabled }}
+{{- range $serviceName, $group := .Values.serviceGroups }}
+
+Routes: {{ $group.urlPaths }}
+
+K8s service: {{ include "mixer.fullname" $ }}-{{ $serviceName }}:80 
+###############################################################################
+
+{{- end }}
+{{- end }}

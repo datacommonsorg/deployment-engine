@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "name": "United States",
+      "types": [
+        "Country"
+      ],
+      "dcid": "country/USA",
+      "provenanceId": "dc/base/WikidataOtherIdGeos"
+    },
+    {
+      "name": "Pacific Division",
+      "types": [
+        "CensusDivision"
+      ],
+      "dcid": "usc/PacificDivision",
+      "provenanceId": "dc/base/WikidataOtherIdGeos"
+    }
+  ]
+}

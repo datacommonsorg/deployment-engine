@@ -1,0 +1,87 @@
+{
+  "FireIncidentTypeEnum": [
+    {
+      "SubjectID": "FireIncidentTypeEnum",
+      "Predicate": "rangeIncludes",
+      "Provenance": "dc/base/BaseSchema",
+      "Value": "classification",
+      "Bytes": null,
+      "Name": "classification",
+      "Types": [
+        "Property"
+      ]
+    },
+    {
+      "SubjectID": "FireIncidentTypeEnum",
+      "Predicate": "typeOf",
+      "Provenance": "dc/base/BaseSchema",
+      "Value": "ComplexFire",
+      "Bytes": null,
+      "Name": "ComplexFire",
+      "Types": [
+        "FireIncidentTypeEnum"
+      ]
+    },
+    {
+      "SubjectID": "FireIncidentTypeEnum",
+      "Predicate": "typeOf",
+      "Provenance": "dc/base/BaseSchema",
+      "Value": "PrescribedFire",
+      "Bytes": null,
+      "Name": "PrescribedFire",
+      "Types": [
+        "EmissionSourceEnum",
+        "FireCauseEnum",
+        "FireCauseSpecificEnum",
+        "FireIncidentTypeEnum"
+      ]
+    },
+    {
+      "SubjectID": "FireIncidentTypeEnum",
+      "Predicate": "typeOf",
+      "Provenance": "dc/base/BaseSchema",
+      "Value": "Wildfire",
+      "Bytes": null,
+      "Name": "Wildfire",
+      "Types": [
+        "EmissionSourceEnum",
+        "FireIncidentTypeEnum"
+      ]
+    },
+    {
+      "SubjectID": "FireIncidentTypeEnum",
+      "Predicate": "typeOf",
+      "Provenance": "dc/base/BaseSchema",
+      "Value": "WildlandFireUse",
+      "Bytes": null,
+      "Name": "WildlandFireUse",
+      "Types": [
+        "FireIncidentTypeEnum"
+      ]
+    }
+  ],
+  "FoodTypeEnum": [
+    {
+      "SubjectID": "FoodTypeEnum",
+      "Predicate": "rangeIncludes",
+      "Provenance": "dc/base/BaseSchema",
+      "Value": "foodType",
+      "Bytes": null,
+      "Name": "foodType",
+      "Types": [
+        "Property"
+      ]
+    },
+    {
+      "SubjectID": "FoodTypeEnum",
+      "Predicate": "typeOf",
+      "Provenance": "dc/base/BaseSchema",
+      "Value": "Meal",
+      "Bytes": null,
+      "Name": "Meal",
+      "Types": [
+        "FoodTypeEnum"
+      ]
+    }
+  ]
+}

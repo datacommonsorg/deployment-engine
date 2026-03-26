@@ -1,0 +1,93 @@
+{
+  "resolvedEntities": [
+    {
+      "sourceId": "newId/VietnamId",
+      "resolvedIds": [
+        {
+          "ids": [
+            {
+              "prop": "wikidataId",
+              "val": "Q881"
+            },
+            {
+              "prop": "unDataCode",
+              "val": "undata-geo:G00003400"
+            },
+            {
+              "prop": "placeId",
+              "val": "ChIJXx5qc016FTERvmL-4smwO7A"
+            },
+            {
+              "prop": "dcid",
+              "val": "country/VNM"
+            },
+            {
+              "prop": "countryNumericCode",
+              "val": "704"
+            },
+            {
+              "prop": "countryAlpha3Code",
+              "val": "VNM"
+            }
+          ],
+          "probability": 1
+        }
+      ]
+    },
+    {
+      "sourceId": "newId/SunnyvaleId",
+      "resolvedIds": [
+        {
+          "ids": [
+            {
+              "prop": "wikidataId",
+              "val": "Q208459"
+            },
+            {
+              "prop": "usCensusGeoId",
+              "val": "1600000US0677000"
+            },
+            {
+              "prop": "placeId",
+              "val": "ChIJO13QqUW2j4ARosN83Sb7jXY"
+            },
+            {
+              "prop": "dcid",
+              "val": "geoId/0677000"
+            }
+          ],
+          "probability": 1
+        }
+      ]
+    },
+    {
+      "sourceId": "newId/SantaClaraCountyId",
+      "resolvedIds": [
+        {
+          "ids": [
+            {
+              "prop": "usCensusGeoId",
+              "val": "0500000US06085"
+            },
+            {
+              "prop": "placeId",
+              "val": "ChIJd_Y0eVIvkIARuQyDN0F1LBA"
+            },
+            {
+              "prop": "geoId",
+              "val": "06085"
+            },
+            {
+              "prop": "dcid",
+              "val": "geoId/06085"
+            }
+          ],
+          "probability": 1
+        }
+      ]
+    },
+    {
+      "sourceId": "newId/MarsPlanetId"
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+// Copyright 2022 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+//  **** IMPORTANT NOTE ****
+//
+//  The proto of BT data has to match exactly the g3 proto, including tag
+//  number.
+
+syntax = "proto3";
+package datacommons;
+
+option go_package = "github.com/datacommonsorg/mixer/internal/proto";
+
+import "entity.proto";
+
+// Lists of entities (with their known IDs) for a given {idProp, idVal}.
+message ReconEntities {
+  message Entity {
+    message ID {
+      string prop = 1;
+      string val = 2;
+    }
+    // All known IDs of the entity, including the DCID, excluding the ID in the
+    // recon request.
+    // NOTE: A single ID prop might be repeated.
+    repeated ID ids = 1;
+    // All types of the entity. Ordered by dominant place type.
+    repeated string types = 2;
+  }
+  repeated Entity entities = 1;
+}
+
+// A list of candidate places that a coordinate might be contained in.
+message CoordinateRecon {
+  message Place {
+    // The DCIDs of the places.
+    string dcid = 1;
+    // If the rectangle is fully contained in the place.
+    bool full = 2;
+    string dominant_type = 3;
+  }
+  repeated Place places = 1;
+}
+
+message ResolveEntitiesRequest {
+  repeated EntitySubGraph entities = 1;
+  // The properties of IDs to find. If empty, all known IDs are returned.
+  repeated string wanted_id_properties = 2;
+}
+
+message ResolveEntitiesResponse {
+  message ResolvedId {
+    repeated IdWithProperty ids = 1;
+    double probability = 2;
+  }
+  message ResolvedEntity {
+    string source_id = 1;
+    repeated ResolvedId resolved_ids = 2;
+  }
+  repeated ResolvedEntity resolved_entities = 1;
+}
+
+message ResolveCoordinatesRequest {
+  message Coordinate {
+    double latitude = 1;
+    double longitude = 2;
+  }
+  repeated Coordinate coordinates = 1;
+  // If set only these place types are returned.
+  repeated string place_types = 2;
+}
+
+message ResolveCoordinatesResponse {
+  message Place {
+    string dcid = 1;
+    string dominant_type = 2;
+  }
+  message PlaceCoordinate {
+    double latitude = 1;
+    double longitude = 2;
+    // TODO(ws): Remove this field once confirmed no one is using it.
+    // https://github.com/search?q=repo%3Adatacommonsorg%2Fdata+%2Fresolve%2Fcoordinate&type=code
+    repeated string place_dcids = 3;
+    repeated Place places = 4;
+  }
+  repeated PlaceCoordinate place_coordinates = 1;
+}
+
+message ResolveIdsRequest {
+  string in_prop = 1;
+  string out_prop = 2;
+  repeated string ids = 3;
+}
+
+message ResolveIdsResponse {
+  message Entity {
+    string in_id = 1;
+    repeated string out_ids = 2;
+  }
+  repeated Entity entities = 1;
+}
+
+message FindEntitiesRequest {
+  string description = 1;
+  // Optional.
+  string type = 2;
+}
+
+message FindEntitiesResponse { repeated string dcids = 1; }
+
+message BulkFindEntitiesRequest {
+  message Entity {
+    string description = 1;
+    // Optional.
+    string type = 2;
+  }
+  repeated Entity entities = 1;
+}
+
+message BulkFindEntitiesResponse {
+  message Entity {
+    string description = 1;
+    // Optional.
+    string type = 2;
+    repeated string dcids = 3;
+  }
+  repeated Entity entities = 1;
+}
+
+message RecognizePlacesRequest {
+  repeated string queries = 1;
+}
+
+message RecognizePlacesResponse {
+  message Place {
+    string dcid = 1;
+  }
+
+  message Item {
+    // Required. Substring of input query.
+    string span = 1;
+    // Optional. Recognized places.
+    repeated Place places = 2;
+  }
+
+  message Items {
+    repeated Item items = 1;
+  }
+
+  map<string, Items> query_items = 1;
+}
+
+message RecognizeEntitiesRequest {
+  repeated string queries = 1;
+}
+
+message RecognizeEntitiesResponse {
+  message Entity {
+    string dcid = 1;
+  }
+
+  message Item {
+    // Required. Substring of input query.
+    string span = 1;
+    // Optional. Recognized entities.
+    repeated Entity entities = 2;
+  }
+
+  message Items {
+    repeated Item items = 1;
+  }
+
+  map<string, Items> query_items = 1;
+}
+
+// RecogPlace contains info of a place for RecognizePlaces method.
+message RecogPlace {
+  message Name { repeated string parts = 1; }
+  repeated Name names = 1;
+  string dcid = 2;
+  repeated string containing_places = 3;
+  int64 population = 4;
+}
+
+message RecogPlaces { repeated RecogPlace places = 1; }
+
+message TokenSpans {
+  message Span {
+    // Required.
+    repeated string tokens = 1;
+    // Optional, only used when the token span contains place candidates.
+    repeated RecogPlace places = 2;
+  }
+  repeated Span spans = 1;
+}

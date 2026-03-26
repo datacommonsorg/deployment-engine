@@ -1,0 +1,20 @@
+{
+  "entities": [
+    {
+      "node": "San Mateo County",
+      "candidates": [
+        {
+          "dcid": "geoId/06081"
+        }
+      ]
+    },
+    {
+      "node": "Santa Clara County",
+      "candidates": [
+        {
+          "dcid": "geoId/06085"
+        }
+      ]
+    }
+  ]
+}

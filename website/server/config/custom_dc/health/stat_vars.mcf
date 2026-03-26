@@ -1,0 +1,29 @@
+Node: dcid:Health_Insights_Percent_Person_WithHealthyVitaminD
+typeOf: dcs:StatisticalVariable
+name: "Percent of People With Healthy Vitamin D Level"
+populationType: dcs:Person
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+unit: dcs:Percent
+measurementDenominator: dcs:Count_Person
+description: "Percentage of population with healthy vitamin D levels (≥30 ng/mL)."
+
+Node: dcid:Health_Insights_Percent_Person_Vaccinated
+typeOf: dcs:StatisticalVariable
+name: "Percent of People Vaccinated"
+populationType: dcs:Person
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+unit: dcs:Percent
+measurementDenominator: dcs:Count_Person
+description: "Percentage of population that is vaccinated."
+
+Node: dcid:Health_Insights_Percent_Person_Sick
+typeOf: dcs:StatisticalVariable
+name: "Percent of People Who Are Sick"
+populationType: dcs:Person
+measuredProperty: dcs:count
+statType: dcs:measuredValue
+unit: dcs:Percent
+measurementDenominator: dcs:Count_Person
+description: "Percentage of population that is currently sick."

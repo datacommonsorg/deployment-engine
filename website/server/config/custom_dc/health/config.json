@@ -1,0 +1,58 @@
+{
+  "inputFiles": {
+    "*health_insights.csv": {
+      "entityType": "Place",
+      "provenance": "Health Insights",
+      "observationProperties": {
+        "unit": "Percent",
+        "scalingFactor": "100"
+      }
+    }
+  },
+  "variables": {
+    "Health_Insights_Percent_Person_WithHealthyVitaminD": {
+      "name": "Percent of People With Healthy Vitamin D Level",
+      "description": "Percentage of population with healthy vitamin D levels (≥30 ng/mL).",
+      "searchDescriptions": [
+        "Healthy vitamin D percentage",
+        "Vitamin D sufficiency rate",
+        "Adequate vitamin D levels",
+        "Vitamin D health status"
+      ],
+      "unit": "Percent",
+      "group": "Health Insights"
+    },
+    "Health_Insights_Percent_Person_Vaccinated": {
+      "name": "Percent of People Vaccinated",
+      "description": "Percentage of population that is vaccinated.",
+      "searchDescriptions": [
+        "Vaccination rate",
+        "Vaccinated population percentage",
+        "Immunization rate",
+        "Vaccination coverage"
+      ],
+      "unit": "Percent",
+      "group": "Health Insights"
+    },
+    "Health_Insights_Percent_Person_Sick": {
+      "name": "Percent of People Who Are Sick",
+      "description": "Percentage of population that is currently sick.",
+      "searchDescriptions": [
+        "Sick population percentage",
+        "Illness rate",
+        "Sickness prevalence",
+        "Currently ill percentage"
+      ],
+      "unit": "Percent",
+      "group": "Health Insights"
+    }
+  },
+  "sources": {
+    "Health Insights": {
+      "url": "",
+      "provenances": {
+        "Health Insights": "/browser/c/p/1"
+      }
+    }
+  }
+}

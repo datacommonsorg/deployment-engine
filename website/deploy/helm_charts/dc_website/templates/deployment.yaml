@@ -1,0 +1,227 @@
+
+# Website App Kubernetes Deployment config. (https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+# This is to be extended by the dev/autopush/staging/prod overlay.
+# The deployment contains Flask web server container , gRPC mixer container and ESP container that transcodes grpc to JSON.
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: website-app
+  namespace: {{ .Values.namespace.name }}
+spec:
+  replicas: {{ .Values.website.replicas }}
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      {{- if eq .Values.website.flaskEnv "custom" }}
+      # Custom DCs can be completely unavailable for the short
+      # period of time while new deployments become ready.
+      # In return, we don't need extra compute resources
+      # just for new pods during deployment.
+      maxSurge: 50%
+      maxUnavailable: 100%
+      {{ else }}
+      # maximum number of Pods that can be created over the desired number of Pods
+      # 25% of default pods (+1 in case default < 4)
+      maxSurge: {{ div .Values.website.replicas 4 | add 1 }}
+      # Maximum number of pods that can be unavailable during the update process
+      # 25% of default pods (+1 in case default < 4)
+      maxUnavailable: {{ div .Values.website.replicas 4 | add 1 }}
+      {{- end }}
+  selector:
+    matchLabels:
+      app: website-app
+  template:
+    metadata:
+      labels:
+        app: website-app
+      annotations:
+        timestamp: {{ now | quote }}
+    spec:
+      {{- if .Values.website.nodePool }}
+      nodeSelector:
+        cloud.google.com/gke-nodepool: {{ .Values.website.nodePool }}
+      {{- end }}
+      serviceAccountName: {{ .Values.serviceAccount.name }}
+      volumes:
+        - name: ingress-config
+          configMap:
+            name: ingress-config
+        {{- if .Values.nl.enabled }}
+        - name: nl-config
+          configMap:
+            name: nl-config
+        {{- end }}
+        {{- if .Values.website.redis.enabled }}
+        - name: redis-config
+          configMap:
+            name: redis-config
+        {{- end }}
+        - name: blocklist-svg
+          configMap:
+            name: blocklist-svg
+      containers:
+        - name: website
+          image: "gcr.io/datcom-ci/datacommons-website{{- if .Values.website.image.tag }}:{{ .Values.website.image.tag }}{{- end }}"
+          imagePullPolicy: {{ .Values.website.image.pullPolicy }}
+          args: []
+          ports:
+            - containerPort: 8080
+          startupProbe:
+            httpGet:
+              path: /healthz
+              port: 8080
+            failureThreshold: 30
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /healthz
+              port: 8080
+            failureThreshold: 1
+            periodSeconds: 10
+          resources:
+            limits:
+              memory: "4G"
+            requests:
+              memory: "4G"
+          volumeMounts:
+            - name: ingress-config
+              mountPath: /datacommons/ingress
+            {{- if .Values.website.redis.enabled }}
+            - name: redis-config
+              mountPath: /datacommons/redis
+            {{- end }}
+            - name: blocklist-svg
+              mountPath: /datacommons/svg
+          env:
+            - name: FLASK_ENV
+              value: {{ required "Missing: website.flaskEnv" .Values.website.flaskEnv }}
+            - name: WEBSITE_HASH
+              value: {{ .Values.website.githash | quote }}
+            - name: ENABLE_MODEL
+              value: {{ .Values.nl.enabled | quote }}
+            - name: ENABLE_DATAGEMMA
+              value: {{ .Values.website.dataGemma.enabled | quote }}
+            - name: INGRESS_CONFIG_PATH
+              value: /datacommons/ingress/rules
+            # A dummy config used to bounce the server without any docker image
+            # or data config change.
+            - name: BOUNCE
+              value: "dummy"
+        {{- if .Values.nl.enabled }}
+        - name: nl
+          image: "gcr.io/datcom-ci/datacommons-nl{{- if .Values.nl.image.tag }}:{{ .Values.nl.image.tag }}{{- end }}"
+          resources:
+            limits:
+              memory: {{ .Values.nl.memory }}
+            requests:
+              memory: {{ .Values.nl.memory }}
+          env:
+            - name: FLASK_ENV
+              value: {{ required "Missing: website.flaskEnv" .Values.website.flaskEnv }}
+            - name: NUM_WORKERS
+              value: {{ .Values.nl.workers | quote }}
+          volumeMounts:
+            - name: nl-config
+              mountPath: /datacommons/nl
+          startupProbe:
+            httpGet:
+              path: /healthz
+              port: 6060
+            failureThreshold: 30
+            periodSeconds: 10
+            timeoutSeconds: 5
+          readinessProbe:
+            httpGet:
+              path: /healthz
+              port: 6060
+            # long timeout here (and in the liveness probe) because NL server
+            # can only take NUM_WORKERS number of requests at a time, so when
+            # there's already NUM_WORKERS number of requests, need to wait
+            # before /healthz can be served.
+            timeoutSeconds: 300
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: 6060
+            timeoutSeconds: 300
+            periodSeconds: 10
+          ports:
+            - containerPort: 6060
+        {{- end }}
+
+{{- if .Values.nodejs.enabled }}
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: website-nodejs-app
+  namespace: {{ .Values.namespace.name }}
+spec:
+  replicas: {{ .Values.nodejs.replicas}}
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      # maximum number of Pods that can be created over the desired number of Pods
+      # 25% of default pods (+1 in case default < 4)
+      maxSurge: {{ div .Values.nodejs.replicas 4 | add 1 }}
+      # Maximum number of pods that can be unavailable during the update process
+      # 25% of default pods (+1 in case default < 4)
+      maxUnavailable: {{ div .Values.nodejs.replicas 4 | add 1 }}
+  selector:
+    matchLabels:
+      app: website-nodejs-app
+  template:
+    metadata:
+      labels:
+        app: website-nodejs-app
+      annotations:
+        timestamp: {{ now | quote }}
+    spec:
+      {{- if .Values.nodejs.nodePool }}
+      nodeSelector:
+        cloud.google.com/gke-nodepool: {{ .Values.nodejs.nodePool }}
+      {{- end }}
+      serviceAccountName: {{ .Values.serviceAccount.name }}
+      containers:
+        - name: nodejs
+          image: "gcr.io/datcom-ci/datacommons-nodejs{{- if .Values.nodejs.image.tag }}:{{ .Values.nodejs.image.tag }}{{- end }}"
+          imagePullPolicy: {{ .Values.website.image.pullPolicy }}
+          args: []
+          ports:
+            - containerPort: 8080
+          resources:
+            limits:
+              memory: "2G"
+            requests:
+              memory: "2G"
+          env:
+            - name: WEBSITE_HASH
+              value: {{ .Values.website.githash | quote }}
+            - name: NODE_ENV
+              value: {{ .Values.nodejs.env }}
+            - name: API_ROOT
+              value: {{ .Values.nodejs.apiRoot }}
+            # A dummy config used to bounce the server without any docker image
+            # or data config change.
+            - name: BOUNCE
+              value: "dummy"
+          startupProbe:
+            httpGet:
+              path: /nodejs/healthz
+              port: 8080
+            failureThreshold: 30
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /nodejs/healthz
+              port: 8080
+            failureThreshold: 1
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /nodejs/healthz
+              port: 8080
+{{- end }}

@@ -1,0 +1,48 @@
+{
+  "data": {
+    "geoId/06": {
+      "arcs": {
+        "administrativeCapital": {
+          "nodes": [
+            {
+              "name": "Sacramento",
+              "types": [
+                "City"
+              ],
+              "dcid": "geoId/0664000",
+              "provenanceId": "dc/base/WikidataOtherIdGeos"
+            }
+          ]
+        },
+        "containedInPlace": {
+          "nodes": [
+            {
+              "name": "United States",
+              "types": [
+                "Country"
+              ],
+              "dcid": "country/USA",
+              "provenanceId": "dc/base/WikidataOtherIdGeos"
+            },
+            {
+              "name": "Pacific Division",
+              "types": [
+                "CensusDivision"
+              ],
+              "dcid": "usc/PacificDivision",
+              "provenanceId": "dc/base/WikidataOtherIdGeos"
+            }
+          ]
+        },
+        "name": {
+          "nodes": [
+            {
+              "provenanceId": "dc/base/WikidataOtherIdGeos",
+              "value": "California"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

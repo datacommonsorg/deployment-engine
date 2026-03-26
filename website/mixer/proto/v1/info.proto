@@ -1,0 +1,89 @@
+// Copyright 2022 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+syntax = "proto3";
+package datacommons.v1;
+
+option go_package = "github.com/datacommonsorg/mixer/internal/proto/v1";
+
+import "place.proto";
+import "stat_var.proto";
+
+message PlaceInfoRequest {
+  string node = 1;
+}
+
+message PlaceInfoResponse {
+  string node = 1;
+  datacommons.PlaceMetadata info = 2;
+}
+
+message BulkPlaceInfoRequest {
+  repeated string nodes = 1;
+}
+
+message BulkPlaceInfoResponse {
+  repeated PlaceInfoResponse data = 1;
+}
+
+message VariableInfoRequest {
+  string node = 1;
+}
+
+message VariableInfoResponse {
+  string node = 1;
+  datacommons.StatVarSummary info = 2;
+}
+
+message BulkVariableInfoRequest {
+  repeated string nodes = 1;
+}
+
+message BulkVariableInfoResponse {
+  repeated VariableInfoResponse data = 1;
+}
+
+message VariableGroupInfoRequest {
+  // The variable group dcid to query for.
+  string node = 1;
+  // The entities that the variable group is associated with. The response should
+  // only contain the child variable (group) if it has data for at least
+  // num_entities_existence number of entities.
+  repeated string constrained_entities = 2;
+  // Number of passed in entities that should have data for the stat var
+  // (group)s that are returned
+  int32 num_entities_existence = 4;
+}
+
+message VariableGroupInfoResponse {
+  string node = 1;
+  datacommons.StatVarGroupNode info = 2;
+}
+
+
+message BulkVariableGroupInfoRequest {
+  // (optional) The variable group dcids to query for.
+  // If not specified, then return all the variable group info.
+  repeated string nodes = 1;
+  // (optional) When specified, only return the variable groups that at least
+  // num_entities_existence number of entities has data for.
+  repeated string constrained_entities = 2;
+  // (optional) Number of passed in entities that should have data for the stat
+  // var (group)s that are returned. Default to 1 if unspecified.
+  int32 num_entities_existence = 4;
+}
+
+message BulkVariableGroupInfoResponse {
+  repeated VariableGroupInfoResponse data = 1;
+}

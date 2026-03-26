@@ -1,0 +1,2945 @@
+{
+  "statVarSeries": {
+    "geoId/06065": {
+      "data": {
+        "Count_HousingUnit": {
+          "val": {
+            "2011": 794478,
+            "2012": 799360,
+            "2013": 805142,
+            "2014": 810426,
+            "2015": 815322,
+            "2016": 820300,
+            "2017": 826704,
+            "2018": 833602,
+            "2019": 840501,
+            "2020": 845066,
+            "2021": 844425,
+            "2022": 851646,
+            "2023": 860042
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_1940To1949DateBuilt": {
+          "val": {
+            "2011": 15640,
+            "2012": 16050,
+            "2013": 16551,
+            "2014": 17400,
+            "2015": 16435,
+            "2016": 16649,
+            "2017": 15953,
+            "2018": 15702,
+            "2019": 15187,
+            "2020": 14827,
+            "2021": 14396,
+            "2022": 14334,
+            "2023": 14208
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_1950To1959DateBuilt": {
+          "val": {
+            "2011": 52023,
+            "2012": 52923,
+            "2013": 52847,
+            "2014": 52072,
+            "2015": 51035,
+            "2016": 52028,
+            "2017": 49970,
+            "2018": 49469,
+            "2019": 50018,
+            "2020": 51069,
+            "2021": 49887,
+            "2022": 49794,
+            "2023": 49469
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_1960To1969DateBuilt": {
+          "val": {
+            "2011": 64722,
+            "2012": 67000,
+            "2013": 65712,
+            "2014": 66407,
+            "2015": 66646,
+            "2016": 65365,
+            "2017": 64071,
+            "2018": 64827,
+            "2019": 64405,
+            "2020": 62944,
+            "2021": 62620,
+            "2022": 62426,
+            "2023": 61443
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_1970To1979DateBuilt": {
+          "val": {
+            "2011": 123630,
+            "2012": 122637,
+            "2013": 121828,
+            "2014": 123064,
+            "2015": 124207,
+            "2016": 124787,
+            "2017": 124119,
+            "2018": 122313,
+            "2019": 121586,
+            "2020": 120464,
+            "2021": 118103,
+            "2022": 118097,
+            "2023": 117287
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_1980To1989DateBuilt": {
+          "val": {
+            "2011": 179232,
+            "2012": 177294,
+            "2013": 176889,
+            "2014": 177117,
+            "2015": 176090,
+            "2016": 175893,
+            "2017": 178243,
+            "2018": 178093,
+            "2019": 178975,
+            "2020": 176923,
+            "2021": 175741,
+            "2022": 174686,
+            "2023": 174866
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_1990To1999DateBuilt": {
+          "val": {
+            "2011": 129562,
+            "2012": 126975,
+            "2013": 128693,
+            "2014": 127654,
+            "2015": 128432,
+            "2016": 127852,
+            "2017": 129989,
+            "2018": 130136,
+            "2019": 132893,
+            "2020": 134663,
+            "2021": 132127,
+            "2022": 127339,
+            "2023": 125449
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_2000To2009DateBuilt": {
+          "val": {
+            "2012": 217084,
+            "2013": 220869,
+            "2014": 221856,
+            "2015": 222868,
+            "2016": 222674,
+            "2017": 222177,
+            "2018": 222711,
+            "2019": 218763,
+            "2020": 214458,
+            "2021": 210544,
+            "2022": 210692,
+            "2023": 211828
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_2010OrLaterDateBuilt": {
+          "val": {
+            "2012": 2595,
+            "2013": 5070,
+            "2014": 8139
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_Before1939DateBuilt": {
+          "val": {
+            "2011": 16282,
+            "2012": 16802,
+            "2013": 16683,
+            "2014": 16717,
+            "2015": 16948,
+            "2016": 17049,
+            "2017": 17152,
+            "2018": 17663,
+            "2019": 17701,
+            "2020": 18028,
+            "2021": 17782,
+            "2022": 17836,
+            "2023": 17697
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue1000000To1499999USDollar": {
+          "val": {
+            "2015": 3974,
+            "2016": 4216,
+            "2017": 4714,
+            "2018": 5257,
+            "2019": 6113,
+            "2020": 6896,
+            "2021": 8243,
+            "2022": 13640,
+            "2023": 18366
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue100000To124999USDollar": {
+          "val": {
+            "2011": 21088,
+            "2012": 24867,
+            "2013": 27010,
+            "2014": 25002,
+            "2015": 21173,
+            "2016": 16900,
+            "2017": 13363,
+            "2018": 10822,
+            "2019": 9237,
+            "2020": 7995,
+            "2021": 7107,
+            "2022": 6335,
+            "2023": 6274
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue10000To14999USDollar": {
+          "val": {
+            "2011": 3474,
+            "2012": 3411,
+            "2013": 3790,
+            "2014": 4004,
+            "2015": 3485,
+            "2016": 3275,
+            "2017": 3031,
+            "2018": 2793,
+            "2019": 2433,
+            "2020": 2321,
+            "2021": 1954,
+            "2022": 1963,
+            "2023": 1766
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue125000To149999USDollar": {
+          "val": {
+            "2011": 17181,
+            "2012": 22133,
+            "2013": 25979,
+            "2014": 24628,
+            "2015": 21691,
+            "2016": 18059,
+            "2017": 13525,
+            "2018": 9620,
+            "2019": 7530,
+            "2020": 6062,
+            "2021": 4833,
+            "2022": 4341,
+            "2023": 3983
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue1500000To1999999USDollar": {
+          "val": {
+            "2015": 1152,
+            "2016": 1359,
+            "2017": 1629,
+            "2018": 1906,
+            "2019": 2066,
+            "2020": 2411,
+            "2021": 2499,
+            "2022": 3366,
+            "2023": 4295
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue150000To174999USDollar": {
+          "val": {
+            "2011": 30185,
+            "2012": 37226,
+            "2013": 39776,
+            "2014": 37031,
+            "2015": 32779,
+            "2016": 28198,
+            "2017": 22961,
+            "2018": 18409,
+            "2019": 15427,
+            "2020": 13269,
+            "2021": 10990,
+            "2022": 6198,
+            "2023": 4617
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue15000To19999USDollar": {
+          "val": {
+            "2011": 3225,
+            "2012": 3555,
+            "2013": 4104,
+            "2014": 4389,
+            "2015": 4294,
+            "2016": 3791,
+            "2017": 3170,
+            "2018": 2745,
+            "2019": 2492,
+            "2020": 2272,
+            "2021": 2082,
+            "2022": 1649,
+            "2023": 1469
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue175000To199999USDollar": {
+          "val": {
+            "2011": 23601,
+            "2012": 28105,
+            "2013": 31959,
+            "2014": 29972,
+            "2015": 27093,
+            "2016": 23227,
+            "2017": 19314,
+            "2018": 15179,
+            "2019": 13033,
+            "2020": 11498,
+            "2021": 9264,
+            "2022": 6037,
+            "2023": 4854
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue2000000OrMoreUSDollar": {
+          "val": {
+            "2015": 1910,
+            "2016": 2432,
+            "2017": 2747,
+            "2018": 3077,
+            "2019": 3397,
+            "2020": 3466,
+            "2021": 3604,
+            "2022": 5115,
+            "2023": 6250
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue200000To249999USDollar": {
+          "val": {
+            "2011": 54984,
+            "2012": 61820,
+            "2013": 64638,
+            "2014": 63510,
+            "2015": 60625,
+            "2016": 57339,
+            "2017": 52554,
+            "2018": 47730,
+            "2019": 42610,
+            "2020": 36820,
+            "2021": 30255,
+            "2022": 20820,
+            "2023": 17083
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue20000To24999USDollar": {
+          "val": {
+            "2011": 3014,
+            "2012": 3618,
+            "2013": 3788,
+            "2014": 3654,
+            "2015": 3415,
+            "2016": 3557,
+            "2017": 3009,
+            "2018": 2893,
+            "2019": 2576,
+            "2020": 2778,
+            "2021": 2634,
+            "2022": 2545,
+            "2023": 2190
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue250000To299999USDollar": {
+          "val": {
+            "2011": 51087,
+            "2012": 56342,
+            "2013": 55395,
+            "2014": 55015,
+            "2015": 55494,
+            "2016": 55186,
+            "2017": 56267,
+            "2018": 56244,
+            "2019": 53446,
+            "2020": 50004,
+            "2021": 43502,
+            "2022": 28105,
+            "2023": 21089
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue25000To29999USDollar": {
+          "val": {
+            "2011": 2539,
+            "2012": 2801,
+            "2013": 2939,
+            "2014": 2947,
+            "2015": 3045,
+            "2016": 3057,
+            "2017": 2875,
+            "2018": 2669,
+            "2019": 2555,
+            "2020": 2516,
+            "2021": 2637,
+            "2022": 2190,
+            "2023": 1701
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue300000To399999USDollar": {
+          "val": {
+            "2011": 92239,
+            "2012": 83743,
+            "2013": 76100,
+            "2014": 77530,
+            "2015": 84943,
+            "2016": 94135,
+            "2017": 105433,
+            "2018": 115628,
+            "2019": 122497,
+            "2020": 125663,
+            "2021": 120685,
+            "2022": 83539,
+            "2023": 66001
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue30000To34999USDollar": {
+          "val": {
+            "2011": 2800,
+            "2012": 3017,
+            "2013": 2792,
+            "2014": 2934,
+            "2015": 2843,
+            "2016": 2814,
+            "2017": 2558,
+            "2018": 2549,
+            "2019": 2209,
+            "2020": 2155,
+            "2021": 2213,
+            "2022": 1945,
+            "2023": 1373
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue35000To39999USDollar": {
+          "val": {
+            "2011": 1834,
+            "2012": 1920,
+            "2013": 1827,
+            "2014": 1742,
+            "2015": 1717,
+            "2016": 1701,
+            "2017": 1768,
+            "2018": 1798,
+            "2019": 1820,
+            "2020": 1794,
+            "2021": 2068,
+            "2022": 1664,
+            "2023": 1962
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue400000To499999USDollar": {
+          "val": {
+            "2011": 53678,
+            "2012": 38173,
+            "2013": 32747,
+            "2014": 35545,
+            "2015": 43248,
+            "2016": 51328,
+            "2017": 63323,
+            "2018": 75297,
+            "2019": 85810,
+            "2020": 96137,
+            "2021": 102536,
+            "2022": 105478,
+            "2023": 96296
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue40000To49999USDollar": {
+          "val": {
+            "2011": 3976,
+            "2012": 4395,
+            "2013": 4451,
+            "2014": 4585,
+            "2015": 4379,
+            "2016": 4052,
+            "2017": 3582,
+            "2018": 3721,
+            "2019": 3489,
+            "2020": 3671,
+            "2021": 3682,
+            "2022": 4178,
+            "2023": 4163
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue500000To749999USDollar": {
+          "val": {
+            "2011": 49778,
+            "2012": 32477,
+            "2013": 25332,
+            "2014": 27439,
+            "2015": 31320,
+            "2016": 38628,
+            "2017": 47837,
+            "2018": 58350,
+            "2019": 68736,
+            "2020": 83796,
+            "2021": 103089,
+            "2022": 154046,
+            "2023": 184463
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue50000To59999USDollar": {
+          "val": {
+            "2011": 4604,
+            "2012": 4832,
+            "2013": 4945,
+            "2014": 4779,
+            "2015": 4295,
+            "2016": 3836,
+            "2017": 3324,
+            "2018": 3158,
+            "2019": 3011,
+            "2020": 3286,
+            "2021": 3414,
+            "2022": 4524,
+            "2023": 4633
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue60000To69999USDollar": {
+          "val": {
+            "2011": 3614,
+            "2012": 4095,
+            "2013": 4469,
+            "2014": 4514,
+            "2015": 4137,
+            "2016": 3693,
+            "2017": 3284,
+            "2018": 3041,
+            "2019": 2790,
+            "2020": 2881,
+            "2021": 2833,
+            "2022": 2312,
+            "2023": 2459
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue70000To79999USDollar": {
+          "val": {
+            "2011": 5015,
+            "2012": 5459,
+            "2013": 5960,
+            "2014": 5502,
+            "2015": 5045,
+            "2016": 4299,
+            "2017": 3445,
+            "2018": 2882,
+            "2019": 2492,
+            "2020": 2621,
+            "2021": 2756,
+            "2022": 2173,
+            "2023": 2762
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue750000To999999USDollar": {
+          "val": {
+            "2011": 11485,
+            "2012": 8342,
+            "2013": 6797,
+            "2014": 7512,
+            "2015": 8072,
+            "2016": 9175,
+            "2017": 10484,
+            "2018": 12081,
+            "2019": 13226,
+            "2020": 15826,
+            "2021": 20724,
+            "2022": 41570,
+            "2023": 56670
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue80000To89999USDollar": {
+          "val": {
+            "2011": 5725,
+            "2012": 6889,
+            "2013": 8043,
+            "2014": 7893,
+            "2015": 7012,
+            "2016": 5964,
+            "2017": 5102,
+            "2018": 3792,
+            "2019": 3501,
+            "2020": 3414,
+            "2021": 3302,
+            "2022": 2660,
+            "2023": 2843
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue90000To99999USDollar": {
+          "val": {
+            "2011": 5709,
+            "2012": 6576,
+            "2013": 6958,
+            "2014": 6620,
+            "2015": 5762,
+            "2016": 4658,
+            "2017": 3485,
+            "2018": 2822,
+            "2019": 2468,
+            "2020": 2011,
+            "2021": 1763,
+            "2022": 2302,
+            "2023": 2249
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValueUpto10000USDollar": {
+          "val": {
+            "2011": 5262,
+            "2012": 6142,
+            "2013": 8343,
+            "2014": 10282,
+            "2015": 10236,
+            "2016": 10045,
+            "2017": 10004,
+            "2018": 7938,
+            "2019": 5980,
+            "2020": 5696,
+            "2021": 5800,
+            "2022": 5126,
+            "2023": 5061
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HouseholderRaceAmericanIndianOrAlaskaNativeAlone": {
+          "val": {
+            "2011": 6583,
+            "2012": 6856,
+            "2013": 6462,
+            "2014": 6271,
+            "2015": 6123,
+            "2016": 5807,
+            "2017": 5861,
+            "2018": 5750,
+            "2019": 5856,
+            "2020": 5552,
+            "2021": 6179,
+            "2022": 7252,
+            "2023": 8871
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HouseholderRaceAsianAlone": {
+          "val": {
+            "2011": 34694,
+            "2012": 34806,
+            "2013": 36066,
+            "2014": 37312,
+            "2015": 37645,
+            "2016": 38720,
+            "2017": 40268,
+            "2018": 41227,
+            "2019": 42378,
+            "2020": 44300,
+            "2021": 45387,
+            "2022": 47357,
+            "2023": 49586
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HouseholderRaceBlackOrAfricanAmericanAlone": {
+          "val": {
+            "2011": 42580,
+            "2012": 43103,
+            "2013": 43660,
+            "2014": 44094,
+            "2015": 45474,
+            "2016": 46064,
+            "2017": 46919,
+            "2018": 47612,
+            "2019": 48046,
+            "2020": 47620,
+            "2021": 47514,
+            "2022": 49584,
+            "2023": 51707
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HouseholderRaceHispanicOrLatino": {
+          "val": {
+            "2011": 224359,
+            "2012": 228465,
+            "2013": 233460,
+            "2014": 239764,
+            "2015": 248128,
+            "2016": 254608,
+            "2017": 260617,
+            "2018": 267342,
+            "2019": 273613,
+            "2020": 285159,
+            "2021": 294995,
+            "2022": 302469,
+            "2023": 307305
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HouseholderRaceNativeHawaiianOrOtherPacificIslanderAlone": {
+          "val": {
+            "2011": 1736,
+            "2012": 1771,
+            "2013": 1773,
+            "2014": 1800,
+            "2015": 1750,
+            "2016": 1712,
+            "2017": 1710,
+            "2018": 1735,
+            "2019": 1898,
+            "2020": 1809,
+            "2021": 1945,
+            "2022": 2231,
+            "2023": 2148
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HouseholderRaceSomeOtherRaceAlone": {
+          "val": {
+            "2011": 83988,
+            "2012": 82426,
+            "2013": 82790,
+            "2014": 87158,
+            "2015": 93260,
+            "2016": 101653,
+            "2017": 111201,
+            "2018": 117968,
+            "2019": 124289,
+            "2020": 132601,
+            "2021": 140559,
+            "2022": 141990,
+            "2023": 145090
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HouseholderRaceTwoOrMoreRaces": {
+          "val": {
+            "2011": 14452,
+            "2012": 15741,
+            "2013": 17135,
+            "2014": 17952,
+            "2015": 17834,
+            "2016": 18630,
+            "2017": 18308,
+            "2018": 18716,
+            "2019": 18694,
+            "2020": 39713,
+            "2021": 61559,
+            "2022": 85987,
+            "2023": 111172
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HouseholderRaceWhiteAlone": {
+          "val": {
+            "2011": 488863,
+            "2012": 491915,
+            "2013": 495258,
+            "2014": 495801,
+            "2015": 497146,
+            "2016": 493130,
+            "2017": 487457,
+            "2018": 485341,
+            "2019": 483732,
+            "2020": 464818,
+            "2021": 437363,
+            "2022": 415575,
+            "2023": 393660
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_OwnerOccupied": {
+          "val": {
+            "2011": 465385,
+            "2012": 456981,
+            "2013": 454455,
+            "2014": 453356,
+            "2015": 453139,
+            "2016": 454924,
+            "2017": 462788,
+            "2018": 472401,
+            "2019": 480944,
+            "2020": 497259,
+            "2021": 504469,
+            "2022": 513821,
+            "2023": 524872
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_RenterOccupied": {
+          "val": {
+            "2011": 207511,
+            "2012": 219637,
+            "2013": 228689,
+            "2014": 237032,
+            "2015": 246093,
+            "2016": 250792,
+            "2017": 248936,
+            "2018": 245948,
+            "2019": 243949,
+            "2020": 239154,
+            "2021": 236037,
+            "2022": 236155,
+            "2023": 237362
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person": {
+          "val": {
+            "1970": 456916,
+            "1971": 477600,
+            "1972": 493200,
+            "1973": 497900,
+            "1974": 515900,
+            "1975": 528600,
+            "1976": 548000,
+            "1977": 578000,
+            "1978": 611900,
+            "1979": 640000,
+            "1980": 663199,
+            "1981": 693249,
+            "1982": 719842,
+            "1983": 746898,
+            "1984": 783202,
+            "1985": 825685,
+            "1986": 871209,
+            "1987": 930059,
+            "1988": 995977,
+            "1989": 1084568,
+            "1990": 1170413,
+            "1991": 1193639,
+            "1992": 1248277,
+            "1993": 1290328,
+            "1994": 1321304,
+            "1995": 1354966,
+            "1996": 1383646,
+            "1997": 1406769,
+            "1998": 1439674,
+            "1999": 1480708,
+            "2000": 1558985,
+            "2001": 1616634,
+            "2002": 1687147,
+            "2003": 1771656,
+            "2004": 1856542,
+            "2005": 1931785,
+            "2006": 2012370,
+            "2007": 2075183,
+            "2008": 2109712,
+            "2009": 2146725,
+            "2010": 2201562,
+            "2011": 2233840,
+            "2012": 2260763,
+            "2013": 2286087,
+            "2014": 2315238,
+            "2015": 2344648,
+            "2016": 2378282,
+            "2017": 2413058,
+            "2018": 2443221,
+            "2019": 2465569,
+            "2020": 2489188,
+            "2021": 2458395,
+            "2022": 2479628,
+            "2023": 2503549,
+            "2024": 2529933
+          },
+          "metadata": {
+            "importName": "USCensusPEP_Annual_Population",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+            "measurementMethod": "CensusPEPSurvey",
+            "observationPeriod": "P1Y"
+          }
+        }
+      }
+    },
+    "geoId/29": {
+      "data": {
+        "Count_HousingUnit": {
+          "val": {
+            "2011": 2702890,
+            "2012": 2710506,
+            "2013": 2713829,
+            "2014": 2723417,
+            "2015": 2729862,
+            "2016": 2738774,
+            "2017": 2763250,
+            "2018": 2775635,
+            "2019": 2790397,
+            "2020": 2804664,
+            "2021": 2782081,
+            "2022": 2795030,
+            "2023": 2809501
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_1940To1949DateBuilt": {
+          "val": {
+            "2011": 150323,
+            "2012": 147879,
+            "2013": 147592,
+            "2014": 144196,
+            "2015": 141326,
+            "2016": 138238,
+            "2017": 136330,
+            "2018": 133539,
+            "2019": 133533,
+            "2020": 133161,
+            "2021": 128191,
+            "2022": 126099,
+            "2023": 123676
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_1950To1959DateBuilt": {
+          "val": {
+            "2011": 297553,
+            "2012": 298916,
+            "2013": 297053,
+            "2014": 295627,
+            "2015": 294184,
+            "2016": 290358,
+            "2017": 288223,
+            "2018": 285885,
+            "2019": 282073,
+            "2020": 281375,
+            "2021": 277119,
+            "2022": 275373,
+            "2023": 274552
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_1960To1969DateBuilt": {
+          "val": {
+            "2011": 319670,
+            "2012": 320598,
+            "2013": 321536,
+            "2014": 319990,
+            "2015": 317903,
+            "2016": 315753,
+            "2017": 317358,
+            "2018": 316974,
+            "2019": 317129,
+            "2020": 321107,
+            "2021": 318014,
+            "2022": 316206,
+            "2023": 311479
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_1970To1979DateBuilt": {
+          "val": {
+            "2011": 436327,
+            "2012": 431907,
+            "2013": 432285,
+            "2014": 432314,
+            "2015": 432511,
+            "2016": 431316,
+            "2017": 435026,
+            "2018": 433433,
+            "2019": 432246,
+            "2020": 430469,
+            "2021": 423647,
+            "2022": 416879,
+            "2023": 410005
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_1980To1989DateBuilt": {
+          "val": {
+            "2011": 340292,
+            "2012": 338146,
+            "2013": 334037,
+            "2014": 332724,
+            "2015": 333064,
+            "2016": 334157,
+            "2017": 334429,
+            "2018": 336024,
+            "2019": 337877,
+            "2020": 337627,
+            "2021": 332844,
+            "2022": 336421,
+            "2023": 336518
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_1990To1999DateBuilt": {
+          "val": {
+            "2011": 393424,
+            "2012": 394148,
+            "2013": 392442,
+            "2014": 394787,
+            "2015": 397789,
+            "2016": 398766,
+            "2017": 401264,
+            "2018": 403112,
+            "2019": 401881,
+            "2020": 402439,
+            "2021": 390890,
+            "2022": 382845,
+            "2023": 373139
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_2000To2009DateBuilt": {
+          "val": {
+            "2012": 365564,
+            "2013": 380278,
+            "2014": 389742,
+            "2015": 388234,
+            "2016": 386096,
+            "2017": 385626,
+            "2018": 378096,
+            "2019": 371980,
+            "2020": 363592,
+            "2021": 358795,
+            "2022": 357692,
+            "2023": 364269
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_2010OrLaterDateBuilt": {
+          "val": {
+            "2012": 7282,
+            "2013": 14488,
+            "2014": 24663
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_Before1939DateBuilt": {
+          "val": {
+            "2011": 413539,
+            "2012": 406066,
+            "2013": 394118,
+            "2014": 389374,
+            "2015": 385974,
+            "2016": 386130,
+            "2017": 386302,
+            "2018": 388098,
+            "2019": 388864,
+            "2020": 387060,
+            "2021": 376751,
+            "2022": 377092,
+            "2023": 377082
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue1000000To1499999USDollar": {
+          "val": {
+            "2015": 6074,
+            "2016": 5974,
+            "2017": 6148,
+            "2018": 6641,
+            "2019": 7231,
+            "2020": 7937,
+            "2021": 9407,
+            "2022": 13483,
+            "2023": 15371
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue100000To124999USDollar": {
+          "val": {
+            "2011": 191893,
+            "2012": 190033,
+            "2013": 189731,
+            "2014": 186461,
+            "2015": 182201,
+            "2016": 177273,
+            "2017": 174732,
+            "2018": 167410,
+            "2019": 163279,
+            "2020": 156789,
+            "2021": 147231,
+            "2022": 119538,
+            "2023": 123932
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue10000To14999USDollar": {
+          "val": {
+            "2011": 20541,
+            "2012": 22838,
+            "2013": 22220,
+            "2014": 22630,
+            "2015": 21204,
+            "2016": 20874,
+            "2017": 19255,
+            "2018": 17597,
+            "2019": 15743,
+            "2020": 15157,
+            "2021": 14332,
+            "2022": 13640,
+            "2023": 13372
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue125000To149999USDollar": {
+          "val": {
+            "2011": 172915,
+            "2012": 165259,
+            "2013": 161972,
+            "2014": 159447,
+            "2015": 157720,
+            "2016": 155943,
+            "2017": 156395,
+            "2018": 155722,
+            "2019": 152590,
+            "2020": 148034,
+            "2021": 140123,
+            "2022": 125651,
+            "2023": 106305
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue1500000To1999999USDollar": {
+          "val": {
+            "2015": 2278,
+            "2016": 2285,
+            "2017": 2537,
+            "2018": 2632,
+            "2019": 2654,
+            "2020": 2570,
+            "2021": 2713,
+            "2022": 3455,
+            "2023": 4122
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue150000To174999USDollar": {
+          "val": {
+            "2011": 180288,
+            "2012": 178762,
+            "2013": 174739,
+            "2014": 170680,
+            "2015": 169719,
+            "2016": 168865,
+            "2017": 170452,
+            "2018": 174396,
+            "2019": 174072,
+            "2020": 173052,
+            "2021": 170288,
+            "2022": 146813,
+            "2023": 125007
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue15000To19999USDollar": {
+          "val": {
+            "2011": 20572,
+            "2012": 21470,
+            "2013": 21099,
+            "2014": 19662,
+            "2015": 17612,
+            "2016": 16539,
+            "2017": 15987,
+            "2018": 15035,
+            "2019": 14148,
+            "2020": 13660,
+            "2021": 13253,
+            "2022": 12377,
+            "2023": 11380
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue175000To199999USDollar": {
+          "val": {
+            "2011": 114199,
+            "2012": 112393,
+            "2013": 111011,
+            "2014": 110538,
+            "2015": 109439,
+            "2016": 109621,
+            "2017": 110500,
+            "2018": 110753,
+            "2019": 113977,
+            "2020": 121169,
+            "2021": 121222,
+            "2022": 123496,
+            "2023": 125635
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue2000000OrMoreUSDollar": {
+          "val": {
+            "2015": 2148,
+            "2016": 2740,
+            "2017": 3244,
+            "2018": 3378,
+            "2019": 3689,
+            "2020": 3765,
+            "2021": 3922,
+            "2022": 4798,
+            "2023": 5543
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue200000To249999USDollar": {
+          "val": {
+            "2011": 165382,
+            "2012": 161165,
+            "2013": 157874,
+            "2014": 155976,
+            "2015": 154861,
+            "2016": 157169,
+            "2017": 162319,
+            "2018": 170686,
+            "2019": 178290,
+            "2020": 186462,
+            "2021": 195964,
+            "2022": 222513,
+            "2023": 235109
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue20000To24999USDollar": {
+          "val": {
+            "2011": 19959,
+            "2012": 20154,
+            "2013": 19603,
+            "2014": 19435,
+            "2015": 18744,
+            "2016": 17986,
+            "2017": 17474,
+            "2018": 16460,
+            "2019": 15681,
+            "2020": 15163,
+            "2021": 14191,
+            "2022": 14262,
+            "2023": 14748
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue250000To299999USDollar": {
+          "val": {
+            "2011": 94035,
+            "2012": 99184,
+            "2013": 98621,
+            "2014": 98768,
+            "2015": 101195,
+            "2016": 106001,
+            "2017": 112568,
+            "2018": 120296,
+            "2019": 126842,
+            "2020": 138399,
+            "2021": 147514,
+            "2022": 168442,
+            "2023": 180118
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue25000To29999USDollar": {
+          "val": {
+            "2011": 17851,
+            "2012": 18197,
+            "2013": 17713,
+            "2014": 17874,
+            "2015": 17095,
+            "2016": 15878,
+            "2017": 14973,
+            "2018": 14081,
+            "2019": 13486,
+            "2020": 13317,
+            "2021": 12265,
+            "2022": 11273,
+            "2023": 11752
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue300000To399999USDollar": {
+          "val": {
+            "2011": 93826,
+            "2012": 91433,
+            "2013": 90801,
+            "2014": 92112,
+            "2015": 96101,
+            "2016": 100041,
+            "2017": 110061,
+            "2018": 119634,
+            "2019": 133517,
+            "2020": 149370,
+            "2021": 170506,
+            "2022": 201006,
+            "2023": 222581
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue30000To34999USDollar": {
+          "val": {
+            "2011": 20956,
+            "2012": 21920,
+            "2013": 22065,
+            "2014": 22204,
+            "2015": 21752,
+            "2016": 21420,
+            "2017": 19965,
+            "2018": 19241,
+            "2019": 17924,
+            "2020": 16809,
+            "2021": 15706,
+            "2022": 11868,
+            "2023": 9347
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue35000To39999USDollar": {
+          "val": {
+            "2011": 15276,
+            "2012": 14487,
+            "2013": 15533,
+            "2014": 16235,
+            "2015": 15883,
+            "2016": 14884,
+            "2017": 14330,
+            "2018": 13301,
+            "2019": 12300,
+            "2020": 12251,
+            "2021": 11864,
+            "2022": 9060,
+            "2023": 10835
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue400000To499999USDollar": {
+          "val": {
+            "2011": 37917,
+            "2012": 37288,
+            "2013": 36005,
+            "2014": 35686,
+            "2015": 36325,
+            "2016": 38711,
+            "2017": 42416,
+            "2018": 47400,
+            "2019": 53961,
+            "2020": 60477,
+            "2021": 71733,
+            "2022": 106500,
+            "2023": 122764
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue40000To49999USDollar": {
+          "val": {
+            "2011": 40535,
+            "2012": 40998,
+            "2013": 41547,
+            "2014": 41711,
+            "2015": 40841,
+            "2016": 39267,
+            "2017": 37383,
+            "2018": 35157,
+            "2019": 33746,
+            "2020": 31755,
+            "2021": 29184,
+            "2022": 25393,
+            "2023": 23549
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue500000To749999USDollar": {
+          "val": {
+            "2011": 34248,
+            "2012": 34569,
+            "2013": 33101,
+            "2014": 33351,
+            "2015": 33912,
+            "2016": 35784,
+            "2017": 38066,
+            "2018": 42647,
+            "2019": 46739,
+            "2020": 53100,
+            "2021": 59230,
+            "2022": 82924,
+            "2023": 102884
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue50000To59999USDollar": {
+          "val": {
+            "2011": 49877,
+            "2012": 51333,
+            "2013": 53187,
+            "2014": 52979,
+            "2015": 51848,
+            "2016": 50964,
+            "2017": 49222,
+            "2018": 45908,
+            "2019": 43657,
+            "2020": 42615,
+            "2021": 38546,
+            "2022": 37240,
+            "2023": 34332
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue60000To69999USDollar": {
+          "val": {
+            "2011": 61710,
+            "2012": 62877,
+            "2013": 62918,
+            "2014": 62618,
+            "2015": 61726,
+            "2016": 60014,
+            "2017": 58371,
+            "2018": 56256,
+            "2019": 54161,
+            "2020": 51483,
+            "2021": 46458,
+            "2022": 26526,
+            "2023": 20863
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue70000To79999USDollar": {
+          "val": {
+            "2011": 71806,
+            "2012": 71995,
+            "2013": 72425,
+            "2014": 71902,
+            "2015": 70187,
+            "2016": 68359,
+            "2017": 65823,
+            "2018": 62637,
+            "2019": 60018,
+            "2020": 56720,
+            "2021": 51106,
+            "2022": 34953,
+            "2023": 35471
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue750000To999999USDollar": {
+          "val": {
+            "2011": 10496,
+            "2012": 10006,
+            "2013": 9444,
+            "2014": 9445,
+            "2015": 9870,
+            "2016": 10552,
+            "2017": 11841,
+            "2018": 13269,
+            "2019": 15012,
+            "2020": 16295,
+            "2021": 18982,
+            "2022": 24875,
+            "2023": 28918
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue80000To89999USDollar": {
+          "val": {
+            "2011": 84789,
+            "2012": 83296,
+            "2013": 83951,
+            "2014": 83285,
+            "2015": 82440,
+            "2016": 81640,
+            "2017": 79929,
+            "2018": 75516,
+            "2019": 72318,
+            "2020": 68185,
+            "2021": 61577,
+            "2022": 45543,
+            "2023": 41326
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValue90000To99999USDollar": {
+          "val": {
+            "2011": 79151,
+            "2012": 78280,
+            "2013": 77189,
+            "2014": 75785,
+            "2015": 74582,
+            "2016": 71288,
+            "2017": 68586,
+            "2018": 65290,
+            "2019": 61875,
+            "2020": 58420,
+            "2021": 53729,
+            "2022": 51815,
+            "2023": 38105
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HomeValueUpto10000USDollar": {
+          "val": {
+            "2011": 27048,
+            "2012": 27032,
+            "2013": 30233,
+            "2014": 34771,
+            "2015": 34263,
+            "2016": 34663,
+            "2017": 34748,
+            "2018": 30502,
+            "2019": 25076,
+            "2020": 24420,
+            "2021": 24387,
+            "2022": 24410,
+            "2023": 24703
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HouseholderRaceAmericanIndianOrAlaskaNativeAlone": {
+          "val": {
+            "2011": 8937,
+            "2012": 8854,
+            "2013": 9165,
+            "2014": 9845,
+            "2015": 10032,
+            "2016": 10166,
+            "2017": 10525,
+            "2018": 10871,
+            "2019": 10659,
+            "2020": 9342,
+            "2021": 7384,
+            "2022": 6201,
+            "2023": 5854
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HouseholderRaceAsianAlone": {
+          "val": {
+            "2011": 30829,
+            "2012": 31439,
+            "2013": 31775,
+            "2014": 32481,
+            "2015": 34263,
+            "2016": 34520,
+            "2017": 36738,
+            "2018": 38779,
+            "2019": 41281,
+            "2020": 42878,
+            "2021": 43583,
+            "2022": 45532,
+            "2023": 45998
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HouseholderRaceBlackOrAfricanAmericanAlone": {
+          "val": {
+            "2011": 258242,
+            "2012": 259674,
+            "2013": 260003,
+            "2014": 260633,
+            "2015": 262627,
+            "2016": 265497,
+            "2017": 265848,
+            "2018": 269993,
+            "2019": 272262,
+            "2020": 274714,
+            "2021": 272326,
+            "2022": 275769,
+            "2023": 276967
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HouseholderRaceHispanicOrLatino": {
+          "val": {
+            "2011": 55489,
+            "2012": 56566,
+            "2013": 58285,
+            "2014": 60261,
+            "2015": 61654,
+            "2016": 63361,
+            "2017": 66289,
+            "2018": 67889,
+            "2019": 70263,
+            "2020": 73573,
+            "2021": 76591,
+            "2022": 80167,
+            "2023": 91167
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HouseholderRaceNativeHawaiianOrOtherPacificIslanderAlone": {
+          "val": {
+            "2011": 1362,
+            "2012": 1413,
+            "2013": 1638,
+            "2014": 1582,
+            "2015": 1813,
+            "2016": 1867,
+            "2017": 1793,
+            "2018": 1695,
+            "2019": 2049,
+            "2020": 2222,
+            "2021": 2322,
+            "2022": 2238,
+            "2023": 2362
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HouseholderRaceSomeOtherRaceAlone": {
+          "val": {
+            "2011": 16414,
+            "2012": 16830,
+            "2013": 17494,
+            "2014": 17510,
+            "2015": 18207,
+            "2016": 18448,
+            "2017": 18860,
+            "2018": 18718,
+            "2019": 19019,
+            "2020": 20391,
+            "2021": 22724,
+            "2022": 25342,
+            "2023": 30673
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HouseholderRaceTwoOrMoreRaces": {
+          "val": {
+            "2011": 32483,
+            "2012": 32287,
+            "2013": 31755,
+            "2014": 33088,
+            "2015": 33802,
+            "2016": 34001,
+            "2017": 36683,
+            "2018": 38298,
+            "2019": 39370,
+            "2020": 57366,
+            "2021": 77781,
+            "2022": 95758,
+            "2023": 115008
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_HouseholderRaceWhiteAlone": {
+          "val": {
+            "2011": 2005837,
+            "2012": 2007773,
+            "2013": 2008301,
+            "2014": 2006093,
+            "2015": 2003944,
+            "2016": 2007863,
+            "2017": 2015756,
+            "2018": 2017917,
+            "2019": 2029881,
+            "2020": 2033299,
+            "2021": 2007699,
+            "2022": 2007484,
+            "2023": 2007972
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_OwnerOccupied": {
+          "val": {
+            "2011": 1636705,
+            "2012": 1626389,
+            "2013": 1613941,
+            "2014": 1604282,
+            "2015": 1590020,
+            "2016": 1584735,
+            "2017": 1597325,
+            "2018": 1601845,
+            "2019": 1611986,
+            "2020": 1637374,
+            "2021": 1645433,
+            "2022": 1661854,
+            "2023": 1688072
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_HousingUnit_RenterOccupied": {
+          "val": {
+            "2011": 717399,
+            "2012": 731881,
+            "2013": 746190,
+            "2014": 756950,
+            "2015": 774668,
+            "2016": 787627,
+            "2017": 788878,
+            "2018": 794426,
+            "2019": 802535,
+            "2020": 802838,
+            "2021": 788386,
+            "2022": 796470,
+            "2023": 796762
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person": {
+          "val": {
+            "1900": 3108000,
+            "1901": 3128000,
+            "1902": 3147000,
+            "1903": 3166000,
+            "1904": 3185000,
+            "1905": 3204000,
+            "1906": 3223000,
+            "1907": 3242000,
+            "1908": 3260000,
+            "1909": 3279000,
+            "1910": 3301000,
+            "1911": 3317000,
+            "1912": 3344000,
+            "1913": 3409000,
+            "1914": 3467000,
+            "1915": 3492000,
+            "1916": 3527000,
+            "1917": 3470000,
+            "1918": 3325000,
+            "1919": 3371000,
+            "1920": 3404000,
+            "1921": 3429000,
+            "1922": 3437000,
+            "1923": 3454000,
+            "1924": 3508000,
+            "1925": 3526000,
+            "1926": 3556000,
+            "1927": 3576000,
+            "1928": 3601000,
+            "1929": 3622000,
+            "1930": 3646000,
+            "1931": 3711000,
+            "1932": 3746000,
+            "1933": 3773000,
+            "1934": 3784000,
+            "1935": 3798000,
+            "1936": 3801000,
+            "1937": 3794000,
+            "1938": 3781000,
+            "1939": 3783000,
+            "1940": 3786000,
+            "1941": 3811000,
+            "1942": 3829000,
+            "1943": 3705000,
+            "1944": 3560000,
+            "1945": 3516000,
+            "1946": 3746000,
+            "1947": 3845000,
+            "1948": 3844000,
+            "1949": 3882000,
+            "1950": 3964000,
+            "1951": 4015000,
+            "1952": 3972000,
+            "1953": 4020000,
+            "1954": 4066000,
+            "1955": 4134000,
+            "1956": 4163000,
+            "1957": 4189000,
+            "1958": 4186000,
+            "1959": 4258000,
+            "1960": 4326000,
+            "1961": 4349000,
+            "1962": 4357000,
+            "1963": 4392000,
+            "1964": 4442000,
+            "1965": 4467000,
+            "1966": 4523000,
+            "1967": 4539000,
+            "1968": 4568000,
+            "1969": 4640000,
+            "1970": 4677623,
+            "1971": 4725764,
+            "1972": 4758780,
+            "1973": 4782645,
+            "1974": 4795930,
+            "1975": 4808308,
+            "1976": 4839029,
+            "1977": 4863173,
+            "1978": 4889399,
+            "1979": 4912430,
+            "1980": 4916686,
+            "1981": 4932064,
+            "1982": 4929451,
+            "1983": 4943733,
+            "1984": 4975278,
+            "1985": 5000268,
+            "1986": 5023068,
+            "1987": 5056696,
+            "1988": 5081736,
+            "1989": 5095830,
+            "1990": 5126370,
+            "1991": 5157770,
+            "1992": 5193686,
+            "1993": 5237757,
+            "1994": 5281206,
+            "1995": 5324610,
+            "1996": 5367888,
+            "1997": 5407113,
+            "1998": 5437562,
+            "1999": 5468338,
+            "2000": 5607285,
+            "2001": 5641142,
+            "2002": 5674825,
+            "2003": 5709403,
+            "2004": 5747741,
+            "2005": 5790300,
+            "2006": 5842704,
+            "2007": 5887612,
+            "2008": 5923916,
+            "2009": 5961088,
+            "2010": 5996089,
+            "2011": 6011182,
+            "2012": 6026027,
+            "2013": 6042989,
+            "2014": 6059130,
+            "2015": 6075411,
+            "2016": 6091384,
+            "2017": 6111382,
+            "2018": 6125986,
+            "2019": 6140475,
+            "2020": 6151548,
+            "2021": 6168187,
+            "2022": 6179285,
+            "2023": 6205956,
+            "2024": 6243544,
+            "2025": 6270541
+          },
+          "metadata": {
+            "importName": "USCensusPEP_Annual_Population",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+            "measurementMethod": "CensusPEPSurvey",
+            "observationPeriod": "P1Y"
+          }
+        }
+      }
+    },
+    "northamerica": {
+      "data": {
+        "Count_Person": {
+          "val": {
+            "2013": 565265000,
+            "2016": 579000000,
+            "2024": 613150000
+          },
+          "metadata": {
+            "importName": "WikidataPopulation",
+            "provenanceUrl": "https://www.wikidata.org/wiki/Wikidata:Main_Page",
+            "measurementMethod": "WikidataPopulation"
+          }
+        }
+      }
+    }
+  },
+  "allChildPlaces": {
+    "County": {
+      "places": [
+        {
+          "dcid": "geoId/06037",
+          "name": "Los Angeles County",
+          "pop": 9757179
+        },
+        {
+          "dcid": "geoId/06073",
+          "name": "San Diego County",
+          "pop": 3298799
+        },
+        {
+          "dcid": "geoId/06059",
+          "name": "Orange County",
+          "pop": 3170435
+        },
+        {
+          "dcid": "geoId/06065",
+          "name": "Riverside County",
+          "pop": 2529933
+        },
+        {
+          "dcid": "geoId/06071",
+          "name": "San Bernardino County",
+          "pop": 2214281
+        },
+        {
+          "dcid": "geoId/06085",
+          "name": "Santa Clara County",
+          "pop": 1926325
+        },
+        {
+          "dcid": "geoId/06001",
+          "name": "Alameda County",
+          "pop": 1649060
+        },
+        {
+          "dcid": "geoId/06067",
+          "name": "Sacramento County",
+          "pop": 1611231
+        },
+        {
+          "dcid": "geoId/06013",
+          "name": "Contra Costa County",
+          "pop": 1172607
+        },
+        {
+          "dcid": "geoId/06019",
+          "name": "Fresno County",
+          "pop": 1024125
+        },
+        {
+          "dcid": "geoId/06029",
+          "name": "Kern County",
+          "pop": 922529
+        },
+        {
+          "dcid": "geoId/06111",
+          "name": "Ventura County",
+          "pop": 835427
+        },
+        {
+          "dcid": "geoId/06075",
+          "name": "San Francisco County",
+          "pop": 827526
+        },
+        {
+          "dcid": "geoId/06077",
+          "name": "San Joaquin County",
+          "pop": 816108
+        },
+        {
+          "dcid": "geoId/06081",
+          "name": "San Mateo County",
+          "pop": 742893
+        },
+        {
+          "dcid": "geoId/06099",
+          "name": "Stanislaus County",
+          "pop": 556972
+        },
+        {
+          "dcid": "geoId/06097",
+          "name": "Sonoma County",
+          "pop": 485375
+        },
+        {
+          "dcid": "geoId/06107",
+          "name": "Tulare County",
+          "pop": 483546
+        },
+        {
+          "dcid": "geoId/06095",
+          "name": "Solano County",
+          "pop": 455101
+        },
+        {
+          "dcid": "geoId/06083",
+          "name": "Santa Barbara County",
+          "pop": 444500
+        },
+        {
+          "dcid": "geoId/06053",
+          "name": "Monterey County",
+          "pop": 436251
+        },
+        {
+          "dcid": "geoId/06061",
+          "name": "Placer County",
+          "pop": 433822
+        },
+        {
+          "dcid": "geoId/06047",
+          "name": "Merced County",
+          "pop": 296774
+        },
+        {
+          "dcid": "geoId/06079",
+          "name": "San Luis Obispo County",
+          "pop": 281843
+        },
+        {
+          "dcid": "geoId/06087",
+          "name": "Santa Cruz County",
+          "pop": 262406
+        },
+        {
+          "dcid": "geoId/06041",
+          "name": "Marin County",
+          "pop": 256400
+        },
+        {
+          "dcid": "geoId/06113",
+          "name": "Yolo County",
+          "pop": 225251
+        },
+        {
+          "dcid": "geoId/06007",
+          "name": "Butte County",
+          "pop": 208334
+        },
+        {
+          "dcid": "geoId/06017",
+          "name": "El Dorado County",
+          "pop": 192823
+        },
+        {
+          "dcid": "geoId/06025",
+          "name": "Imperial County",
+          "pop": 181724
+        },
+        {
+          "dcid": "geoId/06089",
+          "name": "Shasta County",
+          "pop": 181121
+        },
+        {
+          "dcid": "geoId/06039",
+          "name": "Madera County",
+          "pop": 165432
+        },
+        {
+          "dcid": "geoId/06031",
+          "name": "Kings County",
+          "pop": 154913
+        },
+        {
+          "dcid": "geoId/06055",
+          "name": "Napa County",
+          "pop": 132727
+        },
+        {
+          "dcid": "geoId/06023",
+          "name": "Humboldt County",
+          "pop": 132380
+        },
+        {
+          "dcid": "geoId/06057",
+          "name": "Nevada County",
+          "pop": 102195
+        },
+        {
+          "dcid": "geoId/06101",
+          "name": "Sutter County",
+          "pop": 98545
+        },
+        {
+          "dcid": "geoId/06045",
+          "name": "Mendocino County",
+          "pop": 89175
+        },
+        {
+          "dcid": "geoId/06115",
+          "name": "Yuba County",
+          "pop": 87469
+        },
+        {
+          "dcid": "geoId/06069",
+          "name": "San Benito County",
+          "pop": 69159
+        },
+        {
+          "dcid": "geoId/06033",
+          "name": "Lake County",
+          "pop": 67764
+        },
+        {
+          "dcid": "geoId/06103",
+          "name": "Tehama County",
+          "pop": 64451
+        },
+        {
+          "dcid": "geoId/06109",
+          "name": "Tuolumne County",
+          "pop": 53893
+        },
+        {
+          "dcid": "geoId/06009",
+          "name": "Calaveras County",
+          "pop": 46505
+        },
+        {
+          "dcid": "geoId/06093",
+          "name": "Siskiyou County",
+          "pop": 42498
+        },
+        {
+          "dcid": "geoId/06005",
+          "name": "Amador County",
+          "pop": 42026
+        },
+        {
+          "dcid": "geoId/06035",
+          "name": "Lassen County",
+          "pop": 28340
+        },
+        {
+          "dcid": "geoId/06021",
+          "name": "Glenn County",
+          "pop": 28304
+        },
+        {
+          "dcid": "geoId/06015",
+          "name": "Del Norte County",
+          "pop": 27009
+        },
+        {
+          "dcid": "geoId/06011",
+          "name": "Colusa County",
+          "pop": 22074
+        },
+        {
+          "dcid": "geoId/06063",
+          "name": "Plumas County",
+          "pop": 18834
+        },
+        {
+          "dcid": "geoId/06027",
+          "name": "Inyo County",
+          "pop": 18485
+        },
+        {
+          "dcid": "geoId/06043",
+          "name": "Mariposa County",
+          "pop": 17048
+        },
+        {
+          "dcid": "geoId/06105",
+          "name": "Trinity County",
+          "pop": 15642
+        },
+        {
+          "dcid": "geoId/06051",
+          "name": "Mono County",
+          "pop": 12991
+        },
+        {
+          "dcid": "geoId/06049",
+          "name": "Modoc County",
+          "pop": 8491
+        },
+        {
+          "dcid": "geoId/06091",
+          "name": "Sierra County",
+          "pop": 3113
+        },
+        {
+          "dcid": "geoId/06003",
+          "name": "Alpine County",
+          "pop": 1099
+        }
+      ]
+    }
+  },
+  "latestPopulation": {
+    "country/USA": {
+      "date": "2025",
+      "value": 341784857,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/04": {
+      "date": "2025",
+      "value": 7623818,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/06": {
+      "date": "2025",
+      "value": 39355309,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/06037": {
+      "date": "2024",
+      "value": 9757179,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/06059": {
+      "date": "2024",
+      "value": 3170435,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/06065": {
+      "date": "2024",
+      "value": 2529933,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/06071": {
+      "date": "2024",
+      "value": 2214281,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/06073": {
+      "date": "2024",
+      "value": 3298799,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/08": {
+      "date": "2025",
+      "value": 6012561,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/18": {
+      "date": "2025",
+      "value": 6973333,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/22": {
+      "date": "2025",
+      "value": 4618189,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/29": {
+      "date": "2025",
+      "value": 6270541,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/38": {
+      "date": "2025",
+      "value": 799358,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/47": {
+      "date": "2025",
+      "value": 7315076,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/48": {
+      "date": "2025",
+      "value": 31709821,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/53": {
+      "date": "2025",
+      "value": 8001020,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/72": {
+      "date": "2025",
+      "value": 3184835,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "northamerica": {
+      "date": "2024",
+      "value": 613150000,
+      "metadata": {
+        "importName": "WikidataPopulation",
+        "provenanceUrl": "https://www.wikidata.org/wiki/Wikidata:Main_Page",
+        "measurementMethod": "WikidataPopulation"
+      }
+    }
+  },
+  "validCategories": {
+    "country/USA": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/04": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/06": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/06037": {
+      "category": [
+        "Demographics",
+        "Economics",
+        "Education",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/06059": {
+      "category": [
+        "Demographics",
+        "Economics",
+        "Education",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/06065": {
+      "category": [
+        "Demographics",
+        "Economics",
+        "Education",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/06071": {
+      "category": [
+        "Demographics",
+        "Economics",
+        "Education",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/06073": {
+      "category": [
+        "Demographics",
+        "Economics",
+        "Education",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/08": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/18": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/22": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/29": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/38": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/47": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/48": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/53": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/72": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "northamerica": {
+      "category": [
+        "Demographics",
+        "Overview"
+      ]
+    }
+  },
+  "childPlacesType": "County",
+  "childPlaces": [
+    "geoId/06037",
+    "geoId/06073",
+    "geoId/06059",
+    "geoId/06065",
+    "geoId/06071"
+  ],
+  "parentPlaces": [
+    "country/USA",
+    "northamerica"
+  ],
+  "similarPlaces": [
+    "geoId/38",
+    "geoId/18",
+    "geoId/72",
+    "geoId/47",
+    "geoId/22"
+  ],
+  "nearbyPlaces": [
+    "geoId/48",
+    "geoId/53",
+    "geoId/04",
+    "geoId/29",
+    "geoId/08"
+  ]
+}

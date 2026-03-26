@@ -1,0 +1,294 @@
+// Copyright 2019 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+//  **** IMPORTANT NOTE ****
+//
+//  The proto of BT data has to match exactly the g3 proto, including tag
+//  number.
+
+// REST API URL from the proto in this file:
+// ========================================
+//    /bulk/stats
+//    /stat/all
+//    /stat/series
+//    /stat/value
+// ========================================
+
+syntax = "proto3";
+package datacommons;
+
+option go_package = "github.com/datacommonsorg/mixer/internal/proto";
+
+// Facet contains the source and measurement information for a
+// statistical observation.
+message Facet {
+  string import_name = 1;
+  string provenance_url = 2;
+  string measurement_method = 3;
+  string observation_period = 4;
+  string scaling_factor = 5;
+  string unit = 6;
+  bool is_dc_aggregate = 7;
+  bool is_dc_imputed = 8;
+}
+
+message Facets {
+  repeated Facet facets = 1;
+}
+
+// PlaceVariableFacet contains the source and measurement information for a set
+// of statistical observations about a place and variable.
+message PlaceVariableFacet {
+  Facet facet = 1;
+  // Number of observations for given place + variable + Facet.
+  int32 obs_count = 2;
+  // Latest observation date.
+  string latest_date = 3;
+  // Earliest observation date.
+  string earliest_date = 4;
+  // Id of the facet.
+  string facet_id = 5;
+}
+
+message PlaceVariableFacets {
+  repeated PlaceVariableFacet place_variable_facets = 1;
+}
+
+message PointStat {
+  // date in IOS-8601 format
+  string date = 1;
+  optional double value = 2;
+  // Full metadata of the stat. This is set when the proto is used statalone,
+  // ex, in place page cache.
+  Facet metadata = 3;
+  // Hash of the metadata, this is to be used together with a map from
+  // the hash to the full metatdata. This is set in /stat/set/within-place/*
+  // APIs.
+  string meta_hash = 4;
+  // Same as meta_hash, used in V1 API.
+  string facet = 5;
+}
+
+message SourceSeries {
+  map<string, double> val = 1;
+  string measurement_method = 3;
+  string observation_period = 4;
+  string import_name = 5;
+  string provenance_domain = 6;
+  string scaling_factor = 7;
+  string unit = 8;
+  bool is_dc_aggregate = 9;
+  string provenance_url = 10;
+  // Only used for latest date obs collection.
+  map<string, string> place_to_latest_date = 11;
+  bool is_dc_imputed = 13;
+  reserved 2;
+}
+
+// Represents a time series from a source.
+message Series {
+  // Map from date to stat value.
+  map<string, double> val = 1;
+  // Series metadata.
+  Facet metadata = 2;
+}
+
+// Represents observation time series data.
+message ObsTimeSeries {
+  string place_name = 3;
+  // Only used for time series.
+  // All valid place types for the given place_dcid
+  repeated string place_types = 7;
+  string place_dcid = 5; // Only set if the key uses mid.
+  repeated SourceSeries source_series = 6;
+}
+
+// A collection of observation values for various places with the same parent
+// and place type, for given measured property, observation period, stat type,
+// observation date, pop type, and an optional list of pop PVs.
+message ObsCollection {
+  repeated SourceSeries source_cohorts = 5;
+
+  // All place types for a given place, used in place_dcid_to_types.
+  message PlaceTypes {
+    repeated string types = 1;
+  }
+
+  // A map of place DCID to all of the place's types
+  // All places in the val/str_val have types here
+  map<string, PlaceTypes> place_dcid_to_types = 17;
+
+  reserved 1, 2, 3, 4;
+}
+
+// Wrapper for observation data.
+message ChartStore {
+  oneof val {
+    ObsTimeSeries obs_time_series = 1;
+    ObsCollection obs_collection = 2;
+  }
+}
+
+// TODO(shifucun): deprecate this and use StatVarSeries when migrating
+// /stat/all to v1.
+message PlaceStat {
+  // Key is stat var dcid.
+  map<string, ObsTimeSeries> stat_var_data = 3;
+}
+
+
+// Hold mapping from stat var id to Series struct. This is different from
+// StatVarObsSeries that the "Series" is processed time series with metadata
+// while "ObsTimeSeries" is the raw series from cache.
+message StatVarSeries {
+  // Key is stat var dcid.
+  map<string, Series> data = 1;
+}
+
+// Request message for GetStats.
+message GetStatsRequest {
+  // The dcids of the place.
+  repeated string place = 1;
+
+  // The dcid of the StatisticalVariable.
+  string stats_var = 2;
+
+  // (Optional) The measurement method of the observation. If not specified,
+  // stats series with any measurement methods could be returned.
+  string measurement_method = 4;
+
+  // (Optional) The unit of the observation. If not specified, stats series with
+  // any unit could be returned.
+  string unit = 5;
+
+  // (Optional) The observation period of the observation. If not specified,
+  // stats series with any observation period could be returned.
+  string observation_period = 6;
+
+  // (optional) scaling factor of the observation.
+  string scaling_factor = 7;
+}
+
+// Response of GetStats
+message GetStatsResponse {
+  // The JSON payload.
+  string payload = 2;
+}
+
+// Request for GetStat service.
+message GetStatValueRequest {
+  // dcid of the place.
+  string place = 1;
+  // dcid of the stat var.
+  string stat_var = 2;
+  // (optional) date of the stat. The latest date will be used if unspecified.
+  string date = 3;
+  // (optional) measurement method of the observation, ex: "CensusACS5yrSurvey".
+  string measurement_method = 4;
+  // (optional) observation period of the observation, ex: "P1Y".
+  string observation_period = 5;
+  // (optional) unit of the observation.
+  string unit = 6;
+  // (optional) scaling factor of the observation.
+  string scaling_factor = 7;
+}
+
+message GetStatValueResponse { optional double value = 1; }
+
+// Request for GetStatSeries service.
+message GetStatSeriesRequest {
+  // dcid of the place.
+  string place = 1;
+  // dcid of the stat var.
+  string stat_var = 2;
+  // (optional) measurement method of the observation, ex: "CensusACS5yrSurvey".
+  string measurement_method = 3;
+  // (optional) observation period of the observation, ex: "P1Y".
+  string observation_period = 4;
+  // (optional) unit of the observation.
+  string unit = 5;
+  // (optional) scaling factor of the observation.
+  string scaling_factor = 6;
+}
+
+// Response for GetStatSeries service.
+message GetStatSeriesResponse {
+  // A map from ISO date to stat value.
+  map<string, double> series = 1;
+}
+
+// Request for GetStatAll service.
+message GetStatAllRequest {
+  // dcids of the place.
+  repeated string places = 1;
+  // dcids of the stat var.
+  repeated string stat_vars = 2;
+}
+
+// Response for GetStatAll service.
+//
+// The response is a two level map, with the first level keyed by place dcid,
+// and the second level keyed by the stat var dcid.
+// Each leaf object contains multiple source series with <date, value> object
+// and observation metadata.
+//
+// The response is transcoded by esp:
+// https://cloud.google.com/endpoints/docs/grpc/grpc-service-config Example
+// response after esp transcoding is like below.
+// {
+//   placeData: {
+//     "geoId/01": {
+//       statVarData: {
+//         "statvar1": {
+//           "placeName": "City of Mountain View",
+//           "sourceSeries": [
+//             {
+//               "val": {
+//                 "2008": 2116,
+//                 "2009": 2155,
+//                 "2010": 1633,
+//                 "2011": 1509,
+//                 "2012": 1581,
+//                 "2013": 1867,
+//                 "2014": 1770,
+//                 "2015": 2201,
+//                 "2016": 1913,
+//                 "2017": 2138
+//               },
+//               "observationPeriod": "P1Y",
+//               "importName": "FBIGovCrime",
+//               "provenanceDomain": "fbi.gov"
+//             }
+//           ]
+//         },
+//       }
+//     },
+//     "geoId/02": {
+//       statVarData: {
+//         "statvar3": {...},
+//       }
+//     }
+//   }
+// }
+message GetStatAllResponse { map<string, PlaceStat> place_data = 1; }
+
+message StatDate {
+  // Map from date to the number of places.
+  map<string, double> date_place_count = 1;
+  Facet metadata = 2;
+}
+
+message StatDateList {
+  repeated StatDate stat_date = 1;
+}

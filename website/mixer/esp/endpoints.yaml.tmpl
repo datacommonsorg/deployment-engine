@@ -1,0 +1,115 @@
+# Copyright 2019 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# This template is used to generate endpoints.yaml which is deployed to Cloud
+# Endpoints whenever mixer.proto is updated.
+
+# The configuration schema is defined by service.proto file
+# https://github.com/googleapis/googleapis/blob/master/google/api/service.proto
+type: google.api.Service
+config_version: 3
+
+# Name of the service configuration.
+name:
+
+# API title to appear in the user interface (Google Cloud Console).
+title:
+
+apis:
+  - name: datacommons.Mixer
+
+endpoints:
+- target:
+  name:
+
+backend:
+  rules:
+    # Default timeout for the ESP and mixer GRPC server.
+    - selector: "datacommons.Mixer.*"
+      deadline: 60
+    # Longer timeout for the Sparql endpoint.
+    - selector: "datacommons.Mixer.Query"
+      deadline: 300
+
+usage:
+  rules:
+  # V0 APIs can be called without an API Key.
+  # This will be removed once the V0 users are fully migrated.
+  - selector: "datacommons.Mixer.Query"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.GetPropertyLabels"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.GetPropertyValues"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.GetTriples"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.GetPlacesIn"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.GetStats"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.GetStatSetSeries"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.GetStatValue"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.GetStatSeries"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.GetStatAll"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.GetStatSetWithinPlace"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.GetStatSetWithinPlaceAll"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.GetStatSet"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.GetStatSetSeriesWithinPlace"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.GetLocationsRankings"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.GetRelatedLocations"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.GetPlacePageData"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.Search"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.GetVersion"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.GetPlaceStatVars"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.GetEntityStatVarsUnionV1"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.GetPlaceStatDateWithinPlace"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.GetStatDateWithinPlace"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.GetStatVarGroup"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.GetStatVarGroupNode"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.GetStatVarPath"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.SearchStatVar"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.GetStatVarSummary"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.CompareEntities"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.ResolveEntities"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.ResolveCoordinates"
+    allow_unregistered_calls: true
+  - selector: "datacommons.Mixer.ResolveIds"
+    allow_unregistered_calls: true
+  # TODO(/v2/resolve cleanup): Delete the following lines to always require an api key for /v2/resolve.
+  - selector: "datacommons.Mixer.V2Resolve"
+    allow_unregistered_calls: true

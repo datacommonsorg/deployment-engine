@@ -1,0 +1,202 @@
+[
+  {
+    "SubjectID": "income",
+    "Name": "income",
+    "Types": [
+      "Property"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/g/Household_HouseholdType-FamilyHousehold_Income_IncomeStatus-WithIncome",
+    "Name": "Household With Household Type = Family Household, Income, Income Status = With Income",
+    "Types": [
+      "StatVarGroup"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/g/Household_HouseholdType-MarriedCoupleFamilyHousehold_Income_IncomeStatus-WithIncome",
+    "Name": "Household With Household Type = Married Couple Family Household, Income, Income Status = With Income",
+    "Types": [
+      "StatVarGroup"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/g/Household_HouseholdType-NonfamilyHousehold_Income_IncomeStatus-WithIncome",
+    "Name": "Household With Household Type = Nonfamily Household, Income, Income Status = With Income",
+    "Types": [
+      "StatVarGroup"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/g/Household_HouseholdType_Income-InflationAdjustedUSDCurrentYear10000To14999_IncomeStatus-WithIncome",
+    "Name": "Household With Household Type, Income = 10,000 - 14,999 Inflation Adjusted USD_Current Year, Income Status = With Income",
+    "Types": [
+      "StatVarGroup"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/g/Household_HouseholdType_Income-InflationAdjustedUSDCurrentYearUpto10000_IncomeStatus-WithIncome",
+    "Name": "Household With Household Type, Income = 10,000 Inflation Adjusted USD_Current Year or Less, Income Status = With Income",
+    "Types": [
+      "StatVarGroup"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/g/Household_HouseholdType_Income-InflationAdjustedUSDCurrentYear100000To149999_IncomeStatus-WithIncome",
+    "Name": "Household With Household Type, Income = 100,000 - 149,999 Inflation Adjusted USD_Current Year, Income Status = With Income",
+    "Types": [
+      "StatVarGroup"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/g/Household_HouseholdType_Income-InflationAdjustedUSDCurrentYear15000To24999_IncomeStatus-WithIncome",
+    "Name": "Household With Household Type, Income = 15,000 - 24,999 Inflation Adjusted USD_Current Year, Income Status = With Income",
+    "Types": [
+      "StatVarGroup"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/g/Household_HouseholdType_Income-InflationAdjustedUSDCurrentYear150000To199999_IncomeStatus-WithIncome",
+    "Name": "Household With Household Type, Income = 150,000 - 199,999 Inflation Adjusted USD_Current Year, Income Status = With Income",
+    "Types": [
+      "StatVarGroup"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/g/Household_HouseholdType_Income-InflationAdjustedUSDCurrentYear200000Onwards_IncomeStatus-WithIncome",
+    "Name": "Household With Household Type, Income = 200,000 Inflation Adjusted USD_Current Year or More, Income Status = With Income",
+    "Types": [
+      "StatVarGroup"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/g/Household_HouseholdType_Income-InflationAdjustedUSDCurrentYear25000To34999_IncomeStatus-WithIncome",
+    "Name": "Household With Household Type, Income = 25,000 - 34,999 Inflation Adjusted USD_Current Year, Income Status = With Income",
+    "Types": [
+      "StatVarGroup"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/g/Household_HouseholdType_Income-InflationAdjustedUSDCurrentYear35000To49999_IncomeStatus-WithIncome",
+    "Name": "Household With Household Type, Income = 35,000 - 49,999 Inflation Adjusted USD_Current Year, Income Status = With Income",
+    "Types": [
+      "StatVarGroup"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/g/Household_HouseholdType_Income-InflationAdjustedUSDCurrentYear50000To74999_IncomeStatus-WithIncome",
+    "Name": "Household With Household Type, Income = 50,000 - 74,999 Inflation Adjusted USD_Current Year, Income Status = With Income",
+    "Types": [
+      "StatVarGroup"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/g/Household_HouseholdType_Income-InflationAdjustedUSDCurrentYear75000To99999_IncomeStatus-WithIncome",
+    "Name": "Household With Household Type, Income = 75,000 - 99,999 Inflation Adjusted USD_Current Year, Income Status = With Income",
+    "Types": [
+      "StatVarGroup"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/g/Household_Income-InflationAdjustedUSDCurrentYear10000To14999_IncomeStatus-WithIncome",
+    "Name": "Household With Income = 10,000 - 14,999 Inflation Adjusted USD_Current Year, Income Status = With Income",
+    "Types": [
+      "StatVarGroup"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/g/Household_Income-InflationAdjustedUSDCurrentYearUpto10000_IncomeStatus-WithIncome",
+    "Name": "Household With Income = 10,000 Inflation Adjusted USD_Current Year or Less, Income Status = With Income",
+    "Types": [
+      "StatVarGroup"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/g/Household_Income-InflationAdjustedUSDCurrentYear100000To149999_IncomeStatus-WithIncome",
+    "Name": "Household With Income = 100,000 - 149,999 Inflation Adjusted USD_Current Year, Income Status = With Income",
+    "Types": [
+      "StatVarGroup"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/g/Household_Income-InflationAdjustedUSDCurrentYear15000To24999_IncomeStatus-WithIncome",
+    "Name": "Household With Income = 15,000 - 24,999 Inflation Adjusted USD_Current Year, Income Status = With Income",
+    "Types": [
+      "StatVarGroup"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/g/Household_Income-InflationAdjustedUSDCurrentYear150000To199999_IncomeStatus-WithIncome",
+    "Name": "Household With Income = 150,000 - 199,999 Inflation Adjusted USD_Current Year, Income Status = With Income",
+    "Types": [
+      "StatVarGroup"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/g/Household_Income-InflationAdjustedUSDCurrentYear200000Onwards_IncomeStatus-WithIncome",
+    "Name": "Household With Income = 200,000 Inflation Adjusted USD_Current Year or More, Income Status = With Income",
+    "Types": [
+      "StatVarGroup"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  }
+]

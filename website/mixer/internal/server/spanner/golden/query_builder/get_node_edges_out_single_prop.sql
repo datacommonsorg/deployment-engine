@@ -1,0 +1,19 @@
+		GRAPH DCGraph MATCH (m:Node
+		WHERE
+			m.subject_id = 'Person')-[e:Edge
+		WHERE
+			e.predicate = 'source']->(n:Node)
+		RETURN
+			m.subject_id,
+			e.predicate,
+			e.provenance,
+			n.value,
+			n.bytes,
+			n.name,
+			n.types
+		ORDER BY
+			subject_id,
+			predicate,
+			n.subject_id,
+			provenance
+		LIMIT 501

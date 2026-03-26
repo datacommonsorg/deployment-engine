@@ -1,0 +1,547 @@
+// Copyright 2023 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+//  **** IMPORTANT NOTE ****
+//
+//  The proto of BT data has to match exactly the g3 proto, including tag
+//  number.
+
+// Mixer service definitions
+
+syntax = "proto3";
+package datacommons;
+
+option go_package = "github.com/datacommonsorg/mixer/internal/proto/service";
+
+import "google/api/annotations.proto";
+import "common.proto";
+import "custom.proto";
+import "misc.proto";
+import "node.proto";
+import "place.proto";
+import "query.proto";
+import "stat.proto";
+import "stat_var.proto";
+import "recon.proto";
+
+import "v1/properties.proto";
+import "v1/property_values.proto";
+import "v1/variable.proto";
+import "v1/info.proto";
+import "v1/observations.proto";
+import "v1/observation_dates.proto";
+import "v1/page.proto";
+import "v1/triples.proto";
+
+import "v2/event.proto";
+import "v2/node.proto";
+import "v2/node_search.proto";
+import "v2/observation.proto";
+import "v2/resolve.proto";
+
+service Mixer {
+  // ======================  V3   V3   V3   V3  ======================
+
+  rpc V3Node(datacommons.v2.NodeRequest) returns (datacommons.v2.NodeResponse) {
+    option (google.api.http) = {
+      get : "/v3/node"
+      additional_bindings : {post : "/v3/node" body : "*"}
+    };
+  }
+
+  rpc V3Observation(datacommons.v2.ObservationRequest) returns (datacommons.v2.ObservationResponse) {
+    option (google.api.http) = {
+      get : "/v3/observation"
+      additional_bindings : {post : "/v3/observation" body : "*"}
+    };
+  }
+
+  rpc V3NodeSearch(datacommons.v2.NodeSearchRequest) returns (datacommons.v2.NodeSearchResponse) {
+    option (google.api.http) = {
+      get : "/v3/node_search"
+      additional_bindings : {post : "/v3/node_search" body : "*"}
+    };
+  }
+
+  rpc V3Resolve(datacommons.v2.ResolveRequest) returns (datacommons.v2.ResolveResponse) {
+    option (google.api.http) = {
+      get : "/v3/resolve"
+      additional_bindings : {post : "/v3/resolve" body : "*"}
+    };
+  }
+
+  rpc V3Sparql(SparqlRequest) returns (QueryResponse) {
+    option (google.api.http) = {
+      get : "/v3/sparql"
+      additional_bindings : {post : "/v3/sparql" body : "*"}
+    };
+  }
+
+  // ======================  V2   V2   V2   V2  ======================
+
+  rpc V2Sparql(SparqlRequest) returns (QueryResponse) {
+    option (google.api.http) = {
+      get : "/v2/sparql"
+      additional_bindings : {post : "/v2/sparql" body : "*"}
+    };
+  }
+
+  rpc V2Resolve(datacommons.v2.ResolveRequest)
+      returns (datacommons.v2.ResolveResponse) {
+    option (google.api.http) = {
+      get : "/v2/resolve"
+      additional_bindings : {post : "/v2/resolve" body : "*"}
+    };
+  }
+
+  rpc V2Node(datacommons.v2.NodeRequest) returns (datacommons.v2.NodeResponse) {
+    option (google.api.http) = {
+      get : "/v2/node"
+      additional_bindings : {post : "/v2/node" body : "*"}
+    };
+  }
+
+  rpc V2Event(datacommons.v2.EventRequest)
+      returns (datacommons.v2.EventResponse) {
+    option (google.api.http) = {
+      get : "/v2/event"
+      additional_bindings : {post : "/v2/event" body : "*"}
+    };
+  }
+
+  rpc V2Observation(datacommons.v2.ObservationRequest)
+      returns (datacommons.v2.ObservationResponse) {
+    option (google.api.http) = {
+      get : "/v2/observation"
+      additional_bindings : {post : "/v2/observation" body : "*"}
+    };
+  }
+
+  // Filters a list of stat vars using a list of entities (places or sources).
+  rpc FilterStatVarsByEntity(FilterStatVarsByEntityRequest)
+      returns (FilterStatVarsByEntityResponse) {
+    option (google.api.http) = {
+      post : "/v2/variable/filter" 
+      body : "*"
+    };
+  }
+
+  // ======================  V0   V0   V0   V0  ======================
+
+  // Query DataCommons Graph with Sparql.
+  rpc Query(QueryRequest) returns (QueryResponse) {
+    option (google.api.http) = {
+      get : "/query"
+      additional_bindings : {post : "/query" body : "*"}
+    };
+  }
+
+  // Fetch property labels adjacent of nodes
+  rpc GetPropertyLabels(GetPropertyLabelsRequest) returns (PayloadResponse) {
+    option (google.api.http) = {
+      get : "/node/property-labels"
+      additional_bindings : {post : "/node/property-labels" body : "*"}
+    };
+  }
+
+  // Fetch nodes that linked to source nodes with a given property.
+  rpc GetPropertyValues(GetPropertyValuesRequest) returns (PayloadResponse) {
+    option (google.api.http) = {
+      get : "/node/property-values"
+      additional_bindings : {post : "/node/property-values" body : "*"}
+    };
+  }
+
+  // Fetch triples that have the given nodes as subject or object.
+  rpc GetTriples(GetTriplesRequest) returns (PayloadResponse) {
+    option (google.api.http) = {
+      get : "/node/triples"
+      additional_bindings : {post : "/node/triples" body : "*"}
+    };
+  }
+
+  // Get places contained in parent places.
+  rpc GetPlacesIn(GetPlacesInRequest) returns (GetPlacesInResponse) {
+    option (google.api.http) = {
+      get : "/node/places-in"
+      additional_bindings : {post : "/node/places-in" body : "*"}
+    };
+  }
+
+  // Get stats of places by StatisticalVariable. If multiple time series data
+  // are avaialable, the highest ranked one by measurement method and import
+  // will be returned.
+  rpc GetStats(GetStatsRequest) returns (GetStatsResponse) {
+    option (google.api.http) = {
+      get : "/bulk/stats"
+      additional_bindings : {post : "/bulk/stats" body : "*"}
+    };
+  }
+
+  // Get a single stat value given a place, a statistical variable and a date.
+  // If no date is given, the latest statistical variable will be returned.
+  rpc GetStatValue(GetStatValueRequest) returns (GetStatValueResponse) {
+    option (google.api.http) = {
+      get : "/stat/value"
+      additional_bindings : {post : "/stat/value" body : "*"}
+    };
+  }
+
+  // Get a series of stat value with dates, given the place and statistical
+  // variable.
+  rpc GetStatSeries(GetStatSeriesRequest) returns (GetStatSeriesResponse) {
+    option (google.api.http) = {
+      get : "/stat/series"
+      additional_bindings : {post : "/stat/series" body : "*"}
+    };
+  }
+
+  // Get all stat series given a list of places and a list of statistical
+  // variables.
+  rpc GetStatAll(GetStatAllRequest) returns (GetStatAllResponse) {
+    option (google.api.http) = {
+      get : "/stat/all"
+      additional_bindings : {post : "/stat/all" body : "*"}
+    };
+  }
+
+  // Get rankings for given stat var DCIDs.
+  rpc GetLocationsRankings(GetLocationsRankingsRequest)
+      returns (GetLocationsRankingsResponse) {
+    option (google.api.http) = {
+      get : "/v1/place/ranking"
+      additional_bindings : {post : "/v1/place/ranking" body : "*"}
+    };
+  }
+
+  // Get related locations for given stat var DCIDs.
+  rpc GetRelatedLocations(GetRelatedLocationsRequest)
+      returns (GetRelatedLocationsResponse) {
+    option (google.api.http) = {
+      get : "/v1/place/related"
+      additional_bindings : {post : "/v1/place/related" body : "*"}
+    };
+  }
+
+  // Retrieves the version metadata.
+  rpc GetVersion(GetVersionRequest) returns (GetVersionResponse) {
+    option (google.api.http) = {
+      get : "/version"
+    };
+  }
+
+  // Give a list of place dcids, return all the statistical variables for each
+  // place.
+  rpc GetPlaceStatVars(GetPlaceStatVarsRequest)
+      returns (GetPlaceStatVarsResponse) {
+    option (google.api.http) = {
+      get : "/place/stat-vars"
+      additional_bindings : {post : "/place/stat-vars" body : "*"}
+    };
+  }
+
+  // Given a list of entity dcids, returns the union of available
+  // statistical variables for the entities.
+  rpc GetEntityStatVarsUnionV1(GetEntityStatVarsUnionRequest)
+      returns (GetEntityStatVarsUnionResponse) {
+    option (google.api.http) = {
+      get : "/v1/place/stat-vars/union"
+      additional_bindings : {post : "/v1/place/stat-vars/union" body : "*"}
+    };
+  }
+
+  // ======================  V1   V1   V1   V1  ======================
+
+  // Query DataCommons Graph with Sparql.
+  rpc QueryV1(QueryRequest) returns (QueryResponse) {
+    option (google.api.http) = {
+      get : "/v1/query"
+      additional_bindings : {post : "/v1/query" body : "*"}
+    };
+  }
+
+  rpc Properties(datacommons.v1.PropertiesRequest)
+      returns (datacommons.v1.PropertiesResponse) {
+    option (google.api.http) = {
+      get : "/v1/properties/{direction}/{node=**}"
+    };
+  }
+
+  rpc BulkProperties(datacommons.v1.BulkPropertiesRequest)
+      returns (datacommons.v1.BulkPropertiesResponse) {
+    option (google.api.http) = {
+      get : "/v1/bulk/properties/{direction}"
+      additional_bindings : {
+        post : "/v1/bulk/properties/{direction}"
+        body : "*"
+      }
+    };
+  }
+
+  rpc PropertyValues(datacommons.v1.PropertyValuesRequest)
+      returns (datacommons.v1.PropertyValuesResponse) {
+    option (google.api.http) = {
+      get : "/v1/property/values/{direction}/{node_property=**}"
+    };
+  }
+
+  rpc LinkedPropertyValues(datacommons.v1.LinkedPropertyValuesRequest)
+      returns (datacommons.v1.PropertyValuesResponse) {
+    option (google.api.http) = {
+      get : "/v1/property/values/in/linked/{node_property=**}"
+    };
+  }
+
+  rpc BulkPropertyValues(datacommons.v1.BulkPropertyValuesRequest)
+      returns (datacommons.v1.BulkPropertyValuesResponse) {
+    option (google.api.http) = {
+      get : "/v1/bulk/property/values/{direction}"
+      additional_bindings : {
+        post : "/v1/bulk/property/values/{direction}"
+        body : "*"
+      }
+    };
+  }
+
+  rpc BulkLinkedPropertyValues(datacommons.v1.BulkLinkedPropertyValuesRequest)
+      returns (datacommons.v1.BulkPropertyValuesResponse) {
+    option (google.api.http) = {
+      get : "/v1/bulk/property/values/in/linked"
+      additional_bindings : {
+        post : "/v1/bulk/property/values/in/linked"
+        body : "*"
+      }
+    };
+  }
+
+  rpc Triples(datacommons.v1.TriplesRequest)
+      returns (datacommons.v1.TriplesResponse) {
+    option (google.api.http) = {
+      get : "/v1/triples/{direction}/{node=**}"
+    };
+  }
+
+  rpc BulkTriples(datacommons.v1.BulkTriplesRequest)
+      returns (datacommons.v1.BulkTriplesResponse) {
+    option (google.api.http) = {
+      get : "/v1/bulk/triples/{direction}"
+      additional_bindings : {post : "/v1/bulk/triples/{direction}" body : "*"}
+    };
+  }
+
+  rpc Variables(datacommons.v1.VariablesRequest)
+      returns (datacommons.v1.VariablesResponse) {
+    option (google.api.http) = {
+      get : "/v1/variables/{entity=**}"
+    };
+  }
+
+  rpc PlaceInfo(datacommons.v1.PlaceInfoRequest)
+      returns (datacommons.v1.PlaceInfoResponse) {
+    option (google.api.http) = {
+      get : "/v1/info/place/{node=**}"
+    };
+  }
+
+  rpc BulkPlaceInfo(datacommons.v1.BulkPlaceInfoRequest)
+      returns (datacommons.v1.BulkPlaceInfoResponse) {
+    option (google.api.http) = {
+      get : "/v1/bulk/info/place"
+      additional_bindings : {post : "/v1/bulk/info/place" body : "*"}
+    };
+  }
+
+  rpc VariableInfo(datacommons.v1.VariableInfoRequest)
+      returns (datacommons.v1.VariableInfoResponse) {
+    option (google.api.http) = {
+      get : "/v1/info/variable/{node=**}"
+    };
+  }
+
+  rpc BulkVariableInfo(datacommons.v1.BulkVariableInfoRequest)
+      returns (datacommons.v1.BulkVariableInfoResponse) {
+    option (google.api.http) = {
+      get : "/v1/bulk/info/variable"
+      additional_bindings : {post : "/v1/bulk/info/variable" body : "*"}
+    };
+  }
+
+  rpc VariableGroupInfo(datacommons.v1.VariableGroupInfoRequest)
+      returns (datacommons.v1.VariableGroupInfoResponse) {
+    option (google.api.http) = {
+      get : "/v1/info/variable-group/{node=**}"
+    };
+  }
+
+  rpc BulkVariableGroupInfo(datacommons.v1.BulkVariableGroupInfoRequest)
+      returns (datacommons.v1.BulkVariableGroupInfoResponse) {
+    option (google.api.http) = {
+      get : "/v1/bulk/info/variable-group"
+      additional_bindings : {post : "/v1/bulk/info/variable-group" body : "*"}
+    };
+  }
+
+  rpc ObservationsPoint(datacommons.v1.ObservationsPointRequest)
+      returns (PointStat) {
+    option (google.api.http) = {
+      get : "/v1/observations/point/{entity_variable=**}"
+    };
+  }
+
+  rpc BulkObservationsPoint(datacommons.v1.BulkObservationsPointRequest)
+      returns (datacommons.v1.BulkObservationsPointResponse) {
+    option (google.api.http) = {
+      get : "/v1/bulk/observations/point"
+      additional_bindings : {post : "/v1/bulk/observations/point" body : "*"}
+    };
+  }
+
+  rpc ObservationsSeries(datacommons.v1.ObservationsSeriesRequest)
+      returns (datacommons.v1.ObservationsSeriesResponse) {
+    option (google.api.http) = {
+      get : "/v1/observations/series/{entity_variable=**}"
+    };
+  }
+
+  rpc BulkObservationsSeries(datacommons.v1.BulkObservationsSeriesRequest)
+      returns (datacommons.v1.BulkObservationsSeriesResponse) {
+    option (google.api.http) = {
+      get : "/v1/bulk/observations/series"
+      additional_bindings : {post : "/v1/bulk/observations/series" body : "*"}
+    };
+  }
+
+  rpc BulkObservationsSeriesLinked(
+      datacommons.v1.BulkObservationsSeriesLinkedRequest)
+      returns (datacommons.v1.BulkObservationsSeriesResponse) {
+    option (google.api.http) = {
+      get : "/v1/bulk/observations/series/linked"
+      additional_bindings : {
+        post : "/v1/bulk/observations/series/linked"
+        body : "*"
+      }
+    };
+  }
+
+  rpc BulkObservationDatesLinked(
+      datacommons.v1.BulkObservationDatesLinkedRequest)
+      returns (datacommons.v1.BulkObservationDatesLinkedResponse) {
+    option (google.api.http) = {
+      get : "/v1/bulk/observation-dates/linked"
+      additional_bindings : {
+        post : "/v1/bulk/observation-dates/linked"
+        body : "*"
+      }
+    };
+  }
+
+  rpc PlacePage(datacommons.v1.PlacePageRequest)
+      returns (datacommons.v1.PlacePageResponse) {
+    option (google.api.http) = {
+      get : "/v1/internal/page/place/{node=**}"
+      additional_bindings : {post : "/v1/internal/page/place" body : "*"}
+    };
+  }
+
+  rpc VariableAncestors(datacommons.v1.VariableAncestorsRequest)
+      returns (datacommons.v1.VariableAncestorsResponse) {
+    option (google.api.http) = {
+      get : "/v1/variable/ancestors/{node=**}"
+      additional_bindings : {post : "/v1/variable/ancestors" body : "*"}
+    };
+  }
+
+  // Search stat var and stat var groups.
+  rpc SearchStatVar(SearchStatVarRequest) returns (SearchStatVarResponse) {
+    option (google.api.http) = {
+      get : "/v1/variable/search"
+      additional_bindings : {post : "/v1/variable/search" body : "*"}
+    };
+  }
+
+  // ==================  RECON   RECON   RECON   RECON  ================
+
+  // Resolve a list of entities, given their descriptions.
+  rpc ResolveEntities(ResolveEntitiesRequest)
+      returns (ResolveEntitiesResponse) {
+    option (google.api.http) = {
+      post : "/v1/recon/entity/resolve"
+      body : "*"
+    };
+  }
+
+  // Resolve a list of places, given their latitude and longitude coordinates.
+  rpc ResolveCoordinates(ResolveCoordinatesRequest)
+      returns (ResolveCoordinatesResponse) {
+    option (google.api.http) = {
+      post : "/v1/recon/resolve/coordinate"
+      body : "*"
+    };
+  }
+
+  // Resolve a list of IDs, given the input prop and output prop.
+  rpc ResolveIds(ResolveIdsRequest) returns (ResolveIdsResponse) {
+    option (google.api.http) = {
+      post : "/v1/recon/resolve/id"
+      body : "*"
+    };
+  }
+
+  // Find entities from a description, with an optional filter on type.
+  rpc FindEntities(FindEntitiesRequest) returns (FindEntitiesResponse) {
+    option (google.api.http) = {
+      get : "/v1/find/entities"
+      additional_bindings : {post : "/v1/find/entities" body : "*"}
+    };
+  }
+
+  // Find entities from descriptions, with optional filters on types.
+  rpc BulkFindEntities(BulkFindEntitiesRequest)
+      returns (BulkFindEntitiesResponse) {
+    option (google.api.http) = {
+      post : "/v1/bulk/find/entities"
+      body : "*"
+    };
+  }
+
+  // Recognize places from a NL query.
+  rpc RecognizePlaces(RecognizePlacesRequest)
+      returns (RecognizePlacesResponse) {
+    option (google.api.http) = {
+      get : "/v1/recognize/places"
+      additional_bindings : {post : "/v1/recognize/places" body : "*"}
+    };
+  }
+
+  // Recognize non-place entities from a NL query.
+  rpc RecognizeEntities(RecognizeEntitiesRequest)
+      returns (RecognizeEntitiesResponse) {
+    option (google.api.http) = {
+      get : "/v1/recognize/entities"
+      additional_bindings : {post : "/v1/recognize/entities" body : "*"}
+    };
+  }
+
+  // ==================  CUSTOM CUSTOM CUSTOM CUSTOM  ================
+
+  // Get data from the imports table, used to populate import history table
+  // of the admin page for custom DCs
+  rpc GetImportTableData(GetImportTableDataRequest)
+      returns (GetImportTableDataResponse) {
+    option (google.api.http) = {
+      get: "/custom/import-table"
+      additional_bindings : {post : "/custom/import-table" body : "*"}
+    };
+  }
+}

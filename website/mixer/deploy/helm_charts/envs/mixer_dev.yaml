@@ -1,0 +1,60 @@
+# Helm config
+
+project: datcom-mixer-dev-316822
+cluster_prefix: mixer
+
+mixer:
+  hostProject: datcom-mixer-dev-316822
+  serviceName: dev.api.datacommons.org
+  cluster_prefix: mixer
+  redis:
+    enabled: true
+    configFile: |
+      instances:
+        - region: "us-central1"
+          host: "10.152.182.67"
+          port: "6379"
+  enableOtlp: true
+
+ingress:
+  enabled: true
+  name: mixer-ingress-dev
+  annotations:
+    {
+      kubernetes.io/ingress.global-static-ip-name: mixer-ip,
+      ingress.gcp.kubernetes.io/pre-shared-cert: mixer-certificate,
+    }
+
+# TODO(/v2/resolve cleanup): Remove this once /v2/resolve always requires an api key.
+esp:
+  v2_resolve_allow_unregistered: false
+
+# GCP level config
+ip: 35.244.157.41
+region: us-central1
+api_title: DataCommons API (Dev)
+nodes: 2
+
+serviceGroups:
+  svg:
+    replicas: 2
+    resources:
+      memoryRequest: "4G"
+      memoryLimit: "4G"
+  recon:
+    replicas: 4
+  observation:
+    replicas: 4
+  node:
+    replicas: 4
+    resources:
+      memoryRequest: "4G"
+      memoryLimit: "4G"
+  default:
+    replicas: 2
+
+embeddingsSidecar:
+  env:
+    vertex_ai_models:
+      uae-large-v1-model:
+        prediction_endpoint_id: "1400502935879680000"

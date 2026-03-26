@@ -1,0 +1,26 @@
+{
+  "data": {
+    "Count_Person": {
+      "properties": [
+        "description",
+        "measuredProperty",
+        "memberOf",
+        "name",
+        "populationType",
+        "provenance",
+        "statType",
+        "typeOf"
+      ]
+    },
+    "Person": {
+      "properties": [
+        "equivalentClass",
+        "name",
+        "provenance",
+        "source",
+        "subClassOf",
+        "typeOf"
+      ]
+    }
+  }
+}

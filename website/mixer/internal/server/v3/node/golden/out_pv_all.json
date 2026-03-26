@@ -1,0 +1,187 @@
+{
+  "data": {
+    "Count_Person_Female": {
+      "arcs": {
+        "constraintProperties": {
+          "nodes": [
+            {
+              "name": "gender",
+              "types": [
+                "Property"
+              ],
+              "dcid": "gender",
+              "provenance_id": "dc/base/HumanReadableStatVars"
+            }
+          ]
+        },
+        "description": {
+          "nodes": [
+            {
+              "provenance_id": "dc/base/HumanReadableStatVars",
+              "value": "The total number of females in a population."
+            }
+          ]
+        },
+        "gender": {
+          "nodes": [
+            {
+              "name": "Female",
+              "types": [
+                "GenderType"
+              ],
+              "dcid": "Female",
+              "provenance_id": "dc/base/HumanReadableStatVars"
+            }
+          ]
+        },
+        "measuredProperty": {
+          "nodes": [
+            {
+              "name": "count",
+              "types": [
+                "Property"
+              ],
+              "dcid": "count",
+              "provenance_id": "dc/base/HumanReadableStatVars"
+            }
+          ]
+        },
+        "memberOf": {
+          "nodes": [
+            {
+              "name": "Person With Gender = Female",
+              "types": [
+                "StatVarGroup"
+              ],
+              "dcid": "dc/g/Person_Gender-Female",
+              "provenance_id": "dc/base/HumanReadableStatVars"
+            }
+          ]
+        },
+        "name": {
+          "nodes": [
+            {
+              "provenance_id": "dc/base/HumanReadableStatVars",
+              "value": "Female population"
+            }
+          ]
+        },
+        "populationType": {
+          "nodes": [
+            {
+              "name": "Person",
+              "types": [
+                "Class"
+              ],
+              "dcid": "Person",
+              "provenance_id": "dc/base/HumanReadableStatVars"
+            }
+          ]
+        },
+        "provenance": {
+          "nodes": [
+            {
+              "name": "HumanReadableStatVars",
+              "types": [
+                "Provenance"
+              ],
+              "dcid": "dc/base/HumanReadableStatVars",
+              "provenance_id": "dc/base/HumanReadableStatVars"
+            }
+          ]
+        },
+        "statType": {
+          "nodes": [
+            {
+              "name": "measuredValue",
+              "types": [
+                "Property"
+              ],
+              "dcid": "measuredValue",
+              "provenance_id": "dc/base/HumanReadableStatVars"
+            }
+          ]
+        },
+        "typeOf": {
+          "nodes": [
+            {
+              "name": "StatisticalVariable",
+              "types": [
+                "Class"
+              ],
+              "dcid": "StatisticalVariable",
+              "provenance_id": "dc/base/HumanReadableStatVars"
+            }
+          ]
+        }
+      }
+    },
+    "foo": {},
+    "test_var_1": {
+      "arcs": {
+        "description": {
+          "nodes": [
+            {
+              "types": [
+                "Thing"
+              ],
+              "value": "this is the count of sql query for the entire database"
+            }
+          ]
+        },
+        "measuredProperty": {
+          "nodes": [
+            {
+              "name": "total number of sql query used",
+              "types": [
+                "StatisticalVariable"
+              ],
+              "dcid": "test_var_1"
+            }
+          ]
+        },
+        "memberOf": {
+          "nodes": [
+            {
+              "name": "SQLite stat var group",
+              "types": [
+                "StatVarGroup"
+              ],
+              "dcid": "dc/g/SQLite"
+            }
+          ]
+        },
+        "name": {
+          "nodes": [
+            {
+              "types": [
+                "Thing"
+              ],
+              "value": "total number of sql query used"
+            }
+          ]
+        },
+        "statType": {
+          "nodes": [
+            {
+              "types": [
+                "Thing"
+              ],
+              "dcid": "measuredValue"
+            }
+          ]
+        },
+        "typeOf": {
+          "nodes": [
+            {
+              "types": [
+                "Thing"
+              ],
+              "dcid": "StatisticalVariable"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

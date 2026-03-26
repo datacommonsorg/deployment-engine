@@ -1,0 +1,20 @@
+{
+  "data": {
+    "dc/g/Person_MedicalCondition-Asthma": {
+      "arcs": {
+        "specializationOf": {
+          "nodes": [
+            {
+              "name": "Person by Medical Condition",
+              "types": [
+                "StatVarGroup"
+              ],
+              "dcid": "dc/g/Person_MedicalCondition",
+              "provenanceId": "dc/base/GeneratedGraphs"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

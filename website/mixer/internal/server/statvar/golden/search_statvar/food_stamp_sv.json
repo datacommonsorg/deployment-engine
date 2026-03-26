@@ -1,0 +1,437 @@
+{
+  "statVars": [
+    {
+      "name": "Households Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months"
+    },
+    {
+      "name": "Households Receiving Food Stamps in the Past Year",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months"
+    },
+    {
+      "name": "Population: With Food Stamps in The Past 12 Months",
+      "dcid": "Count_Person_WithFoodStampsInThePast12Months"
+    },
+    {
+      "name": "Median Income for Households With Food Stamps in the Past Year",
+      "dcid": "Median_Income_Household_WithFoodStampsInThePast12Months"
+    },
+    {
+      "name": "Median Income for Households Without Food Stamps in the Past Year",
+      "dcid": "Median_Income_Household_WithoutFoodStampsInThePast12Months"
+    },
+    {
+      "name": "Above Poverty Level Households Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_AbovePovertyLevelInThePast12Months"
+    },
+    {
+      "name": "African American Households Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_BlackOrAfricanAmericanAlone"
+    },
+    {
+      "name": "American Indian or Alaska Native Monoracial Households With Food Stamps in the Past Year",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_AmericanIndianOrAlaskaNativeAlone"
+    },
+    {
+      "name": "Asian Monoracial Households With Food Stamps in the Past Year",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_AsianAlone"
+    },
+    {
+      "name": "Black or African American Monoracial Households With Food Stamps in the Past Year",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_BlackOrAfricanAmericanAlone"
+    },
+    {
+      "name": "Count of Household: With Food Stamps in The Past 12 Months, One Race",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_OneRace"
+    },
+    {
+      "name": "Count of Household: With Food Stamps in The Past 12 Months, With People Over 60",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_WithPeopleOver60"
+    },
+    {
+      "name": "Count of Household: With Food Stamps in The Past 12 Months, Without People Over 60",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_WithoutPeopleOver60"
+    },
+    {
+      "name": "Count of Household: Without Food Stamps in The Past 12 Months, One Race",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_OneRace"
+    },
+    {
+      "name": "Count of Household: Without Food Stamps in The Past 12 Months, With People Over 60",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_WithPeopleOver60"
+    },
+    {
+      "name": "Count of Household: Without Food Stamps in The Past 12 Months, Without People Over 60",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_WithoutPeopleOver60"
+    },
+    {
+      "name": "Disabled Households Receiving Food Stamps Over the Last Year",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_WithDisability"
+    },
+    {
+      "name": "Disabled Households With Children Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_WithDisability"
+    },
+    {
+      "name": "Family Households Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_FamilyHousehold"
+    },
+    {
+      "name": "Family Households Receiving Food Stamps in the Past Year",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_FamilyHousehold"
+    },
+    {
+      "name": "Hispanic Households Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_HispanicOrLatino"
+    },
+    {
+      "name": "Hispanic or Latino Households Receiving Food Stamps in the Past Year",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_HispanicOrLatino"
+    },
+    {
+      "name": "Households Not Receiving Food Stamps in Last Year, American Indian or Alaska Native",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_AmericanIndianOrAlaskaNativeAlone"
+    },
+    {
+      "name": "Households Not Receiving Food Stamps in Last Year, Asian Alone",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_AsianAlone"
+    },
+    {
+      "name": "Households Not Receiving Food Stamps in Last Year, Income Below Poverty Level",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_BelowPovertyLevelInThePast12Months"
+    },
+    {
+      "name": "Households Not Receiving Food Stamps in Last Year, No Disability",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_NoDisability"
+    },
+    {
+      "name": "Households Receiving Food Stamps Over the Last Year Who Identify as Native Hawaiian or Other Pacific Islander Alone",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_NativeHawaiianOrOtherPacificIslanderAlone"
+    },
+    {
+      "name": "Households Receiving Food Stamps Over the Last Year Who Identify as Some Other Race Alone",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_SomeOtherRaceAlone"
+    },
+    {
+      "name": "Households Receiving Food Stamps Over the Last Year Who Identify as Two or More Races",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_TwoOrMoreRaces"
+    },
+    {
+      "name": "Households Receiving Food Stamps Over the Last Year Who Identify as White Alone",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_WhiteAlone"
+    },
+    {
+      "name": "Households Receiving Food Stamps Over the Last Year Who Identify as White Alone Not Hispanic or Latino",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_WhiteAloneNotHispanicOrLatino"
+    },
+    {
+      "name": "Households With Children Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_WithChildrenUnder18"
+    },
+    {
+      "name": "Households With Children Which Received Food Stamps Over the Last Year",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_WithChildrenUnder18"
+    },
+    {
+      "name": "Households With Food Stamps in the Past Year and Above Poverty Level in the Past Year",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_AbovePovertyLevelInThePast12Months"
+    },
+    {
+      "name": "Households With Food Stamps in the Past Year and Below Poverty Level in the Past Year",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_BelowPovertyLevelInThePast12Months"
+    },
+    {
+      "name": "Households Without Children Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_WithoutChildrenUnder18"
+    },
+    {
+      "name": "Households Without Children Which Received Food Stamps Over the Last Year",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_WithoutChildrenUnder18"
+    },
+    {
+      "name": "Married Couple Family Households Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_MarriedCoupleFamilyHousehold"
+    },
+    {
+      "name": "Married Family Households Receiving Food Stamps in the Past Year",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_MarriedCoupleFamilyHousehold"
+    },
+    {
+      "name": "Multi Racial Households Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_TwoOrMoreRaces"
+    },
+    {
+      "name": "Native Hawaiian or Other Pacific Islander Alone Households Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_NativeHawaiianOrOtherPacificIslanderAlone"
+    },
+    {
+      "name": "Non Disabled Households Receiving Food Stamps Over the Last Year",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_NoDisability"
+    },
+    {
+      "name": "Non Hispanic White Households Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_WhiteAloneNotHispanicOrLatino"
+    },
+    {
+      "name": "Nonfamily Households Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_NonfamilyHousehold"
+    },
+    {
+      "name": "Nonfamily Households Receiving Food Stamps Over the Last Year",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_NonfamilyHousehold"
+    },
+    {
+      "name": "Other Family Households Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_OtherFamilyHousehold"
+    },
+    {
+      "name": "Other Family Households Receiving Food Stamps Over the Last Year",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_OtherFamilyHousehold"
+    },
+    {
+      "name": "Population Who Received Food Stamps in the Past Year and Lived in Adult Correctional Facilities",
+      "dcid": "Count_Person_WithFoodStampsInThePast12Months_ResidesInAdultCorrectionalFacilities"
+    },
+    {
+      "name": "Population Who Received Food Stamps in the Past Year and Lived in College or University Student Housing",
+      "dcid": "Count_Person_WithFoodStampsInThePast12Months_ResidesInCollegeOrUniversityStudentHousing"
+    },
+    {
+      "name": "Population Who Received Food Stamps in the Past Year and Lived in Group Quarters",
+      "dcid": "Count_Person_WithFoodStampsInThePast12Months_ResidesInGroupQuarters"
+    },
+    {
+      "name": "Population Who Received Food Stamps in the Past Year and Lived in Institutionalized Group Quarters",
+      "dcid": "Count_Person_WithFoodStampsInThePast12Months_ResidesInInstitutionalizedGroupQuarters"
+    },
+    {
+      "name": "Population Who Received Food Stamps in the Past Year and Lived in Juvenile Facilities",
+      "dcid": "Count_Person_WithFoodStampsInThePast12Months_ResidesInJuvenileFacilities"
+    },
+    {
+      "name": "Population Who Received Food Stamps in the Past Year and Lived in Noninstitutionalized Group Quarters",
+      "dcid": "Count_Person_WithFoodStampsInThePast12Months_ResidesInNoninstitutionalizedGroupQuarters"
+    },
+    {
+      "name": "Population Who Received Food Stamps in the Past Year and Lived in Nursing Facilities",
+      "dcid": "Count_Person_WithFoodStampsInThePast12Months_ResidesInNursingFacilities"
+    },
+    {
+      "name": "Single Father Family Households Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_SingleFatherFamilyHousehold"
+    },
+    {
+      "name": "Single Father Family Households Receiving Food Stamps Over the Last Year",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_SingleFatherFamilyHousehold"
+    },
+    {
+      "name": "Single Mother Family Households Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_SingleMotherFamilyHousehold"
+    },
+    {
+      "name": "Single Mother Family Households Receiving Food Stamps Over the Last Year",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_SingleMotherFamilyHousehold"
+    },
+    {
+      "name": "Single Race Households Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_SomeOtherRaceAlone"
+    },
+    {
+      "name": "White Households Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_WhiteAlone"
+    },
+    {
+      "name": "Count of Population Received Food Stamp",
+      "dcid": "Count_Person_18OrMoreYears_ReceivedFoodStamp_AsAFractionOf_Count_Person_18OrMoreYears"
+    },
+    {
+      "name": "Lower Confidence Interval Limit, Population Received Food Stamp",
+      "dcid": "LowerConfidenceIntervalLimit_Count_Person_18OrMoreYears_ReceivedFoodStamp_AsAFractionOf_Count_Person_18OrMoreYears"
+    },
+    {
+      "name": "Upper Confidence Interval Limit, Population Received Food Stamp",
+      "dcid": "UpperConfidenceIntervalLimit_Count_Person_18OrMoreYears_ReceivedFoodStamp_AsAFractionOf_Count_Person_18OrMoreYears"
+    },
+    {
+      "name": "Count of Household: With Food Stamps in The Past 12 Months, Family Household, No Workers in The Past 12 Months",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_FamilyHousehold_NoWorkersInThePast12Months"
+    },
+    {
+      "name": "Count of Household: With Food Stamps in The Past 12 Months, Family Household, One Worker in The Past 12 Months",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_FamilyHousehold_OneWorkerInThePast12Months"
+    },
+    {
+      "name": "Count of Household: With Food Stamps in The Past 12 Months, Family Household, Two or More Workers in The Past 12 Months",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_FamilyHousehold_TwoOrMoreWorkersInThePast12Months"
+    },
+    {
+      "name": "Count of Household: With Food Stamps in The Past 12 Months, Foreign Born, Africa",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_ForeignBorn_PlaceOfBirthAfrica"
+    },
+    {
+      "name": "Count of Household: With Food Stamps in The Past 12 Months, Foreign Born, Asia",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_ForeignBorn_PlaceOfBirthAsia"
+    },
+    {
+      "name": "Count of Household: With Food Stamps in The Past 12 Months, Foreign Born, Caribbean",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_ForeignBorn_PlaceOfBirthCaribbean"
+    },
+    {
+      "name": "Count of Household: With Food Stamps in The Past 12 Months, Foreign Born, Central America Except Mexico",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_ForeignBorn_PlaceOfBirthCentralAmericaExceptMexico"
+    },
+    {
+      "name": "Count of Household: With Food Stamps in The Past 12 Months, Foreign Born, Country/MEX",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_ForeignBorn_PlaceOfBirthMexico"
+    },
+    {
+      "name": "Count of Household: With Food Stamps in The Past 12 Months, Foreign Born, Eastern Asia",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_ForeignBorn_PlaceOfBirthEasternAsia"
+    },
+    {
+      "name": "Count of Household: With Food Stamps in The Past 12 Months, Foreign Born, Europe",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_ForeignBorn_PlaceOfBirthEurope"
+    },
+    {
+      "name": "Count of Household: With Food Stamps in The Past 12 Months, Foreign Born, Latin America",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_ForeignBorn_PlaceOfBirthLatinAmerica"
+    },
+    {
+      "name": "Count of Household: With Food Stamps in The Past 12 Months, Foreign Born, Northamerica",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_ForeignBorn_PlaceOfBirthNorthamerica"
+    },
+    {
+      "name": "Count of Household: With Food Stamps in The Past 12 Months, Foreign Born, Northern Western Europe",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_ForeignBorn_PlaceOfBirthNorthernWesternEurope"
+    },
+    {
+      "name": "Count of Household: With Food Stamps in The Past 12 Months, Foreign Born, Oceania",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_ForeignBorn_PlaceOfBirthOceania"
+    },
+    {
+      "name": "Count of Household: With Food Stamps in The Past 12 Months, Foreign Born, South Central Asia",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_ForeignBorn_PlaceOfBirthSouthCentralAsia"
+    },
+    {
+      "name": "Count of Household: With Food Stamps in The Past 12 Months, Foreign Born, South Eastern Asia",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_ForeignBorn_PlaceOfBirthSouthEasternAsia"
+    },
+    {
+      "name": "Count of Household: With Food Stamps in The Past 12 Months, Foreign Born, Southamerica",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_ForeignBorn_PlaceOfBirthSouthamerica"
+    },
+    {
+      "name": "Count of Household: With Food Stamps in The Past 12 Months, Foreign Born, Southern Eastern Europe",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_ForeignBorn_PlaceOfBirthSouthernEasternEurope"
+    },
+    {
+      "name": "Count of Household: With Food Stamps in The Past 12 Months, Foreign Born, Western Asia",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_ForeignBorn_PlaceOfBirthWesternAsia"
+    },
+    {
+      "name": "Count of Household: With Food Stamps in The Past 12 Months, Public School, With ACSEDChild",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_ChildEnrolledInPublicSchool_WithChild"
+    },
+    {
+      "name": "Married Couple Households Without Children Which Received Food Stamps Over the Last Year",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_WithoutChildrenUnder18_MarriedCoupleFamilyHousehold"
+    },
+    {
+      "name": "Married Family Households With Children Which Received Food Stamps Over the Last Year",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_WithChildrenUnder18_MarriedCoupleFamilyHousehold"
+    },
+    {
+      "name": "Married Households With Children Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_WithChildrenUnder18_MarriedCoupleFamilyHousehold"
+    },
+    {
+      "name": "Married Households Without Children Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_WithoutChildrenUnder18_MarriedCoupleFamilyHousehold"
+    },
+    {
+      "name": "Non Working Family Households Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_FamilyHousehold_NoWorkersInThePast12Months"
+    },
+    {
+      "name": "Nonfamily Households With Children Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_WithChildrenUnder18_NonfamilyHousehold"
+    },
+    {
+      "name": "Nonfamily Households With Children Which Received Food Stamps Over the Last Year",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_WithChildrenUnder18_NonfamilyHousehold"
+    },
+    {
+      "name": "Nonfamily Households Without Children Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_WithoutChildrenUnder18_NonfamilyHousehold"
+    },
+    {
+      "name": "Nonfamily Households Without Children Which Received Food Stamps Over the Last Year",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_WithoutChildrenUnder18_NonfamilyHousehold"
+    },
+    {
+      "name": "One Worker Family Households Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_FamilyHousehold_OneWorkerInThePast12Months"
+    },
+    {
+      "name": "Other Family Households With Children Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_WithChildrenUnder18_OtherFamilyHousehold"
+    },
+    {
+      "name": "Other Family Households With Children Which Received Food Stamps Over the Last Year",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_WithChildrenUnder18_OtherFamilyHousehold"
+    },
+    {
+      "name": "Other Family Households Without Children Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_WithoutChildrenUnder18_OtherFamilyHousehold"
+    },
+    {
+      "name": "Other Family Households Without Children Which Received Food Stamps Over the Last Year",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_WithoutChildrenUnder18_OtherFamilyHousehold"
+    },
+    {
+      "name": "Percent of Household: With Food Stamps in The Past 12 Months, Public School, With ACSEDChild",
+      "dcid": "Percent_Household_WithFoodStampsInThePast12Months_ChildEnrolledInPublicSchool_WithChild"
+    },
+    {
+      "name": "Single Father Family Households With Children Which Received Food Stamps Over the Last Year",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_WithChildrenUnder18_SingleFatherFamilyHousehold"
+    },
+    {
+      "name": "Single Father Family Households Without Children Which Received Food Stamps Over the Last Year",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_WithoutChildrenUnder18_SingleFatherFamilyHousehold"
+    },
+    {
+      "name": "Single Father Households With Children Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_WithChildrenUnder18_SingleFatherFamilyHousehold"
+    },
+    {
+      "name": "Single Father Households Without Children Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_WithoutChildrenUnder18_SingleFatherFamilyHousehold"
+    },
+    {
+      "name": "Single Mother Family Households With Children Which Received Food Stamps Over the Last Year",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_WithChildrenUnder18_SingleMotherFamilyHousehold"
+    },
+    {
+      "name": "Single Mother Family Households Without Children Which Received Food Stamps Over the Last Year",
+      "dcid": "Count_Household_WithFoodStampsInThePast12Months_WithoutChildrenUnder18_SingleMotherFamilyHousehold"
+    },
+    {
+      "name": "Single Mother Households With Children Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_WithChildrenUnder18_SingleMotherFamilyHousehold"
+    },
+    {
+      "name": "Single Mother Households Without Children Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_WithoutChildrenUnder18_SingleMotherFamilyHousehold"
+    },
+    {
+      "name": "Two or More Workers Family Households Not Receiving Food Stamps in Last Year",
+      "dcid": "Count_Household_WithoutFoodStampsInThePast12Months_FamilyHousehold_TwoOrMoreWorkersInThePast12Months"
+    }
+  ],
+  "matches": [
+    "food",
+    "stamp",
+    "stamps"
+  ]
+}

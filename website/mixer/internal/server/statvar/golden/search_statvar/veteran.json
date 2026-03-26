@@ -1,0 +1,901 @@
+{
+  "statVars": [
+    {
+      "name": "Count of Establishment: Administration of Veterans' Affairs (NAICS/92314)",
+      "dcid": "dc/nre9cbcqqdrrc"
+    },
+    {
+      "name": "Population of Person: Administration of Veterans' Affairs (NAICS/92314)",
+      "dcid": "dc/qbcv7d5z7cmj3"
+    },
+    {
+      "name": "Wages Total of Person: Administration of Veterans' Affairs (NAICS/92314)",
+      "dcid": "dc/tnj1pcntfpgt9"
+    },
+    {
+      "name": "Count of Establishment: Federal Government Owned, Administration of Veterans' Affairs (NAICS/92314)",
+      "dcid": "dc/t80ypt0pxptr2"
+    },
+    {
+      "name": "Count of Establishment: Local Government Owned, Administration of Veterans' Affairs (NAICS/92314)",
+      "dcid": "dc/nrvs8h9c2w06h"
+    },
+    {
+      "name": "Count of Establishment: State Government Owned, Administration of Veterans' Affairs (NAICS/92314)",
+      "dcid": "dc/n6nwes3xywqj1"
+    },
+    {
+      "name": "Household Reference Person in Universe: Non-Institutional, Not Veteran",
+      "dcid": "Count_Household_NonInstitutionalized_Nonveteran"
+    },
+    {
+      "name": "Household Reference Person in Universe: Non-Institutional, Veteran",
+      "dcid": "Count_Household_NonInstitutionalized_Veteran"
+    },
+    {
+      "name": "Population of Person: Federal Government Owned, Administration of Veterans' Affairs (NAICS/92314)",
+      "dcid": "dc/k0fjmxcvd5fxc"
+    },
+    {
+      "name": "Population of Person: Local Government Owned, Administration of Veterans' Affairs (NAICS/92314)",
+      "dcid": "dc/qvr0t9nl4n3d"
+    },
+    {
+      "name": "Population of Person: State Government Owned, Administration of Veterans' Affairs (NAICS/92314)",
+      "dcid": "dc/3z1ywj0s6tyv5"
+    },
+    {
+      "name": "Population: Civilian, Non Veteran",
+      "dcid": "Count_Person_Nonveteran"
+    },
+    {
+      "name": "Population: Civilian, Veteran",
+      "dcid": "Count_Person_Veteran"
+    },
+    {
+      "name": "Wages Annual of Person: Federal Government Owned, Administration of Veterans' Affairs (NAICS/92314)",
+      "dcid": "dc/k1pnew6j8yb9c"
+    },
+    {
+      "name": "Wages Annual of Person: Local Government Owned, Administration of Veterans' Affairs (NAICS/92314)",
+      "dcid": "dc/j9fceyp5p8txb"
+    },
+    {
+      "name": "Wages Annual of Person: State Government Owned, Administration of Veterans' Affairs (NAICS/92314)",
+      "dcid": "dc/ncwt8d1pymhkd"
+    },
+    {
+      "name": "Wages Total of Person: Federal Government Owned, Administration of Veterans' Affairs (NAICS/92314)",
+      "dcid": "dc/sck2lrgklrtn2"
+    },
+    {
+      "name": "Wages Total of Person: Local Government Owned, Administration of Veterans' Affairs (NAICS/92314)",
+      "dcid": "dc/nx35tdx6clg3c"
+    },
+    {
+      "name": "Wages Total of Person: State Government Owned, Administration of Veterans' Affairs (NAICS/92314)",
+      "dcid": "dc/b9yl1rr3tmgq"
+    },
+    {
+      "name": "Wages Weekly of Person: Federal Government Owned, Administration of Veterans' Affairs (NAICS/92314)",
+      "dcid": "dc/h14ftx614lfd8"
+    },
+    {
+      "name": "Wages Weekly of Person: Local Government Owned, Administration of Veterans' Affairs (NAICS/92314)",
+      "dcid": "dc/h3x52q27qwfr9"
+    },
+    {
+      "name": "Wages Weekly of Person: State Government Owned, Administration of Veterans' Affairs (NAICS/92314)",
+      "dcid": "dc/h104wrsjf6r25"
+    },
+    {
+      "name": "Browses the Web, Not Veteran",
+      "dcid": "Count_Household_WebBrowsingUsage_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Browses the Web, Veteran",
+      "dcid": "Count_Household_WebBrowsingUsage_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Household Subscribes to Cable or Satellite TV Service, Not Veteran",
+      "dcid": "Count_Household_NonInstitutionalized_BroadbandInternetSuchAsCableFiberOpticOrDslOrSatelliteInternetService_Nonveteran"
+    },
+    {
+      "name": "Household Subscribes to Cable or Satellite TV Service, Veteran",
+      "dcid": "Count_Household_NonInstitutionalized_BroadbandInternetSuchAsCableFiberOpticOrDslOrSatelliteInternetService_Veteran"
+    },
+    {
+      "name": "Household Used to Go Online from Home, Not Veteran",
+      "dcid": "Count_Household_InternetUsageAtHome_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Household Used to Go Online from Home, Veteran",
+      "dcid": "Count_Household_InternetUsageAtHome_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Offers Services for Sale via the Internet, Not Veteran",
+      "dcid": "Count_Household_ServiceForSaleUsage_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Offers Services for Sale via the Internet, Veteran",
+      "dcid": "Count_Household_ServiceForSaleUsage_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Participates in Online Video or Voice Calls or Conferencing, Not Veteran",
+      "dcid": "Count_Household_VideoCallsUsageOrAudioCallsUsageOrConferencingUsage_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Participates in Online Video or Voice Calls or Conferencing, Veteran",
+      "dcid": "Count_Household_VideoCallsUsageOrAudioCallsUsageOrConferencingUsage_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Person Aged 15 and above, Not Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_Nonveteran"
+    },
+    {
+      "name": "Person Aged 15 and above, Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_Veteran"
+    },
+    {
+      "name": "Person Aged 3 and above,Not Active-Duty Military, Not Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_Nonveteran"
+    },
+    {
+      "name": "Person Aged 3 and above,Not Active-Duty Military, Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_Veteran"
+    },
+    {
+      "name": "Population: Civilian, Female, Non Veteran",
+      "dcid": "dc/9yqjetxt86ml1"
+    },
+    {
+      "name": "Population: Civilian, Female, Veteran",
+      "dcid": "dc/l6vp0xtccglcb"
+    },
+    {
+      "name": "Population: Civilian, Male, Non Veteran",
+      "dcid": "dc/9l2frty8q44rb"
+    },
+    {
+      "name": "Population: Civilian, Male, Veteran",
+      "dcid": "dc/2qn8p1m6xx3d"
+    },
+    {
+      "name": "Posts or Uploads Blog Posts, Videos, or Other Original Content, Not Veteran",
+      "dcid": "Count_Household_UploadMediaUsage_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Posts or Uploads Blog Posts, Videos, or Other Original Content, Veteran",
+      "dcid": "Count_Household_UploadMediaUsage_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Researches Health Information Online, Not Veteran",
+      "dcid": "Count_Household_HealthDataResearchUsage_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Researches Health Information Online, Veteran",
+      "dcid": "Count_Household_HealthDataResearchUsage_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Searches for a Job Online, Not Veteran",
+      "dcid": "Count_Household_JobSearchUsage_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Searches for a Job Online, Veteran",
+      "dcid": "Count_Household_JobSearchUsage_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Streams or Downloads Music, Radio, Podcasts, etc., Not Veteran",
+      "dcid": "Count_Household_StreamingUsageOrMediaDownloadUsage_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Streams or Downloads Music, Radio, Podcasts, etc., Veteran",
+      "dcid": "Count_Household_StreamingUsageOrMediaDownloadUsage_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Takes Class or Participates in Job Training Online, Not Veteran",
+      "dcid": "Count_Household_OnlineClassUsageOrJobTrainningUsage_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Takes Class or Participates in Job Training Online, Veteran",
+      "dcid": "Count_Household_OnlineClassUsageOrJobTrainningUsage_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Telecommutes Using the Internet, Not Veteran",
+      "dcid": "Count_Household_TelecommutesUsage_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Telecommutes Using the Internet, Veteran",
+      "dcid": "Count_Household_TelecommutesUsage_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Uses Email, Not Veteran",
+      "dcid": "Count_Household_EmailUsage_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Uses Email, Veteran",
+      "dcid": "Count_Household_EmailUsage_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Uses Health Monitoring Service that Connects to the Internet, Not Veteran",
+      "dcid": "Count_Household_HealthMonitoringServicesUsage_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Uses Health Monitoring Service that Connects to the Internet, Veteran",
+      "dcid": "Count_Household_HealthMonitoringServicesUsage_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Uses Online Financial Services Like Banking, Investing, Paying Bills, Not Veteran",
+      "dcid": "Count_Household_FinancialServicesUsage_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Uses Online Financial Services Like Banking, Investing, Paying Bills, Veteran",
+      "dcid": "Count_Household_FinancialServicesUsage_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Uses Online Social Networks, Not Veteran",
+      "dcid": "Count_Household_SocialNetworksUsage_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Uses Online Social Networks, Veteran",
+      "dcid": "Count_Household_SocialNetworksUsage_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Uses Text Messaging or Instant Messaging, Not Veteran",
+      "dcid": "Count_Household_TextMessagingUsage_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Uses Text Messaging or Instant Messaging, Veteran",
+      "dcid": "Count_Household_TextMessagingUsage_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Uses the Internet to Sell Goods, Not Veteran",
+      "dcid": "Count_Household_GoodsSellingUsage_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Uses the Internet to Sell Goods, Veteran",
+      "dcid": "Count_Household_GoodsSellingUsage_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Watches Videos Online, Not Veteran",
+      "dcid": "Count_Household_WatchingVideosUsage_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Watches Videos Online, Veteran",
+      "dcid": "Count_Household_WatchingVideosUsage_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Affordability is Most Important Factor for Home Internet Service, Not Veteran",
+      "dcid": "Count_Household_FactorForHomeInternetAffordability_InternetUsageAtHome_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Affordability is Most Important Factor for Home Internet Service, Veteran",
+      "dcid": "Count_Household_FactorForHomeInternetAffordability_InternetUsageAtHome_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Anyone in Household Uses a Desktop, Laptop, or Tablet at Home, Not Veteran",
+      "dcid": "Count_Household_ComputerUsageAtHome_HasComputer_NonInstitutionalized_Nonveteran"
+    },
+    {
+      "name": "Anyone in Household Uses a Desktop, Laptop, or Tablet at Home, Veteran",
+      "dcid": "Count_Household_ComputerUsageAtHome_HasComputer_NonInstitutionalized_Veteran"
+    },
+    {
+      "name": "Customer Service is Most Important Factor for Home Internet Service, Not Veteran",
+      "dcid": "Count_Household_FactorForHomeInternetCustomerService_InternetUsageAtHome_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Customer Service is Most Important Factor for Home Internet Service, Veteran",
+      "dcid": "Count_Household_FactorForHomeInternetCustomerService_InternetUsageAtHome_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Data Cap is Most Important Factor for Home Internet Service, Not Veteran",
+      "dcid": "Count_Household_FactorForHomeInternetDataLimit_InternetUsageAtHome_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Data Cap is Most Important Factor for Home Internet Service, Veteran",
+      "dcid": "Count_Household_FactorForHomeInternetDataLimit_InternetUsageAtHome_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Home Internet is Part of a Bundle, Not Veteran",
+      "dcid": "Count_Household_InternetBundle_InternetUsageAtHome_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Home Internet is Part of a Bundle, Veteran",
+      "dcid": "Count_Household_InternetBundle_InternetUsageAtHome_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Household Subscribes to Cable or Satellite TV Service, Not Veteran",
+      "dcid": "Count_Household_BroadbandInternetSuchAsCableFiberOpticOrDslOrSatelliteInternetService_InternetUsageAtAnyLocation_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Household Subscribes to Cable or Satellite TV Service, Not Veteran",
+      "dcid": "Count_Household_BroadbandInternetSuchAsCableFiberOpticOrDslOrSatelliteInternetService_InternetUsageAtHome_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Household Subscribes to Cable or Satellite TV Service, Veteran",
+      "dcid": "Count_Household_BroadbandInternetSuchAsCableFiberOpticOrDslOrSatelliteInternetService_InternetUsageAtAnyLocation_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Household Subscribes to Cable or Satellite TV Service, Veteran",
+      "dcid": "Count_Household_BroadbandInternetSuchAsCableFiberOpticOrDslOrSatelliteInternetService_InternetUsageAtHome_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Household Used to Go Online from Home, Not Veteran",
+      "dcid": "Count_Household_NonInstitutionalized_InternetUsageAtHome_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Household Used to Go Online from Home, Veteran",
+      "dcid": "Count_Household_NonInstitutionalized_InternetUsageAtHome_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Main Reason for Household Not Online at Home: Can Use Elsewhere, Not Veteran",
+      "dcid": "Count_Household_InternetUsageAtHome_IsInternetUser_InternetUseElsewhere_Nonveteran"
+    },
+    {
+      "name": "Main Reason for Household Not Online at Home: Can Use Elsewhere, Not Veteran",
+      "dcid": "Count_Household_NonInstitutionalized_IsInternetUser_InternetUseElsewhere_Nonveteran"
+    },
+    {
+      "name": "Main Reason for Household Not Online at Home: Can Use Elsewhere, Veteran",
+      "dcid": "Count_Household_InternetUsageAtHome_IsInternetUser_InternetUseElsewhere_Veteran"
+    },
+    {
+      "name": "Main Reason for Household Not Online at Home: Can Use Elsewhere, Veteran",
+      "dcid": "Count_Household_NonInstitutionalized_IsInternetUser_InternetUseElsewhere_Veteran"
+    },
+    {
+      "name": "Main Reason for Household Not Online at Home: Don't Need It or Not Interested, Not Veteran",
+      "dcid": "Count_Household_InternetUsageAtHome_IsInternetUser_InternetNotNeededOrInternetNotInterested_Nonveteran"
+    },
+    {
+      "name": "Main Reason for Household Not Online at Home: Don't Need It or Not Interested, Not Veteran",
+      "dcid": "Count_Household_NonInstitutionalized_IsInternetUser_InternetNotNeededOrInternetNotInterested_Nonveteran"
+    },
+    {
+      "name": "Main Reason for Household Not Online at Home: Don't Need It or Not Interested, Veteran",
+      "dcid": "Count_Household_InternetUsageAtHome_IsInternetUser_InternetNotNeededOrInternetNotInterested_Veteran"
+    },
+    {
+      "name": "Main Reason for Household Not Online at Home: Don't Need It or Not Interested, Veteran",
+      "dcid": "Count_Household_NonInstitutionalized_IsInternetUser_InternetNotNeededOrInternetNotInterested_Veteran"
+    },
+    {
+      "name": "Main Reason for Household Not Online at Home: No/Inadequate Computer, Not Veteran",
+      "dcid": "Count_Household_InternetUsageAtHome_IsInternetUser_InternetInadequateComputer_Nonveteran"
+    },
+    {
+      "name": "Main Reason for Household Not Online at Home: No/Inadequate Computer, Not Veteran",
+      "dcid": "Count_Household_NonInstitutionalized_IsInternetUser_InternetInadequateComputer_Nonveteran"
+    },
+    {
+      "name": "Main Reason for Household Not Online at Home: No/Inadequate Computer, Veteran",
+      "dcid": "Count_Household_InternetUsageAtHome_IsInternetUser_InternetInadequateComputer_Veteran"
+    },
+    {
+      "name": "Main Reason for Household Not Online at Home: No/Inadequate Computer, Veteran",
+      "dcid": "Count_Household_NonInstitutionalized_IsInternetUser_InternetInadequateComputer_Veteran"
+    },
+    {
+      "name": "Main Reason for Household Not Online at Home: Not Available in Area, Not Veteran",
+      "dcid": "Count_Household_InternetUsageAtHome_IsInternetUser_InternetUnavailableInArea_Nonveteran"
+    },
+    {
+      "name": "Main Reason for Household Not Online at Home: Not Available in Area, Not Veteran",
+      "dcid": "Count_Household_NonInstitutionalized_IsInternetUser_InternetUnavailableInArea_Nonveteran"
+    },
+    {
+      "name": "Main Reason for Household Not Online at Home: Not Available in Area, Veteran",
+      "dcid": "Count_Household_InternetUsageAtHome_IsInternetUser_InternetUnavailableInArea_Veteran"
+    },
+    {
+      "name": "Main Reason for Household Not Online at Home: Not Available in Area, Veteran",
+      "dcid": "Count_Household_NonInstitutionalized_IsInternetUser_InternetUnavailableInArea_Veteran"
+    },
+    {
+      "name": "Main Reason for Household Not Online at Home: Privacy or Security Concerns, Not Veteran",
+      "dcid": "Count_Household_InternetUsageAtHome_IsInternetUser_InternetPrivacyConcernsOrInternetSecurityConcerns_Nonveteran"
+    },
+    {
+      "name": "Main Reason for Household Not Online at Home: Privacy or Security Concerns, Not Veteran",
+      "dcid": "Count_Household_NonInstitutionalized_IsInternetUser_InternetPrivacyConcernsOrInternetSecurityConcerns_Nonveteran"
+    },
+    {
+      "name": "Main Reason for Household Not Online at Home: Privacy or Security Concerns, Veteran",
+      "dcid": "Count_Household_InternetUsageAtHome_IsInternetUser_InternetPrivacyConcernsOrInternetSecurityConcerns_Veteran"
+    },
+    {
+      "name": "Main Reason for Household Not Online at Home: Privacy or Security Concerns, Veteran",
+      "dcid": "Count_Household_NonInstitutionalized_IsInternetUser_InternetPrivacyConcernsOrInternetSecurityConcerns_Veteran"
+    },
+    {
+      "name": "Main Reason for Household Not Online at Home: Too Expensive, Not Veteran",
+      "dcid": "Count_Household_InternetUsageAtHome_IsInternetUser_InternetExpensive_Nonveteran"
+    },
+    {
+      "name": "Main Reason for Household Not Online at Home: Too Expensive, Not Veteran",
+      "dcid": "Count_Household_NonInstitutionalized_IsInternetUser_InternetExpensive_Nonveteran"
+    },
+    {
+      "name": "Main Reason for Household Not Online at Home: Too Expensive, Veteran",
+      "dcid": "Count_Household_InternetUsageAtHome_IsInternetUser_InternetExpensive_Veteran"
+    },
+    {
+      "name": "Main Reason for Household Not Online at Home: Too Expensive, Veteran",
+      "dcid": "Count_Household_NonInstitutionalized_IsInternetUser_InternetExpensive_Veteran"
+    },
+    {
+      "name": "Mobile Data Plan Used from Any Location, Not Veteran",
+      "dcid": "Count_Household_CellularDataPlan_InternetUsageAtAnyLocation_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Mobile Data Plan Used from Any Location, Not Veteran",
+      "dcid": "Count_Household_CellularDataPlan_InternetUsageAtHome_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Mobile Data Plan Used from Any Location, Not Veteran",
+      "dcid": "Count_Household_NonInstitutionalized_CellularDataPlan_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Mobile Data Plan Used from Any Location, Veteran",
+      "dcid": "Count_Household_CellularDataPlan_InternetUsageAtAnyLocation_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Mobile Data Plan Used from Any Location, Veteran",
+      "dcid": "Count_Household_CellularDataPlan_InternetUsageAtHome_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Mobile Data Plan Used from Any Location, Veteran",
+      "dcid": "Count_Household_NonInstitutionalized_CellularDataPlan_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Mobile Internet Service Used Outside the Home, Not Veteran",
+      "dcid": "Count_Household_CellularDataPlan_InternetUsageAtOutsideHome_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Mobile Internet Service Used Outside the Home, Veteran",
+      "dcid": "Count_Household_CellularDataPlan_InternetUsageAtOutsideHome_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Mobile Internet Service Used at Home, Not Veteran",
+      "dcid": "Count_Household_BroadbandOfAnyType_InternetUsageAtHome_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Mobile Internet Service Used at Home, Veteran",
+      "dcid": "Count_Household_BroadbandOfAnyType_InternetUsageAtHome_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Mobility is Most Important Factor for Home Internet Service, Not Veteran",
+      "dcid": "Count_Household_FactorForHomeInternetMobility_InternetUsageAtHome_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Mobility is Most Important Factor for Home Internet Service, Veteran",
+      "dcid": "Count_Household_FactorForHomeInternetMobility_InternetUsageAtHome_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Population: 18 - 34 Years, Civilian, Female, Non Veteran",
+      "dcid": "dc/wbqkzh12hvf2d"
+    },
+    {
+      "name": "Population: 18 - 34 Years, Civilian, Female, Veteran",
+      "dcid": "dc/xjyn3f0sd1vw3"
+    },
+    {
+      "name": "Population: 18 - 34 Years, Civilian, Male, Non Veteran",
+      "dcid": "dc/6y0vz343k8xg4"
+    },
+    {
+      "name": "Population: 18 - 34 Years, Civilian, Male, Veteran",
+      "dcid": "dc/lcptt9lhzrnrg"
+    },
+    {
+      "name": "Population: 18 Years or More, Civilian, Adult Correctional Facilities, Veteran",
+      "dcid": "Count_Person_ResidesInAdultCorrectionalFacilities_Veteran"
+    },
+    {
+      "name": "Population: 18 Years or More, Civilian, College or University Student Housing, Veteran",
+      "dcid": "Count_Person_ResidesInCollegeOrUniversityStudentHousing_Veteran"
+    },
+    {
+      "name": "Population: 18 Years or More, Civilian, Group Quarters, Veteran",
+      "dcid": "Count_Person_ResidesInGroupQuarters_Veteran"
+    },
+    {
+      "name": "Population: 18 Years or More, Civilian, Institutionalized Group Quarters, Veteran",
+      "dcid": "Count_Person_ResidesInInstitutionalizedGroupQuarters_Veteran"
+    },
+    {
+      "name": "Population: 18 Years or More, Civilian, Juvenile Facilities, Veteran",
+      "dcid": "Count_Person_ResidesInJuvenileFacilities_Veteran"
+    },
+    {
+      "name": "Population: 18 Years or More, Civilian, Military Quarters or Military Ships, Veteran",
+      "dcid": "Count_Person_ResidesInMilitaryQuartersOrMilitaryShips_Veteran"
+    },
+    {
+      "name": "Population: 18 Years or More, Civilian, Noninstitutionalized Group Quarters, Veteran",
+      "dcid": "Count_Person_ResidesInNoninstitutionalizedGroupQuarters_Veteran"
+    },
+    {
+      "name": "Population: 18 Years or More, Civilian, Nursing Facilities, Veteran",
+      "dcid": "Count_Person_ResidesInNursingFacilities_Veteran"
+    },
+    {
+      "name": "Population: 35 - 54 Years, Civilian, Female, Non Veteran",
+      "dcid": "dc/b4j5nwzfnmy74"
+    },
+    {
+      "name": "Population: 35 - 54 Years, Civilian, Female, Veteran",
+      "dcid": "dc/xq512kjx1rffc"
+    },
+    {
+      "name": "Population: 35 - 54 Years, Civilian, Male, Non Veteran",
+      "dcid": "dc/2t03fxjcljfz1"
+    },
+    {
+      "name": "Population: 35 - 54 Years, Civilian, Male, Veteran",
+      "dcid": "dc/g55znmzhk56mf"
+    },
+    {
+      "name": "Population: 55 - 64 Years, Civilian, Female, Non Veteran",
+      "dcid": "dc/05sysyfvd80d1"
+    },
+    {
+      "name": "Population: 55 - 64 Years, Civilian, Female, Veteran",
+      "dcid": "dc/t7wbgxy8gr3g9"
+    },
+    {
+      "name": "Population: 55 - 64 Years, Civilian, Male, Non Veteran",
+      "dcid": "dc/yq9ybc4506wkg"
+    },
+    {
+      "name": "Population: 55 - 64 Years, Civilian, Male, Veteran",
+      "dcid": "dc/fzbvjmd5gjgs4"
+    },
+    {
+      "name": "Population: 65 - 74 Years, Civilian, Female, Non Veteran",
+      "dcid": "dc/387d93vqd9e29"
+    },
+    {
+      "name": "Population: 65 - 74 Years, Civilian, Female, Veteran",
+      "dcid": "dc/zv40llg0belh4"
+    },
+    {
+      "name": "Population: 65 - 74 Years, Civilian, Male, Non Veteran",
+      "dcid": "dc/trqr1c92yv4tg"
+    },
+    {
+      "name": "Population: 65 - 74 Years, Civilian, Male, Veteran",
+      "dcid": "dc/z2v1n65cz84x9"
+    },
+    {
+      "name": "Population: 75 Years or More, Civilian, Female, Non Veteran",
+      "dcid": "dc/x9sfdmrzy7pvf"
+    },
+    {
+      "name": "Population: 75 Years or More, Civilian, Female, Veteran",
+      "dcid": "dc/0dxr5t9xv7cyf"
+    },
+    {
+      "name": "Population: 75 Years or More, Civilian, Male, Non Veteran",
+      "dcid": "dc/6hyhewzg8jdy8"
+    },
+    {
+      "name": "Population: 75 Years or More, Civilian, Male, Veteran",
+      "dcid": "dc/x90mvznfdcqwd"
+    },
+    {
+      "name": "Publicly-Available Free Internet Service at Home, Not Veteran",
+      "dcid": "Count_Household_FreeInternet_InternetUsageAtHome_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Publicly-Available Free Internet Service at Home, Veteran",
+      "dcid": "Count_Household_FreeInternet_InternetUsageAtHome_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Reliability is Most Important Factor for Home Internet Service, Not Veteran",
+      "dcid": "Count_Household_FactorForHomeInternetReliability_InternetUsageAtHome_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Reliability is Most Important Factor for Home Internet Service, Veteran",
+      "dcid": "Count_Household_FactorForHomeInternetReliability_InternetUsageAtHome_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Satellite Internet Service Used at Home, Not Veteran",
+      "dcid": "Count_Household_NonInstitutionalized_SatelliteInternetService_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Satellite Internet Service Used at Home, Not Veteran",
+      "dcid": "Count_Household_SatelliteInternetService_InternetUsageAtAnyLocation_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Satellite Internet Service Used at Home, Not Veteran",
+      "dcid": "Count_Household_SatelliteInternetService_InternetUsageAtHome_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Satellite Internet Service Used at Home, Veteran",
+      "dcid": "Count_Household_NonInstitutionalized_SatelliteInternetService_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Satellite Internet Service Used at Home, Veteran",
+      "dcid": "Count_Household_SatelliteInternetService_InternetUsageAtAnyLocation_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Satellite Internet Service Used at Home, Veteran",
+      "dcid": "Count_Household_SatelliteInternetService_InternetUsageAtHome_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Service Speed is Most Important Factor for Home Internet Service, Not Veteran",
+      "dcid": "Count_Household_FactorForHomeInternetServiceSpeed_InternetUsageAtHome_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Service Speed is Most Important Factor for Home Internet Service, Veteran",
+      "dcid": "Count_Household_FactorForHomeInternetServiceSpeed_InternetUsageAtHome_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Uses a Desktop Computer, Not Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_DesktopUser_Nonveteran"
+    },
+    {
+      "name": "Uses a Desktop Computer, Not Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_DesktopUser_Nonveteran"
+    },
+    {
+      "name": "Uses a Desktop Computer, Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_DesktopUser_Veteran"
+    },
+    {
+      "name": "Uses a Desktop Computer, Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_DesktopUser_Veteran"
+    },
+    {
+      "name": "Uses a Desktop, Laptop, or Tablet Computer, Not Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_DesktopUserOrLaptopUserOrTabletUser_Nonveteran"
+    },
+    {
+      "name": "Uses a Desktop, Laptop, or Tablet Computer, Not Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_DesktopUserOrLaptopUserOrTabletUser_Nonveteran"
+    },
+    {
+      "name": "Uses a Desktop, Laptop, or Tablet Computer, Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_DesktopUserOrLaptopUserOrTabletUser_Veteran"
+    },
+    {
+      "name": "Uses a Desktop, Laptop, or Tablet Computer, Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_DesktopUserOrLaptopUserOrTabletUser_Veteran"
+    },
+    {
+      "name": "Uses a Laptop Computer, Not Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_LaptopUser_Nonveteran"
+    },
+    {
+      "name": "Uses a Laptop Computer, Not Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_LaptopUser_Nonveteran"
+    },
+    {
+      "name": "Uses a Laptop Computer, Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_LaptopUser_Veteran"
+    },
+    {
+      "name": "Uses a Laptop Computer, Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_LaptopUser_Veteran"
+    },
+    {
+      "name": "Uses a Mobile Phone, Not Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_MobileUser_Nonveteran"
+    },
+    {
+      "name": "Uses a Mobile Phone, Not Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_MobileUser_Nonveteran"
+    },
+    {
+      "name": "Uses a Mobile Phone, Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_MobileUser_Veteran"
+    },
+    {
+      "name": "Uses a Mobile Phone, Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_MobileUser_Veteran"
+    },
+    {
+      "name": "Uses a Smart TV or Connected Device, Not Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_SmartTelevisionUser_Nonveteran"
+    },
+    {
+      "name": "Uses a Smart TV or Connected Device, Not Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_SmartTelevisionUser_Nonveteran"
+    },
+    {
+      "name": "Uses a Smart TV or Connected Device, Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_SmartTelevisionUser_Veteran"
+    },
+    {
+      "name": "Uses a Smart TV or Connected Device, Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_SmartTelevisionUser_Veteran"
+    },
+    {
+      "name": "Uses a Tablet or e-Book Reader, Not Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_TabletUserOrEbookReaderUser_Nonveteran"
+    },
+    {
+      "name": "Uses a Tablet or e-Book Reader, Not Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_TabletUserOrEbookReaderUser_Nonveteran"
+    },
+    {
+      "name": "Uses a Tablet or e-Book Reader, Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_TabletUserOrEbookReaderUser_Veteran"
+    },
+    {
+      "name": "Uses a Tablet or e-Book Reader, Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_TabletUserOrEbookReaderUser_Veteran"
+    },
+    {
+      "name": "Uses a Wearable Device, Not Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_WearableDeviceUser_Nonveteran"
+    },
+    {
+      "name": "Uses a Wearable Device, Not Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_WearableDeviceUser_Nonveteran"
+    },
+    {
+      "name": "Uses a Wearable Device, Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_WearableDeviceUser_Veteran"
+    },
+    {
+      "name": "Uses a Wearable Device, Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_WearableDeviceUser_Veteran"
+    },
+    {
+      "name": "Median Income: 18 Years or More, Civilian, With Income, Non Veteran",
+      "dcid": "dc/mf0lyheydhfc1"
+    },
+    {
+      "name": "Median Income: 18 Years or More, Civilian, With Income, Veteran",
+      "dcid": "dc/ec13z1eh1d5d8"
+    },
+    {
+      "name": "No One in Household Uses Internet at Home, Not Veteran",
+      "dcid": "Count_Household_NonInstitutionalized_InternetUsageAtHome_NotInternetUser_ResidesInHousehold_Nonveteran"
+    },
+    {
+      "name": "No One in Household Uses Internet at Home, Veteran",
+      "dcid": "Count_Household_NonInstitutionalized_InternetUsageAtHome_NotInternetUser_ResidesInHousehold_Veteran"
+    },
+    {
+      "name": "Uses the Internet (Any Location), Not Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_InternetUsageAtAnyLocation_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Uses the Internet (Any Location), Not Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_InternetUsageAtAnyLocation_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Uses the Internet (Any Location), Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_InternetUsageAtAnyLocation_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Uses the Internet (Any Location), Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_InternetUsageAtAnyLocation_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Uses the Internet While Traveling Between Places, Not Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_InternetUsageAtTraveling_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Uses the Internet While Traveling Between Places, Not Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_InternetUsageAtTraveling_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Uses the Internet While Traveling Between Places, Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_InternetUsageAtTraveling_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Uses the Internet While Traveling Between Places, Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_InternetUsageAtTraveling_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Uses the Internet at Home, Not Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_InternetUsageAtHome_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Uses the Internet at Home, Not Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_InternetUsageAtHome_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Uses the Internet at Home, Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_InternetUsageAtHome_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Uses the Internet at Home, Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_InternetUsageAtHome_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Uses the Internet at School, Not Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_InternetUsageAtSchool_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Uses the Internet at School, Not Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_InternetUsageAtSchool_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Uses the Internet at School, Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_InternetUsageAtSchool_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Uses the Internet at School, Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_InternetUsageAtSchool_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Uses the Internet at Work, Not Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_InternetUsageAtWork_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Uses the Internet at Work, Not Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_InternetUsageAtWork_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Uses the Internet at Work, Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_InternetUsageAtWork_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Uses the Internet at Work, Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_InternetUsageAtWork_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Uses the Internet at a Coffee Shop or Other Business, Not Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_InternetUsageAtCafeteria_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Uses the Internet at a Coffee Shop or Other Business, Not Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_InternetUsageAtCafeteria_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Uses the Internet at a Coffee Shop or Other Business, Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_InternetUsageAtCafeteria_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Uses the Internet at a Coffee Shop or Other Business, Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_InternetUsageAtCafeteria_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Uses the Internet at a Public Place Like the Library, Community Center, Park, Not Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_InternetUsageAtPublicPlace_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Uses the Internet at a Public Place Like the Library, Community Center, Park, Not Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_InternetUsageAtPublicPlace_IsInternetUser_Nonveteran"
+    },
+    {
+      "name": "Uses the Internet at a Public Place Like the Library, Community Center, Park, Veteran",
+      "dcid": "Count_Person_15OrMoreYears_Civilian_InternetUsageAtPublicPlace_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Uses the Internet at a Public Place Like the Library, Community Center, Park, Veteran",
+      "dcid": "Count_Person_3OrMoreYears_Civilian_InternetUsageAtPublicPlace_IsInternetUser_Veteran"
+    },
+    {
+      "name": "Median Income: 18 Years or More, Civilian, Female, With Income, Non Veteran",
+      "dcid": "dc/vg392qes18p6c"
+    },
+    {
+      "name": "Median Income: 18 Years or More, Civilian, Female, With Income, Veteran",
+      "dcid": "dc/xg4bepzr1wb93"
+    },
+    {
+      "name": "Median Income: 18 Years or More, Civilian, Male, With Income, Non Veteran",
+      "dcid": "dc/0r5m0xkb9d4g3"
+    },
+    {
+      "name": "Median Income: 18 Years or More, Civilian, Male, With Income, Veteran",
+      "dcid": "dc/21j845ny0gpl6"
+    },
+    {
+      "name": "Department of Veterans Affairs Consumption, Annual",
+      "dcid": "eia/TOTAL.TEVAB.A"
+    }
+  ],
+  "matches": [
+    "veteran",
+    "veterans",
+    "veterans'"
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "header": [
+    "?place",
+    "?value"
+  ],
+  "rows": [
+    {
+      "cells": [
+        {
+          "value": "country/ABW"
+        },
+        {
+          "value": "29820"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "country/AFG"
+        },
+        {
+          "value": "790"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "country/AGO"
+        },
+        {
+          "value": "2830"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "country/ALB"
+        },
+        {
+          "value": "4090"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "country/ARE"
+        },
+        {
+          "value": "95770"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "country/ARG"
+        },
+        {
+          "value": "11190"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "country/ARM"
+        },
+        {
+          "value": "2610"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "country/ATG"
+        },
+        {
+          "value": "18360"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "country/AUS"
+        },
+        {
+          "value": "25780"
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "value": "country/AUT"
+        },
+        {
+          "value": "28960"
+        }
+      ]
+    }
+  ]
+}

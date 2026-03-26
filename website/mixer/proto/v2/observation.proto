@@ -1,0 +1,108 @@
+// Copyright 2023 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+syntax = "proto3";
+package datacommons.v2;
+
+option go_package = "github.com/datacommonsorg/mixer/internal/proto/v2";
+
+import "stat.proto";
+
+// Represent a list of entities passed in as plain list or graph expression.
+message DcidOrExpression {
+  repeated string dcids = 1;
+  // An arrow notation expression
+  // Ex: country/USA<-containedInPlace{typeOf: State}
+  string expression = 2;
+  // Supported operators for the formula expression: +, -, *, /, along with parentheses.
+  // The items of the formula have a form of "StatVar[OptionalFilters]".
+  //
+  // The following filters are supported:
+  // 1. mm: MeasurementMethod
+  // 2. op: ObservationPeriod
+  // 3. ut: Unit
+  // 4. sf: ScalingFactor
+  //
+  // For example:
+  // 1. Person_Count - Person_Count_Female
+  // 2. Person_Count_Female / Person_Count[mm=CensusACS5yrSurvey;op=P5Y]
+  // 3. Person_Count - Person_Count_Female - Person_Count_Male[op=P5Y]
+  // 4. (Person_Count_Male - Person_Count_Female) / Person_Count
+  string formula = 3;
+}
+
+// Holds all observations of a particular variable.
+message VariableObservation {
+  // Keyed by entity DCID
+  map<string, EntityObservation> by_entity = 1;
+}
+
+//
+message EntityObservation {
+  // Facet are orderred by preference.
+  repeated FacetObservation ordered_facets = 1;
+  // The types of place that the entity is defined as if it is a geographic place
+  // This is an experimental field used for usage logging and is not guaranteed to be populated.
+  // The absence of values is not a reliable indicator of whether the associated entity is a place.
+  repeated string place_types = 7;
+}
+
+message FacetObservation {
+  string facet_id = 1;
+  // Observations are sorted by date
+  repeated datacommons.PointStat observations = 2;
+  // Number of observations
+  int32 obs_count = 3;
+  // Earliest observation date
+  string earliest_date = 4;
+  // Latest observation date
+  string latest_date = 5;
+}
+
+message FacetFilter {
+  // When specified, only observations with provenance in these domains are
+  // returned.
+  repeated string domains = 2;
+  // When specified, only observations with any of these facet ids are returned
+  repeated string facet_ids = 3;
+}
+
+// Generic observation request
+message ObservationRequest {
+  // A list of statistical variable DCIDs, or a formula expression.
+  DcidOrExpression variable = 1;
+  // A list of entity DCIDs, or an arrow expression that covers a list of entity
+  // DCIDs.
+  DcidOrExpression entity = 2;
+  // Date of the observation
+  // - Not specified: all observations are returned
+  // - "LATEST": latest obseration of each facet is returned
+  // - "<DATE>": a speficied valid ISO 8601 date. Observation corresponding to
+  //   this date is returned.
+  string date = 3;
+  // Value of the observation
+  string value = 4;
+  // [Optional] filter returned observations by facet
+  FacetFilter filter = 5;
+  // Fields to return, valid values are: "variable", "entity", "date", "value", "facet"
+  repeated string select = 6;
+}
+
+message ObservationResponse {
+  // Keyed by variable DCID
+  map<string, VariableObservation> by_variable = 1;
+  // Keyed by facet ID
+  map<string, datacommons.Facet> facets = 2;
+}

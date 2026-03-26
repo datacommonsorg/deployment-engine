@@ -1,0 +1,1022 @@
+{
+  "alert-no_data_for_place": [
+    {
+      "type": 0,
+      "value": "К сожалению, у нас нет данных о локации "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    }
+  ],
+  "category_in_place": [
+    {
+      "type": 1,
+      "value": "category"
+    },
+    {
+      "type": 0,
+      "value": " ("
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": ")"
+    }
+  ],
+  "chart-title-with-per-capita-and-date": [
+    {
+      "type": 1,
+      "value": "variableName"
+    },
+    {
+      "type": 0,
+      "value": " (на душу населения на "
+    },
+    {
+      "type": 1,
+      "value": "date"
+    },
+    {
+      "type": 0,
+      "value": ")"
+    }
+  ],
+  "chart-title-with-per-capita-no-date": [
+    {
+      "type": 1,
+      "value": "variableName"
+    },
+    {
+      "type": 0,
+      "value": " (на душу населения)"
+    }
+  ],
+  "chart-title-with-two-variables": [
+    {
+      "type": 1,
+      "value": "variable1"
+    },
+    {
+      "type": 0,
+      "value": " – "
+    },
+    {
+      "type": 1,
+      "value": "variable2"
+    }
+  ],
+  "chart-title-with-two-variables-and-location": [
+    {
+      "type": 1,
+      "value": "place"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "placeType"
+    },
+    {
+      "type": 0,
+      "value": ": "
+    },
+    {
+      "type": 1,
+      "value": "variable1"
+    },
+    {
+      "type": 0,
+      "value": " – "
+    },
+    {
+      "type": 1,
+      "value": "variable2"
+    }
+  ],
+  "chart_clause-other_placeType": [
+    {
+      "type": 1,
+      "value": "chartTitle"
+    },
+    {
+      "type": 0,
+      "value": ": другие "
+    },
+    {
+      "type": 1,
+      "value": "placeType"
+    }
+  ],
+  "chart_clause-places_that_contain_place": [
+    {
+      "type": 1,
+      "value": "chartTitle"
+    },
+    {
+      "type": 0,
+      "value": ": места с локацией "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    }
+  ],
+  "chart_clause-places_within_place": [
+    {
+      "type": 1,
+      "value": "chartTitle"
+    },
+    {
+      "type": 0,
+      "value": ": "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    }
+  ],
+  "chart_clause-placetype_near_place": [
+    {
+      "type": 1,
+      "value": "chartTitle"
+    },
+    {
+      "type": 0,
+      "value": ": "
+    },
+    {
+      "type": 1,
+      "value": "placeType"
+    },
+    {
+      "type": 0,
+      "value": " около локации "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    }
+  ],
+  "chart_clause-rankings_in_place": [
+    {
+      "type": 1,
+      "value": "variable"
+    },
+    {
+      "type": 0,
+      "value": ": рейтинг ("
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": ")"
+    }
+  ],
+  "chart_clause-variable_in_place": [
+    {
+      "type": 1,
+      "value": "variable"
+    },
+    {
+      "type": 0,
+      "value": " в локации "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    }
+  ],
+  "chart_metadata-dotted_line_explanation": [
+    {
+      "type": 0,
+      "value": "(прерывистая линия обозначает недостающие данные)"
+    }
+  ],
+  "chart_metadata-explore_more": [
+    {
+      "type": 0,
+      "value": "Ещё ›"
+    }
+  ],
+  "chart_metadata-export": [
+    {
+      "type": 0,
+      "value": "Экспорт"
+    }
+  ],
+  "chart_metadata-feedback": [
+    {
+      "type": 0,
+      "value": "Отправить отзыв"
+    }
+  ],
+  "chart_metadata-provenance": [
+    {
+      "type": 0,
+      "value": "Данные от "
+    },
+    {
+      "type": 1,
+      "value": "sources"
+    }
+  ],
+  "child_places_menu-places_in_place": [
+    {
+      "type": 0,
+      "value": "Места в локации "
+    },
+    {
+      "type": 1,
+      "value": "placeName"
+    }
+  ],
+  "chooseVariable": [
+    {
+      "type": 0,
+      "value": "Выберите переменную, метаданные которой хотите просмотреть"
+    }
+  ],
+  "close": [
+    {
+      "type": 0,
+      "value": "Закрыть"
+    }
+  ],
+  "dateRange": [
+    {
+      "type": 1,
+      "value": "minDate"
+    },
+    {
+      "type": 0,
+      "value": "–"
+    },
+    {
+      "type": 1,
+      "value": "maxDate"
+    }
+  ],
+  "disasterTool": [
+    {
+      "type": 0,
+      "value": "Инструмент \"Стихийное бедствие\""
+    }
+  ],
+  "download": [
+    {
+      "type": 0,
+      "value": "Скачать"
+    }
+  ],
+  "embed_citation": [
+    {
+      "type": 0,
+      "value": "Данные от "
+    },
+    {
+      "type": 1,
+      "value": "sources"
+    },
+    {
+      "type": 0,
+      "value": " через Data Commons"
+    }
+  ],
+  "embed_download_chart_link": [
+    {
+      "type": 0,
+      "value": "Скачать изображение диаграммы"
+    }
+  ],
+  "embed_download_csv_link": [
+    {
+      "type": 0,
+      "value": "Скачать данные в формате CSV"
+    }
+  ],
+  "embed_export_chart_link": [
+    {
+      "type": 0,
+      "value": "Экспортировать диаграмму"
+    }
+  ],
+  "enterQuery": [
+    {
+      "type": 0,
+      "value": "Введите вопрос, который нужно изучить"
+    }
+  ],
+  "exploreLink": [
+    {
+      "type": 0,
+      "value": "Поиск с помощью инструмента \""
+    },
+    {
+      "type": 1,
+      "value": "toolName"
+    },
+    {
+      "type": 0,
+      "value": "\""
+    }
+  ],
+  "explore_data_on": [
+    {
+      "type": 0,
+      "value": "Изучить данные по вопросу… \""
+    },
+    {
+      "type": 1,
+      "value": "sampleQuestion"
+    },
+    {
+      "type": 0,
+      "value": "\""
+    }
+  ],
+  "header-overview": [
+    {
+      "type": 0,
+      "value": "Обзор"
+    }
+  ],
+  "key_demographics": [
+    {
+      "type": 0,
+      "value": "Ключевые демографические данные"
+    }
+  ],
+  "knowledge_graph": [
+    {
+      "type": 0,
+      "value": "Сеть знаний"
+    }
+  ],
+  "link-return_to_overview": [
+    {
+      "type": 0,
+      "value": "Назад к обзору"
+    }
+  ],
+  "loading": [
+    {
+      "type": 0,
+      "value": "Загрузка…"
+    }
+  ],
+  "mapTool": [
+    {
+      "type": 0,
+      "value": "Инструмент \"Карта\""
+    }
+  ],
+  "more_charts": [
+    {
+      "type": 0,
+      "value": "Другие диаграммы"
+    }
+  ],
+  "more_charts_link": [
+    {
+      "type": 0,
+      "value": "Другие диаграммы"
+    }
+  ],
+  "no_charts": [
+    {
+      "type": 0,
+      "value": "Данные в категории \""
+    },
+    {
+      "type": 1,
+      "value": "category"
+    },
+    {
+      "type": 0,
+      "value": "\" ("
+    },
+    {
+      "type": 1,
+      "value": "place"
+    },
+    {
+      "type": 0,
+      "value": ") не найдены."
+    }
+  ],
+  "place_breadcrumb": [
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": ": "
+    },
+    {
+      "type": 1,
+      "value": "placeType"
+    }
+  ],
+  "place_not_found": [
+    {
+      "type": 0,
+      "value": "Местоположение \""
+    },
+    {
+      "type": 1,
+      "value": "placeDcid"
+    },
+    {
+      "type": 0,
+      "value": "\" не найдено."
+    }
+  ],
+  "place_page_ranking_table-ranking_in": [
+    {
+      "type": 0,
+      "value": "Рейтинги"
+    }
+  ],
+  "place_page_ranking_table-ranking_value": [
+    {
+      "type": 1,
+      "value": "rank"
+    },
+    {
+      "type": 0,
+      "value": " из "
+    },
+    {
+      "type": 1,
+      "value": "total"
+    }
+  ],
+  "place_type_in_places": [
+    {
+      "type": 1,
+      "value": "placeType"
+    },
+    {
+      "type": 0,
+      "value": " ("
+    },
+    {
+      "type": 1,
+      "value": "parentPlaces"
+    },
+    {
+      "type": 0,
+      "value": ")"
+    }
+  ],
+  "plural_administrative_area": [
+    {
+      "type": 0,
+      "value": "Административные районы"
+    }
+  ],
+  "plural_administrative_area_level": [
+    {
+      "type": 0,
+      "value": "Места по типу административного района уровня "
+    },
+    {
+      "type": 1,
+      "value": "level"
+    }
+  ],
+  "plural_borough": [
+    {
+      "type": 0,
+      "value": "Районы"
+    }
+  ],
+  "plural_city": [
+    {
+      "type": 0,
+      "value": "Города"
+    }
+  ],
+  "plural_continent": [
+    {
+      "type": 0,
+      "value": "Континенты"
+    }
+  ],
+  "plural_country": [
+    {
+      "type": 0,
+      "value": "Страны"
+    }
+  ],
+  "plural_county": [
+    {
+      "type": 0,
+      "value": "Округа"
+    }
+  ],
+  "plural_eurostat_nuts": [
+    {
+      "type": 0,
+      "value": "Места по типу Евростат NUTS уровня "
+    },
+    {
+      "type": 1,
+      "value": "level"
+    }
+  ],
+  "plural_neighborhood": [
+    {
+      "type": 0,
+      "value": "Микрорайоны"
+    }
+  ],
+  "plural_places": [
+    {
+      "type": 0,
+      "value": "Места"
+    }
+  ],
+  "plural_state": [
+    {
+      "type": 0,
+      "value": "Штаты"
+    }
+  ],
+  "plural_town": [
+    {
+      "type": 0,
+      "value": "Города"
+    }
+  ],
+  "plural_village": [
+    {
+      "type": 0,
+      "value": "Поселки"
+    }
+  ],
+  "plural_zip_codes": [
+    {
+      "type": 0,
+      "value": "Почтовые индексы"
+    }
+  ],
+  "ranking-document_title": [
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": ": "
+    },
+    {
+      "type": 1,
+      "value": "pluralPlaceType"
+    },
+    {
+      "type": 0,
+      "value": " – Рейтинг по переменной "
+    },
+    {
+      "type": 1,
+      "value": "statVar"
+    }
+  ],
+  "ranking-loading": [
+    {
+      "type": 0,
+      "value": "Загрузка…"
+    }
+  ],
+  "ranking-no_data": [
+    {
+      "type": 0,
+      "value": "Нет данных."
+    }
+  ],
+  "ranking-page_title": [
+    {
+      "type": 0,
+      "value": "Рейтинг по параметру "
+    },
+    {
+      "type": 1,
+      "value": "statVar"
+    }
+  ],
+  "ranking-sort_bottom": [
+    {
+      "type": 0,
+      "value": "Последние позиции в рейтинге ("
+    },
+    {
+      "type": 1,
+      "value": "rankSize"
+    },
+    {
+      "type": 0,
+      "value": ")"
+    }
+  ],
+  "ranking-sort_top": [
+    {
+      "type": 0,
+      "value": "Первые позиции в рейтинге ("
+    },
+    {
+      "type": 1,
+      "value": "rankSize"
+    },
+    {
+      "type": 0,
+      "value": ")"
+    }
+  ],
+  "ranking-subtitle_all": [
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": ": все "
+    },
+    {
+      "type": 1,
+      "value": "pluralPlaceType"
+    }
+  ],
+  "ranking-subtitle_all_percapita": [
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": ": все "
+    },
+    {
+      "type": 1,
+      "value": "pluralPlaceType"
+    },
+    {
+      "type": 0,
+      "value": ", на душу населения"
+    }
+  ],
+  "ranking-subtitle_bottom": [
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": ": "
+    },
+    {
+      "type": 1,
+      "value": "pluralPlaceType"
+    },
+    {
+      "type": 0,
+      "value": " – топ-"
+    },
+    {
+      "type": 1,
+      "value": "rankSize"
+    },
+    {
+      "type": 0,
+      "value": " с конца рейтинга"
+    }
+  ],
+  "ranking-subtitle_bottom_percapita": [
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": ": "
+    },
+    {
+      "type": 1,
+      "value": "pluralPlaceType"
+    },
+    {
+      "type": 0,
+      "value": ", топ-"
+    },
+    {
+      "type": 1,
+      "value": "rankSize"
+    },
+    {
+      "type": 0,
+      "value": " с конца рейтинга, на душу населения"
+    }
+  ],
+  "ranking-subtitle_none": [
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": ": "
+    },
+    {
+      "type": 1,
+      "value": "pluralPlaceType"
+    }
+  ],
+  "ranking-subtitle_none_percapita": [
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": ": "
+    },
+    {
+      "type": 1,
+      "value": "pluralPlaceType"
+    },
+    {
+      "type": 0,
+      "value": ", на душу населения"
+    }
+  ],
+  "ranking-subtitle_top": [
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": ": "
+    },
+    {
+      "type": 1,
+      "value": "pluralPlaceType"
+    },
+    {
+      "type": 0,
+      "value": " – топ-"
+    },
+    {
+      "type": 1,
+      "value": "rankSize"
+    }
+  ],
+  "ranking-subtitle_top_percapita": [
+    {
+      "type": 1,
+      "value": "placeName"
+    },
+    {
+      "type": 0,
+      "value": ": "
+    },
+    {
+      "type": 1,
+      "value": "pluralPlaceType"
+    },
+    {
+      "type": 0,
+      "value": ", топ-"
+    },
+    {
+      "type": 1,
+      "value": "rankSize"
+    },
+    {
+      "type": 0,
+      "value": ", на душу населения"
+    }
+  ],
+  "ranking-tile-latest-data-available-footer": [
+    {
+      "type": 0,
+      "value": "Основано на последних данных. Некоторые места могут отсутствовать из-за неполной отчетности за этот год."
+    }
+  ],
+  "ranking-tile-latest-data-footer": [
+    {
+      "type": 0,
+      "value": "В таблицу включены данные за несколько лет. Они позволяют получить полное представление о местах."
+    }
+  ],
+  "ranking_table-header_rank": [
+    {
+      "type": 0,
+      "value": "Место"
+    }
+  ],
+  "ranking_table-header_value": [
+    {
+      "type": 0,
+      "value": "Значение"
+    }
+  ],
+  "relevant_topics": [
+    {
+      "type": 0,
+      "value": "Подходящие темы"
+    }
+  ],
+  "scatterTool": [
+    {
+      "type": 0,
+      "value": "Инструмент Scatter"
+    }
+  ],
+  "search_bar_placeholder-search_again": [
+    {
+      "type": 0,
+      "value": "Поиск другого места"
+    }
+  ],
+  "seePerCapita": [
+    {
+      "type": 0,
+      "value": "На душу населения"
+    }
+  ],
+  "selectVariable": [
+    {
+      "type": 0,
+      "value": "Выберите переменную, данные которой хотите просмотреть. При нажатии на ссылки ниже проводник статистических переменных откроется в новой вкладке."
+    }
+  ],
+  "showMetadata": [
+    {
+      "type": 0,
+      "value": "Показать метаданные"
+    }
+  ],
+  "singular_administrative_area": [
+    {
+      "type": 0,
+      "value": "Административный район"
+    }
+  ],
+  "singular_administrative_area_level": [
+    {
+      "type": 0,
+      "value": "Место по типу административного района уровня "
+    },
+    {
+      "type": 1,
+      "value": "level"
+    }
+  ],
+  "singular_borough": [
+    {
+      "type": 0,
+      "value": "Район"
+    }
+  ],
+  "singular_city": [
+    {
+      "type": 0,
+      "value": "Город"
+    }
+  ],
+  "singular_continent": [
+    {
+      "type": 0,
+      "value": "Континент"
+    }
+  ],
+  "singular_country": [
+    {
+      "type": 0,
+      "value": "Страна"
+    }
+  ],
+  "singular_county": [
+    {
+      "type": 0,
+      "value": "Округ"
+    }
+  ],
+  "singular_eurostat_nuts": [
+    {
+      "type": 0,
+      "value": "Место по типу Евростат NUTS уровня "
+    },
+    {
+      "type": 1,
+      "value": "level"
+    }
+  ],
+  "singular_neighborhood": [
+    {
+      "type": 0,
+      "value": "Микрорайон"
+    }
+  ],
+  "singular_place": [
+    {
+      "type": 0,
+      "value": "Место"
+    }
+  ],
+  "singular_state": [
+    {
+      "type": 0,
+      "value": "Штат"
+    }
+  ],
+  "singular_town": [
+    {
+      "type": 0,
+      "value": "Город"
+    }
+  ],
+  "singular_village": [
+    {
+      "type": 0,
+      "value": "Поселок"
+    }
+  ],
+  "singular_zip_code": [
+    {
+      "type": 0,
+      "value": "Почтовый индекс"
+    }
+  ],
+  "snap-to-latest-data-checkbox-label": [
+    {
+      "type": 0,
+      "value": "Перейти к информации с максимальным охватом"
+    }
+  ],
+  "snap-to-latest-data-help-tooltip": [
+    {
+      "type": 0,
+      "value": "При выборе этого параметра показываются самые актуальные данные с наибольшим покрытием. Некоторые места могут отсутствовать из-за неполной отчетности за этот год."
+    }
+  ],
+  "snap-to-latest-data-overlap-help-tooltip": [
+    {
+      "type": 0,
+      "value": "Данные с максимальным покрытием также являются новейшими для этой таблицы."
+    }
+  ],
+  "source": [
+    {
+      "type": 0,
+      "value": "Источник"
+    }
+  ],
+  "sources": [
+    {
+      "type": 0,
+      "value": "Источники"
+    }
+  ],
+  "summary_overview": [
+    {
+      "type": 0,
+      "value": "Общие сведения"
+    }
+  ],
+  "summary_overview_tooltip": [
+    {
+      "type": 0,
+      "value": "Мы используем ИИ, чтобы создать сводку на основе полученных данных (ссылка есть на каждой диаграмме). Мы стараемся давать точные сведения, но тем не менее проверяйте сводку и обращайтесь к исходным данным."
+    }
+  ],
+  "the_world": [
+    {
+      "type": 0,
+      "value": "в мире"
+    }
+  ],
+  "timelineTool": [
+    {
+      "type": 0,
+      "value": "Инструмент \"Хронология\""
+    }
+  ],
+  "viaGoogle": [
+    {
+      "type": 0,
+      "value": "через Google"
+    }
+  ]
+}

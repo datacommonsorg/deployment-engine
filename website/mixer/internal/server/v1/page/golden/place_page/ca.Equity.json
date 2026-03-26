@@ -1,0 +1,2566 @@
+{
+  "statVarSeries": {
+    "geoId/06065": {
+      "data": {
+        "Count_Person": {
+          "val": {
+            "1970": 456916,
+            "1971": 477600,
+            "1972": 493200,
+            "1973": 497900,
+            "1974": 515900,
+            "1975": 528600,
+            "1976": 548000,
+            "1977": 578000,
+            "1978": 611900,
+            "1979": 640000,
+            "1980": 663199,
+            "1981": 693249,
+            "1982": 719842,
+            "1983": 746898,
+            "1984": 783202,
+            "1985": 825685,
+            "1986": 871209,
+            "1987": 930059,
+            "1988": 995977,
+            "1989": 1084568,
+            "1990": 1170413,
+            "1991": 1193639,
+            "1992": 1248277,
+            "1993": 1290328,
+            "1994": 1321304,
+            "1995": 1354966,
+            "1996": 1383646,
+            "1997": 1406769,
+            "1998": 1439674,
+            "1999": 1480708,
+            "2000": 1558985,
+            "2001": 1616634,
+            "2002": 1687147,
+            "2003": 1771656,
+            "2004": 1856542,
+            "2005": 1931785,
+            "2006": 2012370,
+            "2007": 2075183,
+            "2008": 2109712,
+            "2009": 2146725,
+            "2010": 2201562,
+            "2011": 2233840,
+            "2012": 2260763,
+            "2013": 2286087,
+            "2014": 2315238,
+            "2015": 2344648,
+            "2016": 2378282,
+            "2017": 2413058,
+            "2018": 2443221,
+            "2019": 2465569,
+            "2020": 2489188,
+            "2021": 2458395,
+            "2022": 2479628,
+            "2023": 2503549,
+            "2024": 2529933
+          },
+          "metadata": {
+            "importName": "USCensusPEP_Annual_Population",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+            "measurementMethod": "CensusPEPSurvey",
+            "observationPeriod": "P1Y"
+          }
+        },
+        "Count_Person_25To34Years_EducationalAttainmentAssociatesDegree_Female": {
+          "val": {
+            "2011": 11190,
+            "2012": 12111,
+            "2013": 13074,
+            "2014": 13541,
+            "2015": 13998,
+            "2016": 14098,
+            "2017": 14201,
+            "2018": 14994,
+            "2019": 15568,
+            "2020": 15559,
+            "2021": 15724,
+            "2022": 16984,
+            "2023": 16571
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_25To34Years_EducationalAttainmentAssociatesDegree_Male": {
+          "val": {
+            "2011": 8114,
+            "2012": 8060,
+            "2013": 9209,
+            "2014": 9906,
+            "2015": 10415,
+            "2016": 11809,
+            "2017": 13292,
+            "2018": 13746,
+            "2019": 13136,
+            "2020": 14015,
+            "2021": 13814,
+            "2022": 13897,
+            "2023": 13972
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_25To34Years_EducationalAttainmentBachelorsDegree_Female": {
+          "val": {
+            "2011": 21410,
+            "2012": 21763,
+            "2013": 22066,
+            "2014": 22493,
+            "2015": 22938,
+            "2016": 24296,
+            "2017": 25497,
+            "2018": 26792,
+            "2019": 27969,
+            "2020": 31258,
+            "2021": 31216,
+            "2022": 31181,
+            "2023": 32738
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_25To34Years_EducationalAttainmentBachelorsDegree_Male": {
+          "val": {
+            "2011": 15636,
+            "2012": 15967,
+            "2013": 16302,
+            "2014": 17293,
+            "2015": 17951,
+            "2016": 19589,
+            "2017": 20357,
+            "2018": 20731,
+            "2019": 22015,
+            "2020": 24071,
+            "2021": 24350,
+            "2022": 24611,
+            "2023": 25826
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_25To34Years_EducationalAttainmentGraduateOrProfessionalDegree_Female": {
+          "val": {
+            "2011": 8449,
+            "2012": 8580,
+            "2013": 9100,
+            "2014": 9125,
+            "2015": 9369,
+            "2016": 9553,
+            "2017": 9976,
+            "2018": 10378,
+            "2019": 10760,
+            "2020": 11820,
+            "2021": 12012,
+            "2022": 12905,
+            "2023": 13279
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_25To34Years_EducationalAttainmentGraduateOrProfessionalDegree_Male": {
+          "val": {
+            "2011": 4844,
+            "2012": 5039,
+            "2013": 5059,
+            "2014": 5235,
+            "2015": 5489,
+            "2016": 5857,
+            "2017": 6333,
+            "2018": 6859,
+            "2019": 7242,
+            "2020": 7031,
+            "2021": 6819,
+            "2022": 6930,
+            "2023": 7475
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_25To34Years_Female": {
+          "val": {
+            "2011": 138591,
+            "2012": 141290,
+            "2013": 144209,
+            "2014": 148119,
+            "2015": 151466,
+            "2016": 154323,
+            "2017": 158052,
+            "2018": 160881,
+            "2019": 163393,
+            "2020": 165605,
+            "2021": 162589,
+            "2022": 162642,
+            "2023": 164927
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_25To34Years_Male": {
+          "val": {
+            "2011": 140187,
+            "2012": 143037,
+            "2013": 147341,
+            "2014": 151475,
+            "2015": 155789,
+            "2016": 159512,
+            "2017": 164108,
+            "2018": 168036,
+            "2019": 171532,
+            "2020": 174707,
+            "2021": 170577,
+            "2022": 172607,
+            "2023": 172743
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_AmericanIndianOrAlaskaNativeAlone": {
+          "val": {
+            "2011": 21493,
+            "2012": 22688,
+            "2013": 22075,
+            "2014": 22045,
+            "2015": 21535,
+            "2016": 20205,
+            "2017": 19865,
+            "2018": 19281,
+            "2019": 19765,
+            "2020": 18852,
+            "2021": 19858,
+            "2022": 23446,
+            "2023": 29471
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_AsianAlone": {
+          "val": {
+            "2011": 127522,
+            "2012": 130982,
+            "2013": 134097,
+            "2014": 138538,
+            "2015": 142136,
+            "2016": 143067,
+            "2017": 148213,
+            "2018": 152130,
+            "2019": 157261,
+            "2020": 164464,
+            "2021": 163759,
+            "2022": 166726,
+            "2023": 172556
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_BelowPovertyLevelInThePast12Months_AmericanIndianOrAlaskaNativeAlone": {
+          "val": {
+            "2011": 4402,
+            "2012": 5080,
+            "2013": 4565,
+            "2014": 5337,
+            "2015": 5430,
+            "2016": 5350,
+            "2017": 4743,
+            "2018": 4712,
+            "2019": 4044,
+            "2020": 3852,
+            "2021": 3078,
+            "2022": 3617,
+            "2023": 3905
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_BelowPovertyLevelInThePast12Months_AsianAlone": {
+          "val": {
+            "2011": 12294,
+            "2012": 12829,
+            "2013": 13151,
+            "2014": 12761,
+            "2015": 13227,
+            "2016": 15494,
+            "2017": 17044,
+            "2018": 16754,
+            "2019": 17284,
+            "2020": 17555,
+            "2021": 16751,
+            "2022": 15770,
+            "2023": 16131
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_BelowPovertyLevelInThePast12Months_BlackOrAfricanAmericanAlone": {
+          "val": {
+            "2011": 23197,
+            "2012": 25416,
+            "2013": 28413,
+            "2014": 30263,
+            "2015": 30733,
+            "2016": 29434,
+            "2017": 29845,
+            "2018": 27694,
+            "2019": 26630,
+            "2020": 24902,
+            "2021": 23250,
+            "2022": 21972,
+            "2023": 21884
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_BelowPovertyLevelInThePast12Months_HispanicOrLatino": {
+          "val": {
+            "2011": 186396,
+            "2012": 209903,
+            "2013": 221653,
+            "2014": 234815,
+            "2015": 235972,
+            "2016": 232246,
+            "2017": 220748,
+            "2018": 208972,
+            "2019": 194554,
+            "2020": 174510,
+            "2021": 165652,
+            "2022": 157772,
+            "2023": 150840
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_BelowPovertyLevelInThePast12Months_NativeHawaiianOrOtherPacificIslanderAlone": {
+          "val": {
+            "2011": 1004,
+            "2012": 1986,
+            "2013": 2352,
+            "2014": 2509,
+            "2015": 2283,
+            "2016": 2112,
+            "2017": 1218,
+            "2018": 1020,
+            "2019": 945,
+            "2020": 766,
+            "2021": 1145,
+            "2022": 1356,
+            "2023": 1083
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_BelowPovertyLevelInThePast12Months_WhiteAlone": {
+          "val": {
+            "2011": 175072,
+            "2012": 194785,
+            "2013": 207058,
+            "2014": 215398,
+            "2015": 217719,
+            "2016": 208222,
+            "2017": 194943,
+            "2018": 185365,
+            "2019": 171281,
+            "2020": 147584,
+            "2021": 128062,
+            "2022": 113317,
+            "2023": 100596
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_BlackOrAfricanAmericanAlone": {
+          "val": {
+            "2011": 135859,
+            "2012": 138216,
+            "2013": 138881,
+            "2014": 141350,
+            "2015": 143976,
+            "2016": 145025,
+            "2017": 148960,
+            "2018": 153545,
+            "2019": 156836,
+            "2020": 157908,
+            "2021": 156255,
+            "2022": 157125,
+            "2023": 158667
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_Female": {
+          "val": {
+            "2011": 1081389,
+            "2012": 1101058,
+            "2013": 1118837,
+            "2014": 1138975,
+            "2015": 1154555,
+            "2016": 1167766,
+            "2017": 1183291,
+            "2018": 1197098,
+            "2019": 1210479,
+            "2020": 1222631,
+            "2021": 1201934,
+            "2022": 1209094,
+            "2023": 1221588
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_Female_BelowPovertyLevelInThePast12Months": {
+          "val": {
+            "2011": 163560,
+            "2012": 180113,
+            "2013": 189789,
+            "2014": 200489,
+            "2015": 204280,
+            "2016": 202073,
+            "2017": 196283,
+            "2018": 188469,
+            "2019": 178745,
+            "2020": 165344,
+            "2021": 156263,
+            "2022": 149234,
+            "2023": 146648
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_HispanicOrLatino": {
+          "val": {
+            "2011": 968700,
+            "2012": 998113,
+            "2013": 1025543,
+            "2014": 1055027,
+            "2015": 1079778,
+            "2016": 1102968,
+            "2017": 1130033,
+            "2018": 1154517,
+            "2019": 1179478,
+            "2020": 1204521,
+            "2021": 1211185,
+            "2022": 1233277,
+            "2023": 1239702
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_Male": {
+          "val": {
+            "2011": 1073455,
+            "2012": 1091924,
+            "2013": 1109691,
+            "2014": 1127924,
+            "2015": 1143477,
+            "2016": 1156126,
+            "2017": 1171711,
+            "2018": 1186188,
+            "2019": 1200960,
+            "2020": 1215233,
+            "2021": 1207397,
+            "2022": 1220393,
+            "2023": 1228321
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_Male_BelowPovertyLevelInThePast12Months": {
+          "val": {
+            "2011": 138203,
+            "2012": 155444,
+            "2013": 165722,
+            "2014": 176248,
+            "2015": 175705,
+            "2016": 174616,
+            "2017": 165932,
+            "2018": 157255,
+            "2019": 146534,
+            "2020": 135080,
+            "2021": 126986,
+            "2022": 123198,
+            "2023": 120307
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_NativeHawaiianOrOtherPacificIslanderAlone": {
+          "val": {
+            "2011": 6955,
+            "2012": 6965,
+            "2013": 7086,
+            "2014": 7152,
+            "2015": 6601,
+            "2016": 6915,
+            "2017": 6863,
+            "2018": 6843,
+            "2019": 7485,
+            "2020": 7915,
+            "2021": 7741,
+            "2022": 8044,
+            "2023": 8164
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_WhiteAlone": {
+          "val": {
+            "2011": 1422604,
+            "2012": 1455085,
+            "2013": 1475081,
+            "2014": 1480532,
+            "2015": 1484768,
+            "2016": 1470294,
+            "2017": 1450473,
+            "2018": 1450134,
+            "2019": 1444654,
+            "2020": 1358654,
+            "2021": 1232550,
+            "2022": 1138018,
+            "2023": 1033132
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Median_Income_Household_HouseholderRaceAmericanIndianOrAlaskaNativeAlone": {
+          "val": {
+            "2011": 57776,
+            "2012": 50714,
+            "2013": 50293,
+            "2014": 48408,
+            "2015": 46960,
+            "2016": 44526,
+            "2017": 48690,
+            "2018": 53250,
+            "2019": 57424,
+            "2020": 62935,
+            "2021": 74107,
+            "2022": 86250,
+            "2023": 91988
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey",
+            "unit": "USDollar"
+          }
+        },
+        "Median_Income_Household_HouseholderRaceAsianAlone": {
+          "val": {
+            "2011": 75096,
+            "2012": 73928,
+            "2013": 73231,
+            "2014": 73572,
+            "2015": 71601,
+            "2016": 73005,
+            "2017": 76158,
+            "2018": 81229,
+            "2019": 84703,
+            "2020": 90165,
+            "2021": 95678,
+            "2022": 106946,
+            "2023": 114488
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey",
+            "unit": "USDollar"
+          }
+        },
+        "Median_Income_Household_HouseholderRaceBlackOrAfricanAmericanAlone": {
+          "val": {
+            "2011": 56745,
+            "2012": 54502,
+            "2013": 52743,
+            "2014": 52848,
+            "2015": 52127,
+            "2016": 52555,
+            "2017": 54077,
+            "2018": 60421,
+            "2019": 63167,
+            "2020": 68511,
+            "2021": 73278,
+            "2022": 80223,
+            "2023": 84728
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey",
+            "unit": "USDollar"
+          }
+        },
+        "Median_Income_Household_HouseholderRaceHispanicOrLatino": {
+          "val": {
+            "2011": 49638,
+            "2012": 48462,
+            "2013": 48486,
+            "2014": 48416,
+            "2015": 48510,
+            "2016": 49845,
+            "2017": 51914,
+            "2018": 54606,
+            "2019": 57903,
+            "2020": 61637,
+            "2021": 67532,
+            "2022": 76613,
+            "2023": 82005
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey",
+            "unit": "USDollar"
+          }
+        },
+        "Median_Income_Household_HouseholderRaceNativeHawaiianOrOtherPacificIslanderAlone": {
+          "val": {
+            "2011": 73881,
+            "2012": 44578,
+            "2013": 47103,
+            "2014": 46533,
+            "2015": 48476,
+            "2016": 49833,
+            "2017": 70000,
+            "2018": 72997,
+            "2019": 81128,
+            "2020": 83923,
+            "2021": 81272,
+            "2022": 80283,
+            "2023": 93226
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey",
+            "unit": "USDollar"
+          }
+        },
+        "Median_Income_Household_HouseholderRaceWhiteAlone": {
+          "val": {
+            "2011": 59402,
+            "2012": 59054,
+            "2013": 58522,
+            "2014": 58559,
+            "2015": 58994,
+            "2016": 60513,
+            "2017": 62898,
+            "2018": 66754,
+            "2019": 70456,
+            "2020": 74702,
+            "2021": 80491,
+            "2022": 89377,
+            "2023": 93974
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey",
+            "unit": "USDollar"
+          }
+        },
+        "Median_Income_Person_15OrMoreYears_Female_WithIncome": {
+          "val": {
+            "2011": 20052,
+            "2012": 20051,
+            "2013": 19935,
+            "2014": 19956,
+            "2015": 19984,
+            "2016": 20343,
+            "2017": 20920,
+            "2018": 21754,
+            "2019": 22933,
+            "2020": 24025,
+            "2021": 25931,
+            "2022": 28750,
+            "2023": 30756
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey",
+            "unit": "USDollar"
+          }
+        },
+        "Median_Income_Person_15OrMoreYears_Male_WithIncome": {
+          "val": {
+            "2011": 32400,
+            "2012": 31336,
+            "2013": 30920,
+            "2014": 30899,
+            "2015": 30707,
+            "2016": 31094,
+            "2017": 31830,
+            "2018": 32936,
+            "2019": 34878,
+            "2020": 36837,
+            "2021": 39949,
+            "2022": 43533,
+            "2023": 46127
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey",
+            "unit": "USDollar"
+          }
+        },
+        "Percent_Person_18To64Years_Female_NoHealthInsurance": {
+          "val": {
+            "2008": 23.8,
+            "2009": 25.1,
+            "2010": 26.8,
+            "2011": 25.4,
+            "2012": 26.1,
+            "2013": 24.7,
+            "2014": 18.3,
+            "2015": 12,
+            "2016": 11.1,
+            "2017": 9.6,
+            "2018": 9.5,
+            "2019": 10.9,
+            "2020": 10.7,
+            "2021": 10.3,
+            "2022": 9.1,
+            "2023": 9.2
+          },
+          "metadata": {
+            "importName": "CensusSAHIE",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/sahie.html",
+            "observationPeriod": "P1Y"
+          }
+        },
+        "Percent_Person_18To64Years_Male_NoHealthInsurance": {
+          "val": {
+            "2008": 29.8,
+            "2009": 30.9,
+            "2010": 31.7,
+            "2011": 30.5,
+            "2012": 30.7,
+            "2013": 30,
+            "2014": 23.5,
+            "2015": 16.2,
+            "2016": 14,
+            "2017": 13,
+            "2018": 13.7,
+            "2019": 14.1,
+            "2020": 13,
+            "2021": 12.9,
+            "2022": 11.4,
+            "2023": 12.3
+          },
+          "metadata": {
+            "importName": "CensusSAHIE",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/sahie.html",
+            "observationPeriod": "P1Y"
+          }
+        }
+      }
+    },
+    "geoId/29": {
+      "data": {
+        "Count_Person": {
+          "val": {
+            "1900": 3108000,
+            "1901": 3128000,
+            "1902": 3147000,
+            "1903": 3166000,
+            "1904": 3185000,
+            "1905": 3204000,
+            "1906": 3223000,
+            "1907": 3242000,
+            "1908": 3260000,
+            "1909": 3279000,
+            "1910": 3301000,
+            "1911": 3317000,
+            "1912": 3344000,
+            "1913": 3409000,
+            "1914": 3467000,
+            "1915": 3492000,
+            "1916": 3527000,
+            "1917": 3470000,
+            "1918": 3325000,
+            "1919": 3371000,
+            "1920": 3404000,
+            "1921": 3429000,
+            "1922": 3437000,
+            "1923": 3454000,
+            "1924": 3508000,
+            "1925": 3526000,
+            "1926": 3556000,
+            "1927": 3576000,
+            "1928": 3601000,
+            "1929": 3622000,
+            "1930": 3646000,
+            "1931": 3711000,
+            "1932": 3746000,
+            "1933": 3773000,
+            "1934": 3784000,
+            "1935": 3798000,
+            "1936": 3801000,
+            "1937": 3794000,
+            "1938": 3781000,
+            "1939": 3783000,
+            "1940": 3786000,
+            "1941": 3811000,
+            "1942": 3829000,
+            "1943": 3705000,
+            "1944": 3560000,
+            "1945": 3516000,
+            "1946": 3746000,
+            "1947": 3845000,
+            "1948": 3844000,
+            "1949": 3882000,
+            "1950": 3964000,
+            "1951": 4015000,
+            "1952": 3972000,
+            "1953": 4020000,
+            "1954": 4066000,
+            "1955": 4134000,
+            "1956": 4163000,
+            "1957": 4189000,
+            "1958": 4186000,
+            "1959": 4258000,
+            "1960": 4326000,
+            "1961": 4349000,
+            "1962": 4357000,
+            "1963": 4392000,
+            "1964": 4442000,
+            "1965": 4467000,
+            "1966": 4523000,
+            "1967": 4539000,
+            "1968": 4568000,
+            "1969": 4640000,
+            "1970": 4677623,
+            "1971": 4725764,
+            "1972": 4758780,
+            "1973": 4782645,
+            "1974": 4795930,
+            "1975": 4808308,
+            "1976": 4839029,
+            "1977": 4863173,
+            "1978": 4889399,
+            "1979": 4912430,
+            "1980": 4916686,
+            "1981": 4932064,
+            "1982": 4929451,
+            "1983": 4943733,
+            "1984": 4975278,
+            "1985": 5000268,
+            "1986": 5023068,
+            "1987": 5056696,
+            "1988": 5081736,
+            "1989": 5095830,
+            "1990": 5126370,
+            "1991": 5157770,
+            "1992": 5193686,
+            "1993": 5237757,
+            "1994": 5281206,
+            "1995": 5324610,
+            "1996": 5367888,
+            "1997": 5407113,
+            "1998": 5437562,
+            "1999": 5468338,
+            "2000": 5607285,
+            "2001": 5641142,
+            "2002": 5674825,
+            "2003": 5709403,
+            "2004": 5747741,
+            "2005": 5790300,
+            "2006": 5842704,
+            "2007": 5887612,
+            "2008": 5923916,
+            "2009": 5961088,
+            "2010": 5996089,
+            "2011": 6011182,
+            "2012": 6026027,
+            "2013": 6042989,
+            "2014": 6059130,
+            "2015": 6075411,
+            "2016": 6091384,
+            "2017": 6111382,
+            "2018": 6125986,
+            "2019": 6140475,
+            "2020": 6151548,
+            "2021": 6168187,
+            "2022": 6179285,
+            "2023": 6205956,
+            "2024": 6243544,
+            "2025": 6270541
+          },
+          "metadata": {
+            "importName": "USCensusPEP_Annual_Population",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+            "measurementMethod": "CensusPEPSurvey",
+            "observationPeriod": "P1Y"
+          }
+        },
+        "Count_Person_25To34Years_EducationalAttainmentAssociatesDegree_Female": {
+          "val": {
+            "2011": 36289,
+            "2012": 37226,
+            "2013": 39414,
+            "2014": 40648,
+            "2015": 40934,
+            "2016": 41851,
+            "2017": 43180,
+            "2018": 43280,
+            "2019": 43661,
+            "2020": 44923,
+            "2021": 43925,
+            "2022": 42578,
+            "2023": 42504
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_25To34Years_EducationalAttainmentAssociatesDegree_Male": {
+          "val": {
+            "2011": 28122,
+            "2012": 29632,
+            "2013": 31015,
+            "2014": 31054,
+            "2015": 31611,
+            "2016": 32494,
+            "2017": 33075,
+            "2018": 33323,
+            "2019": 34179,
+            "2020": 34078,
+            "2021": 32320,
+            "2022": 32031,
+            "2023": 31794
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_25To34Years_EducationalAttainmentBachelorsDegree_Female": {
+          "val": {
+            "2011": 91198,
+            "2012": 93538,
+            "2013": 94957,
+            "2014": 97727,
+            "2015": 98164,
+            "2016": 99952,
+            "2017": 101198,
+            "2018": 102150,
+            "2019": 103101,
+            "2020": 106132,
+            "2021": 107723,
+            "2022": 108291,
+            "2023": 110354
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_25To34Years_EducationalAttainmentBachelorsDegree_Male": {
+          "val": {
+            "2011": 74017,
+            "2012": 74204,
+            "2013": 75836,
+            "2014": 76831,
+            "2015": 78353,
+            "2016": 81001,
+            "2017": 83411,
+            "2018": 85319,
+            "2019": 87057,
+            "2020": 89832,
+            "2021": 90780,
+            "2022": 92246,
+            "2023": 91655
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_25To34Years_EducationalAttainmentGraduateOrProfessionalDegree_Female": {
+          "val": {
+            "2011": 41364,
+            "2012": 42541,
+            "2013": 43963,
+            "2014": 45148,
+            "2015": 46905,
+            "2016": 48267,
+            "2017": 49093,
+            "2018": 51111,
+            "2019": 52161,
+            "2020": 52804,
+            "2021": 53534,
+            "2022": 53659,
+            "2023": 54835
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_25To34Years_EducationalAttainmentGraduateOrProfessionalDegree_Male": {
+          "val": {
+            "2011": 29135,
+            "2012": 29808,
+            "2013": 30286,
+            "2014": 31675,
+            "2015": 33120,
+            "2016": 33257,
+            "2017": 34471,
+            "2018": 34284,
+            "2019": 35323,
+            "2020": 35554,
+            "2021": 36050,
+            "2022": 36588,
+            "2023": 37469
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_25To34Years_Female": {
+          "val": {
+            "2011": 383705,
+            "2012": 388446,
+            "2013": 392423,
+            "2014": 396950,
+            "2015": 398869,
+            "2016": 400138,
+            "2017": 402680,
+            "2018": 404291,
+            "2019": 405303,
+            "2020": 408810,
+            "2021": 407488,
+            "2022": 403789,
+            "2023": 406641
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_25To34Years_Male": {
+          "val": {
+            "2011": 382792,
+            "2012": 387155,
+            "2013": 391756,
+            "2014": 395610,
+            "2015": 398292,
+            "2016": 400091,
+            "2017": 403259,
+            "2018": 404733,
+            "2019": 408104,
+            "2020": 410234,
+            "2021": 406863,
+            "2022": 408307,
+            "2023": 406400
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_AmericanIndianOrAlaskaNativeAlone": {
+          "val": {
+            "2011": 22509,
+            "2012": 22704,
+            "2013": 22781,
+            "2014": 24269,
+            "2015": 24951,
+            "2016": 25641,
+            "2017": 25933,
+            "2018": 26952,
+            "2019": 27084,
+            "2020": 24274,
+            "2021": 19904,
+            "2022": 17559,
+            "2023": 16830
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_AsianAlone": {
+          "val": {
+            "2011": 93632,
+            "2012": 96035,
+            "2013": 98962,
+            "2014": 101772,
+            "2015": 106537,
+            "2016": 107953,
+            "2017": 112959,
+            "2018": 116720,
+            "2019": 120654,
+            "2020": 123810,
+            "2021": 123406,
+            "2022": 127044,
+            "2023": 127846
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_BelowPovertyLevelInThePast12Months_AmericanIndianOrAlaskaNativeAlone": {
+          "val": {
+            "2011": 4804,
+            "2012": 4828,
+            "2013": 5223,
+            "2014": 5428,
+            "2015": 5474,
+            "2016": 5775,
+            "2017": 5335,
+            "2018": 5218,
+            "2019": 5751,
+            "2020": 5302,
+            "2021": 3878,
+            "2022": 3359,
+            "2023": 2852
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_BelowPovertyLevelInThePast12Months_AsianAlone": {
+          "val": {
+            "2011": 13455,
+            "2012": 14004,
+            "2013": 15173,
+            "2014": 16639,
+            "2015": 17658,
+            "2016": 17468,
+            "2017": 18068,
+            "2018": 16626,
+            "2019": 16628,
+            "2020": 15846,
+            "2021": 14810,
+            "2022": 14247,
+            "2023": 14496
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_BelowPovertyLevelInThePast12Months_BlackOrAfricanAmericanAlone": {
+          "val": {
+            "2011": 181400,
+            "2012": 188398,
+            "2013": 191861,
+            "2014": 194121,
+            "2015": 194389,
+            "2016": 189191,
+            "2017": 178592,
+            "2018": 175186,
+            "2019": 165414,
+            "2020": 157184,
+            "2021": 155844,
+            "2022": 157759,
+            "2023": 150437
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_BelowPovertyLevelInThePast12Months_HispanicOrLatino": {
+          "val": {
+            "2011": 50199,
+            "2012": 54746,
+            "2013": 57625,
+            "2014": 58056,
+            "2015": 61123,
+            "2016": 61543,
+            "2017": 57361,
+            "2018": 56254,
+            "2019": 54628,
+            "2020": 49972,
+            "2021": 48173,
+            "2022": 50732,
+            "2023": 53182
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_BelowPovertyLevelInThePast12Months_NativeHawaiianOrOtherPacificIslanderAlone": {
+          "val": {
+            "2011": 941,
+            "2012": 1008,
+            "2013": 1435,
+            "2014": 1326,
+            "2015": 1204,
+            "2016": 1394,
+            "2017": 2015,
+            "2018": 2014,
+            "2019": 2082,
+            "2020": 1914,
+            "2021": 1910,
+            "2022": 1142,
+            "2023": 1366
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_BelowPovertyLevelInThePast12Months_WhiteAlone": {
+          "val": {
+            "2011": 581997,
+            "2012": 610537,
+            "2013": 634849,
+            "2014": 641027,
+            "2015": 641559,
+            "2016": 628648,
+            "2017": 605038,
+            "2018": 586815,
+            "2019": 569988,
+            "2020": 540189,
+            "2021": 523182,
+            "2022": 518593,
+            "2023": 507864
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_BlackOrAfricanAmericanAlone": {
+          "val": {
+            "2011": 686044,
+            "2012": 689683,
+            "2013": 691128,
+            "2014": 695813,
+            "2015": 697022,
+            "2016": 701896,
+            "2017": 703061,
+            "2018": 704896,
+            "2019": 701334,
+            "2020": 698043,
+            "2021": 695678,
+            "2022": 693892,
+            "2023": 686616
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_Female": {
+          "val": {
+            "2011": 3040527,
+            "2012": 3052425,
+            "2013": 3065231,
+            "2014": 3074357,
+            "2015": 3081445,
+            "2016": 3086334,
+            "2017": 3093968,
+            "2018": 3101290,
+            "2019": 3109185,
+            "2020": 3120159,
+            "2021": 3113793,
+            "2022": 3115202,
+            "2023": 3127491
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_Female_BelowPovertyLevelInThePast12Months": {
+          "val": {
+            "2011": 462023,
+            "2012": 482118,
+            "2013": 496994,
+            "2014": 502604,
+            "2015": 507358,
+            "2016": 496991,
+            "2017": 478916,
+            "2018": 465767,
+            "2019": 450787,
+            "2020": 429445,
+            "2021": 423251,
+            "2022": 423966,
+            "2023": 418925
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_HispanicOrLatino": {
+          "val": {
+            "2011": 206777,
+            "2012": 212152,
+            "2013": 219705,
+            "2014": 226388,
+            "2015": 233046,
+            "2016": 237284,
+            "2017": 244420,
+            "2018": 249105,
+            "2019": 254791,
+            "2020": 262677,
+            "2021": 271566,
+            "2022": 280078,
+            "2023": 311924
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_Male": {
+          "val": {
+            "2011": 2915275,
+            "2012": 2929988,
+            "2013": 2941951,
+            "2014": 2953719,
+            "2015": 2964003,
+            "2016": 2973317,
+            "2017": 2981332,
+            "2018": 2988772,
+            "2019": 2995725,
+            "2020": 3004001,
+            "2021": 3027741,
+            "2022": 3039220,
+            "2023": 3040690
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_Male_BelowPovertyLevelInThePast12Months": {
+          "val": {
+            "2011": 366592,
+            "2012": 386918,
+            "2013": 403935,
+            "2014": 409687,
+            "2015": 408614,
+            "2016": 400764,
+            "2017": 382763,
+            "2018": 372163,
+            "2019": 359258,
+            "2020": 343547,
+            "2021": 338772,
+            "2022": 342616,
+            "2023": 337603
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_NativeHawaiianOrOtherPacificIslanderAlone": {
+          "val": {
+            "2011": 5725,
+            "2012": 5812,
+            "2013": 6263,
+            "2014": 5983,
+            "2015": 6161,
+            "2016": 6479,
+            "2017": 6336,
+            "2018": 6662,
+            "2019": 8231,
+            "2020": 8887,
+            "2021": 8468,
+            "2022": 8831,
+            "2023": 9681
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Count_Person_WhiteAlone": {
+          "val": {
+            "2011": 4957147,
+            "2012": 4972530,
+            "2013": 4984653,
+            "2014": 4991914,
+            "2015": 4995527,
+            "2016": 5000875,
+            "2017": 5004537,
+            "2018": 5008342,
+            "2019": 5015904,
+            "2020": 4978046,
+            "2021": 4930466,
+            "2022": 4884165,
+            "2023": 4831646
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey"
+          }
+        },
+        "Median_Income_Household_HouseholderRaceAmericanIndianOrAlaskaNativeAlone": {
+          "val": {
+            "2011": 36135,
+            "2012": 37594,
+            "2013": 35249,
+            "2014": 35855,
+            "2015": 36376,
+            "2016": 34171,
+            "2017": 40985,
+            "2018": 40824,
+            "2019": 38999,
+            "2020": 40537,
+            "2021": 48900,
+            "2022": 51107,
+            "2023": 58733
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey",
+            "unit": "USDollar"
+          }
+        },
+        "Median_Income_Household_HouseholderRaceAsianAlone": {
+          "val": {
+            "2011": 59040,
+            "2012": 61507,
+            "2013": 61613,
+            "2014": 61162,
+            "2015": 60908,
+            "2016": 62232,
+            "2017": 64020,
+            "2018": 67526,
+            "2019": 68497,
+            "2020": 74716,
+            "2021": 80810,
+            "2022": 89367,
+            "2023": 91954
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey",
+            "unit": "USDollar"
+          }
+        },
+        "Median_Income_Household_HouseholderRaceBlackOrAfricanAmericanAlone": {
+          "val": {
+            "2011": 31593,
+            "2012": 31374,
+            "2013": 31511,
+            "2014": 31831,
+            "2015": 31977,
+            "2016": 32923,
+            "2017": 34948,
+            "2018": 35710,
+            "2019": 37179,
+            "2020": 38456,
+            "2021": 40346,
+            "2022": 44293,
+            "2023": 46668
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey",
+            "unit": "USDollar"
+          }
+        },
+        "Median_Income_Household_HouseholderRaceHispanicOrLatino": {
+          "val": {
+            "2011": 38722,
+            "2012": 38094,
+            "2013": 37732,
+            "2014": 38431,
+            "2015": 38712,
+            "2016": 40566,
+            "2017": 43281,
+            "2018": 45677,
+            "2019": 47978,
+            "2020": 50974,
+            "2021": 54192,
+            "2022": 58288,
+            "2023": 61841
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey",
+            "unit": "USDollar"
+          }
+        },
+        "Median_Income_Household_HouseholderRaceNativeHawaiianOrOtherPacificIslanderAlone": {
+          "val": {
+            "2011": 41623,
+            "2012": 40127,
+            "2013": 39769,
+            "2014": 35976,
+            "2015": 42088,
+            "2016": 42679,
+            "2017": 36726,
+            "2018": 48696,
+            "2019": 48410,
+            "2020": 56058,
+            "2021": 61531,
+            "2022": 67441,
+            "2023": 63007
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey",
+            "unit": "USDollar"
+          }
+        },
+        "Median_Income_Household_HouseholderRaceWhiteAlone": {
+          "val": {
+            "2011": 49810,
+            "2012": 50077,
+            "2013": 50141,
+            "2014": 50655,
+            "2015": 50979,
+            "2016": 52248,
+            "2017": 54412,
+            "2018": 56701,
+            "2019": 58921,
+            "2020": 60556,
+            "2021": 64383,
+            "2022": 69547,
+            "2023": 72475
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey",
+            "unit": "USDollar"
+          }
+        },
+        "Median_Income_Person_15OrMoreYears_Female_WithIncome": {
+          "val": {
+            "2011": 19701,
+            "2012": 20010,
+            "2013": 20097,
+            "2014": 20374,
+            "2015": 20559,
+            "2016": 21088,
+            "2017": 21922,
+            "2018": 22835,
+            "2019": 24034,
+            "2020": 25139,
+            "2021": 26636,
+            "2022": 29097,
+            "2023": 30866
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey",
+            "unit": "USDollar"
+          }
+        },
+        "Median_Income_Person_15OrMoreYears_Male_WithIncome": {
+          "val": {
+            "2011": 31166,
+            "2012": 31062,
+            "2013": 31105,
+            "2014": 31294,
+            "2015": 31432,
+            "2016": 31918,
+            "2017": 33178,
+            "2018": 34687,
+            "2019": 36077,
+            "2020": 37140,
+            "2021": 39460,
+            "2022": 42715,
+            "2023": 45156
+          },
+          "metadata": {
+            "importName": "CensusACS5YearSurvey",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html",
+            "measurementMethod": "CensusACS5yrSurvey",
+            "unit": "USDollar"
+          }
+        },
+        "Percent_Person_18To64Years_Female_NoHealthInsurance": {
+          "val": {
+            "2008": 15.8,
+            "2009": 16.6,
+            "2010": 17.2,
+            "2011": 18.2,
+            "2012": 17.8,
+            "2013": 17.3,
+            "2014": 14.8,
+            "2015": 12.4,
+            "2016": 11.6,
+            "2017": 12,
+            "2018": 12,
+            "2019": 12.7,
+            "2020": 12.6,
+            "2021": 12.1,
+            "2022": 10.3,
+            "2023": 8.9
+          },
+          "metadata": {
+            "importName": "CensusSAHIE",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/sahie.html",
+            "observationPeriod": "P1Y"
+          }
+        },
+        "Percent_Person_18To64Years_Male_NoHealthInsurance": {
+          "val": {
+            "2008": 18.6,
+            "2009": 20.3,
+            "2010": 20.5,
+            "2011": 20.9,
+            "2012": 20.6,
+            "2013": 19.7,
+            "2014": 17.5,
+            "2015": 15,
+            "2016": 14.1,
+            "2017": 14.4,
+            "2018": 15.1,
+            "2019": 15.5,
+            "2020": 16,
+            "2021": 14.8,
+            "2022": 13.8,
+            "2023": 12.2
+          },
+          "metadata": {
+            "importName": "CensusSAHIE",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/sahie.html",
+            "observationPeriod": "P1Y"
+          }
+        },
+        "Percent_Person_18To64Years_NoHealthInsurance_BlackOrAfricanAmericanAlone": {
+          "val": {
+            "2008": 23.5,
+            "2009": 26.1,
+            "2010": 28.2,
+            "2011": 28.4,
+            "2012": 27.7,
+            "2013": 26.2,
+            "2014": 23.3,
+            "2015": 17.9,
+            "2016": 16.5,
+            "2017": 18.1,
+            "2018": 17.7,
+            "2019": 17.2,
+            "2020": 19.4,
+            "2021": 17.5,
+            "2022": 13.5,
+            "2023": 13.8
+          },
+          "metadata": {
+            "importName": "CensusSAHIE",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/sahie.html",
+            "observationPeriod": "P1Y"
+          }
+        },
+        "Percent_Person_18To64Years_NoHealthInsurance_HispanicOrLatino": {
+          "val": {
+            "2008": 40.7,
+            "2009": 42.5,
+            "2010": 42.7,
+            "2011": 43.5,
+            "2012": 41.9,
+            "2013": 41.6,
+            "2014": 36.1,
+            "2015": 32.9,
+            "2016": 32.3,
+            "2017": 29.7,
+            "2018": 31.3,
+            "2019": 30,
+            "2020": 30.5,
+            "2021": 29.8,
+            "2022": 26,
+            "2023": 23.9
+          },
+          "metadata": {
+            "importName": "CensusSAHIE",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/sahie.html",
+            "observationPeriod": "P1Y"
+          }
+        },
+        "Percent_Person_18To64Years_NoHealthInsurance_WhiteAlone": {
+          "val": {
+            "2008": 15.3,
+            "2009": 16.3,
+            "2010": 16.4,
+            "2011": 17,
+            "2012": 16.8,
+            "2013": 16.2,
+            "2014": 14.1,
+            "2015": 12.1,
+            "2016": 11.3,
+            "2017": 11.5,
+            "2018": 12,
+            "2019": 12.7,
+            "2020": 12.6,
+            "2021": 11.8,
+            "2022": 10.9,
+            "2023": 9.2
+          },
+          "metadata": {
+            "importName": "CensusSAHIE",
+            "provenanceUrl": "https://www.census.gov/programs-surveys/sahie.html",
+            "observationPeriod": "P1Y"
+          }
+        }
+      }
+    },
+    "northamerica": {
+      "data": {
+        "Count_Person": {
+          "val": {
+            "2013": 565265000,
+            "2016": 579000000,
+            "2024": 613150000
+          },
+          "metadata": {
+            "importName": "WikidataPopulation",
+            "provenanceUrl": "https://www.wikidata.org/wiki/Wikidata:Main_Page",
+            "measurementMethod": "WikidataPopulation"
+          }
+        }
+      }
+    }
+  },
+  "allChildPlaces": {
+    "County": {
+      "places": [
+        {
+          "dcid": "geoId/06037",
+          "name": "Los Angeles County",
+          "pop": 9757179
+        },
+        {
+          "dcid": "geoId/06073",
+          "name": "San Diego County",
+          "pop": 3298799
+        },
+        {
+          "dcid": "geoId/06059",
+          "name": "Orange County",
+          "pop": 3170435
+        },
+        {
+          "dcid": "geoId/06065",
+          "name": "Riverside County",
+          "pop": 2529933
+        },
+        {
+          "dcid": "geoId/06071",
+          "name": "San Bernardino County",
+          "pop": 2214281
+        },
+        {
+          "dcid": "geoId/06085",
+          "name": "Santa Clara County",
+          "pop": 1926325
+        },
+        {
+          "dcid": "geoId/06001",
+          "name": "Alameda County",
+          "pop": 1649060
+        },
+        {
+          "dcid": "geoId/06067",
+          "name": "Sacramento County",
+          "pop": 1611231
+        },
+        {
+          "dcid": "geoId/06013",
+          "name": "Contra Costa County",
+          "pop": 1172607
+        },
+        {
+          "dcid": "geoId/06019",
+          "name": "Fresno County",
+          "pop": 1024125
+        },
+        {
+          "dcid": "geoId/06029",
+          "name": "Kern County",
+          "pop": 922529
+        },
+        {
+          "dcid": "geoId/06111",
+          "name": "Ventura County",
+          "pop": 835427
+        },
+        {
+          "dcid": "geoId/06075",
+          "name": "San Francisco County",
+          "pop": 827526
+        },
+        {
+          "dcid": "geoId/06077",
+          "name": "San Joaquin County",
+          "pop": 816108
+        },
+        {
+          "dcid": "geoId/06081",
+          "name": "San Mateo County",
+          "pop": 742893
+        },
+        {
+          "dcid": "geoId/06099",
+          "name": "Stanislaus County",
+          "pop": 556972
+        },
+        {
+          "dcid": "geoId/06097",
+          "name": "Sonoma County",
+          "pop": 485375
+        },
+        {
+          "dcid": "geoId/06107",
+          "name": "Tulare County",
+          "pop": 483546
+        },
+        {
+          "dcid": "geoId/06095",
+          "name": "Solano County",
+          "pop": 455101
+        },
+        {
+          "dcid": "geoId/06083",
+          "name": "Santa Barbara County",
+          "pop": 444500
+        },
+        {
+          "dcid": "geoId/06053",
+          "name": "Monterey County",
+          "pop": 436251
+        },
+        {
+          "dcid": "geoId/06061",
+          "name": "Placer County",
+          "pop": 433822
+        },
+        {
+          "dcid": "geoId/06047",
+          "name": "Merced County",
+          "pop": 296774
+        },
+        {
+          "dcid": "geoId/06079",
+          "name": "San Luis Obispo County",
+          "pop": 281843
+        },
+        {
+          "dcid": "geoId/06087",
+          "name": "Santa Cruz County",
+          "pop": 262406
+        },
+        {
+          "dcid": "geoId/06041",
+          "name": "Marin County",
+          "pop": 256400
+        },
+        {
+          "dcid": "geoId/06113",
+          "name": "Yolo County",
+          "pop": 225251
+        },
+        {
+          "dcid": "geoId/06007",
+          "name": "Butte County",
+          "pop": 208334
+        },
+        {
+          "dcid": "geoId/06017",
+          "name": "El Dorado County",
+          "pop": 192823
+        },
+        {
+          "dcid": "geoId/06025",
+          "name": "Imperial County",
+          "pop": 181724
+        },
+        {
+          "dcid": "geoId/06089",
+          "name": "Shasta County",
+          "pop": 181121
+        },
+        {
+          "dcid": "geoId/06039",
+          "name": "Madera County",
+          "pop": 165432
+        },
+        {
+          "dcid": "geoId/06031",
+          "name": "Kings County",
+          "pop": 154913
+        },
+        {
+          "dcid": "geoId/06055",
+          "name": "Napa County",
+          "pop": 132727
+        },
+        {
+          "dcid": "geoId/06023",
+          "name": "Humboldt County",
+          "pop": 132380
+        },
+        {
+          "dcid": "geoId/06057",
+          "name": "Nevada County",
+          "pop": 102195
+        },
+        {
+          "dcid": "geoId/06101",
+          "name": "Sutter County",
+          "pop": 98545
+        },
+        {
+          "dcid": "geoId/06045",
+          "name": "Mendocino County",
+          "pop": 89175
+        },
+        {
+          "dcid": "geoId/06115",
+          "name": "Yuba County",
+          "pop": 87469
+        },
+        {
+          "dcid": "geoId/06069",
+          "name": "San Benito County",
+          "pop": 69159
+        },
+        {
+          "dcid": "geoId/06033",
+          "name": "Lake County",
+          "pop": 67764
+        },
+        {
+          "dcid": "geoId/06103",
+          "name": "Tehama County",
+          "pop": 64451
+        },
+        {
+          "dcid": "geoId/06109",
+          "name": "Tuolumne County",
+          "pop": 53893
+        },
+        {
+          "dcid": "geoId/06009",
+          "name": "Calaveras County",
+          "pop": 46505
+        },
+        {
+          "dcid": "geoId/06093",
+          "name": "Siskiyou County",
+          "pop": 42498
+        },
+        {
+          "dcid": "geoId/06005",
+          "name": "Amador County",
+          "pop": 42026
+        },
+        {
+          "dcid": "geoId/06035",
+          "name": "Lassen County",
+          "pop": 28340
+        },
+        {
+          "dcid": "geoId/06021",
+          "name": "Glenn County",
+          "pop": 28304
+        },
+        {
+          "dcid": "geoId/06015",
+          "name": "Del Norte County",
+          "pop": 27009
+        },
+        {
+          "dcid": "geoId/06011",
+          "name": "Colusa County",
+          "pop": 22074
+        },
+        {
+          "dcid": "geoId/06063",
+          "name": "Plumas County",
+          "pop": 18834
+        },
+        {
+          "dcid": "geoId/06027",
+          "name": "Inyo County",
+          "pop": 18485
+        },
+        {
+          "dcid": "geoId/06043",
+          "name": "Mariposa County",
+          "pop": 17048
+        },
+        {
+          "dcid": "geoId/06105",
+          "name": "Trinity County",
+          "pop": 15642
+        },
+        {
+          "dcid": "geoId/06051",
+          "name": "Mono County",
+          "pop": 12991
+        },
+        {
+          "dcid": "geoId/06049",
+          "name": "Modoc County",
+          "pop": 8491
+        },
+        {
+          "dcid": "geoId/06091",
+          "name": "Sierra County",
+          "pop": 3113
+        },
+        {
+          "dcid": "geoId/06003",
+          "name": "Alpine County",
+          "pop": 1099
+        }
+      ]
+    }
+  },
+  "latestPopulation": {
+    "country/USA": {
+      "date": "2025",
+      "value": 341784857,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/04": {
+      "date": "2025",
+      "value": 7623818,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/06": {
+      "date": "2025",
+      "value": 39355309,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/06037": {
+      "date": "2024",
+      "value": 9757179,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/06059": {
+      "date": "2024",
+      "value": 3170435,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/06065": {
+      "date": "2024",
+      "value": 2529933,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/06071": {
+      "date": "2024",
+      "value": 2214281,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/06073": {
+      "date": "2024",
+      "value": 3298799,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/08": {
+      "date": "2025",
+      "value": 6012561,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/18": {
+      "date": "2025",
+      "value": 6973333,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/22": {
+      "date": "2025",
+      "value": 4618189,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/29": {
+      "date": "2025",
+      "value": 6270541,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/38": {
+      "date": "2025",
+      "value": 799358,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/47": {
+      "date": "2025",
+      "value": 7315076,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/48": {
+      "date": "2025",
+      "value": 31709821,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/53": {
+      "date": "2025",
+      "value": 8001020,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "geoId/72": {
+      "date": "2025",
+      "value": 3184835,
+      "metadata": {
+        "importName": "USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y"
+      }
+    },
+    "northamerica": {
+      "date": "2024",
+      "value": 613150000,
+      "metadata": {
+        "importName": "WikidataPopulation",
+        "provenanceUrl": "https://www.wikidata.org/wiki/Wikidata:Main_Page",
+        "measurementMethod": "WikidataPopulation"
+      }
+    }
+  },
+  "validCategories": {
+    "country/USA": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/04": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/06": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/06037": {
+      "category": [
+        "Demographics",
+        "Economics",
+        "Education",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/06059": {
+      "category": [
+        "Demographics",
+        "Economics",
+        "Education",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/06065": {
+      "category": [
+        "Demographics",
+        "Economics",
+        "Education",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/06071": {
+      "category": [
+        "Demographics",
+        "Economics",
+        "Education",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/06073": {
+      "category": [
+        "Demographics",
+        "Economics",
+        "Education",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/08": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/18": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/22": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/29": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/38": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/47": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/48": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/53": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Energy",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "geoId/72": {
+      "category": [
+        "Crime",
+        "Demographics",
+        "Economics",
+        "Education",
+        "Environment",
+        "Equity",
+        "Health",
+        "Housing",
+        "Overview"
+      ]
+    },
+    "northamerica": {
+      "category": [
+        "Demographics",
+        "Overview"
+      ]
+    }
+  },
+  "childPlacesType": "County",
+  "childPlaces": [
+    "geoId/06037",
+    "geoId/06073",
+    "geoId/06059",
+    "geoId/06065",
+    "geoId/06071"
+  ],
+  "parentPlaces": [
+    "country/USA",
+    "northamerica"
+  ],
+  "similarPlaces": [
+    "geoId/38",
+    "geoId/18",
+    "geoId/72",
+    "geoId/47",
+    "geoId/22"
+  ],
+  "nearbyPlaces": [
+    "geoId/48",
+    "geoId/53",
+    "geoId/04",
+    "geoId/29",
+    "geoId/08"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "dc/g/Person_Gender": [
+    {
+      "SubjectID": "dc/g/Person_Gender",
+      "Predicate": "specializationOf+",
+      "Provenance": "",
+      "Value": "dc/g/Demographics",
+      "Bytes": null,
+      "Name": "Demographics",
+      "Types": [
+        "StatVarGroup"
+      ]
+    },
+    {
+      "SubjectID": "dc/g/Person_Gender",
+      "Predicate": "specializationOf+",
+      "Provenance": "",
+      "Value": "dc/g/Economy",
+      "Bytes": null,
+      "Name": "Economy",
+      "Types": [
+        "StatVarGroup"
+      ]
+    },
+    {
+      "SubjectID": "dc/g/Person_Gender",
+      "Predicate": "specializationOf+",
+      "Provenance": "",
+      "Value": "dc/g/Employment",
+      "Bytes": null,
+      "Name": "Employment and Business",
+      "Types": [
+        "StatVarGroup"
+      ]
+    },
+    {
+      "SubjectID": "dc/g/Person_Gender",
+      "Predicate": "specializationOf+",
+      "Provenance": "",
+      "Value": "dc/g/Health",
+      "Bytes": null,
+      "Name": "Health",
+      "Types": [
+        "StatVarGroup"
+      ]
+    },
+    {
+      "SubjectID": "dc/g/Person_Gender",
+      "Predicate": "specializationOf+",
+      "Provenance": "",
+      "Value": "dc/g/Root",
+      "Bytes": null,
+      "Name": "Data Commons Variables",
+      "Types": [
+        "StatVarGroup"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+[
+  {
+    "SubjectID": "dc/27eg6kfgxbb07",
+    "Name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Architecture And Engineering Occupations, With Earnings, Full Time Year Round Worker",
+    "Types": [
+      "StatisticalVariable"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/c78fb7n4fg5t",
+    "Name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Arts, Design, Entertainment, Sports, And Media Occupations, With Earnings, Full Time Year Round Worker",
+    "Types": [
+      "StatisticalVariable"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/ngxd3wfd871sf",
+    "Name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Building And Grounds Cleaning And Maintenance Occupations, With Earnings, Full Time Year Round Worker",
+    "Types": [
+      "StatisticalVariable"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/9t1nk24nllnw6",
+    "Name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Business And Financial Operations Occupations, With Earnings, Full Time Year Round Worker",
+    "Types": [
+      "StatisticalVariable"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/24gxks3k9ggp2",
+    "Name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Community And Social Service Occupations, With Earnings, Full Time Year Round Worker",
+    "Types": [
+      "StatisticalVariable"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/7lydbsw4ne5w9",
+    "Name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Computer And Mathematical Occupations, With Earnings, Full Time Year Round Worker",
+    "Types": [
+      "StatisticalVariable"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/kbspbwxjsmg67",
+    "Name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Computer, Engineering, And Science Occupations, With Earnings, Full Time Year Round Worker",
+    "Types": [
+      "StatisticalVariable"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/ws53s0ne6kb27",
+    "Name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Construction And Extraction Occupations, With Earnings, Full Time Year Round Worker",
+    "Types": [
+      "StatisticalVariable"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/89fndld3xy4z7",
+    "Name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Education, Legal, Community Service, Arts, And Media Occupations, With Earnings, Full Time Year Round Worker",
+    "Types": [
+      "StatisticalVariable"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/xhbfvtmdlnt8c",
+    "Name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Educational Instruction And Library Occupations, With Earnings, Full Time Year Round Worker",
+    "Types": [
+      "StatisticalVariable"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/jfd54v03tebw3",
+    "Name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Farming, Fishing, And Forestry Occupations, With Earnings, Full Time Year Round Worker",
+    "Types": [
+      "StatisticalVariable"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/wtecthfq7p0h6",
+    "Name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Food Preparation And Serving Related Occupations, With Earnings, Full Time Year Round Worker",
+    "Types": [
+      "StatisticalVariable"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/92mnbbgvfskf7",
+    "Name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Health Technologists And Technicians, With Earnings, Full Time Year Round Worker",
+    "Types": [
+      "StatisticalVariable"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/p2w035955wkhh",
+    "Name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Healthcare Practitioners And Technical Occupations, With Earnings, Full Time Year Round Worker",
+    "Types": [
+      "StatisticalVariable"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/46v056n28d2e5",
+    "Name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Healthcare Support Occupations, With Earnings, Full Time Year Round Worker",
+    "Types": [
+      "StatisticalVariable"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/5ehtzjsp45dy3",
+    "Name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Installation, Maintenance, And Repair Occupations, With Earnings, Full Time Year Round Worker",
+    "Types": [
+      "StatisticalVariable"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/h3ej80jh908nc",
+    "Name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Legal Occupations, With Earnings, Full Time Year Round Worker",
+    "Types": [
+      "StatisticalVariable"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/0bm3wdelm2vf6",
+    "Name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Life, Physical, And Social Science Occupations, With Earnings, Full Time Year Round Worker",
+    "Types": [
+      "StatisticalVariable"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/112v7fggz4mv1",
+    "Name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Management Occupations, With Earnings, Full Time Year Round Worker",
+    "Types": [
+      "StatisticalVariable"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  },
+  {
+    "SubjectID": "dc/r7eqgnsy4b4c5",
+    "Name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Management, Business, And Financial Occupations, With Earnings, Full Time Year Round Worker",
+    "Types": [
+      "StatisticalVariable"
+    ],
+    "MatchedPredicate": "",
+    "MatchedObjectValue": "",
+    "Score": 0
+  }
+]

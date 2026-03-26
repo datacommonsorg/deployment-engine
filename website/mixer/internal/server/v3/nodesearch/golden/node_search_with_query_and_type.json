@@ -1,0 +1,184 @@
+{
+  "results": [
+    {
+      "node": {
+        "name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Architecture And Engineering Occupations, With Earnings, Full Time Year Round Worker",
+        "types": [
+          "StatisticalVariable"
+        ],
+        "dcid": "dc/27eg6kfgxbb07"
+      }
+    },
+    {
+      "node": {
+        "name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Arts, Design, Entertainment, Sports, And Media Occupations, With Earnings, Full Time Year Round Worker",
+        "types": [
+          "StatisticalVariable"
+        ],
+        "dcid": "dc/c78fb7n4fg5t"
+      }
+    },
+    {
+      "node": {
+        "name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Building And Grounds Cleaning And Maintenance Occupations, With Earnings, Full Time Year Round Worker",
+        "types": [
+          "StatisticalVariable"
+        ],
+        "dcid": "dc/ngxd3wfd871sf"
+      }
+    },
+    {
+      "node": {
+        "name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Business And Financial Operations Occupations, With Earnings, Full Time Year Round Worker",
+        "types": [
+          "StatisticalVariable"
+        ],
+        "dcid": "dc/9t1nk24nllnw6"
+      }
+    },
+    {
+      "node": {
+        "name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Community And Social Service Occupations, With Earnings, Full Time Year Round Worker",
+        "types": [
+          "StatisticalVariable"
+        ],
+        "dcid": "dc/24gxks3k9ggp2"
+      }
+    },
+    {
+      "node": {
+        "name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Computer And Mathematical Occupations, With Earnings, Full Time Year Round Worker",
+        "types": [
+          "StatisticalVariable"
+        ],
+        "dcid": "dc/7lydbsw4ne5w9"
+      }
+    },
+    {
+      "node": {
+        "name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Computer, Engineering, And Science Occupations, With Earnings, Full Time Year Round Worker",
+        "types": [
+          "StatisticalVariable"
+        ],
+        "dcid": "dc/kbspbwxjsmg67"
+      }
+    },
+    {
+      "node": {
+        "name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Construction And Extraction Occupations, With Earnings, Full Time Year Round Worker",
+        "types": [
+          "StatisticalVariable"
+        ],
+        "dcid": "dc/ws53s0ne6kb27"
+      }
+    },
+    {
+      "node": {
+        "name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Education, Legal, Community Service, Arts, And Media Occupations, With Earnings, Full Time Year Round Worker",
+        "types": [
+          "StatisticalVariable"
+        ],
+        "dcid": "dc/89fndld3xy4z7"
+      }
+    },
+    {
+      "node": {
+        "name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Educational Instruction And Library Occupations, With Earnings, Full Time Year Round Worker",
+        "types": [
+          "StatisticalVariable"
+        ],
+        "dcid": "dc/xhbfvtmdlnt8c"
+      }
+    },
+    {
+      "node": {
+        "name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Farming, Fishing, And Forestry Occupations, With Earnings, Full Time Year Round Worker",
+        "types": [
+          "StatisticalVariable"
+        ],
+        "dcid": "dc/jfd54v03tebw3"
+      }
+    },
+    {
+      "node": {
+        "name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Food Preparation And Serving Related Occupations, With Earnings, Full Time Year Round Worker",
+        "types": [
+          "StatisticalVariable"
+        ],
+        "dcid": "dc/wtecthfq7p0h6"
+      }
+    },
+    {
+      "node": {
+        "name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Health Technologists And Technicians, With Earnings, Full Time Year Round Worker",
+        "types": [
+          "StatisticalVariable"
+        ],
+        "dcid": "dc/92mnbbgvfskf7"
+      }
+    },
+    {
+      "node": {
+        "name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Healthcare Practitioners And Technical Occupations, With Earnings, Full Time Year Round Worker",
+        "types": [
+          "StatisticalVariable"
+        ],
+        "dcid": "dc/p2w035955wkhh"
+      }
+    },
+    {
+      "node": {
+        "name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Healthcare Support Occupations, With Earnings, Full Time Year Round Worker",
+        "types": [
+          "StatisticalVariable"
+        ],
+        "dcid": "dc/46v056n28d2e5"
+      }
+    },
+    {
+      "node": {
+        "name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Installation, Maintenance, And Repair Occupations, With Earnings, Full Time Year Round Worker",
+        "types": [
+          "StatisticalVariable"
+        ],
+        "dcid": "dc/5ehtzjsp45dy3"
+      }
+    },
+    {
+      "node": {
+        "name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Legal Occupations, With Earnings, Full Time Year Round Worker",
+        "types": [
+          "StatisticalVariable"
+        ],
+        "dcid": "dc/h3ej80jh908nc"
+      }
+    },
+    {
+      "node": {
+        "name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Life, Physical, And Social Science Occupations, With Earnings, Full Time Year Round Worker",
+        "types": [
+          "StatisticalVariable"
+        ],
+        "dcid": "dc/0bm3wdelm2vf6"
+      }
+    },
+    {
+      "node": {
+        "name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Management Occupations, With Earnings, Full Time Year Round Worker",
+        "types": [
+          "StatisticalVariable"
+        ],
+        "dcid": "dc/112v7fggz4mv1"
+      }
+    },
+    {
+      "node": {
+        "name": "Median Income (Real Individual Earnings Before Deductions): 16 Years or More, Civilian, Employed, Female, Management, Business, And Financial Occupations, With Earnings, Full Time Year Round Worker",
+        "types": [
+          "StatisticalVariable"
+        ],
+        "dcid": "dc/r7eqgnsy4b4c5"
+      }
+    }
+  ]
+}

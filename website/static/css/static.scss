@@ -1,0 +1,63 @@
+/**
+ * Copyright 2020 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+@import "base";
+
+$color-scatter: #ff8e6b;
+$color-map: #a0dcb0;
+$color-timeline: #fcbf71;
+$color-place: #6bc8dd;
+
+// from place.scss
+$subtopic-background: rgba(0, 0, 0, 0.05);
+$subtopic-color: #222;
+
+h1 {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  margin-bottom: 1.25rem;
+}
+
+.bg-callout-primary {
+  background: var(--dc-red-fade);
+}
+
+.lead {
+  font-size: 1.4rem;
+  font-family: $headings-font-family;
+}
+
+#special_announcement_faq dd {
+  margin-bottom: 2rem;
+}
+
+#about section {
+  margin-top: 3rem;
+}
+
+#feedback .email {
+  color: var(--dc-grey);
+  font-weight: 500;
+}
+
+blockquote {
+  padding: 0.5rem 1rem 0.5rem 2rem;
+  border-left: 3px solid var(--gray);
+  display: block;
+  background: #f7f7f7;
+}

@@ -1,0 +1,243 @@
+# Copyright 2024 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+"""Utilities used by the base webddriver test."""
+
+from typing import List
+
+from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import StaleElementReferenceException
+from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+
+DEFAULT_HEIGHT = 1200
+DEFAULT_WIDTH = 1200
+TIMEOUT = 60
+# Charts can take a long time to load.
+# This is a custom, longer timeout to use for charts we know are slow.
+LONG_TIMEOUT = 120  # seconds
+
+
+def create_driver(preferences=None):
+  # These options are needed to run ChromeDriver inside a Docker without a UI.
+  chrome_options = Options()
+  chrome_options.add_argument('--headless=new')
+  chrome_options.add_argument('--no-sandbox')
+  chrome_options.add_argument('--disable-dev-shm-usage')
+  chrome_options.add_argument('--hide-scrollbars')
+  if preferences:
+    chrome_options.add_experimental_option("prefs", preferences)
+  driver = webdriver.Chrome(options=chrome_options)
+  # Set a reliable window size for all tests (can be overwritten though)
+  driver.set_window_size(DEFAULT_WIDTH, DEFAULT_HEIGHT)
+  return driver
+
+
+def find_parents(parents,
+                 by: str = By.CLASS_NAME,
+                 parent_path: List[str] = None
+                ) -> list[webdriver.remote.webelement.WebElement]:
+  """
+    Returns the final list of elements matching the 'by' in parent_path, waits for elements if needed.
+    Note that we only return the elements matching all the way to the last parent_path value.
+    For example:
+      <div id=block>
+        <div id=chart />
+        <div id=chart />
+      </div>
+      <div id=block>
+        <div id=chart />
+        <div id=chart />
+      </div>
+    For find_parents(driver, By.ID, ['block', 'chart']) --> returns all 4 chart elements within the blocks. 
+    """
+  if not parent_path:
+    return parents
+
+  elements_to_return = []
+  for value in parent_path:
+    this_level_elements = []
+    for par in parents:
+      this_level_elements.extend(find_elems(par, by, value))
+    elements_to_return = this_level_elements
+
+  return elements_to_return
+
+
+def find_elems(
+    parent: webdriver.remote.webelement.WebElement,
+    by: str = By.CLASS_NAME,
+    value: str = "",
+    path_to_elem: List[str] = None
+) -> list[webdriver.remote.webelement.WebElement]:
+  """
+    Finds elements within the parent elements with the specified by string and value.
+    If not found, it will wait up to the timeout set, and then return None.
+    """
+  parents = find_parents([parent], by,
+                         path_to_elem) if path_to_elem else [parent]
+
+  elements = []
+  for par in parents:
+    wait_elem(par, by, value, TIMEOUT)
+    found_elements = par.find_elements(by, value)
+    if found_elements:
+      elements.extend(found_elements)
+    else:
+      elems_or_none = wait_elem(par, by, value, TIMEOUT)
+      if elems_or_none:
+        elements.append(elems_or_none)
+  return elements if elements else []
+
+
+def find_elem(
+    parent: webdriver.remote.webelement.WebElement,
+    by: str = By.CLASS_NAME,
+    value: str = "",
+    path_to_elem: List[str] = None
+) -> webdriver.remote.webelement.WebElement | None:
+  """
+  Finds an element within the parent element with the specified by string and value.
+  If not found, it will wait up to the timeout set, and then return None.
+  """
+  elems = find_elems(parent, by, value, path_to_elem)
+  return elems[0] if elems else None
+
+
+def find_any_of_elems(
+    parent: webdriver.remote.webelement.WebElement,
+    locators: List[tuple]) -> webdriver.remote.webelement.WebElement | None:
+  """
+  Waits for the first element to be present from a list of locators. This can be
+  used when we do not know which of the given elements will appear, and can be used
+  to distinguish functionality behind feature flags.
+
+  Args:
+    parent: The parent to search inside of.
+    locators: A list of locator tuples, e.g., [(By.ID, 'id'), (By.CLASS_NAME, 'class')].
+
+  Returns:
+    The first of the requested elements that is found, or None if no elements are found.
+  """
+  if not locators:
+    return None
+
+  wait = WebDriverWait(parent, TIMEOUT)
+  try:
+    conditions = [EC.presence_of_element_located(loc) for loc in locators]
+    return wait.until(EC.any_of(*conditions))
+  except TimeoutException:
+    return None
+
+
+def scroll_to_elem(
+    parent: webdriver.remote.webelement.WebElement,
+    by: str = By.CLASS_NAME,
+    value: str = "",
+    path_to_elem: List[str] = None
+) -> webdriver.remote.webelement.WebElement | None:
+  """
+  Scrolls to the element specified by By attribute and value. Waits for it to load if needed.
+  Returns the element it scrolled to.
+  """
+  elem_to_scroll_to = find_elem(parent, by, value, path_to_elem)
+  if not elem_to_scroll_to:
+    return None
+
+  parent.execute_script("arguments[0].scrollIntoView();", elem_to_scroll_to)
+  return elem_to_scroll_to
+
+
+def wait_elem(driver,
+              by: str = By.CLASS_NAME,
+              value: str = "",
+              timeout_seconds: float = TIMEOUT):
+  """
+  Waits for an element within the parent element with the specified by string and value.
+  Uses a default timeout of 5 seconds.
+  Returns None if not found.
+  """
+  try:
+    return WebDriverWait(driver, timeout_seconds).until(
+        EC.presence_of_element_located((by, value)))
+  except:
+    return None
+
+
+def wait_for_text(driver,
+                  text,
+                  by: str,
+                  value: str,
+                  timeout_seconds: float = TIMEOUT):
+  """
+  Waits for a text to be present in the element specified by by and value.
+
+  Returns:
+    The element that contains the text. If not found, returns None.
+  """
+  condition = EC.text_to_be_present_in_element((by, value), text)
+  return WebDriverWait(driver, timeout_seconds).until(condition)
+
+
+def hover_until_tooltip_appears(
+    driver,
+    hover_by: str,
+    hover_value: str,
+    tooltip_text: str,
+    tooltip_by: str = By.ID,
+    tooltip_value: str = "tooltip",
+    timeout_seconds: float = TIMEOUT
+) -> webdriver.remote.webelement.WebElement | None:
+  """
+  Repeatedly hovers over an element and waits for a tooltip with specific text to appear.
+  This can be useful for avoiding race conditions.
+
+  Args:
+    driver: The Selenium WebDriver instance.
+    hover_by: The locator strategy to find the element to hover over (e.g., By.XPATH, By.ID).
+    hover_value: The locator string for the element to hover over.
+    tooltip_text: The specific text expected to be populated inside the tooltip.
+    tooltip_by: The locator strategy to find the tooltip element. Defaults to By.ID.
+    tooltip_value: The locator string for the tooltip element. Defaults to "tooltip".
+    timeout_seconds: Maximum time in seconds to wait for the tooltip and content. Defaults to TIMEOUT.
+
+  Returns:
+    The tooltip element if found, or None if no elements are found.
+  """
+
+  def _hover_and_check(d):
+    try:
+      hover_target = d.find_element(hover_by, hover_value)
+
+      # We move to the element and firethe hover event
+      ActionChains(d).move_to_element(hover_target).perform()
+
+      # Check if the tooltip was created and populated with the expected content.
+      tooltip = d.find_element(tooltip_by, tooltip_value)
+      if tooltip.is_displayed() and tooltip_text in tooltip.text:
+        return tooltip
+    except (NoSuchElementException, StaleElementReferenceException):
+      # On expected errors (like stale reference errors) return false to continue the wait loop
+      return False
+
+    return False
+
+  try:
+    return WebDriverWait(driver, timeout_seconds).until(_hover_and_check)
+  except TimeoutException:
+    return None

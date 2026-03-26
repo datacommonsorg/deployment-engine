@@ -1,0 +1,487 @@
+/**
+ * Copyright 2022 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+@import "base";
+
+/* TODO: split into smaller scss files. */
+
+#main-body {
+  padding-bottom: 6rem;
+  padding-top: 3rem;
+  position: relative;
+}
+
+#main-footer {
+  margin-top: 0;
+}
+
+.main-content {
+  margin: 0;
+  background-color: white;
+}
+
+body {
+  background-color: #f8f8f8;
+  font-size: 1rem;
+}
+
+.nav-btn {
+  background: #660000;
+  border-color: none;
+  font-size: 1rem;
+}
+
+.file-options-section {
+  margin-top: 2rem;
+}
+
+.file-options-header {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.file-options-input {
+  display: flex;
+  padding-top: 0.5rem;
+  width: fit-content;
+}
+
+.file-options-input span,
+.file-options-input .form-control {
+  font-size: 0.9rem;
+}
+
+.file-options-input span {
+  width: 7rem;
+}
+
+table {
+  display: block;
+  font-size: 0.9rem;
+  max-width: 100%;
+  overflow: auto;
+  width: fit-content;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+th {
+  background: #f5f6fa;
+  border-top: none;
+}
+
+th,
+td {
+  padding: 0.2rem 0.5rem;
+  text-align: center;
+}
+
+tr th {
+  height: 2rem;
+  vertical-align: center;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr td:first-child,
+tr th:first-child {
+  border-left: none;
+}
+
+tr td:last-child,
+tr th:last-child {
+  border-right: none;
+}
+
+.navigation-section {
+  display: flex;
+  margin-top: 1.5rem;
+  gap: 0.5rem;
+}
+
+.template-options-container {
+  margin: 0 -0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  gap: 0.5rem;
+
+  .card {
+    padding: 0;
+    border-color: rgba(0, 0, 0, 0.25);
+  }
+
+  .card-body {
+    padding: 0.75rem;
+  }
+}
+
+.template-option,
+.template-option-selected {
+  background-color: white;
+  cursor: pointer;
+  width: 25rem;
+
+  /* Increase width on larger screen so that we keep 2 columns */
+  @include media-breakpoint-up(xl) {
+    width: 35rem;
+  }
+}
+
+.template-option:hover:not(:has(.info-button:hover)),
+.template-option-selected
+{
+  outline: solid 1.5px var(--dc-primary)
+}
+
+.template-option-subtitle {
+  font-size: 0.9rem;
+}
+
+.template-option-example-container {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.template-option-example {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0.5rem;
+}
+
+.template-example-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--light);
+  padding: 1rem;
+  align-items: center;
+  position: relative;
+  height: 8rem;
+
+  table, th, td {
+    background: white;
+  }
+
+  .template-example-table {
+    display: flex;
+    align-items: center;
+  }
+
+  .info-button {
+    height: fit-content;
+    padding: 0.2rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    color: var(--dc-gray);
+    margin-left: 0.5rem;
+    z-index: 2;
+  }
+
+  .info-button:hover {
+    background-color: #ccc;
+  }
+
+  .selected-icon {
+    position: absolute;
+    color: var(--dc-primary);
+    left: -0.4rem;
+    top: -0.4rem;
+  }
+}
+
+.template-example-explanation-container {
+  position: relative;
+}
+
+.template-example-explanation {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  background: white;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  min-width: 10rem;
+}
+
+.mapping-page-navigation-section {
+  margin-top: 1rem;
+}
+
+.mapping-page-navigation-option {
+  margin: 0.5rem 0;
+}
+
+.mapping-page-navigation-button {
+  color: var(--dc-primary);
+  cursor: pointer;
+  padding-left: 1rem;
+  text-decoration: underline;
+}
+
+#mapping-section {
+  margin-bottom: 3rem;
+
+  @include media-breakpoint-up(md) {
+    max-height: 70vh;
+    overflow-y: auto;
+    padding-right: 2rem;
+  }
+
+  section {
+    margin-bottom: 2em;
+  }
+}
+
+.mapping-page-section.mapping-input-container {
+  height: fit-content;
+}
+
+.file-details-page-content,
+.mapping-page-content {
+  display: flex;
+  position: relative;
+
+  @include media-breakpoint-down(sm) {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+.mapping-page-section,
+.file-details-page-section {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+  position: relative;
+  max-width: 60%;
+}
+
+.mapping-input-section {
+  margin: 1rem 0;
+  padding: 0.75rem;
+  background-color: var(--light);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+  .form-control {
+    font-size: 0.9rem;
+  }
+}
+
+.file-preview-section {
+  height: 100%;
+  
+  @include media-breakpoint-up(md) {
+    padding-left: 2rem;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .file-preview-name {
+    margin-bottom: 1rem;
+    word-break: break-all;
+  }
+}
+
+.place-type-property-option {
+  display: flex;
+  align-items: center;
+  padding: 0.7rem 0 0 0.5rem;
+  gap: 0.5rem;
+}
+
+.place-type-property-option span {
+  width: 4rem;
+}
+
+.mapping-headers {
+  padding-left: 1rem;
+
+  .header-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+
+    .header-item-input-section {
+      flex-grow: 1;
+    }
+
+    .header-input-subitem {
+      display: flex;
+      align-items: flex-start;
+      padding: 0.2rem 0;
+      flex-wrap: wrap;
+
+      .header-input-label {
+        width: 5rem;
+        /* use same calculation for height of input boxes from bootstrap */
+        height: calc(1.5em + 0.75rem + 2px);
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+      }
+
+      .header-input-subitem-input {
+        flex-grow: 1;
+        width: 10rem;
+      }
+    }
+
+    .material-icons-outlined {
+      color: inherit;
+      opacity: 0.7;
+      cursor: default;
+      margin: 0.5rem;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+    }
+
+    .material-icons-outlined:hover {
+      background-color: #ccc;
+    }
+  }
+
+  .mapping-header-input-add {
+    cursor: default;
+    width: fit-content;
+    padding: 0.5rem;
+  }
+
+  .mapping-header-input-add:hover {
+    background-color: #ccc;
+    border-radius: 1rem;
+  }
+}
+
+.column-header-value-error,
+.constant-value-input-error {
+  border-color: var(--dc-error);
+}
+
+.error-message {
+  width: fit-content;
+  font-size: 0.9rem;
+  color: var(--dc-error);
+}
+
+.file-upload-section {
+  margin: 1rem 0;
+
+  label {
+    padding: 0.5rem 1rem;
+    border: 1.5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.25rem;
+    background-color: var(--light);
+    margin-right: 0.5rem;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+
+  label:hover {
+    background-color: var(--dc-gray-lite);
+  }
+}
+
+.download-page-content {
+  width: fit-content;
+
+  .file-download-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 1rem 0;
+    justify-content: space-between;
+
+    span {
+      margin-right: 1rem;
+    }
+  }
+
+  .file-download-button {
+    padding: 0.25rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    background: var(--light);
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      margin-right: 0;
+    }
+
+    #spinner::after {
+      width: 20px;
+      height: 20px;
+      border: 2px solid rgba(0, 0, 0, 0.2);
+      border-top: 3px solid var(--dc-primary);
+    }
+  }
+
+  .file-download-button:hover {
+    background-color: var(--dc-gray-lite);
+  }
+}
+
+.file-details-inputs {
+  padding-right: 2rem;
+}
+
+.mapping-errors {
+  color: var(--dc-error);
+}
+
+.info-page-content h3 {
+  padding-bottom: 1rem;
+}
+
+.mapping-input-section.mapping-column-input,
+.mapping-input-section.mapping-constant-input {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.mapping-column-input .mapping-input-label,
+.mapping-constant-input .mapping-input-label {
+  margin-right: 0.5rem;
+  /* use same calculation for height of input boxes from bootstrap */
+  height: calc(1.5em + 0.75rem + 2px);
+  display: flex;
+  align-items: center;
+  width: 5rem;
+  flex-grow: 1;
+}
+
+.mapping-input-form {
+  flex-grow: 1;
+  width: 12rem;
+}
+
+#mapping-section .navigation-section {
+  position: absolute;
+  bottom: 0;
+}

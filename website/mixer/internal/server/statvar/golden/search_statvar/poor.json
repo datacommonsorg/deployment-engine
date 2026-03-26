@@ -1,0 +1,368 @@
+{
+  "statVars": [
+    {
+      "name": "Average proportion of deprivations for people multidimensionally poor",
+      "dcid": "sdg/SD_MDP_ANDI"
+    },
+    {
+      "name": "Proportion of government spending in health, direct social transfers and education which benefit the monetary poor",
+      "dcid": "sdg/SD_XPD_MNPO"
+    },
+    {
+      "name": "Proportion of poor population receiving social assistance cash benefit",
+      "dcid": "sdg/SI_COV_POOR"
+    },
+    {
+      "name": "Average proportion of deprivations for people multidimensionally poor [Rural]",
+      "dcid": "sdg/SD_MDP_ANDI.URBANISATION--R"
+    },
+    {
+      "name": "Average proportion of deprivations for people multidimensionally poor [Urban]",
+      "dcid": "sdg/SD_MDP_ANDI.URBANISATION--U"
+    },
+    {
+      "name": "Percentage of Adult Population With Poor Mental Health",
+      "dcid": "Percent_Person_WithMentalHealthNotGood"
+    },
+    {
+      "name": "Percentage of Adult Population With Poor Physical Health",
+      "dcid": "Percent_Person_WithPhysicalHealthNotGood"
+    },
+    {
+      "name": "Percentage of Population With Poor General Health",
+      "dcid": "Percent_Person_18OrMoreYears_WithPoorGeneralHealth"
+    },
+    {
+      "name": "Proportion of poor population receiving social assistance cash benefit [Female]",
+      "dcid": "sdg/SI_COV_POOR.SEX--F"
+    },
+    {
+      "name": "Proportion of poor population receiving social assistance cash benefit [Male]",
+      "dcid": "sdg/SI_COV_POOR.SEX--M"
+    },
+    {
+      "name": "Lower Confidence Interval Limit, Prevalence of Physical Health Not Good",
+      "dcid": "LowerConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithPoorGeneralHealth"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person"
+    },
+    {
+      "name": "Upper Confidence Interval Limit, Prevalence of Physical Health Not Good",
+      "dcid": "UpperConfidenceIntervalLimit_Percent_Person_18OrMoreYears_WithPoorGeneralHealth"
+    },
+    {
+      "name": "Number of students with poor performance in KCSE",
+      "dcid": "Count_Student_KenyaCertificateSecondaryEducation_PoorPerformance"
+    },
+    {
+      "name": "Population: 5 - 17 Years, Poor",
+      "dcid": "Count_Person_5To17Years_Poor"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Citizen Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Citizen"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Female Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Female"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Foreign Born Outside EU28 Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_ForeignBornOutsideEU28"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Foreign Born Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_ForeignBorn"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Foreign Born Within EU28 Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_ForeignBornWithinEU28"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Less Than Primary Education Or Primary Education Or Lower Secondary Education Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_LessThanPrimaryEducationOrPrimaryEducationOrLowerSecondaryEducation"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Limited Activity Limitation Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_LimitedActivityLimitation"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Male Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Male"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Moderate Activity Limitation Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_ModerateActivityLimitation"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Native Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Native"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among No Activity Limitation Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_NoActivityLimitation"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Not A Citizen Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_NotACitizen"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Rural Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Rural"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Semi Urban Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_SemiUrban"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Severe Activity Limitation Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_SevereActivityLimitation"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Tertiary Education Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_TertiaryEducation"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Upper Secondary Education Or Post Secondary Non Tertiary Education Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_UpperSecondaryEducationOrPostSecondaryNonTertiaryEducation"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Urban Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Urban"
+    },
+    {
+      "name": "Number of female students with poor performance in the Kenya certificate of secondary education",
+      "dcid": "Count_Student_KenyaCertificateSecondaryEducation_Female_PoorPerformance"
+    },
+    {
+      "name": "Number of male students with poor performance in KCSE",
+      "dcid": "Count_Student_KenyaCertificateSecondaryEducation_Male_PoorPerformance"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Citizen Outside EU28 Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_CitizenOutsideEU28"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Citizen, Female Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Citizen_Female"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Citizen, Male Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Citizen_Male"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Female, Foreign Born Outside EU28 Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Female_ForeignBornOutsideEU28"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Female, Foreign Born Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Female_ForeignBorn"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Female, Foreign Born Within EU28 Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Female_ForeignBornWithinEU28"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Female, Limited Activity Limitation Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Female_LimitedActivityLimitation"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Female, Moderate Activity Limitation Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Female_ModerateActivityLimitation"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Female, Native Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Female_Native"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Female, No Activity Limitation Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Female_NoActivityLimitation"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Female, Severe Activity Limitation Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Female_SevereActivityLimitation"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Less Than Primary Education Or Primary Education Or Lower Secondary Education, Female Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_LessThanPrimaryEducationOrPrimaryEducationOrLowerSecondaryEducation_Female"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Less Than Primary Education Or Primary Education Or Lower Secondary Education, Male Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_LessThanPrimaryEducationOrPrimaryEducationOrLowerSecondaryEducation_Male"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Male, Foreign Born Outside EU28 Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Male_ForeignBornOutsideEU28"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Male, Foreign Born Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Male_ForeignBorn"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Male, Foreign Born Within EU28 Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Male_ForeignBornWithinEU28"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Male, Limited Activity Limitation Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Male_LimitedActivityLimitation"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Male, Moderate Activity Limitation Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Male_ModerateActivityLimitation"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Male, Native Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Male_Native"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Male, No Activity Limitation Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Male_NoActivityLimitation"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Male, Severe Activity Limitation Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Male_SevereActivityLimitation"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Not A Citizen, Female Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_NotACitizen_Female"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Not A Citizen, Male Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_NotACitizen_Male"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Rural, Female Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Rural_Female"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Rural, Male Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Rural_Male"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Semi Urban, Female Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_SemiUrban_Female"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Semi Urban, Male Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_SemiUrban_Male"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Tertiary Education, Female Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_TertiaryEducation_Female"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Tertiary Education, Male Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_TertiaryEducation_Male"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Upper Secondary Education Or Post Secondary Non Tertiary Education, Female Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_UpperSecondaryEducationOrPostSecondaryNonTertiaryEducation_Female"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Upper Secondary Education Or Post Secondary Non Tertiary Education, Male Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_UpperSecondaryEducationOrPostSecondaryNonTertiaryEducation_Male"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Urban, Female Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Urban_Female"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Urban, Male Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_Urban_Male"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Within EU28 And Not A Citizen Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_WithinEU28AndNotACitizen"
+    },
+    {
+      "name": "Percentage of children aged 12 to 14 years from the poorest households who are in the labor force.",
+      "dcid": "Count_Person_12To14Years_InLaborForce_LowestWealthIndex_AsAFractionOf_Count_Person_12To14Years_LowestWealthIndex"
+    },
+    {
+      "name": "Percentage of children aged 5 to 11 years who are working and belong to the poorest households.",
+      "dcid": "Count_Person_5To11Years_InLaborForce_LowestWealthIndex_AsAFractionOf_Count_Person_5To11Years_LowestWealthIndex"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Citizen Outside EU28, Female Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_CitizenOutsideEU28_Female"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Citizen Outside EU28, Male Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_CitizenOutsideEU28_Male"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Within EU28 And Not A Citizen, Female Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_WithinEU28AndNotACitizen_Female"
+    },
+    {
+      "name": "Percentage Receiving Poor Social Support Among Within EU28 And Not A Citizen, Male Population",
+      "dcid": "Percent_ReceivingPoorSocialSupport_In_Count_Person_WithinEU28AndNotACitizen_Male"
+    },
+    {
+      "name": "Account, income, poorest 40% (% ages 15+)",
+      "dcid": "worldBank/account_t_d_7"
+    },
+    {
+      "name": "Borrowed from family or friends, income, poorest 40% (% ages 15+)",
+      "dcid": "worldBank/fin22b_t_d_7"
+    },
+    {
+      "name": "Financial institution account, income, poorest 40% (% ages 15+)",
+      "dcid": "worldBank/fin1_t_d_7"
+    },
+    {
+      "name": "Owns a credit card, income, poorest 40% (% ages 15+)",
+      "dcid": "worldBank/fin7_t_d_7"
+    },
+    {
+      "name": "Owns a debit card, income, poorest 40% (% ages 15+)",
+      "dcid": "worldBank/fin2_t_d_7"
+    },
+    {
+      "name": "Saved at a financial institution, income, poorest 40% (% ages 15+)",
+      "dcid": "worldBank/fin17a_t_d_7"
+    },
+    {
+      "name": "Account ownership at a financial institution or with a mobile-money-service provider, poorest 40% (% of population ages 15+)",
+      "dcid": "worldBank/FX_OWN_TOTL_40_ZS"
+    },
+    {
+      "name": "Benefit incidence of social protection and labor programs to poorest quintile (% of total SPL benefits)",
+      "dcid": "worldBank/per_allsp_ben_q1_tot"
+    },
+    {
+      "name": "Borrowed from a formal financial institution, income, poorest 40% (% ages 15+)",
+      "dcid": "worldBank/fin22a_c_t_d_7"
+    },
+    {
+      "name": "Owns a debit or credit card, income, poorest 40% (% ages 15+)",
+      "dcid": "worldBank/fin2_7_t_d_7"
+    },
+    {
+      "name": "Benefit incidence of social insurance programs to poorest quintile (% of total social insurance benefits)",
+      "dcid": "worldBank/per_si_allsi_ben_q1_tot"
+    },
+    {
+      "name": "Benefit incidence of social safety net programs to poorest quintile (% of total safety net benefits)",
+      "dcid": "worldBank/per_sa_allsa_ben_q1_tot"
+    },
+    {
+      "name": "Coverage of social insurance programs in poorest quintile (% of population)",
+      "dcid": "worldBank/per_si_allsi_cov_q1_tot"
+    },
+    {
+      "name": "Coverage of social safety net programs in poorest quintile (% of population)",
+      "dcid": "worldBank/per_sa_allsa_cov_q1_tot"
+    },
+    {
+      "name": "Coverage of unemployment benefits and ALMP in poorest quintile (% of population)",
+      "dcid": "worldBank/per_lm_alllm_cov_q1_tot"
+    }
+  ],
+  "matches": [
+    "poor",
+    "poorest"
+  ]
+}

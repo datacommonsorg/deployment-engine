@@ -1,0 +1,29 @@
+{
+  "data": {
+    "Count_Person_Female": {
+      "properties": [
+        "constraintProperties",
+        "description",
+        "gender",
+        "measuredProperty",
+        "memberOf",
+        "name",
+        "populationType",
+        "provenance",
+        "statType",
+        "typeOf"
+      ]
+    },
+    "foo": {},
+    "test_var_1": {
+      "properties": [
+        "typeOf",
+        "measuredProperty",
+        "statType",
+        "name",
+        "description",
+        "memberOf"
+      ]
+    }
+  }
+}

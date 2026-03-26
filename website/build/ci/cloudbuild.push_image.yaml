@@ -1,0 +1,89 @@
+# Copyright 2023 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Manual Cloud Build pipeline for building and pushing images to GCR.
+# Trigger this manually (e.g., via /scripts/push_image.sh) for development deployments or testing custom images.
+# This is NOT used by the official CI/CD pipeline nor any automated triggers.
+
+steps:
+  - id: push-web-server
+    name: gcr.io/cloud-builders/docker
+    entrypoint: "bash"
+    args:
+      - -c
+      - |
+        set -e
+        DOCKER_BUILDKIT=1
+        docker build -f build/web_server/Dockerfile --tag gcr.io/$_PROJECT_ID/datacommons-website:${_TAG} .
+        docker push gcr.io/$_PROJECT_ID/datacommons-website:${_TAG}
+
+  - id: push-cdc-services
+    name: gcr.io/cloud-builders/docker
+    entrypoint: "bash"
+    args:
+      - -c
+      - |
+        set -e
+        DOCKER_BUILDKIT=1
+        # Bundle container with website, esp and mixer.
+        docker build -f build/cdc_services/Dockerfile \
+          --tag gcr.io/$_PROJECT_ID/datacommons-services:${_TAG} \
+          --tag gcr.io/$_PROJECT_ID/datacommons-services:latest \
+          .
+        docker push gcr.io/$_PROJECT_ID/datacommons-services:${_TAG}
+        docker push gcr.io/$_PROJECT_ID/datacommons-services:latest
+    waitFor: ["-"]
+
+  - id: push-nl-server
+    name: gcr.io/cloud-builders/docker
+    entrypoint: "bash"
+    args:
+      - -c
+      - |
+        set -e
+        DOCKER_BUILDKIT=1 docker build -f build/nl_server/Dockerfile --tag gcr.io/$_PROJECT_ID/datacommons-nl:${_TAG} .
+        docker push gcr.io/$_PROJECT_ID/datacommons-nl:${_TAG}
+    waitFor: ["-"]
+
+  - id: push-nodejs-server
+    name: gcr.io/cloud-builders/docker
+    entrypoint: "bash"
+    args:
+      - -c
+      - |
+        set -e
+        DOCKER_BUILDKIT=1 docker build -f build/nodejs_server/Dockerfile --tag gcr.io/$_PROJECT_ID/datacommons-nodejs:${_TAG} .
+        docker push gcr.io/$_PROJECT_ID/datacommons-nodejs:${_TAG}
+    waitFor: ["-"]
+
+  - id: push-website-cron-testing
+    name: gcr.io/cloud-builders/docker
+    entrypoint: "bash"
+    args:
+      - -c
+      - |
+        set -e
+        DOCKER_BUILDKIT=1
+        docker build -f build/website_cron_testing/Dockerfile \
+          --tag gcr.io/$_PROJECT_ID/website-cron-testing:${_TAG} \
+          --tag gcr.io/$_PROJECT_ID/website-cron-testing:latest \
+          .
+        docker push gcr.io/$_PROJECT_ID/website-cron-testing:${_TAG}
+        docker push gcr.io/$_PROJECT_ID/website-cron-testing:latest
+    waitFor: ["-"]
+
+timeout: 3600s
+options:
+  dynamic_substitutions: true
+  machineType: "E2_HIGHCPU_32"

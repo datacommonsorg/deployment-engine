@@ -1,0 +1,63 @@
+{
+  "Count_Person": [
+    {
+      "SubjectID": "Count_Person",
+      "Predicate": "description"
+    },
+    {
+      "SubjectID": "Count_Person",
+      "Predicate": "measuredProperty"
+    },
+    {
+      "SubjectID": "Count_Person",
+      "Predicate": "memberOf"
+    },
+    {
+      "SubjectID": "Count_Person",
+      "Predicate": "name"
+    },
+    {
+      "SubjectID": "Count_Person",
+      "Predicate": "populationType"
+    },
+    {
+      "SubjectID": "Count_Person",
+      "Predicate": "provenance"
+    },
+    {
+      "SubjectID": "Count_Person",
+      "Predicate": "statType"
+    },
+    {
+      "SubjectID": "Count_Person",
+      "Predicate": "typeOf"
+    }
+  ],
+  "Person": [
+    {
+      "SubjectID": "Person",
+      "Predicate": "equivalentClass"
+    },
+    {
+      "SubjectID": "Person",
+      "Predicate": "name"
+    },
+    {
+      "SubjectID": "Person",
+      "Predicate": "provenance"
+    },
+    {
+      "SubjectID": "Person",
+      "Predicate": "source"
+    },
+    {
+      "SubjectID": "Person",
+      "Predicate": "subClassOf"
+    },
+    {
+      "SubjectID": "Person",
+      "Predicate": "typeOf"
+    }
+  ],
+  "foo": []
+}

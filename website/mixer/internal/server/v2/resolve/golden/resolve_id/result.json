@@ -1,0 +1,20 @@
+{
+  "entities": [
+    {
+      "node": "Q30",
+      "candidates": [
+        {
+          "dcid": "country/USA"
+        }
+      ]
+    },
+    {
+      "node": "Q110739",
+      "candidates": [
+        {
+          "dcid": "geoId/06085"
+        }
+      ]
+    }
+  ]
+}

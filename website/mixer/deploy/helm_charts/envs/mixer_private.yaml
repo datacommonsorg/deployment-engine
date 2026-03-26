@@ -1,0 +1,16 @@
+# Helm config
+mixer:
+  hostProject: datcom-mixer-statvar
+  serviceName: mixer.endpoints.datcom-mixer-statvar.cloud.goog
+
+ingress:
+  enabled: true
+  name: mixer-ingress-private
+  annotations:
+    { ingress.gcp.kubernetes.io/pre-shared-cert: "mixer-certificate" }
+
+# GCP level config
+ip: 35.244.175.66
+region: us-central1
+api_title: DataCommons API (Private)
+nodes: 3

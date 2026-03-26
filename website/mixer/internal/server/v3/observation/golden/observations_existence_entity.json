@@ -1,0 +1,70 @@
+{
+  "by_variable": {
+    "Count_HeatTemperatureEvent": {
+      "by_entity": {
+        "wikidataId/Q341968": {}
+      }
+    },
+    "Count_Person": {
+      "by_entity": {
+        "wikidataId/Q1764983": {},
+        "wikidataId/Q341968": {}
+      }
+    },
+    "Max_Rainfall": {
+      "by_entity": {
+        "wikidataId/Q341968": {}
+      }
+    },
+    "Max_Snowfall": {
+      "by_entity": {
+        "wikidataId/Q341968": {}
+      }
+    },
+    "Max_Temperature": {
+      "by_entity": {
+        "wikidataId/Q341968": {}
+      }
+    },
+    "Mean_BarometricPressure": {
+      "by_entity": {
+        "wikidataId/Q341968": {}
+      }
+    },
+    "Mean_Rainfall": {
+      "by_entity": {
+        "wikidataId/Q341968": {}
+      }
+    },
+    "Mean_Snowfall": {
+      "by_entity": {
+        "wikidataId/Q341968": {}
+      }
+    },
+    "Mean_Temperature": {
+      "by_entity": {
+        "wikidataId/Q341968": {}
+      }
+    },
+    "Mean_Visibility": {
+      "by_entity": {
+        "wikidataId/Q341968": {}
+      }
+    },
+    "Min_Rainfall": {
+      "by_entity": {
+        "wikidataId/Q341968": {}
+      }
+    },
+    "Min_Snowfall": {
+      "by_entity": {
+        "wikidataId/Q341968": {}
+      }
+    },
+    "Min_Temperature": {
+      "by_entity": {
+        "wikidataId/Q341968": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,304 @@
+/**
+ * Copyright 2020 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+@import "base_tools";
+@import "stat_var_widget";
+@import "../draw";
+@import "../draw_choropleth";
+@import "../place_selector";
+@import "../source_selector";
+@import "../tool_chart_footer";
+
+// TODO(chejennifer): factor out some common styling
+
+#main-pane #plot-container {
+  direction: initial;
+  padding: 2rem;
+  overflow-y: scroll;
+}
+
+.chart-region {
+  flex-grow: 1;
+
+  .footer {
+    font-size: 13px;
+    margin-top: 1rem;
+  }
+}
+
+.chart-section {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.5rem;
+}
+
+.map-title {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.explore-timeline-link {
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  font-weight: $headings-font-weight;
+  text-decoration: none !important;
+  justify-content: flex-end;
+}
+
+.place-details,
+.explore-timeline-link {
+  font-size: 0.9rem;
+}
+
+.place-details {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 15px;
+}
+
+.place-details-section {
+  padding: 15px;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+.place-details-section-title {
+  font-weight: $headings-font-weight;
+  padding-bottom: 0.15rem;
+}
+
+.place-details-card {
+  padding: 0;
+}
+
+#tooltip footer {
+  margin-top: 0.5rem;
+}
+
+#choropleth-map {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  flex-grow: 1;
+}
+
+.legend rect {
+  fill: #f8f8f8;
+}
+
+.error-message {
+  color: #721c24;
+  font-size: 0.9rem;
+  padding: 15px;
+  border-radius: 3px;
+  background: #f8d7da;
+}
+
+.zoom-button {
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 0.1rem;
+  display: flex;
+  width: fit-content;
+}
+
+.zoom-button:hover {
+  background-color: var(--dc-gray-lite);
+}
+
+.map-section-container {
+  position: relative;
+  padding: 0 15px;
+}
+
+.zoom-button-section {
+  position: absolute;
+  bottom: 0;
+  background-color: #f8f8f8;
+}
+
+.zoom-button i {
+  font-size: 1.3rem;
+}
+
+#chart-container {
+  width: 100%;
+  display: flex;
+}
+
+#choropleth-legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 10px;
+}
+
+#choropleth-legend .legend {
+  display: block;
+}
+
+#legend-unit {
+  margin: 0 0 5px 8px;
+}
+
+#date-range-info {
+  height: fit-content;
+  width: fit-content;
+  position: relative;
+  padding-left: 0.2rem;
+}
+
+#date-range-info i {
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#date-range-tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  top: -2rem;
+  z-index: 5;
+  background-color: var(--dc-gray-lite);
+  font-size: 0.8rem;
+  border-radius: 8px;
+  border: 0.5px solid var(--dc-gray-lite);
+  padding: 0.3rem;
+}
+
+.dot {
+  stroke: var(--dc-gray-lite);
+  stroke-width: 0.05rem;
+}
+
+.dot:hover {
+  fill: var(--dc-gray-lite);
+  stroke: black;
+}
+
+/* Time Slider Styles */
+
+.time-slider-container {
+  align-items: center;
+  justify-content: center;
+  margin: 20px 100px;
+}
+
+.time-slider {
+  background-color: #f8f8f8;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  font-family: monospace;
+  font-size: 0.8rem;
+  padding: 10px;
+}
+
+.time-slider-svg {
+  height: 14px;
+  width: 100%;
+}
+
+.time-slider-play-button {
+  color: #808080;
+  cursor: pointer;
+  margin: -3px 5px 0;
+}
+
+.time-slider-track,
+.time-slider-track-inset,
+.time-slider-handle,
+.time-slider-handle-inset {
+  stroke-linecap: round;
+  transform: translate(-8px, 6px);
+}
+
+.time-slider-track {
+  stroke: #808080;
+  stroke-width: 6px;
+}
+
+.time-slider-track-inset {
+  stroke: #dcdcdc;
+  stroke-width: 4px;
+}
+
+.time-slider-handle {
+  stroke: #808080;
+  stroke-width: 12px;
+  cursor: pointer;
+}
+
+.time-slider-handle-inset {
+  stroke: #dcdcdc;
+  stroke-width: 10px;
+}
+
+.time-slider-left,
+.time-slider-break {
+  float: left;
+}
+
+.time-slider-break {
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+  height: 40px;
+  margin-top: -10px;
+  padding: 0 5px;
+}
+
+.time-slider-current-date {
+  text-align: center;
+}
+
+.time-slider-start-date {
+  color: #808080;
+  margin-right: 5px;
+}
+
+.time-slider-end-date {
+  float: right;
+  margin-left: 5px;
+  color: #808080;
+}
+
+.time-slider-tick-mark {
+  stroke: #808080;
+  stroke-width: 2px;
+}
+
+#time-slider-slide {
+  overflow: hidden;
+}
+
+.chart-section-container {
+  margin-bottom: 15px;
+}
+
+.chart-section-card.card {
+  margin-bottom: 0;
+  border-bottom: none;
+  border-radius: 0;
+  padding-top: 30px;
+}
+
+#map-chart {
+  padding: 0;
+}
+
+#placeholder-container .footer {
+  font-size: 13px;
+}

@@ -1,0 +1,30 @@
+project_id: datcom-apigee-dev
+proxies:
+  - name: api
+    policies:
+      - copy-key-param-to-header
+      - verify-api-key-in-header
+      - rewrite-missing-key-message
+      - rewrite-missing-allow-header-error
+      - enforce-quota-limit
+      - rewrite-quota-exceeded-message
+      - set-southbound-key
+      - strip-api-key-header-and-params
+      - block-internal-only-endpoints
+      - block-deprecated-endpoints
+      - set-content-type-to-json
+      - extract-json-params
+    proxy_endpoints:
+      - api
+    target_endpoints:
+      - api
+      - mcp
+  - name: nl
+    policies:
+      - copy-key-param-to-header
+      - verify-api-key-in-header
+      - strip-api-key-header-and-params
+    proxy_endpoints:
+      - nl
+    target_endpoints:
+      - nl

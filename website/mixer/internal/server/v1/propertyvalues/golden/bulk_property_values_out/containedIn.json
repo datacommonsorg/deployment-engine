@@ -1,0 +1,76 @@
+{
+  "data": [
+    {
+      "node": "country/USA",
+      "values": [
+        {
+          "name": "North America",
+          "types": [
+            "Continent"
+          ],
+          "dcid": "northamerica",
+          "provenanceId": "dc/base/WikidataOtherIdGeos"
+        },
+        {
+          "name": "Americas",
+          "types": [
+            "GeoRegion"
+          ],
+          "dcid": "undata-geo/G00134000",
+          "provenanceId": "dc/base/WikidataOtherIdGeos"
+        },
+        {
+          "name": "Northern America",
+          "types": [
+            "GeoRegion"
+          ],
+          "dcid": "undata-geo/G00136000",
+          "provenanceId": "dc/base/WikidataOtherIdGeos"
+        },
+        {
+          "name": "Organisation for Economic Co-operation and Development (OECD)",
+          "types": [
+            "GeoRegion"
+          ],
+          "dcid": "undata-geo/G00406000",
+          "provenanceId": "dc/base/WikidataOtherIdGeos"
+        }
+      ]
+    },
+    {
+      "node": "geoId/06053",
+      "values": [
+        {
+          "name": "California",
+          "types": [
+            "AdministrativeArea1",
+            "State"
+          ],
+          "dcid": "geoId/06",
+          "provenanceId": "dc/base/WikidataOtherIdGeos"
+        }
+      ]
+    },
+    {
+      "node": "geoId/06",
+      "values": [
+        {
+          "name": "United States",
+          "types": [
+            "Country"
+          ],
+          "dcid": "country/USA",
+          "provenanceId": "dc/base/WikidataOtherIdGeos"
+        },
+        {
+          "name": "Pacific Division",
+          "types": [
+            "CensusDivision"
+          ],
+          "dcid": "usc/PacificDivision",
+          "provenanceId": "dc/base/WikidataOtherIdGeos"
+        }
+      ]
+    }
+  ]
+}

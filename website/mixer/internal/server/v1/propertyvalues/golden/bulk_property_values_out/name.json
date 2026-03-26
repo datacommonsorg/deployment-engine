@@ -1,0 +1,29 @@
+{
+  "data": [
+    {
+      "node": "country/USA",
+      "values": [
+        {
+          "provenanceId": "dc/base/WikidataOtherIdGeos",
+          "value": "United States of America"
+        },
+        {
+          "provenanceId": "dc/base/WikidataOtherIdGeos",
+          "value": "United States"
+        }
+      ]
+    },
+    {
+      "node": "geoId/06",
+      "values": [
+        {
+          "provenanceId": "dc/base/WikidataOtherIdGeos",
+          "value": "California"
+        }
+      ]
+    },
+    {
+      "node": "dummy"
+    }
+  ]
+}

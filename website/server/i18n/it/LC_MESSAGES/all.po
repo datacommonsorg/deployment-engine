@@ -1,0 +1,860 @@
+msgid "%(placeType)s in %(parentPlaces)s"
+msgstr "%(placeType)s in %(parentPlaces)s"
+
+msgid "<a href=\"https://datacommons.org\">Data Commons</a> from Google"
+msgstr "<a href=\"https://datacommons.org\">Data Commons</a> di Google"
+
+msgid "APIs"
+msgstr "API"
+
+msgid "About"
+msgstr "Informazioni"
+
+msgid "About Data Commons"
+msgstr "Informazioni su Data Commons"
+
+msgid "Administrative Area"
+msgstr "Area amministrativa"
+
+msgid "Administrative Area 1 Place"
+msgstr "Luogo area amministrativa 1"
+
+msgid "Administrative Area 1 Places"
+msgstr "Luoghi area amministrativa 1"
+
+msgid "Administrative Area 2 Place"
+msgstr "Luogo area amministrativa 2"
+
+msgid "Administrative Area 2 Places"
+msgstr "Luoghi area amministrativa 2"
+
+msgid "Administrative Area 3 Place"
+msgstr "Luogo area amministrativa 3"
+
+msgid "Administrative Area 3 Places"
+msgstr "Luoghi area amministrativa 3"
+
+msgid "Administrative Area 4 Place"
+msgstr "Luogo area amministrativa 4"
+
+msgid "Administrative Area 4 Places"
+msgstr "Luoghi area amministrativa 4"
+
+msgid "Administrative Area 5 Place"
+msgstr "Luogo area amministrativa 5"
+
+msgid "Administrative Area 5 Places"
+msgstr "Luoghi area amministrativa 5"
+
+msgid "Administrative Areas"
+msgstr "Aree amministrative"
+
+msgid "An initiative from"
+msgstr "Un'iniziativa di"
+
+msgid "Back to homepage"
+msgstr "Torna alla home page"
+
+msgid "BigQuery"
+msgstr "BigQuery"
+
+msgid "Blog"
+msgstr "Blog"
+
+msgid "Borough"
+msgstr "Distretto"
+
+msgid "Boroughs"
+msgstr "Distretti"
+
+msgid "Cities"
+msgstr "Città"
+
+msgid "Cities, India"
+msgstr "Città, India"
+
+msgid "Cities, United States"
+msgstr "Città, Stati Uniti"
+
+msgid "City"
+msgstr "Città"
+
+msgid "Contribute"
+msgstr "Contribuisci"
+
+msgid "Counties"
+msgstr "Contee"
+
+msgid "Counties, United States"
+msgstr "Contee, Stati Uniti"
+
+msgid "Countries"
+msgstr "Paesi"
+
+msgid "Country"
+msgstr "Paese"
+
+msgid "County"
+msgstr "Contea"
+
+msgid "Data Commons"
+msgstr "Data Commons"
+
+msgid "Data Download Tool"
+msgstr "Strumento di download di dati"
+
+msgid "Data Sources"
+msgstr "Fonti dei dati"
+
+msgid "Disclaimers"
+msgstr "Limitazioni di responsabilità"
+
+msgid "Districts, India"
+msgstr "Distretti, India"
+
+msgid "Documentation"
+msgstr "Documentazione"
+
+msgid "Economic Indicators, Worldwide"
+msgstr "Indicatori economici, Tutto il mondo"
+
+msgid "Enter a country, state, county or city"
+msgstr "Inserisci un paese, uno stato, una contea o una città"
+
+msgid "Enter a country, state, district or city"
+msgstr "Enter a country, state, district or city"
+
+msgid "Eurostat NUTS 1 Place"
+msgstr "Luogo Eurostat NUTS 1"
+
+msgid "Eurostat NUTS 1 Places"
+msgstr "Luoghi Eurostat NUTS 1"
+
+msgid "Eurostat NUTS 2 Place"
+msgstr "Luogo Eurostat NUTS 2"
+
+msgid "Eurostat NUTS 2 Places"
+msgstr "Luoghi Eurostat NUTS 2"
+
+msgid "Eurostat NUTS 3 Place"
+msgstr "Luogo Eurostat NUTS 3"
+
+msgid "Eurostat NUTS 3 Places"
+msgstr "Luoghi Eurostat NUTS 3"
+
+msgid "Explore"
+msgstr "Esplora"
+
+msgid "Explore the data"
+msgstr "Esplora i dati"
+
+msgid "FAQ"
+msgstr "Domande frequenti"
+
+msgid "Feedback"
+msgstr "Feedback"
+
+msgid "Frequently Asked Questions"
+msgstr "Domande frequenti"
+
+msgid "Gini Index"
+msgstr "Indice di Gini"
+
+msgid "Github Repository"
+msgstr "Repository GitHub"
+
+msgid "Government Expenditures on Education"
+msgstr "Spesa pubblica per l'istruzione"
+
+msgid "Government Expenditures on Military"
+msgstr "Spesa pubblica per le forze armate"
+
+msgid "Gross National Income"
+msgstr "Reddito nazionale lordo"
+
+msgid "Highest Crime Per Capita"
+msgstr "Numero più alto di crimini pro capite"
+
+msgid "Highest Median Age"
+msgstr "Età media più alta"
+
+msgid "Highest Median Income"
+msgstr "Reddito medio più alto"
+
+msgid "Highest Unemployment Rate"
+msgstr "Tasso di disoccupazione più alto"
+
+msgid "Knowledge Graph"
+msgstr "Knowledge Graph"
+
+msgid "Largest Population"
+msgstr "Popolazione più numerosa"
+
+msgid "Life Expectancy"
+msgstr "Speranza di vita"
+
+msgid "Map Explorer"
+msgstr "Strumento di esplorazione delle mappe"
+
+msgid "Median Age"
+msgstr "Età media"
+
+msgid "Median Income"
+msgstr "Reddito medio"
+
+msgid "Median Income, United States"
+msgstr "Reddito medio, Stati Uniti"
+
+msgid "Natural Disaster Dashboard"
+msgstr "Dashboard calamità naturali"
+
+msgid "Neighborhood"
+msgstr "Quartiere"
+
+msgid "Neighborhoods"
+msgstr "Quartieri"
+
+msgid "Other %(placeType)s in %(parentPlace)s"
+msgstr "Altri %(placeType)s in %(parentPlace)s"
+
+msgid "PLACE_EXPLORER_INTRO"
+msgstr "<p>Lo strumento Place Explorer ti consente di conoscere i dati fondamentali relativi a un luogo. Raccoglie una serie di grafici relativi a dati demografici, istruzione, aspetti economici e altro ancora, collocandoli nel contesto e confrontandoli con altri luoghi. Puoi anche conoscere il posizionamento di luoghi differenti in merito a diverse metriche quali disoccupazione, criminalità e reddito.</p><p>Puoi analizzare in dettaglio i grafici per città, codice postale, contea, stato o paese che preferisci usando la casella di ricerca in alto.</p><p>In alternativa puoi iniziare a esplorare alcuni luoghi molto noti.</p>"
+
+msgid "Place"
+msgstr "Luogo"
+
+msgid "Place Explorer"
+msgstr "Place Explorer"
+
+msgid "Place Rankings"
+msgstr "Classifiche dei luoghi"
+
+msgid "Places"
+msgstr "Luoghi"
+
+msgid "Population"
+msgstr "Popolazione"
+
+msgid "Privacy Policy"
+msgstr "Norme sulla privacy"
+
+msgid "Rankings"
+msgstr "Posizioni"
+
+msgid "Scatter Plot Explorer"
+msgstr "Strumento di esplorazione dei grafici a dispersione"
+
+msgid "Show about links"
+msgstr "Show about links"
+
+msgid "Show documentation links"
+msgstr "Mostra link alla documentazione"
+
+msgid "Show exploration tools"
+msgstr "Show exploration tools"
+
+msgid "Show site navigation"
+msgstr "Show site navigation"
+
+msgid "State"
+msgstr "Stato"
+
+msgid "States"
+msgstr "Stati"
+
+msgid "States, India"
+msgstr "Stati, India"
+
+msgid "States, United States"
+msgstr "Stati, Stati Uniti"
+
+msgid "Statistical Variable Explorer"
+msgstr "Esploratore delle variabili statistiche"
+
+msgid "Sustainability Explorer"
+msgstr "Esploratore della sostenibilità"
+
+msgid "Terms Of Use"
+msgstr "Termini e condizioni d'uso"
+
+msgid "Terms and Conditions"
+msgstr "Termini e condizioni"
+
+msgid "Timelines Explorer"
+msgstr "Timelines Explorer"
+
+msgid "Tools"
+msgstr "Strumenti"
+
+msgid "Town"
+msgstr "Città"
+
+msgid "Towns"
+msgstr "Città"
+
+msgid "Tutorials"
+msgstr "Tutorial"
+
+msgid "Unemployment Rate"
+msgstr "Tasso di disoccupazione"
+
+msgid "Unemployment Rate, United States"
+msgstr "Tasso di disoccupazione, Stati Uniti"
+
+msgid "Village"
+msgstr "Villaggio"
+
+msgid "Villages"
+msgstr "Villaggi"
+
+msgid "Worldwide"
+msgstr "Tutto il mondo"
+
+msgid "ZIP Code"
+msgstr "Codice postale"
+
+msgid "ZIP Codes"
+msgstr "Codici postali"
+
+msgid "by city"
+msgstr "per città"
+
+msgid "by county"
+msgstr "per contea"
+
+msgid "by state"
+msgstr "per stato"
+
+msgid "in United States"
+msgstr "negli Stati Uniti"
+
+msgid "CHART_TITLE-Air pollutant cancer risk"
+msgstr "Rischio di cancro per tossicità dell'aria nel corso della vita"
+
+msgid "CHART_TITLE-Air_quality_index"
+msgstr "Indice di qualità dell'aria"
+
+msgid "CHART_TITLE-Alcohol_consumption_per_capita"
+msgstr "Consumo di alcol pro capite (annuale)"
+
+msgid "CHART_TITLE-Annual_emissions_greenhouse_gas"
+msgstr "Emissioni annuali di gas serra"
+
+msgid "CHART_TITLE-Arson"
+msgstr "Incendio doloso"
+
+msgid "CHART_TITLE-Arson_rate"
+msgstr "Incendi dolosi per 100.000 persone"
+
+msgid "CHART_TITLE-Associate_degree_gender"
+msgstr "Conseguimento di diploma universitario per genere"
+
+msgid "CHART_TITLE-Associate_degree_rate_gender"
+msgstr "Tasso di conseguimento di diplomi universitari per genere"
+
+msgid "CHART_TITLE-Bachelors_degree_rate_gender"
+msgstr "Tasso di conseguimento della laurea per genere"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Air"
+msgstr "Aria"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Crime"
+msgstr "Criminalità"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Demographics"
+msgstr "Dati demografici"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Disasters"
+msgstr "Catastrofi"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Economics"
+msgstr "Aspetti economici"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Education"
+msgstr "Istruzione"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Emissions"
+msgstr "Emissioni"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Energy"
+msgstr "Energia"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Environment"
+msgstr "Ambiente"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Equity"
+msgstr "Patrimonio netto"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Health"
+msgstr "Salute"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Housing"
+msgstr "Abitazioni"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Income"
+msgstr "Reddito"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Overview"
+msgstr "Panoramica"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Poverty"
+msgstr "Povertà"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Temperature"
+msgstr "Temperatura"
+
+msgid "CHART_TITLE-CHART_CATEGORY-Water"
+msgstr "Acqua"
+
+msgid "CHART_TITLE-Children_employed"
+msgstr "Bambini che lavorano"
+
+msgid "CHART_TITLE-Children_employed_gender"
+msgstr "Bambini che lavorano per genere"
+
+msgid "CHART_TITLE-Children_severe_wasting"
+msgstr "Grave deperimento tra bambini sotto i 5 anni"
+
+msgid "CHART_TITLE-Children_severe_wasting_by_gender"
+msgstr "Grave deperimento tra bambini sotto i 5 anni per genere"
+
+msgid "CHART_TITLE-Children_wasting"
+msgstr "Deperimento tra bambini sotto i 5 anni"
+
+msgid "CHART_TITLE-Children_wasting_by_gender"
+msgstr "Deperimento tra bambini sotto i 5 anni per genere"
+
+msgid "CHART_TITLE-Citizenship"
+msgstr "Cittadinanza"
+
+msgid "CHART_TITLE-Citizenship_distribution"
+msgstr "Distribuzione della popolazione per cittadinanza"
+
+msgid "CHART_TITLE-Covid_cases"
+msgstr "Casi cumulativi di COVID-19"
+
+msgid "CHART_TITLE-Covid_cases_per_capita"
+msgstr "Casi cumulativi di COVID-19 pro capite"
+
+msgid "CHART_TITLE-Covid_deaths"
+msgstr "Decessi cumulativi per COVID-19"
+
+msgid "CHART_TITLE-Covid_deaths_per_capita"
+msgstr "Decessi cumulativi per COVID-19 pro capite"
+
+msgid "CHART_TITLE-Crime_rate"
+msgstr "Reati per 100.000 persone"
+
+msgid "CHART_TITLE-Cyclones"
+msgstr "Cicloni"
+
+msgid "CHART_TITLE-Earthquakes"
+msgstr "Terremoti"
+
+msgid "CHART_TITLE-Educational_attainment"
+msgstr "Completamento dell'istruzione"
+
+msgid "CHART_TITLE-Educational_attainment_rate"
+msgstr "Tasso di completamento dell'istruzione"
+
+msgid "CHART_TITLE-Electricity_consumption_per_capita"
+msgstr "Consumo di elettricità pro capite"
+
+msgid "CHART_TITLE-Electricity_generation"
+msgstr "Produzione di elettricità pro capite"
+
+msgid "CHART_TITLE-Electricity_price"
+msgstr "Prezzo dell'elettricità"
+
+msgid "CHART_TITLE-Energy_use"
+msgstr "Consumo energetico (kg di petrolio equivalente pro capite)"
+
+msgid "CHART_TITLE-Fertility_rate"
+msgstr "Tasso di fertilità"
+
+msgid "CHART_TITLE-Gdp"
+msgstr "Prodotto interno lordo"
+
+msgid "CHART_TITLE-Gdp_growth_rate"
+msgstr "Tasso di crescita del prodotto interno lordo"
+
+msgid "CHART_TITLE-Gdp_per_capita"
+msgstr "Prodotto interno lordo pro capite"
+
+msgid "CHART_TITLE-Gini_index"
+msgstr "Indice di Gini"
+
+msgid "CHART_TITLE-Gni"
+msgstr "Reddito nazionale lordo (Parità dei poteri di acquisto)"
+
+msgid "CHART_TITLE-Gni_per_capita"
+msgstr "Reddito nazionale lordo pro capite (Parità dei poteri di acquisto)"
+
+msgid "CHART_TITLE-Government_debt"
+msgstr "Debito pubblico"
+
+msgid "CHART_TITLE-Government_debt_per_capita"
+msgstr "Debito pubblico pro capite"
+
+msgid "CHART_TITLE-Government_expenditures_education"
+msgstr "Spesa pubblica per l'istruzione (percentuale della spesa pubblica)"
+
+msgid "CHART_TITLE-Government_expenditures_education_gdp"
+msgstr "Spesa pubblica per l'istruzione (% del PIL)"
+
+msgid "CHART_TITLE-Government_expenditures_military"
+msgstr "Spesa pubblica per le forze armate"
+
+msgid "CHART_TITLE-Government_expenditures_military_per_gdp"
+msgstr "Spesa pubblica per le forze armate (% del PIL)"
+
+msgid "CHART_TITLE-Graduate_or_professional_degree_gender"
+msgstr "Conseguimento di una laurea o di un diploma professionale per genere"
+
+msgid "CHART_TITLE-Graduate_or_professional_degree_rate_gender"
+msgstr "Tasso di conseguimento della laurea o di un diploma professionale per genere"
+
+msgid "CHART_TITLE-Hate_Crime"
+msgstr "Crimine d'odio"
+
+msgid "CHART_TITLE-Hate_Crime_Disability"
+msgstr "Crimine d'odio basato sulla disabilità"
+
+msgid "CHART_TITLE-Hate_Crime_Disability_rate"
+msgstr "Crimini d'odio basati sulla disabilità ogni 100.000 persone"
+
+msgid "CHART_TITLE-Hate_Crime_Ethnicity"
+msgstr "Crimine d'odio basato sull'etnia"
+
+msgid "CHART_TITLE-Hate_Crime_Ethnicity_rate"
+msgstr "Crimini d'odio basati sull'etnia ogni 100.000 persone"
+
+msgid "CHART_TITLE-Hate_Crime_Gender"
+msgstr "Crimine d'odio basato sul genere"
+
+msgid "CHART_TITLE-Hate_Crime_Gender_rate"
+msgstr "Crimini d'odio basati sul genere ogni 100.000 persone"
+
+msgid "CHART_TITLE-Hate_Crime_Race"
+msgstr "Crimine d'odio basato sul gruppo etnico"
+
+msgid "CHART_TITLE-Hate_Crime_Race_rate"
+msgstr "Crimini d'odio basati sul gruppo etnico ogni 100.000 persone"
+
+msgid "CHART_TITLE-Hate_Crime_Religion"
+msgstr "Crimine d'odio basato sulla religione"
+
+msgid "CHART_TITLE-Hate_Crime_Religion_rate"
+msgstr "Crimini d'odio basati sulla religione ogni 100.000 persone"
+
+msgid "CHART_TITLE-Hate_Crime_Sexual_Orientation"
+msgstr "Crimine d'odio basato sull'orientamento sessuale"
+
+msgid "CHART_TITLE-Hate_Crime_Sexual_Orientation_rate"
+msgstr "Crimini d'odio basati sull'orientamento sessuale ogni 100.000 persone"
+
+msgid "CHART_TITLE-Hate_Crime_rate"
+msgstr "Crimini d'odio ogni 100.000 persone"
+
+msgid "CHART_TITLE-Health_behaviors"
+msgstr "Comportamenti legati alla salute"
+
+msgid "CHART_TITLE-Health_outcomes"
+msgstr "Problemi di salute"
+
+msgid "CHART_TITLE-Household_income"
+msgstr "Reddito familiare"
+
+msgid "CHART_TITLE-Household_income_by_bracket"
+msgstr "Percentuale di nuclei familiari per fasce di reddito"
+
+msgid "CHART_TITLE-Housing_units"
+msgstr "Unità abitative"
+
+msgid "CHART_TITLE-Housing_units_date_built"
+msgstr "Unità abitative per data di costruzione"
+
+msgid "CHART_TITLE-Housing_units_date_built_distrubtion"
+msgstr "Distribuzione di unità abitative occupate per data di costruzione"
+
+msgid "CHART_TITLE-Housing_units_per_capita"
+msgstr "Unità abitative pro capite"
+
+msgid "CHART_TITLE-Housing_units_price"
+msgstr "Unità abitative per prezzo"
+
+msgid "CHART_TITLE-Housing_units_price_distribution"
+msgstr "Distribuzione di unità abitative occupate per prezzo"
+
+msgid "CHART_TITLE-Housing_units_race"
+msgstr "Unità abitative per gruppo etnico del nucleo familiare"
+
+msgid "CHART_TITLE-Housing_units_race_distribution"
+msgstr "Distribuzione di unità abitative per gruppo etnico del nucleo familiare"
+
+msgid "CHART_TITLE-Housing_units_rental_status"
+msgstr "Unità abitative per stato di affitto"
+
+msgid "CHART_TITLE-Housing_units_rental_status_distribution"
+msgstr "Distribuzione di unità abitative per stato di affitto"
+
+msgid "CHART_TITLE-Individual_income"
+msgstr "Reddito personale"
+
+msgid "CHART_TITLE-Individual_income_by_bracket"
+msgstr "Percentuale di persone per fasce di reddito"
+
+msgid "CHART_TITLE-Infant_mortality_rate"
+msgstr "Tasso di mortalità infantile"
+
+msgid "CHART_TITLE-Infant_mortality_rate_gender"
+msgstr "Tasso di mortalità infantile per genere"
+
+msgid "CHART_TITLE-Inward_remittance"
+msgstr "Rimessa interna"
+
+msgid "CHART_TITLE-Inward_remittance_per_gdp"
+msgstr "Rimessa interna (% del PIL)"
+
+msgid "CHART_TITLE-Labor_force"
+msgstr "Forza lavoro"
+
+msgid "CHART_TITLE-Labor_force_rate"
+msgstr "Tasso di partecipazione alla forza lavoro"
+
+msgid "CHART_TITLE-Life_expectancy"
+msgstr "Speranza di vita (anni)"
+
+msgid "CHART_TITLE-Literacy"
+msgstr "Alfabetizzazione"
+
+msgid "CHART_TITLE-Marital_status"
+msgstr "Stato civile"
+
+msgid "CHART_TITLE-Marital_status_distribution"
+msgstr "Distribuzione per stato civile"
+
+msgid "CHART_TITLE-Market_capitalization"
+msgstr "Capitalizzazione di mercato delle società nazionali"
+
+msgid "CHART_TITLE-Market_capitalization_per_gdp"
+msgstr "Capitalizzazione di mercato delle società nazionali (% del PIL)"
+
+msgid "CHART_TITLE-Mean_concentration_DieselPM"
+msgstr "Concentrazione media di diesel PM"
+
+msgid "CHART_TITLE-Mean_concentration_Ozone"
+msgstr "Concentrazione media di ozono"
+
+msgid "CHART_TITLE-Mean_concentration_PM2.5"
+msgstr "Concentrazione media di PM 2.5"
+
+msgid "CHART_TITLE-Median_age"
+msgstr "Età media"
+
+msgid "CHART_TITLE-Median_age_gender"
+msgstr "Età media per genere"
+
+msgid "CHART_TITLE-Median_age_race"
+msgstr "Età media per gruppo etnico"
+
+msgid "CHART_TITLE-Median_household_income"
+msgstr "Reddito familiare medio"
+
+msgid "CHART_TITLE-Median_household_income_race"
+msgstr "Reddito familiare medio per gruppo etnico"
+
+msgid "CHART_TITLE-Median_income_gender"
+msgstr "Reddito medio per genere"
+
+msgid "CHART_TITLE-Median_individual_income"
+msgstr "Reddito personale medio"
+
+msgid "CHART_TITLE-Mortality_events"
+msgstr "Eventi di mortalità"
+
+msgid "CHART_TITLE-Mortality_events_per_capita"
+msgstr "Eventi di mortalità pro capite"
+
+msgid "CHART_TITLE-Outward_remittance"
+msgstr "Rimessa esterna"
+
+msgid "CHART_TITLE-Outward_remittance_per_gdp"
+msgstr "Rimessa esterna"
+
+msgid "CHART_TITLE-Palmer_drought_severity_index"
+msgstr "Indice di gravità della siccità di Palmer"
+
+msgid "CHART_TITLE-Percent_without_health_insurance_gender"
+msgstr "Percentuale di persone senza assicurazione sanitaria per genere"
+
+msgid "CHART_TITLE-Percent_without_health_insurance_race"
+msgstr "Percentuale di persone senza assicurazione sanitaria per gruppo etnico"
+
+msgid "CHART_TITLE-Percentage of literate and illiterate population"
+msgstr "Percentuale di popolazione alfabetizzata e analfabeta"
+
+msgid "CHART_TITLE-Percentage of population by religon"
+msgstr "Percentuale di popolazione per religione"
+
+msgid "CHART_TITLE-Percentage of population by social category"
+msgstr "Percentuale di popolazione per categoria sociale"
+
+msgid "CHART_TITLE-Percentage of urban and rural households"
+msgstr "Percentuale di nuclei familiari urbani e rurali"
+
+msgid "CHART_TITLE-Percentage of urban vs rural homeless population"
+msgstr "Percentuale di popolazione senzatetto urbana e rurale"
+
+msgid "CHART_TITLE-Percentage of workers and nonworkers"
+msgstr "Percentuale di lavoratori e non lavoratori"
+
+msgid "CHART_TITLE-Percentage_employed"
+msgstr "Percentuale di persone che lavorano"
+
+msgid "CHART_TITLE-Population"
+msgstr "Popolazione"
+
+msgid "CHART_TITLE-Population_age"
+msgstr "Popolazione per età"
+
+msgid "CHART_TITLE-Population_age_distribution"
+msgstr "Distribuzione per fasce d'età"
+
+msgid "CHART_TITLE-Population_density"
+msgstr "Densità di popolazione (persone per km²)"
+
+msgid "CHART_TITLE-Population_gender"
+msgstr "Popolazione per genere"
+
+msgid "CHART_TITLE-Population_gender_distribution"
+msgstr "Distribuzione in base al genere"
+
+msgid "CHART_TITLE-Population_growth_rate"
+msgstr "Tasso di crescita della popolazione"
+
+msgid "CHART_TITLE-Population_race"
+msgstr "Popolazione per gruppo etnico"
+
+msgid "CHART_TITLE-Population_race_distribution"
+msgstr "Distribuzione razziale"
+
+msgid "CHART_TITLE-Poverty_rate"
+msgstr "Tasso di povertà"
+
+msgid "CHART_TITLE-Poverty_rate_gender"
+msgstr "Tasso di povertà per genere"
+
+msgid "CHART_TITLE-Poverty_rate_race"
+msgstr "Tasso di povertà per gruppo etnico"
+
+msgid "CHART_TITLE-Prescribed_drugs"
+msgstr "Farmaci prescritti (per trimestre)"
+
+msgid "CHART_TITLE-Prescribed_drugs_per_capita"
+msgstr "Farmaci prescritti pro capite (per trimestre)"
+
+msgid "CHART_TITLE-Projected_temperature_change_under_rcp26_based_on_year_2006"
+msgstr "Variazione massima della temperatura prevista secondo RCP 2.6 (in base all'anno 2006)"
+
+msgid "CHART_TITLE-Projected_temperature_change_under_rcp45_based_on_year_2006"
+msgstr "Variazione massima della temperatura prevista secondo RCP 4.5 (in base all'anno 2006)"
+
+msgid "CHART_TITLE-Projected_temperature_change_under_rcp60_based_on_year_2006"
+msgstr "Variazione massima della temperatura prevista secondo RCP 6.0 (in base all'anno 2006)"
+
+msgid "CHART_TITLE-Projected_temperature_change_under_rcp85_based_on_year_2006"
+msgstr "Variazione della temperatura massima prevista secondo RCP 8.5 (in base all'anno 2006)"
+
+msgid "CHART_TITLE-Property_crime"
+msgstr "Reati contro la proprietà"
+
+msgid "CHART_TITLE-Property_crime_rate"
+msgstr "Reati contro la proprietà per 100.000 persone"
+
+msgid "CHART_TITLE-Religion"
+msgstr "Religione"
+
+msgid "CHART_TITLE-School_enrollment"
+msgstr "Iscrizione scolastica"
+
+msgid "CHART_TITLE-School_enrollment_rate"
+msgstr "Tasso di iscrizione scolastica"
+
+msgid "CHART_TITLE-Social Category"
+msgstr "Categoria sociale"
+
+msgid "CHART_TITLE-State_unemployment_claims"
+msgstr "Richieste di indennizzo per assicurazioni contro la disoccupazione statale"
+
+msgid "CHART_TITLE-State_unemployment_claims_rate"
+msgstr "Percentuale di richieste di indennizzo per assicurazioni contro la disoccupazione statale"
+
+msgid "CHART_TITLE-Total_crime"
+msgstr "Numero totale di reati"
+
+msgid "CHART_TITLE-Total_employed"
+msgstr "Numero di persone che lavorano"
+
+msgid "CHART_TITLE-Unemployment_rate"
+msgstr "Tasso di disoccupazione"
+
+msgid "CHART_TITLE-Unemployment_rate-urban-v-rural"
+msgstr "Tasso di disoccupazione: urbana e rurale"
+
+msgid "CHART_TITLE-Unemployment_rate_gender"
+msgstr "Tasso di disoccupazione per genere"
+
+msgid "CHART_TITLE-Urban and rural households"
+msgstr "Nuclei familiari urbani e rurali"
+
+msgid "CHART_TITLE-Urban vs rural homeless population"
+msgstr "Popolazione senzatetto urbana e rurale"
+
+msgid "CHART_TITLE-Urban vs rural poverty population"
+msgstr "Tasso di povertà della popolazione urbana e rurale"
+
+msgid "CHART_TITLE-Urban vs rural poverty rate"
+msgstr "Tasso di povertà urbano e rurale"
+
+msgid "CHART_TITLE-Urban_v_rural_population"
+msgstr "Popolazione urbana e rurale"
+
+msgid "CHART_TITLE-Violent_crime"
+msgstr "Crimini violenti"
+
+msgid "CHART_TITLE-Violent_crime_rate"
+msgstr "Crimini violenti per 100.000 persone"
+
+msgid "CHART_TITLE-Worker wages (daily)"
+msgstr "Retribuzioni dei lavoratori (giornaliere)"
+
+msgid "CHART_TITLE-Worker wages (monthly)"
+msgstr "Retribuzioni dei lavoratori (mensili)"
+
+msgid "CHART_TITLE-Worker wages (monthly): female vs male"
+msgstr "Retribuzioni dei lavoratori (mensili): donne e uomini"
+
+msgid "CHART_TITLE-Worker wages (monthly): urban vs rural"
+msgstr "Retribuzioni dei lavoratori (mensili): popolazione urbana e rurale"
+
+msgid "CHART_TITLE-Worker-vs-nonworker-population"
+msgstr "Popolazione di lavoratori e non lavoratori"
+
+msgid "CHART_TITLE-carbon_dioxide_emissions_nonbiogenic"
+msgstr "Emissioni di anidride carbonica (non biogeniche)"
+
+msgid "CHART_TITLE-carbon_dioxide_emissions_per_capita"
+msgstr "Emissioni di anidride carbonica pro capite"
+
+msgid "CHART_TITLE-methane_emissions_nonbiogenic"
+msgstr "Emissioni di metano (non biogeniche)"
+
+msgid "CHART_TITLE-nitrous_oxide_emissions_non_biogenic"
+msgstr "Emissioni di ossido di azoto (non biogeniche)"
+
+msgid "CHART_TITLE-water_withdrawal_rate"
+msgstr "Tasso di prelievo di acqua"
+
+
+

@@ -1,0 +1,110 @@
+{
+  "metric-ton": {
+    "defaultMessage": "{0} t"
+  },
+  "metric-ton-display": {
+    "defaultMessage": "metric tons"
+  },
+  "mega-ton": {
+    "defaultMessage": "{0} Mt"
+  },
+  "mega-ton-display": {
+    "defaultMessage": "mega-tons"
+  },
+  "kilowatt-hour": {
+    "defaultMessage": "{0} kWh"
+  },
+  "kilowatt-hour-display": {
+    "defaultMessage": "kilowatt-hours"
+  },
+  "gigawatt-hour": {
+    "defaultMessage": "{0} GWh"
+  },
+  "gigawatt-hour-display": {
+    "defaultMessage": "gigawatt-hours"
+  },
+  "liter": {
+    "defaultMessage": "{0} L"
+  },
+  "liter-display": {
+    "defaultMessage": "liters"
+  },
+  "kilogram": {
+    "defaultMessage": "{0} kg"
+  },
+  "kilogram-display": {
+    "defaultMessage": "kilograms"
+  },
+  "gram": {
+    "defaultMessage": "{0} g"
+  },
+  "gram-display": {
+    "defaultMessage": "grams"
+  },
+  "celsius": {
+    "defaultMessage": "{0} °C"
+  },
+  "celsius-display": {
+    "defaultMessage": "°C"
+  },
+  "micro-gram-per-cubic-meter": {
+    "defaultMessage": "{0} μg/m³"
+  },
+  "micro-gram-per-cubic-meter-display": {
+    "defaultMessage": "μg/m³"
+  },
+  "metric-tons-of-co2": {
+    "defaultMessage": "{0} MTCO2e"
+  },
+  "metric-tons-of-co2-display": {
+    "defaultMessage": "MTCO2e"
+  },
+  "per-million": {
+    "defaultMessage": "{0}/million"
+  },
+  "per-million-display": {
+    "defaultMessage": "/million"
+  },
+  "cent-per-kilowatt": {
+    "defaultMessage": "{0} ¢/kWh"
+  },
+  "cent-per-kilowatt-display": {
+    "defaultMessage": "¢/kWh"
+  },
+  "ppb": {
+    "defaultMessage": "{0} ppb"
+  },
+  "ppb-display": {
+    "defaultMessage": "ppb"
+  },
+  "million-gallon-per-day": {
+    "defaultMessage": "{0} MGD"
+  },
+  "million-gallon-per-day-display": {
+    "defaultMessage": "MGD"
+  },
+  "Knot": {
+    "defaultMessage": "{0} kn"
+  },
+  "Knot-display": {
+    "defaultMessage": "kn"
+  },
+  "Millibar": {
+    "defaultMessage": "{0} mbar"
+  },
+  "Millibar-display": {
+    "defaultMessage": "mbar"
+  },
+  "SquareKilometer": {
+    "defaultMessage": "{0} km²"
+  },
+  "SquareKilometer-display": {
+    "defaultMessage": "km²"
+  },
+  "percent": {
+    "defaultMessage": "{0} %"
+  },
+  "percent-display": {
+    "defaultMessage": "%"
+  }
+}

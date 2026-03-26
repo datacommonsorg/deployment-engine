@@ -1,0 +1,32 @@
+{
+  "Overview": {
+    "Economics": [
+      {
+        "title": "Unemployment rate",
+        "statsVars": ["UnemploymentRate_Person"]
+      }
+    ]
+  },
+  "Economics": {
+    "Employment": [
+      {
+        "title": "Labor force",
+        "statsVars": ["Count_Person_InLaborForce"],
+        "scaling": 100,
+        "unit": "%"
+      },
+      {
+        "title": "Number of people employed",
+        "statsVars": ["Count_Person_Employed"],
+        "relatedChart": {
+          "title": "Percentage of people employed",
+          "scale": true,
+          "denominator": "Count_Person",
+          "scaling": 100,
+          "unit": "%"
+        }
+      },
+      { "title": "Unemployment rate", "statsVars": ["UnemploymentRate_Person"] }
+    ]
+  }
+}

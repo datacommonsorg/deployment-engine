@@ -1,0 +1,4007 @@
+{
+  "statVars": [
+    {
+      "name": "Total population",
+      "dcid": "Count_Person"
+    },
+    {
+      "name": "Population (As Fraction of Count Household)",
+      "dcid": "Count_Person_AsAFractionOf_Count_Household"
+    },
+    {
+      "name": "Population Density",
+      "dcid": "Count_Person_PerArea"
+    },
+    {
+      "name": "Black Monoracial Population",
+      "dcid": "Count_Person_BlackOrAfricanAmericanAlone"
+    },
+    {
+      "name": "Black Population, Monoracial/Multiracial",
+      "dcid": "Count_Person_BlackOrAfricanAmericanAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Children age group 6 to 23 months receiving an adequate diet (%)",
+      "dcid": "Count_Person_6To23Month"
+    },
+    {
+      "name": "Count of people with diabetes mellitus",
+      "dcid": "Count_Person_DiabetesMellitus"
+    },
+    {
+      "name": "Count of person with bachelor's degree in accounting and taxation major",
+      "dcid": "Count_Person_BachelorOfAccountingAndTaxationMajor"
+    },
+    {
+      "name": "Count of person with bachelor's degree in agricultural engineering, forestry engineering, and fisheries",
+      "dcid": "Count_Person_BachelorOfAgriculturalEngineeringOrForestryEngineeringOrFisheries"
+    },
+    {
+      "name": "Count of person with bachelor's degree in agricultural engineering, forestry engineering, fisheries, and veterinary",
+      "dcid": "Count_Person_BachelorOfAgriculturalEngineeringOrForestryEngineeringOrFisheriesOrVeterinary"
+    },
+    {
+      "name": "Count of person with bachelor's degree in architecture and related services major or construction engineering",
+      "dcid": "Count_Person_BachelorOfArchitectureAndRelatedServicesMajorOrConstructionEngineering"
+    },
+    {
+      "name": "Count of person with bachelor's degree in arts major",
+      "dcid": "Count_Person_BachelorOfArtsMajor"
+    },
+    {
+      "name": "Count of person with bachelor's degree in biological and biomedical sciences major",
+      "dcid": "Count_Person_BachelorOfBiologicalAndBiomedicalSciencesMajor"
+    },
+    {
+      "name": "Count of person with bachelor's degree in business administration and management or legal professions and studies major",
+      "dcid": "Count_Person_BachelorOfBusinessAdministrationAndManagementOrLegalProfessionsAndStudiesMajor"
+    },
+    {
+      "name": "Count of person with bachelor's degree in communication journalism and related major",
+      "dcid": "Count_Person_BachelorOfCommunicationJournalismAndRelatedMajor"
+    },
+    {
+      "name": "Count of person with bachelor's degree in economy major",
+      "dcid": "Count_Person_BachelorOfEconomyMajor"
+    },
+    {
+      "name": "Count of person with bachelor's degree in engineering major or industries",
+      "dcid": "Count_Person_BachelorOfEngineeringMajorOrIndustries"
+    },
+    {
+      "name": "Count of person with bachelor's degree in engineering major or production engineering",
+      "dcid": "Count_Person_BachelorOfEngineeringMajorOrProductionEngineering"
+    },
+    {
+      "name": "Count of person with bachelor's degree in engineering major, engineering manufacturing, and construction engineering",
+      "dcid": "Count_Person_BachelorOfEngineeringMajorOrEngineeringManufacturingOrConstructionEngineering"
+    },
+    {
+      "name": "Count of person with bachelor's degree in environment major",
+      "dcid": "Count_Person_BachelorOfEnvironmentMajor"
+    },
+    {
+      "name": "Count of person with bachelor's degree in general basic curriculum major",
+      "dcid": "Count_Person_BachelorOfGeneralBasicCurriculumMajor"
+    },
+    {
+      "name": "Count of person with bachelor's degree in health related major",
+      "dcid": "Count_Person_BachelorOfHealthRelatedMajor"
+    },
+    {
+      "name": "Count of person with bachelor's degree in information and communications technologies major",
+      "dcid": "Count_Person_BachelorOfInformationAndCommunicationsTechnologiesMajor"
+    },
+    {
+      "name": "Count of person with bachelor's degree in languages",
+      "dcid": "Count_Person_BachelorOfLanguages"
+    },
+    {
+      "name": "Count of person with bachelor's degree in legal professions and studies major",
+      "dcid": "Count_Person_BachelorOfLegalProfessionsAndStudiesMajor"
+    },
+    {
+      "name": "Count of person with bachelor's degree in management and administration major",
+      "dcid": "Count_Person_BachelorOfManagementAndAdministrationMajor"
+    },
+    {
+      "name": "Count of person with bachelor's degree in math and statistics major",
+      "dcid": "Count_Person_BachelorOfMathAndStatisticsMajor"
+    },
+    {
+      "name": "Count of person with bachelor's degree in medicine",
+      "dcid": "Count_Person_BachelorOfMedicine"
+    },
+    {
+      "name": "Count of person with bachelor's degree in natural sciences major",
+      "dcid": "Count_Person_BachelorOfNaturalSciencesMajor"
+    },
+    {
+      "name": "Count of person with bachelor's degree in natural sciences major or math and statistics major",
+      "dcid": "Count_Person_BachelorOfNaturalSciencesMajorOrMathAndStatisticsMajor"
+    },
+    {
+      "name": "Count of person with bachelor's degree in nursing and midwifery",
+      "dcid": "Count_Person_BachelorOfNursingAndMidwifery"
+    },
+    {
+      "name": "Count of person with bachelor's degree in oral and Maxillofacial Studies",
+      "dcid": "Count_Person_BachelorOfOralAndMaxillofacialStudies"
+    },
+    {
+      "name": "Count of person with bachelor's degree in pharmacology",
+      "dcid": "Count_Person_BachelorOfPharmacology"
+    },
+    {
+      "name": "Count of person with bachelor's degree in philosophy major",
+      "dcid": "Count_Person_BachelorOfPhilosophyMajor"
+    },
+    {
+      "name": "Count of person with bachelor's degree in production engineering processing engineering",
+      "dcid": "Count_Person_BachelorOfProductionEngineeringOrProcessingEngineering"
+    },
+    {
+      "name": "Count of person with bachelor's degree in services related major",
+      "dcid": "Count_Person_BachelorOfServicesRelatedMajor"
+    },
+    {
+      "name": "Count of person with bachelor's degree in social sciences major or communication journalism and related major",
+      "dcid": "Count_Person_BachelorOfSocialSciencesMajorOrCommunicationJournalismAndRelatedMajor"
+    },
+    {
+      "name": "Count of person with bachelor's degree in social welfare",
+      "dcid": "Count_Person_BachelorOfSocialWelfare"
+    },
+    {
+      "name": "Count of person with bachelor's degree in traditional",
+      "dcid": "Count_Person_BachelorOfTraditional"
+    },
+    {
+      "name": "Count of person with bachelor's degree in veterinary medicine major",
+      "dcid": "Count_Person_BachelorOfVeterinaryMedicineMajor"
+    },
+    {
+      "name": "Direct Purchasers of Health Insurance",
+      "dcid": "Count_Person_WithDirectPurchaseHealthInsurance"
+    },
+    {
+      "name": "Divorced Population",
+      "dcid": "Count_Person_Divorced"
+    },
+    {
+      "name": "Elementary School Students",
+      "dcid": "Count_Person_DetailedPrimarySchool"
+    },
+    {
+      "name": "Female population",
+      "dcid": "Count_Person_Female"
+    },
+    {
+      "name": "High School Students",
+      "dcid": "Count_Person_DetailedHighSchool"
+    },
+    {
+      "name": "Hispanic African American Population",
+      "dcid": "Count_Person_HispanicOrLatino_BlackOrAfricanAmericanAlone"
+    },
+    {
+      "name": "Hispanic American Indian Population",
+      "dcid": "Count_Person_HispanicOrLatino_AmericanIndianAndAlaskaNativeAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Hispanic American Indian Population",
+      "dcid": "Count_Person_HispanicOrLatino_AmericanIndianOrAlaskaNativeAlone"
+    },
+    {
+      "name": "Hispanic Asian Population",
+      "dcid": "Count_Person_HispanicOrLatino_AsianAlone"
+    },
+    {
+      "name": "Hispanic Asian Population",
+      "dcid": "Count_Person_HispanicOrLatino_AsianAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Hispanic Asian/Pacific Islander Population",
+      "dcid": "Count_Person_HispanicOrLatino_AsianOrPacificIslander"
+    },
+    {
+      "name": "Hispanic Black/African American Monoracial/Multiracial Population",
+      "dcid": "Count_Person_HispanicOrLatino_BlackOrAfricanAmericanAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Hispanic Multiracial Population",
+      "dcid": "Count_Person_HispanicOrLatino_TwoOrMoreRaces"
+    },
+    {
+      "name": "Hispanic Native Hawaiian/Other Pacific Islander Alone Population",
+      "dcid": "Count_Person_HispanicOrLatino_NativeHawaiianOrOtherPacificIslanderAlone"
+    },
+    {
+      "name": "Hispanic Native Hawaiian/Other Pacific Islander Monoracial/Multiracial Population",
+      "dcid": "Count_Person_HispanicOrLatino_NativeHawaiianAndOtherPacificIslanderAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Hispanic Population",
+      "dcid": "Count_Person_HispanicOrLatino"
+    },
+    {
+      "name": "Male population",
+      "dcid": "Count_Person_Male"
+    },
+    {
+      "name": "Married Population Who Are Not Separated",
+      "dcid": "Count_Person_MarriedAndNotSeparated"
+    },
+    {
+      "name": "Middle School Students",
+      "dcid": "Count_Person_DetailedMiddleSchool"
+    },
+    {
+      "name": "Monoracial Population",
+      "dcid": "Count_Person_OneRace"
+    },
+    {
+      "name": "Multiracial Population",
+      "dcid": "Count_Person_TwoOrMoreRaces"
+    },
+    {
+      "name": "Non Hispanic Multiracial Population",
+      "dcid": "Count_Person_NotHispanicOrLatino_TwoOrMoreRaces"
+    },
+    {
+      "name": "Non Hispanic Population",
+      "dcid": "Count_Person_NotHispanicOrLatino"
+    },
+    {
+      "name": "Non Hispanic Population Identifying as American Indian and Alaska Native, Monoracial/Multiracial",
+      "dcid": "Count_Person_NotHispanicOrLatino_AmericanIndianAndAlaskaNativeAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Non Hispanic Population Identifying as American Indian or Alaska Native Alone",
+      "dcid": "Count_Person_NotHispanicOrLatino_AmericanIndianOrAlaskaNativeAlone"
+    },
+    {
+      "name": "Non Hispanic Population Identifying as Asian",
+      "dcid": "Count_Person_NotHispanicOrLatino_AsianAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Non Hispanic Population Identifying as Asian Alone",
+      "dcid": "Count_Person_NotHispanicOrLatino_AsianAlone"
+    },
+    {
+      "name": "Non Hispanic Population Identifying as Asian or Pacific Islander",
+      "dcid": "Count_Person_NotHispanicOrLatino_AsianOrPacificIslander"
+    },
+    {
+      "name": "Non Hispanic Population Identifying as Black or African American",
+      "dcid": "Count_Person_NotHispanicOrLatino_BlackOrAfricanAmericanAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Non Hispanic Population Identifying as Black or African American Alone",
+      "dcid": "Count_Person_NotHispanicOrLatino_BlackOrAfricanAmericanAlone"
+    },
+    {
+      "name": "Non Hispanic Population Identifying as Native Hawaiian and Other Pacific Islander",
+      "dcid": "Count_Person_NotHispanicOrLatino_NativeHawaiianAndOtherPacificIslanderAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Non Hispanic Population Identifying as Native Hawaiian or Other Pacific Islander Alone",
+      "dcid": "Count_Person_NotHispanicOrLatino_NativeHawaiianOrOtherPacificIslanderAlone"
+    },
+    {
+      "name": "Non Hispanic White Population, Monoracial/Multiracial",
+      "dcid": "Count_Person_NotHispanicOrLatino_WhiteAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Non White Population",
+      "dcid": "Count_Person_NonWhite"
+    },
+    {
+      "name": "Number of individuals between 12 to 14 years of age",
+      "dcid": "Count_Person_12To14Years"
+    },
+    {
+      "name": "Number of individuals with university or higher education",
+      "dcid": "Count_Person_EducationalAttainmentUniversityOrHigher"
+    },
+    {
+      "name": "Number of intersex people",
+      "dcid": "Count_Person_Intersex"
+    },
+    {
+      "name": "Number of people infected with COVID-19",
+      "dcid": "Count_Person_COVID19"
+    },
+    {
+      "name": "Number of people living in slum area",
+      "dcid": "Count_Person_SlumArea"
+    },
+    {
+      "name": "Number of people that are 45 to 55 years old",
+      "dcid": "Count_Person_45To55Years"
+    },
+    {
+      "name": "Number of people who can read and write",
+      "dcid": "Count_Person_EducationalAttainmentReadAndWrite"
+    },
+    {
+      "name": "Number of people with No Education",
+      "dcid": "Count_Person_EducationalAttainmentNoEducation"
+    },
+    {
+      "name": "Number of people with Primary Education",
+      "dcid": "Count_Person_EducationalAttainmentPrimaryEducation"
+    },
+    {
+      "name": "Number of people with Upper Secondary Education",
+      "dcid": "Count_Person_EducationalAttainmentUpperSecondary"
+    },
+    {
+      "name": "Number of people with Upper Secondary Education",
+      "dcid": "Count_Person_EducationalAttainmentUpperSecondaryEducation"
+    },
+    {
+      "name": "Number of people with education above intermediate level",
+      "dcid": "Count_Person_EducationalAttainmentAboveIntermediateEducation"
+    },
+    {
+      "name": "Number of people with general or azhari secondary education",
+      "dcid": "Count_Person_EducationalAttainmentGeneralOrAzhariSecondaryEducation"
+    },
+    {
+      "name": "Number of people with less than intermediate education",
+      "dcid": "Count_Person_EducationalAttainmentLessThanIntermediate"
+    },
+    {
+      "name": "Number of people with technical secondary education",
+      "dcid": "Count_Person_EducationalAttainmentTechnicalSecondaryEducation"
+    },
+    {
+      "name": "Number of persons 16 to 30 years",
+      "dcid": "Count_Person_16To30Years"
+    },
+    {
+      "name": "Number of persons born in Finland",
+      "dcid": "Count_Person_PlaceOfBirthCountryFIN"
+    },
+    {
+      "name": "Number of persons born in the area of the residence",
+      "dcid": "Count_Person_PlaceOfBirthBornInAreaOfResidence"
+    },
+    {
+      "name": "Number of persons born outside the area of the residence",
+      "dcid": "Count_Person_PlaceOfBirthBornOutsideAreaOfResidence"
+    },
+    {
+      "name": "Number of persons employed in the commodity sector",
+      "dcid": "Count_Person_CommoditySector"
+    },
+    {
+      "name": "Number of persons employed in the productive social services sector",
+      "dcid": "Count_Person_ProductiveSocialServicesSector"
+    },
+    {
+      "name": "Number of persons not participated in Subsistence Agriculture",
+      "dcid": "Count_Person_NonSubsistenceAgriculture"
+    },
+    {
+      "name": "Number of persons participated in Subsistence Agriculture",
+      "dcid": "Count_Person_SubsistenceAgriculture"
+    },
+    {
+      "name": "Number of persons who speak Finnish at home",
+      "dcid": "Count_Person_FinnishSpokenAtHome"
+    },
+    {
+      "name": "Number of persons who speak Sami at home",
+      "dcid": "Count_Person_SamiSpokenAtHome"
+    },
+    {
+      "name": "Number of persons who speak Swedish at home",
+      "dcid": "Count_Person_SwedishSpokenAtHome"
+    },
+    {
+      "name": "Number of persons who speak a language other than Finnish at home",
+      "dcid": "Count_Person_FINOtherLanguagesSpokenAtHome"
+    },
+    {
+      "name": "Number of persons with agriculture degree",
+      "dcid": "Count_Person_Agriculture"
+    },
+    {
+      "name": "Number of persons with education major",
+      "dcid": "Count_Person_EducationMajor"
+    },
+    {
+      "name": "Number of persons with engineering manufacturing degree",
+      "dcid": "Count_Person_EngineeringManufacturing"
+    },
+    {
+      "name": "Number of persons with foreign background",
+      "dcid": "Count_Person_ForeignBackground"
+    },
+    {
+      "name": "Number of persons with general education degree",
+      "dcid": "Count_Person_GeneralEducation"
+    },
+    {
+      "name": "Number of persons with health and welfare degree",
+      "dcid": "Count_Person_HealthWelfare"
+    },
+    {
+      "name": "Number of persons with humanity and arts degree",
+      "dcid": "Count_Person_HumanityAndArts"
+    },
+    {
+      "name": "Number of persons with science degree",
+      "dcid": "Count_Person_Science"
+    },
+    {
+      "name": "Number of persons with services degree",
+      "dcid": "Count_Person_Services"
+    },
+    {
+      "name": "Number of persons with social science and business degree",
+      "dcid": "Count_Person_SocialScienceAndBusiness"
+    },
+    {
+      "name": "Number of persons with university education",
+      "dcid": "Count_Person_UniversityEducation"
+    },
+    {
+      "name": "Only Direct Purchasers of Health Insurance",
+      "dcid": "Count_Person_WithDirectPurchaseHealthInsuranceOnly"
+    },
+    {
+      "name": "Population Above Poverty Level Status in Past Year",
+      "dcid": "Count_Person_AbovePovertyLevelInThePast12Months"
+    },
+    {
+      "name": "Population Aged 10 to 14 Years",
+      "dcid": "Count_Person_10To14Years"
+    },
+    {
+      "name": "Population Aged 15 Years or Older",
+      "dcid": "Count_Person_15OrMoreYears"
+    },
+    {
+      "name": "Population Aged 15 to 19 Years",
+      "dcid": "Count_Person_15To19Years"
+    },
+    {
+      "name": "Population Aged 16 Years or Older",
+      "dcid": "Count_Person_16OrMoreYears"
+    },
+    {
+      "name": "Population Aged 18 to 24 Years",
+      "dcid": "Count_Person_18To24Years"
+    },
+    {
+      "name": "Population Aged 20 to 24 Years",
+      "dcid": "Count_Person_20To24Years"
+    },
+    {
+      "name": "Population Aged 25 Years or Older",
+      "dcid": "Count_Person_25OrMoreYears"
+    },
+    {
+      "name": "Population Aged 25 to 29 Years",
+      "dcid": "Count_Person_25To29Years"
+    },
+    {
+      "name": "Population Aged 25 to 34",
+      "dcid": "Count_Person_30To34Years"
+    },
+    {
+      "name": "Population Aged 25 to 34 Years",
+      "dcid": "Count_Person_25To34Years"
+    },
+    {
+      "name": "Population Aged 3 and Up",
+      "dcid": "Count_Person_3OrMoreYears"
+    },
+    {
+      "name": "Population Aged 35 to 39",
+      "dcid": "Count_Person_35To39Years"
+    },
+    {
+      "name": "Population Aged 35 to 44",
+      "dcid": "Count_Person_35To44Years"
+    },
+    {
+      "name": "Population Aged 40 to 44",
+      "dcid": "Count_Person_40To44Years"
+    },
+    {
+      "name": "Population Aged 45 to 49",
+      "dcid": "Count_Person_45To49Years"
+    },
+    {
+      "name": "Population Aged 45 to 54",
+      "dcid": "Count_Person_45To54Years"
+    },
+    {
+      "name": "Population Aged 5 to 17",
+      "dcid": "Count_Person_5To17Years"
+    },
+    {
+      "name": "Population Aged 5 to 9",
+      "dcid": "Count_Person_5To9Years"
+    },
+    {
+      "name": "Population Aged 50 to 54",
+      "dcid": "Count_Person_50To54Years"
+    },
+    {
+      "name": "Population Aged 55 to 59",
+      "dcid": "Count_Person_55To59Years"
+    },
+    {
+      "name": "Population Aged 60 to 61",
+      "dcid": "Count_Person_60To61Years"
+    },
+    {
+      "name": "Population Aged 60 to 64",
+      "dcid": "Count_Person_60To64Years"
+    },
+    {
+      "name": "Population Aged 62 to 64",
+      "dcid": "Count_Person_62To64Years"
+    },
+    {
+      "name": "Population Aged 65 to 69",
+      "dcid": "Count_Person_65To69Years"
+    },
+    {
+      "name": "Population Aged 65 to 74",
+      "dcid": "Count_Person_65To74Years"
+    },
+    {
+      "name": "Population Aged 70 to 74",
+      "dcid": "Count_Person_70To74Years"
+    },
+    {
+      "name": "Population Aged 75 and Up",
+      "dcid": "Count_Person_75OrMoreYears"
+    },
+    {
+      "name": "Population Aged 75 to 79",
+      "dcid": "Count_Person_75To79Years"
+    },
+    {
+      "name": "Population Aged 80 and Up",
+      "dcid": "Count_Person_80OrMoreYears"
+    },
+    {
+      "name": "Population Aged Below 4",
+      "dcid": "Count_Person_Upto4Years"
+    },
+    {
+      "name": "Population American Indian and Alaska Native, Monoracial/Multiracial",
+      "dcid": "Count_Person_AmericanIndianAndAlaskaNativeAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Population American Indian or Alaska Native Alone",
+      "dcid": "Count_Person_AmericanIndianAndAlaskaNativeAlone"
+    },
+    {
+      "name": "Population American Indian or Alaska Native Alone",
+      "dcid": "Count_Person_AmericanIndianOrAlaskaNativeAlone"
+    },
+    {
+      "name": "Population Asian Alone",
+      "dcid": "Count_Person_AsianAlone"
+    },
+    {
+      "name": "Population Asian or Pacific Islander",
+      "dcid": "Count_Person_AsianOrPacificIslander"
+    },
+    {
+      "name": "Population Asian, Monoracial/Multiracial",
+      "dcid": "Count_Person_AsianAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Population Below Poverty Level Status in Past Year",
+      "dcid": "Count_Person_BelowPovertyLevelInThePast12Months"
+    },
+    {
+      "name": "Population Completed Between 9th to 12th Grade With No Diploma",
+      "dcid": "Count_Person_EducationalAttainment_9ThTo12ThGradeNoDiploma"
+    },
+    {
+      "name": "Population Completed Less Than 9th Grade",
+      "dcid": "Count_Person_EducationalAttainment_LessThan9ThGrade"
+    },
+    {
+      "name": "Population Currently Enrolled in School",
+      "dcid": "Count_Person_EnrolledInSchool"
+    },
+    {
+      "name": "Population Identifying as Some Other Race Alone",
+      "dcid": "Count_Person_SomeOtherRaceAlone"
+    },
+    {
+      "name": "Population Living in Rural Areas",
+      "dcid": "Count_Person_Rural"
+    },
+    {
+      "name": "Population Living in Urban Areas",
+      "dcid": "Count_Person_Urban"
+    },
+    {
+      "name": "Population Not Currently Enrolled in School",
+      "dcid": "Count_Person_NotEnrolledInSchool"
+    },
+    {
+      "name": "Population Who Are Married but Separated",
+      "dcid": "Count_Person_Separated"
+    },
+    {
+      "name": "Population Who Are Not US Citizens",
+      "dcid": "Count_Person_NotAUSCitizen"
+    },
+    {
+      "name": "Population Who Completed No Schooling",
+      "dcid": "Count_Person_EducationalAttainmentNoSchoolingCompleted"
+    },
+    {
+      "name": "Population Who Have Never Been Married",
+      "dcid": "Count_Person_NeverMarried"
+    },
+    {
+      "name": "Population Who Went to College but Did Not Receive Degree",
+      "dcid": "Count_Person_EducationalAttainment_SomeCollegeNoDegree"
+    },
+    {
+      "name": "Population With Ambulatory Difficulty",
+      "dcid": "Count_Person_AmbulatoryDifficulty"
+    },
+    {
+      "name": "Population With Cognitive Difficulty",
+      "dcid": "Count_Person_CognitiveDifficulty"
+    },
+    {
+      "name": "Population With Current Employment",
+      "dcid": "Count_Person_Employed"
+    },
+    {
+      "name": "Population With Disabilities",
+      "dcid": "Count_Person_WithDisability"
+    },
+    {
+      "name": "Population With Employer-Based Health Insurance",
+      "dcid": "Count_Person_WithEmployerBasedHealthInsurance"
+    },
+    {
+      "name": "Population With Health Insurance",
+      "dcid": "Count_Person_WithHealthInsurance"
+    },
+    {
+      "name": "Population With Hearing Difficulties",
+      "dcid": "Count_Person_HearingDifficulty"
+    },
+    {
+      "name": "Population With Independent Living Difficulty",
+      "dcid": "Count_Person_IndependentLivingDifficulty"
+    },
+    {
+      "name": "Population With Medicaid or Means-Tested Public Coverage",
+      "dcid": "Count_Person_WithMedicaidOrMeansTestedPublicCoverage"
+    },
+    {
+      "name": "Population With Medicare Coverage",
+      "dcid": "Count_Person_WithMedicareCoverage"
+    },
+    {
+      "name": "Population With Only Employer-Based Health Insurance",
+      "dcid": "Count_Person_WithEmployerBasedHealthInsuranceOnly"
+    },
+    {
+      "name": "Population With Only Medicaid or Means-Tested Public Coverage",
+      "dcid": "Count_Person_WithMedicaidOrMeansTestedPublicCoverageOnly"
+    },
+    {
+      "name": "Population With Only Medicare Coverage",
+      "dcid": "Count_Person_WithMedicareCoverageOnly"
+    },
+    {
+      "name": "Population With Only Private Health Insurance",
+      "dcid": "Count_Person_WithPrivateHealthInsuranceOnly"
+    },
+    {
+      "name": "Population With Only Public Health Insurance",
+      "dcid": "Count_Person_WithPublicHealthInsuranceOnly"
+    },
+    {
+      "name": "Population With Only TRICARE Military Health Coverage",
+      "dcid": "Count_Person_WithTricareMilitaryHealthCoverageOnly"
+    },
+    {
+      "name": "Population With Only VA Health Care",
+      "dcid": "Count_Person_WithVAHealthCareOnly"
+    },
+    {
+      "name": "Population With Poverty Status Determined",
+      "dcid": "Count_Person_PovertyStatusDetermined"
+    },
+    {
+      "name": "Population With Private Health Insurance",
+      "dcid": "Count_Person_WithPrivateHealthInsurance"
+    },
+    {
+      "name": "Population With Public Health Insurance",
+      "dcid": "Count_Person_WithPublicHealthInsurance"
+    },
+    {
+      "name": "Population With Self Care Difficulty",
+      "dcid": "Count_Person_SelfCareDifficulty"
+    },
+    {
+      "name": "Population With TRICARE Military Health Coverage",
+      "dcid": "Count_Person_WithTricareMilitaryHealthCoverage"
+    },
+    {
+      "name": "Population With VA Health Care",
+      "dcid": "Count_Person_WithVAHealthCare"
+    },
+    {
+      "name": "Population With Vision Difficulty",
+      "dcid": "Count_Person_VisionDifficulty"
+    },
+    {
+      "name": "Population With a Bachelor's Degree",
+      "dcid": "Count_Person_EducationalAttainmentBachelorsDegree"
+    },
+    {
+      "name": "Population With a Doctorate Degree",
+      "dcid": "Count_Person_EducationalAttainmentDoctorateDegree"
+    },
+    {
+      "name": "Population With a Master's Degree",
+      "dcid": "Count_Person_EducationalAttainmentMastersDegree"
+    },
+    {
+      "name": "Population With a Regular High School Diploma",
+      "dcid": "Count_Person_EducationalAttainmentRegularHighSchoolDiploma"
+    },
+    {
+      "name": "Population With an Income Between $10,000 and $14,999",
+      "dcid": "Count_Person_IncomeOf10000To14999USDollar"
+    },
+    {
+      "name": "Population With an Income Between $15,000 and $24,999",
+      "dcid": "Count_Person_IncomeOf15000To24999USDollar"
+    },
+    {
+      "name": "Population With an Income Between $25,000 and $34,999",
+      "dcid": "Count_Person_IncomeOf25000To34999USDollar"
+    },
+    {
+      "name": "Population With an Income Between $35,000 and $49,999",
+      "dcid": "Count_Person_IncomeOf35000To49999USDollar"
+    },
+    {
+      "name": "Population With an Income Between $50,000 and $64,999",
+      "dcid": "Count_Person_IncomeOf50000To64999USDollar"
+    },
+    {
+      "name": "Population With an Income Between $65,000 and $74,999",
+      "dcid": "Count_Person_IncomeOf65000To74999USDollar"
+    },
+    {
+      "name": "Population With an Income of $75,000 or More",
+      "dcid": "Count_Person_IncomeOf75000OrMoreUSDollar"
+    },
+    {
+      "name": "Population With an Income of Up to $9,999",
+      "dcid": "Count_Person_IncomeOfUpto9999USDollar"
+    },
+    {
+      "name": "Population Without Disability",
+      "dcid": "Count_Person_NoDisability"
+    },
+    {
+      "name": "Population Without Health Insurance",
+      "dcid": "Count_Person_NoHealthInsurance"
+    },
+    {
+      "name": "Population Without a High School Diploma",
+      "dcid": "Count_Person_EducationalAttainment_LessThanHighSchoolDiploma"
+    },
+    {
+      "name": "Population aged 15 or more years who are now married",
+      "dcid": "Count_Person_15OrMoreYears_NowMarried"
+    },
+    {
+      "name": "Population in the Labor Force",
+      "dcid": "Count_Person_InLaborForce"
+    },
+    {
+      "name": "Population of Native Hawaiian and Other Pacific Islander Alone",
+      "dcid": "Count_Person_NativeHawaiianAndOtherPacificIslanderAlone"
+    },
+    {
+      "name": "Population of Native Hawaiian and Other Pacific Islander, Monoracial/Multiracial",
+      "dcid": "Count_Person_NativeHawaiianAndOtherPacificIslanderAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Population of Native Hawaiian or Other Pacific Islander Alone",
+      "dcid": "Count_Person_NativeHawaiianOrOtherPacificIslanderAlone"
+    },
+    {
+      "name": "Population of non-citizens",
+      "dcid": "Count_Person_NotACitizen"
+    },
+    {
+      "name": "Population, 0 to 2 years",
+      "dcid": "Count_Person_0To2Years"
+    },
+    {
+      "name": "Population, 13 to 15 years",
+      "dcid": "Count_Person_13To15Years"
+    },
+    {
+      "name": "Population, 3 to 6 years",
+      "dcid": "Count_Person_3To6Years"
+    },
+    {
+      "name": "Population: 0 - 14 Years",
+      "dcid": "Count_Person_0To14Years"
+    },
+    {
+      "name": "Population: 0 - 17 Years",
+      "dcid": "Count_Person_0To17Years"
+    },
+    {
+      "name": "Population: 0 - 4 Years",
+      "dcid": "Count_Person_0To4Years"
+    },
+    {
+      "name": "Population: 0 - 9 Years",
+      "dcid": "Count_Person_0To9Years"
+    },
+    {
+      "name": "Population: 1 - 2 Years",
+      "dcid": "Count_Person_1To2Year"
+    },
+    {
+      "name": "Population: 1 - 4 Years",
+      "dcid": "Count_Person_1To4Years"
+    },
+    {
+      "name": "Population: 1 Years or Less",
+      "dcid": "Count_Person_YearsUpto1"
+    },
+    {
+      "name": "Population: 1 Years or More",
+      "dcid": "Count_Person_1OrMoreYears"
+    },
+    {
+      "name": "Population: 10 - 15 Years",
+      "dcid": "Count_Person_10To15Years"
+    },
+    {
+      "name": "Population: 10 - 16 Years",
+      "dcid": "Count_Person_10To16Years"
+    },
+    {
+      "name": "Population: 10 - 17 Years",
+      "dcid": "Count_Person_10To17Years"
+    },
+    {
+      "name": "Population: 10 - 18 Years",
+      "dcid": "Count_Person_10To18Years"
+    },
+    {
+      "name": "Population: 10 - 19 Years",
+      "dcid": "Count_Person_10To19Years"
+    },
+    {
+      "name": "Population: 10 Years or More",
+      "dcid": "Count_Person_10OrMoreYears"
+    },
+    {
+      "name": "Population: 100 - 104 Years",
+      "dcid": "Count_Person_100To104Years"
+    },
+    {
+      "name": "Population: 100 Years or More",
+      "dcid": "Count_Person_100OrMoreYears"
+    },
+    {
+      "name": "Population: 100,000 USD or More",
+      "dcid": "Count_Person_Civilian_USDollar100000Onwards_ResidesInHousehold"
+    },
+    {
+      "name": "Population: 105 - 109 Years",
+      "dcid": "Count_Person_105To109Years"
+    },
+    {
+      "name": "Population: 105 Years or More",
+      "dcid": "Count_Person_105OrMoreYears"
+    },
+    {
+      "name": "Population: 10th Grade",
+      "dcid": "Count_Person_EducationalAttainment10ThGrade"
+    },
+    {
+      "name": "Population: 11 - 15 Years",
+      "dcid": "Count_Person_11To15Years"
+    },
+    {
+      "name": "Population: 11 - 16 Years",
+      "dcid": "Count_Person_11To16Years"
+    },
+    {
+      "name": "Population: 11 - 17 Years",
+      "dcid": "Count_Person_11To17Years"
+    },
+    {
+      "name": "Population: 11 - 18 Years",
+      "dcid": "Count_Person_11To18Years"
+    },
+    {
+      "name": "Population: 110 Years or More",
+      "dcid": "Count_Person_110OrMoreYears"
+    },
+    {
+      "name": "Population: 11th Grade",
+      "dcid": "Count_Person_EducationalAttainment11ThGrade"
+    },
+    {
+      "name": "Population: 12 - 15 Years",
+      "dcid": "Count_Person_12To15Years"
+    },
+    {
+      "name": "Population: 12 - 16 Years",
+      "dcid": "Count_Person_12To16Years"
+    },
+    {
+      "name": "Population: 12 - 17 Years",
+      "dcid": "Count_Person_12To17Years"
+    },
+    {
+      "name": "Population: 12 - 18 Years",
+      "dcid": "Count_Person_12To18Years"
+    },
+    {
+      "name": "Population: 12 - 23 Month",
+      "dcid": "Count_Person_12To23Month"
+    },
+    {
+      "name": "Population: 12th Grade No Diploma",
+      "dcid": "Count_Person_EducationalAttainment12ThGradeNoDiploma"
+    },
+    {
+      "name": "Population: 13 - 16 Years",
+      "dcid": "Count_Person_13To16Years"
+    },
+    {
+      "name": "Population: 13 - 17 Years",
+      "dcid": "Count_Person_13To17Years"
+    },
+    {
+      "name": "Population: 13 - 18 Years",
+      "dcid": "Count_Person_13To18Years"
+    },
+    {
+      "name": "Population: 13 - 19 Years",
+      "dcid": "Count_Person_13To19Years"
+    },
+    {
+      "name": "Population: 14 - 18 Years",
+      "dcid": "Count_Person_14To18Years"
+    },
+    {
+      "name": "Population: 14 - 19 Years",
+      "dcid": "Count_Person_14To19Years"
+    },
+    {
+      "name": "Population: 14 Years or Less",
+      "dcid": "Count_Person_Upto14Years"
+    },
+    {
+      "name": "Population: 14 Years or More",
+      "dcid": "Count_Person_Years14Onwards"
+    },
+    {
+      "name": "Population: 15 - 17 Years",
+      "dcid": "Count_Person_15To17Years"
+    },
+    {
+      "name": "Population: 15 - 24 Years",
+      "dcid": "Count_Person_15To24Years"
+    },
+    {
+      "name": "Population: 15 - 44 Years",
+      "dcid": "Count_Person_15To44Years"
+    },
+    {
+      "name": "Population: 15 - 49 Years",
+      "dcid": "Count_Person_15To49Years"
+    },
+    {
+      "name": "Population: 15 - 59 Years",
+      "dcid": "Count_Person_15To59Years"
+    },
+    {
+      "name": "Population: 15 - 64 Years",
+      "dcid": "Count_Person_15To64Years"
+    },
+    {
+      "name": "Population: 15 Years or Less",
+      "dcid": "Count_Person_15OrLessYears"
+    },
+    {
+      "name": "Population: 16 - 19 Years",
+      "dcid": "Count_Person_16To19Years"
+    },
+    {
+      "name": "Population: 16 - 64 Years",
+      "dcid": "Count_Person_16To64Years"
+    },
+    {
+      "name": "Population: 18 - 19 Years",
+      "dcid": "Count_Person_18To19Years"
+    },
+    {
+      "name": "Population: 18 - 64 Years",
+      "dcid": "Count_Person_18To64Years"
+    },
+    {
+      "name": "Population: 18 Years or Less",
+      "dcid": "Count_Person_Upto18Years"
+    },
+    {
+      "name": "Population: 18 Years or More",
+      "dcid": "Count_Person_18OrMoreYears"
+    },
+    {
+      "name": "Population: 1st Grade",
+      "dcid": "Count_Person_EducationalAttainment1StGrade"
+    },
+    {
+      "name": "Population: 1st To 12th Grade",
+      "dcid": "Count_Person_EducationalAttainment_1StTo12ThGrade"
+    },
+    {
+      "name": "Population: 20 - 21 Years",
+      "dcid": "Count_Person_20To21Years"
+    },
+    {
+      "name": "Population: 20 - 29 Years",
+      "dcid": "Count_Person_20To29Years"
+    },
+    {
+      "name": "Population: 20 - 34 Years",
+      "dcid": "Count_Person_20To34Years"
+    },
+    {
+      "name": "Population: 20 - 79 Years",
+      "dcid": "Count_Person_20To79Years"
+    },
+    {
+      "name": "Population: 20 Years or More",
+      "dcid": "Count_Person_20OrMoreYears"
+    },
+    {
+      "name": "Population: 21 - 64 Years",
+      "dcid": "Count_Person_21To64Years"
+    },
+    {
+      "name": "Population: 21 Years or More",
+      "dcid": "Count_Person_21OrMoreYears"
+    },
+    {
+      "name": "Population: 22 - 24 Years",
+      "dcid": "Count_Person_22To24Years"
+    },
+    {
+      "name": "Population: 25 - 44 Years",
+      "dcid": "Count_Person_25To44Years"
+    },
+    {
+      "name": "Population: 25 - 59 Years",
+      "dcid": "Count_Person_25To59Years"
+    },
+    {
+      "name": "Population: 25,000 - 49,999 USD",
+      "dcid": "Count_Person_Civilian_USDollar25000To49999_ResidesInHousehold"
+    },
+    {
+      "name": "Population: 25,000 USD or Less",
+      "dcid": "Count_Person_Civilian_USDollarUpto25000_ResidesInHousehold"
+    },
+    {
+      "name": "Population: 2nd Grade",
+      "dcid": "Count_Person_EducationalAttainment2NdGrade"
+    },
+    {
+      "name": "Population: 3 - 5 Years",
+      "dcid": "Count_Person_3To5Years"
+    },
+    {
+      "name": "Population: 3 - 6 Month",
+      "dcid": "Count_Person_MarginalWorker_Worked3To6Months"
+    },
+    {
+      "name": "Population: 3 Month or Less",
+      "dcid": "Count_Person_MarginalWorker_WorkedUpto3Months"
+    },
+    {
+      "name": "Population: 30 - 39 Years",
+      "dcid": "Count_Person_30To39Years"
+    },
+    {
+      "name": "Population: 3rd Grade",
+      "dcid": "Count_Person_EducationalAttainment3RdGrade"
+    },
+    {
+      "name": "Population: 4 - 6 Years",
+      "dcid": "Count_Person_4To6Years"
+    },
+    {
+      "name": "Population: 4 Years or More",
+      "dcid": "Count_Person_4OrMoreYears"
+    },
+    {
+      "name": "Population: 40 - 49 Years",
+      "dcid": "Count_Person_40To49Years"
+    },
+    {
+      "name": "Population: 40 - 64 Years",
+      "dcid": "Count_Person_40To64Years"
+    },
+    {
+      "name": "Population: 45 - 64 Years",
+      "dcid": "Count_Person_45To64Years"
+    },
+    {
+      "name": "Population: 4th Grade",
+      "dcid": "Count_Person_EducationalAttainment4ThGrade"
+    },
+    {
+      "name": "Population: 5 - 10 Years",
+      "dcid": "Count_Person_5To10Years"
+    },
+    {
+      "name": "Population: 5 - 11 Years",
+      "dcid": "Count_Person_5To11Years"
+    },
+    {
+      "name": "Population: 5 - 14 Years",
+      "dcid": "Count_Person_Years5To14"
+    },
+    {
+      "name": "Population: 5 - 19 Years",
+      "dcid": "Count_Person_5To19Years"
+    },
+    {
+      "name": "Population: 5 Years or Less",
+      "dcid": "Count_Person_Upto5Years"
+    },
+    {
+      "name": "Population: 5 Years or More",
+      "dcid": "Count_Person_5OrMoreYears"
+    },
+    {
+      "name": "Population: 50 - 59 Years",
+      "dcid": "Count_Person_50To59Years"
+    },
+    {
+      "name": "Population: 50 - 64 Years",
+      "dcid": "Count_Person_50To64Years"
+    },
+    {
+      "name": "Population: 50,000 - 74,999 USD",
+      "dcid": "Count_Person_Civilian_USDollar50000To74999_ResidesInHousehold"
+    },
+    {
+      "name": "Population: 55 - 64 Years",
+      "dcid": "Count_Person_55To64Years"
+    },
+    {
+      "name": "Population: 5th And 6th Grade",
+      "dcid": "Count_Person_Years25Onwards_EducationalAttainment_5ThAnd6ThGrade"
+    },
+    {
+      "name": "Population: 5th Grade",
+      "dcid": "Count_Person_EducationalAttainment5ThGrade"
+    },
+    {
+      "name": "Population: 6 - 10 Years",
+      "dcid": "Count_Person_6To10Years"
+    },
+    {
+      "name": "Population: 6 - 11 Years",
+      "dcid": "Count_Person_6To11Years"
+    },
+    {
+      "name": "Population: 6 - 12 Years",
+      "dcid": "Count_Person_6To12Years"
+    },
+    {
+      "name": "Population: 6 - 13 Years",
+      "dcid": "Count_Person_6To13Year"
+    },
+    {
+      "name": "Population: 6 - 14 Years",
+      "dcid": "Count_Person_6To14Years"
+    },
+    {
+      "name": "Population: 6 - 59 Month",
+      "dcid": "Count_Person_6To59Month"
+    },
+    {
+      "name": "Population: 6 - 59 Years",
+      "dcid": "Count_Person_6To59Year"
+    },
+    {
+      "name": "Population: 6 - 8 Month",
+      "dcid": "Count_Person_6To8Month"
+    },
+    {
+      "name": "Population: 6 - 9 Years",
+      "dcid": "Count_Person_6To9Years"
+    },
+    {
+      "name": "Population: 6 Month or Less",
+      "dcid": "Count_Person_6OrLessMonth"
+    },
+    {
+      "name": "Population: 6 Years or Less",
+      "dcid": "Count_Person_YearsUpto6"
+    },
+    {
+      "name": "Population: 60 - 69 Years",
+      "dcid": "Count_Person_60To69Years"
+    },
+    {
+      "name": "Population: 60 Years or More",
+      "dcid": "Count_Person_60OrMoreYears"
+    },
+    {
+      "name": "Population: 62 Years or More",
+      "dcid": "Count_Person_62OrMoreYears"
+    },
+    {
+      "name": "Population: 64 Years or Less",
+      "dcid": "Count_Person_Upto64Years"
+    },
+    {
+      "name": "Population: 65 - 66 Years",
+      "dcid": "Count_Person_65To66Years"
+    },
+    {
+      "name": "Population: 65 Years or More",
+      "dcid": "Count_Person_65OrMoreYears"
+    },
+    {
+      "name": "Population: 67 - 69 Years",
+      "dcid": "Count_Person_67To69Years"
+    },
+    {
+      "name": "Population: 6th Grade",
+      "dcid": "Count_Person_EducationalAttainment6ThGrade"
+    },
+    {
+      "name": "Population: 7 - 10 Years",
+      "dcid": "Count_Person_7To10Years"
+    },
+    {
+      "name": "Population: 7 - 11 Years",
+      "dcid": "Count_Person_7To11Years"
+    },
+    {
+      "name": "Population: 7 - 12 Years",
+      "dcid": "Count_Person_7To12Years"
+    },
+    {
+      "name": "Population: 7 - 13 Years",
+      "dcid": "Count_Person_7To13Years"
+    },
+    {
+      "name": "Population: 7 - 14 Years",
+      "dcid": "Count_Person_7To14Years"
+    },
+    {
+      "name": "Population: 7 - 9 Years",
+      "dcid": "Count_Person_7To9Years"
+    },
+    {
+      "name": "Population: 7 Years or More",
+      "dcid": "Count_Person_7OrMoreYears"
+    },
+    {
+      "name": "Population: 70 - 79 Years",
+      "dcid": "Count_Person_70To79Years"
+    },
+    {
+      "name": "Population: 70 Years or More",
+      "dcid": "Count_Person_70OrMoreYears"
+    },
+    {
+      "name": "Population: 75 - 84 Years",
+      "dcid": "Count_Person_75To84Years"
+    },
+    {
+      "name": "Population: 75,000 - 99,999 USD",
+      "dcid": "Count_Person_Civilian_USDollar75000To99999_ResidesInHousehold"
+    },
+    {
+      "name": "Population: 7th And 8th Grade",
+      "dcid": "Count_Person_Years25Onwards_EducationalAttainment_7ThAnd8ThGrade"
+    },
+    {
+      "name": "Population: 7th Grade",
+      "dcid": "Count_Person_EducationalAttainment7ThGrade"
+    },
+    {
+      "name": "Population: 80 - 84 Years",
+      "dcid": "Count_Person_80To84Years"
+    },
+    {
+      "name": "Population: 80 - 89 Years",
+      "dcid": "Count_Person_80To89Years"
+    },
+    {
+      "name": "Population: 85 - 89 Years",
+      "dcid": "Count_Person_85To89Years"
+    },
+    {
+      "name": "Population: 85 - 94 Years",
+      "dcid": "Count_Person_85To94Years"
+    },
+    {
+      "name": "Population: 85 Years or More",
+      "dcid": "Count_Person_85OrMoreYears"
+    },
+    {
+      "name": "Population: 8th Grade",
+      "dcid": "Count_Person_EducationalAttainment8ThGrade"
+    },
+    {
+      "name": "Population: 9 - 35 Month",
+      "dcid": "Count_Person_9To35Month"
+    },
+    {
+      "name": "Population: 9 Years or Less",
+      "dcid": "Count_Person_Upto9Years"
+    },
+    {
+      "name": "Population: 90 - 94 Years",
+      "dcid": "Count_Person_90To94Years"
+    },
+    {
+      "name": "Population: 90 - 99 Years",
+      "dcid": "Count_Person_90To99Years"
+    },
+    {
+      "name": "Population: 90 Years or More",
+      "dcid": "Count_Person_90OrMoreYears"
+    },
+    {
+      "name": "Population: 95 - 104 Years",
+      "dcid": "Count_Person_95To104Years"
+    },
+    {
+      "name": "Population: 95 - 99 Years",
+      "dcid": "Count_Person_95To99Years"
+    },
+    {
+      "name": "Population: 95 Years or More",
+      "dcid": "Count_Person_95OrMoreYears"
+    },
+    {
+      "name": "Population: 99 Years or More",
+      "dcid": "Count_Person_99OrMoreYears"
+    },
+    {
+      "name": "Population: 9th Grade",
+      "dcid": "Count_Person_EducationalAttainment9ThGrade"
+    },
+    {
+      "name": "Population: Adult Correctional Facilities",
+      "dcid": "Count_Person_ResidesInAdultCorrectionalFacilities"
+    },
+    {
+      "name": "Population: African Languages",
+      "dcid": "Count_Person_5OrMoreYears_AfricanLanguagesSpokenAtHome"
+    },
+    {
+      "name": "Population: Agriculture Forestry Fishing",
+      "dcid": "Count_Person_AgricultureForestryFishing"
+    },
+    {
+      "name": "Population: Agriculture, Forestry And Fishing",
+      "dcid": "Count_Person_Employed_NACE/A"
+    },
+    {
+      "name": "Population: American Indian or Alaska Native",
+      "dcid": "Count_Person_AmericanIndianOrAlaskaNative"
+    },
+    {
+      "name": "Population: Amharic Somali or Other Afro Asiatic Languages",
+      "dcid": "Count_Person_5OrMoreYears_AmharicSomaliOrOtherAfroAsiaticLanguagesSpokenAtHome"
+    },
+    {
+      "name": "Population: Arab",
+      "dcid": "Count_Person_Arab"
+    },
+    {
+      "name": "Population: Arabic",
+      "dcid": "Count_Person_5OrMoreYears_ArabicSpokenAtHome"
+    },
+    {
+      "name": "Population: Armenian",
+      "dcid": "Count_Person_5OrMoreYears_ArmenianSpokenAtHome"
+    },
+    {
+      "name": "Population: Arthritis",
+      "dcid": "Count_Person_ConditionArthritis"
+    },
+    {
+      "name": "Population: Arts Humanities And Other Major",
+      "dcid": "Count_Person_BachelorOfArtsHumanitiesAndOtherMajor"
+    },
+    {
+      "name": "Population: Arts, Entertainment, Recreation, Other Service, Household, And Extra-territorial Organizations And Bodies Activities",
+      "dcid": "Count_Person_Employed_NACE/R-U"
+    },
+    {
+      "name": "Population: Associates Degree",
+      "dcid": "Count_Person_EducationalAttainmentAssociatesDegree"
+    },
+    {
+      "name": "Population: Asthma",
+      "dcid": "Count_Person_ConditionAsthma"
+    },
+    {
+      "name": "Population: Bachelors Degree or Higher",
+      "dcid": "Count_Person_EducationalAttainmentBachelorsDegreeOrHigher"
+    },
+    {
+      "name": "Population: Bengali",
+      "dcid": "Count_Person_5OrMoreYears_BengaliSpokenAtHome"
+    },
+    {
+      "name": "Population: Black",
+      "dcid": "Count_Person_Black"
+    },
+    {
+      "name": "Population: Born in Other State in The United States",
+      "dcid": "Count_Person_BornInOtherStateInTheUnitedStates"
+    },
+    {
+      "name": "Population: Born in State of Residence",
+      "dcid": "Count_Person_BornInStateOfResidence"
+    },
+    {
+      "name": "Population: Brazil_Amarela",
+      "dcid": "Count_Person_BrazilAmarela"
+    },
+    {
+      "name": "Population: Brazil_Branca",
+      "dcid": "Count_Person_BrazilBranca"
+    },
+    {
+      "name": "Population: Brazil_Indigneous",
+      "dcid": "Count_Person_BrazilIndigneous"
+    },
+    {
+      "name": "Population: Brazil_Other Religion",
+      "dcid": "Count_Person_BrazilOtherReligion"
+    },
+    {
+      "name": "Population: Brazil_Pardo",
+      "dcid": "Count_Person_BrazilPardo"
+    },
+    {
+      "name": "Population: Business Major",
+      "dcid": "Count_Person_BachelorOfBusinessMajor"
+    },
+    {
+      "name": "Population: CBS_Israel_Non Judaism or Non Arab Christian or No Religion",
+      "dcid": "Count_Person_CBSIsraelNonJudaismOrNonArabChristianOrNoReligion"
+    },
+    {
+      "name": "Population: Cancer",
+      "dcid": "Count_Person_ConditionCancer"
+    },
+    {
+      "name": "Population: Catholicism",
+      "dcid": "Count_Person_Catholicism"
+    },
+    {
+      "name": "Population: Chinese",
+      "dcid": "Count_Person_5OrMoreYears_ChineseSpokenAtHome"
+    },
+    {
+      "name": "Population: Chinese Incl Mandarin Cantonese",
+      "dcid": "Count_Person_5OrMoreYears_ChineseInclMandarinCantoneseSpokenAtHome"
+    },
+    {
+      "name": "Population: Church of Ireland Including Protestant",
+      "dcid": "Count_Person_ChurchOfIrelandIncludingProtestant"
+    },
+    {
+      "name": "Population: Citizen",
+      "dcid": "Count_Person_Citizen"
+    },
+    {
+      "name": "Population: Citizen Outside EU27",
+      "dcid": "Count_Person_CitizenOutsideEU27"
+    },
+    {
+      "name": "Population: Citizen Outside EU28",
+      "dcid": "Count_Person_CitizenOutsideEU28"
+    },
+    {
+      "name": "Population: Civilian",
+      "dcid": "Count_Person_Civilian"
+    },
+    {
+      "name": "Population: Clerical Worker",
+      "dcid": "Count_Person_ClericalWorker"
+    },
+    {
+      "name": "Population: College Graduate",
+      "dcid": "Count_Person_EducationalAttainmentCollegeGraduate"
+    },
+    {
+      "name": "Population: College or University Student Housing",
+      "dcid": "Count_Person_ResidesInCollegeOrUniversityStudentHousing"
+    },
+    {
+      "name": "Population: Construction",
+      "dcid": "Count_Person_Employed_NACE/F"
+    },
+    {
+      "name": "Population: Crafts And Trade",
+      "dcid": "Count_Person_CraftsAndTrade"
+    },
+    {
+      "name": "Population: Dementia",
+      "dcid": "Count_Person_ConditionDementia"
+    },
+    {
+      "name": "Population: Diabetes",
+      "dcid": "Count_Person_ConditionDiabetes"
+    },
+    {
+      "name": "Population: Diseases of Heart",
+      "dcid": "Count_Person_ConditionDiseasesOfHeart"
+    },
+    {
+      "name": "Population: Divorced in The Past 12 Months",
+      "dcid": "Count_Person_15OrMoreYears_DivorcedInThePast12Months"
+    },
+    {
+      "name": "Population: Divorced or Separated",
+      "dcid": "Count_Person_DivorcedOrSeparated"
+    },
+    {
+      "name": "Population: Education Major",
+      "dcid": "Count_Person_BachelorOfEducationMajor"
+    },
+    {
+      "name": "Population: Elementary Worker",
+      "dcid": "Count_Person_ElementaryWorker"
+    },
+    {
+      "name": "Population: Elevated Blood Pressure",
+      "dcid": "Count_Person_WithElevatedBloodPressure"
+    },
+    {
+      "name": "Population: Eligible Social Protection Benefit Under Maternity Benefit",
+      "dcid": "Count_Person_EligibleSocialProtectionBenefitUnderMaternityBenefit"
+    },
+    {
+      "name": "Population: Employed",
+      "dcid": "Count_Person_Years14Onwards_Employed"
+    },
+    {
+      "name": "Population: Enrolled in College Undergraduate Years",
+      "dcid": "Count_Person_DetailedEnrolledInCollegeUndergraduateYears"
+    },
+    {
+      "name": "Population: Enrolled in College Undergraduate Years",
+      "dcid": "Count_Person_EnrolledInCollegeUndergraduateYears"
+    },
+    {
+      "name": "Population: Enrolled in Grade 1",
+      "dcid": "Count_Person_DetailedEnrolledInGrade1"
+    },
+    {
+      "name": "Population: Enrolled in Grade 1 To Grade 4",
+      "dcid": "Count_Person_EnrolledInGrade1ToGrade4"
+    },
+    {
+      "name": "Population: Enrolled in Grade 10",
+      "dcid": "Count_Person_DetailedEnrolledInGrade10"
+    },
+    {
+      "name": "Population: Enrolled in Grade 11",
+      "dcid": "Count_Person_DetailedEnrolledInGrade11"
+    },
+    {
+      "name": "Population: Enrolled in Grade 12",
+      "dcid": "Count_Person_DetailedEnrolledInGrade12"
+    },
+    {
+      "name": "Population: Enrolled in Grade 2",
+      "dcid": "Count_Person_DetailedEnrolledInGrade2"
+    },
+    {
+      "name": "Population: Enrolled in Grade 3",
+      "dcid": "Count_Person_DetailedEnrolledInGrade3"
+    },
+    {
+      "name": "Population: Enrolled in Grade 4",
+      "dcid": "Count_Person_DetailedEnrolledInGrade4"
+    },
+    {
+      "name": "Population: Enrolled in Grade 5",
+      "dcid": "Count_Person_DetailedEnrolledInGrade5"
+    },
+    {
+      "name": "Population: Enrolled in Grade 5 To Grade 8",
+      "dcid": "Count_Person_EnrolledInGrade5ToGrade8"
+    },
+    {
+      "name": "Population: Enrolled in Grade 6",
+      "dcid": "Count_Person_DetailedEnrolledInGrade6"
+    },
+    {
+      "name": "Population: Enrolled in Grade 7",
+      "dcid": "Count_Person_DetailedEnrolledInGrade7"
+    },
+    {
+      "name": "Population: Enrolled in Grade 8",
+      "dcid": "Count_Person_DetailedEnrolledInGrade8"
+    },
+    {
+      "name": "Population: Enrolled in Grade 9",
+      "dcid": "Count_Person_DetailedEnrolledInGrade9"
+    },
+    {
+      "name": "Population: Enrolled in Grade 9 To Grade 12",
+      "dcid": "Count_Person_EnrolledInGrade9ToGrade12"
+    },
+    {
+      "name": "Population: Enrolled in Kindergarten",
+      "dcid": "Count_Person_DetailedEnrolledInKindergarten"
+    },
+    {
+      "name": "Population: Enrolled in Kindergarten",
+      "dcid": "Count_Person_EnrolledInKindergarten"
+    },
+    {
+      "name": "Population: Enrolled in Nursery School Preschool",
+      "dcid": "Count_Person_DetailedEnrolledInNurserySchoolPreschool"
+    },
+    {
+      "name": "Population: Enrolled in Nursery School Preschool",
+      "dcid": "Count_Person_EnrolledInNurserySchoolPreschool"
+    },
+    {
+      "name": "Population: Enrolled in Nursery Through Grade 12",
+      "dcid": "Count_Person_EnrolledInNurseryThroughGrade12_EnrolledInSchool"
+    },
+    {
+      "name": "Population: Evangelical",
+      "dcid": "Count_Person_Evangelical"
+    },
+    {
+      "name": "Population: Ever Married \u0026 New Zealand_Civil Union",
+      "dcid": "Count_Person_EverMarriedOrNewZealandCivilUnion"
+    },
+    {
+      "name": "Population: Financial And Insurance Activities",
+      "dcid": "Count_Person_Employed_NACE/K"
+    },
+    {
+      "name": "Population: Financial, Real Estate, Professional, Scientific, Technical, Administrative, And Support Activities",
+      "dcid": "Count_Person_Employed_NACE/K-N"
+    },
+    {
+      "name": "Population: Food Insecure People",
+      "dcid": "Count_Person_FoodInsecure"
+    },
+    {
+      "name": "Population: Foreign Born",
+      "dcid": "Count_Person_5OrMoreYears_ForeignBorn"
+    },
+    {
+      "name": "Population: Foreign Born",
+      "dcid": "Count_Person_ForeignBorn"
+    },
+    {
+      "name": "Population: Foreign Born Outside EU27",
+      "dcid": "Count_Person_ForeignBornOutsideEU27"
+    },
+    {
+      "name": "Population: Foreign Born Outside EU28",
+      "dcid": "Count_Person_ForeignBornOutsideEU28"
+    },
+    {
+      "name": "Population: Foreign Born Within EU27",
+      "dcid": "Count_Person_ForeignBornWithinEU27"
+    },
+    {
+      "name": "Population: Foreign Born Within EU28",
+      "dcid": "Count_Person_ForeignBornWithinEU28"
+    },
+    {
+      "name": "Population: French Creole",
+      "dcid": "Count_Person_5OrMoreYears_FrenchCreoleSpokenAtHome"
+    },
+    {
+      "name": "Population: French Incl Cajun",
+      "dcid": "Count_Person_5OrMoreYears_FrenchInclCajunSpokenAtHome"
+    },
+    {
+      "name": "Population: French Incl Patois Cajun",
+      "dcid": "Count_Person_5OrMoreYears_FrenchInclPatoisCajunSpokenAtHome"
+    },
+    {
+      "name": "Population: Full Time Employee",
+      "dcid": "Count_Person_FullTimeEmployee"
+    },
+    {
+      "name": "Population: Ged or Alternative Credential",
+      "dcid": "Count_Person_EducationalAttainmentGedOrAlternativeCredential"
+    },
+    {
+      "name": "Population: German",
+      "dcid": "Count_Person_5OrMoreYears_GermanSpokenAtHome"
+    },
+    {
+      "name": "Population: Graduate or Professional Degree",
+      "dcid": "Count_Person_EducationalAttainmentGraduateOrProfessionalDegree"
+    },
+    {
+      "name": "Population: Graduate or Professional School",
+      "dcid": "Count_Person_DetailedGraduateOrProfessionalSchool"
+    },
+    {
+      "name": "Population: Graduate or Professional School",
+      "dcid": "Count_Person_GraduateOrProfessionalSchool"
+    },
+    {
+      "name": "Population: Greek",
+      "dcid": "Count_Person_5OrMoreYears_GreekSpokenAtHome"
+    },
+    {
+      "name": "Population: Group Quarters",
+      "dcid": "Count_Person_ResidesInGroupQuarters"
+    },
+    {
+      "name": "Population: Gujarati",
+      "dcid": "Count_Person_5OrMoreYears_GujaratiSpokenAtHome"
+    },
+    {
+      "name": "Population: Haitian",
+      "dcid": "Count_Person_5OrMoreYears_HaitianSpokenAtHome"
+    },
+    {
+      "name": "Population: Hebrew",
+      "dcid": "Count_Person_5OrMoreYears_HebrewSpokenAtHome"
+    },
+    {
+      "name": "Population: High School Graduate Includes Equivalency",
+      "dcid": "Count_Person_EducationalAttainmentHighSchoolGraduateIncludesEquivalency"
+    },
+    {
+      "name": "Population: High School Graduate or Higher",
+      "dcid": "Count_Person_EducationalAttainmentHighSchoolGraduateOrHigher"
+    },
+    {
+      "name": "Population: Hindi",
+      "dcid": "Count_Person_5OrMoreYears_HindiSpokenAtHome"
+    },
+    {
+      "name": "Population: Hiv or Aids",
+      "dcid": "Count_Person_ConditionHivOrAids"
+    },
+    {
+      "name": "Population: Hmong",
+      "dcid": "Count_Person_5OrMoreYears_HmongSpokenAtHome"
+    },
+    {
+      "name": "Population: Houseless",
+      "dcid": "Count_Person_Houseless"
+    },
+    {
+      "name": "Population: Hungarian",
+      "dcid": "Count_Person_5OrMoreYears_HungarianSpokenAtHome"
+    },
+    {
+      "name": "Population: INEGI_Religion Other Than Catholicism",
+      "dcid": "Count_Person_INEGIReligionOtherThanCatholicism"
+    },
+    {
+      "name": "Population: Illiterate",
+      "dcid": "Count_Person_Illiterate"
+    },
+    {
+      "name": "Population: Ilocano Samoan Hawaiian or Other Austronesian Languages",
+      "dcid": "Count_Person_5OrMoreYears_IlocanoSamoanHawaiianOrOtherAustronesianLanguagesSpokenAtHome"
+    },
+    {
+      "name": "Population: Income Of 0 To 20 Percentile",
+      "dcid": "Count_Person_IncomeOf0To20Percentile"
+    },
+    {
+      "name": "Population: Income Of 20 To 40 Percentile",
+      "dcid": "Count_Person_IncomeOf20To40Percentile"
+    },
+    {
+      "name": "Population: Income Of 40 To 60 Percentile",
+      "dcid": "Count_Person_IncomeOf40To60Percentile"
+    },
+    {
+      "name": "Population: Income Of 60 To 80 Percentile",
+      "dcid": "Count_Person_IncomeOf60To80Percentile"
+    },
+    {
+      "name": "Population: Income Of 80 To 100 Percentile",
+      "dcid": "Count_Person_IncomeOf80To100Percentile"
+    },
+    {
+      "name": "Population: Industry (except Construction)",
+      "dcid": "Count_Person_Employed_NACE/B-E"
+    },
+    {
+      "name": "Population: Information And Communication",
+      "dcid": "Count_Person_Employed_NACE/J"
+    },
+    {
+      "name": "Population: Institutionalized Group Quarters",
+      "dcid": "Count_Person_ResidesInInstitutionalizedGroupQuarters"
+    },
+    {
+      "name": "Population: Ireland_Other Stated Religion",
+      "dcid": "Count_Person_IrelandOtherStatedReligion"
+    },
+    {
+      "name": "Population: Irreligion",
+      "dcid": "Count_Person_Irreligion"
+    },
+    {
+      "name": "Population: Italian",
+      "dcid": "Count_Person_5OrMoreYears_ItalianSpokenAtHome"
+    },
+    {
+      "name": "Population: Japanese",
+      "dcid": "Count_Person_5OrMoreYears_JapaneseSpokenAtHome"
+    },
+    {
+      "name": "Population: Judaism",
+      "dcid": "Count_Person_Judaism"
+    },
+    {
+      "name": "Population: Juvenile Facilities",
+      "dcid": "Count_Person_ResidesInJuvenileFacilities"
+    },
+    {
+      "name": "Population: Khmer",
+      "dcid": "Count_Person_5OrMoreYears_KhmerSpokenAtHome"
+    },
+    {
+      "name": "Population: Kidney Disease",
+      "dcid": "Count_Person_ConditionKidneyDisease"
+    },
+    {
+      "name": "Population: Kindergarten",
+      "dcid": "Count_Person_EducationalAttainmentKindergarten"
+    },
+    {
+      "name": "Population: Korean",
+      "dcid": "Count_Person_5OrMoreYears_KoreanSpokenAtHome"
+    },
+    {
+      "name": "Population: Labor Underutilized",
+      "dcid": "Count_Person_LaborUnderutilized"
+    },
+    {
+      "name": "Population: Labor Underutilized Potential Labor Force",
+      "dcid": "Count_Person_LaborUnderutilizedPotentialLaborForce"
+    },
+    {
+      "name": "Population: Labor Underutilized Time Related Underemployed",
+      "dcid": "Count_Person_LaborUnderutilizedTimeRelatedUnderemployed"
+    },
+    {
+      "name": "Population: Labor Underutilized Unemployed",
+      "dcid": "Count_Person_LaborUnderutilizedUnemployed"
+    },
+    {
+      "name": "Population: Language Other Than English",
+      "dcid": "Count_Person_5OrMoreYears_LanguageOtherThanEnglishSpokenAtHome"
+    },
+    {
+      "name": "Population: Laotian",
+      "dcid": "Count_Person_5OrMoreYears_LaotianSpokenAtHome"
+    },
+    {
+      "name": "Population: Legislator",
+      "dcid": "Count_Person_LegislatorOccupation"
+    },
+    {
+      "name": "Population: Less Than High School Diploma",
+      "dcid": "Count_Person_25OrMoreYears_EducationalAttainmentLessThanHighSchoolDiploma"
+    },
+    {
+      "name": "Population: Less Than High School Graduate",
+      "dcid": "Count_Person_EducationalAttainmentLessThanHighSchoolGraduate"
+    },
+    {
+      "name": "Population: Less Than Primary Education Or Primary Education Or Lower Secondary Education",
+      "dcid": "Count_Person_LessThanPrimaryEducationOrPrimaryEducationOrLowerSecondaryEducation"
+    },
+    {
+      "name": "Population: Limited Activity Limitation",
+      "dcid": "Count_Person_LimitedActivityLimitation"
+    },
+    {
+      "name": "Population: Literate",
+      "dcid": "Count_Person_Literate"
+    },
+    {
+      "name": "Population: Living Together",
+      "dcid": "Count_Person_LivingTogether"
+    },
+    {
+      "name": "Population: Living Together \u0026 Divorced",
+      "dcid": "Count_Person_LivingTogetherOrDivorced"
+    },
+    {
+      "name": "Population: Living Together \u0026 Never Married",
+      "dcid": "Count_Person_LivingTogetherOrNeverMarried"
+    },
+    {
+      "name": "Population: Living Together \u0026 Separated",
+      "dcid": "Count_Person_LivingTogetherOrSeparated"
+    },
+    {
+      "name": "Population: Living Together \u0026 Widowed",
+      "dcid": "Count_Person_LivingTogetherOrWidowed"
+    },
+    {
+      "name": "Population: Lower Secondary Education",
+      "dcid": "Count_Person_LowerSecondaryEducation"
+    },
+    {
+      "name": "Population: Lung Condition",
+      "dcid": "Count_Person_ConditionLungCondition"
+    },
+    {
+      "name": "Population: MGNREGA_Unemployed",
+      "dcid": "Count_Person_MGNREGAUnemployed"
+    },
+    {
+      "name": "Population: Main Worker",
+      "dcid": "Count_Person_MainWorker"
+    },
+    {
+      "name": "Population: Malayalam Kannada or Other Dravidian Languages",
+      "dcid": "Count_Person_5OrMoreYears_MalayalamKannadaOrOtherDravidianLanguagesSpokenAtHome"
+    },
+    {
+      "name": "Population: Manager",
+      "dcid": "Count_Person_Manager"
+    },
+    {
+      "name": "Population: Manufacturing",
+      "dcid": "Count_Person_Employed_NACE/C"
+    },
+    {
+      "name": "Population: Marginal Worker",
+      "dcid": "Count_Person_MarginalWorker"
+    },
+    {
+      "name": "Population: Married",
+      "dcid": "Count_Person_Married"
+    },
+    {
+      "name": "Population: Married \u0026 Living Together",
+      "dcid": "Count_Person_MarriedOrLivingTogether"
+    },
+    {
+      "name": "Population: Married in The Past 12 Months",
+      "dcid": "Count_Person_15OrMoreYears_MarriedInThePast12Months"
+    },
+    {
+      "name": "Population: Mental Health Not Good",
+      "dcid": "Count_Person_ConditionMentalHealthNotGood"
+    },
+    {
+      "name": "Population: Military Quarters or Military Ships",
+      "dcid": "Count_Person_ResidesInMilitaryQuartersOrMilitaryShips"
+    },
+    {
+      "name": "Population: Moderate Activity Limitation",
+      "dcid": "Count_Person_ModerateActivityLimitation"
+    },
+    {
+      "name": "Population: Mon Khmer Cambodian",
+      "dcid": "Count_Person_5OrMoreYears_MonKhmerCambodianSpokenAtHome"
+    },
+    {
+      "name": "Population: Native",
+      "dcid": "Count_Person_Native"
+    },
+    {
+      "name": "Population: Native Born Outside The United States",
+      "dcid": "Count_Person_NativeBornOutsideTheUnitedStates"
+    },
+    {
+      "name": "Population: Navajo",
+      "dcid": "Count_Person_5OrMoreYears_NavajoSpokenAtHome"
+    },
+    {
+      "name": "Population: Nepali Marathi or Other Indic Languages",
+      "dcid": "Count_Person_5OrMoreYears_NepaliMarathiOrOtherIndicLanguagesSpokenAtHome"
+    },
+    {
+      "name": "Population: No Activity Limitation",
+      "dcid": "Count_Person_NoActivityLimitation"
+    },
+    {
+      "name": "Population: No Private Health Insurance",
+      "dcid": "Count_Person_NoPrivateHealthInsurance"
+    },
+    {
+      "name": "Population: No Public Health Insurance",
+      "dcid": "Count_Person_NoPublicHealthInsurance"
+    },
+    {
+      "name": "Population: Non Judaism",
+      "dcid": "Count_Person_NonJudaism"
+    },
+    {
+      "name": "Population: Non Resident",
+      "dcid": "Count_Person_NonResident"
+    },
+    {
+      "name": "Population: Non Worker",
+      "dcid": "Count_Person_NonWorker"
+    },
+    {
+      "name": "Population: Noninstitutionalized Group Quarters",
+      "dcid": "Count_Person_ResidesInNoninstitutionalizedGroupQuarters"
+    },
+    {
+      "name": "Population: Noninstitutionalized Group Quarters \u0026 Institutionalized Group Quarters",
+      "dcid": "Count_Person_ResidesInNoninstitutionalizedGroupQuartersOrInstitutionalizedGroupQuarters"
+    },
+    {
+      "name": "Population: Normalweight",
+      "dcid": "Count_Person_Normalweight"
+    },
+    {
+      "name": "Population: Not Hispanic or Latino \u0026 White Alone",
+      "dcid": "Count_Person_NotHispanicOrLatino_WhiteAlone"
+    },
+    {
+      "name": "Population: Not Living Together \u0026 Divorced",
+      "dcid": "Count_Person_NotLivingTogetherOrDivorced"
+    },
+    {
+      "name": "Population: Not Living Together \u0026 Never Married",
+      "dcid": "Count_Person_NotLivingTogetherOrNeverMarried"
+    },
+    {
+      "name": "Population: Not Living Together \u0026 Separated",
+      "dcid": "Count_Person_NotLivingTogetherOrSeparated"
+    },
+    {
+      "name": "Population: Not Living Together \u0026 Widowed",
+      "dcid": "Count_Person_NotLivingTogetherOrWidowed"
+    },
+    {
+      "name": "Population: Not in Labor Force",
+      "dcid": "Count_Person_Years14Onwards_NotInLaborForce"
+    },
+    {
+      "name": "Population: Nursery School",
+      "dcid": "Count_Person_EducationalAttainmentNurserySchool"
+    },
+    {
+      "name": "Population: Nursery To 4th Grade",
+      "dcid": "Count_Person_Years25Onwards_EducationalAttainment_NurseryTo4ThGrade"
+    },
+    {
+      "name": "Population: Nursing Facilities",
+      "dcid": "Count_Person_ResidesInNursingFacilities"
+    },
+    {
+      "name": "Population: Obesity",
+      "dcid": "Count_Person_Obesity"
+    },
+    {
+      "name": "Population: Only English",
+      "dcid": "Count_Person_5OrMoreYears_OnlyEnglishSpokenAtHome"
+    },
+    {
+      "name": "Population: Other And Unspecified Languages",
+      "dcid": "Count_Person_5OrMoreYears_OtherAndUnspecifiedLanguagesSpokenAtHome"
+    },
+    {
+      "name": "Population: Other Asian Languages",
+      "dcid": "Count_Person_5OrMoreYears_OtherAsianLanguagesSpokenAtHome"
+    },
+    {
+      "name": "Population: Other Indic Languages",
+      "dcid": "Count_Person_5OrMoreYears_OtherIndicLanguagesSpokenAtHome"
+    },
+    {
+      "name": "Population: Other Indo European Languages",
+      "dcid": "Count_Person_5OrMoreYears_OtherIndoEuropeanLanguagesSpokenAtHome"
+    },
+    {
+      "name": "Population: Other Languages of Asia",
+      "dcid": "Count_Person_5OrMoreYears_OtherLanguagesOfAsiaSpokenAtHome"
+    },
+    {
+      "name": "Population: Other Native Languages of North America",
+      "dcid": "Count_Person_5OrMoreYears_OtherNativeLanguagesOfNorthAmericaSpokenAtHome"
+    },
+    {
+      "name": "Population: Other Native North American Languages",
+      "dcid": "Count_Person_5OrMoreYears_OtherNativeNorthAmericanLanguagesSpokenAtHome"
+    },
+    {
+      "name": "Population: Other Pacific Island Languages",
+      "dcid": "Count_Person_5OrMoreYears_OtherPacificIslandLanguagesSpokenAtHome"
+    },
+    {
+      "name": "Population: Other Slavic Languages",
+      "dcid": "Count_Person_5OrMoreYears_OtherSlavicLanguagesSpokenAtHome"
+    },
+    {
+      "name": "Population: Other West Germanic Languages",
+      "dcid": "Count_Person_5OrMoreYears_OtherWestGermanicLanguagesSpokenAtHome"
+    },
+    {
+      "name": "Population: Overweight",
+      "dcid": "Count_Person_Overweight"
+    },
+    {
+      "name": "Population: Permanent Resident",
+      "dcid": "Count_Person_PermanentResident"
+    },
+    {
+      "name": "Population: Persian",
+      "dcid": "Count_Person_5OrMoreYears_PersianSpokenAtHome"
+    },
+    {
+      "name": "Population: Persian Incl Farsi Dari",
+      "dcid": "Count_Person_5OrMoreYears_PersianInclFarsiDariSpokenAtHome"
+    },
+    {
+      "name": "Population: Plant Operator And Machine Operator And Machine Assemble",
+      "dcid": "Count_Person_PlantOperatorAndMachineOperatorAndMachineAssemble"
+    },
+    {
+      "name": "Population: Polish",
+      "dcid": "Count_Person_5OrMoreYears_PolishSpokenAtHome"
+    },
+    {
+      "name": "Population: Portuguese",
+      "dcid": "Count_Person_5OrMoreYears_PortugueseSpokenAtHome"
+    },
+    {
+      "name": "Population: Portuguese or Portuguese Creole",
+      "dcid": "Count_Person_5OrMoreYears_PortugueseOrPortugueseCreoleSpokenAtHome"
+    },
+    {
+      "name": "Population: Post Secondary Non Tertiary Education",
+      "dcid": "Count_Person_PostSecondaryNonTertiaryEducation"
+    },
+    {
+      "name": "Population: Pre Obese",
+      "dcid": "Count_Person_PreObese"
+    },
+    {
+      "name": "Population: Pre Primary Education",
+      "dcid": "Count_Person_PrePrimaryEducation"
+    },
+    {
+      "name": "Population: Presbyterian",
+      "dcid": "Count_Person_Presbyterian"
+    },
+    {
+      "name": "Population: Primary Education",
+      "dcid": "Count_Person_PrimaryEducation"
+    },
+    {
+      "name": "Population: Primary School",
+      "dcid": "Count_Person_EducationalAttainmentPrimarySchool"
+    },
+    {
+      "name": "Population: Private School",
+      "dcid": "Count_Person_3OrMoreYears_EnrolledInPrivateSchool"
+    },
+    {
+      "name": "Population: Producer",
+      "dcid": "Count_Person_Producer"
+    },
+    {
+      "name": "Population: Professional",
+      "dcid": "Count_Person_Professional"
+    },
+    {
+      "name": "Population: Professional School Degree",
+      "dcid": "Count_Person_EducationalAttainmentProfessionalSchoolDegree"
+    },
+    {
+      "name": "Population: Professional, Scientific And Technical Activities, Administrative And Support Service Activities",
+      "dcid": "Count_Person_Employed_NACE/M-N"
+    },
+    {
+      "name": "Population: Public Administration And Defence, Compulsory Social Security, Education, Human Health And Social Work Activities, Arts, Entertainment And Recreation",
+      "dcid": "Count_Person_Employed_NACE/O-U"
+    },
+    {
+      "name": "Population: Public Administration, Defence, Education, Human Health And Social Work Activities",
+      "dcid": "Count_Person_Employed_NACE/O-Q"
+    },
+    {
+      "name": "Population: Public School",
+      "dcid": "Count_Person_3OrMoreYears_EnrolledInPublicSchool"
+    },
+    {
+      "name": "Population: Punjabi",
+      "dcid": "Count_Person_5OrMoreYears_PunjabiSpokenAtHome"
+    },
+    {
+      "name": "Population: Real Estate Activities",
+      "dcid": "Count_Person_Employed_NACE/L"
+    },
+    {
+      "name": "Population: Resident",
+      "dcid": "Count_Person_Resident"
+    },
+    {
+      "name": "Population: Roman Catholicism",
+      "dcid": "Count_Person_RomanCatholicism"
+    },
+    {
+      "name": "Population: Roman Catholicism Apostolic",
+      "dcid": "Count_Person_RomanCatholicismApostolic"
+    },
+    {
+      "name": "Population: Russian",
+      "dcid": "Count_Person_5OrMoreYears_RussianSpokenAtHome"
+    },
+    {
+      "name": "Population: Scandinavian Languages",
+      "dcid": "Count_Person_5OrMoreYears_ScandinavianLanguagesSpokenAtHome"
+    },
+    {
+      "name": "Population: Science And Engineering Major",
+      "dcid": "Count_Person_BachelorOfScienceAndEngineeringMajor"
+    },
+    {
+      "name": "Population: Science And Engineering Related Major",
+      "dcid": "Count_Person_BachelorOfScienceAndEngineeringRelatedMajor"
+    },
+    {
+      "name": "Population: Secondary Education",
+      "dcid": "Count_Person_EducationalAttainmentSecondaryEducation"
+    },
+    {
+      "name": "Population: Semi Urban",
+      "dcid": "Count_Person_SemiUrban"
+    },
+    {
+      "name": "Population: Serbo Croatian",
+      "dcid": "Count_Person_5OrMoreYears_SerboCroatianSpokenAtHome"
+    },
+    {
+      "name": "Population: Services And Sales",
+      "dcid": "Count_Person_ServicesAndSales"
+    },
+    {
+      "name": "Population: Severe Activity Limitation",
+      "dcid": "Count_Person_SevereActivityLimitation"
+    },
+    {
+      "name": "Population: Some College 1 or More Years No Degree",
+      "dcid": "Count_Person_EducationalAttainmentSomeCollege1OrMoreYearsNoDegree"
+    },
+    {
+      "name": "Population: Some College Less Than 1 Year",
+      "dcid": "Count_Person_EducationalAttainmentSomeCollegeLessThan1Year"
+    },
+    {
+      "name": "Population: Some College or Associates Degree",
+      "dcid": "Count_Person_EducationalAttainmentSomeCollegeOrAssociatesDegree"
+    },
+    {
+      "name": "Population: Some Other Race Alone or In Combination With One or More Other Races",
+      "dcid": "Count_Person_SomeOtherRaceAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Population: Spanish",
+      "dcid": "Count_Person_5OrMoreYears_SpanishSpokenAtHome"
+    },
+    {
+      "name": "Population: Spanish or Spanish Creole",
+      "dcid": "Count_Person_5OrMoreYears_SpanishOrSpanishCreoleSpokenAtHome"
+    },
+    {
+      "name": "Population: Speak English Less Than Very Well",
+      "dcid": "Count_Person_SpeakEnglishLessThanVeryWell_5OrMoreYears_LanguageOtherThanEnglishSpokenAtHome"
+    },
+    {
+      "name": "Population: Speak English Not At All",
+      "dcid": "Count_Person_SpeakEnglishNotAtAll"
+    },
+    {
+      "name": "Population: Speak English Not Well",
+      "dcid": "Count_Person_SpeakEnglishNotWell"
+    },
+    {
+      "name": "Population: Speak English Very Well",
+      "dcid": "Count_Person_SpeakEnglishVeryWell_5OrMoreYears_LanguageOtherThanEnglishSpokenAtHome"
+    },
+    {
+      "name": "Population: Speak English Well",
+      "dcid": "Count_Person_SpeakEnglishWell"
+    },
+    {
+      "name": "Population: Stroke",
+      "dcid": "Count_Person_ConditionStroke"
+    },
+    {
+      "name": "Population: Swahili or Other Languages of Central Eastern And Southern Africa",
+      "dcid": "Count_Person_5OrMoreYears_SwahiliOrOtherLanguagesOfCentralEasternAndSouthernAfricaSpokenAtHome"
+    },
+    {
+      "name": "Population: Tagalog",
+      "dcid": "Count_Person_5OrMoreYears_TagalogSpokenAtHome"
+    },
+    {
+      "name": "Population: Tagalog Incl Filipino",
+      "dcid": "Count_Person_5OrMoreYears_TagalogInclFilipinoSpokenAtHome"
+    },
+    {
+      "name": "Population: Tamil",
+      "dcid": "Count_Person_5OrMoreYears_TamilSpokenAtHome"
+    },
+    {
+      "name": "Population: Technician And Associate Professional",
+      "dcid": "Count_Person_TechnicianAndAssociateProfessional"
+    },
+    {
+      "name": "Population: Telugu",
+      "dcid": "Count_Person_5OrMoreYears_TeluguSpokenAtHome"
+    },
+    {
+      "name": "Population: Tertiary Education",
+      "dcid": "Count_Person_TertiaryEducation"
+    },
+    {
+      "name": "Population: Tertiary Education Stage One Or Tertiary Education Stage Two",
+      "dcid": "Count_Person_TertiaryEducationStageOneOrTertiaryEducationStageTwo"
+    },
+    {
+      "name": "Population: Thai",
+      "dcid": "Count_Person_5OrMoreYears_ThaiSpokenAtHome"
+    },
+    {
+      "name": "Population: Thai Lao or Other Tai Kadai Languages",
+      "dcid": "Count_Person_5OrMoreYears_ThaiLaoOrOtherTaiKadaiLanguagesSpokenAtHome"
+    },
+    {
+      "name": "Population: US Citizen Born in Puerto Rico or USIsland Areas",
+      "dcid": "Count_Person_USCitizenBornInPuertoRicoOrUSIslandAreas"
+    },
+    {
+      "name": "Population: US Resident",
+      "dcid": "Count_Person_USResident"
+    },
+    {
+      "name": "Population: US Resident or US Armed Forces Overseas",
+      "dcid": "Count_Person_USResidentOrInUSArmedForcesOverseas"
+    },
+    {
+      "name": "Population: Ukrainian or Other Slavic Languages",
+      "dcid": "Count_Person_5OrMoreYears_UkrainianOrOtherSlavicLanguagesSpokenAtHome"
+    },
+    {
+      "name": "Population: Underweight",
+      "dcid": "Count_Person_Underweight"
+    },
+    {
+      "name": "Population: Unemployed",
+      "dcid": "Count_Person_Unemployed"
+    },
+    {
+      "name": "Population: Unemployed",
+      "dcid": "Count_Person_Years14Onwards_Unemployed"
+    },
+    {
+      "name": "Population: Unknown Race",
+      "dcid": "Count_Person_UnknownRace"
+    },
+    {
+      "name": "Population: Unmarried",
+      "dcid": "Count_Person_Unmarried"
+    },
+    {
+      "name": "Population: Unmarried \u0026 Not Living Together",
+      "dcid": "Count_Person_UnmarriedOrNotLivingTogether"
+    },
+    {
+      "name": "Population: Upper Secondary Education",
+      "dcid": "Count_Person_UpperSecondaryEducation"
+    },
+    {
+      "name": "Population: Upper Secondary Education Or Post Secondary Non Tertiary Education",
+      "dcid": "Count_Person_UpperSecondaryEducationOrPostSecondaryNonTertiaryEducation"
+    },
+    {
+      "name": "Population: Urdu",
+      "dcid": "Count_Person_5OrMoreYears_UrduSpokenAtHome"
+    },
+    {
+      "name": "Population: Vietnamese",
+      "dcid": "Count_Person_5OrMoreYears_VietnameseSpokenAtHome"
+    },
+    {
+      "name": "Population: Wesleyan Methodist",
+      "dcid": "Count_Person_WesleyanMethodist"
+    },
+    {
+      "name": "Population: Wholesale And Retail Trade, Transport, Accommodation And Food Service",
+      "dcid": "Count_Person_Employed_NACE/G-I"
+    },
+    {
+      "name": "Population: Wholesale And Retail Trade, Transport, Accommodation And Food Service Activities, Information And Communication",
+      "dcid": "Count_Person_Employed_NACE/G-J"
+    },
+    {
+      "name": "Population: With Earnings",
+      "dcid": "Count_Person_WithEarnings"
+    },
+    {
+      "name": "Population: With Food Stamps in The Past 12 Months",
+      "dcid": "Count_Person_WithFoodStampsInThePast12Months"
+    },
+    {
+      "name": "Population: With One Type of Health Insurance",
+      "dcid": "Count_Person_WithOneTypeOfHealthInsurance"
+    },
+    {
+      "name": "Population: With Own Children Under 18",
+      "dcid": "Count_Person_WithOwnChildrenUnder18"
+    },
+    {
+      "name": "Population: With Public Health Insurance Coverage",
+      "dcid": "Count_Person_WithPublicCoverage"
+    },
+    {
+      "name": "Population: Within EU27 And Not A Citizen",
+      "dcid": "Count_Person_WithinEU27AndNotACitizen"
+    },
+    {
+      "name": "Population: Within EU28 And Not A Citizen",
+      "dcid": "Count_Person_WithinEU28AndNotACitizen"
+    },
+    {
+      "name": "Population: Worker",
+      "dcid": "Count_Person_Workers"
+    },
+    {
+      "name": "Population: Years 0",
+      "dcid": "Count_Person_0Years"
+    },
+    {
+      "name": "Population: Years 1",
+      "dcid": "Count_Person_1Years"
+    },
+    {
+      "name": "Population: Years 10",
+      "dcid": "Count_Person_10Years"
+    },
+    {
+      "name": "Population: Years 100",
+      "dcid": "Count_Person_100Years"
+    },
+    {
+      "name": "Population: Years 11",
+      "dcid": "Count_Person_11Years"
+    },
+    {
+      "name": "Population: Years 12",
+      "dcid": "Count_Person_12Years"
+    },
+    {
+      "name": "Population: Years 13",
+      "dcid": "Count_Person_13Years"
+    },
+    {
+      "name": "Population: Years 14",
+      "dcid": "Count_Person_14Years"
+    },
+    {
+      "name": "Population: Years 15",
+      "dcid": "Count_Person_15Years"
+    },
+    {
+      "name": "Population: Years 16",
+      "dcid": "Count_Person_16Years"
+    },
+    {
+      "name": "Population: Years 17",
+      "dcid": "Count_Person_17Years"
+    },
+    {
+      "name": "Population: Years 18",
+      "dcid": "Count_Person_18Years"
+    },
+    {
+      "name": "Population: Years 19",
+      "dcid": "Count_Person_19Years"
+    },
+    {
+      "name": "Population: Years 2",
+      "dcid": "Count_Person_2Years"
+    },
+    {
+      "name": "Population: Years 20",
+      "dcid": "Count_Person_20Years"
+    },
+    {
+      "name": "Population: Years 21",
+      "dcid": "Count_Person_21Years"
+    },
+    {
+      "name": "Population: Years 22",
+      "dcid": "Count_Person_22Years"
+    },
+    {
+      "name": "Population: Years 23",
+      "dcid": "Count_Person_23Years"
+    },
+    {
+      "name": "Population: Years 24",
+      "dcid": "Count_Person_24Years"
+    },
+    {
+      "name": "Population: Years 25",
+      "dcid": "Count_Person_25Years"
+    },
+    {
+      "name": "Population: Years 26",
+      "dcid": "Count_Person_26Years"
+    },
+    {
+      "name": "Population: Years 27",
+      "dcid": "Count_Person_27Years"
+    },
+    {
+      "name": "Population: Years 28",
+      "dcid": "Count_Person_28Years"
+    },
+    {
+      "name": "Population: Years 29",
+      "dcid": "Count_Person_29Years"
+    },
+    {
+      "name": "Population: Years 3",
+      "dcid": "Count_Person_3Years"
+    },
+    {
+      "name": "Population: Years 30",
+      "dcid": "Count_Person_30Years"
+    },
+    {
+      "name": "Population: Years 31",
+      "dcid": "Count_Person_31Years"
+    },
+    {
+      "name": "Population: Years 32",
+      "dcid": "Count_Person_32Years"
+    },
+    {
+      "name": "Population: Years 33",
+      "dcid": "Count_Person_33Years"
+    },
+    {
+      "name": "Population: Years 34",
+      "dcid": "Count_Person_34Years"
+    },
+    {
+      "name": "Population: Years 35",
+      "dcid": "Count_Person_35Years"
+    },
+    {
+      "name": "Population: Years 36",
+      "dcid": "Count_Person_36Years"
+    },
+    {
+      "name": "Population: Years 37",
+      "dcid": "Count_Person_37Years"
+    },
+    {
+      "name": "Population: Years 38",
+      "dcid": "Count_Person_38Years"
+    },
+    {
+      "name": "Population: Years 39",
+      "dcid": "Count_Person_39Years"
+    },
+    {
+      "name": "Population: Years 4",
+      "dcid": "Count_Person_4Years"
+    },
+    {
+      "name": "Population: Years 40",
+      "dcid": "Count_Person_40Years"
+    },
+    {
+      "name": "Population: Years 41",
+      "dcid": "Count_Person_41Years"
+    },
+    {
+      "name": "Population: Years 42",
+      "dcid": "Count_Person_42Years"
+    },
+    {
+      "name": "Population: Years 43",
+      "dcid": "Count_Person_43Years"
+    },
+    {
+      "name": "Population: Years 44",
+      "dcid": "Count_Person_44Years"
+    },
+    {
+      "name": "Population: Years 45",
+      "dcid": "Count_Person_45Years"
+    },
+    {
+      "name": "Population: Years 46",
+      "dcid": "Count_Person_46Years"
+    },
+    {
+      "name": "Population: Years 47",
+      "dcid": "Count_Person_47Years"
+    },
+    {
+      "name": "Population: Years 48",
+      "dcid": "Count_Person_48Years"
+    },
+    {
+      "name": "Population: Years 49",
+      "dcid": "Count_Person_49Years"
+    },
+    {
+      "name": "Population: Years 5",
+      "dcid": "Count_Person_5Years"
+    },
+    {
+      "name": "Population: Years 50",
+      "dcid": "Count_Person_50Years"
+    },
+    {
+      "name": "Population: Years 51",
+      "dcid": "Count_Person_51Years"
+    },
+    {
+      "name": "Population: Years 52",
+      "dcid": "Count_Person_52Years"
+    },
+    {
+      "name": "Population: Years 53",
+      "dcid": "Count_Person_53Years"
+    },
+    {
+      "name": "Population: Years 54",
+      "dcid": "Count_Person_54Years"
+    },
+    {
+      "name": "Population: Years 55",
+      "dcid": "Count_Person_55Years"
+    },
+    {
+      "name": "Population: Years 56",
+      "dcid": "Count_Person_56Years"
+    },
+    {
+      "name": "Population: Years 57",
+      "dcid": "Count_Person_57Years"
+    },
+    {
+      "name": "Population: Years 58",
+      "dcid": "Count_Person_58Years"
+    },
+    {
+      "name": "Population: Years 59",
+      "dcid": "Count_Person_59Years"
+    },
+    {
+      "name": "Population: Years 6",
+      "dcid": "Count_Person_6Years"
+    },
+    {
+      "name": "Population: Years 60",
+      "dcid": "Count_Person_60Years"
+    },
+    {
+      "name": "Population: Years 61",
+      "dcid": "Count_Person_61Years"
+    },
+    {
+      "name": "Population: Years 62",
+      "dcid": "Count_Person_62Years"
+    },
+    {
+      "name": "Population: Years 63",
+      "dcid": "Count_Person_63Years"
+    },
+    {
+      "name": "Population: Years 64",
+      "dcid": "Count_Person_64Years"
+    },
+    {
+      "name": "Population: Years 65",
+      "dcid": "Count_Person_65Years"
+    },
+    {
+      "name": "Population: Years 66",
+      "dcid": "Count_Person_66Years"
+    },
+    {
+      "name": "Population: Years 67",
+      "dcid": "Count_Person_67Years"
+    },
+    {
+      "name": "Population: Years 68",
+      "dcid": "Count_Person_68Years"
+    },
+    {
+      "name": "Population: Years 69",
+      "dcid": "Count_Person_69Years"
+    },
+    {
+      "name": "Population: Years 7",
+      "dcid": "Count_Person_7Years"
+    },
+    {
+      "name": "Population: Years 70",
+      "dcid": "Count_Person_70Years"
+    },
+    {
+      "name": "Population: Years 71",
+      "dcid": "Count_Person_71Years"
+    },
+    {
+      "name": "Population: Years 72",
+      "dcid": "Count_Person_72Years"
+    },
+    {
+      "name": "Population: Years 73",
+      "dcid": "Count_Person_73Years"
+    },
+    {
+      "name": "Population: Years 74",
+      "dcid": "Count_Person_74Years"
+    },
+    {
+      "name": "Population: Years 75",
+      "dcid": "Count_Person_75Years"
+    },
+    {
+      "name": "Population: Years 76",
+      "dcid": "Count_Person_76Years"
+    },
+    {
+      "name": "Population: Years 77",
+      "dcid": "Count_Person_77Years"
+    },
+    {
+      "name": "Population: Years 78",
+      "dcid": "Count_Person_78Years"
+    },
+    {
+      "name": "Population: Years 79",
+      "dcid": "Count_Person_79Years"
+    },
+    {
+      "name": "Population: Years 8",
+      "dcid": "Count_Person_8Years"
+    },
+    {
+      "name": "Population: Years 80",
+      "dcid": "Count_Person_80Years"
+    },
+    {
+      "name": "Population: Years 81",
+      "dcid": "Count_Person_81Years"
+    },
+    {
+      "name": "Population: Years 82",
+      "dcid": "Count_Person_82Years"
+    },
+    {
+      "name": "Population: Years 83",
+      "dcid": "Count_Person_83Years"
+    },
+    {
+      "name": "Population: Years 84",
+      "dcid": "Count_Person_84Years"
+    },
+    {
+      "name": "Population: Years 85",
+      "dcid": "Count_Person_85Years"
+    },
+    {
+      "name": "Population: Years 86",
+      "dcid": "Count_Person_86Years"
+    },
+    {
+      "name": "Population: Years 87",
+      "dcid": "Count_Person_87Years"
+    },
+    {
+      "name": "Population: Years 88",
+      "dcid": "Count_Person_88Years"
+    },
+    {
+      "name": "Population: Years 89",
+      "dcid": "Count_Person_89Years"
+    },
+    {
+      "name": "Population: Years 9",
+      "dcid": "Count_Person_9Years"
+    },
+    {
+      "name": "Population: Years 90",
+      "dcid": "Count_Person_90Years"
+    },
+    {
+      "name": "Population: Years 91",
+      "dcid": "Count_Person_91Years"
+    },
+    {
+      "name": "Population: Years 92",
+      "dcid": "Count_Person_92Years"
+    },
+    {
+      "name": "Population: Years 93",
+      "dcid": "Count_Person_93Years"
+    },
+    {
+      "name": "Population: Years 94",
+      "dcid": "Count_Person_94Years"
+    },
+    {
+      "name": "Population: Years 95",
+      "dcid": "Count_Person_95Years"
+    },
+    {
+      "name": "Population: Years 96",
+      "dcid": "Count_Person_96Years"
+    },
+    {
+      "name": "Population: Years 97",
+      "dcid": "Count_Person_97Years"
+    },
+    {
+      "name": "Population: Years 98",
+      "dcid": "Count_Person_98Years"
+    },
+    {
+      "name": "Population: Years 99",
+      "dcid": "Count_Person_99Years"
+    },
+    {
+      "name": "Population: Yiddish",
+      "dcid": "Count_Person_5OrMoreYears_YiddishSpokenAtHome"
+    },
+    {
+      "name": "Population: Yiddish Pennsylvania Dutch or Other West Germanic Languages",
+      "dcid": "Count_Person_5OrMoreYears_YiddishPennsylvaniaDutchOrOtherWestGermanicLanguagesSpokenAtHome"
+    },
+    {
+      "name": "Population: Yoruba Twi Igbo or Other Languages of Western Africa",
+      "dcid": "Count_Person_5OrMoreYears_YorubaTwiIgboOrOtherLanguagesOfWesternAfricaSpokenAtHome"
+    },
+    {
+      "name": "Population: in Labor Force",
+      "dcid": "Count_Person_Years14Onwards_InLaborForce"
+    },
+    {
+      "name": "Population: in Labor Force Employed",
+      "dcid": "Count_Person_InLaborForceEmployed"
+    },
+    {
+      "name": "Population: in Labor Force Unemployed",
+      "dcid": "Count_Person_InLaborForceUnemployed"
+    },
+    {
+      "name": "Total number of beneficiaries of the Rural Development Program",
+      "dcid": "Count_Person_BrazilRuralDevelopmentProgram"
+    },
+    {
+      "name": "Total number of people residing in households",
+      "dcid": "Count_Person_ResidesInHousehold"
+    },
+    {
+      "name": "US Citizens Born Abroad to American Parents",
+      "dcid": "Count_Person_USCitizenBornAbroadOfAmericanParents"
+    },
+    {
+      "name": "US Citizens Born in the United States",
+      "dcid": "Count_Person_USCitizenBornInTheUnitedStates"
+    },
+    {
+      "name": "US Citizens by Naturalization",
+      "dcid": "Count_Person_USCitizenByNaturalization"
+    },
+    {
+      "name": "Unmarried population aged 15 or more",
+      "dcid": "Count_Person_15OrMoreYears_Unmarried"
+    },
+    {
+      "name": "White Hispanic Monoracial Population",
+      "dcid": "Count_Person_HispanicOrLatino_WhiteAlone"
+    },
+    {
+      "name": "White Hispanic Monoracial Population",
+      "dcid": "Count_Person_WhiteAloneNotHispanicOrLatino"
+    },
+    {
+      "name": "White Hispanic Population, Monoracial/Multiracial",
+      "dcid": "Count_Person_HispanicOrLatino_WhiteAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "White Monoracial Population",
+      "dcid": "Count_Person_WhiteAlone"
+    },
+    {
+      "name": "White Population, Monoracial/Multiracial",
+      "dcid": "Count_Person_WhiteAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Widowed Population",
+      "dcid": "Count_Person_Widowed"
+    },
+    {
+      "name": "Fraction of 25+ Years Old People with Bachelors Degree or Higher",
+      "dcid": "Count_Person_25OrMoreYears_BachelorsDegreeOrHigher_AsFractionOf_Count_Person_25OrMoreYears"
+    },
+    {
+      "name": "Fraction of 25+ Years Old People with Doctorate Degree",
+      "dcid": "Count_Person_25OrMoreYears_DoctorateDegree_AsFractionOf_Count_Person_25OrMoreYears"
+    },
+    {
+      "name": "Fraction of 25+ Years Old People with Masters Degree or Higher",
+      "dcid": "Count_Person_25OrMoreYears_MastersDegreeOrHigher_AsFractionOf_Count_Person_25OrMoreYears"
+    },
+    {
+      "name": "Fraction of 25+ Years Old People with Tertiary Education",
+      "dcid": "Count_Person_25OrMoreYears_TertiaryEducation_AsFractionOf_Count_Person_25OrMoreYears"
+    },
+    {
+      "name": "Male count as a fraction of female count",
+      "dcid": "Count_Person_Male_AsAFractionOf_Count_Person_Female"
+    },
+    {
+      "name": "Moderately or severely elevated blood pressure (%)",
+      "dcid": "Count_Person_WithModeratelyElevatedBloodPressureOrSeverelyElevatedBloodPressure_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Number of ATMs per 1,00,000 population",
+      "dcid": "Count_Person_ATM_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Number of Internet Subscribers per 100 population",
+      "dcid": "Count_Person_WithInternetSubscription_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Number of mobile connections per 100 persons in rural and urban area (Mobile Tele density)",
+      "dcid": "Count_Person_MobileConnection_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Percent of Internet Users",
+      "dcid": "Count_Person_IsInternetUser_PerCapita"
+    },
+    {
+      "name": "Percent of Population Living in Areas Below 5 Meters Elevation",
+      "dcid": "Count_Person_ResidingLessThan5MetersAboveSeaLevel_AsFractionOf_Count_Person"
+    },
+    {
+      "name": "Percentage of female individuals",
+      "dcid": "Count_Person_Female_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Percentage of male individuals",
+      "dcid": "Count_Person_Male_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Percentage of persons aged 14 years or younger or aged 65 years or older",
+      "dcid": "Count_Person_YearsUpto14OrYears65Onwards_AsAFractionOf_Count_Person_15To64Years"
+    },
+    {
+      "name": "Percentage of persons aged 15 to 64 years",
+      "dcid": "Count_Person_15To64Years_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Percentage of persons born in the area of the residence",
+      "dcid": "Count_Person_PlaceOfBirthBornInAreaOfResidence_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Percentage of persons born outside Finland",
+      "dcid": "Count_Person_PlaceOfBirthForeignBorn_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Percentage of persons living in inner urban areas",
+      "dcid": "Count_Person_InnerUrban_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Percentage of persons living in local centres in rural areas",
+      "dcid": "Count_Person_LocalCentreRural_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Percentage of persons living in outer urban areas",
+      "dcid": "Count_Person_OuterUrban_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Percentage of persons living in peri-urban areas",
+      "dcid": "Count_Person_PeriUrban_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Percentage of persons living in rural areas close to urban areas",
+      "dcid": "Count_Person_RuralCloseToUrban_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Percentage of persons living in rural heartland areas",
+      "dcid": "Count_Person_RuralHeartland_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Percentage of persons living in sparse rural areas",
+      "dcid": "Count_Person_SparseRural_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Percentage of persons living in the area of birth",
+      "dcid": "Count_Person_AreaOfBirth_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Percentage of persons who are in other religious groups in Finland",
+      "dcid": "Count_Person_FINOtherReligiousGroup_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Percentage of persons who are in the Lutheran Church.",
+      "dcid": "Count_Person_LutheranChurchMissouriSynod_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Percentage of persons who are not citizens of Finland",
+      "dcid": "Count_Person_NotACitizen_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Percentage of persons who are not in any religious group",
+      "dcid": "Count_Person_NoReligiousAffiliation_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Percentage of persons who speak Finnish at home",
+      "dcid": "Count_Person_FinnishSpokenAtHome_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Percentage of persons who speak Swedish at home",
+      "dcid": "Count_Person_SwedishSpokenAtHome_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Percentage of persons who speak a language other than Finnish at home",
+      "dcid": "Count_Person_FINOtherLanguagesSpokenAtHome_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Percentage of persons with foreign background",
+      "dcid": "Count_Person_ForeignBackground_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Percentage of urban population",
+      "dcid": "Count_Person_Urban_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Persons provided employment as a percentage of persons who demanded employment under MGNREGA (%)",
+      "dcid": "Count_Person_Employed_AsAFractionOf_Count_Person_MGNREGAUnemployed"
+    },
+    {
+      "name": "Population and household profile-sex ratio of the total population (females per 1,000 males)",
+      "dcid": "Count_Person_Female_AsAFractionOf_Count_Person_Male"
+    },
+    {
+      "name": "Population below age 15 years (%)",
+      "dcid": "Count_Person_15OrLessYears_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Population covered under Aadhaar (%)",
+      "dcid": "Count_Person_Aadhaar_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Population: 0 - 17 Years (Per Capita)",
+      "dcid": "Count_Person_0To17Years_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Population: 15 Years or Less (As Fraction of Count Person 15 To 64 Years With Income)",
+      "dcid": "Count_Person_15OrLessYears_AsAFractionOf_Count_Person_15To64Years_WithIncome"
+    },
+    {
+      "name": "Population: 65 Years or More (Per Capita)",
+      "dcid": "Count_Person_65OrMoreYears_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Population: Below Poverty Level in The Past 12 Months (Per Capita)",
+      "dcid": "Count_Person_BelowPovertyLevelInThePast12Months_AsFractionOf_Count_Person"
+    },
+    {
+      "name": "Population: Employed (Per Capita)",
+      "dcid": "Count_Person_Employed_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Population: Food in Secure (Per Capita)",
+      "dcid": "Count_Person_FoodInsecure_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Population: Illiterate (Per Capita)",
+      "dcid": "Count_Person_Illiterate_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Population: Labor Underutilized (Per Capita)",
+      "dcid": "Count_Person_LaborUnderutilized_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Population: Less Than High School Diploma (As Fraction of Count Person 25 or More Years)",
+      "dcid": "Count_Person_25OrMoreYears_EducationalAttainmentLessThanHighSchoolDiploma_AsAFractionOf_Count_Person_25OrMoreYears"
+    },
+    {
+      "name": "Population: Literate (Per Capita)",
+      "dcid": "Count_Person_Literate_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Population: Noninstitutionalized Group Quarters \u0026 Institutionalized Group Quarters (Per Capita)",
+      "dcid": "Count_Person_ResidesInNoninstitutionalizedGroupQuartersOrInstitutionalizedGroupQuarters_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Population: Not in Labor Force (As Fraction of Count Person in Labor Force)",
+      "dcid": "Count_Person_NotInLaborForce_AsAFractionOf_Count_Person_InLaborForce"
+    },
+    {
+      "name": "Population: Potential Labor Force \u0026 Unemployed (Per Capita)",
+      "dcid": "Count_Person_UnemployedOrPotentialLaborForce_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Population: Poverty Status Determined (Per Capita)",
+      "dcid": "Count_Person_PovertyStatusDetermined_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Population: Rural (Per Capita)",
+      "dcid": "Count_Person_Rural_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Population: Telephone (Per Capita)",
+      "dcid": "Count_Person_Telephone_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Population: Time Related Underemployed \u0026 Unemployed (Per Capita)",
+      "dcid": "Count_Person_UnemployedOrTimeRelatedUnderemployed_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Population: Time Related Underemployed (Per Capita)",
+      "dcid": "Count_Person_TimeRelatedUnderemployed_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Population: Unemployed (As Fraction of Count Person 14 Years or More)",
+      "dcid": "Count_Person_Years14Onwards_Unemployed_AsAFractionOf_Count_Person_Years14Onwards"
+    },
+    {
+      "name": "Population: Unemployed (Per Capita)",
+      "dcid": "Count_Person_Unemployed_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Population: in Labor Force (As Fraction of Count Person 14 Years or More)",
+      "dcid": "Count_Person_Years14Onwards_InLaborForce_AsAFractionOf_Count_Person_Years14Onwards"
+    },
+    {
+      "name": "Population: in Labor Force (Per Capita)",
+      "dcid": "Count_Person_InLaborForce_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Prevalence of diarrhoea in the 2 weeks preceding the survey (%)",
+      "dcid": "Count_Person_ConditionDiarrhea_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Prevalence of symptoms of Acute Respiratory Infection (ARI) in the 2 weeks preceding the survey (%)",
+      "dcid": "Count_Person_ConditionSymptomsOfAcuteRespiratoryInfection_AsAFractionOf_Count_Person"
+    },
+    {
+      "name": "Proportion of the population (out of total eligible population) receiving social protection benefits under Maternity Benefit",
+      "dcid": "Count_Person_ReceivingSocialProtectionBenefitUnderMaternityBenefit_AsAFractionOf_Count_Person_EligibleSocialProtectionBenefitUnderMaternityBenefit"
+    },
+    {
+      "name": "African American Farmers",
+      "dcid": "Count_Person_Producer_BlackOrAfricanAmericanAlone"
+    },
+    {
+      "name": "African American Monoracial Male Population",
+      "dcid": "Count_Person_Male_BlackOrAfricanAmericanAlone"
+    },
+    {
+      "name": "African American Monoracial/Multiracial Male Population",
+      "dcid": "Count_Person_Male_BlackOrAfricanAmericanAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "African American Population Above Poverty Level Status in Past Year",
+      "dcid": "Count_Person_AbovePovertyLevelInThePast12Months_BlackOrAfricanAmericanAlone"
+    },
+    {
+      "name": "American Indian and Alaska Native Female Population, Monoracial or Multiracial",
+      "dcid": "Count_Person_Female_AmericanIndianAndAlaskaNativeAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "American Indian and Alaska Native Male Population, Monoracial/Multiracial",
+      "dcid": "Count_Person_Male_AmericanIndianAndAlaskaNativeAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "American Indian and Native American Farmers",
+      "dcid": "Count_Person_Producer_AmericanIndianOrAlaskaNativeAlone"
+    },
+    {
+      "name": "American Indian or Alaska Native Monoracial Female Population",
+      "dcid": "Count_Person_Female_AmericanIndianOrAlaskaNativeAlone"
+    },
+    {
+      "name": "American Indian or Alaska Native Monoracial Male Population",
+      "dcid": "Count_Person_Male_AmericanIndianOrAlaskaNativeAlone"
+    },
+    {
+      "name": "American Indian/Alaska Native Population With Disabilities",
+      "dcid": "Count_Person_WithDisability_AmericanIndianOrAlaskaNativeAlone"
+    },
+    {
+      "name": "Asian Farmers",
+      "dcid": "Count_Person_Producer_AsianAlone"
+    },
+    {
+      "name": "Asian Male Population, Monoracial/Multiracial",
+      "dcid": "Count_Person_Male_AsianAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Asian Monoracial Female Population",
+      "dcid": "Count_Person_Female_AsianAlone"
+    },
+    {
+      "name": "Asian Monoracial Male Population",
+      "dcid": "Count_Person_Male_AsianAlone"
+    },
+    {
+      "name": "Asian Multiracial Female Population",
+      "dcid": "Count_Person_Female_AsianAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Asian Population Above Poverty Level Status in Past Year",
+      "dcid": "Count_Person_AbovePovertyLevelInThePast12Months_AsianAlone"
+    },
+    {
+      "name": "Asian Population With Disabilities",
+      "dcid": "Count_Person_WithDisability_AsianAlone"
+    },
+    {
+      "name": "Asian or Pacific Islander Female Population",
+      "dcid": "Count_Person_Female_AsianOrPacificIslander"
+    },
+    {
+      "name": "Asian or Pacific Islander Male Population",
+      "dcid": "Count_Person_Male_AsianOrPacificIslander"
+    },
+    {
+      "name": "Black Population Alone Institutionalized in Group Quarters",
+      "dcid": "Count_Person_BlackOrAfricanAmericanAlone_ResidesInInstitutionalizedGroupQuarters"
+    },
+    {
+      "name": "Black Population Alone in Adult Correctional Facilities",
+      "dcid": "Count_Person_BlackOrAfricanAmericanAlone_ResidesInAdultCorrectionalFacilities"
+    },
+    {
+      "name": "Black Population Alone in College or University Student Housing",
+      "dcid": "Count_Person_BlackOrAfricanAmericanAlone_ResidesInCollegeOrUniversityStudentHousing"
+    },
+    {
+      "name": "Black Population Alone in Group Quarters",
+      "dcid": "Count_Person_BlackOrAfricanAmericanAlone_ResidesInGroupQuarters"
+    },
+    {
+      "name": "Black Population Alone in Juvenile Facilities",
+      "dcid": "Count_Person_BlackOrAfricanAmericanAlone_ResidesInJuvenileFacilities"
+    },
+    {
+      "name": "Black Population Alone in Military Quarters or on Military Ships",
+      "dcid": "Count_Person_BlackOrAfricanAmericanAlone_ResidesInMilitaryQuartersOrMilitaryShips"
+    },
+    {
+      "name": "Black Population Alone in Non Institutionalized Group Quarters",
+      "dcid": "Count_Person_BlackOrAfricanAmericanAlone_ResidesInNoninstitutionalizedGroupQuarters"
+    },
+    {
+      "name": "Black Population Alone in Nursing Facilities",
+      "dcid": "Count_Person_BlackOrAfricanAmericanAlone_ResidesInNursingFacilities"
+    },
+    {
+      "name": "Black or African American Female Population, Monoracial or Multiracial",
+      "dcid": "Count_Person_Female_BlackOrAfricanAmericanAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Black or African American Monoracial Female Population",
+      "dcid": "Count_Person_Female_BlackOrAfricanAmericanAlone"
+    },
+    {
+      "name": "Black/African American Population With Disabilities",
+      "dcid": "Count_Person_WithDisability_BlackOrAfricanAmericanAlone"
+    },
+    {
+      "name": "Count of Person with medical specialization of AccidentAndEmergency and occupation of NursingAndMidWifery",
+      "dcid": "Count_Person_AccidentAndEmergency_NursingAndMidWiferyOccupation"
+    },
+    {
+      "name": "Count of Person with medical specialization of Administrator and occupation of NursingAndMidWifery",
+      "dcid": "Count_Person_Administrator_NursingAndMidWiferyOccupation"
+    },
+    {
+      "name": "Count of Person with medical specialization of Anesthetic and occupation of NursingAndMidWifery",
+      "dcid": "Count_Person_Anesthetic_NursingAndMidWiferyOccupation"
+    },
+    {
+      "name": "Count of Person with medical specialization of BurnsAndPlastic and occupation of NursingAndMidWifery",
+      "dcid": "Count_Person_BurnsAndPlastic_NursingAndMidWiferyOccupation"
+    },
+    {
+      "name": "Count of Person with medical specialization of CardioThoracic and occupation of NursingAndMidWifery",
+      "dcid": "Count_Person_CardioThoracic_NursingAndMidWiferyOccupation"
+    },
+    {
+      "name": "Count of Person with medical specialization of EarNoseAndThroat and occupation of NursingAndMidWifery",
+      "dcid": "Count_Person_EarNoseAndThroat_NursingAndMidWiferyOccupation"
+    },
+    {
+      "name": "Count of Person with medical specialization of GeneralNurse and occupation of NursingAndMidWifery",
+      "dcid": "Count_Person_GeneralNurse_NursingAndMidWiferyOccupation"
+    },
+    {
+      "name": "Count of Person with medical specialization of IntensiveCare and occupation of NursingAndMidWifery",
+      "dcid": "Count_Person_IntensiveCare_NursingAndMidWiferyOccupation"
+    },
+    {
+      "name": "Count of Person with medical specialization of MidwifeEducators and occupation of NursingAndMidWifery",
+      "dcid": "Count_Person_MidwifeEducators_NursingAndMidWiferyOccupation"
+    },
+    {
+      "name": "Count of Person with medical specialization of Nurse Educator and occupation of Nursing And MidWifery",
+      "dcid": "Count_Person_NurseEducator_NursingAndMidWiferyOccupation"
+    },
+    {
+      "name": "Count of Person with medical specialization of Ophthalmic and occupation of NursingAndMidWifery",
+      "dcid": "Count_Person_Ophthalmic_NursingAndMidWiferyOccupation"
+    },
+    {
+      "name": "Count of Person with occupation of Medical Practitioner",
+      "dcid": "Count_Person_Nigerian_MedicalPractitionerOccupation"
+    },
+    {
+      "name": "Count of Person with occupation of Medical Practitioner",
+      "dcid": "Count_Person_NonNigerian_MedicalPractitionerOccupation"
+    },
+    {
+      "name": "Count of Person with occupation of Veterinary Council",
+      "dcid": "Count_Person_Nigerian_VeterinaryCouncilOccupation"
+    },
+    {
+      "name": "Count of Person with occupation of Veterinary Council",
+      "dcid": "Count_Person_NonNigerian_VeterinaryCouncilOccupation"
+    },
+    {
+      "name": "Count of number of person not a motor vehicle occupant involved in crash",
+      "dcid": "Count_Person_InvolvedInCrash_NotMotorVehicleOccupant"
+    },
+    {
+      "name": "Count of people 15 to 19 years old in the labor force",
+      "dcid": "Count_Person_15To19Years_InLaborForce"
+    },
+    {
+      "name": "Count of people 15 to 19 years old in the potential labor force due to labor underutilization",
+      "dcid": "Count_Person_15To19Years_LaborUnderutilizedPotentialLaborForce"
+    },
+    {
+      "name": "Count of people 15 to 19 years old who are employed",
+      "dcid": "Count_Person_15To19Years_Employed"
+    },
+    {
+      "name": "Count of people 15 to 19 years old who are time-related underemployed due to labor underutilization",
+      "dcid": "Count_Person_15To19Years_LaborUnderutilizedTimeRelatedUnderemployed"
+    },
+    {
+      "name": "Count of people 15 to 19 years old who are underutilized labor",
+      "dcid": "Count_Person_15To19Years_LaborUnderutilized"
+    },
+    {
+      "name": "Count of people 20 to 24 years old in the labor force",
+      "dcid": "Count_Person_20To24Years_InLaborForce"
+    },
+    {
+      "name": "Count of people 20 to 24 years old in the potential labor force due to labor underutilization",
+      "dcid": "Count_Person_20To24Years_LaborUnderutilizedPotentialLaborForce"
+    },
+    {
+      "name": "Count of people 20 to 24 years old who are time-related underemployed due to labor underutilization",
+      "dcid": "Count_Person_20To24Years_LaborUnderutilizedTimeRelatedUnderemployed"
+    },
+    {
+      "name": "Count of people 20 to 24 years old who are underutilized labor",
+      "dcid": "Count_Person_20To24Years_LaborUnderutilized"
+    },
+    {
+      "name": "Count of people 25 to 29 years old in the potential labor force due to labor underutilization",
+      "dcid": "Count_Person_25To29Years_LaborUnderutilizedPotentialLaborForce"
+    },
+    {
+      "name": "Count of people 25 to 29 years old who are time-related underemployed due to labor underutilization",
+      "dcid": "Count_Person_25To29Years_LaborUnderutilizedTimeRelatedUnderemployed"
+    },
+    {
+      "name": "Count of people 25 to 29 years old who are underutilized labor",
+      "dcid": "Count_Person_25To29Years_LaborUnderutilized"
+    },
+    {
+      "name": "Count of people 30 to 34 years old in the potential labor force due to labor underutilization",
+      "dcid": "Count_Person_30To34Years_LaborUnderutilizedPotentialLaborForce"
+    },
+    {
+      "name": "Count of people 30 to 34 years old who are time-related underemployed due to labor underutilization",
+      "dcid": "Count_Person_30To34Years_LaborUnderutilizedTimeRelatedUnderemployed"
+    },
+    {
+      "name": "Count of people 30 to 34 years old who are underutilized labor",
+      "dcid": "Count_Person_30To34Years_LaborUnderutilized"
+    },
+    {
+      "name": "Count of people 35 to 39 years old in the labor force",
+      "dcid": "Count_Person_35To39Years_InLaborForce"
+    },
+    {
+      "name": "Count of people 35 to 39 years old in the potential labor force due to labor underutilization",
+      "dcid": "Count_Person_35To39Years_LaborUnderutilizedPotentialLaborForce"
+    },
+    {
+      "name": "Count of people 35 to 39 years old who are time-related underemployed due to labor underutilization",
+      "dcid": "Count_Person_35To39Years_LaborUnderutilizedTimeRelatedUnderemployed"
+    },
+    {
+      "name": "Count of people 35 to 39 years old who are underutilized labor",
+      "dcid": "Count_Person_35To39Years_LaborUnderutilized"
+    },
+    {
+      "name": "Count of people 40 to 44 years old in the labor force",
+      "dcid": "Count_Person_40To44Years_InLaborForce"
+    },
+    {
+      "name": "Count of people 40 to 44 years old in the potential labor force due to labor underutilization",
+      "dcid": "Count_Person_40To44Years_LaborUnderutilizedPotentialLaborForce"
+    },
+    {
+      "name": "Count of people 40 to 44 years old who are time-related underemployed due to labor underutilization",
+      "dcid": "Count_Person_40To44Years_LaborUnderutilizedTimeRelatedUnderemployed"
+    },
+    {
+      "name": "Count of people 40 to 44 years old who are underutilized labor",
+      "dcid": "Count_Person_40To44Years_LaborUnderutilized"
+    },
+    {
+      "name": "Count of people 45 to 49 years old in the labor force",
+      "dcid": "Count_Person_45To49Years_InLaborForce"
+    },
+    {
+      "name": "Count of people 45 to 49 years old in the potential labor force due to labor underutilization",
+      "dcid": "Count_Person_45To49Years_LaborUnderutilizedPotentialLaborForce"
+    },
+    {
+      "name": "Count of people 45 to 49 years old who are time-related underemployed due to labor underutilization",
+      "dcid": "Count_Person_45To49Years_LaborUnderutilizedTimeRelatedUnderemployed"
+    },
+    {
+      "name": "Count of people 45 to 49 years old who are underutilized labor",
+      "dcid": "Count_Person_45To49Years_LaborUnderutilized"
+    },
+    {
+      "name": "Count of people 50 to 54 years old in the labor force",
+      "dcid": "Count_Person_50To54Years_InLaborForce"
+    },
+    {
+      "name": "Count of people 50 to 54 years old in the potential labor force due to labor underutilization",
+      "dcid": "Count_Person_50To54Years_LaborUnderutilizedPotentialLaborForce"
+    },
+    {
+      "name": "Count of people 50 to 54 years old who are time-related underemployed due to labor underutilization",
+      "dcid": "Count_Person_50To54Years_LaborUnderutilizedTimeRelatedUnderemployed"
+    },
+    {
+      "name": "Count of people 50 to 54 years old who are underutilized labor",
+      "dcid": "Count_Person_50To54Years_LaborUnderutilized"
+    },
+    {
+      "name": "Count of people 55 to 59 years old in the potential labor force due to labor underutilization",
+      "dcid": "Count_Person_55To59Years_LaborUnderutilizedPotentialLaborForce"
+    },
+    {
+      "name": "Count of people 55 to 59 years old who are time-related underemployed due to labor underutilization",
+      "dcid": "Count_Person_55To59Years_LaborUnderutilizedTimeRelatedUnderemployed"
+    },
+    {
+      "name": "Count of people 55 to 59 years old who are underutilized labor",
+      "dcid": "Count_Person_55To59Years_LaborUnderutilized"
+    },
+    {
+      "name": "Count of people 60 to 64 years old in the labor force",
+      "dcid": "Count_Person_60To64Years_InLaborForce"
+    },
+    {
+      "name": "Count of people 60 to 64 years old in the potential labor force due to labor underutilization",
+      "dcid": "Count_Person_60To64Years_LaborUnderutilizedPotentialLaborForce"
+    },
+    {
+      "name": "Count of people 60 to 64 years old who are time-related underemployed due to labor underutilization",
+      "dcid": "Count_Person_60To64Years_LaborUnderutilizedTimeRelatedUnderemployed"
+    },
+    {
+      "name": "Count of people 60 to 64 years old who are underutilized labor",
+      "dcid": "Count_Person_60To64Years_LaborUnderutilized"
+    },
+    {
+      "name": "Count of people 65 to 69 years old in the potential labor force due to labor underutilization",
+      "dcid": "Count_Person_65To69Years_LaborUnderutilizedPotentialLaborForce"
+    },
+    {
+      "name": "Count of people 65 to 69 years old who are time-related underemployed due to labor underutilization",
+      "dcid": "Count_Person_65To69Years_LaborUnderutilizedTimeRelatedUnderemployed"
+    },
+    {
+      "name": "Count of people 65 to 69 years old who are underutilized labor",
+      "dcid": "Count_Person_65To69Years_LaborUnderutilized"
+    },
+    {
+      "name": "Count of people 70 or more years employed",
+      "dcid": "Count_Person_70OrMoreYears_Employed"
+    },
+    {
+      "name": "Count of people 70 or more years old in the labor force",
+      "dcid": "Count_Person_70OrMoreYears_InLaborForce"
+    },
+    {
+      "name": "Count of people 70 or more years old in the potential labor force due to labor underutilization",
+      "dcid": "Count_Person_70OrMoreYears_LaborUnderutilizedPotentialLaborForce"
+    },
+    {
+      "name": "Count of people 70 or more years old who are time-related underemployed due to labor underutilization",
+      "dcid": "Count_Person_70OrMoreYears_LaborUnderutilizedTimeRelatedUnderemployed"
+    },
+    {
+      "name": "Count of people 70 or more years old who are underutilized labor",
+      "dcid": "Count_Person_70OrMoreYears_LaborUnderutilized"
+    },
+    {
+      "name": "Count of people employed as technicians and associate professional",
+      "dcid": "Count_Person_Employed_TechnicianAndAssociateProfessional"
+    },
+    {
+      "name": "Count of people employed clerical workers.",
+      "dcid": "Count_Person_Employed_ClericalWorker"
+    },
+    {
+      "name": "Count of people employed elementary workers.",
+      "dcid": "Count_Person_Employed_ElementaryWorker"
+    },
+    {
+      "name": "Count of people employed in agriculture, forestry, and fishing.",
+      "dcid": "Count_Person_Employed_AgricultureForestryFishing"
+    },
+    {
+      "name": "Count of people employed in crafts and trades.",
+      "dcid": "Count_Person_Employed_CraftsAndTrade"
+    },
+    {
+      "name": "Count of people employed in services and sales.",
+      "dcid": "Count_Person_Employed_ServicesAndSales"
+    },
+    {
+      "name": "Count of people employed managers.",
+      "dcid": "Count_Person_Employed_Manager"
+    },
+    {
+      "name": "Count of people employed plant, machine operators and assemblers.",
+      "dcid": "Count_Person_Employed_PlantOperatorAndMachineOperatorAndMachineAssemble"
+    },
+    {
+      "name": "Count of people employed professionals.",
+      "dcid": "Count_Person_Employed_Professional"
+    },
+    {
+      "name": "Count of the number of motorists in the crash",
+      "dcid": "Count_Person_InvolvedInCrash_Motorists"
+    },
+    {
+      "name": "Count of the number of non-motorists in the crash",
+      "dcid": "Count_Person_InvolvedInCrash_NonMotorists"
+    },
+    {
+      "name": "Count of unemployed people with a bachelors degree or diploma",
+      "dcid": "Count_Person_EducationalAttainmentBachelorsDegreeOrDiploma_Unemployed"
+    },
+    {
+      "name": "Count of unemployed people with a masters degree or doctorate",
+      "dcid": "Count_Person_EducationalAttainmentMastersDegreeOrDoctorateDegree_Unemployed"
+    },
+    {
+      "name": "Count of unemployed people with lower secondary education",
+      "dcid": "Count_Person_Unemployed_LowerSecondaryEducation"
+    },
+    {
+      "name": "Count of unemployed people with no formal education",
+      "dcid": "Count_Person_EducationalAttainmentNoEducation_Unemployed"
+    },
+    {
+      "name": "Count of unemployed people with primary education",
+      "dcid": "Count_Person_Unemployed_PrimaryEducation"
+    },
+    {
+      "name": "Count of unemployed people with specialized secondary education",
+      "dcid": "Count_Person_Unemployed_SpecializedSecondarySchool"
+    },
+    {
+      "name": "Disabled Population Living in Nursing Facilities",
+      "dcid": "Count_Person_WithDisability_ResidesInNursingFacilities"
+    },
+    {
+      "name": "Disabled Population in Adult Correctional Facilities",
+      "dcid": "Count_Person_WithDisability_ResidesInAdultCorrectionalFacilities"
+    },
+    {
+      "name": "Disabled Population in College or University Student Housing",
+      "dcid": "Count_Person_WithDisability_ResidesInCollegeOrUniversityStudentHousing"
+    },
+    {
+      "name": "Disabled Population in Group Quarters",
+      "dcid": "Count_Person_WithDisability_ResidesInGroupQuarters"
+    },
+    {
+      "name": "Disabled Population in Institutionalized Group Quarters",
+      "dcid": "Count_Person_WithDisability_ResidesInInstitutionalizedGroupQuarters"
+    },
+    {
+      "name": "Disabled Population in Juvenile Facilities",
+      "dcid": "Count_Person_WithDisability_ResidesInJuvenileFacilities"
+    },
+    {
+      "name": "Disabled Population in Military Quarters or Ships",
+      "dcid": "Count_Person_WithDisability_ResidesInMilitaryQuartersOrMilitaryShips"
+    },
+    {
+      "name": "Disabled Population in Noninstitutionalized Group Quarters",
+      "dcid": "Count_Person_WithDisability_ResidesInNoninstitutionalizedGroupQuarters"
+    },
+    {
+      "name": "Disabled Population of Some Other Race",
+      "dcid": "Count_Person_WithDisability_SomeOtherRaceAlone"
+    },
+    {
+      "name": "Disabled Population of Two or More Races",
+      "dcid": "Count_Person_WithDisability_TwoOrMoreRaces"
+    },
+    {
+      "name": "Divorced or separated population aged 20 to 29 years",
+      "dcid": "Count_Person_20To29Years_DivorcedOrSeparated"
+    },
+    {
+      "name": "Divorced or separated population aged 30 to 39 years",
+      "dcid": "Count_Person_30To39Years_DivorcedOrSeparated"
+    },
+    {
+      "name": "Divorced or separated population aged 40 to 49 years",
+      "dcid": "Count_Person_40To49Years_DivorcedOrSeparated"
+    },
+    {
+      "name": "Divorced or separated population aged 50 to 59 years",
+      "dcid": "Count_Person_50To59Years_DivorcedOrSeparated"
+    },
+    {
+      "name": "Divorced or separated population aged 60 to 69 years",
+      "dcid": "Count_Person_60To69Years_DivorcedOrSeparated"
+    },
+    {
+      "name": "Earning Female Population",
+      "dcid": "Count_Person_Female_WithEarnings"
+    },
+    {
+      "name": "Earning Male Population",
+      "dcid": "Count_Person_Male_WithEarnings"
+    },
+    {
+      "name": "Female Population Above Poverty Level in the Past Year",
+      "dcid": "Count_Person_Female_AbovePovertyLevelInThePast12Months"
+    },
+    {
+      "name": "Female Population Aged 25 to 34",
+      "dcid": "Count_Person_25To34Years_Female"
+    },
+    {
+      "name": "Female Population Below Poverty Level in the Last Year",
+      "dcid": "Count_Person_Female_BelowPovertyLevelInThePast12Months"
+    },
+    {
+      "name": "Female Population Identifying as Multiracial",
+      "dcid": "Count_Person_Female_TwoOrMoreRaces"
+    },
+    {
+      "name": "Female Population Identifying as Native Hawaiian/Other Pacific Islander Alone",
+      "dcid": "Count_Person_Female_NativeHawaiianAndOtherPacificIslanderAlone"
+    },
+    {
+      "name": "Female Population Identifying as Native Hawaiian/Other Pacific Islander Alone",
+      "dcid": "Count_Person_Female_NativeHawaiianOrOtherPacificIslanderAlone"
+    },
+    {
+      "name": "Female Population Identifying as Native Hawaiian/Other Pacific Islander, Monoracial/Multiracial",
+      "dcid": "Count_Person_Female_NativeHawaiianAndOtherPacificIslanderAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Female Population Identifying as Some Other Race Alone",
+      "dcid": "Count_Person_Female_SomeOtherRaceAlone"
+    },
+    {
+      "name": "Female Population Identifying as White Alone",
+      "dcid": "Count_Person_Female_WhiteAlone"
+    },
+    {
+      "name": "Female Population Institutionalized in Group Quarters",
+      "dcid": "Count_Person_Female_ResidesInInstitutionalizedGroupQuarters"
+    },
+    {
+      "name": "Female Population With Disabilities",
+      "dcid": "Count_Person_WithDisability_Female"
+    },
+    {
+      "name": "Female Population in Adult Correctional Facilities",
+      "dcid": "Count_Person_Female_ResidesInAdultCorrectionalFacilities"
+    },
+    {
+      "name": "Female Population in College/University Student Housing",
+      "dcid": "Count_Person_Female_ResidesInCollegeOrUniversityStudentHousing"
+    },
+    {
+      "name": "Female Population in Group Quarters",
+      "dcid": "Count_Person_Female_ResidesInGroupQuarters"
+    },
+    {
+      "name": "Female Population in Juvenile Facilities",
+      "dcid": "Count_Person_Female_ResidesInJuvenileFacilities"
+    },
+    {
+      "name": "Female Population in Military Quarters/on Military Ships",
+      "dcid": "Count_Person_Female_ResidesInMilitaryQuartersOrMilitaryShips"
+    },
+    {
+      "name": "Female Population in Non Institutionalized Group Quarters",
+      "dcid": "Count_Person_Female_ResidesInNoninstitutionalizedGroupQuarters"
+    },
+    {
+      "name": "Female Population in Nursing Facilities",
+      "dcid": "Count_Person_Female_ResidesInNursingFacilities"
+    },
+    {
+      "name": "Female White Population, Monoracial/Multiracial",
+      "dcid": "Count_Person_Female_WhiteAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Female population aged 70 or more years",
+      "dcid": "Count_Person_70OrMoreYears_Female"
+    },
+    {
+      "name": "Food Insecure People Eligible for All Federal Benefits",
+      "dcid": "Count_Person_FoodInsecure_EligibleForAllFederalBenefits"
+    },
+    {
+      "name": "Food Insecure People Eligible for Some Federal Benefits",
+      "dcid": "Count_Person_FoodInsecure_EligibleForSomeFederalBenefits"
+    },
+    {
+      "name": "Food Insecure People Ineligible for Federal Benefits",
+      "dcid": "Count_Person_FoodInsecure_IneligibleForFederalBenefits"
+    },
+    {
+      "name": "Foreign Born Female Population",
+      "dcid": "Count_Person_Female_ForeignBorn"
+    },
+    {
+      "name": "Hispanic Farmers",
+      "dcid": "Count_Person_Producer_HispanicOrLatino"
+    },
+    {
+      "name": "Hispanic Female Population",
+      "dcid": "Count_Person_Female_HispanicOrLatino"
+    },
+    {
+      "name": "Hispanic Female Population Identifying as American Indian/Alaska Native Alone",
+      "dcid": "Count_Person_Female_HispanicOrLatino_AmericanIndianOrAlaskaNativeAlone"
+    },
+    {
+      "name": "Hispanic Female Population Identifying as American Indian/Alaska Native, Monoracial/Multiracial",
+      "dcid": "Count_Person_Female_HispanicOrLatino_AmericanIndianAndAlaskaNativeAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Hispanic Female Population Identifying as Asian Alone",
+      "dcid": "Count_Person_Female_HispanicOrLatino_AsianAlone"
+    },
+    {
+      "name": "Hispanic Female Population Identifying as Asian, Monoracial/Multiracial",
+      "dcid": "Count_Person_Female_HispanicOrLatino_AsianAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Hispanic Female Population Identifying as Asian/Pacific Islander",
+      "dcid": "Count_Person_Female_HispanicOrLatino_AsianOrPacificIslander"
+    },
+    {
+      "name": "Hispanic Female Population Identifying as Black/African American Alone",
+      "dcid": "Count_Person_Female_HispanicOrLatino_BlackOrAfricanAmericanAlone"
+    },
+    {
+      "name": "Hispanic Female Population Identifying as Black/African American, Monoracial/Multiracial",
+      "dcid": "Count_Person_Female_HispanicOrLatino_BlackOrAfricanAmericanAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Hispanic Female Population Identifying as Native Hawaiian/Other Pacific Islander Alone",
+      "dcid": "Count_Person_Female_HispanicOrLatino_NativeHawaiianOrOtherPacificIslanderAlone"
+    },
+    {
+      "name": "Hispanic Female Population Identifying as Native Hawaiian/Other Pacific Islander, Monoracial/Multiracial",
+      "dcid": "Count_Person_Female_HispanicOrLatino_NativeHawaiianAndOtherPacificIslanderAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Hispanic Female Population Identifying as White Alone",
+      "dcid": "Count_Person_Female_HispanicOrLatino_WhiteAlone"
+    },
+    {
+      "name": "Hispanic Female Population Identifying as White, Monoracial/Multiracial",
+      "dcid": "Count_Person_Female_HispanicOrLatino_WhiteAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Hispanic Institutionalized Population in Group Quarters",
+      "dcid": "Count_Person_HispanicOrLatino_ResidesInInstitutionalizedGroupQuarters"
+    },
+    {
+      "name": "Hispanic Male Population",
+      "dcid": "Count_Person_Male_HispanicOrLatino"
+    },
+    {
+      "name": "Hispanic Multiracial Female Population",
+      "dcid": "Count_Person_Female_HispanicOrLatino_TwoOrMoreRaces"
+    },
+    {
+      "name": "Hispanic Population Above Poverty Level Status in Past Year",
+      "dcid": "Count_Person_AbovePovertyLevelInThePast12Months_HispanicOrLatino"
+    },
+    {
+      "name": "Hispanic Population in Adult Correctional Facilities",
+      "dcid": "Count_Person_HispanicOrLatino_ResidesInAdultCorrectionalFacilities"
+    },
+    {
+      "name": "Hispanic Population in College/University Student Housing",
+      "dcid": "Count_Person_HispanicOrLatino_ResidesInCollegeOrUniversityStudentHousing"
+    },
+    {
+      "name": "Hispanic Population in Group Quarters",
+      "dcid": "Count_Person_HispanicOrLatino_ResidesInGroupQuarters"
+    },
+    {
+      "name": "Hispanic Population in Juvenile Facilities",
+      "dcid": "Count_Person_HispanicOrLatino_ResidesInJuvenileFacilities"
+    },
+    {
+      "name": "Hispanic Population in Military Quarters/on Military Ships",
+      "dcid": "Count_Person_HispanicOrLatino_ResidesInMilitaryQuartersOrMilitaryShips"
+    },
+    {
+      "name": "Hispanic Population in Non Institutionalized Group Quarters",
+      "dcid": "Count_Person_HispanicOrLatino_ResidesInNoninstitutionalizedGroupQuarters"
+    },
+    {
+      "name": "Hispanic Population in Nursing Facilities",
+      "dcid": "Count_Person_HispanicOrLatino_ResidesInNursingFacilities"
+    },
+    {
+      "name": "Hispanic-African American Alone Male Population",
+      "dcid": "Count_Person_Male_HispanicOrLatino_BlackOrAfricanAmericanAlone"
+    },
+    {
+      "name": "Hispanic-African American Male Population",
+      "dcid": "Count_Person_Male_HispanicOrLatino_BlackOrAfricanAmericanAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Hispanic-American Indian Alone Male Population",
+      "dcid": "Count_Person_Male_HispanicOrLatino_AmericanIndianOrAlaskaNativeAlone"
+    },
+    {
+      "name": "Hispanic-American Indian Male Population",
+      "dcid": "Count_Person_Male_HispanicOrLatino_AmericanIndianAndAlaskaNativeAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Hispanic-Asian Alone Male Population",
+      "dcid": "Count_Person_Male_HispanicOrLatino_AsianAlone"
+    },
+    {
+      "name": "Hispanic-Asian Male Population",
+      "dcid": "Count_Person_Male_HispanicOrLatino_AsianAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Hispanic-Asian/Pacific Islander Male Population",
+      "dcid": "Count_Person_Male_HispanicOrLatino_AsianOrPacificIslander"
+    },
+    {
+      "name": "Hispanic-Native Hawaiian/Other Pacific Islander Alone Male Population",
+      "dcid": "Count_Person_Male_HispanicOrLatino_NativeHawaiianAndOtherPacificIslanderAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Hispanic-Native Hawaiian/Other Pacific Islander Male Population",
+      "dcid": "Count_Person_Male_HispanicOrLatino_NativeHawaiianOrOtherPacificIslanderAlone"
+    },
+    {
+      "name": "Hispanic-White Alone Male Population",
+      "dcid": "Count_Person_Male_HispanicOrLatino_WhiteAlone"
+    },
+    {
+      "name": "Hispanic-White Male Population",
+      "dcid": "Count_Person_Male_HispanicOrLatino_WhiteAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Hispanic/Latino Population With Disabilities",
+      "dcid": "Count_Person_WithDisability_HispanicOrLatino"
+    },
+    {
+      "name": "Male Population Above Poverty Level in the Past Year",
+      "dcid": "Count_Person_Male_AbovePovertyLevelInThePast12Months"
+    },
+    {
+      "name": "Male Population Aged 25 to 34",
+      "dcid": "Count_Person_25To34Years_Male"
+    },
+    {
+      "name": "Male Population Below Poverty Status in the Last Year",
+      "dcid": "Count_Person_Male_BelowPovertyLevelInThePast12Months"
+    },
+    {
+      "name": "Male Population From Some Other Race Alone",
+      "dcid": "Count_Person_Male_SomeOtherRaceAlone"
+    },
+    {
+      "name": "Male Population Institutionalized in Group Quarters",
+      "dcid": "Count_Person_Male_ResidesInInstitutionalizedGroupQuarters"
+    },
+    {
+      "name": "Male Population Who Are Native Hawaiian and Other Pacific Islander Alone",
+      "dcid": "Count_Person_Male_NativeHawaiianAndOtherPacificIslanderAlone"
+    },
+    {
+      "name": "Male Population Who Are Native Hawaiian or Other Pacific Islander",
+      "dcid": "Count_Person_Male_NativeHawaiianAndOtherPacificIslanderAloneOrInCombinationWithOneOrMoreOtherRaces"
+    },
+    {
+      "name": "Male Population Who Are Native Hawaiian or Other Pacific Islander Alone",
+      "dcid": "Count_Person_Male_NativeHawaiianOrOtherPacificIslanderAlone"
+    }
+  ],
+  "matches": [
+    ""
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "data": {
+    "Aadhaar": {
+      "arcs": {
+        "name": {
+          "nodes": [
+            {
+              "provenanceId": "dc/base/BaseSchema",
+              "value": "Aadhaar"
+            }
+          ]
+        },
+        "typeOf": {
+          "nodes": [
+            {
+              "name": "GovernmentIdEnum",
+              "types": [
+                "Class"
+              ],
+              "dcid": "GovernmentIdEnum",
+              "provenanceId": "dc/base/BaseSchema"
+            },
+            {
+              "name": "GovernmentIdentifierEnum",
+              "types": [
+                "Class"
+              ],
+              "dcid": "GovernmentIdentifierEnum",
+              "provenanceId": "dc/base/BaseSchema"
+            }
+          ]
+        }
+      }
+    },
+    "Monthly_Average_RetailPrice_Electricity_Residential": {
+      "arcs": {
+        "name": {
+          "nodes": [
+            {
+              "provenanceId": "dc/base/HumanReadableStatVars",
+              "value": "Average retail price of electricity, residential, monthly"
+            }
+          ]
+        },
+        "statType": {
+          "nodes": [
+            {
+              "name": "meanValue",
+              "types": [
+                "Property"
+              ],
+              "dcid": "meanValue",
+              "provenanceId": "dc/base/HumanReadableStatVars"
+            }
+          ]
+        },
+        "typeOf": {
+          "nodes": [
+            {
+              "name": "StatisticalVariable",
+              "types": [
+                "Class"
+              ],
+              "dcid": "StatisticalVariable",
+              "provenanceId": "dc/base/HumanReadableStatVars"
+            }
+          ]
+        }
+      }
+    },
+    "foo": {}
+  }
+}
