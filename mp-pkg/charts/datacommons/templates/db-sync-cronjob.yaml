@@ -1,0 +1,77 @@
+# Copyright 2025 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+{{- if .Values.dbSync.enabled }}
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ include "datacommons.fullname" . }}-db-sync
+  namespace: {{ .Release.Namespace }}
+  labels:
+    {{- include "datacommons.labels" . | nindent 4 }}
+    app.kubernetes.io/component: db-sync
+spec:
+  schedule: {{ .Values.dbSync.schedule | default "0 */3 * * *" | quote }}
+  successfulJobsHistoryLimit: {{ .Values.dbSync.successfulJobsHistoryLimit | default 3 }}
+  failedJobsHistoryLimit: {{ .Values.dbSync.failedJobsHistoryLimit | default 1 }}
+  concurrencyPolicy: {{ .Values.dbSync.concurrencyPolicy | default "Forbid" }}
+  jobTemplate:
+    spec:
+      ttlSecondsAfterFinished: {{ .Values.dbSync.ttlSecondsAfterFinished | default 3600 }}
+      backoffLimit: {{ .Values.dbSync.backoffLimit | default 3 }}
+      template:
+        metadata:
+          labels:
+            {{- include "datacommons.selectorLabels" . | nindent 12 }}
+            app.kubernetes.io/component: db-sync
+          annotations:
+            # Checksum to ensure fresh config on each run
+            checksum/config: {{ include (print $.Template.BasePath "/configmap.yaml") . | sha256sum }}
+            checksum/secret: {{ include (print $.Template.BasePath "/secret.yaml") . | sha256sum }}
+        spec:
+          serviceAccountName: {{ include "datacommons.serviceAccountName" . }}
+          restartPolicy: Never
+
+          containers:
+            - name: db-sync
+              image: "{{ .Values.dbSync.image.repository }}:{{ .Values.dbSync.image.tag }}"
+              imagePullPolicy: {{ .Values.dbSync.image.pullPolicy | default "IfNotPresent" }}
+              # Environment variables from ConfigMap and Secrets
+              envFrom:
+                # Application configuration
+                - configMapRef:
+                    name: {{ include "datacommons.fullname" . }}-config
+                # Helm-generated admin credentials
+                - secretRef:
+                    name: {{ include "datacommons.fullname" . }}
+                {{- if .Values.existingSecret }}
+                # Terraform-managed secrets (DB_PASS, DC_API_KEY, MAPS_API_KEY)
+                - secretRef:
+                      name: {{ .Values.existingSecret }}
+                {{- end }}
+
+              # Additional job-specific environment variables
+              env:
+                # Data run mode
+                - name: DATA_RUN_MODE
+                  value: {{ .Values.dbSync.mode | quote }}
+                # Input/Output directories
+                - name: INPUT_DIR
+                  value: {{ include "datacommons.gcsInputDir" . | quote }}
+                - name: OUTPUT_DIR
+                  value: {{ include "datacommons.gcsOutputDir" . | quote }}
+
+              resources:
+                {{- toYaml .Values.dbSync.resources | nindent 16 }}
+{{- end }}

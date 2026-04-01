@@ -1,0 +1,130 @@
+# Copyright 2025 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "datacommons.fullname" . }}
+  namespace: {{ .Release.Namespace }}
+  labels:
+    {{- include "datacommons.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.deployment.replicas }}
+  selector:
+    matchLabels:
+      {{- include "datacommons.selectorLabels" . | nindent 6 }}
+      app.kubernetes.io/component: website
+  template:
+    metadata:
+      labels:
+        {{- include "datacommons.labels" . | nindent 8 }}
+        app.kubernetes.io/component: website
+        {{- with .Values.deployment.podLabels }}
+        {{- toYaml . | nindent 8 }}
+        {{- end }}
+      annotations:
+        # Force pod restart when ConfigMap or Secret changes
+        checksum/config: {{ include (print $.Template.BasePath "/configmap.yaml") . | sha256sum }}
+        checksum/secret: {{ include (print $.Template.BasePath "/secret.yaml") . | sha256sum }}
+        {{- with .Values.deployment.podAnnotations }}
+        {{- toYaml . | nindent 8 }}
+        {{- end }}
+    spec:
+      serviceAccountName: {{ include "datacommons.serviceAccountName" . }}
+
+      {{- with .Values.deployment.securityContext }}
+      securityContext:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+
+      containers:
+        - name: website
+          image: "{{ .Values.deployment.image.repository }}:{{ .Values.deployment.image.tag }}"
+          imagePullPolicy: {{ .Values.deployment.image.pullPolicy }}
+
+          ports:
+            - name: http
+              containerPort: {{ .Values.service.targetPort }}
+              protocol: TCP
+
+          # Environment variables from ConfigMap and Secrets
+          envFrom:
+            # Application configuration
+            - configMapRef:
+                name: {{ include "datacommons.fullname" . }}-config
+            # Helm-generated admin credentials
+            - secretRef:
+                name: {{ include "datacommons.fullname" . }}
+            {{- if .Values.existingSecret }}
+            # Terraform-managed secrets (DB_PASS, DC_API_KEY, MAPS_API_KEY)
+            - secretRef:
+                name: {{ .Values.existingSecret }}
+            {{- end }}
+
+          {{- with .Values.deployment.resources }}
+          resources:
+            {{- toYaml . | nindent 12 }}
+          {{- end }}
+
+          {{- if .Values.deployment.probes.startup.enabled }}
+          startupProbe:
+            httpGet:
+              path: /healthz
+              port: http
+            initialDelaySeconds: {{ .Values.deployment.probes.startup.initialDelaySeconds }}
+            periodSeconds: {{ .Values.deployment.probes.startup.periodSeconds }}
+            timeoutSeconds: {{ .Values.deployment.probes.startup.timeoutSeconds }}
+            failureThreshold: {{ .Values.deployment.probes.startup.failureThreshold }}
+          {{- end }}
+
+          {{- if .Values.deployment.probes.readiness.enabled }}
+          readinessProbe:
+            httpGet:
+              path: /healthz
+              port: http
+            periodSeconds: {{ .Values.deployment.probes.readiness.periodSeconds }}
+            timeoutSeconds: {{ .Values.deployment.probes.readiness.timeoutSeconds }}
+            failureThreshold: {{ .Values.deployment.probes.readiness.failureThreshold }}
+          {{- end }}
+
+          {{- if .Values.deployment.probes.liveness.enabled }}
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: http
+            initialDelaySeconds: {{ .Values.deployment.probes.liveness.initialDelaySeconds }}
+            periodSeconds: {{ .Values.deployment.probes.liveness.periodSeconds }}
+            timeoutSeconds: {{ .Values.deployment.probes.liveness.timeoutSeconds }}
+            failureThreshold: {{ .Values.deployment.probes.liveness.failureThreshold }}
+          {{- end }}
+
+          {{- with .Values.deployment.containerSecurityContext }}
+          securityContext:
+            {{- toYaml . | nindent 12 }}
+          {{- end }}
+
+      {{- with .Values.deployment.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+
+      {{- with .Values.deployment.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+
+      {{- with .Values.deployment.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}

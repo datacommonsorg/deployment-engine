@@ -40,9 +40,10 @@ See [Custom Data Commons: When do I need a custom instance?](https://docs.dataco
 This solution provisions a complete data exploration platform:
 
 - **Data Commons Accelerator Web Application**: Interactive interface for data exploration and visualization
+- **GKE Cluster**: A new GKE cluster is created automatically
+- **VPC and networking**: Network, subnet, Cloud Router, and Cloud NAT are set up automatically
 - **CloudSQL MySQL Database**: Persistent storage for datasets and metadata (with optional high availability)
 - **Cloud Storage Bucket**: Scalable storage for custom data imports
-- **Kubernetes Workload**: Application deployed to your existing GKE cluster (not created by this solution) with Workload Identity authentication
 - **Service Account**: Secure identity for accessing cloud resources
 
 No additional infrastructure setup is required—everything integrates with your existing GCP project.
@@ -57,12 +58,14 @@ This Marketplace solution deploys the following GCP resources:
 
 | Component | Description |
 |-----------|-------------|
-| **GKE Workload** | Data Commons application pods running in your existing cluster (namespace matches your deployment name) |
-| **CloudSQL MySQL** | Managed database with private IP (via VPC Private Service Access) for dataset storage |
+| **GKE Cluster** | A new GKE cluster is created for you during deployment |
+| **VPC and networking** | Network, subnet, Cloud Router, and Cloud NAT — all created automatically |
+| **GKE Workload** | Data Commons application pods deployed to the cluster (namespace matches your deployment name) |
+| **CloudSQL MySQL** | Managed database with private connectivity for dataset storage |
 | **GCS Bucket** | Cloud Storage for custom data imports |
-| **Service Account** | Workload Identity-enabled SA for secure access to CloudSQL, GCS, and Maps API |
-| **db-init Job** | One-time Kubernetes Job that initializes the database schema |
-| **db-sync CronJob** | Recurring job that syncs custom data from GCS to CloudSQL (every 3 hours) |
+| **Service Account** | Secure identity for accessing CloudSQL, GCS, and Maps API |
+| **db-init Job** | One-time job that initializes the database schema |
+| **db-sync CronJob** | Recurring job that syncs custom data from Cloud Storage to the database (every 3 hours) |
 
 For details on Data Commons architecture and how the application works internally, see [Custom Data Commons documentation](https://docs.datacommons.org/custom_dc/).
 
@@ -88,9 +91,9 @@ User Browser                         GCS Bucket (Custom Data)
 
 **Deployment Workflow:**
 1. You fill out the GCP Marketplace form with your preferences
-2. Infrastructure Manager uses Terraform to provision CloudSQL, create GCS bucket, and bind service account
-3. Helm deploys the Data Commons application to your GKE cluster
-4. All resources are linked via Workload Identity and VPC Private Service Access
+2. Infrastructure Manager uses Terraform to provision the cluster, database, Cloud Storage bucket, and service account
+3. The Data Commons application is deployed to your cluster
+4. All resources are linked via Workload Identity and private database connectivity
 
 ---
 
@@ -100,13 +103,13 @@ Before deploying Data Commons Accelerator, ensure you have the following:
 
 ### Infrastructure Requirements
 
-| Requirement | Details |
-|-------------|---------|
-| **GKE Cluster** | Kubernetes 1.27+, Standard or Autopilot cluster |
-| **Workload Identity** | Must be enabled (default on GKE 1.27+) |
-| **VPC Network** | VPC with Private Service Access configured (PSA could be created via Marketplace form if it's not existing) |
+No existing infrastructure is required. The solution creates all necessary resources automatically, including:
 
-**GKE Cluster:** If you need to create a cluster first, use the [GCP Kubernetes Engine creation form](https://console.cloud.google.com/kubernetes/add?).
+- GKE cluster
+- VPC network with subnet, Cloud Router, and Cloud NAT
+- CloudSQL MySQL database with private connectivity
+- Cloud Storage bucket
+- Service accounts and IAM bindings
 
 ### Required IAM Roles
 
@@ -129,12 +132,13 @@ The deployment automatically creates a Service Account with the following roles.
 
 | Role | Purpose |
 |------|---------|
-| roles/container.developer | Application workload management on GKE |
+| roles/container.admin | GKE cluster and workload management |
 | roles/storage.admin | Read/write access to the GCS data bucket |
 | roles/cloudsql.admin | Database instance management |
 | roles/config.agent | Infrastructure Manager operations |
 | roles/iam.infrastructureAdmin | Infrastructure resource management |
 | roles/iam.serviceAccountAdmin | Service account lifecycle management |
+| roles/iam.serviceAccountUser | Act as service accounts for Workload Identity binding |
 | roles/serviceusage.serviceUsageAdmin | API enablement |
 | roles/serviceusage.apiKeysAdmin | API key management |
 | roles/resourcemanager.projectIamAdmin | IAM binding management |
@@ -178,32 +182,14 @@ This section walks through deploying Data Commons Accelerator via GCP Marketplac
 
 ### Step 2: Complete the Deployment Configuration Form
 
-The Marketplace will open a deployment configuration form organized into several sections: **Basic** (deployment name and project), **GKE** (cluster details), **CloudSQL** (database settings), **Cloud Storage** (bucket configuration), **API** (Data Commons API key), and **Application** (pod replicas and resource sizing).
+The Marketplace will open a deployment configuration form. Enter your **Deployment Name** and select a **GCP Region** at the top, then configure **Application Settings** (resource tier and sample) and provide your **API Keys** (Data Commons API key). A new GKE cluster is created automatically.
 
-Each field has built-in tooltips with detailed guidance—hover over or click the help icon next to any field for clarification. The form validates your inputs and shows clear error messages if anything is incorrect.
+> [!TIP]
+> Each field has built-in tooltips with detailed guidance—hover over or click the help icon next to any field for clarification. The form validates your inputs and shows clear error messages if anything is incorrect.
 
 For detailed descriptions of every form field, valid values, and tips, see [Marketplace Fields Reference](MARKETPLACE_FIELDS.md).
 
-**Before you start, gather these from Prerequisites:**
-- Your **GKE cluster name and location**
-- Your **Data Commons API key**
-
-#### Private Service Access (PSA)
-
-The CloudSQL section of the form asks how to configure Private Service Access for database connectivity:
-
-| Option | When to Use | Configuration |
-|--------|------------|----------------|
-| **Create New PSA** | First deployment, no existing PSA | The form will create a /20 PSA range automatically |
-| **Use Existing PSA** | PSA already configured, multiple deployments in same VPC | Provide your existing PSA range name |
-
-**To find your existing PSA range:**
-
-```bash
-gcloud compute addresses list --global \
-  --filter="purpose=VPC_PEERING AND network=YOUR_VPC_NAME" \
-  --format="table(name,address,prefixLength,network)"
-```
+**Before you start, have your Data Commons API key ready** (required for all deployments).
 
 ### Step 3: Review and Deploy
 
@@ -213,14 +199,20 @@ Once you've completed all sections:
 2. **Accept the terms** by checking the Terms checkbox
 3. **Click the Deploy button**
 
-Deployment takes approximately **10–15 minutes**. A progress indicator will appear. **Do not close the browser tab** during deployment.
+Deployment takes approximately **20–30 minutes**. A progress indicator will appear.
+
+> [!WARNING]
+> **Do not close the browser tab** during deployment. Closing it may interrupt the provisioning process.
 
 When the status shows **"Active"**, your deployment is complete. Proceed to the next section for accessing your application.
 
 ### Step 4: Access Your Deployment
 
-All deployment outputs—resource names, connection strings, and commands—are available in:
-**Infrastructure Manager** > **Deployments** > your deployment > **Outputs** tab.
+> [!TIP]
+> After deployment completes, useful commands and resource information are available in the deployment details:
+> [Infrastructure Manager Deployments](https://console.cloud.google.com/infra-manager/deployments) > your deployment > **Outputs** tab.
+>
+> The Outputs tab contains ready-to-use commands for connecting to your cluster, port-forwarding, uploading data, and viewing logs — you can copy and run them directly.
 
 #### Quick Access via Cloud Shell (Recommended)
 
@@ -230,9 +222,9 @@ The easiest way to access your deployment—no local tools needed:
 2. Click **Run in Cloud Shell**
 3. Run the port-forward command:
    ```bash
-   until kubectl port-forward -n NAMESPACE svc/datacommons 8080:8080; do echo "Port-forward crashed. Respawning..." >&2; sleep 1; done
+   until kubectl port-forward -n [NAMESPACE] svc/datacommons 8080:8080; do echo "Port-forward crashed. Respawning..." >&2; sleep 1; done
    ```
-   (Replace `NAMESPACE` with your deployment name — the namespace matches your deployment name)
+   Replace `[NAMESPACE]` with your deployment name — the namespace matches your deployment name.
 4. In the Cloud Shell toolbar, click **Web Preview** > **Preview on port 8080**
 
 #### Local Access via kubectl
@@ -241,13 +233,13 @@ If you have `gcloud` and `kubectl` installed locally:
 
 1. Configure kubectl:
    ```bash
-   gcloud container clusters get-credentials CLUSTER --location=LOCATION --project=PROJECT
+   gcloud container clusters get-credentials [CLUSTER_NAME] --location=[LOCATION] --project=[PROJECT_ID]
    ```
 2. Port-forward:
    ```bash
-   until kubectl port-forward -n NAMESPACE svc/datacommons 8080:8080; do echo "Port-forward crashed. Respawning..." >&2; sleep 1; done
+   until kubectl port-forward -n [NAMESPACE] svc/datacommons 8080:8080; do echo "Port-forward crashed. Respawning..." >&2; sleep 1; done
    ```
-3. Open http://localhost:8080 in your browser
+3. Open <http://localhost:8080> in your browser
 
 #### Production Access
 
@@ -282,9 +274,9 @@ For additional resources, refer to the official Data Commons documentation:
 4. Review the Terraform execution log for provisioning errors
 
 **Common deployment errors:**
-- **"GKE cluster not found"** — Verify cluster name and project match
+
 - **"Insufficient permissions"** — Check [Required IAM Roles](#required-iam-roles)
-- **"PSA not configured"** — See [PSA Issues](#private-service-access-issues) below
+- **"PSA not configured"** — See [Private Connectivity Issues](#private-connectivity-issues) below
 
 ### Pod Status and Logs
 
@@ -293,25 +285,26 @@ For additional resources, refer to the official Data Commons documentation:
 **Quick diagnostics from Cloud Shell:**
 
 ```bash
-kubectl get pods -n NAMESPACE
-kubectl describe pod POD_NAME -n NAMESPACE
-kubectl logs -n NAMESPACE -l app.kubernetes.io/name=datacommons
+kubectl get pods -n [NAMESPACE]
+kubectl describe pod [POD_NAME] -n [NAMESPACE]
+kubectl logs -n [NAMESPACE] -l app.kubernetes.io/name=datacommons
 ```
 
 **Common pod issues:**
-- **Pending** — Cluster needs more capacity
-- **CrashLoopBackOff** — Check logs; often CloudSQL still initializing (wait 2–3 min)
-- **ImagePullBackOff** — Verify `dc_api_key` is correct
 
-### Private Service Access Issues
+- **Pending** — Cluster needs more capacity
+- **CrashLoopBackOff** — Check logs; often the database is still initializing (wait 2–3 min)
+- **ImagePullBackOff** — Verify your Data Commons API key is correct
+
+### Private Connectivity Issues
 
 ```bash
-# Check existing PSA ranges
+# Check existing private connectivity ranges
 gcloud compute addresses list --global --filter="purpose=VPC_PEERING"
 ```
 
-- **"Couldn't find free blocks"** — Use `psa_range_configuration: "create_16"` for more IPs
-- **"Peering already exists"** — Use `psa_range_configuration: "existing"` with your existing range name
+- **"Couldn't find free blocks"** — Select the /16 range option for more IP addresses
+- **"Peering already exists"** — Select "Use my existing range" and enter your existing range name
 
 ### Port-Forward Connection Refused
 
@@ -321,27 +314,26 @@ gcloud compute addresses list --global --filter="purpose=VPC_PEERING"
 E0206 portforward.go:424 "Unhandled Error" err="an error occurred forwarding 8080 -> 8080: connection refused"
 ```
 
-**Cause:** The port-forward connection drops when the application receives too many concurrent requests — for example, opening the `/explore` page which loads many data widgets simultaneously. It can also occur during pod startup while the application is initializing.
+> [!NOTE]
+> This is expected behavior, not a critical error. The connection drops when the application receives too many concurrent requests — for example, opening the `/explore` page which loads many data widgets simultaneously. It can also occur during pod startup while the application is initializing.
 
 **Fix:**
+
 1. If using the auto-retry loop (`until kubectl port-forward ...`), it will reconnect automatically
 2. If running a single port-forward, simply re-run the command
-3. If the error persists, check pod status: `kubectl get pods -n NAMESPACE` — ensure the pod is `Running` with `1/1` Ready
-
-### Error Loading GKE Cluster Location
-
-**Error:** The Marketplace form shows "Error loading GKE Cluster Location" when selecting a cluster.
-
-**Fix:** Refresh the browser page. This is a transient UI loading error. Your previously entered values may need to be re-entered.
+3. If the error persists, check pod status: `kubectl get pods -n [NAMESPACE]` — ensure the pod is `Running` with `1/1` Ready
 
 ---
 
 ## Deleting Your Deployment
 
-If you no longer need the Data Commons Accelerator, delete the deployment to stop incurring costs.
+> [!IMPORTANT]
+> Delete your deployment when no longer needed to stop incurring costs for the database, Kubernetes workloads, and Cloud Storage.
 
 1. Go to [Google Cloud Console](https://console.cloud.google.com)
 2. Search for "Solution deployments"
 3. Find your deployment and click the **three-dot menu** (⋮)
 4. Click **Delete**
 5. Confirm the deletion
+
+**What gets deleted:** All resources provisioned by this deployment — the database, Cloud Storage bucket, Kubernetes workloads, service account, and IAM bindings. If the deployment created a new GKE cluster and network, those are deleted as well.

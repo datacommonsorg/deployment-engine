@@ -1,0 +1,92 @@
+# Copyright 2025 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+apiVersion: app.k8s.io/v1beta1
+kind: Application
+metadata:
+  name: {{ .Release.Name }}
+  namespace: {{ .Release.Namespace }}
+  labels:
+    {{- include "datacommons.labels" . | nindent 4 }}
+  annotations:
+    kubernetes-engine.cloud.google.com/icon: >-
+      data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAyOCAyOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9InVwZGF0ZWQtZGMtbG9nby5zdmciIGNsaXAtcGF0aD0idXJsKCNjbGlwMF81MTI5XzIyNTA4KSI+CjxnIGlkPSJkYy1sb2dvLnN2ZyBmaWxsIiBjbGlwLXBhdGg9InVybCgjY2xpcDFfNTEyOV8yMjUwOCkiPgo8ZyBpZD0iZGMtbG9nby5zdmciIGNsaXAtcGF0aD0idXJsKCNjbGlwMl81MTI5XzIyNTA4KSI+CjxnIGlkPSJHcm91cCI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik0yNCAwSDRDMS43OTA4NiAwIDAgMS43OTA4NiAwIDRWMjRDMCAyNi4yMDkxIDEuNzkwODYgMjggNCAyOEgyNEMyNi4yMDkxIDI4IDI4IDI2LjIwOTEgMjggMjRWNEMyOCAxLjc5MDg2IDI2LjIwOTEgMCAyNCAwWiIgZmlsbD0iIzA3NTFCMyIvPgo8L2c+CjwvZz4KPC9nPgo8cGF0aCBpZD0iREMiIGQ9Ik0xOS42MTMyIDkuMDE4MzlDMjAuMTI1NCA5LjAxODQyIDIwLjYwMjkgOS4wODE4NyAyMS4wNDQ5IDkuMjEwNzdDMjEuNDg1OCA5LjMzOTM4IDIxLjg5MTEgOS41MjM5MyAyMi4yNTk3IDkuNzYzNTFDMjIuNjI3MiAxMC4wMDI0IDIyLjk2MjEgMTAuMjkxNiAyMy4yNjQ2IDEwLjYzMDdMMjMuMzI5IDEwLjcwMkwyMy4yNTk3IDEwLjc2OTRMMjIuMjIwNiAxMS43ODIxTDIyLjE0MjUgMTEuODU3M0wyMi4wNzQyIDExLjc3MzNDMjEuODYzNiAxMS41MTg4IDIxLjYzNTggMTEuMzA5NSAyMS4zOTI1IDExLjE0NDRMMjEuMzkwNiAxMS4xNDM0QzIxLjE0OCAxMC45NzAyIDIwLjg3OTQgMTAuODM5NyAyMC41ODM5IDEwLjc1MjhIMjAuNTgyOUMyMC4yOTY3IDEwLjY2NiAxOS45Nzc2IDEwLjYyMTkgMTkuNjI1OSAxMC42MjE5QzE4Ljk5NDYgMTAuNjIyIDE4LjQxNzcgMTAuNzcxMiAxNy44OTM1IDExLjA2ODJIMTcuODkyNUMxNy4zNjg4IDExLjM1NjIgMTYuOTQ4NyAxMS43NjE0IDE2LjYzMzcgMTIuMjg2TDE2LjYzNDcgMTIuMjg2OUMxNi4zMzAzIDEyLjgwODkgMTYuMTc1NyAxMy40MzQyIDE2LjE3NTcgMTQuMTY2OEMxNi4xNzU3IDE0Ljg4OTMgMTYuMzI5NiAxNS41MTQ3IDE2LjYzMzcgMTYuMDQ1N0MxNi45NDg5IDE2LjU3MTEgMTcuMzY4OSAxNi45ODE4IDE3Ljg5MzUgMTcuMjc5MUgxNy44OTI1QzE4LjQxNjggMTcuNTY3NSAxOC45OTQxIDE3LjcxMTcgMTkuNjI1OSAxNy43MTE4QzIwLjE5NjcgMTcuNzExOCAyMC42OTg0IDE3LjU5MzMgMjEuMTMxOCAxNy4zNTkyTDIxLjI5NjggMTcuMjY2NEMyMS42NzY1IDE3LjA0MDIgMjIuMDE3IDE2Ljc0NjYgMjIuMzE3MyAxNi4zODQ2TDIyLjM4NTcgMTYuMzAxNkwyMi40NjI4IDE2LjM3NjhMMjMuNTMwMiAxNy40MDIyTDIzLjU5NzYgMTcuNDY3NkwyMy41MzcgMTcuNTM4OUMyMy4yMzM3IDE3Ljg5NzQgMjIuODc5MiAxOC4yMTAzIDIyLjQ3NTUgMTguNDc2NEMyMi4wNzE1IDE4Ljc0MjYgMjEuNjMwOCAxOC45NDg5IDIxLjE1NDIgMTkuMDk1NUMyMC42NzU5IDE5LjI0MjcgMjAuMTYyIDE5LjMxNjIgMTkuNjEzMiAxOS4zMTYyQzE4Ljg5MDMgMTkuMzE2MiAxOC4yMTU2IDE5LjE4NzcgMTcuNTkwOCAxOC45MzA1TDE3LjU4ODggMTguOTI5NUMxNi45NjYgMTguNjYzOCAxNi40MjAyIDE4LjMwMTUgMTUuOTUyMSAxNy44NDI2TDE1Ljk1MDEgMTcuODQxNkMxNS40OTEyIDE3LjM3MzUgMTUuMTI4OSAxNi44MjY5IDE0Ljg2MzIgMTYuMjAzOUwxNC44NjIyIDE2LjIwM1YxNi4yMDJDMTQuNjA1MyAxNS41Njg1IDE0LjQ3NzUgMTQuODg5NyAxNC40Nzc1IDE0LjE2NjhDMTQuNDc3NSAxMy40MzUgMTQuNjA1OCAxMi43NTU3IDE0Ljg2MzIgMTIuMTMwN1YxMi4xMjk3QzE1LjEyOSAxMS41MDY2IDE1LjQ5MTggMTAuOTY1MSAxNS45NTExIDEwLjUwNTdDMTYuMzYxMSAxMC4wOTU3IDE2LjgzMTEgOS43NjYzNyAxNy4zNjAzIDkuNTE4MzlMMTcuNTkwOCA5LjQxNjgzQzE4LjIxNTUgOS4xNTA2NCAxOC44OTAzIDkuMDE4MzkgMTkuNjEzMiA5LjAxODM5Wk04LjE5NTI1IDkuMjM0MjFDOS4yMjQ4NCA5LjIzNDI1IDEwLjExNDggOS40NDM2MyAxMC44NjEzIDkuODY3MDJDMTEuNjE1NCAxMC4yODA5IDEyLjE5NjIgMTAuODYxOCAxMi42MDE1IDExLjYwNzNDMTMuMDE1OCAxMi4zNTMgMTMuMjIyNiAxMy4yMDcyIDEzLjIyMjYgMTQuMTY2OEMxMy4yMjI2IDE1LjEyNjUgMTMuMDE2NyAxNS45ODA3IDEyLjYwMjUgMTYuNzI2NEwxMi42MDE1IDE2LjcyNTRDMTIuMTk2NCAxNy40NzEgMTEuNjE3IDE4LjA1NjQgMTAuODYzMiAxOC40NzkzTDEwLjg2MjIgMTguNDgwM0MxMC4xMTU2IDE4Ljg5NSA5LjIyNTI0IDE5LjEwMDQgOC4xOTUyNSAxOS4xMDA0SDUuMDAzODVWOS4yMzQyMUg4LjE5NTI1Wk02LjY4ODQyIDE3LjQ5NTlIOC4xNTQyNEM4Ljg3MDM2IDE3LjQ5NTkgOS40Nzg4MiAxNy4zNjMgOS45ODMzNCAxNy4xMDI0QzEwLjQ4OCAxNi44MzI2IDEwLjg3MDMgMTYuNDUxNyAxMS4xMzA4IDE1Ljk1NjlDMTEuMzkxNyAxNS40NjExIDExLjUyNDQgMTQuODY1MiAxMS41MjQ0IDE0LjE2NjhDMTEuNTI0MyAxMy40Njg2IDExLjM5MTYgMTIuODczNCAxMS4xMzA4IDEyLjM3NzhDMTAuODcwNSAxMS44ODMyIDEwLjQ4OTQgMTEuNTA1NyA5Ljk4NTI5IDExLjI0NUg5Ljk4MzM0QzkuNDc4ODggMTAuOTc1NCA4Ljg3MDQyIDEwLjgzNzcgOC4xNTQyNCAxMC44Mzc3SDYuNjg4NDJWMTcuNDk1OVoiIGZpbGw9IndoaXRlIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjAuMiIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzUxMjlfMjI1MDgiPgo8cmVjdCB3aWR0aD0iMjgiIGhlaWdodD0iMjgiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjxjbGlwUGF0aCBpZD0iY2xpcDFfNTEyOV8yMjUwOCI+CjxyZWN0IHdpZHRoPSIyOCIgaGVpZ2h0PSIyOCIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPGNsaXBQYXRoIGlkPSJjbGlwMl81MTI5XzIyNTA4Ij4KPHJlY3Qgd2lkdGg9IjI4IiBoZWlnaHQ9IjI4IiBmaWxsPSJ3aGl0ZSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=
+    marketplace.cloud.google.com/deploy-info: '{}'
+spec:
+  descriptor:
+    type: "Data Commons Accelerator"
+    version: "{{ .Chart.AppVersion }}"
+    description: |-
+      Data Commons Accelerator - a ready-to-deploy instance of Custom Data Commons
+      for exploring and visualizing structured data on GKE.
+
+      **Features:**
+      - Interactive data exploration and visualization
+      - Integration with Google Cloud SQL for data storage
+      - Scalable Kubernetes-native architecture
+      - Support for custom data imports from GCS
+      - Pre-built samples (Education, Health, Energy, Custom)
+    links:
+      - description: "Data Commons Documentation"
+        url: "https://docs.datacommons.org/"
+      - description: "Source Code"
+        url: "https://github.com/datacommonsorg/website"
+      - description: "User Guide"
+        url: "https://docs.datacommons.org/custom_dc/"
+    notes: |-
+      # Getting Started
+
+      Your Data Commons application has been deployed successfully!
+
+      ## Next Steps
+
+      1. **Configure Ingress**: Create an Ingress or Gateway API to expose the service:
+      See [Exposing Apps](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/exposing-apps) for more details.
+         ```
+         kubectl get service {{ include "datacommons.fullname" . }} -n {{ .Release.Namespace }}
+         ```
+
+      2. **Verify Database**: Check that the database initialization completed:
+         ```
+         kubectl get jobs -n {{ .Release.Namespace }}
+         ```
+
+      3. **Monitor Pods**: Ensure all pods are running:
+         ```
+         kubectl get pods -n {{ .Release.Namespace }}
+         ```
+
+      4. **View Logs**: Check application logs:
+         ```
+         kubectl logs -l app.kubernetes.io/name=datacommons -n {{ .Release.Namespace }}
+         ```
+  selector:
+    matchLabels:
+      {{- include "datacommons.selectorLabels" . | nindent 6 }}
+  componentKinds:
+    - group: apps/v1
+      kind: Deployment
+    - group: v1
+      kind: Service
+    - group: v1
+      kind: ConfigMap
+    - group: v1
+      kind: ServiceAccount
+    - group: batch/v1
+      kind: Job
+    {{- if .Values.dbSync.enabled }}
+    - group: batch/v1
+      kind: CronJob
+    {{- end }}
+  addOwnerRef: false
