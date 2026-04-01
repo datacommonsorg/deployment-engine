@@ -16,8 +16,6 @@
 # Kubernetes Secrets Configuration
 # ============================================
 resource "kubernetes_namespace_v1" "datacommons" {
-  count = var.create_namespace ? 1 : 0
-
   metadata {
     name = local.namespace
 
@@ -30,21 +28,6 @@ resource "kubernetes_namespace_v1" "datacommons" {
   }
 
   depends_on = [
-    data.google_container_cluster.gke,
-    google_container_cluster.autopilot,
-  ]
-}
-
-# Data source for existing namespace (when create_namespace=false)
-data "kubernetes_namespace_v1" "existing" {
-  count = var.create_namespace ? 0 : 1
-
-  metadata {
-    name = local.namespace
-  }
-
-  depends_on = [
-    data.google_container_cluster.gke,
     google_container_cluster.autopilot,
   ]
 }
@@ -82,7 +65,6 @@ module "k8s_secrets" {
 
   depends_on = [
     kubernetes_namespace_v1.datacommons,
-    data.kubernetes_namespace_v1.existing,
     module.cloudsql,
     module.maps_api_keys
   ]

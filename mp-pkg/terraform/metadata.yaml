@@ -32,30 +32,14 @@ spec:
         description: GCP project ID where Data Commons Accelerator will be deployed
         varType: string
         required: true
-      - name: create_new_cluster
-        description: Create a new GKE cluster with VPC networking.
-        varType: bool
-        defaultValue: true
       - name: region
-        description: GCP region for new cluster and resources (e.g., us-central1). Only used when create_new_cluster is true.
+        description: GCP region for cluster and resource deployment (e.g., us-central1)
         varType: string
         defaultValue: us-central1
-      - name: gke_cluster_name
-        description: Name of an existing GKE cluster. Only used when create_new_cluster is false.
-        varType: string
-        defaultValue: ""
-      - name: gke_cluster_location
-        description: Location (region or zone) of the existing GKE cluster. Only used when create_new_cluster is false.
-        varType: string
-        defaultValue: ""
       - name: namespace
         description: Kubernetes namespace for Data Commons Accelerator deployment. Defaults to the deployment name (goog_cm_deployment_name) if not provided.
         varType: string
         defaultValue: ""
-      - name: create_namespace
-        description: Create new Kubernetes namespace. Set to false if namespace already exists in the cluster.
-        varType: bool
-        defaultValue: true
       - name: cloudsql_instance_name_override
         description: Override CloudSQL instance name (uses generated name with random suffix if not specified)
         varType: string

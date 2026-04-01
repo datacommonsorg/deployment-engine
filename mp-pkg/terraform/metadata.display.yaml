@@ -17,32 +17,12 @@ spec:
           tooltip: Name for this deployment (2-18 characters)
           placeholder: dc
           validation: ^[a-z][a-z0-9-]{0,16}[a-z0-9]$
-        create_new_cluster:
-          name: create_new_cluster
-          title: Create New GKE Cluster
-          invisible: true
-          # To enable Create/Existing cluster toggle, uncomment below and remove invisible:
-          # tooltip: Choose whether to create a new GKE Autopilot cluster or use an existing one.
-          # xGoogleProperty:
-          #   type: ET_CREATE_RESOURCE
         region:
           name: region
           title: GCP Region
           tooltip: GCP region where the cluster and cloud resources will be created.
           xGoogleProperty:
             type: ET_GCE_REGION
-        gke_cluster_name:
-          name: gke_cluster_name
-          title: GKE Cluster Name
-          invisible: true
-          # To enable cluster picker, uncomment below and remove invisible:
-          # tooltip: Select your existing GKE cluster for deployment
-          # section: cluster
-          # xGoogleProperty:
-          #   type: ET_GKE_CLUSTER
-          #   gkeCluster:
-          #     locationVariable: gke_cluster_location
-          #     clusterCreationVariable: create_new_cluster
         resource_tier:
           name: resource_tier
           title: Resource Tier
@@ -86,20 +66,9 @@ spec:
           placeholder: "..."
           section: api
           validation: ^[A-Za-z0-9_-]+$
-        gke_cluster_location:
-          name: gke_cluster_location
-          title: GKE Cluster Location
-          invisible: true
-          # To enable location picker, uncomment below and remove invisible:
-          # xGoogleProperty:
-          #   type: ET_GCE_LOCATION
         project_id:
           name: project_id
           title: Project ID
-          invisible: true
-        create_namespace:
-          name: create_namespace
-          title: Create Namespace
           invisible: true
         namespace:
           name: namespace

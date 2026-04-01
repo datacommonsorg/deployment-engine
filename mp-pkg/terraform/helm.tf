@@ -190,7 +190,6 @@ resource "helm_release" "datacommons" {
 
   depends_on = [
     kubernetes_namespace_v1.datacommons,
-    data.kubernetes_namespace_v1.existing,
     module.cloudsql,
     module.gcs_bucket,
     module.maps_api_keys,
@@ -202,8 +201,6 @@ resource "helm_release" "datacommons" {
     google_storage_bucket_object.output_dir,
     google_service_account_iam_member.datacommons_workload_identity_user,
     google_service_networking_connection.cloudsql_private_vpc_connection,
-    data.google_container_cluster.gke,
-    data.google_compute_network.vpc,
     google_container_cluster.autopilot,
     google_compute_router_nat.nat,
   ]

@@ -13,40 +13,11 @@
 # limitations under the License.
 
 # ============================================
-# Private Service Access (PSA) - Auto-Detection
+# Private Service Access (PSA)
 # ============================================
 
-# Query the Service Networking API to detect existing PSA connections on the VPC.
-# Only active in BYO mode — in create mode, the new VPC has no existing PSA.
-data "http" "psa_connections" {
-  count = var.create_new_cluster ? 0 : 1
-
-  url = "https://servicenetworking.googleapis.com/v1/services/servicenetworking.googleapis.com/connections?network=projects/${data.google_project.current.number}/global/networks/${local.vpc_network_name}"
-
-  request_headers = {
-    Authorization = "Bearer ${data.google_client_config.default.access_token}"
-    Accept        = "application/json"
-  }
-
-  depends_on = [
-    google_project_service.apis["servicenetworking.googleapis.com"],
-  ]
-
-  lifecycle {
-    postcondition {
-      # Accept 200 (success) as well as 403/404 (no access or no connections) — all are non-fatal.
-      # Any of these statuses means we can safely fall through to the create path.
-      condition     = contains([200, 403, 404], self.status_code)
-      error_message = "Service Networking API returned unexpected status ${self.status_code}. Expected 200, 403, or 404."
-    }
-  }
-}
-
 # Allocate a /20 IP range for Private Service Access.
-# Always created; in BYO mode existing ranges are preserved via concat below.
 resource "google_compute_global_address" "cloudsql_private_ip" {
-  count = local.create_psa_range ? 1 : 0
-
   provider = google
 
   name          = "${local.deployment_name}-psa-${local.resource_suffix}"
@@ -70,20 +41,13 @@ resource "google_compute_global_address" "cloudsql_private_ip" {
   ]
 }
 
-# Create or update the Private Service Access connection.
-# Always created; reserved_peering_ranges includes BOTH any existing ranges AND the new
-# range to prevent destructive replacement of existing peering configuration.
+# Create the Private Service Access connection.
 resource "google_service_networking_connection" "cloudsql_private_vpc_connection" {
-  count = local.create_psa_connection ? 1 : 0
-
   provider = google
 
-  network = local.vpc_network_self_link
-  service = "servicenetworking.googleapis.com"
-  reserved_peering_ranges = distinct(concat(
-    local.existing_psa_range_names,
-    [google_compute_global_address.cloudsql_private_ip[0].name]
-  ))
+  network                 = local.vpc_network_self_link
+  service                 = "servicenetworking.googleapis.com"
+  reserved_peering_ranges = [google_compute_global_address.cloudsql_private_ip.name]
 
   # Prevent deletion of VPC peering connection before CloudSQL instance is removed
   deletion_policy = "ABANDON"
@@ -94,7 +58,7 @@ resource "google_service_networking_connection" "cloudsql_private_vpc_connection
   depends_on = [
     google_project_service.apis["compute.googleapis.com"],
     google_project_service.apis["servicenetworking.googleapis.com"],
-    google_compute_global_address.cloudsql_private_ip[0],
+    google_compute_global_address.cloudsql_private_ip,
   ]
 }
 
@@ -126,6 +90,5 @@ module "cloudsql" {
 
   depends_on = [
     google_service_networking_connection.cloudsql_private_vpc_connection,
-    data.http.psa_connections,
   ]
 }

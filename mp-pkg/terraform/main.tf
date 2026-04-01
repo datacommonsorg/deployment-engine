@@ -28,14 +28,14 @@ provider "google-beta" {
   region  = local.region
 }
 
-# Kubernetes provider - configured from cluster locals (works in both create and BYO modes)
+# Kubernetes provider - configured from cluster locals
 provider "kubernetes" {
   host                   = "https://${local.cluster_endpoint}"
   token                  = data.google_client_config.default.access_token
   cluster_ca_certificate = base64decode(local.cluster_ca_cert)
 }
 
-# Helm provider - configured from cluster locals (works in both create and BYO modes)
+# Helm provider - configured from cluster locals
 provider "helm" {
   kubernetes {
     host                   = "https://${local.cluster_endpoint}"
@@ -103,29 +103,3 @@ resource "random_id" "suffix" {
   }
 }
 
-# ============================================
-# GKE Cluster and VPC Network Discovery (BYO mode only)
-# ============================================
-# Only active when create_new_cluster = false.
-# In create mode, cluster and VPC are managed resources in gke.tf / vpc.tf.
-data "google_container_cluster" "gke" {
-  count    = var.create_new_cluster ? 0 : 1
-  name     = var.gke_cluster_name
-  location = var.gke_cluster_location
-  project  = var.project_id
-
-  depends_on = [
-    google_project_service.apis["container.googleapis.com"]
-  ]
-}
-
-# Get full VPC network details for Private Service Access (BYO mode only)
-data "google_compute_network" "vpc" {
-  count   = var.create_new_cluster ? 0 : 1
-  name    = element(split("/", data.google_container_cluster.gke[0].network), length(split("/", data.google_container_cluster.gke[0].network)) - 1)
-  project = var.project_id
-
-  depends_on = [
-    google_project_service.apis["compute.googleapis.com"]
-  ]
-}

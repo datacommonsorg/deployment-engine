@@ -17,13 +17,11 @@
 # ============================================
 
 resource "google_compute_router" "nat_router" {
-  count = var.create_new_cluster ? 1 : 0
-
   provider = google
 
   name    = "${local.deployment_name}-router"
   region  = local.region
-  network = google_compute_network.vpc[0].id
+  network = google_compute_network.vpc.id
   project = var.project_id
 
   depends_on = [
@@ -32,12 +30,10 @@ resource "google_compute_router" "nat_router" {
 }
 
 resource "google_compute_router_nat" "nat" {
-  count = var.create_new_cluster ? 1 : 0
-
   provider = google
 
   name                               = "${local.deployment_name}-nat"
-  router                             = google_compute_router.nat_router[0].name
+  router                             = google_compute_router.nat_router.name
   region                             = local.region
   project                            = var.project_id
   nat_ip_allocate_option             = "AUTO_ONLY"

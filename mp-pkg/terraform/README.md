@@ -20,18 +20,9 @@ For environments requiring specific resource names (compliance, naming conventio
 - `gcs_bucket_name_override` - Specify exact GCS bucket name
 - `service_account_name_override` - Specify exact service account name
 
-### Pre-existing Resources Support
-
-- **Namespace**: Set `create_namespace = false` if namespace already exists
-- **APIs**: Handles pre-enabled APIs idempotently (no errors if already enabled)
-
-### Example: Enterprise Deployment with Existing Resources
+### Example: Enterprise Deployment with Name Overrides
 
 ```hcl
-# Use existing namespace
-create_namespace          = false
-namespace                 = "datacommons-prod"
-
 # Override resource names to match enterprise conventions
 cloudsql_instance_name_override   = "dc-mysql-prod-001"
 gcs_bucket_name_override          = "company-dc-data-prod"
@@ -41,7 +32,6 @@ service_account_name_override     = "svc-datacommons-prod"
 ## Requirements
 
 - GCP project with required APIs enabled
-- Existing GKE cluster (VPC-native, Workload Identity enabled) — only required when deploying to an existing cluster
 - Terraform >= 1.5.7
 - Google Cloud Provider >= 7.0.0
 - Kubernetes Provider >= 2.20
@@ -114,12 +104,8 @@ CloudSQL uses private IP connectivity via Private Service Access (PSA). A /20 IP
 |------|-------------|------|---------|:--------:|
 | goog_cm_deployment_name | Deployment name for the Data Commons Accelerator solution (used by GCP Marketplace for tracking and avoiding resource name collisions) | string | n/a | yes |
 | project_id | GCP project ID where Data Commons Accelerator will be deployed | string | n/a | yes |
-| create_new_cluster | Create a new GKE cluster with VPC networking (VPC, subnet, Cloud Router, Cloud NAT, and PSA). When false, deploy to an existing cluster specified by gke_cluster_name. | bool | `true` | no |
-| region | GCP region for the new GKE cluster and networking resources. Only used when create_new_cluster is true. | string | `"us-central1"` | no |
-| gke_cluster_name | Name of the existing GKE cluster to deploy to. Only used when create_new_cluster is false. | string | `""` | no |
-| gke_cluster_location | Location (region or zone) of the existing GKE cluster. The GCP region for CloudSQL and other resources is derived from this value. Only used when create_new_cluster is false. | string | `""` | no |
+| region | GCP region for the GKE cluster and networking resources | string | `"us-central1"` | no |
 | namespace | Kubernetes namespace for Data Commons Accelerator deployment. Defaults to the deployment name if not provided. | string | `""` | no |
-| create_namespace | Create new Kubernetes namespace. Set to false if namespace already exists. | bool | `true` | no |
 | cloudsql_instance_name_override | Override CloudSQL instance name (uses generated name if not specified) | string | `""` | no |
 | gcs_bucket_name_override | Override GCS bucket name (uses generated name if not specified) | string | `""` | no |
 | service_account_name_override | Override service account name (uses generated name if not specified) | string | `""` | no |

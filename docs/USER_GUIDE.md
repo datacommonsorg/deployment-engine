@@ -68,20 +68,9 @@ To populate the dashboard with your custom data:
 > Large CSV files may take a few moments to process. The dashboard refreshes automatically after upload.
 
 > [!TIP]
-> **Trigger data sync immediately** — After uploading your CSV, the data is synced to the database by a CronJob (`datacommons-db-sync`) that runs every 3 hours. To avoid waiting, trigger it manually:
+> **Process data immediately** — After uploading your files, click the **Process Data** button in the **Data & Files** section of the Admin Panel to start data sync and embeddings build immediately. A progress indicator shows real-time status (Running / Completed / Failed).
 >
-> **Via GKE Console (recommended):**
-> 1. Go to **Kubernetes Engine** > **Workloads**
-> 2. Filter by your namespace (matches your deployment name)
-> 3. Click the **datacommons-db-sync** CronJob
-> 4. Click **Run now** in the top toolbar
-> 5. Monitor progress in the **Events** and **Logs** tabs
->
-> **Via kubectl:**
-> ```bash
-> kubectl create job --from=cronjob/datacommons-db-sync manual-sync -n [NAMESPACE]
-> kubectl logs -n [NAMESPACE] -l job-name=manual-sync -f
-> ```
+> Data is also synced automatically every 3 hours by a background CronJob.
 
 ### Customize User Interface
 

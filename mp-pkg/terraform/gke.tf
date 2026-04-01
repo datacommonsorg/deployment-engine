@@ -17,8 +17,6 @@
 # ============================================
 
 resource "google_service_account" "gke_node" {
-  count = var.create_new_cluster ? 1 : 0
-
   provider = google
 
   account_id   = local.gke_node_sa_name
@@ -30,24 +28,21 @@ resource "google_service_account" "gke_node" {
 }
 
 resource "google_project_iam_member" "gke_node_default_sa" {
-  count   = var.create_new_cluster ? 1 : 0
   project = var.project_id
   role    = "roles/container.defaultNodeServiceAccount"
-  member  = "serviceAccount:${google_service_account.gke_node[0].email}"
+  member  = "serviceAccount:${google_service_account.gke_node.email}"
 }
 
 resource "google_project_iam_member" "gke_node_metric_writer" {
-  count   = var.create_new_cluster ? 1 : 0
   project = var.project_id
   role    = "roles/monitoring.metricWriter"
-  member  = "serviceAccount:${google_service_account.gke_node[0].email}"
+  member  = "serviceAccount:${google_service_account.gke_node.email}"
 }
 
 resource "google_project_iam_member" "gke_node_resource_metadata_writer" {
-  count   = var.create_new_cluster ? 1 : 0
   project = var.project_id
   role    = "roles/stackdriver.resourceMetadata.writer"
-  member  = "serviceAccount:${google_service_account.gke_node[0].email}"
+  member  = "serviceAccount:${google_service_account.gke_node.email}"
 }
 
 # ============================================
@@ -55,8 +50,6 @@ resource "google_project_iam_member" "gke_node_resource_metadata_writer" {
 # ============================================
 
 resource "google_container_cluster" "autopilot" {
-  count = var.create_new_cluster ? 1 : 0
-
   provider = google-beta
 
   name     = "${local.deployment_name}-gke"
@@ -65,8 +58,8 @@ resource "google_container_cluster" "autopilot" {
 
   enable_autopilot = true
 
-  network    = google_compute_network.vpc[0].name
-  subnetwork = google_compute_subnetwork.primary[0].name
+  network    = google_compute_network.vpc.name
+  subnetwork = google_compute_subnetwork.primary.name
 
   ip_allocation_policy {
     cluster_secondary_range_name  = "pods"
@@ -95,7 +88,7 @@ resource "google_container_cluster" "autopilot" {
 
   cluster_autoscaling {
     auto_provisioning_defaults {
-      service_account = google_service_account.gke_node[0].email
+      service_account = google_service_account.gke_node.email
     }
   }
 

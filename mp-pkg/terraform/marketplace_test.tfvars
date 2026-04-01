@@ -26,6 +26,5 @@
 # - Any variables declared in schema.yaml
 
 goog_cm_deployment_name = "datacommons-test"
-create_new_cluster      = true
 region                  = "us-central1"
 dc_api_key              = "test-api-key-placeholder"

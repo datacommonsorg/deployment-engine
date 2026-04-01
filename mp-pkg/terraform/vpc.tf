@@ -17,8 +17,6 @@
 # ============================================
 
 resource "google_compute_network" "vpc" {
-  count = var.create_new_cluster ? 1 : 0
-
   provider = google
 
   name                    = "${local.deployment_name}-vpc"
@@ -36,12 +34,10 @@ resource "google_compute_network" "vpc" {
 # ============================================
 
 resource "google_compute_subnetwork" "primary" {
-  count = var.create_new_cluster ? 1 : 0
-
   provider = google
 
   name                     = "${local.deployment_name}-subnet"
-  network                  = google_compute_network.vpc[0].id
+  network                  = google_compute_network.vpc.id
   region                   = local.region
   ip_cidr_range            = "10.0.0.0/20"
   private_ip_google_access = true

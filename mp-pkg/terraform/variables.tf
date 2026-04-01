@@ -47,14 +47,8 @@ variable "project_id" {
   }
 }
 
-variable "create_new_cluster" {
-  description = "Create a new GKE Autopilot cluster with VPC networking. Set to false to use an existing cluster."
-  type        = bool
-  default     = true
-}
-
 variable "region" {
-  description = "GCP region for new cluster and resources (e.g., us-central1). Only used when create_new_cluster is true."
+  description = "GCP region for cluster and resource deployment (e.g., us-central1)"
   type        = string
   default     = "us-central1"
 
@@ -62,21 +56,6 @@ variable "region" {
     condition     = var.region == "" || can(regex("^[a-z]+-[a-z]+[0-9]+$", var.region))
     error_message = "Region must be a valid GCP region (e.g., us-central1, europe-west3)."
   }
-}
-
-# ============================================
-# GKE Cluster Configuration (Bring-Your-Own)
-# ============================================
-variable "gke_cluster_name" {
-  description = "Name of an existing GKE cluster. Only used when create_new_cluster is false."
-  type        = string
-  default     = ""
-}
-
-variable "gke_cluster_location" {
-  description = "Location (region or zone) of the existing GKE cluster. Only used when create_new_cluster is false."
-  type        = string
-  default     = ""
 }
 
 variable "namespace" {
@@ -88,12 +67,6 @@ variable "namespace" {
     condition     = var.namespace == "" || can(regex("^[a-z0-9]([-a-z0-9]*[a-z0-9])?$", var.namespace))
     error_message = "Namespace must consist of lowercase alphanumeric characters or '-', and must start and end with an alphanumeric character."
   }
-}
-
-variable "create_namespace" {
-  description = "Create new Kubernetes namespace. Set to false if namespace already exists in the cluster."
-  type        = bool
-  default     = true
 }
 
 # ============================================
